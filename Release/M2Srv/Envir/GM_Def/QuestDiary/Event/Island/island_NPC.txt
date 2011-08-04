@@ -1,0 +1,3 @@
+;;Legend Of Mir 3 C3Engine
+[NPC]
+Name=生存游戏场美眉

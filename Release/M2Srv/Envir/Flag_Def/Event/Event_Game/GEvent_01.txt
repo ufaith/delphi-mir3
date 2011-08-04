@@ -1,0 +1,15 @@
+;;Legend Of Mir 3 C3Engine
+[0]
+;;오픈됬는지 검사 부분 open = 1주차 TwoDayOpen =2주차 오픈 되었을때만 몹젠과 이벤트 메세지 발동
+Open =
+[00]
+Open =
+
+[01]
+Open =
+
+
+;;;젠뜰때가 된것을 채크 = 1이면 젠열림
+[OneDay]
+Eventgen =
+

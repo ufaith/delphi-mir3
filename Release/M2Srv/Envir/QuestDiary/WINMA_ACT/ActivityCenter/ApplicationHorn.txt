@@ -1,0 +1,322 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@申请行会]
+{
+#ACT
+MOV D8 0
+MOV A7 %USERNAME
+MOV A0 ""
+LoadValue A9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 公告 公告
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN
+LoadValue D9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" [每页显示数] [每页显示数]
+DIV D6 %D0 %D9
+INC D6 1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 总页数 %D6
+MUL D1 %D8 %D9
+INC D1 1
+INC D8 1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数 %D8
+MUL D7 %D8 %D9
+MOV D2 1
+MOV D3 %D0
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页下限 %D1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页上限 %D7
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 上次读 %D3
+GOTO @读取资料
+
+
+[@读取资料]
+#IF
+!LARGE D1 %D7
+!LARGE D1 %D0
+#ACT
+LoadValue A4 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D3 [行会名字]
+LoadValue A5 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D3 [申请人]
+LoadValue D6  "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D3  人数
+ADDSTR A0 "{FCOLOR=241}〖序号〗{FCOLOR=255}{FCOLOR=250}"
+ADDSTR A0  %D1
+ADDSTR A0  ":{FCOLOR=255}<"
+ADDSTR A0  %A4
+ADDSTR A0 "/@序号("
+ADDSTR A0  "%D2"
+ADDSTR A0  ")>     {FCOLOR=250}〖申请人〗:"
+ADDSTR A0  %A5
+ADDSTR A0 "{FCOLOR=255}   人数:{FCOLOR=249}"
+ADDSTR A0  %D6
+ADDSTR A0  "{FCOLOR=255}\"
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 %D2 %D3
+DEC D3 1
+INC D1 1
+INC D2 1
+GOTO @读取资料
+#ELSEACT
+DEC D1 1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 阅读数 %D3
+GOTO @申请版面
+
+
+
+[@申请版面]
+#ACT
+mov A7 %USERNAME
+LoadValue D8 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数
+LoadValue D6 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 总页数
+LoadValue A9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 公告 公告
+#SAY
+____{FCOLOR=250}16{FCOLOR=255}个人以上同时申请才能获得沃玛号角,需要42级才能加入或\
+者申请\ \
+<申请行会/@提交申请>\
+公告:{FCOLOR=250}<$OUTPUT(A9)>{FCOLOR=255}\
+<$OUTPUT(A0)>
+
+
+              共<$OUTPUT(D6)>页   第{FCOLOR=251}<$OUTPUT(D8)>{FCOLOR=255}页   <上一页/@上一页1>  <下一页/@下一页1>\
+;</@序号(1)></@序号(2)></@序号(3)></@序号(4)></@序号(5)></@序号(6)></@标题(7)></@序号(8)></@序号(9)></@序号(10)></@序号(11)></@序号(12)></@序号(13)></@序号(14)></@序号(15)></@序号(16)></@序号(17)></@序号(18)></@标题(19)></@序号(20)>
+;<跳到X页/@@跳页>
+
+[@提交申请]
+#ACT
+MOV A3 %USERNAME
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" [加入人] [%A3]
+#IF
+!CHECKLEVEL 42
+#ACT
+SYSMSG "对不起,你的等级不够!无法申请"
+BREAK
+#if
+EQUAL D0 0
+#SAY
+<请输入你要的行会名字/@@发文序号>\
+#elseact
+SYSMSG "你已经参加过某个组织,不能再提交申请"
+BREAK
+
+[@@发文序号]
+#ACT
+MOV A1 %INPUTSTR
+#IF
+!EQUAL A1 ""
+#ACT
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN
+INC D0 1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN %D0
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %D0 [行会名字] %A1
+#SAY
+<请输入你的口召宣言/@@发口号>
+#ELSEACT
+SYSMSG "输入的内容不能为空!"
+
+[@@发口号]
+#ACT
+MOV A3 %USERNAME
+MOV A2 %INPUTSTR
+#IF
+!EQUAL A2 ""
+#ACT
+ADDSTR A2 "\"
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN
+LoadValue A1 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %D0 行会名字
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [行会名字] %A1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [内容] %A2
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [申请人] %A3
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" [申请人] [%A3] %D0
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" [加入人] [%A3] %D0
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0  人数 1
+SYSMSG "发表成功!"
+GOTO @申请行会
+#ELSEACT
+SYSMSG "输入的内容不能为空!"
+
+
+[@下一页1]
+#ACT
+MOV A7 %USERNAME
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN
+loadVAlue D3 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 阅读数
+LoadValue D9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" [每页显示数] [每页显示数]
+LoadValue D8 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数
+LoadValue D6 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 总页数
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 上次读 %D3
+#IF
+EQUAL D3 0
+#ACT
+SYSMSG "后面已经没有内容!无需再翻页!"
+break
+#ELSEACT
+GOTO @需翻页1
+
+[@需翻页1]
+#ACT
+INC D8 1
+#IF
+!LARGE D8 %D6
+#ACT
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数 %D8
+loadValue D1 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页下限
+loadValue D7 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页上限
+INC D1 %D9
+INC D7 %D9
+MOV A0 ""
+MOV D2 1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页下限 %D1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页上限 %D7
+GOTO @读取资料
+
+#ELSEACT
+SYSMSG "已经到顶了!"
+BREAK
+
+[@上一页1]
+#ACT
+MOV A7 %USERNAME
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN
+loadVAlue D3 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 上次读
+loadValue D1 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页下限
+loadValue D7 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页上限
+LoadValue D9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" [每页显示数] [每页显示数]
+LoadValue D8 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数
+DEC D8 1
+INC D3 %D9
+#IF
+!SMALL D8 1
+#ACT
+ SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数 %D8
+GOTO @验证D31
+#ELSEACT
+SYSMSG "已经到底了!"
+BREAK
+
+[@验证D31]
+#ACT
+DEC D1 %D9
+DEC D7 %D9
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页下限 %D1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页上限 %D7
+MOV A0 ""
+MOV D2 1
+#IF
+LARGE D3 %D0
+#ACT
+MOV D3 %D0
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 上次读 %D3
+GOTO @读取资料
+break
+#ELSEACT
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 上次读 %D3
+GOTO @读取资料
+break
+
+[@序号()]
+#ACT
+MOV A7 %USERNAME
+MOV D4 %ARG(1)
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 %D4
+LoadValue   A5 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [失效]
+#IF
+!EQUAL A5 "失效"
+#ACT
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" 加入 %A7 %D0
+LoadValue A6 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [行会名字]
+LoadValue A9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [申请人]
+LoadValue A8 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [内容]
+#SAY
+{FCOLOR=251}『行会名字:』{FCOLOR=255}{FCOLOR/9}<$OUTPUT(A6)>{FCOLOR=255}\
+{FCOLOR=251}『申请人:』{FCOLOR=255}{FCOLOR=250}<$OUTPUT(A9)>{FCOLOR=255}\
+{FCOLOR=251}『口号:』{FCOLOR=255}{FCOLOR=250}<$OUTPUT(A8)>{FCOLOR=255}\
+                                        <返回/@返回那里1>  <加入/@加入>\
+                             申请人专用:<获得沃玛号角:人数必须超过16个/@获得>\
+#ELSEACT
+SYSMSG "该操作行会申请已经过期,不能进去查阅!"
+BREAK
+
+[@加入]
+#ACT
+MOV A7 %USERNAME
+LoadValue D7 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" [加入人] [%A7]
+#IF
+!CHECKLEVEL 42
+#ACT
+SYSMSG "对不起,你的等级不够!无法加入"
+BREAK
+#IF
+EQUAL D7 0
+#ACT
+LoadValue D1 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0  人数
+LoadValue  D0 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" 加入 %A7
+LoadValue A8 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [内容]
+ADDSTR A8 "{FCOLOR=251}【加入人员:】"
+ADDSTR A8 %A7
+ADDSTR A8 "{FCOLOR=255}\"
+INC D1 1
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [内容] %A8
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" [加入人] [%A7] %D0
+SaveValue  "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0  人数 %D1
+SYSMSG "加入成功!现在共有<$OUTPUT(D1)>个人提交了申请!"
+goto @返回那里1
+#ELSEACT
+SYSMSG "你已经申请加入过了,不能再加入申请!"
+break
+
+
+[@返回那里1]
+#ACT
+MOV A7 %USERNAME
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" 申请号码 MUN
+loadVAlue D3 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 上次读
+LoadValue D9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationData.txt" [每页显示数] [每页显示数]
+LoadValue D8 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页数
+LoadValue D6 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 总页数
+loadValue D1 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页下限
+loadValue D7 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 页上限
+loadVAlue D2 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 阅读数
+#IF
+EQUAL D2 0
+#ACT
+GOTO @新路1
+#ELSEACT
+INC D3 %D9
+GOTO @验证你1
+
+[@验证你1]
+#IF
+LARGE D3 %D0
+#ACT
+MOV D3 %D0 
+MOV D2 1
+MOV A0 ""
+GOTO @读取资料
+#ELSEACT
+MOV D2 1
+MOV A0 ""
+GOTO @读取资料
+
+[@新路1]
+#ACT
+MOV D2 1
+MOV A0 ""
+GOTO @读取资料
+
+[@获得]
+#ACT
+MOV A7 %USERNAME
+LoadValue D0 "QuestDiary\WINMA_DATA\GuildApplication\TempVariable.txt" %A7 %D4
+LoadValue A9 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [申请人]
+LoadValue D1 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0  人数
+#IF
+EQUAL A9 %A7
+!SMALL D1 15
+#ACT
+GIVE 沃玛号角 1
+GIVE GOLD 5000000
+SYSMSG "恭喜您,希望你在游戏中能快乐和强大!"
+LoadValue A6 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [行会名字]
+ADDSTR A6 "(已结束申请,无法加入!)"
+MOV A9 ""
+SaveValue "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [申请人] %A9
+SaveValue  "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [行会名字] %A6
+SaveValue  "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [失效] 失效
+BREAK
+#ELSEACT
+SYSMSG "人数不足 或者 你不是申请人 或 你已领取 无法领取号角!"
+BREAK
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

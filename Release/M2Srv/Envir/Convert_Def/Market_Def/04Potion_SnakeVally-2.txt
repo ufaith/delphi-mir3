@@ -1,0 +1,83 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Buy/@NQuest01_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_2]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Task/@NQuest01_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_3]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Talk/@NQuest02_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_4]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Talk/@NQuest02_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}

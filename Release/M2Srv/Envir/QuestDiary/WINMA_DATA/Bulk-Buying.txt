@@ -1,0 +1,358 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@piling^&npc]
+{
+#IF
+#ACT
+Mov      A3  0
+Mov      D3  0
+Mov      D4  0
+Mov      D2  0
+MOV      D5  0
+Mov      S1  0
+
+#SAY
+_<[Game Credits/@YXLY^>     <[Game News]/@rwuxx1^>\
+目前为游戏{FCOLOR=250}内测时间{FCOLOR=255},您可以购买所有特殊体验装备:\
+_------------------------------------------------\
+|  <Potions/@药水类+>   |   <Groceries/@杂货类+>   |   <Jewelry/@首饰类+>  |\
+|---------------|----------------|---------------|\
+|  <Weapons/@武器类+>   |   <Armors/@护具类+>   |   <Skill Books/@书籍类+>  |\
+_------------------------------------------------\
+<清理地面垃圾/@clermap^>\
+<返回上一页/@main>\
+<结 束/@exit>\
+
+[@药水类+]
+#SAY
+=物品名称===========价格====可购买1000个==\
+<金创药（特）       [1375]  Enter Quantity/@@goumaiys(金创药（特）,1375)>\
+<魔法药（特）       [1375]  Enter Quantity/@@goumaiys(魔法药（特）,1375)>\
+<太阳水             [550]   Enter Quantity/@@goumaiys(太阳水,550)>\
+<强效太阳水         [1100]  Enter Quantity/@@goumaiys(强效太阳水,1100)>\
+<万年雪霜           [3000]  Enter Quantity/@@goumaiys(万年雪霜,3000)>\
+<攻击神水（中）     [50000] Enter Quantity/@@goumaiys(攻击神水（中）,50000)>\
+<疾风神水（中）     [50000] Enter Quantity/@@goumaiys(疾风神水（中）,50000)>\
+<自然神水（中）     [50000] Enter Quantity/@@goumaiys(自然神水（中）,50000)>\
+<灵魂神水（中）     [50000] Enter Quantity/@@goumaiys(灵魂神水（中）,50000)>\
+<体力强效神水（中） [50000] Enter Quantity/@@goumaiys(体力强效神水（中）,50000)>\
+<返回上一页/@piling^&npc>\
+
+[@杂货类+]
+#SAY
+=物品名称===========价格=====可购买XXX个==\
+<封魔石             [10000]  Enter Quantity/@@goumaiys(封魔石,10000)>\
+<随机传送卷         [110]    Enter Quantity/@@goumaiys(随机传送卷,110)>\
+<回城卷             [550]    Enter Quantity/@@goumaiys(回城卷,550)>\
+<行会回城卷         [1100]   Enter Quantity/@@goumaiys(行会回城卷,1100)>\
+<地牢逃脱卷         [110]    Enter Quantity/@@goumaiys(地牢逃脱卷,110)>\
+<修复油             [880]    Enter Quantity/@@goumaiyx(修复油,880)>\
+<护身符（小）       [550]    Enter Quantity/@@goumaiyx(护身符（小）,550)>\
+<护身符（中）       [3300]   Enter Quantity/@@goumaiyx(护身符（中）,3300)>\
+<护身符（火）       [2200]   Enter Quantity/@@goumaiyx(护身符（火）,2200)>\
+<护身符（冰）       [2200]   Enter Quantity/@@goumaiyx(护身符（冰）,2200)>\
+<护身符（雷）       [2200]   Enter Quantity/@@goumaiyx(护身符（雷）,2200)>\
+<护身符（风）       [2200]   Enter Quantity/@@goumaiyx(护身符（风）,2200)>\
+<护身符（冰）       [2200]   Enter Quantity/@@goumaiyx(护身符（冰）,2200)>\
+<灵魂护身符（小）   [33000]  Enter Quantity/@@goumaiyx(灵魂护身符（小）,33000)>\
+<灵魂护身符（中）   [108900] Enter Quantity/@@goumaiyx(灵魂护身符（中）,108900)>\
+<神圣护身符（小）   [3300]   Enter Quantity/@@goumaiyx(神圣护身符（小）,3300)>\
+<黄色药粉（中）     [3300]   Enter Quantity/@@goumaiyx(黄色药粉（中）,3300)>\
+<灰色药粉（中）     [3300]   Enter Quantity/@@goumaiyx(灰色药粉（中）,3300)>\
+<黄色药粉（小）     [1100]   Enter Quantity/@@goumaiyx(黄色药粉（小）,1100)>\
+<灰色药粉（小）     [1100]   Enter Quantity/@@goumaiyx(灰色药粉（小）,1100)>\
+<返回上一页/@piling^&npc>\
+
+[@书籍类+]
+#SAY
+<战士书籍/@战士书籍$>\
+<法师书籍/@法师书籍$>\
+<道士书籍/@道士书籍$>\
+<返回上一页/@piling^&npc>\
+
+[@战士书籍$]
+#SAY
+战士书籍类:\
+<基本剑术（秘籍）       [3080]/@goumaiyd(基本剑术（秘籍）,3080)>\  
+<攻杀剑术（秘籍）       [6160]/@goumaiyd(攻杀剑术（秘籍）,6160)>\    
+<刺杀剑术（秘籍）       [8360]/@goumaiyd(刺杀剑术（秘籍）,8360)>\    
+<半月弯刀（秘籍）       [11880]/@goumaiyd(半月弯刀（秘籍）,11880)>\
+<烈火剑法（秘籍）       [14080]/@goumaiyd(烈火剑法（秘籍）,14080)>\
+<野蛮冲撞（秘籍）       [13500]/@goumaiyd(野蛮冲撞（秘籍）,13500)>\
+<翔空剑法（秘籍）       [15400]/@goumaiyd(翔空剑法（秘籍）,15400)>\ 
+<莲月剑法（秘籍）       [220000]/@goumaiyd(莲月剑法（秘籍）,220000)>\ 
+<破血狂杀（秘籍）       [220000]/@goumaiyd(破血狂杀（秘籍）,220000)>\
+<斗转星移（秘籍）       [220000]/@goumaiyd(斗转星移（秘籍）,220000)>\
+<铁布衫（秘籍）         [220000]/@goumaiyd(铁布衫（秘籍）,220000)>\
+<乾坤大挪移（秘籍）     [220000]/@goumaiyd(乾坤大挪移（秘籍）,220000)>\
+<十方斩（秘籍）         [220000]/@goumaiyd(十方斩（秘籍）,220000)>\
+<返回上一页/@书籍类+%>\
+
+[@法师书籍$]
+#SAY
+法师书籍类：\
+<疾光电影（秘籍）       [9240]/@goumaiyd(疾光电影（秘籍）,9240)>\          
+<冰沙掌（秘籍）         [9680]/@goumaiyd(冰沙掌（秘籍）,9680)>\        
+<风震天（秘籍）         [10120]/@goumaiyd(风震天（秘籍）,10120)>\       
+<火墙（秘籍）           [10560]/@goumaiyd(火墙（秘籍）,10560)>\           
+<圣言术（秘籍）         [110000]/@goumaiyd(圣言术（秘籍）,110000)>\
+<火球术（秘籍）         [3080]/@goumaiyd(火球术（秘籍）,3080)>\   
+<霹雳掌（秘籍）         [3520]/@goumaiyd(霹雳掌（秘籍）,3520)>\   
+<冰月神掌（秘籍）       [3960]/@goumaiyd(冰月神掌（秘籍）,3960)>\
+<风掌（秘籍）           [4400]/@goumaiyd(风掌（秘籍）,4400)>\ 
+<抗拒火环（秘籍）       [5280]/@goumaiyd(抗拒火环（秘籍）,5280)>\  
+<诱惑之光（秘籍）       [5720]/@goumaiyd(诱惑之光（秘籍）,5720)>\ 
+<瞬息移动（秘籍）       [6160]/@goumaiyd(瞬息移动（秘籍）,6160)>\   
+<大火球（秘籍）         [6600]/@goumaiyd(大火球（秘籍）,6600)>\ 
+<雷电术（秘籍）         [7040]/@goumaiyd(雷电术（秘籍）,7040)>\    
+<冰月震天（秘籍）       [7480]/@goumaiyd(冰月震天（秘籍）,7480)>\  
+<击风（秘籍）           [7920]/@goumaiyd(击风（秘籍）,7920)>\  
+<地狱火（秘籍）         [8800]/@goumaiyd(地狱火（秘籍）,8800)>\  
+<异形换位（秘籍）       [110000]/@goumaiyd(异形换位（秘籍）,110000)>\   
+<冰咆哮（秘籍）         [220000]/@goumaiyd(冰咆哮（秘籍）,220000)>\   
+<爆裂火焰（秘籍）       [220000]/@goumaiyd(爆裂火焰（秘籍）,220000)>\       
+<龙卷风（秘籍）         [220000]/@goumaiyd(龙卷风（秘籍）,220000)>\ 
+<魔法盾（秘籍）         [220000]/@goumaiyd(魔法盾（秘籍）,220000)>\
+<地狱雷光（秘籍）       [220000]/@goumaiyd(地狱雷光（秘籍）,220000)>\
+<魄冰刺（秘籍）         [220000]/@goumaiyd(魄冰刺（秘籍）,220000)>\
+<怒神霹雳（秘籍）       [220000]/@goumaiyd(怒神霹雳（秘籍）,220000)>\
+<焰天火雨（秘籍）       [220000]/@goumaiyd(焰天火雨（秘籍）,220000)>\
+<凝血离魂（秘籍）       [220000]/@goumaiyd(凝血离魂（秘籍）,220000)>\
+<返回上一页/@书籍类+%>\
+
+[@道士书籍$]
+#SAY
+道士书籍类:\
+<治愈术（秘籍）         [3080]/@goumaiyd(治愈术（秘籍）,3080)>\
+<精神力战法（秘籍）     [3520]/@goumaiyd(精神力战法（秘籍）,3520)>\
+<施毒术（秘籍）         [5280]/@goumaiyd(施毒术（秘籍）,5280)>\ 
+<灵魂火符（秘籍）       [5720]/@goumaiyd(灵魂火符（秘籍）,5720)>\      
+<月魂断玉（秘籍）       [6160]/@goumaiyd(月魂断玉（秘籍）,6160)>\   
+<召唤骷髅（秘籍）       [7480]/@goumaiyd(召唤骷髅（秘籍）,7480)>\  
+<隐身术（秘籍）         [8800]/@goumaiyd(隐身术（秘籍）,8800)>\   
+<召唤神兽（秘籍）       [220000]/@goumaiyd(召唤神兽（秘籍）,220000)>\  
+<回生术（秘籍）         [220000]/@goumaiyd(回生术（秘籍）,220000)>\
+<幽灵盾（秘籍）         [9240]/@goumaiyd(幽灵盾（秘籍）,9240)>\
+<集体隐身术（秘籍）     [10120]/@goumaiyd(集体隐身术（秘籍）,10120)>\    
+<月魂灵波（秘籍）       [10560]/@goumaiyd(月魂灵波（秘籍）,10560)>\       
+<神圣战甲术（秘籍）     [11000]/@goumaiyd(神圣战甲术（秘籍）,11000)>\  
+<困魔咒（秘籍）         [11800]/@goumaiyd(困魔咒（秘籍）,11800)>\   
+<空拳刀法（秘籍）       [12320]/@goumaiyd(空拳刀法（秘籍）,12320)>\ 
+<强魔震法（秘籍）       [12760]/@goumaiyd(强魔震法（秘籍）,12760)>\       
+<群体治愈术（秘籍）     [13640]/@goumaiyd(群体治愈术（秘籍）,13640)>\
+<超强召唤骷髅（秘籍）   [14520]/@goumaiyd(超强召唤骷髅（秘籍）,14520)>\       
+<猛虎强势（秘籍）       [110000]/@goumaiyd(猛虎强势（秘籍）,110000)>\ 
+<阴阳法环（秘籍）       [220000]/@goumaiyd(阴阳法环（秘籍）,220000)>\
+<妙影无踪（秘籍）       [220000]/@goumaiyd(妙影无踪（秘籍）,220000)>\
+<移花接玉（秘籍）       [220000]/@goumaiyd(移花接玉（秘籍）,220000)>\
+<云寂术（秘籍）         [220000]/@goumaiyd(云寂术（秘籍）,220000)>\
+<返回上一页/@书籍类+>\
+
+[@首饰类+]
+#SAY
+=物品名称===========价格===可购买5个==\
+<技巧项链          [11000] Enter Quantity/@@goumaiyx(技巧项链,11000)>\
+<毁灭魔链（至尊）  [11000] Enter Quantity/@@goumaiyx(毁灭魔链（至尊）,11000)>\
+<五行神镜（至尊）  [11000] Enter Quantity/@@goumaiyx(五行神镜（至尊）,11000)>\
+<乾坤一气（至尊）  [11000] Enter Quantity/@@goumaiyx(乾坤一气（至尊）,11000)>\
+<战天项链          [11000] Enter Quantity/@@goumaiyx(战天项链,11000)>\
+<战天手镯          [11000] Enter Quantity/@@goumaiyx(战天手镯,11000)>\
+<战天戒指          [11000] Enter Quantity/@@goumaiyx(战天戒指,11000)>\
+<星辰项链          [11000] Enter Quantity/@@goumaiyx(星辰项链,11000)>\
+<星辰手镯          [11000] Enter Quantity/@@goumaiyx(星辰手镯,11000)>\
+<星辰之戒          [11000] Enter Quantity/@@goumaiyx(星辰之戒,11000)>\
+<圣心项链          [11000] Enter Quantity/@@goumaiyx(圣心项链,11000)>\
+<圣心手镯          [11000] Enter Quantity/@@goumaiyx(圣心手镯,11000)>\
+<圣心之戒          [11000] Enter Quantity/@@goumaiyx(圣心之戒,11000)>\
+<狂战戒指          [11000] Enter Quantity/@@goumaiyx(狂战戒指,11000)>\
+<狂战项链          [11000] Enter Quantity/@@goumaiyx(狂战项链,11000)>\
+<狂战手镯          [11000] Enter Quantity/@@goumaiyx(狂战手镯,11000)>\
+<仁者戒指          [11000] Enter Quantity/@@goumaiyx(仁者戒指,11000)>\
+<仁者项链          [11000] Enter Quantity/@@goumaiyx(仁者项链,11000)>\
+<仁者手镯          [11000] Enter Quantity/@@goumaiyx(仁者手镯,11000)>\
+<焰魔戒指          [11000] Enter Quantity/@@goumaiyx(焰魔戒指,11000)>\
+<焰魔项链          [11000] Enter Quantity/@@goumaiyx(焰魔项链,11000)>\
+<焰魔手镯          [11000] Enter Quantity/@@goumaiyx(焰魔手镯,11000)>\
+<祈祷戒指          [25300] Enter Quantity/@@goumaiyx(祈祷戒指,25300)>\
+<祈祷手镯          [25300] Enter Quantity/@@goumaiyx(祈祷手镯,25300)>\
+;<祈祷项链          [25300] Enter Quantity/@@goumaiyx(祈祷项链,25300)>\
+<血花落照          [11000] Enter Quantity/@@goumaiyx(血花落照,11000)>\
+<黑天暗云          [11000] Enter Quantity/@@goumaiyx(黑天暗云,11000)>\
+<九宫云雾          [11000] Enter Quantity/@@goumaiyx(九宫云雾,11000)>\
+<万里碧海          [11000] Enter Quantity/@@goumaiyx(万里碧海,11000)>\
+<神勇之物          [11000] Enter Quantity/@@goumaiyx(神勇之物,11000)>\
+<智慧之物          [11000] Enter Quantity/@@goumaiyx(智慧之物,11000)>\
+<正义之物          [11000] Enter Quantity/@@goumaiyx(正义之物,11000)>\
+<节制之物          [11000] Enter Quantity/@@goumaiyx(节制之物,11000)>\
+<决断之物          [11000] Enter Quantity/@@goumaiyx(决断之物,11000)>\
+;<麻痹戒指          [11000] Enter Quantity/@@goumaiyx(麻痹戒指,11000)>\
+;<护身戒指          [11000] Enter Quantity/@@goumaiyx(护身戒指,11000)>\
+;<隐身戒指          [11000] Enter Quantity/@@goumaiyx(隐身戒指,11000)>\
+<返回上一页/@piling^&npc>\
+
+[@武器类+]
+#SAY
+=物品名称===========价格=\
+<影魅之刃       [25300]/@goumaiyd(影魅之刃,25300)>\
+<擎天           [25300]/@goumaiyd(擎天,25300)>\
+<碎梦           [25300]/@goumaiyd(碎梦,25300)>\
+<清风           [25300]/@goumaiyd(清风,25300)>\
+<狂龙爪         [25300]/@goumaiyd(狂龙爪,25300)>\
+<破天斩         [25300]/@goumaiyd(破天斩,25300)>\
+<祈祷之刃       [25300]/@goumaiyd(祈祷之刃,25300)>\
+<飞龙剑（火）   [25300]/@goumaiyd(飞龙剑（火）,25300)>\
+<飞龙剑（雷）   [25300]/@goumaiyd(飞龙剑（雷）,25300)>\
+<飞龙剑（风）   [25300]/@goumaiyd(飞龙剑（风）,25300)>\
+<飞龙剑（冰）   [25300]/@goumaiyd(飞龙剑（冰）,25300)>\
+<飞龙剑（神圣） [25300]/@goumaiyd(飞龙剑（神圣）,25300)>\
+<飞龙剑（幻影） [25300]/@goumaiyd(飞龙剑（幻影）,25300)>\
+<飞龙剑（暗黑） [25300]/@goumaiyd(飞龙剑（暗黑）,25300)>\
+<屠龙           [25300]/@goumaiyd(屠龙,25300)>\
+<破山剑         [25300]/@goumaiyd(破山剑,25300)>\
+<天神法杖       [25300]/@goumaiyd(天神法杖,25300)>\
+<泰轮拂尘       [25300]/@goumaiyd(泰轮拂尘,25300)>\
+<逍遥扇         [25300]/@goumaiyd(逍遥扇,25300)>\
+<黑铁           [55000] Enter Quantity/@@goumaiyx(黑铁,55000)>\
+<铁矿           [1100]  Enter Quantity/@@goumaiyx(铁矿,1100)>\
+<铜矿           [950]   Enter Quantity/@@goumaiyx(铜矿,550)>\
+<金矿           [6600]  Enter Quantity/@@goumaiyx(金矿,6600)>\
+<银矿           [2750]  Enter Quantity/@@goumaiyx(银矿,2750)>\
+<钢玉石         [110W]  Enter Quantity/@@goumaiyx(钢玉石,1100000)>\
+<返回上一页/@piling^&npc>\
+
+[@护具类+]
+#SAY
+=物品名称===========价格=\
+<祈祷头盔          [20000]/@goumaiyd(祈祷头盔,20000)>\
+<合金战盔          [20000]/@goumaiyd(合金战盔,20000)>\
+<麒麟头盔          [20000]/@goumaiyd(麒麟头盔,20000)>\
+<血色头盔          [20000]/@goumaiyd(血色头盔,20000)>\
+<将军头盔          [20000]/@goumaiyd(将军头盔,20000)>\
+<战神头盔          [11000]/@goumaiyd(战神头盔,11000)>\
+<绝世极品战甲（男）[63000]/@goumaiyd(绝世极品战甲（男）,63000)>\
+<绝世极品战甲（女）[63000]/@goumaiyd(绝世极品战甲（女）,63000)>\
+<天赐战甲（男）    [50000]/@goumaiyd(天赐战甲（男）,50000)>\
+<天赐战甲（女）    [50000]/@goumaiyd(天赐战甲（女）,50000)>\
+<精制黄金靴        [23000]/@goumaiyd(精制黄金靴,23000)>\
+<精制倚天靴        [23000]/@goumaiyd(精制倚天靴,23000)>\
+<精制青龙靴        [23000]/@goumaiyd(精制青龙靴,23000)>\
+<百战之靴          [23000]/@goumaiyd(百战之靴,23000)>\
+<白玉靴            [23000]/@goumaiyd(白玉靴,23000)>\
+<返回上一页/@piling^&npc>\
+;;----------跳转------------------------
+[@YXLY^]
+#CALL [WINMA_ACT\ConsumerCredits\Credits.txt] @积分说明
+
+[@rwuxx1^]
+#CALL [WINMA_ACT\TaskSystem\MissionStatement.txt] @任务情报X
+
+[@clermap^]
+#CALL [WINMA_DATA\GroundClearance.txt] @cleardaox
+
+;;-----------购买批量开始---------------
+[@@goumaiys()]
+#IF
+checkbaggage
+#ACT
+Mov        A3     %ARG(1)           ;;物品
+Mov        D3     %ARG(2)           ;;金钱
+
+#IF
+#ACT
+mov  D4  %INPUTSTR
+#IF 
+Small D4 1 
+#SAY 
+您要买多少个{FCOLOR=250} <$OUTPUT(A3)> {FCOLOR=255}？\\ 
+请输入数值 {FCOLOR=250}1 至 1000{FCOLOR=249}\
+\
+<返回上一页/@piling^&npc>\
+#ACT 
+break 
+
+#IF 
+Large D4 1000 
+#SAY 
+一次购买药品的最大数量为{FCOLOR=250} 1000 {FCOLOR=255}个！\\ 
+<返回上一页/@piling^&npc>\
+#ACT 
+break 
+
+#IF
+#ACT
+MUL D2 %D3 %D4
+#IF
+CHECKBAGSIZE 1
+checkgold   %D2
+#ACT
+give   %A3  %D4
+take  金币  %D2
+Mov    S1  0
+SYSMSG "您成功购买<$OUTPUT(D4)>个<$OUTPUT(A3)>，共花费<$OUTPUT(D2)>金币"
+#ELSEACT
+SYSMSG "您没有足够的金币或者包裹位置不够"
+GOTO @piling^&npc
+;;-----------购买单个开始---------------
+[@goumaiyd()]
+#IF
+#ACT
+Mov        A3     %ARG(1)           ;;物品
+Mov        D3     %ARG(2)           ;;金钱
+mov  D4  1
+MUL D2 %D3 %D4
+#IF
+CHECKBAGSIZE 1
+checkgold   %D2
+#ACT
+give   %A3  %D4
+take  金币  %D2
+SYSMSG "您成功购买<$OUTPUT(D4)>个<$OUTPUT(A3)>，共花费<$OUTPUT(D2)>金币"
+#ELSEACT
+SYSMSG "您没有足够的金币或者包裹位置不够"
+GOTO @piling^&npc
+;;-----------购买小批量开始---------------
+[@@goumaiyx()]
+#IF
+checkbaggage
+#ACT
+Mov        A3     %ARG(1)           ;;物品
+Mov        D3     %ARG(2)           ;;金钱
+
+#IF
+#ACT
+mov  D4  %INPUTSTR
+
+#IF 
+Small D4 1 
+#SAY 
+您要买多少个{FCOLOR=250} <$OUTPUT(A3)> {FCOLOR=255}？\\ 
+请输入数值 {FCOLOR=250}1 至 5{FCOLOR=249}\
+\
+<返回上一页/@piling^&npc>\
+#ACT 
+break 
+
+#IF 
+Large D4 5 
+#SAY 
+一次购买药品的最大数量为{FCOLOR=250} 5 {FCOLOR=255}个！\\ 
+<返回上一页/@piling^&npc>\
+#ACT 
+break 
+
+#IF
+#ACT
+MUL D2 %D3 %D4
+#IF
+CHECKBAGSIZE %D4
+checkgold   %D2
+#ACT
+give   %A3  %D4
+take  金币  %D2
+SYSMSG "您成功购买<$OUTPUT(D4)>个<$OUTPUT(A3)>，共花费<$OUTPUT(D2)>金币"
+#ELSEACT
+SYSMSG "您没有足够的金币或者包裹位置不够"
+GOTO @piling^&npc
+
+}
+
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

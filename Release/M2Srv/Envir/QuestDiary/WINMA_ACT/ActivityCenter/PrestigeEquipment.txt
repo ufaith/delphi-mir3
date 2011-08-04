@@ -1,0 +1,2024 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@换装备了]
+{
+#say
+您目前有[<$shengwang>]点声望。\
+
+;只要你有那东西，就可以从我这里兑换到你想要的东西。over……\
+
+;魅力装备合成：\
+;诺玛类（初级首饰）=三件同样首饰+200万+10块封魔石\
+;武圣类（中级首饰）=三件同样首饰+5声望+50块封魔石\
+;冰城类（高级首饰）=三件同样首饰+10声望+100块封魔石\
+;幻想装备合成：\
+;诺玛类（初级首饰）=三件同样魅力首饰+1000万+100块封魔石\
+;武圣类（中级首饰）=三件同样魅力首饰+15声望+300块封魔石\
+;冰城类（高级首饰）=三件同样魅力首饰+30声望+500块封魔石\
+;传说装备合成：\
+;诺玛类（初级首饰）=三件同样幻想首饰+5000万+300块封魔石\
+;武圣类（中级首饰）=三件同样幻想首饰+30声望+500块封魔石\
+;冰城类（高级首饰）=三件同样幻想首饰+60声望+1000块封魔石\
+;\
+;魅力装备需要等级达到60级才可佩带\
+;幻想装备需要等级达到65级且声望超过30才可佩带\
+;传说装备需要等级达到72级，声望超过80，并且必须是沙城城员才可佩带\
+\
+<我要换新装备/@huan1>\
+<考虑考虑/@exit>
+
+[@huan1]
+#say
+换<破荒项链（魅力）/@phxlml>   <金棱手镯（魅力）/@jlszml>   <师承戒指（魅力）/@scjzml>\
+  <破荒项链（幻想）/@phxlhx>   <金棱手镯（幻想）/@jlszhx>   <师承戒指（幻想）/@scjzhx>\
+  <破荒项链（传说）/@phxlcs>   <金棱手镯（传说）/@jlszcs>   <师承戒指（传说）/@scjzcs>\
+\
+\
+换<毁灭魔链（魅力）/@hmmlml>   <火玉手镯（魅力）/@hyszml>   <武圣之戒（魅力）/@wszjml>\
+  <毁灭魔链（幻想）/@hmmlhx>   <火玉手镯（幻想）/@hyszhx>   <武圣之戒（幻想）/@wszjhx>\
+  <毁灭魔链（传说）/@hmmlcs>   <火玉手镯（传说）/@hyszcs>   <武圣之戒（传说）/@wszjcs>\
+\
+\
+换<狂战项链（魅力）/@kzxlml>   <狂战手镯（魅力）/@kzszml>   <狂战戒指（魅力）/@kzjzml>\
+  <狂战项链（幻想）/@kzxlhx>   <狂战手镯（幻想）/@kzszhx>   <狂战戒指（幻想）/@kzjzhx>\
+  <狂战项链（传说）/@kzxlcs>   <狂战手镯（传说）/@kzszcs>   <狂战戒指（传说）/@kzjzcs>\
+\
+\
+换<魔云项链（魅力）/@myxlml>   <思过手镯（魅力）/@sgszml>   <龙马戒指（魅力）/@lmjzml>\
+  <魔云项链（幻想）/@myxlhx>   <思过手镯（幻想）/@sgszhx>   <龙马戒指（幻想）/@lmjzhx>\
+  <魔云项链（传说）/@myxlcs>   <思过手镯（传说）/@sgszcs>   <龙马戒指（传说）/@lmjzcs>\
+\
+\
+换<五行神镜（魅力）/@wxsjml>   <毁灭手镯（魅力）/@hmszml>  <七彩金环（魅力）/@qcjhml>\
+  <五行神镜（幻想）/@wxsjhx>   <毁灭手镯（幻想）/@hmszhx>  <七彩金环（幻想）/@qcjhhx>\
+  <五行神镜（传说）/@wxsjcs>   <毁灭手镯（传说）/@hmszcs>  <七彩金环（传说）/@qcjhcs>\
+\
+\
+换<焰魔项链（魅力）/@ymxlml>   <焰魔手镯（魅力）/@ymszml>  <焰魔戒指（魅力）/@ymjzml>\
+  <焰魔项链（幻想）/@ymxlhx>   <焰魔手镯（幻想）/@ymszhx>  <焰魔戒指（幻想）/@ymjzhx>\
+  <焰魔项链（传说）/@ymxlcs>   <焰魔手镯（传说）/@ymszcs>  <焰魔戒指（传说）/@ymjzcs>\
+\
+\
+换<定心项链（魅力）/@dxxlml>   <世尊手镯（魅力）/@szszml>  <青云戒指（魅力）/@qyjzml>\
+  <定心项链（幻想）/@dxxlhx>   <世尊手镯（幻想）/@szszhx>  <青云戒指（幻想）/@qyjzhx>\
+  <定心项链（传说）/@dxxlcs>   <世尊手镯（传说）/@szszcs>  <青云戒指（传说）/@qyjzcs>\
+\
+\
+换<乾坤一气（魅力）/@qkyqml>   <如来手镯（魅力）/@rlszml>  <天机戒指（魅力）/@tjjzml>\
+  <乾坤一气（幻想）/@qkyqhx>   <如来手镯（幻想）/@rlszhx>  <天机戒指（幻想）/@tjjzhx>\
+  <乾坤一气（传说）/@qkyqcs>   <如来手镯（传说）/@rlszcs>  <天机戒指（传说）/@tjjzcs>\
+\
+\
+换<仁者项链（魅力）/@rzxlml>   <仁者手镯（魅力）/@rzszml>  <仁者戒指（魅力）/@rzjzml>\
+  <仁者项链（幻想）/@rzxlhx>   <仁者手镯（幻想）/@rzszhx>  <仁者戒指（幻想）/@rzjzhx>\
+  <仁者项链（传说）/@rzxlcs>   <仁者手镯（传说）/@rzszcs>  <仁者戒指（传说）/@rzjzcs>\
+\
+\
+<离开/@exit>
+
+[@phxlml]
+#if
+#act
+#if
+checkitem 破荒项链 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 破荒项链 3
+take gold 2000000
+take 封魔石 10
+give 破荒项链（魅力） 1
+
+#say
+恭喜您兑换[破荒项链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[破荒项链]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@jlszml]
+#if
+#act
+#if
+checkitem 金棱手镯 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 金棱手镯 3
+take gold 2000000
+take 封魔石 10
+give 金棱手镯（魅力） 1
+
+#say
+恭喜您兑换[金棱手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[金棱手镯]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@scjzml]
+#if
+#act
+#if
+checkitem 师承戒指 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 师承戒指 3
+take gold 2000000
+take 封魔石 10
+give 师承戒指（魅力） 1
+
+#say
+恭喜您兑换[师承戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[师承戒指]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@hmmlml]
+#if
+#act
+#if
+checkitem 毁灭魔链 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 毁灭魔链 3
+decshengwang 5
+take 封魔石 50
+give 毁灭魔链（魅力） 1
+
+#say
+恭喜您兑换[毁灭魔链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[毁灭魔链]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@hyszml]
+#if
+#act
+#if
+checkitem 火玉手镯 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 火玉手镯 3
+decshengwang 5
+take 封魔石 50
+give 火玉手镯（魅力） 1
+
+#say
+恭喜您兑换[火玉手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[火玉手镯]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@wszjml]
+#if
+#act
+#if
+checkitem 武圣之戒 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 武圣之戒 3
+decshengwang 5
+take 封魔石 50
+give 武圣之戒（魅力） 1
+
+#say
+恭喜您兑换[武圣之戒（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[武圣之戒]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@kzxlml]
+#if
+#act
+#if
+checkitem 狂战项链 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 狂战项链 3
+decshengwang 10
+take 封魔石 100
+give 狂战项链（魅力） 1
+
+#say
+恭喜您兑换[狂战项链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战项链]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@kzszml]
+#if
+#act
+#if
+checkitem 狂战手镯 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 狂战手镯 3
+decshengwang 10
+take 封魔石 100
+give 狂战手镯（魅力） 1
+
+#say
+恭喜您兑换[狂战手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战手镯]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@kzjzml]
+#if
+#act
+#if
+checkitem 狂战戒指 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 狂战戒指 3
+decshengwang 10
+take 封魔石 100
+give 狂战戒指（魅力） 1
+
+#say
+恭喜您兑换[狂战戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战戒指]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@myxlml]
+#if
+#act
+#if
+checkitem 魔云项链 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 魔云项链 3
+take gold 2000000
+take 封魔石 10
+give 魔云项链（魅力） 1
+
+#say
+恭喜您兑换[魔云项链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[魔云项链]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@sgszml]
+#if
+#act
+#if
+checkitem 思过手镯 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 思过手镯 3
+take gold 2000000
+take 封魔石 10
+give 思过手镯（魅力） 1
+
+#say
+恭喜您兑换[思过手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[思过手镯]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@lmjzml]
+#if
+#act
+#if
+checkitem 龙马戒指 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 龙马戒指 3
+take gold 2000000
+take 封魔石 10
+give 龙马戒指（魅力） 1
+
+#say
+恭喜您兑换[龙马戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[龙马戒指]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@wxsjml]
+#if
+#act
+#if
+checkitem 五行神镜 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 五行神镜 3
+decshengwang 5
+take 封魔石 50
+give 五行神镜（魅力） 1
+
+#say
+恭喜您兑换[五行神镜（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[五行神镜]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@hmszml]
+#if
+#act
+#if
+checkitem 毁灭手镯 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 毁灭手镯 3
+decshengwang 5
+take 封魔石 50
+give 毁灭手镯（魅力） 1
+
+#say
+恭喜您兑换[毁灭手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[毁灭手镯]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@qcjhml]
+#if
+#act
+#if
+checkitem 七彩金环 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 七彩金环 3
+decshengwang 5
+take 封魔石 50
+give 七彩金环（魅力） 1
+
+#say
+恭喜您兑换[七彩金环（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[七彩金环]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@ymxlml]
+#if
+#act
+#if
+checkitem 焰魔项链 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 焰魔项链 3
+decshengwang 10
+take 封魔石 100
+give 焰魔项链（魅力） 1
+
+#say
+恭喜您兑换[焰魔项链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔项链]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@ymszml]
+#if
+#act
+#if
+checkitem 焰魔手镯 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 焰魔手镯 3
+decshengwang 10
+take 封魔石 100
+give 焰魔手镯（魅力） 1
+
+#say
+恭喜您兑换[焰魔手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔手镯]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@ymjzml]
+#if
+#act
+#if
+checkitem 焰魔戒指 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 焰魔戒指 3
+decshengwang 10
+take 封魔石 100
+give 焰魔戒指（魅力） 1
+
+#say
+恭喜您兑换[焰魔戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔戒指]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@dxxlml]
+#if
+#act
+#if
+checkitem 定心项链 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 定心项链 3
+take gold 2000000
+take 封魔石 10
+give 定心项链（魅力） 1
+
+#say
+恭喜您兑换[定心项链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[定心项链]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@szszml]
+#if
+#act
+#if
+checkitem 世尊手镯 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 世尊手镯 3
+take gold 2000000
+take 封魔石 10
+give 世尊手镯（魅力） 1
+
+#say
+恭喜您兑换[世尊手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[世尊手镯]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@qyjzml]
+#if
+#act
+#if
+checkitem 青云戒指 3
+checkgold 2000000
+checkitem 封魔石 10
+#act
+take 青云戒指 3
+take gold 2000000
+take 封魔石 10
+give 青云戒指（魅力） 1
+
+#say
+恭喜您兑换[青云戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[青云戒指]数量不足3个。\
+2.您的金币数量不足200万。\
+3.您包里的封魔石不足10个。\
+<离开/@exit>
+
+[@qyjzhx]
+#if
+#act
+#if
+checkitem 青云戒指（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 青云戒指（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 青云戒指（幻想） 1
+
+#say
+恭喜您兑换[青云戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[青云戒指]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@qkyqml]
+#if
+#act
+#if
+checkitem 乾坤一气 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 乾坤一气 3
+decshengwang 5
+take 封魔石 50
+give 乾坤一气（魅力） 1
+
+#say
+恭喜您兑换[乾坤一气（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[乾坤一气]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@rlszml]
+#if
+#act
+#if
+checkitem 如来手镯 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 如来手镯 3
+decshengwang 5
+take 封魔石 50
+give 如来手镯（魅力） 1
+
+#say
+恭喜您兑换[如来手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[如来手镯]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@tjjzml]
+#if
+#act
+#if
+checkitem 天机戒指 3
+checkshengwang 5
+checkitem 封魔石 50
+#act
+take 天机戒指 3
+decshengwang 5
+take 封魔石 50
+give 天机戒指（魅力） 1
+
+#say
+恭喜您兑换[天机戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[天机戒指]数量不足3个。\
+2.您的声望不足5点。\
+3.您包里的封魔石不足50个。\
+<离开/@exit>
+
+[@rzxlml]
+#if
+#act
+#if
+checkitem 仁者项链 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 仁者项链 3
+decshengwang 10
+take 封魔石 100
+give 仁者项链（魅力） 1
+
+#say
+恭喜您兑换[仁者项链（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者项链]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@rzszml]
+#if
+#act
+#if
+checkitem 仁者手镯 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 仁者手镯 3
+decshengwang 10
+take 封魔石 100
+give 仁者手镯（魅力） 1
+
+#say
+恭喜您兑换[仁者手镯（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者手镯]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@rzjzml]
+#if
+#act
+#if
+checkitem 仁者戒指 3
+checkshengwang 10
+checkitem 封魔石 100
+#act
+take 仁者戒指 3
+decshengwang 10
+take 封魔石 100
+give 仁者戒指（魅力） 1
+
+#say
+恭喜您兑换[仁者戒指（魅力）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者戒指]数量不足3个。\
+2.您的声望不足10点。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@phxlhx]
+#if
+#act
+#if
+checkitem 破荒项链（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 破荒项链（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 破荒项链（幻想） 1
+
+#say
+恭喜您兑换[破荒项链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[破荒项链（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@jlszhx]
+#if
+#act
+#if
+checkitem 金棱手镯（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 金棱手镯（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 金棱手镯（幻想） 1
+
+#say
+恭喜您兑换[金棱手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[金棱手镯（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@scjzhx]
+#if
+#act
+#if
+checkitem 师承戒指（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 师承戒指（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 师承戒指（幻想） 1
+
+#say
+恭喜您兑换[师承戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[师承戒指（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@hmmlhx]
+#if
+#act
+#if
+checkitem 毁灭魔链（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 毁灭魔链（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 毁灭魔链（幻想） 1
+
+#say
+恭喜您兑换[毁灭魔链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[毁灭魔链]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@hyszhx]
+#if
+#act
+#if
+checkitem 火玉手镯（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 火玉手镯（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 火玉手镯（幻想） 1
+
+#say
+恭喜您兑换[火玉手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[火玉手镯]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@wszjhx]
+#if
+#act
+#if
+checkitem 武圣之戒（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 武圣之戒（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 武圣之戒（幻想） 1
+
+#say
+恭喜您兑换[武圣之戒（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[武圣之戒]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@kzxlhx]
+#if
+#act
+#if
+checkitem 狂战项链（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 狂战项链（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 狂战项链（幻想） 1
+
+#say
+恭喜您兑换[狂战项链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战项链]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@kzszhx]
+#if
+#act
+#if
+checkitem 狂战手镯（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 狂战手镯（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 狂战手镯（幻想） 1
+
+#say
+恭喜您兑换[狂战手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战手镯]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@kzjzhx]
+#if
+#act
+#if
+checkitem 狂战戒指（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 狂战戒指（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 狂战戒指（幻想） 1
+
+#say
+恭喜您兑换[狂战戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战戒指]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@myxlhx]
+#if
+#act
+#if
+checkitem 魔云项链（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 魔云项链（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 魔云项链（幻想） 1
+
+#say
+恭喜您兑换[魔云项链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[魔云项链（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@sgszhx]
+#if
+#act
+#if
+checkitem 思过手镯（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 思过手镯（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 思过手镯（幻想） 1
+
+#say
+恭喜您兑换[思过手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[思过手镯（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@lmjzhx]
+#if
+#act
+#if
+checkitem 龙马戒指（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 龙马戒指（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 龙马戒指（幻想） 1
+
+#say
+恭喜您兑换[龙马戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[龙马戒指（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@wxsjhx]
+#if
+#act
+#if
+checkitem 五行神镜（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 五行神镜（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 五行神镜（幻想） 1
+
+#say
+恭喜您兑换[五行神镜（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[五行神镜（魅力）]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@hmszhx]
+#if
+#act
+#if
+checkitem 毁灭手镯（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 毁灭手镯（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 毁灭手镯（幻想） 1
+
+#say
+恭喜您兑换[毁灭手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[毁灭手镯（魅力）]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@qcjhhx]
+#if
+#act
+#if
+checkitem 七彩金环（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 七彩金环（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 七彩金环（幻想） 1
+
+#say
+恭喜您兑换[七彩金环（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[七彩金环（魅力）]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@ymxlhx]
+#if
+#act
+#if
+checkitem 焰魔项链（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 焰魔项链（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 焰魔项链（幻想） 1
+
+#say
+恭喜您兑换[焰魔项链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔项链]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@ymszhx]
+#if
+#act
+#if
+checkitem 焰魔手镯（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 焰魔手镯（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 焰魔手镯（幻想） 1
+
+#say
+恭喜您兑换[焰魔手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔手镯]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@ymjzhx]
+#if
+#act
+#if
+checkitem 焰魔戒指（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 焰魔戒指（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 焰魔戒指（幻想） 1
+
+#say
+恭喜您兑换[焰魔戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔戒指]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@dxxlhx]
+#if
+#act
+#if
+checkitem 定心项链（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 定心项链（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 定心项链（幻想） 1
+
+#say
+恭喜您兑换[定心项链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[定心项链（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@szszhx]
+#if
+#act
+#if
+checkitem 世尊手镯（魅力） 3
+checkgold 10000000
+checkitem 封魔石 100
+#act
+take 世尊手镯（魅力） 3
+take gold 10000000
+take 封魔石 100
+give 世尊手镯（幻想） 1
+
+#say
+恭喜您兑换[世尊手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[世尊手镯（魅力）]数量不足3个。\
+2.您的金币数量不足1000万。\
+3.您包里的封魔石不足100个。\
+<离开/@exit>
+
+[@qkyqhx]
+#if
+#act
+#if
+checkitem 乾坤一气（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 乾坤一气（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 乾坤一气（幻想） 1
+
+#say
+恭喜您兑换[乾坤一气（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[乾坤一气（魅力）]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@rlszhx]
+#if
+#act
+#if
+checkitem 如来手镯（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 如来手镯（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 如来手镯（幻想） 1
+
+#say
+恭喜您兑换[如来手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[如来手镯（魅力）]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@tjjzhx]
+#if
+#act
+#if
+checkitem 天机戒指（魅力） 3
+checkshengwang 15
+checkitem 封魔石 300
+#act
+take 天机戒指（魅力） 3
+decshengwang 15
+take 封魔石 300
+give 天机戒指（幻想） 1
+
+#say
+恭喜您兑换[天机戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[天机戒指（魅力）]数量不足3个。\
+2.您的声望不足15点。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@rzxlhx]
+#if
+#act
+#if
+checkitem 仁者项链（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 仁者项链（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 仁者项链（幻想） 1
+
+#say
+恭喜您兑换[仁者项链（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者项链]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@rzszhx]
+#if
+#act
+#if
+checkitem 仁者手镯（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 仁者手镯（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 仁者手镯（幻想） 1
+
+#say
+恭喜您兑换[仁者手镯（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者手镯]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@rzjzhx]
+#if
+#act
+#if
+checkitem 仁者戒指（魅力） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 仁者戒指（魅力） 3
+decshengwang 30
+take 封魔石 500
+give 仁者戒指（幻想） 1
+
+#say
+恭喜您兑换[仁者戒指（幻想）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者戒指]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@phxlcs]
+#if
+#act
+#if
+checkitem 破荒项链（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 破荒项链（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 破荒项链（传说） 1
+
+#say
+恭喜您兑换[破荒项链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[破荒项链（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@jlszcs]
+#if
+#act
+#if
+checkitem 金棱手镯（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 金棱手镯（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 金棱手镯（传说） 1
+
+#say
+恭喜您兑换[金棱手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[金棱手镯（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@scjzcs]
+#if
+#act
+#if
+checkitem 师承戒指（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 师承戒指（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 师承戒指（传说） 1
+
+#say
+恭喜您兑换[师承戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[师承戒指（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@hmmlcs]
+#if
+#act
+#if
+checkitem 毁灭魔链（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 毁灭魔链（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 毁灭魔链（传说） 1
+
+#say
+恭喜您兑换[毁灭魔链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[毁灭魔链（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@hyszcs]
+#if
+#act
+#if
+checkitem 火玉手镯（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 火玉手镯（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 火玉手镯（传说） 1
+
+#say
+恭喜您兑换[火玉手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[火玉手镯（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@wszjcs]
+#if
+#act
+#if
+checkitem 武圣之戒（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 武圣之戒（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 武圣之戒（传说） 1
+
+#say
+恭喜您兑换[武圣之戒（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[武圣之戒（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@kzxlcs]
+#if
+#act
+#if
+checkitem 狂战项链（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 狂战项链（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 狂战项链（传说） 1
+
+#say
+恭喜您兑换[狂战项链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战项链（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@kzszcs]
+#if
+#act
+#if
+checkitem 狂战手镯（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 狂战手镯（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 狂战手镯（传说） 1
+
+#say
+恭喜您兑换[狂战手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战手镯（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@kzjzcs]
+#if
+#act
+#if
+checkitem 狂战戒指（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 狂战戒指（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 狂战戒指（传说） 1
+
+#say
+恭喜您兑换[狂战戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[狂战戒指（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@myxlcs]
+#if
+#act
+#if
+checkitem 魔云项链（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 魔云项链（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 魔云项链（传说） 1
+
+#say
+恭喜您兑换[魔云项链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[魔云项链（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@sgszcs]
+#if
+#act
+#if
+checkitem 思过手镯（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 思过手镯（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 思过手镯（传说） 1
+
+#say
+恭喜您兑换[思过手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[思过手镯（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+
+[@lmjzcs]
+#if
+#act
+#if
+checkitem 龙马戒指（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 龙马戒指（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 龙马戒指（传说） 1
+
+#say
+恭喜您兑换[龙马戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[龙马戒指（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@wxsjcs]
+#if
+#act
+#if
+checkitem 五行神镜（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 五行神镜（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 五行神镜（传说） 1
+
+#say
+恭喜您兑换[五行神镜（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[五行神镜（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@hmszcs]
+#if
+#act
+#if
+checkitem 毁灭手镯（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 毁灭手镯（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 毁灭手镯（传说） 1
+
+#say
+恭喜您兑换[毁灭手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[毁灭手镯（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@qcjhcs]
+#if
+#act
+#if
+checkitem 七彩金环（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 七彩金环（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 七彩金环（传说） 1
+
+#say
+恭喜您兑换[七彩金环（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[七彩金环（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@ymxlcs]
+#if
+#act
+#if
+checkitem 焰魔项链（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 焰魔项链（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 焰魔项链（传说） 1
+
+#say
+恭喜您兑换[焰魔项链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔项链（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@ymszcs]
+#if
+#act
+#if
+checkitem 焰魔手镯（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 焰魔手镯（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 焰魔手镯（传说） 1
+
+#say
+恭喜您兑换[焰魔手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔手镯（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@ymjzcs]
+#if
+#act
+#if
+checkitem 焰魔戒指（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 焰魔戒指（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 焰魔戒指（传说） 1
+
+#say
+恭喜您兑换[焰魔戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[焰魔戒指（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@dxxlcs]
+#if
+#act
+#if
+checkitem 定心项链（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 定心项链（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 定心项链（传说） 1
+
+#say
+恭喜您兑换[定心项链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[定心项链（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@szszcs]
+#if
+#act
+#if
+checkitem 世尊手镯（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 世尊手镯（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 世尊手镯（传说） 1
+
+#say
+恭喜您兑换[世尊手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[世尊手镯（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@qyjzcs]
+#if
+#act
+#if
+checkitem 青云戒指（幻想） 3
+checkgold 50000000
+checkitem 封魔石 300
+#act
+take 青云戒指（幻想） 3
+take gold 50000000
+take 封魔石 300
+give 青云戒指（传说） 1
+
+#say
+恭喜您兑换[青云戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[青云戒指（幻想）]数量不足3个。\
+2.您的金币数量不足5000万。\
+3.您包里的封魔石不足300个。\
+<离开/@exit>
+
+[@qkyqcs]
+#if
+#act
+#if
+checkitem 乾坤一气（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 乾坤一气（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 乾坤一气（传说） 1
+
+#say
+恭喜您兑换[乾坤一气（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[乾坤一气（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@rlszcs]
+#if
+#act
+#if
+checkitem 如来手镯（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 如来手镯（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 如来手镯（传说） 1
+
+#say
+恭喜您兑换[如来手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[如来手镯（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+
+[@tjjzcs]
+#if
+#act
+#if
+checkitem 天机戒指（幻想） 3
+checkshengwang 30
+checkitem 封魔石 500
+#act
+take 天机戒指（幻想） 3
+decshengwang 30
+take 封魔石 500
+give 天机戒指（传说） 1
+
+#say
+恭喜您兑换[天机戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[天机戒指（幻想）]数量不足3个。\
+2.您的声望不足30点。\
+3.您包里的封魔石不足500个。\
+<离开/@exit>
+
+[@rzxlcs]
+#if
+#act
+#if
+checkitem 仁者项链（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 仁者项链（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 仁者项链（传说） 1
+
+#say
+恭喜您兑换[仁者项链（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者项链（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@rzszcs]
+#if
+#act
+#if
+checkitem 仁者手镯（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 仁者手镯（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 仁者手镯（传说） 1
+
+#say
+恭喜您兑换[仁者手镯（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者手镯（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+[@rzjzcs]
+#if
+#act
+#if
+checkitem 仁者戒指（幻想） 3
+checkshengwang 60
+checkitem 封魔石 1000
+#act
+take 仁者戒指（幻想） 3
+decshengwang 60
+take 封魔石 1000
+give 仁者戒指（传说） 1
+
+#say
+恭喜您兑换[仁者戒指（传说）]一个。再见。
+<离开/@exit>
+
+#elsesay
+对不起，不能给您兑换该物品。原因可能是:\
+1.您包里的[仁者戒指（幻想）]数量不足3个。\
+2.您的声望不足60点。\
+3.您包里的封魔石不足1000个。\
+<离开/@exit>
+
+}

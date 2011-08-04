@@ -1,0 +1,142 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@twfs_1]
+
+{
+#ACT
+MOV N2 0
+MOV N3 0
+MOV N4 0
+LoadValue N3 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵状态
+#IF
+equal N3 1
+#ACT
+goto @mfz_open
+Break
+
+#ELSESAY
+魔法阵尚未开启，无法投入 {FCOLOR=250}天玉宝石{FCOLOR=255} \
+据说只有魔界终极BOSS身上的 {FCOLOR=250}上古神钥{FCOLOR=255} 才能启动这强大的力量.....\\
+<用上古神钥启动魔法阵/@str_mfz>\
+<这就去找上古神钥/@exit>
+
+[@mfz_open]
+#ACT
+LoadValue N4 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵能量
+LoadValue A0 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 启动者
+
+#SAY
+强大的魔法阵已被伟大的勇士 {FCOLOR=250}<$OUTPUT(A0)>{FCOLOR=255} 启动\
+魔法阵的能量已增强到 {FCOLOR=250}<$OUTPUT(N4)>{FCOLOR=255} 层\
+现在投入7颗不同元素的 {FCOLOR=250}天玉宝石{FCOLOR=255} 我便能帮你实现一个愿望,当\
+魔法阵的能量增强到 {FCOLOR=250}100层{FCOLOR=255} 的时候，所释放出强大的能量将覆盖\
+整个玛珐....\ \
+<这就投入7颗天玉宝石/@tr_tybs>\
+<打听天玉宝石的出处/@dttybs>\
+<我还没有天玉宝石/@exit>
+
+[@tr_tybs]
+#IF
+CHECKITEM 天玉宝石（冰） 1
+CHECKITEM 天玉宝石（火） 1
+CHECKITEM 天玉宝石（风） 1
+CHECKITEM 天玉宝石（雷） 1
+CHECKITEM 天玉宝石（神圣） 1
+CHECKITEM 天玉宝石（暗黑） 1
+CHECKITEM 天玉宝石（幻影） 1
+#ACT
+LoadValue N4 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵能量
+INC N4 1
+SaveValue "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵能量 %N4
+TAKE 天玉宝石（冰） 1
+TAKE 天玉宝石（火） 1
+TAKE 天玉宝石（风） 1
+TAKE 天玉宝石（雷） 1
+TAKE 天玉宝石（神圣） 1
+TAKE 天玉宝石（暗黑） 1
+TAKE 天玉宝石（幻影） 1
+lineMsg [Grobal] "'<$USERNAME>'投入了7块天玉宝石使天外天魔法阵的能量提高了1层"
+lineMsg [Grobal] "目前魔法阵的能量已提高到[<$OUTPUT(N4)>层]"
+GOTO @领奖品_twt
+
+#ELSESAY
+您必须拥有7颗不同元素的天玉宝石才能投入魔法阵\
+天玉宝石被天外天四大天王守护着，得到它可不是一件简单的事...\\
+<关 闭/@exit>\
+
+[@领奖品_twt]
+#CALL [\WINMA_ACT\TianwTasks\Achieve.txt]  @实现愿望_1
+
+[@dttybs]
+#SAY
+____据说天玉宝石被天外天四大金刚守护着，要获得它们并不是\
+一件简单的事情.\
+____单颗的天玉宝石拥有特殊的属性，可佩带在身上，但当7 颗\
+不同元素的天玉宝石聚集在一起并投入到魔法阵里的时候将释放\
+出强大的能量.....\ \
+<返 回/@mfz_open>\
+
+
+[@str_mfz]
+#ACT
+LoadValue N2 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 普天同庆
+#IF
+equal N2 1
+#SAY
+_（魔法阵目前无法启动.....）
+
+#ELSEACT
+goto @str_mfzzz
+
+[@str_mfzzz]
+#IF
+CHECKITEM 上古神钥 1
+#ACT
+TAKE 上古神钥 1
+Delaygoto [local] 1 @延时_1
+#SAY
+{FCOLOR=250}正在启动魔法阵:{FCOLOR=255}\\
+_■■  {FCOLOR=251}20%{FCOLOR=255}\
+
+#ELSESAY
+只有魔界终极BOSS身上 {FCOLOR=250}"上古神钥"{FCOLOR=255} 才能启动天外飞石魔法阵，等你找到了再来找我\\
+<关 闭/@exit>\
+
+[@延时_1]
+#ACT
+Delaygoto [local] 1 @延时_2
+#SAY
+{FCOLOR=250}正在启动魔法阵:{FCOLOR=255}\\
+_■■■■■  {FCOLOR=251}40%{FCOLOR=255}\
+
+[@延时_2]
+#ACT
+Delaygoto [local] 1 @延时_3
+#SAY
+{FCOLOR=250}正在启动魔法阵:{FCOLOR=255}\\
+_■■■■■■■■■  {FCOLOR=251}80%{FCOLOR=255}\
+
+[@延时_3]
+#ACT
+Delaygoto [local] 1 @启动MFZ
+#SAY
+{FCOLOR=250}正在启动魔法阵:{FCOLOR=255}\\
+_■■■■■■■■■■■■■  {FCOLOR=251}100%{FCOLOR=255}\
+
+[@启动MFZ]
+#ACT
+SaveValue "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵状态 1
+SaveValue "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 启动者 %USERNAME
+lineMsg [Grobal] "伟大的勇士'<$USERNAME>'成功启动了天外天魔法阵."
+lineMsg [Grobal] "据说只要集齐7颗带有不同元素的天玉宝石，投入到魔法阵里便能实现一个愿望."
+#SAY
+感谢您 {FCOLOR=250}<$USERNAME>{FCOLOR=255} 开启了魔法阵，从现在起只要投入7颗不同元素的 {FCOLOR=250}天玉宝石{FCOLOR=255} ，我便能 
+帮您实现一个愿望\\
+<我明白了/@exit>\
+
+#ELSESAY
+只有魔界终极BOSS身上 {FCOLOR=250}"上古神钥"{FCOLOR=255} 才能启动天外飞石魔法阵，等你找到了再来找我\\
+<关 闭/@exit>\
+
+
+
+}

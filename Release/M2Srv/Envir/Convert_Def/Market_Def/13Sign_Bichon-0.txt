@@ -1,0 +1,28 @@
+[@NPC_Main]
+{
+{FCOLOR=250}Map Locations{FCOLOR=255} \ \
+±ß¾³³ÇÊÐ  - [333,776]\
+ÒøÐÓÉ½¹È  - [779,698]\
+µÀ¹Ý      - [209,49]\
+Éß¹È      - [643,15]\ \
+{FCOLOR=250}Cave Locations{FCOLOR=255}\ \
+ÎÖÂê¶´Ñ¨  - [65,174]\
+·Ï¿ó      - [764,206]\ \
+{FCOLOR=250}NPC Locations{FCOLOR=255}\ \
+Butcher      - [446,405]\
+Meat Stall      - [441,405]\
+Weapons    - [423,395]\
+Armors      - [480,407]\
+Fanzi    - [397,363]\
+Potions    - [412,410]\
+Bookstore      - [470,424]\
+Inn      - [425,361]\
+Blacksmith    - [402,356]\
+Grocery    - [450,413]\
+Accessories  - [414,349]\
+Caijuan    - [440,341]\
+Inn      - [420¡£431]\
+Exchange    - [408,377]\
+Salon    - [462,420]\
+Stable      - [375,304]\
+}

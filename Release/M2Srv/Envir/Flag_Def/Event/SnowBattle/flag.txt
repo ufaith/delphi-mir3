@@ -1,0 +1,35 @@
+;;Legend Of Mir 3 C3Engine
+[event_main]
+; 이벤트가 시작되었는지 체크
+start =0
+; 인원이 찼는지 체크 0=입장가능 1=만원
+join =1
+;; 이벤트가 종료되었는지 체크 1=종료 0=동작중
+finish =1  
+
+[user_count]
+;;이벤트 참여유저 카운트
+mir =75
+legend =75
+check =50 
+
+[wincheck]
+;; 승리한 팀이 어느쪽인지 체크
+Mirwin=0
+
+Legendwin=1
+
+[Event_Timer]
+;----------------- GM_DEF의 제한시간을 불러옴 30초씩 감소됨 
+Time=0
+
+[Hum_Check]
+;----------------- 현재 살아남은 인원저장
+Mir=0
+
+Legend=21
+
+[Live_Msg]
+
+open=1
+

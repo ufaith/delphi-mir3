@@ -1,0 +1,17 @@
+[@NPC_Main]
+{
+{FCOLOR=250}Town Locations{FCOLOR=255} \ \
+ɳĮ         - [180,778] , [283,778] , [384,768] , [471,765]\
+MudWall     - [515,639] , [458,648] , [422,547] , [447,480] , [459,422] , [563,392]\ \
+{FCOLOR=250}NPC Locations{FCOLOR=255}\ \
+Blacksmith       - [449,73]\
+Pesticide Suppliers       - [433,72]\
+Business Selling       - [462,89]\
+Astrology   - [476,57]\
+Blacksmith       - [448,76]\
+Pesticide Business     - [430,75]\
+Armor Selling       - [462,91]\
+Astrology Share - [475,55]\
+Storage       - [438,68]\
+Material Supplier     - [437,71]\
+}

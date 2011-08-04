@@ -1,0 +1,77 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版-嫁祸PK值
+[@嫁祸卡使用X]
+{
+#SAY
+你当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
+你想嫁祸给你的仇人?让他整天红名?你真的想这样做吗?\
+我可以帮你实现这样的愿望.不过你得找到嫁祸卡才行.\
+另外使用此功能将消耗 {FCOLOR=250}100点{FCOLOR=255} 积分。每次嫁祸 {FCOLOR=251}500PK值{FCOLOR=255}\
+{FCOLOR=250}请先确定他不在线，如果他在线，我的魔法就不灵了...{FCOLOR=255}\\
+<输入仇敌角色名/@@shuru_PK>\
+<返回上一页/@积分列表_K>\
+<结 束/@exit>
+
+[@@shuru_PK]
+#IF
+CHECKJFPOINT 100
+checkitem 嫁祸卡 1
+#ACT
+mov  S1  8
+mov  A0  %INPUTSTR
+goto @CHARACTERx
+#ELSEACT
+GOTO @noka1
+
+[@CHARACTERx]
+#IF
+equal  S1 8
+#ACT
+FormatStr "FLD_CHARNAME='%s'" %A0
+ReadValueSql  "TBL_CHARACTER"  %A9  "FLD_CHARNAME,FLD_PKPOINT"  [@Point_PKPOINTPK+]
+
+[@Point_PKPOINTPK+()]
+#IF
+#ACT 
+mov       A3   %ARG(1)
+mov       D3   %ARG(2)   ;;PK值
+#IF
+!CheckOnline %A0
+CHECKJFPOINT 100
+checkitem 嫁祸卡 1
+equal  S1 8
+#ACT
+take 嫁祸卡 1
+DECJFPOINT 100
+lineMsg [Grobal] "天灵灵，地灵灵，大陆上某位英雄被[<$USERNAME>]暗算了..."
+FormatStr "FLD_CHARNAME='%s'" %A0
+mov   A8  %A9
+inc   D3  500
+FormatStr "FLD_PKPOINT='%s'" %D3
+UPDATEVALUESQL "TBL_CHARACTER" %A8 %A9
+mov S1 0
+#SAY
+游戏人物 {FCOLOR=250}<$OUTPUT(A0)>{FCOLOR=255} 目前的红名值是 {FCOLOR=250}<$OUTPUT(D3)>{FCOLOR=255} 点.\
+做这这样的事情，真是罪过啊.无语了..\
+你当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
+<继续嫁祸/@嫁祸卡使用X>\
+<结 束/@exit>
+#ELSEACT
+goto  @作弊
+
+;;-----------------------------------------------------------------
+
+[@作弊]
+#SAY
+{FCOLOR=250}<$OUTPUT(A0)>{FCOLOR=255} 目前在线!或者您的道具不足\
+{FCOLOR=249}请勿利用游戏BUG作弊{FCOLOR=255}\
+<返 回/@嫁祸卡使用X>\
+
+[@noka1]
+#SAY
+您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
+有 {FCOLOR=250}100点{FCOLOR=255} 积分，加一张 {FCOLOR=250}嫁祸卡{FCOLOR=255} 我就能帮你实现嫁祸别人的愿望.\
+点数不够最好走远点....\
+{FCOLOR=249}请勿输入包含空格的短语{FCOLOR=255}\
+<离 开/@exit>\
+
+}

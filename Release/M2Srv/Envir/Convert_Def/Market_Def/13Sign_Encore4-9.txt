@@ -1,0 +1,7 @@
+[@NPC_Main]
+{
+{FCOLOR=250}Locations{FCOLOR=255} \ \
+South - 连接村庄, 沙漠  \ \
+West - 真天宫  \ \ 
+East - 道馆  \ \
+}

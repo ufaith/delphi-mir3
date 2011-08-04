@@ -1,0 +1,174 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME
+#IF
+EQUAL D0 0
+#SAY
+我在这里隐居很多年了...\
+能帮助我的勇士在那里呀?
+#ACT
+BREAK
+#IF
+EQUAL D0 1
+#SAY
+____年轻人，很荣幸能见到你，我在这里已经隐居好多年了，能\
+告诉我你是怎么找到我的吗？\ \
+<打听西沙的秘密/@SECT>
+#ACT
+BREAK
+#IF
+EQUAL D0 4
+#SAY
+你见到他了？他还好吗？\
+<是的，可他已经死了/@已经死了>
+#ACT
+BREAK
+#ELSEACT
+GOTO @检测以下
+
+[@检测以下]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME
+#IF
+EQUAL D0 2
+#SAY
+请把 我的 头子证件 带给 沙漠幽灵 吧，年轻人，谢谢啦！\
+#ACT
+BREAK
+#IF
+EQUAL D0 5
+#SAY
+请把 我的 受胎石 带给 沙漠幽灵 吧，年轻人，谢谢啦！\
+#ACT
+BREAK
+#ELSESAY
+ 呵呵,干得好年轻人
+
+
+[@已经死了]
+#SAY
+____天啊~~我的朋友......你手上的是什么？赋魂铃铛？他还没\
+有死！！！\ \
+<嗯，他的灵魂被控制了/@被控制>
+
+[@被控制]
+#SAY
+____我一定要解救他，无论怎么样我要谢谢你，请为我再去一次\
+西沙并将这个交给他\ \
+<好的，我一定帮你/@帮助你>\
+<对不起,我无能为力/@exit>\
+
+[@帮助你]
+#ACT
+GIVE 受胎石 1
+TAKE 赋魂铃铛 1
+GOTO @奖励物品2
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 5
+#SAY
+好了,带好受胎石,赋魂铃铛 我收下啦
+
+
+[@奖励物品2]
+#ACT
+LOADVALUE D2 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第二个任务 声望
+#IF
+
+CHECKNEWFAME 
+
+#ACT
+MOV D3 %P9
+INC D3 %D2
+
+SETFAME %D3
+
+GOTO @奖励了哦
+
+[@奖励了哦]
+#IF
+CHECKJOB wizard
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第二个任务 法师
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+
+#IF
+CHECKJOB taoist
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第二个任务 道士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#SAY
+你真是一个好人，请务必将此交给沙漠幽灵!
+#IF
+CHECKJOB warrior
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第二个任务 战士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+
+[@SECT]
+#SAY
+____你不说，也没关系，我是一个喜欢唠叨的人，但已经很久没\
+人跟我聊天了，告诉你吧，西沙是一个很危险的地方但里面的宝\
+藏是非常丰富的，其实我就是当年天下第一武士可是现在......\ \
+<继续听你诉说/@ggg>\
+<太烦了/@exit>
+
+[@ggg]
+#say
+____呵呵，你很有耐心，我可以拜托你一些事吗？请你把这个交\
+给沙漠幽灵，我会给你一定的报酬....\ \
+<好，就这么办/@纪录任务标示>\
+<我无能为力啊/@exit>\
+
+
+
+
+[@纪录任务标示]
+#ACT
+SYSMSG "任务日志改变了"
+GIVE 头子证件 1
+LOADVALUE D1 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第一个任务 声望
+goto @给奖励
+
+[@给奖励]
+#IF
+
+CHECKNEWFAME
+
+#ACT
+MOV D2 %P9
+INC D2 %D1
+
+SETFAME %D2
+
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 2
+GOTO @给任务奖励1
+
+[@给任务奖励1]
+#IF
+CHECKJOB wizard
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第一个任务 法师
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#SAY
+你真是一个好人，请务必将此交给沙漠幽灵!
+#IF
+CHECKJOB taoist
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第一个任务 道士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#SAY
+你真是一个好人，请务必将此交给沙漠幽灵!
+#IF
+CHECKJOB warrior
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第一个任务 战士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#SAY
+你真是一个好人，请务必将此交给沙漠幽灵!
+;你和盛大机 

@@ -1,0 +1,44 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@每日BOSS_1]
+{
+#ACT
+Monclear D024 沃玛教主
+Monclear D6015 触龙神
+Monclear D1215 骷髅教主
+Monclear D10162 赤月恶魔
+DELAYGOTO [LOCAL] 1 @每日BOSS_2
+
+[@每日BOSS_2]
+#ACT
+Monclear D515 祖玛教主
+Monclear D1116 潘夜牛魔王
+Monclear D1506 震天魔神
+Monclear D904 霸王教主
+DELAYGOTO [LOCAL] 1 @每日BOSS_3
+
+[@每日BOSS_3]
+#ACT
+Monclear d1606 诺玛教主
+Monclear D2005 地天灭王
+Monclear d2107 冰城帝王
+DELAYGOTO [LOCAL] 1 @每日BOSS_4
+
+[@每日BOSS_4]
+#ACT
+linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
+linemsg [grobal] "║    所有的大BOSS已经复活,勇士们赶紧消灭它们     ║"
+linemsg [grobal] "╚════════════════════════╝"
+MonGenP   "D024,50,50,0"   沃玛教主 1
+MonGenP   "D6015,83,168,0"   触龙神 1
+MonGenP   "D1215,200,200,5"   骷髅教主 1
+MonGenP   "D10162,23,18,0"   赤月恶魔 1
+MonGenP   "D515,19,24,0"   祖玛教主 1
+MonGenP   "D1116,51,51,0"   潘夜牛魔王 1
+MonGenP   "D1506,30,50,1"   震天魔神 1
+MonGenP   "D904,69,38,10"   霸王守卫 1
+MonGenP   "D904,69,38,10"   霸王教主 1
+MonGenP   "d1606,23,36,1"   诺玛教主 1
+MonGenP   "D2005,30,21,0"   地天灭王 1
+MonGenP   "d2107,18,38,0"   冰城帝王 1
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

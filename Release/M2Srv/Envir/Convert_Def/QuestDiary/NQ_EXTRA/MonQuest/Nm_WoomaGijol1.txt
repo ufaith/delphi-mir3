@@ -1,0 +1,5 @@
+;;Legend Of Mir 3 C3Engine
+[@Nm_WoomaGijol1_1]
+{
+(这是一本旧书，上面写满了奇怪的内容)\
+}

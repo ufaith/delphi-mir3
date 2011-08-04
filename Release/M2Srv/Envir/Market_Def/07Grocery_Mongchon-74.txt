@@ -1,0 +1,194 @@
+(@BUY @SELL @REPAIR)
+%100
+;scroll, Spotion, lottery
++3
+;torch
++30
+;poison, charm
++25
+
+
+[@main]
+
+
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Quest Separate Block
+;;------------------------------------------------------------------------------
+#IF
+checkpkpoint 2
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_RedPlayer
+#ELSEACT
+goto @main_0_0
+
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Npc Menu Block
+;;------------------------------------------------------------------------------
+
+[@main_0_0]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_Main
+
+;----------------------------------------------------------
+
+[@buy]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_Buy
+
+[@Buy_PortalScroll]
+#Call [System\ItemSell.txt] @ItemSell_Control
+
+[@sell]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_Sell
+
+[Goods]
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_Goods
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Area Quest Block
+;;------------------------------------------------------------------------------
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Daily Quest Block
+;;------------------------------------------------------------------------------
+
+[@TQuest]
+#IF
+CheckDailyQuest 498
+#ACT
+goto @TQuest498_0
+break
+;
+#IF
+CheckDailyQuest 460
+#ACT
+goto @TQuest2_0
+break
+;
+#IF
+CheckDailyQuest 461
+#ACT
+goto @TQuest2_0
+break
+;
+#IF
+CheckDailyQuest 313
+#ACT
+goto @TQuest1_0
+break
+;
+#ELSESAY
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_TQuest
+;------------------------
+
+[@TQuest498_0]
+#IF
+check [310] 1
+#ACT
+goto @TQuest1_6
+break
+;
+
+#IF
+check [309] 1
+#ACT
+goto @TQuest1_6
+break
+;
+
+#IF
+check [307] 0
+#ACT
+goto @TQUEST1_6
+
+#ELSEACT
+goto @TQuest498_1
+
+;--------------
+
+[@TQuest498_1]
+#CALL [\QT_TODAY\4thClass1.txt] @498_CHECK3
+
+;------------------------
+
+[@TQuest1_0]
+#IF
+check [310] 1
+#ACT
+goto @TQuest1_6
+break
+;
+#IF
+check [307] 1
+#ACT
+goto @TQuest1_2
+break
+;
+#ELSEACT
+goto @TQuest1_1
+
+;--------------
+
+[@TQuest1_1]
+#CALL [\QT_TODAY\3rdClass.txt] @313_START
+
+[@TQuest1_2]
+#CALL [\QT_TODAY\3rdClass.txt] @313_CHECK1
+
+;--------------
+
+[@TQuest1_6]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\07Grocery_Mongchon-74.txt] @NPC_TQuest_1
+
+;------------------------
+
+[@TQuest2_0]
+#IF
+check [310] 1
+#ACT
+goto @TQuest1_6
+break
+;
+#IF
+check [307] 1
+#ACT
+goto @TQuest2_2
+break
+;
+#ELSEACT
+goto @TQuest2_1
+
+;--------------
+
+[@TQuest2_1]
+#CALL [\QT_TODAY\4thClass1.txt] @460_START
+
+[@TQuest2_2]
+#CALL [\QT_TODAY\4thClass1.txt] @460_CHECK1
+
+;--------------
+[@奖励声望]
+#CALL [\WINMA_ACT\TaskSystem\TODAY.txt] @每日任务声望X
+
+[@环Quest]
+#IF
+CHECK [605] 1
+CHECK [610] 0
+#ACT
+SET [610] 1
+#SAY
+是薛天师让你来探望我的吧，分别这么多年了难得他还记得我。\
+麻烦你回去帮我转告他，我也非常想念他\
+谢谢你了，年轻人\
+<我一定帮您转告他/@exit>
+#ELSESAY
+今天已经没有什么事拜托您了\
+<离开/@exit>

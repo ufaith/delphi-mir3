@@ -1,0 +1,7 @@
+[@NPC_Main]
+{
+Welcome.\
+If you need a special repair then come to me.\
+<Special Repair/@Special_Repair(1)>\
+<Exit/@exit>
+}

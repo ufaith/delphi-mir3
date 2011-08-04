@@ -1,0 +1,80 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@Main_dnpc]
+{
+#IF
+CHECKMAPFLAG NORECALL    
+#SAY
+本地图无法使用随身NPC。\
+#ACT
+break
+
+#IF
+#ACT
+mov 服务器启动时间 %STARTTIME
+mov 服务器当前时间 %NOW
+loadvalue A1 "ParamControl\服务器相关公告.ini" 公告 公告A
+#SAY
+\
+_{FCOLOR=255}────＊────  公告信息拦  ────＊────{FCOLOR=250}\
+___     <$OUTPUT(A1)>{FCOLOR=254}\
+_{FCOLOR=255}────＊────  时间信息拦  ────＊────{FCOLOR=161}\
+____服务器开启时间: {FCOLOR=255}<$OUTPUT(服务器启动时间)>{FCOLOR=161}\
+____服务器当前时间: {FCOLOR=250}<$OUTPUT(服务器当前时间)>{FCOLOR=161}\
+_{FCOLOR=255}────＊────  个人信息拦  ────＊────{FCOLOR=161}\
+_{FCOLOR=250}[声望值:<$SHENGWANG>]{FCOLOR=255}  {FCOLOR=254}[积分值:<$NEWJFPOINT>]{FCOLOR=255}  {FCOLOR=251}[晋级数:<$NEWREGTIME>]{FCOLOR=255}\
+_{FCOLOR=255}────＊──── 便捷功能使用 ────＊────{FCOLOR=161}\
+_╔┄┄┄┄┄╦┄┄┄┄┄╦┄┄┄┄┄╦┄┄┄┄┄╗\
+_┆ <查排行榜/@查排行榜d> ┆ <便捷传送/@便捷传送d> ┆ <随身买药/@随身商店d> ┆ <积分物品/@积分购买D> ┆\
+_╠┄┄┄┄┄╬┄┄┄┄┄╬┄┄┄┄┄╬┄┄┄┄┄╣\
+_┆ <一键特修/@一键特修d> ┆ <查询BOSS/@查询BOSSd> ┆ <兄弟系统/@兄弟系统d> ┆ <清洗红名/@积分清红d> ┆\
+_╠┄┄┄┄┄╬┄┄┄┄┄╬┄┄┄┄┄╬┄┄┄┄┄╣\
+_┆ <召唤宝宝/@召唤宝宝d> ┆ <清理垃圾/@清理垃圾d> ┆ <超级传送/@超级传送d> ┆ <随身升刀/@随身升刀d> ┆\
+_╚┄┄┄┄┄╩┄┄┄┄┄╩┄┄┄┄┄╩┄┄┄┄┄╝\
+_________{FCOLOR=250}欢迎您来到本服务器！祝您游戏愉快！\{FCOLOR=255}
+____{FCOLOR=250}如果您在游戏中碰到问题,请联系客服QQ: <$QQ>{FCOLOR=255}\
+
+#IF
+ISADMIN
+#SAY
+_{FCOLOR=255}────＊──── 管理功能使用 ────＊────{FCOLOR=253}\
+____<GM管理后台/@GMadmin888>\
+
+[@查排行榜d]
+#CALL [WINMA_ACT\CarryFunction\CheckList.txt] @查排行榜_1
+
+[@便捷传送d]
+#CALL [WINMA_ACT\CarryFunction\ConvenientTransfer.txt] @BjMove
+
+[@随身商店d]
+#CALL [WINMA_ACT\CarryFunction\BuyDrugs.txt] @随身buyyao
+
+[@一键特修d]
+#CALL [WINMA_ACT\CarryFunction\BuyDrugs.txt] @随身texiu
+
+[@积分购买D]
+#CALL [WINMA_ACT\CarryFunction\PointsItems.txt] @积分换物品D
+
+[@积分清红d]
+#CALL [WINMA_ACT\CarryFunction\ClearPKD.txt] @清除红名D
+
+[@召唤宝宝d]
+#CALL [WINMA_ACT\CarryFunction\SummonPetD.txt] @购买怪物D
+
+[@查询BOSSd]
+#CALL [WINMA_ACT\CarryFunction\BOSSQuery.txt] @BOSS查询_1
+
+[@随身升刀d]
+#CALL [WINMA_ACT\CarryFunction\WeaponRiseD.txt] @积分升刀d
+
+[@清理垃圾d]
+#CALL [WINMA_ACT\CarryFunction\Garbage.txt] @身边垃圾_1
+
+[@超级传送d]
+#CALL [WINMA_ACT\CarryFunction\CreditsTransferD.txt] @jfmoveD
+
+[@兄弟系统d]
+#CALL [WINMA_ACT\CarryFunction\FriendsList.txt] @好友列表_1
+
+[@GMadmin888]
+#CALL [WINMA_ACT\CarryFunction\Management.txt] @管理菜单_1
+}

@@ -1,0 +1,197 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@进入地图HX3]
+{
+#IF
+check [018] 1
+#ACT
+GOTO  @继续地图_HD3
+#ELSESAY
+连夺宝禁地的8大教主都没挑战完成，就想进强化夺宝？想都别想。\
+{FCOLOR=250}你没这个资格.. 请先完成8大教主的挑战再来找我吧.{FCOLOR=255}\\
+<结 束/@Exit>\
+
+[@继续地图_HD3]
+#ACT
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层地图
+loadvalue D1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层地图人数限制
+#IF
+CheckHumEx %A1 %D1 ALL
+#ACT
+GOTO @人数满h3
+#ELSEACT
+GOTO @检测人数h3
+
+[@检测人数h3]
+#ACT
+DEC D1 1
+#IF
+CheckHumEx %A1 %D1 ALL
+#ACT
+GOTO @显示__h3
+#ELSEACT
+GOTO @检测人数h3
+
+[@人数满h3]
+#SAY
+对不起，现在第一层里面已经超过了<$OUTPUT(D1)>个人了！\
+<结 束/@exit>\
+
+
+[@显示__h3]
+#ACT
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层积分
+#SAY
+{FCOLOR=250}<$USERNAME>{FCOLOR=255} 是不是发觉BOSS越来越难遇见，我新发现了一条挑战BOSS的捷径,听说里面有 {FCOLOR=250}八大BOSS{FCOLOR=255} ，反正我没进去过，一听都有点“怕怕”。怎么？你想进去见识一下吗？\\
+进入第一层需要 {FCOLOR=250}<$OUTPUT(D0)>{FCOLOR=255} 积分，每进一层都会{FCOLOR=249}扣除{FCOLOR=255}相应的积分，你只能在里面呆 {FCOLOR=250}80-90分钟{FCOLOR=255}，建议你还是先看看说明为好\\
+现在第一层有 {FCOLOR=250}<$OUTPUT(D1)>{FCOLOR=255} 人进行挑战.\\
+<进入第三个强化夺宝禁地/@进入那里_h3>\
+<禁区说明/@说明_h3>\
+<还是下次再进吧/@Exit>
+
+[@说明_h3]
+#ACT
+loadvalue D7 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 进入总时间
+#say
+禁区共有八层，每层都有一个BOSS在里面，每一个小时刷一次怪。每进入一次我要收你一定的积分，总共有<$OUTPUT(D7)>分钟闯完，只有把你所在层的BOSS清理掉了就能进入下一层.唉,现在的日子不好混啊...\\
+<知道了/@进入地图HX3>
+
+[@进入那里_h3]
+#ACT
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层地图
+loadvalue D1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层地图人数限制
+#IF
+CheckHumEx %A1 %D1 ALL
+#SAY
+里面已经超过了最大人数，请稍后再试!\
+#ACT
+BREAK
+#ELSEACT
+loadvalue D2 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层积分
+#IF
+CHECKJFPOINT %D2
+#ACT
+Delaygoto [local] 1 @开始检测time_h3
+#SAY
+_{FCOLOR=250}请稍后，系统正在处理数据...{FCOLOR=255}\
+#ELSESAY
+您的积分不足!或者已经超过了最大人数限制.\
+<返 回/@进入地图HX3>
+
+[@开始检测time_h3]
+#IF
+dayofweek mon
+#ACT
+MOV D9 1
+GOTO @检测时间h3
+#IF
+dayofweek tue
+#ACT
+MOV D9 2
+GOTO @检测时间h3
+#IF
+dayofweek wed
+#ACT
+MOV D9 3
+GOTO @检测时间h3
+#IF
+dayofweek thu
+#ACT
+MOV D9 4
+GOTO @检测时间h3
+#IF
+dayofweek fri
+#ACT
+MOV D9 5
+GOTO @检测时间h3
+#IF
+dayofweek sat
+#ACT
+MOV D9 6
+GOTO @检测时间h3
+#IF
+dayofweek sun
+#ACT
+MOV D9 7
+GOTO @检测时间h3
+
+[@检测时间h3]
+#act
+mov A0 %USERNAME
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+ReadValueSql "TBL_CHARACTER" %A9 "FLD_BADAQH" @N_8_h3
+
+[@N_8_h3()]
+#ACT
+MOV D0 %ARG(1)
+#IF
+equal D9 %D0
+#SAY
+对不起,你今天已经参加过了!\
+<结 束/@exit>
+#ELSEACT
+GOTO @随机时间XXX_h3
+BREAK
+
+[@随机时间XXX_h3]
+#ACT
+MOVR S2 4
+
+#IF
+equal S2 0
+#ACT
+loadvalue N1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 进入总时间1
+goto  @进入MAPNIG_h3
+break
+
+#IF
+equal S2 1
+#ACT
+loadvalue N1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 进入总时间2
+goto  @进入MAPNIG_h3
+break
+
+#IF
+equal S2 2
+#ACT
+loadvalue N1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 进入总时间3
+goto  @进入MAPNIG_h3
+break
+
+#IF
+equal S2 3
+#ACT
+loadvalue N1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 进入总时间4
+goto  @进入MAPNIG_h3
+break
+
+#IF
+equal S2 4
+#ACT
+loadvalue N1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 进入总时间4
+goto  @进入MAPNIG_h3
+break
+
+[@进入MAPNIG_h3]
+#ACT
+SET [920] 0
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+mov A5 %A9
+FormatStr "FLD_BADAQH='%s'" %D9
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+DECJFPOINT %D2
+MOV A0 %USERNAME
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\DifficultySeizes3.txt" Control 第1层地图
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+mov A5 %A9
+FormatStr "FLD_BDCQH='%s'" 1
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+MOV A0 %USERNAME
+TIMERECALL %N1
+mapmove %A1
+LineMsg "Grobal" "一位勇士'<$OUTPUT(A0)>'进入[强化夺宝禁地③]向教主发起了挑战."
+SysMsg  "你花费了<$OUTPUT(D2)>点积分进入强化夺宝禁区一层，祝您好运.您还剩余 <$NEWJFPOINT> 点积分！"
+CLOSE
+
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

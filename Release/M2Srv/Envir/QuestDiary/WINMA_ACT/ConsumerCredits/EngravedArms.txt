@@ -1,0 +1,51 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@wuqikem1]
+{
+#IF
+!checkweaponlevel 1
+#SAY
+请将要刻名的武器拿在手上..
+
+#ELSESAY
+此功能将扣您 {FCOLOR=250}21点{FCOLOR=255} 积分,您目前拥有 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点积分.\
+最长只允许使用六个中文汉字组成的名字\\
+<输入要刻的武器名字/@@wuqikmlll>\
+<结 束/@exit>\
+
+[@@wuqikmlll]
+#ACT
+mov A7 %INPUTSTR
+#IF
+#ACT
+SYSMSG "不能输入包含空格的语句"
+GOTO @wuqikem1
+close
+BREAK
+#IF
+EQUAL A7 ""
+#ACT
+SYSMSG "输入不能为空"
+GOTO @wuqikem1
+close
+BREAK
+#IF
+!CheckJfPoint 21
+#ACT
+SYSMSG "对不起,您的积分不足"
+GOTO @wuqikem1
+close
+BREAK
+
+#ELSEACT
+DECJFPOINT 21
+SetUseItemName 1 %A7
+SYSMSG "您的武器刻名成功"
+MOV A7 0
+close
+BREAK
+}
+
+
+
+
+}

@@ -1,0 +1,10 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\09Bonus_Euhang-02.txt] @NPC_Main
+
+[@LevelUp]
+#CALL [\SpecialAbility\Bonus.txt] @LevelUpBonus
+
+[@quicknengli]
+#CALL [\WINMA_ACT\QuickAdd.txt] @quickBonusxx

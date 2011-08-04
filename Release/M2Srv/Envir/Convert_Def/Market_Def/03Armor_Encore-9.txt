@@ -1,0 +1,44 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you? \ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Armor Dye/@Topkkkrse>\
+<Exit/@exit>
+
+[@Topkkkrse]
+#CALL [WINMA_ACT\ConsumerCredits\DyeingClothes.txt] @ÒÂ·þÈ¾É«1
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase. \ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair. \ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+You have successfully dyed your armor. \ \
+<Back/@main>
+}
+
+

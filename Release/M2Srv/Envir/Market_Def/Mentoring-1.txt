@@ -1,0 +1,2 @@
+﻿[@main]
+#CALL [Vimascript\MentoringSystem.txt] @stmain

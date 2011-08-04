@@ -1,0 +1,96 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@天地人X]
+{
+#if
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\Control\ServerSettings.txt" 服务器设置 令兑换经验
+
+#if
+equal D0 0
+#SAY
+
+冲级比赛期间，不开放令兑换经验\
+#act
+break
+
+#ELSEACT
+
+
+#IF
+CHECK [675] 0
+#SAY
+tgmir3欢迎您，在我这里您可以免费把您的天地人令牌兑换成经验\
+1.使用天王令.可在活动管理中心处兑换随机经验1-3亿的浮动值。\
+2.使用地王令.可在活动管理中心处兑换随机经验2-5亿的活动值。\
+3.使用人王令.可在活动管理中心处兑换随机经验4-8亿的活动值。\
+每个人每天每种令牌只可以兑换一次经验\
+必须兑换完天王令之后，才可以兑换地王令，必须要天王令和地王令\
+兑换完之后，才可以兑换人王令\\
+<天王令兑换经验/@天王令牌X>\
+<地王令兑换经验/@地王令牌X>\
+<人王令兑换经验/@人王令牌X>\\
+<离开/@exit>
+#ELSESAY
+您今天已经全部兑换完成了，请明天再来吧:)\
+
+[@天王令牌X]
+#IF
+CHECKITEM 天王令 1
+CHECK [675] 0
+CHECK [676] 0
+#ACT
+TAKE 天王令 1
+MOVR D7 200000000
+MOV D6 100000000
+inc D6 %D7
+GMEXECUTE adjustExp %USERNAME + %D6
+set [676] 1
+SYSMSG "您已经用天王令成功兑换<$OUTPUT(D6)>经验,请继续努力吧。"
+goto @天地人X
+break
+
+#elsesay
+您没有天王令或您今天已经兑换过了天王令了。
+
+[@地王令牌X]
+#IF
+CHECKITEM 地王令 1
+CHECK [675] 0
+CHECK [676] 1
+CHECK [677] 0
+#ACT
+TAKE 地王令 1
+MOVR D7 300000000
+MOV D6 200000000
+inc D6 %D7
+GMEXECUTE adjustExp %USERNAME + %D6
+set [677] 1
+SYSMSG "您已经用地王令成功兑换<$OUTPUT(D6)>经验,请继续努力吧。"
+goto @天地人X
+break
+#elsesay
+您没有地王令或您还没有兑换天王令或您今天已经兑换过了地王令了。\
+
+[@人王令牌X]
+#IF
+CHECKITEM 人王令 1
+CHECK [675] 0
+CHECK [676] 1
+CHECK [677] 1
+CHECK [678] 0
+#ACT
+TAKE 人王令 1
+MOVR D7 400000000
+MOV D6 400000000
+inc D6 %D7
+GMEXECUTE adjustExp %USERNAME + %D6
+set [675] 1
+SET [678] 1
+SYSMSG "您已经用人王令成功兑换<$OUTPUT(D6)>经验,请继续努力吧。"
+goto @天地人X
+break
+
+#elsesay
+您没有人王令或您还没有兑换过前面的两种令牌或您今天已经全部兑换完成
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

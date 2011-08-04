@@ -1,0 +1,27 @@
+;;Legend Of Mir 3 C3Engine
+[@圣诞]
+
+{
+#if
+#act
+#say
+进入圣诞屋需要收取1000金币.您准备好了吗? \\
+进入此地图需要下载专用补丁，请到论坛至顶帖下载.\\
+<挑战圣诞屋/@移动去圣诞屋>\
+<离开/@exit>
+
+[@移动去圣诞屋]
+#if
+#act
+#if
+checkgold 1000
+#act
+take gold 1000
+mapmove d9988 19 45
+
+
+#elsesay
+对不起，您的钱不够。\
+<关闭/@exit>
+
+}

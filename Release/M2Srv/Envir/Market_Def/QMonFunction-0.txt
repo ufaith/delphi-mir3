@@ -1,0 +1,195 @@
+[@BDSM]
+#act
+ spell 0 THUNDER 107-165 0 TARGET1 6
+ SPELLEND 1 1800
+
+#IF
+ !near 4
+#ACT
+ jumpto
+
+;;--------ºìÒÂ·¨Ê¦---------------------------------
+[@HYFS]
+#IF
+ random 5
+#ACT 
+  clearmc 0 13
+#IF
+#ACT
+ spell 0 THUNDER 95-128 1028010 TARGET1 6 
+ spellend 1 2200
+
+[@HYFS2]
+#ACT
+ spell 0 THUNDER 165-198 1028010 ENEMY1 6
+ spellend 1 2200
+
+[@HYFS7]
+#ACT
+ spell 0 THUNDER 95-128 1028010 TARGET1 6 
+ spellend 1 2200
+
+;;---------------´¥½ÇÉñÄ§-------------------------------------------
+[@CJSM]
+#ACT
+ spell 0 THUNDER 99-107 1000004 TARGET1 3 
+ spellend 1 1400
+
+#IF
+ !near 4
+#ACT
+ jumpto
+
+[@CJSM2]
+#ACT
+ spell 0 THUNDER 220-245 1000004 TARGET1 3 
+ spellend 1 1400
+
+#IF
+ !near 4
+#ACT
+ jumpto
+
+[@CJSM7]
+#ACT
+ spell 0 THUNDER 99-107 1000004 TARGET1 3 
+ spellend 1 1400
+
+#IF
+ !near 4
+#ACT
+ jumpto
+
+;--------------------------------------------
+[@DFL]
+#ACT
+spell 1 THUNDER 0-0 1000004 TARGET6 3
+spell 1 THUNDER 49-66 501145003 TARGET6 3
+spellend 1 1500
+
+;-----------µØÌìÃðÍõ----------------------
+[@DTMW]
+#IF
+ near 1
+#ACT
+ goto @DTMW_1
+[@DTMW_1]
+#IF
+ random 3
+#ACT
+push 500 2068
+hit 0 210-250 4 1000
+SPELLEND 1 1200
+#ELSEACT
+SPELL 1 THUNDER 0-0 42160010 SELF 
+HIT 0 210-250 4 500
+SPELLEND 2 1200
+
+;;-----³¬¼¶ºÚÒ°Öí--------------------------
+[@CJHYZ]
+#IF
+ near 1
+#ACT
+ goto @CJHYZ_1
+[@CJHYZ_1]
+#IF
+ random 3
+#ACT
+push 500 2068
+hit 0 100-2000 4 1000
+SPELLEND 1 1000
+#ELSEACT
+SPELL 1 THUNDER 0-0 12180010 SELF
+SPELL 1 THUNDER 100-2000 14189010 TARGET1 3 T900
+SPELLEND 1 1000
+
+;;-------Â¥À¼½ð¼×Îä½«---------------------
+[@LLJJWJ]
+#IF
+ near 1
+#ACT
+ goto @LLJJWJ_1
+[@LLJJWJ_1]
+#IF
+ random 3
+#ACT
+push 700 2068
+hit 0 253-275 3 1000
+SPELLEND 3 900
+#ELSEACT
+SPELL 1 THUNDER 0-0 2180010 SELF
+SPELL 1 THUNDER 253-275 0 TARGET1 3
+SPELLEND 1 900
+
+;;--------Â¥À¼ÊØÎÀ-----------------------
+[@LLSW]
+#IF
+ !near 1
+ near 4 
+#ACT 
+SPELL 1 THUNDER 0-0 177611 SELF 
+SPELL 1 THUNDER 187-253 0 TARGET4 7 
+SPELLEND 2 900
+
+
+;---------Â¥À¼Ú¤»Ê-----------------------
+[@LLMH]
+#IF
+ !near 3
+#act
+ jumpto
+
+[@LLTS]
+#IF 
+ near 1
+#ACT
+SPELL 1 THUNDER 0-0 22076010 SELF
+SPELL 1 THUNDER 220-275 0 TARGET1 6
+SPELLEND 2 900
+break
+
+#IF
+ !near 1
+ Near 3
+#ACT
+ SPELL 1 THUNDER 0-0 21085010 SELF
+ SPELL 1 THUNDER 220-275 0 TARGET3 6
+ SPELLEND 1 900 
+
+;--------Â¥À¼ÓÒ»¤·¨-------------------
+[@LLYHF]
+#IF
+ NEAR 1
+#ACT
+ SPELL 1 THUNDER 0-0 12000010 SELF 
+ SPELL 1 THUNDER 140-200 0 TARGET1 3 
+ SPELLEND 1 900
+ BREAK
+#IF
+ !NEAR 1
+ NEAR 7
+#ACT
+ SPELL 1 THUNDER 140-200 501145003 TARGET7 3 T500
+ SPELLEND 2 900
+ 
+;------------Â¥À¼×ó»¤·¨-------------------
+[@LLZHF]
+#IF
+ NEAR 1
+#ACT
+ SPELL 1 THUNDER 0-0 12011010 SELF 
+ SPELL 1 THUNDER 140-200 0 TARGET1 1
+ SPELLEND 1 900
+ BREAK
+#IF
+ !NEAR 1
+ NEAR 7
+#ACT
+ SPELL 1 THUNDER 0-0 12022010 SELF
+ SPELL 1 THUNDER 140-200 503042005 TARGET7 3 T500
+ SPELLEND 2 900 
+
+ 
+  
+
+

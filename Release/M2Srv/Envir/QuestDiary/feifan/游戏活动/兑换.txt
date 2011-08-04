@@ -1,0 +1,89 @@
+;;Legend Of Mir 3 C3Engine
+[@duihuan]
+{
+#if
+#act
+#say
+注意：：请勿将不想兑换之武器放入包裹！！\
+在刚刚开区之时，一把飞魂高达5000-8000万，现如今，一百万都没人去买。\
+这些曾经自己的珍贵物品，现已存到仓库深处。\
+用之无味，弃之可惜。\
+如何处置相信大家都很为难！\
+
+经过tgmir3工作人员的研究，开放昔日武器回收活动。\
+<飞魂魔刃/@feihun1>\
+<旋风流星刀/@xuanfeng1>\
+<封魔剑/@fengmo1>\
+<离开/@exit>
+
+[@feihun1]
+#if
+#act
+
+
+[@xuanfeng1]
+#if
+#act
+
+
+[@fengmo1]
+#if
+#act
+
+
+
+[@feihun]
+#if
+#act
+#if
+checkitem 飞魂魔刃 1
+#act
+give 游戏点卷 1
+take 飞魂魔刃 1
+#say
+您兑换了一个游戏点卷。
+<离开/@exit>
+#ACT 
+break
+
+#elsesay
+对不起，您的包裹里没有足够的飞魂魔刃。去死吧。
+
+[@xuanfeng]
+#if
+#act
+#if
+checkitem 旋风流星刀 1
+#act
+give 游戏点卷 1
+take 旋风流星刀 1
+#say
+您兑换了一个游戏点卷。
+
+<离开/@exit>
+#ACT 
+break
+
+#elsesay
+对不起，您的包裹里没有足够的旋风流星刀。去死吧。
+
+[@fengmo]
+#if
+#act
+#if
+checkitem 封魔剑 1
+#act
+give 游戏点卷 1
+take 封魔剑 1
+#say
+您兑换了一个游戏点卷。
+
+<离开/@exit>
+#ACT 
+break
+
+#elsesay
+对不起，您的包裹里没有足够的封魔剑。去死吧。
+
+}
+

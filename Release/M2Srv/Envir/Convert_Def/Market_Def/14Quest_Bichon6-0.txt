@@ -1,0 +1,41 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+本官正在处理公务，无事请勿打扰。\ \
+ <Today's Tasks/@TQuest>\
+ <Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+本官正在处理公务，无事请勿打扰。\ \
+ <Today's Tasks/@TQuest>\
+ <Exit/@exit>
+}
+
+[@NPC_Main_2]
+{
+不死牌已经被边境城市的云发先生和道观的玄震道士协力破坏了！ \
+像上次一样的事情不会再发生了\ \
+ <Today's Tasks/@TQuest>\
+ <Exit/@exit>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+ <Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+ <Exit/@exit>
+}
+

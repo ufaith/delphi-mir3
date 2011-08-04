@@ -1,0 +1,176 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版-寄售
+[@jishou]
+{
+#if
+#act
+LoadValue P3 "QuestDiary\WINMA_DATA\Control\ServerSettings.txt" [服务器设置] 寄售开关
+
+
+#IF
+equal P3  0
+#ACT
+goto @寄售进行
+break
+
+
+#IF
+equal P3  1
+#SAY
+寄售功能暂时关闭..\
+<关 闭/@exit>
+#ACT
+break
+
+
+#IF
+equal P3  2
+#ACT
+goto @寄售暂时
+break
+
+
+[@寄售暂时]
+#IF
+hour 20 20
+min  1 59
+#ACT
+goto @关闭寄售
+break
+
+#IF
+hour 21 21
+min  1 59
+#ACT
+goto @关闭寄售
+#ELSEACT
+goto @寄售进行
+
+
+[@寄售进行]
+#IF
+checkgold 50000
+#SAY
+您好,我是专门的寄售商人,想看看一般店铺里买不到的物品吗?如果您想寄售物品,我也 
+可以帮忙.您需要先进行寄售登记,{FCOLOR=250}手续费为5万金币.物品卖出后,另收2%的 
+手续费{FCOLOR=255}.这不是蛮划算吗?不妨来试试吧.请选择要买卖的物品.每人最多可以 
+寄售20件物品.\
+<查看所有寄售的物品/@AllItem1212>\
+<查看衣服/@Armor1212>\
+<查看武器/@Weapon1212>\
+<查看项链/@Necklace1212>\
+<查看头盔(帽子)/@Helmet1212>\
+<查看戒指/@Ring1212>\
+<查看手镯(手套)/@Bracelet1212>\
+<查看鞋类/@Shoes1212>\
+<查看药品书卷/@Potion1212>\
+<查看图书/@Book1212>\
+<查看其他物品/@Item1212>\
+<查看自己寄售的物品是已经否卖出./@TypeItem1212>
+
+#ELSESAY
+不好意思，寄售的手续费涨价了，要{FCOLOR=250}5万金币{FCOLOR=255}。\
+您身的钱不够5万，所以我不能给您提供寄售服务。\
+<离 开/@exit>
+
+[@AllItem1212]
+#IF
+#ACT
+settypeusermarket 0
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Armor1212]
+#IF
+#ACT
+settypeusermarket 1
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Weapon1212]
+#IF
+#ACT
+settypeusermarket 2
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Necklace1212]
+#IF
+#ACT
+settypeusermarket 4
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Helmet1212]
+#IF
+#ACT
+settypeusermarket 5
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Ring1212]
+#IF
+#ACT
+settypeusermarket 8
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Bracelet1212]
+#IF
+#ACT
+settypeusermarket 6
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Shoes1212]
+#IF
+#ACT
+settypeusermarket 11
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Potion1212]
+#IF
+#ACT
+settypeusermarket 21
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Book1212]
+#IF
+#ACT
+settypeusermarket 22
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@Item1212]
+#IF
+#ACT
+settypeusermarket 23
+OPENUSERMARKET
+BREAK
+CLOSE
+
+[@TypeItem1212]
+#IF
+#ACT
+CHECKSOLDITEMSUSERMARKET
+BREAK
+CLOSE
+
+[@关闭寄售]
+#SAY
+晚上 {FCOLOR=250}8点到10点{FCOLOR=255} 这段时间内，寄售功能暂时关闭\
+请梢后光临。。\
+<离 开/@exit>
+
+}

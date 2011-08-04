@@ -1,0 +1,35 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_ADmin_Main]
+{
+打雪仗NPC\\
+<开始打雪仗活动/@Event_Start>\
+<调查活动进行情况/@Output>\
+<活动变数 初期化/@Clear>\ \
+<Exit/@exit>\
+}
+
+[@NPC_Clear]
+{
+_活动的变数都初期化了.\ \
+<Back/@main>\
+}
+
+
+[@NPC_Event_Start]
+{
+开始打雪仗活动. 10秒后, 如果发出公告, 那么正常进行.\ \
+<Exit/@exit>
+}
+
+[@NPC_Event_Fail]
+{
+_活动正在进行中.\ \
+<Exit/@exit>
+}
+
+[@NPC_Event_Fail_1]
+{
+_失败了开始打雪仗活动.请再试一试\ \
+<结束/@main>
+}
+

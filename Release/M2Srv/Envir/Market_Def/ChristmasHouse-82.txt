@@ -1,0 +1,14 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#IF
+#SAY
+活动关闭\
+;;<[挑战圣诞屋]/@挑战去x>\
+;;<离开/@exit>
+
+[@挑战去x]
+#CALL [\feifan\游戏活动\圣诞传送.txt] @圣诞
+
+
+
+;;Legend Of Mir 3 C3Engine

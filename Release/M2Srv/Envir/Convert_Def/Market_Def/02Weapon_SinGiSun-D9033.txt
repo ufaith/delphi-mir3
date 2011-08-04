@@ -1,0 +1,19 @@
+[@NPC_Main]
+{
+Please select the item you wish to repair?\ \
+<Repair/@repair>
+}
+
+[@NPC_Repair]
+{
+Please wait until i have finished repairing it.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+The level item is not high enough for this repair.\ \
+<Back/@main>
+}
+
+

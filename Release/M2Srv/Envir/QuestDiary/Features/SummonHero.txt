@@ -1,0 +1,129 @@
+[@召唤英雄]
+{
+<　　凝意识为海.入灵台镜天.这里是你灵魂深处的意识之海.我是/FCOLOR=254>\
+<灵台中的神仙.你既有缘来此.我必须告诉你:人类对抗阿修罗为首/FCOLOR=251>\
+<的魔族.历经千年而未曾灭绝.所依靠的.就是神奇的元神分身神技/FCOLOR=168>\
+<你既然炼成元神..则今后卫护黎民百姓.降妖除魔.是你的本份.所/FCOLOR=253>\
+<以你任重而道远!修炼分身.天尊.法神.圣战后人将给你很多帮助!/FCOLOR=250>\
+<　　　　　　　　重庆飞尔世界独家NPC多彩色变化/FCOLOR=249>\
+<　　　　　　　　　　　　Www.mirm2.Com/AUTOCOLOR=254,251,168,191,250,70,245,249,253>\ \
+<英雄操作指南/@操作指南>        <开始修炼英雄/@修炼元神>         <领取英雄技能/@技能>\
+[@操作指南]
+　　要给元神学习技能书.或者在战斗.打怪时让元神自己用金创药\
+把东西放在元神的包裹里.元神才会自己使用.在元神包裹双击既学\
+　　要是平时带着元神逛街.可以设置成跟随模式.如果是法师.担心\
+被偷袭.可以设置成“攻击模式”.元神还有种模式是和法师.道士宝\
+宝相同的“休息模式”设置这三种模式.使用“<Ctrl+E>”切换模式\
+　　元神初级技能书到书店可以买到!元神所学技能由元神自己选择\
+使用.你不能为元神指定使用技能！            <多谢指路/@exit>\
+
+[@修炼元神]
+开始<修炼/FCOLOR=250>你的<元神分身/FCOLOR=249>吧!!         <关闭对话/@exit>\ \ \
+<请选择/FCOLOR=241>：<释放元神/@@cqfirHero>\ \
+;<请选择/FCOLOR=253>：<删除元神/@DelMyHero>\ \
+
+[@技能]
+<请领取/FCOLOR=254>：<战士英雄技能/@技能1>    <法师英雄技能/@技能2>    <道士英雄技能/@技能3>\ \
+<英雄合击必须物品.装备在英雄的护身符处/AUTOCOLOR=254,251,168,191,250,70,245,249,253>：<火龙之心/@火龙心>\ \
+<战士+战士合击技能/FCOLOR=251>：<破 魂 斩/@破魂> <战士+道士合击技能/FCOLOR=250>：<劈 星 斩/@劈星>\ \
+<道士+道士合击技能/FCOLOR=168>：<噬魂沼泽/@噬魂> <道士+法师合击技能/FCOLOR=254>：<末日审判/@末日>\ \
+<法师+法师合击技能/FCOLOR=253>：<火龙气焰/@火龙> <法师+战士合击技能/FCOLOR=249>：<雷霆一击/@雷霆>
+[@破魂]
+#ACT
+give 破魂斩 1
+CLOSE
+[@劈星]
+#ACT
+give 劈星斩 1
+CLOSE
+[@噬魂]
+#ACT
+give 噬魂沼泽 1
+CLOSE
+[@末日]
+#ACT
+give 末日审判 1
+CLOSE
+[@火龙]
+#ACT
+give 火龙气焰 1
+CLOSE
+[@雷霆]
+#ACT
+give 雷霆一击 1
+CLOSE
+[@火龙心]
+#ACT
+give 火龙之心 1
+CLOSE
+
+[@技能1]
+#ACT
+give 英雄基本剑术 1
+give 英雄攻杀剑术 1
+give 英雄刺杀剑术 1
+give 英雄半月弯刀 1
+give 英雄烈火剑法 1
+give 英雄彻地钉 1
+give 英雄抱月刀法 1
+give 英雄狮子吼 1
+CLOSE
+[@技能2]
+#ACT
+give 英雄抗拒火环 1
+give 英雄疾光电影 1
+give 英雄雷电术 1
+give 英雄火墙 1
+give 英雄地狱雷光 1
+give 英雄魔法盾 1
+give 英雄冰咆哮 1
+give 英雄火龙气焰 1
+CLOSE
+[@技能3]
+#ACT
+give 英雄治愈术 1
+give 英雄精神力战 1
+give 英雄施毒术 1
+give 英雄灵魂火符 1
+give 英雄神圣战甲 1
+give 英雄群体施毒 1
+give 英雄无极真气 1
+CLOSE
+[@cqfirHero]
+//CREATEHERO 职业 性别
+选择需要的元神职业性别.<选取后终身将不能变更/FCOLOR=253>    <返回/@修炼元神>\ \
+<男战士/@CREATEHERO_WARR_MAN>             <女战士/@CREATEHERO_WARR_WOM>\ \
+<男法师/@CREATEHERO_WIZA_MAN>             <女法师/@CREATEHERO_WIZA_WOM>\ \
+<男道士/@CREATEHERO_TAOS_MAN>             <女道士/@CREATEHERO_TAOS_WOM>\ \
+[@CREATEHERO_WARR_MAN]
+#ACT
+CREATEHERO 0 0
+goto @CreateingHero
+[@CREATEHERO_WARR_WOM]
+#ACT
+CREATEHERO 0 1
+goto @CreateingHero
+[@CREATEHERO_WIZA_MAN]
+#ACT
+CREATEHERO 1 0
+goto @CreateingHero
+[@CREATEHERO_WIZA_WOM]
+#ACT
+CREATEHERO 1 1
+goto @CreateingHero
+[@CREATEHERO_TAOS_MAN]
+#ACT
+CREATEHERO 2 0
+goto @CreateingHero
+[@CREATEHERO_TAOS_WOM]
+#ACT
+CREATEHERO 2 1
+goto @CreateingHero
+
+[@DelMyHero]
+#ACT
+DELETEHERO
+
+[@HeroNameFilter]
+英雄名字中包含禁用字符\<关闭/@exit>
+}

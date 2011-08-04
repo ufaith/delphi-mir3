@@ -1,0 +1,55 @@
+;;Legend Of Mir 3 C3Engine
+[@RefineName_1]
+{
+炼制武器需要手里拿着武器!!\ \
+<Exit/@exit>
+}
+
+[@RefineName_2]
+{
+真想在武器上刻名字吗？万一刻失败了钱不退还的哦！ \ \
+<刻/@RefineCorrect> 名字\
+<Exit/@exit>
+}
+
+[@RefineName_3]
+{
+钱不够啊。。\ \
+<Exit/@exit>
+}
+
+[@RefineName_4]
+{
+炼制武器需要手里拿着武器!!\ \
+<Exit/@exit>
+}
+
+[@RefineName_5]
+{
+在武器上刻名字等于是提高剑的名誉。万一刻失败了钱不退还的哦！。\
+慎重的考虑一下吧。名字不可以超过汉字6字以上。。\ \
+<在武器上面刻名字。/@@WriteWeaponName->
+}
+
+[@RefineName_6]
+{
+钱不够啊。。\ \
+<Exit/@exit>
+}
+
+[@RefineName_7]
+{
+钱不够啊。。\ \
+<Exit/@exit>
+}
+
+[@RefineName_8]
+{
+你把武器的名字刻为 <$INPUTSTR> 。\ \
+<Exit/@exit>
+}
+
+[@RefineName_9]
+{
+投放武器的名字失败了。 \ \
+}

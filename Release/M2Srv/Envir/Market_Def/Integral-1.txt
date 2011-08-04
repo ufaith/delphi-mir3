@@ -1,0 +1,4 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+
+#CALL [WINMA_ACT\ActivityCenter\PointsVouchers.txt] @内测存入积分券X

@@ -1,0 +1,33 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+找我有什么事吗？\
+ <Today's Tasks/@TQuest>\
+ <Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+太谢谢你了。真没想到我丈夫就在离我这么近的地方。谢谢。\
+ <Today's Tasks/@TQuest>\
+ <Exit/@exit>
+}
+
+[@NPC_TQuest]
+{
+No longer have anything for you.\ \
+ <Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+ <Exit/@exit>
+}
+

@@ -1,0 +1,147 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#ACT
+;;SET [921] 0
+MOV A0 %USERNAME
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+ReadValueSql "TBL_CHARACTER" %A9 "FLD_xjYINC" @N_6_xj
+
+[@N_6_xj()]
+#ACT
+MOV D9 %ARG(1)
+LOADVALUE D8 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control 总层数
+#IF
+!EQUAL D9 %D8
+#ACT
+MOV D8 %D9
+INC D9 1
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+mov A5 %A9
+FormatStr "FLD_xjYINC='%s'" %D9
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+MOV A7 "第"
+ADDSTR A7 %D9
+ADDSTR A7 "层积分"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control %A7
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control 选择时间
+goto @进入计时_xjX
+#ELSEACT
+goto @得奖_xjX
+
+[@进入计时_xjX]
+#act
+mov A0 %USERNAME 
+MOV A7 "第"
+ADDSTR A7 %D9
+ADDSTR A7 "层积分"
+MOV A6 "第"
+ADDSTR A6 %D9
+ADDSTR A6 "层地图"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control %A7
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control %A6
+#IF
+CHECKJFPOINT %D0
+#ACT
+;;SET [921] 1
+Delaygoto [local] 5 @计时开始_xjc
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control 进入时间
+#SAY
+恭喜<$OUTPUT(A0)>,你现在是闯过<$OUTPUT(D8)>关!\
+进入<$OUTPUT(D9)>层.需要<$OUTPUT(D0)>点积分!\
+你有{FCOLOR=250}<$OUTPUT(D7)>{FCOLOR=255}秒在此逗留,完了就到下一层了!\
+{FCOLOR=249}快点去收拾家当哦!{FCOLOR=255}\
+#ELSEACT
+SYSMSG "对不起,你得积分不足!"
+goto @计时开始_xjc
+
+[@计时开始_xjc]
+#ACT
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control 进入时间
+close
+GOTO @测测时间_xjX
+
+[@测测时间_xjX]
+#IF
+SMALL D7 1
+#ACT
+GOTO @进入_xjX
+#ELSEACT
+GOTO @倒数时间_xjX
+
+[@倒数时间_xjX]
+#ACT
+SYSMSG "还剩下<$OUTPUT(D7)>秒!"
+DEC D7 1
+Delaygoto [local] 2 @测测时间_xjX
+
+[@出去_xjX]
+#ACT
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control 回去地图代码  
+loadvalue D2 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control X坐标  
+loadvalue D3 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control Y坐标 
+MAPMOVE %A1 %D2 %D3
+SYSMSG "回去顺风哦!"
+Breaktimerecall
+break
+
+[@进入_xjX]
+#act
+mov A0 %USERNAME 
+MOV A7 "第"
+ADDSTR A7 %D9
+ADDSTR A7 "层积分"
+MOV A6 "第"
+ADDSTR A6 %D9
+ADDSTR A6 "层地图"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control %A7
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control %A6
+#if
+CHECKJFPOINT %D0
+#act
+DECJFPOINT %D0
+mapmove  %A1
+SysMsg  "你花费了<$OUTPUT(D0)>点积分进入血翼神殿<$OUTPUT(D9)>层,祝您好运.您还剩余<$NEWJFPOINT>点积分！
+#ELSEACT
+SYSMSG  "对不起,你的积分不足!"
+GOTO @出去_xjX
+
+[@计时开始_xjX]
+#ACT
+loadvalue D7 "QuestDiary\WINMA_DATA\Control\TempleofBlood.txt" Control 进入时间
+close
+GOTO @测测时间_xjc
+
+[@测测时间_xjc]
+#IF
+SMALL D7 1
+#ACT
+GOTO @出去_xjX
+#ELSEACT
+SYSMSG "恭喜你过关,你还剩下<$OUTPUT(D7)>秒在这里停留!"
+DEC D7 1
+Delaygoto [local] 2 @测测时间_xjc
+
+[@得奖_xjX]
+#IF
+CHECK [921] 0
+#SAY
+{FCOLOR=250}<$USERNAME>{FCOLOR=255} 恭喜你挑战成功\\
+系统将奖励你 {FCOLOR=250}2块{FCOLOR=255} 封魔石和 {FCOLOR=250}20W金币{FCOLOR=255}\
+以及{FCOLOR=250}1个{FCOLOR=255} 人王令 \\
+感谢您的参与,同时您的 {FCOLOR=250}声望{FCOLOR=255} 提升7点\\
+#ACT
+SET [921] 1
+ADDSHENGWANG 7
+give 封魔石 2
+;give 神秘钥匙 1
+give 金币 200000
+give 人王令 1
+lineMsg [Grobal] 一位伟大的勇士'<$USERNAME>'成功通过[TempleofBlood]重重考验
+sysmsg "恭喜您 <$USERNAME>,获得了2块封魔石+20W金币,声望提升7点,人王令一块"
+Delaygoto [local] 3 @计时开始_xjX
+break
+#ELSEACT
+SYSMSG "发现[双杀数据]系统终止"
+GOTO @出去_xjX
+BREAK
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

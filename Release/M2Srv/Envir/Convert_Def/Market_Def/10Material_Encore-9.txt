@@ -1,0 +1,19 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Welcome, how may i help you?\
+<Sell/@sell>\
+<Exit/@exit>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+ <Back/@main>
+}
+

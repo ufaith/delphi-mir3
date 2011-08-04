@@ -1,0 +1,16 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@Main_today]
+{
+#ACT
+CLOSE
+MOV A2 %USERMAP
+MOV A3 %USERX
+MOV A4 %USERY
+MAPMOVE %A2 %A3 %A4
+SYSMSG "[使用卡位自救功能]"
+MOV A2 ""
+MOV A3 ""
+MOV A4 ""
+BREAK
+
+}

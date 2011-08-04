@@ -1,0 +1,31 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版-清除红名
+[@清除红名X]
+{
+#SAY
+要清除红名吗？{FCOLOR=250}10点积分可以清除100点PK值{FCOLOR=255}\
+您目前有 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点积分，{FCOLOR=250}<$PKPOINT>{FCOLOR=255} 点PK值.\\
+<开始清除红名/@clear100pk>\
+<返 回/@积分列表_K>\
+
+[@clear100pk]
+#IF
+checkpkpoint 1
+CheckJfPoint 10
+#ACT
+CHANGEPKPOINT - 100
+DECJFPOINT 10
+#SAY
+{FCOLOR=250}已经清除了100点PK值了.{FCOLOR=255}\
+您目前的积分为：{FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点. {FCOLOR=250}<$PKPOINT>{FCOLOR=255} 点PK值\
+<继续清除/@clear100pk>\
+<返 回/@积分列表_K>
+
+#ELSESAY
+您的积分不足或者 {FCOLOR=249}不是红名{FCOLOR=255}\
+<返 回/@积分列表_K>\
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+
+
+

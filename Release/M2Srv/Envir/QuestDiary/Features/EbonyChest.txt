@@ -1,0 +1,183 @@
+[@檀木宝箱]
+{
+#if
+  random 2
+#act
+  ChangeExp + 100000
+  SENDMSG 7 恭喜：你获得了：经验:100000
+  break
+#if
+  random 8
+#act
+  ChangeExp + 150000
+  SENDMSG 7 恭喜：你获得了：经验:150000
+  break
+#if
+  random 14
+#act
+  ChangeExp + 200000
+  SENDMSG 7 恭喜：你获得了：经验:200000
+  break
+#if
+  random 4
+#act
+CREDITPOINT + 1
+  SENDMSG 7 恭喜：你获得了：声望:1
+  break
+#if
+  random 10
+#act
+CREDITPOINT + 2
+  SENDMSG 7 恭喜：你获得了：声望:2
+  break
+#if
+  random 16
+#act
+CREDITPOINT + 1
+  SENDMSG 7 恭喜：你获得了：声望:3
+  break
+#if
+  random 6
+#act
+  give 祝福油 1
+  SENDMSG 7 恭喜：你获得了：祝福油:1
+  break
+#if
+  random 12
+#act
+  give 祝福油 2
+  SENDMSG 7 恭喜：你获得了：祝福油:2
+  break
+#if
+  random 18
+#act
+  give 祝福油 3
+  SENDMSG 7 恭喜：你获得了：祝福油:3
+  break
+#if
+  random 120
+#act
+  give 三眼手镯 1
+  SENDMSG 7 恭喜：你获得了：三眼手镯:1
+  break
+#if
+  random 11
+#act
+  give 心灵手镯 1
+  SENDMSG 7 恭喜：你获得了：骑士手镯:1
+  break
+#if
+  random 13
+#act
+  give 生命项链 1
+  SENDMSG 7 恭喜：你获得了：生命项链:1
+  break
+#if
+  random 113
+#act
+  give 龙之手镯 1
+  SENDMSG 7 恭喜：你获得了：龙之手镯:1
+  break
+#if
+  random 120
+#act
+  give 灵魂项链 1
+  SENDMSG 7 恭喜：你获得了：灵魂项链:1
+  break
+#if
+  random 122
+#act
+  give 泰坦戒指 1
+  SENDMSG 7 恭喜：你获得了：泰坦戒指:1
+  break
+#if
+  random 124
+#act
+  give 紫碧螺 1
+  SENDMSG 7 恭喜：你获得了：紫碧螺:1
+  break
+#if
+  random 126
+#act
+  give 恶魔铃铛 1
+  SENDMSG 7 恭喜：你获得了：恶魔铃铛:1
+  break
+#if
+  random 128
+#act
+  give 绿色项链 1
+  SENDMSG 7 恭喜：你获得了：绿色项链:1
+  break
+#if
+  random 130
+#act
+  give 灵魂项链 1
+  SENDMSG 7 恭喜：你获得了：绿色项链:1
+  break
+#if
+  random 192
+#act
+  give 圣战手镯 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：圣战手镯
+  SENDMSG 7 恭喜：你获得了：圣战手镯:1
+  break
+#if
+  random 193
+#act
+  give 天尊手镯 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：天尊手镯
+  SENDMSG 7 恭喜：你获得了：天尊手镯:1
+  break
+#if
+  random 194
+#act
+  give 法神手镯 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：法神手镯
+  SENDMSG 7 恭喜：你获得了：法神手镯:1
+  break
+#if
+  random 195
+#act
+  give 圣战项链 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：圣战项链
+  SENDMSG 7 恭喜：你获得了：圣战项链:1
+  break
+#if
+  random 196
+#act
+  give 天尊项链 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：天尊项链
+  SENDMSG 7 恭喜：你获得了：天尊项链:1
+  break
+#if
+  random 197
+#act
+  give 法神项链 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：法神项链
+  SENDMSG 7 恭喜：你获得了：法神项链:1
+  break
+#if
+  random 198
+#act
+  give 圣战戒指 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：圣战戒指
+  SENDMSG 7 恭喜：你获得了：圣战戒指:1
+  break
+#if
+  random 199
+#act
+  give 天尊戒指 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：天尊戒指
+  SENDMSG 7 恭喜：你获得了：天尊戒指:1
+  break
+#if
+  random 200
+#act
+  give 法神戒指 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：法神戒指
+  SENDMSG 7 恭喜：你获得了：法神戒指:1
+  break
+#elseact
+  ChangeExp + 100000
+  SENDMSG 7 恭喜：你获得了：经验:100000
+}

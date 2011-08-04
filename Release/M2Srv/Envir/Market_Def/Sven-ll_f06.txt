@@ -1,0 +1,37 @@
+;;Legend Of Mir 3 C3Engine
+
+[@main]
+#SAY
+<[回到罗布泊]/@golb>\ \
+<存放/@storage>物品\
+<取出/@PreGetback>物品\
+<仓库密码管理/@StgPassword>\
+<积分 功能 使用/@jifenshiyong>\ \
+<离 开/@exit>
+;;去llm
+[@golb]
+#if
+
+#act
+
+mapmove  ll_d04 75 67
+
+[@Storage]
+#SAY
+What do you want to store?\\
+<Back/@main>
+
+[@Getback]
+#SAY
+Please select the items you wish to remove.\\
+<Back/@main>
+
+[@PreGetback]
+#CALL [\PassWord\PassWord.txt] @Input_PassWord
+
+[@StgPassword]
+#CALL [\PassWord\PassWord.txt] @Manage_PassWord
+
+[@jifenshiyong]
+#CALL [\WINMA_ACT\ConsumerCredits\PointsList.txt] @积分列表
+

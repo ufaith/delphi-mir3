@@ -1,0 +1,5 @@
+#AutoRun NPC SEC 5 @新手训练一
+#AutoRun NPC SEC 5 @新手训练二
+#AutoRun NPC SEC 5 @新手训练三
+#AutoRun NPC Min 1 @金刚石系统
+#AutoRun NPC RunOnDay 00:00 @游戏时间
