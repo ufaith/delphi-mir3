@@ -1,0 +1,23 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME
+#IF
+EQUAL D0 0
+#SAY
+恶魔的力量控制西沙很久了你确定要出去吗？\
+<我要离开这里/@go_1_1>\
+<还是想想吧/@exit>
+
+#ELSESAY
+(恶魔的力量封印了这里,无法进入)
+
+[@go_1_1]
+#IF
+CHECKLEVEL 60
+#ACT
+mapmove 41 86 259
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 1
+#ELSESAY
+您无法离开这里，因为您的等级还没有达到60级！
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

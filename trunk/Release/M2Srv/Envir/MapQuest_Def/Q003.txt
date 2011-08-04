@@ -1,0 +1,9 @@
+[@main]
+#IF
+CHECKLEVELEX > 29
+#ACT
+mapmove 0 333 268
+#say
+恭喜您完成新手训练任务！！\
+您现在已经成人了！以后的道路要靠你自己了。\ \
+<谢谢/@exit>

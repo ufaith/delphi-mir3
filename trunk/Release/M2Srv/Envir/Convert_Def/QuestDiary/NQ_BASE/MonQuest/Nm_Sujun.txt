@@ -1,0 +1,5 @@
+;;Legend Of Mir 3 C3Engine
+[@Nm_Sujun_1]
+{
+(可怜的人...那种怪物就是你所说得不老不死？)\
+}

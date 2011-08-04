@@ -1,0 +1,239 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版-宝箱解锁
+;;注意[006]这个标记不要和其他的脚本冲突，
+;;搜索整个Envir文件夹，确定[006]其他文件没使用
+;;得到的物品设置，请看文件下面
+[@宝箱解锁_1]
+{
+#IF
+#ACT
+mov  S2 0
+mov  D1 0
+#IF
+check [006] 0
+#SAY
+____怪物首领身上藏有宝箱，宝箱里常常有很值钱的装备，或者\
+能提升你的经验，但是那些怪物首领通常会在宝箱上加魔法封印，\
+如果强行打开，那你将什么也得不到，还好有我这样的高人可以\
+解开封印，如果你有这样的宝箱就来找我吧，每次只收取 {FCOLOR=250}1点积\
+分{FCOLOR=255}\ \
+<打开宝箱/@dakai>\
+\
+<返回上一页/@积分列表_K>\
+<关 闭/@exit>
+
+#ELSESAY
+你的宝箱我已经打开了，你现在要取走里面的东西吗？\
+<查看宝箱/@baoxiangjiesuo>\
+\
+<返回上一页/@宝箱解锁_1>\
+<关 闭/@exit>
+
+[@dakai]
+#IF
+check  [006] 0
+checkitem  宝箱 1
+#ACT
+goto @baoxiang
+#ELSESAY
+你的宝箱呢？那些BOSS级别的怪物都有机会爆出宝箱的\
+<返回上一页/@宝箱解锁_1>\
+<关 闭/@exit>
+
+[@baoxiang]
+#IF
+check  [006] 0
+CheckJfPoint 1
+#ACT
+goto @baoxiang-2
+#ELSESAY
+你的积分不够啊，必须有1点以上的积分才可以。\
+
+[@baoxiang-2]
+#IF
+CheckJfPoint 1
+checkitem  宝箱 1
+check [006] 0
+#ACT
+take 宝箱 1
+DECJFPOINT 1
+set [006] 1
+#SAY
+宝箱解锁中....请等一下再来找我。\
+<一分钟后再来/@exit>\
+#ELSESAY
+无语..\
+
+[@baoxiangjiesuo]
+#IF
+check [006] 1
+#ACT
+movr S2 11
+LoadValue B1 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品1]
+LoadValue B2 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品2]
+LoadValue B3 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品3]
+LoadValue B4 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品4]
+LoadValue B5 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品5]
+LoadValue B6 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品6]
+LoadValue B7 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品7]
+LoadValue B8 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品8]
+LoadValue B9 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] [物品9]
+
+
+#IF
+check [006] 1
+equal   S2  0
+#SAY
+很不错，里面有100万金币.\
+<离 开/@exit>\
+#ACT
+give  金币 1000000
+goto  @恢复初始
+break
+
+#IF
+check [006] 1
+equal   S2  1
+#SAY
+很不错，你得到了250万的经验奖励.\
+<离 开/@exit>\
+#ACT
+GMEXECUTE adjustExp %USERNAME + %A0 2500000
+goto  @恢复初始
+break
+
+
+#IF
+check [006] 1
+equal   S2  2
+#SAY
+很不错，你得到了500万的经验奖励.\
+<离 开/@exit>\
+#ACT
+GMEXECUTE adjustExp %USERNAME + %A0 5000000
+goto  @恢复初始
+break
+
+
+;;---------------------下面自行修改添加
+
+#IF
+check [006] 1
+equal   S2  3
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B1)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B1  1
+goto  @恢复初始
+break
+
+#IF
+check [006] 1
+equal   S2  4
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B2)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B2  1
+goto  @恢复初始
+break
+
+#IF
+check [006] 1
+equal   S2  5
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B3)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B3  1
+goto  @恢复初始
+break
+
+
+#IF
+check [006] 1
+equal   S2  6
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B4)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B4  1
+goto  @恢复初始
+break
+
+
+#IF
+check [006] 1
+equal   S2  7
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B5)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B5  1
+goto  @恢复初始
+break
+
+#IF
+check [006] 1
+equal   S2  8
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B6)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B6  1
+goto  @恢复初始
+break
+#IF
+check [006] 1
+equal   S2  9
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B7)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B7  1
+goto  @恢复初始
+break
+
+#IF
+check [006] 1
+equal   S2  10
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B8)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B8  1
+goto  @恢复初始
+break
+
+#IF
+check [006] 1
+equal   S2  11
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B9)>{FCOLOR=255}.\
+<离 开/@exit>\
+#ACT
+give %B9  1
+goto  @恢复初始
+break
+
+
+[@恢复初始]
+#ACT
+SET [006] 0
+mov  S2 0
+mov  D1 0
+break
+
+}
+
+[得到物品]
+物品1=祝福油
+物品2=金条
+物品3=游戏点卷
+物品4=昏暗风印（幸运）
+物品5=破坏项链（幸运）
+物品6=怨恨项链（幸运）
+物品7=诅咒之药水
+物品8=魔晶石
+物品9=连环明珠
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

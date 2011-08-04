@@ -1,0 +1,25 @@
+;;;=====Deepblue====
+[@main]
+#say
+需要杀光这层的怪才能进入下一层\
+进入下一层需要200万金币，请确定您有足够的金钱\\
+<[进入下一层]/@gonext2>\
+<[还是不要了]/@exit>\
+
+[@gonext2]
+#if
+checkmonmap ll_e152 1
+#say
+这一层的怪还没有清光，您不能离开!\
+<离 开/@exit>
+#elseact
+GOTO @清光了2
+[@清光了2]
+#if
+checkgold 2000000
+#act
+take 金币 2000000
+mapmove  ll_e153
+#elsesay
+您没有这么多钱，我不能帮您传送!\
+<离 开/@exit>

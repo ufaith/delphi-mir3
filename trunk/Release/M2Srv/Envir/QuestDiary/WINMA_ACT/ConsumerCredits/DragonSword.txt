@@ -1,0 +1,194 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@打造飞龙剑X1]
+{
+#ACT
+LOADVALUE D5 "QuestDiary\WINMA_DATA\Control\SystemControl.txt" Control 打造飞龙剑消费
+#SAY
+____担心冰城路途遥远？担心冰城被人包场无法炼制飞龙剑？本\
+人特为您开辟了一条积分炼制便捷通道！\
+____在这里，飞龙剑的成功与否完全取决于您的能力，{FCOLOR=250}注入一定\
+量的封魔石能提高您的炼制几率{FCOLOR=255}，当然如果您想投机取巧碰碰运\气，
+一旦失败，付出的代价可比冰城炼制多的多，我将没收您的\
+所有材料，嘿嘿!炼制的原始几率为 {FCOLOR=249}0/1500{FCOLOR=255} 您可以注入 {FCOLOR=250}封魔石{FCOLOR=255} \
+来提高几率{FCOLOR=250}1块封魔石=1点几率{FCOLOR=255} 如果您有1500块，那我可以告诉\
+您，您就是这把神兵的主人了。超级炼制每次收取 {FCOLOR=250}<$OUTPUT(D5)>{FCOLOR=255} 点积分，\
+同样需要100个相同属性的飞龙剑碎片,因为飞龙剑的属性是由碎\
+片属性决定的.\
+____您目前拥有 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点积分   {FCOLOR=249}\
+____注:冰城炼制依旧开放{FCOLOR=255}\ \   
+<开始打造飞龙剑/@打造分龙剑>\
+<转换碎片属性/@转换碎片属性>\ 
+<返 回/@积分列表_K>\
+
+ 
+[@转换碎片属性]
+#SAY
+ 请选择你有的要更换的碎片属性:\
+ {FCOLOR=250}转换一块碎片需要10万金币{FCOLOR=255}\
+ <[火]/@属性(火)> <[冰]/@属性(冰)> <[雷]/@属性(雷)>\
+ <[风]/@属性(风)> <[神圣]/@属性(神圣)> <[暗黑]/@属性(暗黑)>\
+ <[幻影]/@属性(幻影)>\
+
+
+[@属性()]
+#ACT
+MOV A1 %ARG(1)
+MOV A0 "飞龙剑碎片（"
+ADDSTR A0 %A1
+ADDSTR A0 "）"
+#SAY
+ 请选择你要更换成的碎片属性:\
+ {FCOLOR=250}转换一块碎片需要10万金币{FCOLOR=255}\ 
+<[火]/@属性1(火)> <[冰]/@属性1(冰)> <[雷]/@属性1(雷)>\
+ <[风]/@属性1(风)> <[神圣]/@属性1(神圣)> <[暗黑]/@属性1(暗黑)>\
+ <[幻影]/@属性1(幻影)>\
+
+[@属性1()]
+#ACT
+MOV A2 %ARG(1)
+MOV A3 "飞龙剑碎片（"
+ADDSTR A3 %A2
+ADDSTR A3 "）"
+#SAY
+ <请输入你要转换得碎片个数/@@碎片个数>
+
+
+[@@碎片个数]
+#ACT
+MOV D0 %INPUTNUM
+MOV P1 100000
+MOV P2 %D0
+MUL P1 P2
+MOV D6 %P9
+#IF
+ESMALL D0 0
+#ACT
+SYSMSG "对不起,不能输入0以下的数"
+GOTO @打造飞龙剑X1
+BREAK
+#IF
+LARGE D0 150
+#ACT
+SYSMSG "对不起,转换个数不能超过150个"
+GOTO @打造飞龙剑X1
+BREAK
+#IF
+LARGE D0 0
+checkgold %D6
+checkitem %A0 %D0
+#ACT
+take 金币  %D6
+take %A0 %D0
+GIVE %A3 %D0
+GOTO @打造飞龙剑X1
+BREAK 
+#ELSEACT
+SYSMSG "你碎片不足或金币不足"
+GOTO @打造飞龙剑X1
+
+
+[@打造分龙剑]
+#ACT
+LOADVALUE D8 "QuestDiary\WINMA_DATA\Control\SystemControl.txt" Control 飞龙剑原始成功率
+LOADVALUE D9 "QuestDiary\WINMA_DATA\Control\SystemControl.txt" Control 飞龙剑最大成功率
+LOADVALUE D7 "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造 
+#IF
+EQUAL D7 0
+#SAY
+____此过程请小心注意,若不小心关闭窗口,本游戏概不负责!目前\
+成功率为 {FCOLOR=249}<$OUTPUT(D8)>/<$OUTPUT(D9)>{FCOLOR=255}，需要 {FCOLOR=250}<$OUTPUT(D5)>{FCOLOR=255} 点积分 {FCOLOR=250}100个碎片{FCOLOR=255} 合成,目前您有 \
+{FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点积分\ \
+ <[注入封魔石]/@@注入封魔石>\
+ 请问你要打造什么属性的飞龙剑?\
+ <[飞龙剑]（火）/@飞龙剑(（火）)> <[飞龙剑]（雷）/@飞龙剑(（雷）)> <[飞龙剑]（风）/@飞龙剑(（风）)>\
+ <[飞龙剑]（冰）/@飞龙剑(（冰）)> <[飞龙剑]（神圣）/@飞龙剑(（神圣）)> <[飞龙剑]（暗黑）/@飞龙剑(（暗黑）)>\
+ <[飞龙剑]（幻影）/@飞龙剑(（幻影）)>
+#ELSEACT
+INC D8 %D7
+#ELSESAY
+____此过程请小心注意,若不小心关闭窗口,本游戏概不负责!目前\
+成功率为 {FCOLOR=249}<$OUTPUT(D8)>/<$OUTPUT(D9)>{FCOLOR=255}，需要 {FCOLOR=250}<$OUTPUT(D5)>{FCOLOR=255} 点积分合成,目前您有 \
+{FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点积分\ \
+ <[注入封魔石]/@@注入封魔石>\
+ <[退还飞龙创造]/@退还飞龙创造>\
+ 请问你要打造什么属性的飞龙剑?\
+ <[飞龙剑]（火）/@飞龙剑(（火）)> <[飞龙剑]（雷）/@飞龙剑(（雷）)> <[飞龙剑]（风）/@飞龙剑(（风）)>\
+ <[飞龙剑]（冰）/@飞龙剑(（冰）)> <[飞龙剑]（神圣）/@飞龙剑(（神圣）)> <[飞龙剑]（暗黑）/@飞龙剑(（暗黑）)>\
+ <[飞龙剑]（幻影）/@飞龙剑(（幻影）)>
+
+[@@注入封魔石]
+#ACT
+MOV D2 %INPUTNUM
+#IF
+ESMALL D2 0
+#ACT
+SYSMSG "对不起,你输入的数值有误"
+BREAK
+#IF
+ELARGE D2 1
+CHECKITEM 封魔石 %D2
+#ACT
+TAKE 封魔石 %D2
+LOADVALUE D7 "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造 
+INC D7 %D2
+SAVEVALUE "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造 %D7
+GOTO @打造分龙剑
+#ELSEACT
+SYSMSG "对不起,您身上没那没多封魔石"
+
+[@退还飞龙创造]
+#ACT
+LOADVALUE D2 "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造
+#IF
+LARGE D2 0
+#ACT
+give 封魔石 %D2
+SAVEVALUE "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造 0
+BREAK
+CLOSE
+#ELSEACT
+SYSMSG "你有注入过封魔石吗?"
+BREAK
+
+[@飞龙剑()]
+#ACT
+MOV A1 %ARG(1)
+MOV A2 "飞龙剑"
+MOV A3 "飞龙剑碎片"
+ADDSTR A2 %A1
+ADDSTR A3 %A1
+MOVR D3 %D9
+#IF
+!checkitem %A3 100
+#ACT
+SYSMSG "对不起,你的材料不足!"
+BREAK
+#IF
+CheckJfPoint %D5
+#act
+goto @HEC_1
+#ELSESAY
+对不起,你的积分不足支付合成\
+
+[@HEC_1]
+#IF
+ESMALL D3 %D8
+checkitem %A3 100
+#ACT
+DECJFPOINT %D5
+GIVE %A2 1
+take %A3 100
+SYSMSG "<$OUTPUT(A2)>合成成功了!"
+SAVEVALUE "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造 0
+CLOSE
+break
+#ELSEACT
+DECJFPOINT %D5
+take %A3 100
+SYSMSG "<$OUTPUT(A2)>合成失败了!"
+SAVEVALUE "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME 飞龙剑创造 0
+CLOSE
+BREAK 
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

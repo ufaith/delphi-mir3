@@ -1,0 +1,323 @@
+[@白银开宝]
+{
+#if
+    random 2
+#act
+    ChangeExp + 300000
+    SENDMSG 7 恭喜：你获得了：经验:300000
+  break
+#if
+  random 8
+#act
+  ChangeExp + 400000
+  SENDMSG 7 恭喜：你获得了：经验:400000
+  break
+#if
+  random 14
+#act
+  ChangeExp + 500000
+  SENDMSG 7 恭喜：你获得了：经验:500000
+  break
+#if
+  random 4
+#act
+  CREDITPOINT + 2
+  SENDMSG 7 恭喜：你获得了：声望:2
+  break
+#if
+  random 10
+#act
+  CREDITPOINT + 3
+  SENDMSG 7 恭喜：你获得了：声望:3
+  break
+#if
+  random 16
+#act
+  CREDITPOINT + 4
+  SENDMSG 7 恭喜：你获得了：声望:4
+  break
+#if
+  random 6
+#act
+  give 祝福油 2
+  SENDMSG 7 恭喜：你获得了：祝福油:2
+  break
+#if
+  random 12
+#act
+  give 祝福油 3
+  SENDMSG 7 恭喜：你获得了：祝福油:3
+  break
+#if
+  random 18
+#act
+  give 祝福油 4
+  SENDMSG 7 恭喜：你获得了：祝福油:4
+  break
+#if
+  random 60
+#act
+  give 三眼手镯 1
+  SENDMSG 7 恭喜：你获得了：三眼手镯:1
+  break
+#if
+  random 11
+#act
+  give 心灵手镯 1
+  SENDMSG 7 恭喜：你获得了：骑士手镯:1
+  break
+#if
+  random 13
+#act
+  give 生命项链 1
+  SENDMSG 7 恭喜：你获得了：生命项链:1
+  break
+#if
+  random 53
+#act
+  give 龙之手镯 1
+  SENDMSG 7 恭喜：你获得了：龙之手镯:1
+  break
+#if
+  random 60
+#act
+  give 灵魂项链 1
+  SENDMSG 7 恭喜：你获得了：灵魂项链:1
+  break
+#if
+  random 62
+#act
+  give 泰坦戒指 1
+  SENDMSG 7 恭喜：你获得了：泰坦戒指:1
+  break
+#if
+  random 64
+#act
+  give 紫碧螺 1
+  SENDMSG 7 恭喜：你获得了：紫碧螺:1
+  break
+#if
+  random 66
+#act
+  give 恶魔铃铛 1
+  SENDMSG 7 恭喜：你获得了：恶魔铃铛:1
+  break
+#if
+  random 68
+#act
+  give 绿色项链 1
+  SENDMSG 7 恭喜：你获得了：绿色项链:1
+  break
+#if
+  random 80
+#act
+  give 灵魂项链 1
+  SENDMSG 7 恭喜：你获得了：绿色项链:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图001 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图001
+  SENDMSG 7 恭喜：你获得了：藏宝图001:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图002 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图002
+  SENDMSG 7 恭喜：你获得了：藏宝图002:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图003 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图003
+  SENDMSG 7 恭喜：你获得了：藏宝图003:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图004 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图004
+  SENDMSG 7 恭喜：你获得了：藏宝图004:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图005 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图005
+  SENDMSG 7 恭喜：你获得了：藏宝图005:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图006 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图006
+  SENDMSG 7 恭喜：你获得了：藏宝图006:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图007 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图007
+  SENDMSG 7 恭喜：你获得了：藏宝图007:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图008 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图008
+  SENDMSG 7 恭喜：你获得了：藏宝图008:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图009 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图009
+  SENDMSG 7 恭喜：你获得了：藏宝图009:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图010 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图010
+  SENDMSG 7 恭喜：你获得了：藏宝图010:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图011 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图011
+  SENDMSG 7 恭喜：你获得了：藏宝图011:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图012 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图012
+  SENDMSG 7 恭喜：你获得了：藏宝图012:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图013 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图013
+  SENDMSG 7 恭喜：你获得了：藏宝图013:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图014 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图014
+  SENDMSG 7 恭喜：你获得了：藏宝图014:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图015 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图015
+  SENDMSG 7 恭喜：你获得了：藏宝图015:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图016 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图016
+  SENDMSG 7 恭喜：你获得了：藏宝图016:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图017 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图017
+  SENDMSG 7 恭喜：你获得了：藏宝图017:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图018 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图018
+  SENDMSG 7 恭喜：你获得了：藏宝图018:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图019 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图019
+  SENDMSG 7 恭喜：你获得了：藏宝图019:1
+  break
+#if
+  random 80
+#act
+  give 藏宝图020 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：藏宝图020
+  SENDMSG 7 恭喜：你获得了：藏宝图020:1
+  break
+#if
+  random 72
+#act
+  give 圣战手镯 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：圣战手镯
+  SENDMSG 7 恭喜：你获得了：圣战手镯:1
+  break
+#if
+  random 133
+#act
+  give 天尊手镯 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：天尊手镯
+  SENDMSG 7 恭喜：你获得了：天尊手镯:1
+  break
+#if
+  random 134
+#act
+  give 法神手镯 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：法神手镯
+  SENDMSG 7 恭喜：你获得了：法神手镯:1
+  break
+#if
+  random 135
+#act
+  give 圣战项链 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：圣战项链
+  SENDMSG 7 恭喜：你获得了：圣战项链:1
+  break
+#if
+  random 136
+#act
+  give 天尊项链 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：天尊项链
+  SENDMSG 7 恭喜：你获得了：天尊项链:1
+  break
+#if
+  random 137
+#act
+  give 法神项链 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：法神项链
+  SENDMSG 7 恭喜：你获得了：法神项链:1
+  break
+#if
+  random 138
+#act
+  give 圣战戒指 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：圣战戒指
+  SENDMSG 7 恭喜：你获得了：圣战戒指:1
+  break
+#if
+  random 139
+#act
+  give 天尊戒指 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：天尊戒指
+  SENDMSG 7 恭喜：你获得了：天尊戒指:1
+  break
+#if
+  random 140
+#act
+  give 法神戒指 1
+  SENDMSG 0 恭喜：%s　在开宝箱中获得了：法神戒指
+  SENDMSG 7 恭喜：你获得了：法神戒指:1
+  break
+#elseact
+  ChangeExp + 300000
+  SENDMSG 7 恭喜：你获得了：经验:300000
+}

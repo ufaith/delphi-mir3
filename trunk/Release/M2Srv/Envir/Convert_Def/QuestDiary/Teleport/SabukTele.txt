@@ -1,0 +1,21 @@
+﻿;;Legend Of Mir 3 C3Engine
+[@SabukTele_1]
+{
+Join the Siege Warfare\ \
+<Exit/@exit>
+}
+
+[@SabukTele_2]
+{
+Join the Siege Warfare\ \
+<Exit/@exit>
+}
+
+[@SabukTele_3]
+{
+Please select were you would like to go. \ \
+<Shido Village : 500 Gold/@TelePortRootin(DoGwan,500,Center)> \
+<Snake Village : 500 Gold/@TelePortRootin(SnakeVally,500,North)> \
+<[Use Integral Teleport]/@TelePortRootin(ji,0,Center)>\\
+
+}

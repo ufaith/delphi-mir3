@@ -1,0 +1,8 @@
+;;Legend Of Mir 3 C3Engine
+[@RushMap]
+#IF
+checkhum 1_001 20
+#ACT
+enter_fail
+#ELSEACT
+enter_ok

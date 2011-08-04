@@ -1,0 +1,30 @@
+﻿;;Legend Of Mir 3 C3Engine
+[@KugKyungTele_1]
+{
+Please select were you would like to go. \ \
+<Bichon : 500 Gold/@TelePortRootin(Bichon,500,West)> \ \
+<Shido Village : 1000 Gold/@TelePortRootin(DoGwan,1000,Center)> \
+<village of Ginkgo : 1000 Gold/@TelePortRootin(EunHang,1000,Center)> \
+<Snake Village : 1000 Gold/@TelePortRootin(SnakeVally,1000,South)> \ \
+<[Use Integral Teleport]/@TelePortRootin(ji,0,Center)>\\
+
+
+}
+
+[@KugKyungTele_2]
+{
+Please select were you would like to go. \ \
+<CityWall : 500 Gold/@TelePortRootin(MongChon,500,East)> \ \
+<Desert : 1000 Gold/@TelePortRootin(Samak,1000,East)> \ \
+<Oasis Village : 1500 Gold/@TelePortRootin(Oasis,1500,Center)> \ \
+;;<Palace Hall : 2000 Gold/@TelePortRootin(Numa,2000,Center)> \ \
+<[Use Integral Teleport]/@TelePortRootin(ji,0,Center)>\\
+}
+
+[@KugKyungTele_3]
+{
+Please select were you would like to go. \ \
+<Shimamura : 500 Gold/@TelePortRootin(HalfMoon,500,Center)> \
+<[Use Integral Teleport]/@TelePortRootin(ji,0,Center)>\\
+}
+

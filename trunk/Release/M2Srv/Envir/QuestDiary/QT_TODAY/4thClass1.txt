@@ -1,0 +1,4759 @@
+;;Legend Of Mir 3 C3Engine
+[@450_START]
+{
+#IF
+CheckDailyQuest 450
+#ACT
+goto @450_START_1
+
+#IF
+CheckDailyQuest 451
+#ACT
+goto @450_START_1
+[@450_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_1
+
+[@450_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_2
+
+[@450_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_3
+
+}
+
+[@450_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_4
+
+[@450_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_5
+
+[@450_CHECK1_2]
+#IF
+check [308] 1
+check [309] 1
+#ACT
+goto @450_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_6
+
+[@450_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+check [309] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [450] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [450] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+check [309] 1
+large D0 89
+
+#ACT
+goto @450_Reward_Check
+
+[@450_Reward_Check]
+#IF
+Gender Man
+check [307] 1
+check [310] 0
+check [308] 1
+check [309] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_7
+
+#ACT
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [450] [Reward_Race_10_man]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [450] [Reward_Amount_10_man]
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @450_Say_7
+
+#ELSEACT
+Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [450] [Reward_Race_10_woman]
+Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [450] [Reward_Amount_10_woman]
+give %A2 %D3
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+
+[@451_START]
+{
+#IF
+CheckDailyQuest 451
+#ACT
+goto @451_START_1
+
+[@451_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_1
+
+[@451_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_2
+
+[@451_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_3
+
+}
+
+[@451_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_4
+
+[@451_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_5
+
+[@451_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @451_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_6
+
+[@451_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [451] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [451] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @451_Say_7
+
+#ACT
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [451] [Reward_Race_10]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [451] [Reward_Amount_10]
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+[@453_START]
+{
+#IF
+CheckDailyQuest 453
+#ACT
+goto @453_START_1
+
+[@453_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_1
+
+[@453_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_2
+
+[@453_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_3
+
+}
+
+[@453_CHECk1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_4
+
+[@453_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_5
+
+[@453_CHECK1_2]
+#IF
+checkitem ÂìÒÏÂÑ 15
+#ACT
+goto @453_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_6
+
+[@453_check1_3]
+#ACT
+movr D0 100
+
+#IF
+checkitem ÂìÒÏÂÑ 15
+check [310] 0
+check [307] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [453] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [453] [Reward_Amount_90]
+give %A0 %D1
+take ÂìÒÏÂÑ 15
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem ÂìÒÏÂÑ 15
+
+#ACT
+goto @453_Reward_Check
+
+[@453_Reward_Check]
+#IF
+Gender Man
+check [307] 1
+check [310] 0
+checkitem ÂìÒÏÂÑ 15
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_7
+
+#ACT
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [453] [Reward_Race_10_man]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [453] [Reward_Amount_10_man]
+take ÂìÒÏÂÑ 15
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @453_Say_7
+
+#ELSEACT
+Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [453] [Reward_Race_10_woman]
+Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [453] [Reward_Amount_10_woman]
+take ÂìÒÏÂÑ 15
+give %A2 %D3
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+
+[@454_START]
+{
+#IF
+CheckDailyQuest 454
+#ACT
+goto @454_START_1
+
+[@454_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_1
+
+[@454_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_2
+
+[@454_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_3
+
+}
+
+[@454_CHECk1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_4
+
+[@454_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_5
+
+[@454_CHECK1_2]
+#IF
+checkitem ¿ø¼×ÂìÒÏÂÑ 1
+checkitem ÂìÒÏÂÑ 1
+#ACT
+goto @454_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_6
+
+[@454_check1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+checkitem ¿ø¼×ÂìÒÏÂÑ 1
+checkitem ÂìÒÏÂÑ 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [454] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [454] [Reward_Amount_90]
+take ¿ø¼×ÂìÒÏÂÑ 1
+take ÂìÒÏÂÑ 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @454_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [454] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [454] [Reward_Amount_10]
+take ¿ø¼×ÂìÒÏÂÑ 1
+take ÂìÒÏÂÑ 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+[@455_START]
+{
+#IF
+CheckDailyQuest 455
+#ACT
+goto @455_START_1
+
+[@455_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_1
+
+[@455_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_2
+
+[@455_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_3
+
+}
+
+[@455_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_4
+
+[@455_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_5
+
+[@455_CHECK1_2]
+#IF
+checkitem ÑòÈâ 5
+checkduraeva ÑòÈâ 10
+#ACT
+goto @455_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_6
+
+[@455_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem ÑòÈâ 5
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Amount_90]
+take ÑòÈâ 5
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem ÑòÈâ 5
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Amount_10]
+take ÑòÈâ 5
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+[@456_START]
+{
+#IF
+CheckDailyQuest 456
+#ACT
+goto @456_START_1
+
+[@456_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_1
+
+[@456_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_2
+
+[@456_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_3
+
+}
+
+
+[@456_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_4
+
+[@456_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_5
+
+[@456_CHECK1_2]
+#IF
+check [308] 1
+checkitem ÎÖÂêÓÂÊ¿ºÅ½Ç 10
+#ACT
+goto @456_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_6
+
+[@456_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+checkitem ÎÖÂêÓÂÊ¿ºÅ½Ç 10
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [456] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [456] [Reward_Amount_90]
+take ÎÖÂêÓÂÊ¿ºÅ½Ç 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @456_Say_7
+
+#ELSEACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [456] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [456] [Reward_Amount_10]
+take ÎÖÂêÓÂÊ¿ºÅ½Ç 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+[@457_START]
+{
+#IF
+CheckDailyQuest 457
+#ACT
+goto @457_START_1
+
+
+[@457_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_1
+
+
+
+[@457_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_2
+
+
+[@457_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+give °¡ÅËµÄÐÅ¼þ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_3
+
+}
+
+;++++++++++++++++++++++++++++++
+
+[@457_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_4
+
+
+[@457_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_5
+
+
+
+[@457_CHECK1_2]
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+check [309] 1
+#ACT
+goto @457_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_6
+
+
+
+[@457_CHECK1_3]
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+check [309] 1
+#ACT
+give ½ð±Ò 50000
+;
+set [309] 0
+set [308] 0
+set [307] 0
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_7
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_8
+
+}
+
+[@457_CHECK2]
+{
+#IF
+check [310] 0
+check [307] 1
+check [308] 0
+check [309] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_9
+
+
+[@457_CHECK2_1]
+#IF 
+check [310] 0
+check [307] 1
+check [308] 0
+checkitem °¡ÅËµÄÐÅ¼þ 1 
+#ACT
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_10
+
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_11
+
+
+[@457_CHECK2_2]
+#ACT
+set [308] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_12
+
+[@457_CHECK2_3]
+#ACT
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_13
+
+
+[@457_check2_4]
+#ACT
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_14
+
+}
+;------------------------------------
+[@457_CHECK3]
+{
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+check [309] 0
+checkitem °¡ÅËµÄÐÅ¼þ 1
+
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_15
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_16
+
+
+[@457_CHECK3_1]
+#IF 
+check [310] 0
+check [307] 1
+check [308] 1
+checkitem ºÅ½Ç 20
+checkitem °¡ÅËµÄÐÅ¼þ 1
+#ACT
+set [309] 1
+take ºÅ½Ç 20
+take °¡ÅËµÄÐÅ¼þ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_17
+
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_18
+
+
+[@457_CHECK3_2]
+#ACT
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @457_Say_19
+
+}
+
+
+
+[@458_START]
+{
+#IF
+CheckDailyQuest 458
+#ACT
+goto @458_START_1
+
+
+[@458_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_1
+
+
+
+[@458_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_2
+
+
+[@458_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+give »ªÓñµÄÐÅ¼þ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_3
+
+}
+
+;++++++++++++++++++++++++++++++
+
+[@458_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_4
+
+[@458_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_5
+
+[@458_CHECK1_2]
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+#ACT
+goto @458_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_6
+
+[@458_CHECK1_3]
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+#ACT
+give ½ð±Ò 10000
+;
+set [309] 0
+set [308] 0
+set [307] 0
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_7
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_8
+
+}
+
+[@458_CHECK2]
+{
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_9
+
+[@458_CHECK2_1]
+#IF 
+check [310] 0
+check [307] 1
+check [308] 0
+checkitem »ªÓñµÄÐÅ¼þ 1 
+#ACT
+take »ªÓñµÄÐÅ¼þ 1
+set [308] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_10
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_11
+
+[@458_CHECK2_2]
+#ACT
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @458_Say_12
+
+}
+
+
+[@459_START]
+{
+#IF
+CheckDailyQuest 459
+#ACT
+goto @459_START_1
+
+
+[@459_START_1]
+#IF
+check [310] 0
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_1
+
+
+
+[@459_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_2
+
+
+
+[@459_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_3
+
+}
+
+
+;++++++++++++++++++++++++++++++
+
+
+[@459_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_4
+
+
+[@459_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_5
+
+
+
+[@459_CHECK1_2]
+#IF
+check [310] 0
+check [307] 1
+checkitem Æ¤ 10
+#ACT
+goto @459_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_6
+
+
+[@459_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Æ¤ 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [459] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [459] [Reward_Amount_90]
+take Æ¤ 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Æ¤ 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @459_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [459] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [459] [Reward_Amount_10]
+take Æ¤ 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+;++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+;++++++++++++++++++++++++++ 460  ++++++++++++++++++++++++++
+
+[@460_START]
+{
+#IF
+CheckDailyQuest 460
+#ACT
+goto @460_START_1
+
+#IF
+CheckDailyQuest 461
+#ACT
+goto @460_START_1
+
+
+[@460_START_1]
+#IF
+check [310] 0
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_1
+
+
+
+[@460_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_2
+
+
+
+[@460_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_3
+
+}
+
+
+;++++++++++++++++++++++++++++++
+
+
+[@460_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_4
+
+
+[@460_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_5
+
+
+
+[@460_CHECK1_2]
+#IF
+check [310] 0
+check [307] 1
+checkitem ÍòÄêÑ©Ëª 10
+#ACT
+goto @460_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_6
+
+
+[@460_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem ÍòÄêÑ©Ëª 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Amount_90]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Race_90_1th]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Amount_90_1th]
+take ÍòÄêÑ©Ëª 10
+give %A0 %D1
+give %A2 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem ÍòÄêÑ©Ëª 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Amount_10]
+take ÍòÄêÑ©Ëª 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 461  ++++++++++++++++++++++++++
+
+[@461_START]
+{
+#IF
+CheckDailyQuest 461
+#ACT
+goto @461_START_1
+
+
+[@461_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_1
+
+
+
+[@461_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_2
+
+
+
+[@461_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_3
+
+
+[@461_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_4
+
+
+[@461_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_5
+
+
+[@461_CHECK1_2]
+#IF
+checkitem Ç¯³æÆ¤ 20
+#ACT
+goto @461_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_6
+
+
+[@461_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Ç¯³æÆ¤ 20
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [461] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [461] [Reward_Amount_90]
+take Ç¯³æÆ¤ 20
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Ç¯³æÆ¤ 20
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @461_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [461] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [461] [Reward_Amount_10]
+take Ç¯³æÆ¤ 20
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 462  ++++++++++++++++++++++++++
+
+[@462_START]
+{
+#IF
+CheckDailyQuest 462
+#ACT
+goto @462_START_1
+
+
+[@462_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_1
+
+
+
+[@462_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_2
+
+
+
+[@462_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_3
+
+
+[@462_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_4
+
+
+[@462_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_5
+
+
+[@462_CHECK1_2]
+#IF
+checkitem ½©Ê¬¹ÇÍ· 30
+#ACT
+goto @462_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_6
+
+
+[@462_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem ½©Ê¬¹ÇÍ· 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [462] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [462] [Reward_Amount_90]
+take ½©Ê¬¹ÇÍ· 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem ½©Ê¬¹ÇÍ· 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @462_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [462] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [462] [Reward_Amount_10]
+take ½©Ê¬¹ÇÍ· 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 463  ++++++++++++++++++++++++++
+
+[@463_START]
+{
+#IF
+CheckDailyQuest 463
+#ACT
+goto @463_START_1
+
+
+[@463_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_1
+
+
+
+[@463_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_2
+
+
+
+[@463_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_3
+
+
+[@463_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_4
+
+
+[@463_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_5
+
+
+[@463_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @463_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_6
+
+
+[@463_check1_3]
+#ACT
+movr D0 100
+
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [463] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [463] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @463_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [463] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [463] [Reward_Amount_10]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+;++++++++++++++++++++++++++ 465  ++++++++++++++++++++++++++
+
+[@465_START]
+{
+#IF
+CheckDailyQuest 465
+#ACT
+goto @465_START_1
+
+
+[@465_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_1
+
+
+
+[@465_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_2
+
+
+
+[@465_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_3
+
+
+[@465_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_4
+
+
+[@465_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_5
+
+
+[@465_CHECK1_2]
+#IF
+checkitem ½ð¿ó 3
+#ACT
+goto @465_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_6
+
+
+[@465_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem ½ð¿ó 3
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_7
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Amount_90]
+take ½ð¿ó 3
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem ½ð¿ó 3
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_8
+
+
+#ACT
+goto @465_Reward_Check
+
+[@465_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem ½ð¿ó 3
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Amount_10_man]
+take ½ð¿ó 3
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem ½ð¿ó 3
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Amount_10_woman]
+take ½ð¿ó 3
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+
+;++++++++++++++++++++++++++ 466  ++++++++++++++++++++++++++
+
+[@466_START]
+{
+#IF
+CheckDailyQuest 466
+#ACT
+goto @466_START_1
+
+
+[@466_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_1
+
+
+
+[@466_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_2
+
+
+
+[@466_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_3
+
+
+[@466_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_4
+
+
+[@466_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_5
+
+
+[@466_CHECK1_2]
+#IF
+checkitem Æßµã°×Éßµ¨Ö­
+#ACT
+goto @466_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_6
+
+
+[@466_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Æßµã°×Éßµ¨Ö­
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [466] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [466] [Reward_Amount_90]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [466] [Reward_Race_90_1th]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [466] [Reward_Amount_90_1th]
+take Æßµã°×Éßµ¨Ö­
+give %A0 %D1
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Æßµã°×Éßµ¨Ö­
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @466_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [466] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [466] [Reward_Amount_10]
+take Æßµã°×Éßµ¨Ö­
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 467  ++++++++++++++++++++++++++
+
+[@467_START]
+{
+#IF
+CheckDailyQuest 467
+#ACT
+goto @467_START_1
+
+
+[@467_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_1
+
+
+
+[@467_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_2
+
+
+
+[@467_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_3
+
+
+[@467_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_4
+
+
+[@467_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_5
+
+
+[@467_CHECK1_2]
+#IF
+checkitem Ð¡ÊÖïí 20
+#ACT
+goto @467_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_6
+
+
+[@467_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Ð¡ÊÖïí 20
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [467] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [467] [Reward_Amount_90]
+take Ð¡ÊÖïí 20
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Ð¡ÊÖïí 20
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_8
+
+
+#ACT
+goto @467_Reward_Check
+
+[@467_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem Ð¡ÊÖïí 20
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [467] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [467] [Reward_Amount_10_man]
+take Ð¡ÊÖïí 20
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Ð¡ÊÖïí 20
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @467_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [467] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [467] [Reward_Amount_10_woman]
+take Ð¡ÊÖïí 20
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+;++++++++++++++++++++++++++ 468  ++++++++++++++++++++++++++
+
+[@468_START]
+{
+#IF
+CheckDailyQuest 468
+#ACT
+goto @468_START_1
+
+#IF
+CheckDailyQuest 469
+#ACT
+goto @468_START_1
+
+[@468_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_1
+
+
+
+[@468_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_2
+
+
+
+[@468_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_3
+
+
+[@468_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_4
+
+
+[@468_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_5
+
+
+[@468_CHECK1_2]
+#IF
+check [308] 1
+checkitem Æßµã°×ÉßÑª
+#ACT
+goto @468_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_6
+
+
+[@468_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+checkitem Æßµã°×ÉßÑª
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Amount_90]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Race_90_1th]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Amount_90_1th]
+take Æßµã°×ÉßÑª
+give %A0 %D1
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+checkitem Æßµã°×ÉßÑª
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_8
+
+
+#ACT
+goto @468_Reward_Check
+
+[@468_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+check [308] 1
+checkitem Æßµã°×ÉßÑª
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Amount_10_man]
+take Æßµã°×ÉßÑª
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Æßµã°×ÉßÑª
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @468_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [468] [Reward_Amount_10_woman]
+take Æßµã°×ÉßÑª
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+
+;++++++++++++++++++++++++++ 469  ++++++++++++++++++++++++++
+
+[@469_START]
+{
+#IF
+CheckDailyQuest 469
+#ACT
+goto @469_START_1
+
+
+[@469_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_1
+
+
+
+[@469_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_2
+
+
+
+[@469_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_3
+
+
+[@469_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_4
+
+
+[@469_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_5
+
+
+[@469_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @469_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_6
+
+
+[@469_check1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [469] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [469] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @469_Say_8
+
+#ELSEACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [469] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [469] [Reward_Amount_10]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 470  ++++++++++++++++++++++++++
+
+[@470_START]
+{
+#IF
+CheckDailyQuest 470
+#ACT
+goto @470_START_1
+
+
+[@470_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_1
+
+
+
+[@470_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_2
+
+
+
+[@470_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_3
+
+
+[@470_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_4
+
+
+[@470_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_5
+
+
+[@470_CHECK1_2]
+#IF
+checkitem ²¨ÎÆÊÖïí 10
+#ACT
+goto @470_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_6
+
+
+[@470_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem ²¨ÎÆÊÖïí 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [470] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [470] [Reward_Amount_90]
+take ²¨ÎÆÊÖïí 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem ²¨ÎÆÊÖïí 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @470_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [470] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [470] [Reward_Amount_10]
+take ²¨ÎÆÊÖïí 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 471  ++++++++++++++++++++++++++
+
+[@471_START]
+{
+#IF
+CheckDailyQuest 471
+#ACT
+goto @471_START_1
+
+
+[@471_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_1
+
+
+
+[@471_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_2
+
+
+
+[@471_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_3
+
+
+[@471_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_4
+
+
+[@471_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_5
+
+
+[@471_CHECK1_2]
+#IF
+checkitem Ç¯³æÆ¤ 10
+#ACT
+goto @471_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_6
+
+
+[@471_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Ç¯³æÆ¤ 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [471] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [471] [Reward_Amount_90]
+take Ç¯³æÆ¤ 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Ç¯³æÆ¤ 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_8
+
+
+#ACT
+goto @471_Reward_Check
+
+[@471_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem Ç¯³æÆ¤ 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [471] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [471] [Reward_Amount_10_man]
+take Ç¯³æÆ¤ 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Ç¯³æÆ¤ 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @471_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [471] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [471] [Reward_Amount_10_woman]
+take Ç¯³æÆ¤ 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+;++++++++++++++++++++++++++ 472  ++++++++++++++++++++++++++
+
+[@472_START]
+{
+#IF
+CheckDailyQuest 472
+#ACT
+goto @472_START_1
+
+[@472_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_1
+
+
+[@472_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_2
+
+
+[@472_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_3
+
+}
+
+[@472_CHECk1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_4
+
+
+[@472_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_5
+
+
+[@472_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @472_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_6
+
+
+[@472_check1_3]
+#ACT
+movr D0 100
+
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [472] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [472] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @472_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [472] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [472] [Reward_Amount_10]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 473  ++++++++++++++++++++++++++
+
+[@473_START]
+{
+#IF
+CheckDailyQuest 473
+#ACT
+goto @473_START_1
+
+
+[@473_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_1
+
+
+
+[@473_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_2
+
+
+
+[@473_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_3
+
+
+[@473_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_4
+
+
+[@473_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_5
+
+
+[@473_CHECK1_2]
+#IF
+checkitem Ð°¶ñÇ¯³æÆ¤
+#ACT
+goto @473_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_6
+
+
+[@473_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Ð°¶ñÇ¯³æÆ¤
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [473] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [473] [Reward_Amount_90]
+take Ð°¶ñÇ¯³æÆ¤
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Ð°¶ñÇ¯³æÆ¤
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @473_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [473] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [473] [Reward_Amount_10]
+take Ð°¶ñÇ¯³æÆ¤
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+
+;++++++++++++++++++++++++++ 474  ++++++++++++++++++++++++++
+
+[@474_START]
+{
+#IF
+CheckDailyQuest 474
+#ACT
+goto @474_START_1
+
+
+[@474_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_1
+
+
+
+[@474_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_2
+
+
+
+[@474_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_3
+
+
+[@474_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_4
+
+
+[@474_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_5
+
+
+[@474_CHECK1_2]
+#IF
+checkitem Æ¤ 45
+#ACT
+goto @474_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_6
+
+
+[@474_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+checkitem Æ¤ 45
+Small D0 90
+
+#ACT
+goto @474_Reward_Check
+
+#ELSEACT
+goto @474_10_Reward
+
+[@474_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem Æ¤ 45
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_7
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Race_90_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Amount_90_man]
+take Æ¤ 45
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Æ¤ 45
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Race_90_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Amount_90_woman]
+take Æ¤ 45
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+[@474_10_Reward]
+#IF
+check [310] 0
+check [307] 1
+checkitem Æ¤ 45
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @474_Say_9
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Amount_10]
+take Æ¤ 45
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 475  ++++++++++++++++++++++++++
+
+[@475_START]
+{
+#IF
+CheckDailyQuest 475
+#ACT
+goto @475_START_1
+#IF
+CheckDailyQuest 473
+#ACT
+goto @475_START_1
+
+[@475_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_1
+
+
+
+[@475_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_2
+
+
+
+[@475_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_3
+
+
+[@475_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_4
+
+
+[@475_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_5
+
+
+[@475_CHECK1_2]
+#IF
+checkitem Æ¤ 30
+#ACT
+goto @475_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_6
+
+
+[@475_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+checkitem Æ¤ 30
+Small D0 90
+
+#ACT
+goto @475_Reward_Check
+
+#ELSEACT
+goto @475_10_Reward
+
+[@475_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem Æ¤ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_7
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [475] [Reward_Race_90_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [475] [Reward_Amount_90_man]
+take Æ¤ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Æ¤ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [475] [Reward_Race_90_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [475] [Reward_Amount_90_woman]
+take Æ¤ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+[@475_10_Reward]
+#ACT 
+movr D0 2
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem Æ¤ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Race_10_man_1th]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Amount_10_man_1th]
+take Æ¤ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Æ¤ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @475_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [474] [Reward_Amount_10_woman]
+take Æ¤ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+
+;++++++++++++++++++++++++++ 477  ++++++++++++++++++++++++++
+
+[@477_START]
+{
+#IF
+CheckDailyQuest 477
+#ACT
+goto @477_START_1
+
+#IF
+CheckDailyQuest 471
+#ACT
+goto @477_START_1
+
+
+[@477_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_1
+
+
+
+[@477_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_2
+
+
+
+[@477_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_3
+
+
+[@477_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_4
+
+
+[@477_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_5
+
+
+[@477_CHECK1_2]
+#IF
+checkitem ÂìÒÏÂÑ 30
+#ACT
+goto @477_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_6
+
+
+[@477_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+checkitem ÂìÒÏÂÑ 30
+Small D0 90
+
+#ACT
+goto @477_Reward_Check
+
+#ELSEACT
+goto @477_10_Reward
+
+[@477_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem ÂìÒÏÂÑ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_7
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [477] [Reward_Race_90_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [477] [Reward_Amount_90_man]
+take ÂìÒÏÂÑ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem ÂìÒÏÂÑ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [477] [Reward_Race_90_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [477] [Reward_Amount_90_woman]
+take ÂìÒÏÂÑ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+[@477_10_Reward]
+#IF
+check [310] 0
+check [307] 1
+checkitem ÂìÒÏÂÑ 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @477_Say_9
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [477] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [477] [Reward_Amount_10]
+take ÂìÒÏÂÑ 30
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+
+;++++++++++++++++++++++++++ 479  ++++++++++++++++++++++++++
+
+[@479_START]
+{
+#IF
+CheckDailyQuest 479
+#ACT
+goto @479_START_1
+
+
+[@479_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_1
+
+
+
+[@479_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_2
+
+
+
+[@479_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_3
+
+[@479_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_4
+
+[@479_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_5
+
+[@479_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @479_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_6
+
+[@479_check1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_7
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [479] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [479] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @479_Say_7
+
+#ELSEACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [479] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [479] [Reward_Amount_10]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 480  ++++++++++++++++++++++++++
+
+[@480_START]
+{
+#IF
+CheckDailyQuest 480
+#ACT
+goto @480_START_1
+
+
+[@480_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_1
+
+
+
+[@480_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_2
+
+
+
+[@480_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_3
+
+
+[@480_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_4
+
+
+[@480_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_5
+
+[@480_CHECK1_2]
+#IF
+check [308] 1
+checkitem Õ¶Âíµ¶ 1
+#ACT
+goto @480_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_6
+
+
+[@480_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Õ¶Âíµ¶ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Amount_90]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Race_90_1th]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Amount_90_1th]
+take Õ¶Âíµ¶ 1
+give %A0 %D1
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Õ¶Âíµ¶ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_8
+
+
+#ACT
+goto @480_Reward_Check
+
+[@480_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem Õ¶Âíµ¶ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Amount_10_man]
+take Õ¶Âíµ¶ 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem Õ¶Âíµ¶ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @480_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [480] [Reward_Amount_10_woman]
+take Õ¶Âíµ¶ 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+
+;++++++++++++++++++++++++++ 481  ++++++++++++++++++++++++++
+
+[@481_START]
+{
+#IF
+CheckDailyQuest 481
+#ACT
+goto @481_START_1
+
+
+[@481_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_1
+
+
+
+[@481_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_2
+
+
+
+[@481_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_3
+
+
+[@481_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_4
+
+
+[@481_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_5
+
+
+[@481_CHECK1_2]
+#IF
+checkitem Ö©ÖëÏß 25
+#ACT
+goto @481_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_6
+
+
+[@481_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Ö©ÖëÏß 25
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [481] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [481] [Reward_Amount_90]
+take Ö©ÖëÏß 25
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Ö©ÖëÏß 25
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @481_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [481] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [481] [Reward_Amount_10]
+take Ö©ÖëÏß 25
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 482  ++++++++++++++++++++++++++
+
+[@482_START]
+{
+#IF
+CheckDailyQuest 482
+#ACT
+goto @482_START_1
+
+
+[@482_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_1
+
+
+
+[@482_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_2
+
+
+
+[@482_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_3
+
+
+[@482_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_4
+
+
+[@482_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_5
+
+
+[@482_CHECK1_2]
+#IF
+check [308] 1
+checkitem ²»ËÀ¹ÇÍ·
+#ACT
+goto @482_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_6
+
+
+[@482_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+checkitem ²»ËÀ¹ÇÍ·
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Amount_90]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Race_90_1th]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Amount_90_1th]
+take ²»ËÀ¹ÇÍ·
+give %A0 %D1
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+checkitem ²»ËÀ¹ÇÍ·
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_8
+
+
+#ACT
+goto @482_Reward_Check
+
+[@482_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+check [308] 1
+checkitem ²»ËÀ¹ÇÍ·
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_9
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Amount_10_man]
+take ²»ËÀ¹ÇÍ·
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem ²»ËÀ¹ÇÍ·
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @482_Say_10
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [482] [Reward_Amount_10_woman]
+take ²»ËÀ¹ÇÍ·
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+}
+
+
+
+;++++++++++++++++++++++++++ 483  ++++++++++++++++++++++++++
+
+[@483_START]
+{
+#IF
+CheckDailyQuest 483
+#ACT
+goto @483_START_1
+
+
+[@483_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_1
+
+
+[@483_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_2
+>
+
+
+[@483_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_3
+
+
+[@483_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_4
+
+
+[@483_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_5
+
+
+[@483_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @483_check1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_6
+
+
+[@483_check1_3]
+#ACT
+movr D0 100
+
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [483] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [483] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @483_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [483] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [483] [Reward_Amount_10]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 484  ++++++++++++++++++++++++++
+
+[@484_START]
+{
+#IF
+CheckDailyQuest 484
+#ACT
+goto @484_START_1
+
+
+[@484_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_1
+
+
+
+[@484_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_2
+
+
+
+[@484_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_3
+
+
+[@484_CHECK1]
+#IF
+checkitem À¶ôä´äÏîÁ´ 1
+#ACT
+goto @484_reward
+
+[@484_reward]
+#ACT
+movr D0 100
+
+#IF
+check [307] 1
+check [310] 0
+small D0 90
+checkitem À¶ôä´äÏîÁ´ 1
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Race]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Amount]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Race_1]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Amount_1]
+take À¶ôä´äÏîÁ´ 1 
+give %A0 %D1
+give %A1 %D2
+set [307] 0
+set [308] 0
+set [309] 0
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_4
+
+
+#IF
+large D0 89
+
+#ACT 
+goto @484_reward_1
+
+[@484_reward_1]
+#ACT
+movr D0 2
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem À¶ôä´äÏîÁ´ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_5
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Amount_10_man]
+take À¶ôä´äÏîÁ´ 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem À¶ôä´äÏîÁ´ 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_6
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [484] [Reward_Amount_10_woman]
+take À¶ôä´äÏîÁ´ 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+[@484_CHECK2]
+{
+#IF
+CheckDailyQuest 484
+#ACT
+goto @484_CHECK2_1
+
+[@484_CHECK2_1]
+#IF
+#ACT
+give À¶ôä´äÏîÁ´ 1
+set [308] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @484_Say_7
+
+}
+
+
+
+;++++++++++++++++++++++++++ 485  ++++++++++++++++++++++++++
+
+[@485_START]
+{
+#IF
+CheckDailyQuest 485
+#ACT
+goto @485_START_1
+
+#IF
+CheckDailyQuest 483
+#ACT
+goto @485_START_1
+
+
+[@485_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @485_Say_1
+
+
+
+[@485_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @485_Say_2
+
+
+
+[@485_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @485_Say_3
+
+
+[@485_CHECK1]
+#IF
+checkitem ¸¯Ê´ÈË¹íÖ®Àá 1
+#ACT
+goto @485_reward
+
+[@485_reward]
+#ACT
+movr D0 100
+
+#IF
+check [307] 1
+check [310] 0
+small D0 90
+checkitem ¸¯Ê´ÈË¹íÖ®Àá 1
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Race]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Amount]
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Race_1]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Amount_1]
+take ¸¯Ê´ÈË¹íÖ®Àá 1 
+give %A0 %D1
+give %A1 %D2
+set [307] 0
+set [308] 0
+set [309] 0
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @485_Say_4
+
+
+#IF
+large D0 89
+
+#ACT 
+goto @485_reward_1
+
+[@485_reward_1]
+#ACT
+movr D0 2
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem ¸¯Ê´ÈË¹íÖ®Àá 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @485_Say_5
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Race_10_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Amount_10_man]
+take ¸¯Ê´ÈË¹íÖ®Àá 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem ¸¯Ê´ÈË¹íÖ®Àá 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @485_Say_6
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Race_10_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [485] [Reward_Amount_10_woman]
+take ¸¯Ê´ÈË¹íÖ®Àá 1
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+;++++++++++++++++++++++++++ 487  ++++++++++++++++++++++++++
+
+[@487_START]
+{
+#IF
+CheckDailyQuest 487
+#ACT
+goto @487_START_1
+
+
+[@487_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_1
+
+
+
+[@487_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_2
+
+
+
+[@487_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_3
+
+
+[@487_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_4
+
+
+[@487_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_5
+
+
+[@487_CHECK1_2]
+#IF
+checkitem Å£Èâ 5
+checkduraeva Å£Èâ 12
+#ACT
+goto @487_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_6
+
+
+[@487_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Å£Èâ 5
+checkduraeva Å£Èâ 12
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Amount_90]
+take Å£Èâ 5
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Å£Èâ 5
+checkduraeva Å£Èâ 12
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_8
+
+#ACT
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Race_10]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Amount_10]
+take Å£Èâ 5
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 488  ++++++++++++++++++++++++++
+
+[@488_START]
+{
+#IF
+CheckDailyQuest 488
+#ACT
+goto @488_START_1
+
+
+[@488_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_1
+
+
+
+[@488_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_2
+
+
+
+[@488_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_3
+
+
+[@488_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_4
+
+[@488_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_5
+
+
+[@488_CHECK1_2]
+#IF
+checkitem Ç§Äê¶¾ÉßÑÀ³Ý 10
+
+#ACT
+goto @488_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_6
+
+
+[@488_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Ç§Äê¶¾ÉßÑÀ³Ý 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [488] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [488] [Reward_Amount_90]
+take Ç§Äê¶¾ÉßÑÀ³Ý 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Ç§Äê¶¾ÉßÑÀ³Ý 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @488_Say_8
+
+
+#ACT
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [488] [Reward_Race_10]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [488] [Reward_Amount_10]
+take Ç§Äê¶¾ÉßÑÀ³Ý 10
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+;++++++++++++++++++++++++++ 490  ++++++++++++++++++++++++++
+
+[@490_START]
+{
+#IF
+CheckDailyQuest 490
+#ACT
+goto @490_START_1
+
+
+[@490_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_1
+
+
+
+[@490_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_2
+
+
+
+[@490_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_3
+
+
+[@490_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_4
+
+
+[@490_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_5
+
+
+[@490_CHECK1_2]
+#IF
+checkitem »ðÑæÎÖÂêºÅ½Ç 10
+
+#ACT
+goto @490_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_6
+
+
+[@490_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem »ðÑæÎÖÂêºÅ½Ç 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [490] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [490] [Reward_Amount_90]
+take »ðÑæÎÖÂêºÅ½Ç 10
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem »ðÑæÎÖÂêºÅ½Ç 10
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @490_Say_8
+
+
+#ACT
+Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [490] [Reward_Race_10]
+Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [490] [Reward_Amount_10]
+take »ðÑæÎÖÂêºÅ½Ç 10
+give %A1 %D2
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 491  ++++++++++++++++++++++++++
+
+[@491_START]
+{
+#IF
+CheckDailyQuest 491
+#ACT
+goto @491_START_1
+
+
+[@491_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @491_Say_1
+
+
+
+[@491_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @491_Say_2
+
+
+
+[@491_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+take ½ð±Ò 400
+give ²Ê¾í 30
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @491_Say_3
+
+
+}
+
+;++++++++++++++++++++++++++ 492  ++++++++++++++++++++++++++
+
+[@492_START]
+{
+#IF
+CheckDailyQuest 492
+#ACT
+goto @492_START_1
+
+
+[@492_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @492_Say_1
+
+
+[@492_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+give ½ð±Ò 20000
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @492_Say_2
+
+
+
+}
+
+
+;--------------------------------494-------------------------------------
+
+[@494_START]
+{
+#IF
+CheckDailyQuest 494
+#ACT
+goto @494_START_1
+
+
+[@494_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @494_Say_1
+
+
+[@494_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @494_Say_2
+
+
+
+[@494_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @494_Say_3
+
+
+}
+;---------------------------------------------------------------------------
+
+;++++++++++++++++++++++++++ 495  ++++++++++++++++++++++++++
+
+[@495_START]
+{
+#IF
+CheckDailyQuest 495
+#ACT
+goto @495_START_1
+
+#IF
+CheckDailyQuest 496
+#ACT
+goto @495_START_1
+
+
+[@495_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_1
+
+
+[@495_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_2
+
+
+
+[@495_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_3
+
+
+[@495_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_4
+
+
+[@495_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_5
+
+
+[@495_CHECK1_2]
+#IF
+checkitem ÷¼÷Ã¾«Áé¹Ç
+#ACT
+goto @495_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_6
+
+
+[@495_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+checkitem ÷¼÷Ã¾«Áé¹Ç
+Small D0 90
+
+#ACT
+goto @495_Reward_Check
+
+#ELSEACT
+goto @495_10_Reward
+
+[@495_Reward_Check]
+#ACT 
+movr D0 2
+
+
+#IF
+equal D0 0
+check [307] 1
+check [310] 0
+checkitem ÷¼÷Ã¾«Áé¹Ç
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_6
+
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [495] [Reward_Race_90_man]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [495] [Reward_Amount_90_man]
+take ÷¼÷Ã¾«Áé¹Ç
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+equal D0 1
+check [307] 1
+check [310] 0
+checkitem ÷¼÷Ã¾«Áé¹Ç
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [495] [Reward_Race_90_woman]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [495] [Reward_Amount_90_woman]
+take ÷¼÷Ã¾«Áé¹Ç
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+
+[@495_10_Reward]
+#IF
+check [310] 0
+check [307] 1
+checkitem ÷¼÷Ã¾«Áé¹Ç
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @495_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [495] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [495] [Reward_Amount_10]
+take ÷¼÷Ã¾«Áé¹Ç
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+
+}
+;++++++++++++++++++++++++++ 496  ++++++++++++++++++++++++++
+
+[@496_START]
+{
+#IF
+CheckDailyQuest 496
+#ACT
+goto @496_START_1
+
+
+[@496_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_1
+
+
+
+[@496_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_2
+
+
+
+[@496_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_3
+
+
+[@496_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_4
+
+
+[@496_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_5
+
+
+[@496_CHECK1_2]
+#IF
+checkitem Æßµã°×ÉßÑÀ³Ý 5
+#ACT
+goto @496_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_6
+
+
+[@496_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+small D0 90
+checkitem Æßµã°×ÉßÑÀ³Ý 5
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [496] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [496] [Reward_Amount_90]
+take Æßµã°×ÉßÑÀ³Ý 5
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+large D0 89
+checkitem Æßµã°×ÉßÑÀ³Ý 5
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @496_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [496] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [496] [Reward_Amount_10]
+take Æßµã°×ÉßÑÀ³Ý 5
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 497  ++++++++++++++++++++++++++
+
+[@497_START]
+{
+#IF
+CheckDailyQuest 497
+#ACT
+goto @497_START_1
+
+
+[@497_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_1
+
+
+[@497_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_2
+
+
+
+[@497_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_3
+
+}
+
+[@497_CHECK1]
+{
+#IF
+check [310] 0
+check [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_4
+
+
+[@497_CHECK1_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_5
+
+
+[@497_CHECK1_2]
+#IF
+check [308] 1
+#ACT
+goto @497_CHECK1_3
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_6
+
+
+[@497_CHECK1_3]
+#ACT
+movr D0 100
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+small D0 90
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_7
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [497] [Reward_Race_90]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [497] [Reward_Amount_90]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+#IF
+check [310] 0
+check [307] 1
+check [308] 1
+large D0 89
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @497_Say_8
+
+
+#ACT
+Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [497] [Reward_Race_10]
+Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [497] [Reward_Amount_10]
+give %A0 %D1
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+break
+
+}
+
+
+;++++++++++++++++++++++++++ 498  ++++++++++++++++++++++++++
+
+[@498_START]
+{
+#IF
+CheckDailyQuest 498
+#ACT
+goto @498_START_1
+
+
+[@498_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_1
+
+
+
+[@498_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_2
+
+
+[@498_START_2]
+#IF
+check [307] 0
+#ACT
+give ÐÅ¼þ 2
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_3
+
+
+[@498_CHECK1]
+#IF
+check [308] 1
+check [309] 1
+#ACT
+give ÷ÈÁ¦½äÖ¸ 1
+give ½ð±Ò 30000
+set [307] 0
+set [308] 0
+set [309] 0
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_4
+
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_5
+
+
+}
+
+[@498_CHECK2]
+{
+#IF
+CheckDailyQuest 498
+#ACT
+goto @498_CHECK2_1
+
+[@498_CHECK2_1]
+#IF
+checkitem ÐÅ¼þ 1
+#ACT
+take ÐÅ¼þ 1
+set [308] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_6
+
+#ELSESAY 
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_7
+}
+
+[@498_CHECK3]
+{
+#IF
+CheckDailyQuest 498
+#ACT
+goto @498_CHECK3_1
+
+[@498_CHECK3_1]
+#IF
+checkitem ÐÅ¼þ 1
+#ACT
+take ÐÅ¼þ 1
+set [309] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_8
+
+#ELSESAY 
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @498_Say_9
+
+}
+
+
+[@499_START]
+{
+#IF
+CheckDailyQuest 499
+#ACT
+goto @499_START_1
+
+
+[@499_START_1]
+#IF
+check [307] 0
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @499_Say_1
+
+
+[@499_START_1_1]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @499_Say_2
+
+
+[@499_START_2]
+#IF
+check [307] 0
+#ACT
+set [307] 1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @499_Say_3
+
+[@499_CHECK1]
+#IF
+check [308] 1
+#ACT
+goto @499_CHECK1_1
+
+[@499_CHECK1_1]
+#IF
+check [309] 1
+#ACT
+give µÀµÂ½äÖ¸ 1
+give ½ð±Ò 30000
+set [307] 0
+set [308] 0
+set [309] 0
+reset [307] 2
+set [310] 1
+GOTO @½±ÀøÉùÍû
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @499_Say_4
+
+#ELSEACT
+take ½ð±Ò 5000
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @499_Say_5
+}
+;;Legend Of Mir 3 C3Engine

@@ -1,0 +1,6 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+
+
+
+#CALL [\\teleport\VanyaTele.txt] @HalfNight_Cave

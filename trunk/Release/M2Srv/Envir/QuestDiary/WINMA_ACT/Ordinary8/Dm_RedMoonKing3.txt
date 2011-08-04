@@ -1,0 +1,33 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+#SAY
+终于抓到赤月恶魔，恭喜。\
+是否进入下一张地图？\
+\\
+<是，我要继续战斗！/@ok> \
+\
+<不，我要离开这个鬼地方。/@moveout> \
+#ACT
+set [920] 0
+Delaygoto [local] 60 @movenext
+
+[@ok]
+#say
+1分钟之后您将会被传送到下一张地图 \
+\\
+<关闭/@exit>\
+
+[@movenext]
+#if
+check [920] 0
+#act
+mapmove D71615 26 8
+#ELSEACT
+break
+
+[@moveout]
+#act 
+set [920] 1
+mapmove 1 400 125
+break

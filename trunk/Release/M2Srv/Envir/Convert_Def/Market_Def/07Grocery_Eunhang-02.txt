@@ -1,0 +1,94 @@
+[@NPC_RedPlayer]
+{
+Sorry you are bad for business\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Ask/@questionprize>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_QuestionPrize]
+{
+我们店里只有<蜡烛/@candle>, 和<地牢逃脱卷/@teleport>,从怪物那里得到的<随机传送卷/@teleport2>和<回城卷/@steleport>其它店里才有。\ \
+<Back/@main>
+}
+
+[@NPC_Candle]
+{
+蜡烛是天黑时使用的，天黑了以后，没有蜡烛，就会伸手不见五指。\ \
+<前一步/@questionprize>
+}
+
+[@NPC_Teleport]
+{
+地牢逃脱卷可以使你瞬间移动到你最后去过的村子里。它的威力比回城卷弱，但它足以保住你的性命。\ \ 
+<前一步/@questionprize>
+}
+
+[@NPC_Teleport2]
+{
+随机传送卷可以使你在现在所在的地方自由移动。即，如果你在寺庙的1层，那么就在1层里，如果你在商店里，就可以在商店里自由移动。这虽然很危险，但你还有很多药，他可以为你打猎提供帮助。\ \
+<前一步/@questionprize>
+}
+
+[@NPC_sTeleport]
+{
+回城卷是古代流传下来的技术，但很可惜，现在这种技术已经失传了。但怪物那里偶尔还有，听说用了那个东西，可以使你马上回到村子里。\ \
+<前一步/@questionprize>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+
+[@NPC_Goods]
+{
+;ItemName      Volume     Hour
+封魔石
+随机传送卷
+回城卷
+行会回城卷
+地牢逃脱卷
+修复油
+护身符（小）
+护身符（中）
+护身符（火）
+护身符（冰）
+护身符（雷）
+护身符（风）
+护身符（冰）
+灵魂护身符（小）
+灵魂护身符（中）
+神圣护身符（小）
+黄色药粉（中）
+灰色药粉（中）
+黄色药粉（小）
+灰色药粉（小）
+}

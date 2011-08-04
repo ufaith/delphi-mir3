@@ -1,0 +1,10 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+#ACT
+Delaygoto [local] 120 @next
+
+[@next]
+#IF
+#ACT
+mapting D504 D503 54 55

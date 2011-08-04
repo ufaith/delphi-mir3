@@ -1,0 +1,5 @@
+;;Legend Of Mir 3 C3Engine
+[@fireLine2_1]
+{
+(嘿，终于通过了学习地狱火的测试。)\
+}

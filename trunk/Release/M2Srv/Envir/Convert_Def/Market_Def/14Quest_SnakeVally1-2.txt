@@ -1,0 +1,32 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+没看到我们的珍珍吗？这孩子跑到哪里去了？\ \
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+珍珍的生命全都是靠年轻人您才救回来的啊！\ \
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+ <Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+ <Exit/@exit>
+}

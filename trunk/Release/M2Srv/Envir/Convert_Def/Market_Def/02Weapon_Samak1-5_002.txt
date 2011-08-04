@@ -1,0 +1,75 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Remove Weapon/@remove_sword>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+Item has been repaired.\ \
+<Back/@main>
+}
+
+[@NPC_Remove_Sword]
+{
+你是怎么会让手粘在剑上呢 。。。\
+你看看现在是不是已经摘下来了。。。 这种没用的剑我来替你保管吧。。。\ \
+ <Back/@main>
+}
+
+[@NPC_Remove_Sword_1]
+{
+你是怎么会让手粘在剑上呢 。。。\
+你看看现在是不是已经摘下来了。。。 这种没用的剑我来替你保管吧。。。\ \
+<Back/@main>
+}
+
+[@NPC_Remove_Sword_Else]
+{
+You do not have a weapon equiped...\
+听说{FCOLOR=250}攻杀铁剑{FCOLOR=255}和 {FCOLOR=250}焱火剑{FCOLOR=255}一旦到手上就摘不下来。\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

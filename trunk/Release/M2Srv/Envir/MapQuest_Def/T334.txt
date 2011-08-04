@@ -1,0 +1,8 @@
+[@main]
+#IF
+checkmonmap T334 5
+#ELSEACT
+MONGENEX T334   15  25    ±©—¿÷©÷Î    10    3         10
+MONGENEX T334   15  25    ÃÏ¿«÷©÷Î    10    3         10
+MONGENEX T334   15  25    ÃÏ¿«÷©÷Î0   10    2         30
+MONGENEX T334   25  15    ±©—¿÷©÷Î0   10    2         30

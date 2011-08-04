@@ -1,0 +1,41 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@TimeAddExpNE]
+{
+#IF
+checkpkpoint 2
+#SAY
+Sorry you are bad for business\ \
+<Exit/@exit>
+#ELSEACT
+goto @TimeAddExpNE_0
+;;------------------------------------------------------------------------------
+[@TimeAddExpNE_0]
+#SAY
+{FCOLOR=250}泡点人员说明:{FCOLOR=255}\
+只要在内测时间内,人物在线每5分钟就可以得到一个“积分兑换券碎片”,只限在道观和银杏2张地图,您还可以去练级地图或是杀杀BOSS可以得到更多的内测积分兑换券。请在公测前必须将“内测积分兑换券”存入内测积分卷管理。不存或过时将不能带到公测\
+<开始泡点/@开始泡点了哦NC>\
+<关闭泡点/@我不要泡了哦NC>\
+<算了/@exit>
+
+[@开始泡点了哦NC]
+#IF
+CHECK [122] 1
+#ACT
+SYSMSG "泡点程序只能开始一次,上次未结束之前不能再次开始!"
+BREAK
+#ELSEACT
+SET [122] 1
+Killslave
+SYSMSG "开始泡点,5分钟给一张积分兑换券碎片"
+
+
+[@我不要泡了哦NC]
+#IF
+CHECK [122] 1
+
+#ACT
+ClearDelayGoto
+SET [122] 0
+SYSMSG "您的泡点功能已经关闭!"
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

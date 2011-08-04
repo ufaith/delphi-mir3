@@ -1,0 +1,26 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+#SAY
+终于消灭了冰城王后。是否进入第7层？\
+里面有强大的 {FCOLOR=250}冰城帝王{FCOLOR=255} 等着您呢..\
+<是的，进入7层/@jinru7>\
+<打不过,不去了/@exit>\
+
+[@jinru7]
+#IF
+
+#SAY
+{FCOLOR=250}3分钟{FCOLOR=255} 之后您将进入冰原地底宫殿第7层.挑战强大的冰城帝王！\
+\
+<关闭/@exit>\
+#ACT
+Delaygoto [local] 180 @jinru7x
+break
+
+[@jinru7x]
+#IF
+#ACT
+mapmove d2107 38 40
+break
+

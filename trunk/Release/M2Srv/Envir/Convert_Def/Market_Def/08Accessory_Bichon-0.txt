@@ -1,0 +1,248 @@
+[@NPC_RedPlayer]
+{
+Sorry you are bad for business\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Persuade/@NQuest01_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_2]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest01_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_3]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest01_3>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_4]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest01_4>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_5]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest01_5>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_6]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_7]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_8]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_1>\
+<Persuade/@NQuest01_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_9]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_1>\
+<Quest/@NQuest01_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_10]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_1>\
+<Quest/@NQuest01_3>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_11]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_1>\
+<Quest/@NQuest01_4>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_12]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_1>\
+<Quest/@NQuest01_5>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_13]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_2>\
+<Persuade/@NQuest01_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_14]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_2>\
+<Quest/@NQuest01_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_15]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_2>\
+<Quest/@NQuest01_3>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_16]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_2>\
+<Quest/@NQuest01_4>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_17]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Quest/@NQuest02_2>\
+<Quest/@NQuest01_5>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+Item has been repaired.\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}

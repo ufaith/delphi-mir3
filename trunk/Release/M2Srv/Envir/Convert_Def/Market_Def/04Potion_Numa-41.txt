@@ -1,0 +1,32 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell> \
+<Exit/@exit>
+}
+
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Goods]
+{
+;掉落的物品     数量       hour
+
+}

@@ -1,0 +1,28 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+我一看就知道你是战士。怎么样，一个人修炼武功有什么困难吗？好不容易弄来的秘籍，却由于无法理解而导致修炼中出现差错，如果那样的话，我可以帮助你。不过，不管怎么说我也是军队里的武功教练，所以你得交点钱我才能指导你。\ 
+<查看可解释的武功目录/@main_0_1>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+（战士魔法）\ \
+（1 - 10 等级 修炼魔法）\
+<基本剑术/@Go_Mu_Warrior_Noatom_wesu>\ \
+（11 - 20 等级 修炼魔法）\
+<攻杀剑术/@Go_Mu_Warrior_Noatom_wedo> , <刺杀剑术/@Go_Mu_Warrior_Noatom_asword>\ \
+（21 - 30 等级 修炼魔法）\
+<半月弯刀/@Go_Mu_Warrior_Noatom_banwel> , <野蛮冲撞/@Go_Mu_Warrior_Noatom_mute>\ \
+（31 - 40 等级 修炼魔法）\
+<烈火剑法/@Go_Mu_Warrior_Noatom_fire> , <翔空剑法/@Go_Mu_Warrior_Noatom_maeng> , <莲月剑法/@Go_Mu_Warrior_Noatom_double>\ \
+ <Exit/@exit>
+}
+

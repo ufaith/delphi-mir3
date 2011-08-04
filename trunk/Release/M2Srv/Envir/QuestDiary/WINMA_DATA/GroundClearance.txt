@@ -1,0 +1,26 @@
+;清空地面
+[@cleardaox]
+{
+#SAY
+清理中....
+#ACT
+MOV A0 %USERMAP
+MOV A1 %USERX
+MOV A2 %USERY
+MOV A3 ""
+ADDSTR A3 %A0
+ADDSTR A3 ","
+ADDSTR A3 %A1
+ADDSTR A3 ","
+ADDSTR A3 %A2
+ADDSTR A3 ",100"
+Clearitemmap %A3 *
+DELAYGOTO 1 @OKNOW^%
+BREAK
+
+[@OKNOW^%]
+#SAY
+清理完毕.
+
+}
+

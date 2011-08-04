@@ -1,0 +1,97 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@BAGITEM_2CLICK]
+{
+#ACT
+SetItemEvent 3 6 @TWOCLICK_INGX
+
+[@TWOCLICK_INGX]
+#IF
+EQUAL A9 "新年祝贺卡"
+#ACT
+GOTO @2CLICKto_spring1
+BREAK
+#ELSEACT
+BREAK
+
+[@2CLICKto_spring1]
+#ACT
+TAKE 新年祝贺卡 1
+MOV A8 0
+MOV S2 0
+#SAY
+新年快乐,恭喜您集齐了1张《新年祝贺卡》,您可以输入20字以内的祝福短语,全服的玩家都能看到哦^_^而且如果您运气好的话还能随机获得 {FCOLOR=250}新年装备{FCOLOR=255},是不是很酷？\
+<输入新年祝福短语/@@newyearblessing>\
+<结 束/@exit>
+
+[@@newyearblessing]
+#ACT
+MOV A8 %INPUTSTR
+#IF
+!EQUAL A8 ""
+#ACT
+LineMsg "Grobal" "-<$USERNAME>发出新年祝福短语: '<$OUTPUT(A8)>'"
+MOV A8 0
+GOTO @newyearcardtoprize
+BREAK
+#ELSESAY
+您输入的祝福短语不能为空\
+<返 回/@2CLICKto_spring1>\
+#ELSEACT
+MOV A8 0
+BREAK
+
+[@newyearcardtoprize]
+#ACT
+MOV S2 0
+MOVR S2 10
+#IF
+equal S2 1
+!CHECK [013] 1
+#ACT
+GIVE 贺岁新鞋 1
+SET [013] 1
+MOV S2 0
+SYSMSG "恭喜您获得贺岁新鞋"
+BREAK
+CLOSE
+#IF
+equal S2 3
+!CHECK [014] 1
+#ACT
+GIVE 贺岁新帽 1
+SET [014] 1
+MOV S2 0
+SYSMSG "恭喜您获得贺岁新帽"
+BREAK
+CLOSE
+#IF
+equal S2 6
+#ACT
+GIVE 金币 1000000
+SYSMSG "恭喜您获得100万金币"
+MOV S2 0
+BREAK
+CLOSE
+#IF
+equal S2 8
+#ACT
+ADDJFPOINT 5
+SYSMSG "恭喜您获得5点积分"
+MOV S2 0
+BREAK
+CLOSE
+#ELSEACT
+SYSMSG "您什么都没获得,再接再厉^_^"
+MOV S2 0
+CLOSE
+BREAK
+
+
+
+
+
+
+
+
+
+}

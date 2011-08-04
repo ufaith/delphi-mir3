@@ -1,0 +1,1623 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@每日任务声望]
+{
+#IF
+CheckDailyQuest 401
+#ACT
+MOV A9 "4级任务"
+MOV D9 401
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 402
+#ACT
+MOV A9 "4级任务"
+MOV D9 401
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 403
+#ACT
+MOV A9 "4级任务"
+MOV D9 403
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 404
+#ACT
+MOV A9 "4级任务"
+MOV D9 404
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 405
+#ACT
+MOV A9 "4级任务"
+MOV D9 405
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 406
+#ACT
+MOV A9 "4级任务"
+MOV D9 406
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 407
+#ACT
+MOV A9 "4级任务"
+MOV D9 407
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 408
+#ACT
+MOV A9 "4级任务"
+MOV D9 407
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 409
+#ACT
+MOV A9 "4级任务"
+MOV D9 409
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 410
+#ACT
+MOV A9 "4级任务"
+MOV D9 410
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 411
+#ACT
+MOV A9 "4级任务"
+MOV D9 411
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 412
+#ACT
+MOV A9 "4级任务"
+MOV D9 412
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 413
+#ACT
+MOV A9 "4级任务"
+MOV D9 413
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 414
+#ACT
+MOV A9 "4级任务"
+MOV D9 414
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 415
+#ACT
+MOV A9 "4级任务"
+MOV D9 415
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 416
+#ACT
+MOV A9 "4级任务"
+MOV D9 416
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 417
+#ACT
+MOV A9 "4级任务"
+MOV D9 416
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 418
+#ACT
+MOV A9 "4级任务"
+MOV D9 418
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 419
+#ACT
+MOV A9 "4级任务"
+MOV D9 419
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 420
+#ACT
+MOV A9 "4级任务"
+MOV D9 420
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 421
+#ACT
+MOV A9 "4级任务"
+MOV D9 420
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 422
+#ACT
+MOV A9 "4级任务"
+MOV D9 423
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 423
+#ACT
+MOV A9 "4级任务"
+MOV D9 423
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 424
+#ACT
+MOV A9 "4级任务"
+MOV D9 424
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 425
+#ACT
+MOV A9 "4级任务"
+MOV D9 425
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 426
+#ACT
+MOV A9 "4级任务"
+MOV D9 425
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 427
+#ACT
+MOV A9 "4级任务"
+MOV D9 427
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 428
+#ACT
+MOV A9 "4级任务"
+MOV D9 428
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 429
+#ACT
+MOV A9 "4级任务"
+MOV D9 428
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 430
+#ACT
+MOV A9 "4级任务"
+MOV D9 430
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 431
+#ACT
+MOV A9 "4级任务"
+MOV D9 431
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 432
+#ACT
+MOV A9 "4级任务"
+MOV D9 432
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 433
+#ACT
+MOV A9 "4级任务"
+MOV D9 433
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 434
+#ACT
+MOV A9 "4级任务"
+MOV D9 431
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 435
+#ACT
+MOV A9 "4级任务"
+MOV D9 435
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 436
+#ACT
+MOV A9 "4级任务"
+MOV D9 435
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 437
+#ACT
+MOV A9 "4级任务"
+MOV D9 437
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 438
+#ACT
+MOV A9 "4级任务"
+MOV D9 438
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 439
+#ACT
+MOV A9 "4级任务"
+MOV D9 439
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 440
+#ACT
+MOV A9 "4级任务"
+MOV D9 440
+break
+
+#IF
+CheckDailyQuest 441
+#ACT
+MOV A9 "4级任务"
+MOV D9 441
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 442
+#ACT
+MOV A9 "4级任务"
+MOV D9 442
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 443
+#ACT
+MOV A9 "4级任务"
+MOV D9 443
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 444
+#ACT
+MOV A9 "4级任务"
+MOV D9 444
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 445
+#ACT
+MOV A9 "4级任务"
+MOV D9 445
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 446
+#ACT
+MOV A9 "4级任务"
+MOV D9 446
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 447
+#ACT
+MOV A9 "4级任务"
+MOV D9 447
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 448
+#ACT
+MOV A9 "4级任务"
+MOV D9 448
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 449
+#ACT
+MOV A9 "4级任务"
+MOV D9 449
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 450
+#ACT
+MOV A9 "4级任务"
+MOV D9 450
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 451
+#ACT
+MOV A9 "4级任务"
+MOV D9 450
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 452
+#ACT
+MOV A9 "4级任务"
+MOV D9 452
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 453
+#ACT
+MOV A9 "4级任务"
+MOV D9 453
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 454
+#ACT
+MOV A9 "4级任务"
+MOV D9 454
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 455
+#ACT
+MOV A9 "4级任务"
+MOV D9 455
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 456
+#ACT
+MOV A9 "4级任务"
+MOV D9 456
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 457
+#ACT
+MOV A9 "4级任务"
+MOV D9 457
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 458
+#ACT
+MOV A9 "4级任务"
+MOV D9 458
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 459
+#ACT
+MOV A9 "4级任务"
+MOV D9 459
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 460
+#ACT
+MOV A9 "4级任务"
+MOV D9 460
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 461
+#ACT
+MOV A9 "4级任务"
+MOV D9 460
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 462
+#ACT
+MOV A9 "4级任务"
+MOV D9 462
+GOTO @开始给声望
+break
+#IF
+CheckDailyQuest 463
+#ACT
+MOV A9 "4级任务"
+MOV D9 463
+GOTO @开始给声望
+break
+#IF
+CheckDailyQuest 464
+#ACT
+MOV A9 "4级任务"
+MOV D9 464
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 465
+#ACT
+MOV A9 "4级任务"
+MOV D9 465
+GOTO @开始给声望
+break
+#IF
+CheckDailyQuest 466
+#ACT
+MOV A9 "4级任务"
+MOV D9 466
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 467
+#ACT
+MOV A9 "4级任务"
+MOV D9 467
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 468
+#ACT
+MOV A9 "4级任务"
+MOV D9 468
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 469
+#ACT
+MOV A9 "4级任务"
+MOV D9 468
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 470
+#ACT
+MOV A9 "4级任务"
+MOV D9 470
+GOTO @开始给声望
+break
+#IF
+CheckDailyQuest 471
+#ACT
+MOV A9 "4级任务"
+MOV D9 477
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 472
+#ACT
+MOV A9 "4级任务"
+MOV D9 478
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 473
+#ACT
+MOV A9 "4级任务"
+MOV D9 475
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 474
+#ACT
+MOV A9 "4级任务"
+MOV D9 474
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 475
+#ACT
+MOV A9 "4级任务"
+MOV D9 475
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 477
+#ACT
+MOV A9 "4级任务"
+MOV D9 477
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 478
+#ACT
+goto @set_Tquest_G4
+MOV A9 "4级任务"
+MOV D9 478
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 479
+#ACT
+MOV A9 "4级任务"
+MOV D9 479
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 480
+#ACT
+MOV A9 "4级任务"
+MOV D9 480
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 481
+#ACT
+MOV A9 "4级任务"
+MOV D9 481
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 482
+#ACT
+MOV A9 "4级任务"
+MOV D9 482
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 483
+#ACT
+MOV A9 "4级任务"
+MOV D9 485
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 484
+#ACT
+MOV A9 "4级任务"
+MOV D9 484
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 485
+#ACT
+MOV A9 "4级任务"
+MOV D9 485
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 486
+#ACT
+MOV A9 "4级任务"
+MOV D9 486
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 487
+#ACT
+MOV A9 "4级任务"
+MOV D9 487
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 488
+#ACT
+MOV A9 "4级任务"
+MOV D9 488
+GOTO @开始给声望
+break
+#IF
+CheckDailyQuest 489
+#ACT
+MOV A9 "4级任务"
+MOV D9 489
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 490
+#ACT
+MOV A9 "4级任务"
+MOV D9 490
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 491
+#ACT
+MOV A9 "4级任务"
+MOV D9 491
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 492
+#ACT
+MOV A9 "4级任务"
+MOV D9 492
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 493
+#ACT
+MOV A9 "4级任务"
+MOV D9 493
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 494
+#ACT
+MOV A9 "4级任务"
+MOV D9 494
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 495
+#ACT
+MOV A9 "4级任务"
+MOV D9 495
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 496
+#ACT
+MOV A9 "4级任务"
+MOV D9 495
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 497
+#ACT
+MOV A9 "4级任务"
+MOV D9 497
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 498
+#ACT
+MOV A9 "4级任务"
+MOV D9 498
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 499
+#ACT
+MOV A9 "4级任务"
+MOV D9 499
+GOTO @开始给声望
+BREAK
+
+
+#IF
+CheckDailyQuest 301
+#ACT
+MOV A9 "3级任务"
+MOV D9 301
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 302
+#ACT
+MOV A9 "3级任务"
+MOV D9 302
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 303
+#ACT
+MOV A9 "3级任务"
+MOV D9 303
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 304
+#ACT
+MOV A9 "3级任务"
+MOV D9 304
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 305
+#ACT
+MOV A9 "3级任务"
+MOV D9 305
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 306
+#ACT
+MOV A9 "3级任务"
+MOV D9 306
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 307
+#ACT
+MOV A9 "3级任务"
+MOV D9 307
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 308
+#ACT
+MOV A9 "3级任务"
+MOV D9 308
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 309
+#ACT
+MOV A9 "3级任务"
+MOV D9 308
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 310
+#ACT
+MOV A9 "3级任务"
+MOV D9 310
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 311
+#ACT
+MOV A9 "3级任务"
+MOV D9 311
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 312
+#ACT
+MOV A9 "3级任务"
+MOV D9 312
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 313
+#ACT
+MOV A9 "3级任务"
+MOV D9 312
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 314
+#ACT
+MOV A9 "3级任务"
+MOV D9 314
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 315
+#ACT
+MOV A9 "3级任务"
+MOV D9 315
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 316
+#ACT
+MOV A9 "3级任务"
+MOV D9 316
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 317
+#ACT
+MOV A9 "3级任务"
+MOV D9 317
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 318
+#ACT
+MOV A9 "3级任务"
+MOV D9 318
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 319
+#ACT
+MOV A9 "3级任务"
+MOV D9 319
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 320
+#ACT
+MOV A9 "3级任务"
+MOV D9 319
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 321
+#ACT
+MOV A9 "3级任务"
+MOV D9 321
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 322
+#ACT
+MOV A9 "3级任务"
+MOV D9 322
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 323
+#ACT
+MOV A9 "3级任务"
+MOV D9 328
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 324
+#ACT
+MOV A9 "3级任务"
+MOV D9 327
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 325
+#ACT
+MOV A9 "3级任务"
+MOV D9 326
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 326
+#ACT
+MOV A9 "3级任务"
+MOV D9 326
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 327
+#ACT
+MOV A9 "3级任务"
+MOV D9 327
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 328
+#ACT
+MOV A9 "3级任务"
+MOV D9 328
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 329
+#ACT
+MOV A9 "3级任务"
+MOV D9 329
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 330
+#ACT
+MOV A9 "3级任务"
+MOV D9 330
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 331
+#ACT
+MOV A9 "3级任务"
+MOV D9 331
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 332
+#ACT
+MOV A9 "3级任务"
+MOV D9 332
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 333
+#ACT
+MOV A9 "3级任务"
+MOV D9 333
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 334
+#ACT
+MOV A9 "3级任务"
+MOV D9 334
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 335
+#ACT
+MOV A9 "3级任务"
+MOV D9 335
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 336
+#ACT
+MOV A9 "3级任务"
+MOV D9 336
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 337
+#ACT
+MOV A9 "3级任务"
+MOV D9 337
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 338
+#ACT
+MOV A9 "3级任务"
+MOV D9 338
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 339
+#ACT
+MOV A9 "3级任务"
+MOV D9 338
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 340
+#ACT
+MOV A9 "3级任务"
+MOV D9 340
+GOTO @开始给声望
+BREAK
+
+#IF
+CheckDailyQuest 201
+#ACT
+MOV A9 "2级任务"
+MOV D9 201
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 202
+#ACT
+MOV A9 "2级任务"
+MOV D9 202
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 203
+#ACT
+MOV A9 "2级任务"
+MOV D9 203
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 204
+#ACT
+MOV A9 "2级任务"
+MOV D9 204
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 205
+#ACT
+MOV A9 "2级任务"
+MOV D9 205
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 206
+#ACT
+MOV A9 "2级任务"
+MOV D9 206
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 207
+#ACT
+MOV A9 "2级任务"
+MOV D9 206
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 208
+#ACT
+MOV A9 "2级任务"
+MOV D9 209
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 209
+#ACT
+MOV A9 "2级任务"
+MOV D9 209
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 210
+#ACT
+MOV A9 "2级任务"
+MOV D9 210
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 211
+#ACT
+MOV A9 "2级任务"
+MOV D9 211
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 212
+#ACT
+MOV A9 "2级任务"
+MOV D9 212
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 213
+#ACT
+MOV A9 "2级任务"
+MOV D9 213
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 214
+#ACT
+MOV A9 "2级任务"
+MOV D9 214
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 215
+#ACT
+MOV A9 "2级任务"
+MOV D9 215
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 216
+#ACT
+MOV A9 "2级任务"
+MOV D9 216
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 217
+#ACT
+MOV A9 "2级任务"
+MOV D9 217
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 218
+#ACT
+MOV A9 "2级任务"
+MOV D9 218
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 219
+#ACT
+MOV A9 "2级任务"
+MOV D9 219
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 220
+#ACT
+MOV A9 "2级任务"
+MOV D9 220
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 221
+#ACT
+MOV A9 "2级任务"
+MOV D9 221
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 222
+#ACT
+MOV A9 "2级任务"
+MOV D9 222
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 223
+#ACT
+MOV A9 "2级任务"
+MOV D9 223
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 224
+#ACT
+MOV A9 "2级任务"
+MOV D9 224
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 225
+#ACT
+MOV A9 "2级任务"
+MOV D9 225
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 226
+#ACT
+MOV A9 "2级任务"
+MOV D9 226
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 227
+#ACT
+MOV A9 "2级任务"
+MOV D9 226
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 228
+#ACT
+MOV A9 "2级任务"
+MOV D9 228
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 229
+#ACT
+MOV A9 "2级任务"
+MOV D9 228
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 230
+#ACT
+MOV A9 "2级任务"
+MOV D9 230
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 231
+#ACT
+MOV A9 "2级任务"
+MOV D9 231
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 232
+#ACT
+MOV A9 "2级任务"
+MOV D9 232
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 233
+#ACT
+MOV A9 "2级任务"
+MOV D9 232
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 234
+#ACT
+MOV A9 "2级任务"
+MOV D9 234
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 235
+#ACT
+MOV A9 "2级任务"
+MOV D9 235
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 236
+#ACT
+MOV A9 "2级任务"
+MOV D9 236
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 237
+#ACT
+MOV A9 "2级任务"
+MOV D9 237
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 238
+#ACT
+MOV A9 "2级任务"
+MOV D9 238
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 239
+#ACT
+MOV A9 "2级任务"
+MOV D9 239
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 240
+#ACT
+MOV A9 "2级任务"
+MOV D9 240
+GOTO @开始给声望
+BREAK
+
+
+#IF
+CheckDailyQuest 101
+#ACT
+MOV A9 "1级任务"
+MOV D9 101
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 102
+#ACT
+MOV A9 "1级任务"
+MOV D9 102
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 103
+#ACT
+MOV A9 "1级任务"
+MOV D9 103
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 104
+#ACT
+MOV A9 "1级任务"
+MOV D9 104
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 105
+#ACT
+MOV A9 "1级任务"
+MOV D9 105
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 106
+#ACT
+MOV A9 "1级任务"
+MOV D9 106
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 107
+#ACT
+MOV A9 "1级任务"
+MOV D9 107
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 108
+#ACT
+MOV A9 "1级任务"
+MOV D9 108
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 109
+#ACT
+MOV A9 "1级任务"
+MOV D9 109
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 110
+#ACT
+MOV A9 "1级任务"
+MOV D9 110
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 111
+#ACT
+MOV A9 "1级任务"
+MOV D9 111
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 112
+#ACT
+MOV A9 "1级任务"
+MOV D9 112
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 113
+#ACT
+MOV A9 "1级任务"
+MOV D9 114
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 114
+#ACT
+MOV A9 "1级任务"
+MOV D9 114
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 115
+#ACT
+MOV A9 "1级任务"
+MOV D9 115
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 116
+#ACT
+MOV A9 "1级任务"
+MOV D9 117
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 117
+#ACT
+MOV A9 "1级任务"
+MOV D9 117
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 118
+#ACT
+MOV A9 "1级任务"
+MOV D9 118
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 119
+#ACT
+MOV A9 "1级任务"
+MOV D9 119
+GOTO @开始给声望
+break
+
+#IF
+CheckDailyQuest 120
+#ACT
+MOV A9 "1级任务"
+MOV D9 120
+GOTO @开始给声望
+break
+#elseact
+sysmsg "你没有接到任务"
+BREAK
+
+[@开始给声望]
+#IF
+EQUAL A9 "4级任务"
+#ACT
+LOADVALUE D3 "GM_Def\QT_Today\400Reward.txt" %D9 声望
+LOADVALUE A8 "GM_Def\QT_Today\400Reward.txt" %D9 任务
+GOTO @给声望
+BREAK
+#IF
+EQUAL A9 "3级任务"
+#ACT
+LOADVALUE D3 "GM_Def\QT_Today\300Reward.txt" %D9 声望
+LOADVALUE A8 "GM_Def\QT_Today\300Reward.txt" %D9 任务
+GOTO @给声望
+BREAK
+#IF
+EQUAL A9 "2级任务"
+#ACT
+LOADVALUE D3 "GM_Def\QT_Today\200Reward.txt" %D9 声望
+LOADVALUE A8 "GM_Def\QT_Today\200Reward.txt" %D9 任务
+GOTO @给声望
+BREAK
+#IF
+EQUAL A9 "2级任务"
+#ACT
+LOADVALUE D3 "GM_Def\QT_Today\100Reward.txt" %D9 声望
+LOADVALUE A8 "GM_Def\QT_Today\100Reward.txt" %D9 任务
+GOTO @给声望
+BREAK
+
+[@给声望]
+#SAY
+任务要求:     {FCOLOR=250}<$OUTPUT(A8)>{FCOLOR=255}\
+相应声望奖励: {FCOLOR=249}<$OUTPUT(D3)>点声望{FCOLOR=255}
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

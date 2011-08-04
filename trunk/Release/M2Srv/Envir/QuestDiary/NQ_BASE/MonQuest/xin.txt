@@ -1,0 +1,13 @@
+[@main]
+#IF
+check [002] 0
+#ACT
+give ½ð±Ò 20000
+SET [002] 1
+MONRECALL ÀÇ  1
+MONRECALL ÷¼÷ÃÕ½½«  1
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\MonQuest\xin.txt] @xinren
+
+
+

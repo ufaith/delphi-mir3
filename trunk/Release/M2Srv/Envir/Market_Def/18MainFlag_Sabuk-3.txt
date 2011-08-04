@@ -1,0 +1,8 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#CALL [\CastleWar\Flag.txt] @Defence_MainFlag
+
+[@_Startup]
+#ACT
+PasteFlag SABUK
+

@@ -1,0 +1,48 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@冲级领奖x]
+{
+#ACT
+loadvalue D1 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" 开关设置 开关
+LOADVALUE D0 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" 开关设置 %USERNAME 
+#IF
+EQUAL D1 0
+#SAY
+目前结果还没有揭晓呢\
+#ACT
+BREAK
+#IF
+LARGE D0 0
+SMALL D0 20
+#ACT
+LOADVALUE A3 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" %D0 荣誉
+LOADVALUE A4 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" %D0 奖励
+;LOADVALUE D4 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" %D0 数量
+BREAK
+#SAY
+恭喜您获得: {FCOLOR=250}<$OUTPUT(A3)>{FCOLOR=255} \
+您获得的奖励是: {FCOLOR=250}<$OUTPUT(A4)>{FCOLOR=255}\
+稍后GM会上线发放奖品^_^\
+;<立刻领取奖励/@领取2bigx>\
+<结 束/@exit>\
+#ELSESAY
+对不起,您没有获得奖励\
+
+;[@领取2bigx]
+;#ACT
+;loadvalue D1 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" 开关设置 开关
+;LOADVALUE D0 "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" 开关设置 %USERNAME
+;#IF
+;!EQUAL D1 0
+;!EQUAL D0 0
+;#ACT
+;GIVE %A4 1
+;SAVEVALUE  "QuestDiary\WINMA_DATA\LevelingGame\GameSet.txt" 开关设置 %USERNAME 0 
+;LineMsg "Grobal" "(*)公告:“<$USERNAME>”领取冲级赛<$OUTPUT(A3)>大奖.大家恭喜他呀！"
+;BREAK
+;CLOSE
+;#ELSEACT
+;BREAK
+;CLOSE
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

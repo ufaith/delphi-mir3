@@ -1,0 +1,51 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here. \ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Goods]
+{
+;掉落的物品         数量       hour
+封魔石
+随机传送卷
+回城卷
+行会回城卷
+地牢逃脱卷
+修复油
+护身符（小）
+护身符（中）
+护身符（火）
+护身符（冰）
+护身符（雷）
+护身符（风）
+护身符（冰）
+灵魂护身符（小）
+灵魂护身符（中）
+神圣护身符（小）
+黄色药粉（中）
+灰色药粉（中）
+黄色药粉（小）
+灰色药粉（小）	
+
+}

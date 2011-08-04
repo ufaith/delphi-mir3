@@ -1,0 +1,78 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Talk/@NQuest01_1>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_2]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Talk/@NQuest01_2>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_3]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Talk/@NQuest01_3>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_4]
+{
+Welcome, how may i help you?\ \
+<Buy/@buy>\
+<Sell/@sell>\
+<Talk/@NQuest01_4>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}

@@ -1,0 +1,25 @@
+[@NPC_Main]
+{
+{FCOLOR=250}Map Locations{FCOLOR=255} \ \
+比奇省     - [516,580]\
+灌木林     - [405,29]\ \
+{FCOLOR=250}Cave Locations{FCOLOR=255}\ \
+沃玛神殿   - [54,370]\ \
+{FCOLOR=250}NPC Locations{FCOLOR=255}\ \
+Weapons     - [445,102]\
+Grocery     - [396,163]\
+Accessories   - [365,126]\
+Defensive Tool - [427,120]\
+Pharmacy       - [398,97]\
+Bookstore       - [428,74]\
+Warehouse       - [396,116]\
+Spread Weapons     - [426,117]\
+Grocery     - [391,167]\
+Ornament   - [370,135]\
+Defensive Tool - [412,133]\
+Bookstall       - [418,96]\
+Butcher       - [366,182]\
+Grocery     - [363,176]\
+Blacksmith   - [382,198]\
+}
+

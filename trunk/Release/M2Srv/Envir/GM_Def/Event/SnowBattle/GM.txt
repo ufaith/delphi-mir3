@@ -1,0 +1,13 @@
+;;Legend Of Mir 3 C3Engine
+[SnowManGen]
+Stock=5
+
+[EventTime]
+;;-----------------30초단위로 설정 300 (5분)
+TimeSet=600
+
+[Reward]
+
+Item=쏜귑
+
+Stock=300000

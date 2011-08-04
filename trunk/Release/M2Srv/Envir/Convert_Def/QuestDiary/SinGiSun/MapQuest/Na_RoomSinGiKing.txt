@@ -1,0 +1,6 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_Main]
+{
+（看来这里受魔咒的控制，无法进入。。。）\\
+<Exit/@exit>
+}

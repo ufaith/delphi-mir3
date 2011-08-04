@@ -1,0 +1,16 @@
+;;Legend Of Mir 3 C3Engine
+%100
++59
+
+
+[@main]
+#CALL [\CastleWar\ShooterMarket.txt] @MarketShooter
+
+[@buy]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_def\18ShooterMarket_Sabuk-3.txt] @NPC_Buy
+
+[Goods]
+;ItemName      Volume     Hour
+¼ý            50        8
+Ê¯Í·          50        9

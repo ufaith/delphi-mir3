@@ -1,0 +1,14 @@
+[@NPC_RedPlayer]
+{
+Sorry you are bad for business\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Buy Teleport/@Buy_PortalScroll>\
+<Exit/@exit>
+}
+
+

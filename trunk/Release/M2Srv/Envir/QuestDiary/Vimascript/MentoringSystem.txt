@@ -1,0 +1,225 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@stmain]
+{
+
+#IF
+#say
+一、40级以下可以拜师,60级出师\
+二、70级以上可以收徒\
+徒弟出师后双方将获得5声望奖励.\
+
+#if
+EQUAL USERSTFLAG 0
+#say
+ <我要拜师/@@GETTEACHER>\
+
+
+#IF
+EQUAL USERSTFLAG 1
+#SAY
+ <逐出师门/@zcsm>  您的徒弟为<$OUTPUT(MASTERNAME)>\\
+
+#IF
+EQUAL USERSTFLAG 2
+#SAY
+ <背叛师门/@bpsm>  您的师傅为<$OUTPUT(MASTERNAME)>\\
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[@@GETTEACHER]
+#IF
+checklevel 41
+#SAY
+40以下（含40级）可以拜师\
+<返回/@main>
+#ACT
+break
+
+#IF
+checkjob wizard
+#ACT
+mov A1 "法师"
+#IF
+checkjob warrior
+#ACT
+mov A1 "战士"
+#ELSEACT
+mov A1 "道士"
+
+#IF
+checklevel
+#act
+FormatStr "@_ShowtoTea(%s,%s,%s)" %USERNAME %P9 %A1
+actcmd RUNSCRIPTLABEL %INPUTSTR %A9
+mov A3 %INPUTSTR
+#SAY
+已经成功发送拜师信息，请等待回应……
+#ELSESAY
+对方不在线或者不允许拜师.\\
+
+
+
+[@_ShowtoTea()]
+#IF
+!EQUAL USERSTFLAG 0 ;;4.师傅没有徒弟
+#ACT
+actcmd RUNSCRIPTLABEL %A0 "@_ShowtoStu_3"   ;;已经有徒弟
+break
+
+#IF
+checklevel 70  ;;5.师傅等级满足
+#ACT
+mov A0 %ARG(1) ;;徒弟名字
+mov D0 %ARG(2) ;;徒弟等级
+mov A2 %ARG(3) ;;徒弟职业
+#SAY
+一个<$OUTPUT(D0)>级的'<$OUTPUT(A2)>' {FCOLOR=250}'<$OUTPUT(A0)>'{FCOLOR=255}仰慕您已久，希望能收他为徒.\
+请问你是否接受?\\
+<接受/@~~acceptst> <拒绝/@~~Refuse>
+#ELSEACT
+actcmd RUNSCRIPTLABEL %A0 "@_ShowtoStu_2"   ;;等级不满足
+break
+
+[@~~acceptst]
+#ACT
+actcmd RUNSCRIPTLABEL %A0 "@_ShowtoStu_4"   ;;接受
+
+#IF
+checkONLINE %A0
+#ACT
+actcmd SETSTFLAG 1 %A0  ;;设定自己的状态为1 徒弟名字%A0
+actcmd SETSTFLAG 2 %USERNAME %A0 ;;设定徒弟%A0的状态为2 徒弟的师徒关系人为自己
+#SAY
+恭喜您，已经成功收<$OUTPUT(A3)>为徒弟了.\
+<关闭/@exit>
+#ELSESAY
+对不起，对方已经下线.\\
+<关闭/@exit>
+
+
+[@~~Refuse]
+#ACT
+actcmd RUNSCRIPTLABEL %A0 "@_ShowtoStu_1"   ;;主动拒绝
+
+
+[@_ShowtoStu_1]
+#SAY
+'<$OUTPUT(A3)>'拒绝了您的拜师请求.\
+<关闭/@exit>
+
+[@_ShowtoStu_2]
+#SAY
+'<$OUTPUT(A3)>'的等级不在70以上,无法作师傅.\
+<关闭/@exit>
+
+[@_ShowtoStu_3]
+#SAY
+'<$OUTPUT(A3)>'目前还是别人的师傅.\
+<关闭/@exit>
+
+[@_ShowtoStu_4]
+#SAY
+恭喜您，已经成功拜<$OUTPUT(A3)>为师傅了.\
+<关闭/@exit>
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[@bpsm]
+#SAY
+你确定要背叛师门?\\
+<确定/@背叛师门1>  <取消/@exit>
+
+[@背叛师门1]
+#if 
+EQUAL USERSTFLAG 2
+#ELSEACT
+break
+#ELSESAY
+您现在还没有拜师...\
+<返回/@back>
+
+#IF
+checkONLINE %MASTERNAME
+#ACT
+actcmd SETSTFLAG 0 %USERNAME %MASTERNAME
+actcmd RUNSCRIPTLABEL %MASTERNAME "@_背叛师门"
+#ELSEACT
+actcmd SETSTFLAG 5 %USERNAME %MASTERNAME   ;;不在线设定为5
+
+
+#IF
+#act
+actcmd SETSTFLAG 0 ""
+#SAY
+已经背叛了师门.\
+<关闭/@exit>
+
+
+[@_背叛师门]
+#IF
+#SAY
+您的徒弟<$MASTERNAME>已经背叛了师门.\\
+<关闭/@exit>
+#IF
+#ACT
+actcmd SETSTFLAG 0 ""
+
+[@zcsm]
+#SAY
+你确定要把你的徒弟逐出师门？\\
+<确定/@逐出师门1>  <取消/@exit>
+
+[@逐出师门1]
+#IF
+EQUAL USERSTFLAG 1
+#ELSEACT
+break
+#ELSESAY
+您现在还没有徒弟...\
+<返回/@back>
+
+#IF
+checkONLINE %MASTERNAME
+#ACT
+actcmd SETSTFLAG 0 %USERNAME %MASTERNAME
+actcmd RUNSCRIPTLABEL %MASTERNAME "@_逐出师门"  ;;在线的提示
+#ELSEACT
+actcmd SETSTFLAG 3 %USERNAME %MASTERNAME   ;;不在线设定为3
+
+#IF
+#act
+actcmd SETSTFLAG 0 ""
+#SAY
+已经将你的徒弟逐出了师门.\
+<关闭/@exit>
+
+[@_逐出师门]
+#IF
+#SAY
+您的师傅<$MASTERNAME>已经将你逐出了师门.\\
+<关闭/@exit>
+#IF
+#ACT
+actcmd SETSTFLAG 0 ""
+
+
+
+;;======================================================================
+
+
+[@buystl]
+#if
+checkgold 100000
+#act
+take 金币 100000
+give 师徒令
+#say
+您购买了一个师徒令牌，双击即可飞到您的师傅或者徒弟旁边.\
+<离开/@exit>
+#elsesay
+购买一个需要金币100000，您的钱不够多哦..\
+<离开/@exit>
+
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

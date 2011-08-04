@@ -1,0 +1,131 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@材料兑换X]
+{
+#IF
+#ACT
+LoadValue P1 "QuestDiary\WINMA_DATA\Control\ServerSettings.txt" [服务器设置] 物品兑换
+
+#IF
+equal  P1 1
+#SAY
+物品兑换活动现在没开启.\
+<离 开/@exit>
+#ACT
+break
+
+#if
+dayofweek fri
+hour 20 20
+min  1 59
+#SAY
+您好，这里正在举行材料兑换活动。\
+您现在可以兑换如下物品:\
+\
+<[100个蜘蛛线换1瓶祝福油]/@huan2zhufu1>\
+<[100个指甲换50万金币]/@huan2zhufu2>\
+<[200个僵尸骨头换1个连环明珠]/@huan2zhufu3>\
+<[100个潘夜之泪换1块钢玉石]/@huan2zhufu4>\\
+<离 开/@exit>
+
+#ELSESAY
+材料兑换活动将在每个星期五晚上20:00到21:00进行.\
+请到时间了再来参加.\
+<离 开/@exit>
+
+;========================================================
+[@huan2zhufu1]
+#if
+dayofweek fri
+hour 20 20
+min  1 59
+checkitem  蛛蛛线 100
+#SAY
+祝贺您，您得到了1瓶祝福油.\
+<离 开/@exit>
+
+#ACT
+take 蛛蛛线 100
+give 祝福油  1
+GOTO  @GONGGAO
+
+#ELSESAY
+对不起，必须是100个蛛蛛线才可以换1瓶祝福油。\
+<离 开/@exit>
+
+;========================================================
+[@huan2zhufu2]
+#if
+checkitem  指甲 100
+
+#SAY
+祝贺您，您得到了1瓶祝福油.\
+<离 开/@exit>
+
+#ACT
+take 指甲 100
+give 金币 500000
+GOTO  @GONGGAO
+
+#ELSESAY
+对不起，必须是100个指甲才可以换50万金币。\
+<离 开/@exit>
+
+
+;========================================================
+[@huan2zhufu3]
+#if
+checkitem  僵尸骨头 200
+#SAY
+祝贺您，您得到了1个连环明珠.\
+<离 开/@exit>
+
+#ACT
+take 僵尸骨头 200
+give 连环明珠  1
+GOTO  @GONGGAO
+
+#ELSESAY
+对不起，必须是200个僵尸骨头才可以换1个连环明珠。\
+<离 开/@exit>
+
+;========================================================
+[@huan2zhufu4]
+#if
+checkitem  潘夜之泪 100
+#SAY
+祝贺您，您得到了1块钢玉石.\
+<离 开/@exit>
+
+#ACT
+take 潘夜之泪 100
+give 钢玉石  1
+GOTO  @GONGGAO
+
+#ELSESAY
+对不起，必须是100个潘夜之泪才可以换1块钢玉石。\
+<离 开/@exit>
+
+
+[@GONGGAO]
+#if
+#act
+movr  S5  10
+
+#IF
+equal S5 1
+#ACT
+lineMsg [Grobal] "(*)材料兑换活动进行中,请到活动管理中心处参与查询" 
+BREAK
+
+#ELSEACT
+BREAK
+
+}
+
+
+
+
+
+
+
+

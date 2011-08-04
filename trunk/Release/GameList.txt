@@ -1,0 +1,2 @@
+C3引擎传奇3|C3引擎传奇3|127.0.0.1|7000|MirClient.dat|http://www.mir3cn.com
+

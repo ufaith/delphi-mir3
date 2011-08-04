@@ -1,0 +1,50 @@
+;;EI3G-Õ¯”Œœ»∑Ê¥´∆Ê3…Ã“µ∞Ê±æ-¥ø1.45EI∞Ê
+[@HalfNight_Contry]
+{
+#IF
+!CheckPkPoint 2
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\Teleport\VanyaTele.txt] @VanyaTele_1
+
+#ELSEACT
+mapmove 81 125 274                                    ;; ª°∞ª¿Ã ¿Ãµø
+break
+
+[@TelePortRootin()]
+#CALL [Teleport\MoveRootin.txt] @TelePortMove         ;; ¿Ãµø ∑Á∆æ
+}
+
+
+[@HalfNight_bccc]
+{
+#IF
+!CheckPkPoint 2
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\Teleport\VanyaTele.txt] @VanyaTele_4
+
+#ELSEACT
+mapmove 81 125 274                                    ;; ª°∞ª¿Ã ¿Ãµø
+break
+
+[@TelePortRootin()]
+#CALL [Teleport\MoveRootin.txt] @TelePortMove         ;; ¿Ãµø ∑Á∆æ
+}
+
+
+
+;-------------------------------------------------------------------------------
+[@HalfNight_Cave]
+{
+#IF
+!CheckPkPoint 2
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\Teleport\VanyaTele.txt] @VanyaTele_2
+
+#ELSEACT
+mapmove 81 125 274                                    ;; ª°∞ª¿Ã ¿Ãµø
+break
+
+[@TelePortRootin()]
+#CALL [Teleport\MoveRootin.txt] @TelePortMove         ;; ¿Ãµø ∑Á∆æ
+}
+

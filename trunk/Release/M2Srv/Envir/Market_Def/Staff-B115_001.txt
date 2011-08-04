@@ -1,0 +1,13 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#if
+#act
+#say
+<传送/@zou4>\
+<离开/@exit>
+
+
+[@zou4]
+#call [WINMA_ACT\ActivityCenter\Transfer3.txt] @传送四
+
+;;Legend Of Mir 3 C3Engine

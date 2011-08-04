@@ -1,0 +1,38 @@
+;中国怪客联盟
+[@main]
+#IF
+#ACT
+mov   A1   %USERNAME 
+goto  @dsdsdsdsdsds
+break
+
+[@dsdsdsdsdsds]
+#IF
+check  [012] 0
+#SAY
+（终于消灭了大魔头。。。可是在不远的将来。。魔头还是会复活。。）\
+#ACT
+SET [012] 1
+lineMsg [Grobal] "魔界终极BOSS被'<$OUTPUT(A1)>'斩杀！..."
+break
+
+#ELSEACT
+goto @jixuxxxs
+
+
+[@jixuxxxs]
+#IF
+check  [012] 1
+check  [015] 0
+#SAY
+您获得了 {FCOLOR=250}灵魂魔戒{FCOLOR=255} 您可以用这个戒指来召唤魔界的怪物做您的属下.\
+#ACT
+give 灵魂魔戒  1
+SET [015] 1
+lineMsg [Grobal] "魔界终极BOSS被'<$OUTPUT(A1)>'斩杀！..."
+break
+
+#ELSESAY
+（终于消灭了大魔头...可是在不远的将来...魔头还是会复活...）\
+
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
