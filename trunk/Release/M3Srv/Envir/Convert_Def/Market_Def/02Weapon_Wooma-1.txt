@@ -1,0 +1,97 @@
+[@NPC_RedPlayer]
+{
+Sorry you are bad for business\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you?\ \ 
+<Repair/@pre_repair>\
+<Special Repair/@Special_Repair(1)>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+Welcome, how may i help you?\ \ 
+<Repair/@pre_repair>\
+<Special Repair/@Special_Repair(1)>\
+<Talk/@NQuest01>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_2]
+{
+Welcome, how may i help you?\ \
+<Repair/@pre_repair>\
+<Special Repair/@Special_Repair(1)>\
+<Show/@NQuest02>\ 
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_3]
+{
+Welcome, how may i help you?\ \  
+<Repair/@pre_repair>\
+<Special Repair/@Special_Repair(1)>\
+<Talk/@NQuest02>\ 
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_1_1_1]
+{
+Welcome, how may i help you?\
+<Repair/@pre_repair>\
+<Special Repair/@Special_Repair(1)>\
+<Show/@NQuest02>\ 
+<Talk/@NQuest01>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_1_2]
+{
+Welcome, how may i help you?\
+<Repair/@pre_repair>\
+<Special Repair/@Special_Repair(1)>\
+<Talk/@NQuest02>\
+<Talk/@NQuest01>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+Item has been repaired.\ \
+<Back/@main>
+}
+
+[@NPC_Pre_Repair]
+{
+Please select the weapon you wish to repair.\ \
+<Repair/@repair>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

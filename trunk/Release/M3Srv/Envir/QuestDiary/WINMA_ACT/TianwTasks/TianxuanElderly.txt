@@ -1,0 +1,549 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@txlr_a]
+{
+#ACT
+MOV N6 0
+MOV N7 0
+MOV N8 0
+MOV A0 0
+LoadValue N6 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵状态
+LoadValue N7 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵能量
+LoadValue N8 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 普天同庆
+LoadValue A0 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 启动者
+
+#IF
+equal N8 1
+#ACT
+GOTO @普天同庆_pt
+
+#ELSEACT
+GOTO @JDJDJ3
+
+[@JDJDJ3]
+
+#IF
+equal N6 0
+#SAY
+天灵灵，地灵灵，这世上我无事不知无事不晓。在天外天深处-{FCOLOR=250}圣堂{FCOLOR=255}隐藏了一个惊人的秘密，相传只要有人开启天外飞 
+石{FCOLOR=250}魔法阵{FCOLOR=255}的神秘力量并投入7块不同元素的天玉宝石就能满足那个人的一个愿望。\
+可惜现在连魔法阵{FCOLOR=250}都没启动{FCOLOR=255}，更不要提投入天玉宝石了。开启魔法阵的勇士在哪里？\\
+<打听如何启动魔法阵/@ruheqd_mfz>\
+#ACT
+BREAK
+
+#IF
+equal N6 1
+#SAY
+____伟大的勇士 {FCOLOR=250}<$OUTPUT(A0)>{FCOLOR=255}，开启了天外飞石魔法阵的神秘力量，\
+据说当魔法阵的威力提高到{FCOLOR=250} 100层 {FCOLOR=255}的时候，所释放出的能量将覆\
+盖整个玛珐大陆，到时候在来找我你将得到惊人的收获....\
+____目前魔法阵的威力已提高到 {FCOLOR=250}<$OUTPUT(N7)>{FCOLOR=255} 层 ，只要投入7颗不同元素\
+的天玉宝石便能再提高一层威力，同时在魔法阵威力提升的刹那，\
+投放的人能实现一个愿望.......\ \
+<如何获得天玉宝石/@ruhehd_ty>
+#ACT
+BREAK
+
+[@ruheqd_mfz]
+#SAY
+据说只有魔界终极BOSS身上的"上古神钥"才能开启魔法阵的神秘力量，得到它可不是一件简单的事。要想知道魔界在哪里，那你就得去问问金 
+刚铁匠了...\\
+<明白了/@exit>
+
+[@ruhehd_ty]
+#SAY
+____据说天玉宝石被天外天四大金刚守护着，要获得它们并不是\
+一件简单的事情,单颗的天玉宝石拥有特殊的属性，可佩带在身上，\
+但当7颗不同元素的天玉宝石聚集在一起并投入到魔法阵里的时候\
+将释放出强大的能量.....\ \
+\
+<明白了/@exit>
+
+[@普天同庆_pt]
+#IF
+CHECKNAMELIST "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+#SAY
+您已经实现过愿望了....\
+<关 闭/@exit>
+
+#ELSESAY
+恩泽天下、普天同庆，魔法阵的威力已达到了最高层，玛珐大陆上所有 {FCOLOR=250}55级以上{FCOLOR=255} 的玩家都能实现自己一个愿望:\\
+┏━━━━━━━┳━━━━━━━┳━━━━━━━┓\
+┃  <我想要金币/@想要金币2>  ┃  <我想要首饰/@想要首饰2>  ┃  <我想要武器/@想要武器2>  ┃\
+┣━━━━━━━╋━━━━━━━╋━━━━━━━┫\
+┃  <我想要靴子/@想要靴子2>  ┃  <我想要积分/@想要积分2>  ┃  <我想要经验/@想要经验2>  ┃\
+┗━━━━━━━┻━━━━━━━┻━━━━━━━┛\
+
+[@想要金币2]
+#IF
+CHECKLEVEL 55
+#ACT
+addnamelist "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+GOTO @想要金币2_1
+#ELSEACT
+GOTO @nolevel_a
+
+[@想要金币2_1]
+#ACT
+close
+movr S3 5
+
+#IF
+equal S3 0
+#ACT
+GIVE 金币 1000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了100万金币"
+
+BREAK
+
+#IF
+equal S3 1
+#ACT
+GIVE 金币 3000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了300万金币"
+BREAK
+
+#IF
+equal S3 2
+#ACT
+GIVE 金币 1000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了100万金币"
+BREAK
+
+#IF
+equal S3 3
+#ACT
+GIVE 金币 2000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了200万金币"
+BREAK
+
+#IF
+equal S3 4
+#ACT
+GIVE 金币 5000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了500万金币"
+BREAK
+
+;;======================================
+[@想要首饰2]
+#IF
+CHECKLEVEL 55
+#ACT
+addnamelist "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+GOTO @想要首饰2_1
+#ELSEACT
+GOTO @nolevel_a
+
+[@想要首饰2_1]
+#ACT
+close
+movr S3 14
+
+#IF
+equal S3 0
+#ACT
+GIVE 六陵戒 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[六陵戒]"
+
+BREAK
+
+#IF
+equal S3 1
+#ACT
+GIVE 昏暗风印 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[昏暗风印]"
+BREAK
+
+#IF
+equal S3 2
+#ACT
+GIVE 破坏项链 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[破坏项链]"
+BREAK
+
+#IF
+equal S3 3
+#ACT
+GIVE 怨恨项链 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[怨恨项链]"
+BREAK
+
+#IF
+equal S3 4
+#ACT
+GIVE 魔灵戒指 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[魔灵戒指]"
+BREAK
+
+#IF
+equal S3 5
+#ACT
+GIVE 铁系项链（幸运） 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[铁系项链（幸运）]"
+BREAK
+
+#IF
+equal S3 6
+#ACT
+GIVE 青摇戒指 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[青摇戒指]"
+BREAK
+
+#IF
+equal S3 7
+#ACT
+GIVE 莲丸戒指 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[莲丸戒指]"
+BREAK
+
+#IF
+equal S3 8
+#ACT
+GIVE 铁系项链 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[铁系项链]"
+BREAK
+
+#IF
+equal S3 9
+#ACT
+GIVE 铁炼腕 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[铁炼腕]"
+BREAK
+
+#IF
+equal S3 10
+#ACT
+GIVE 追风项链 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[追风项链]"
+BREAK
+
+#IF
+equal S3 11
+#ACT
+GIVE 魔令项链 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[魔令项链]"
+BREAK
+
+#IF
+equal S3 12
+#ACT
+GIVE 魔令手镯 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[魔令手镯]"
+BREAK
+
+#IF
+equal S3 13
+#ACT
+GIVE 龙马戒指 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[龙马戒指]"
+BREAK
+
+;;========================================
+[@想要武器2]
+#IF
+CHECKLEVEL 55
+#ACT
+addnamelist "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+GOTO @想要武器2_1
+#ELSEACT
+GOTO @nolevel_a
+
+[@想要武器2_1]
+#ACT
+close
+movr S3 11
+
+#IF
+equal S3 0
+#ACT
+GIVE 裁决之杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[裁决之杖]"
+
+BREAK
+
+#IF
+equal S3 1
+#ACT
+GIVE 无极棍 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[无极棍]"
+BREAK
+
+#IF
+equal S3 2
+#ACT
+GIVE 无极棍 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[无极棍]"
+BREAK
+
+#IF
+equal S3 3
+#ACT
+GIVE 飞魂魔刃 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[飞魂魔刃]"
+BREAK
+
+#IF
+equal S3 4
+#ACT
+GIVE 骨玉权杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+BREAK
+
+#IF
+equal S3 5
+#ACT
+GIVE 赤血宝剑 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[赤血宝剑]"
+BREAK
+
+#IF
+equal S3 6
+#ACT
+GIVE 骨玉权杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+BREAK
+
+#IF
+equal S3 7
+#ACT
+GIVE 裁决之杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[裁决之杖]"
+BREAK
+
+#IF
+equal S3 8
+#ACT
+GIVE 骨玉权杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+BREAK
+
+#IF
+equal S3 9
+#ACT
+GIVE 赤血宝剑 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[赤血宝剑]"
+BREAK
+
+#IF
+equal S3 10
+#ACT
+GIVE 骨玉权杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+BREAK
+
+#IF
+equal S3 11
+#ACT
+GIVE 旋风流星刀 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[旋风流星刀]"
+BREAK
+
+#IF
+equal S3 12
+#ACT
+GIVE 嗜魂法杖 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[嗜魂法杖]"
+BREAK
+
+#IF
+equal S3 13
+#ACT
+GIVE 封魔剑 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[封魔剑]"
+BREAK
+
+;;==================================
+[@想要靴子2]
+#IF
+CHECKLEVEL 55
+#ACT
+addnamelist "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+GOTO @想要靴子2_1
+#ELSEACT
+GOTO @nolevel_a
+
+[@想要靴子2_1]
+#ACT
+close
+movr S3 11
+
+#IF
+equal S3 0
+#ACT
+GIVE 天掌靴子 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[天掌靴子]"
+
+BREAK
+
+#IF
+equal S3 1
+#ACT
+GIVE 黑皮靴子 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[黑皮靴子]"
+BREAK
+
+#IF
+equal S3 2
+#ACT
+GIVE 月光鞋 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[月光鞋]"
+BREAK
+
+#IF
+equal S3 3
+#ACT
+GIVE 绝地靴 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[绝地靴]"
+BREAK
+
+#IF
+equal S3 4
+#ACT
+GIVE 仙云靴 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[仙云靴]"
+BREAK
+
+#IF
+equal S3 5
+#ACT
+GIVE 无影靴 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[无影靴]"
+BREAK
+
+#IF
+equal S3 6
+#ACT
+GIVE 绝地靴 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[绝地靴]"
+BREAK
+
+#IF
+equal S3 7
+#ACT
+GIVE 仙云靴 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[仙云靴]"
+BREAK
+
+#IF
+equal S3 8
+#ACT
+GIVE 月光鞋 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[月光鞋]"
+BREAK
+
+;;==========================
+[@想要积分2]
+#IF
+CHECKLEVEL 55
+#ACT
+addnamelist "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+GOTO @想要积分2_1
+#ELSEACT
+GOTO @nolevel_a
+
+[@想要积分2_1]
+#ACT
+close
+movr S3 5
+
+#IF
+equal S3 0
+#ACT
+ADDJFPOINT 10
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[10点积分]"
+BREAK
+
+#IF
+equal S3 1
+#ACT
+#ACT
+ADDJFPOINT 20
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[20点积分]"
+BREAK
+
+#IF
+equal S3 2
+#ACT
+#ACT
+ADDJFPOINT 30
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[30点积分]"
+BREAK
+
+#IF
+equal S3 3
+#ACT
+ADDJFPOINT 40
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[40点积分]"
+BREAK
+
+#IF
+equal S3 4
+#ACT
+ADDJFPOINT 50
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[50点积分]"
+BREAK
+
+;;================================================
+[@想要经验2]
+#IF
+!Checkgroupcount 1
+CHECKLEVEL 55
+#ACT
+addnamelist "..\QuestDiary\WINMA_DATA\TianParameters\WishList.txt" 
+GOTO @想要经验2_1
+#ELSEACT
+GOTO @nolevel_a1
+
+[@想要经验2_1]
+#ACT
+close
+movr S3 5
+
+#IF
+equal S3 0
+#ACT
+GMEXECUTE adjustExp %USERNAME + %USERNAME 10000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[1000万经验]"
+BREAK
+
+#IF
+equal S3 1
+#ACT
+GMEXECUTE adjustExp %USERNAME + %USERNAME 30000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[3000万经验]"
+BREAK
+
+#IF
+equal S3 2
+#ACT
+GMEXECUTE adjustExp %USERNAME + %USERNAME 20000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[2000万经验]"
+BREAK
+
+#IF
+equal S3 3
+#ACT
+GMEXECUTE adjustExp %USERNAME + %USERNAME 40000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[4000万经验]"
+BREAK
+
+#IF
+equal S3 4
+#ACT
+GMEXECUTE adjustExp %USERNAME + %USERNAME 50000000
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[5000万经验]"
+BREAK
+
+;;====================================================
+[@nolevel_a]
+#SAY
+您的等级不够，无法实现愿望...\
+<关 闭/@exit>
+
+[@nolevel_a1]
+#SAY
+您的等级不够，或者已经组队，无法实现愿望...\
+<关 闭/@exit>
+
+
+}

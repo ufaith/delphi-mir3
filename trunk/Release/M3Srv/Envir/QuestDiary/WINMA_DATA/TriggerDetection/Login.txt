@@ -1,0 +1,15 @@
+;;µÇÂ½
+[@Main_user]
+{
+#IF
+checkpkpoint 2
+#ACT
+setnewfame = 0
+mapmove  81  129  266
+BREAK
+
+#ELSEACT
+setnewfame = 0
+BREAK
+
+}

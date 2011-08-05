@@ -1,0 +1,16 @@
+[@NPC_Main]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Buy Teleport/@Ghltod>\
+<Eliminate Red Name/@JFPOINTCEPKPOINT>\
+<Exit/exit>
+
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+

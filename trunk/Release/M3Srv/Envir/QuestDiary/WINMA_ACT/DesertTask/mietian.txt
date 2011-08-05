@@ -1,0 +1,28 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 
+#IF
+EQUAL D0 8
+#ACT
+SET [800] 1
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 9
+lineMsg [Grobal] "恭喜 [<$USERNAME>],消灭了地天灭王，完成了西沙任务四..."
+#SAY
+怎么可能我失败了？？不可能的
+#ACT
+break
+#IF
+EQUAL D0 10
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 11
+BREAK
+
+#ELSEACT
+BREAK
+
+
+
+
+
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

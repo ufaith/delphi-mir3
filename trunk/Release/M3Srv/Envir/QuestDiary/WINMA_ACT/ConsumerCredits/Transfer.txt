@@ -1,0 +1,176 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@转职称号]
+{
+#ACT
+LOADVALUE D7 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 开放转数
+;LOADVALUE D8 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 免费控制 开放转数
+#SAY
+____江湖中的种种事件我都了如指掌，我才识江湖万事通，所以\
+叫 {FCOLOR=250}百晓生{FCOLOR=255}\
+____江湖中,名气是何等重要?名望不同了,就应该有不同的称号来\
+突出江湖地位的显赫!当你的名气到达一定的程度可以来我这里晋\
+级!目前已开放 {FCOLOR=250}[<$OUTPUT(D7)>]{FCOLOR=255} 次职业晋级.\
+____你目前的声望是 {FCOLOR=250}<$SHENGWANG>{FCOLOR=255},晋级次数为 {FCOLOR=250}<$NEWREGTIME>{FCOLOR=255} 次.\ \
+<我想,我已达到要求!/@收费转>\
+<了解晋级相关内容/@转职作用>\
+<结 束/@exit>
+
+[@转职作用]
+#SAY
+____60级以后开始可以进行职业晋级,晋级以后的人物名字显示特\
+殊的 {FCOLOR=250}封号{FCOLOR=255}.较高的称号绝对是身份的象征.每次晋级,法师可获得 \
+{FCOLOR=250}0-6点属性{FCOLOR=255} 其他职业获得 {FCOLOR=250}0-8点{FCOLOR=255} 的对应属性.\
+____{FCOLOR=250}60级进行第1次晋级,{FCOLOR=255}需挑战完8大教主和一定的声望条件\
+____{FCOLOR=250}65级进行第2次晋级,{FCOLOR=255}需完成神舰4任务和一定的声望条件\
+____{FCOLOR=250}70级进行第3次晋级,{FCOLOR=255}需完成西沙4任务和一定的声望条件\
+____目前只已放 {FCOLOR=250}[<$OUTPUT(D7)>]{FCOLOR=255} 转生.\
+____{FCOLOR=249}各种职业每次晋级后打怪经验大幅度上升.{FCOLOR=255}\ \
+<返 回/@转职称号>
+
+[@收费转]
+#IF
+CHECKREG < %D7
+#ACT
+GOTO @S_OK
+#ELSESAY
+目前最多只开放到<$OUTPUT(D7)>次晋级,您已经超出此范围,无法再进行\
+<退 出/@exit>
+
+[@S_OK]
+#ACT
+MOV D0 1
+#IF
+CHECKREG < %D0
+#ACT
+GOTO @转职_1
+#ELSEACT
+INC D0 1
+GOTO @转_loop
+
+[@转_loop]
+#IF
+CHECKREG < %D0
+#ACT
+GOTO @转职_1
+#ELSEACT
+INC D0 1
+GOTO @转_loop
+
+[@转职_1]
+#ACT
+MOV A0 "转职"
+ADDSTR A0 %D0
+MOV A1 %A0
+MOV A2 %A0
+MOV A3 %A0
+MOV A5 %A0
+MOV A6 %A0
+ADDSTR A0 "上限"
+ADDSTR A1 "下限"
+ADDSTR A2 "积分"
+ADDSTR A3 "要求等级"
+ADDSTR A5 "下降等级"
+ADDSTR A6 "任务"
+LoadValue D1 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 %A0
+LoadValue D2 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 %A1
+LoadValue D3 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 %A2
+LoadValue D4 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 %A3
+LoadValue D7 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 %A5
+LoadValue A8 "QuestDiary\WINMA_DATA\Control\Transfer.txt" 收费控制 %A6
+
+#IF
+CHECKSHENGWANG %D2
+CHECKLEVEL %D4
+CheckJfPoint %D3
+#ACT
+MOV A9 "<[第
+ADDSTR A9 %D0
+ADDSTR A9 "次转职]/@转职_KK("
+ADDSTR A9 %D0
+ADDSTR A9 ")>"
+BREAK
+#SAY
+目前您有 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 积分, {FCOLOR=250}<$SHENGWANG>{FCOLOR=255} 点声望.此次晋级:\
+需要完成: {FCOLOR=250}<$OUTPUT(A8)>{FCOLOR=255}\
+需要消耗: {FCOLOR=250}<$OUTPUT(D3)>{FCOLOR=255} 点积分\
+需要等级: {FCOLOR=250}<$OUTPUT(D4)>{FCOLOR=255} 级\
+声望范围: {FCOLOR=250}<$OUTPUT(D2)> ~ <$OUTPUT(D1)>{FCOLOR=255}\
+等级下降: {FCOLOR=250}<$OUTPUT(D7)>{FCOLOR=255} 级\
+____晋级成功后,您的名字将会被封上个性称号,是身份和地位的\
+体现.行走江湖的人少了这些可怎么行?\
+<$OUTPUT(A9)>\  
+;</@转职_KK(1)></@转职_KK(2)></@转职_KK(3)></@转职_KK(4)></@转职_KK(5)></@转职_KK(6)>                           
+<退 出/@exit>
+#ELSESAY
+{FCOLOR=249}您的条件不符,无法完成职业晋级:{FCOLOR=255}\
+{FCOLOR=250}此次晋级要求为:{FCOLOR=255}\
+需要完成: {FCOLOR=250}<$OUTPUT(A8)>{FCOLOR=255}\
+需要消耗: {FCOLOR=250}<$OUTPUT(D3)>{FCOLOR=255} 点积分\
+需要等级: {FCOLOR=250}<$OUTPUT(D4)>{FCOLOR=255} 级\
+声望范围: {FCOLOR=250}<$OUTPUT(D2)> ~ <$OUTPUT(D1)>{FCOLOR=255}\
+等级下降: {FCOLOR=250}<$OUTPUT(D7)>{FCOLOR=255} 级\
+请仔细检查缺少了什么?\
+<退 出/@exit>
+#ELSEACT
+BREAK
+
+[@转职_KK()]
+#ACT
+MOV D6 %ARG(1)
+#IF
+EQUAL D6 1
+!check [018] 1
+#SAY
+第一次职业晋级需要完成 {FCOLOR=250}挑战8大教主任务{FCOLOR=255}\
+否则门都没有!!!\
+<结 束/@exit>
+#ACT
+BREAK
+#IF
+EQUAL D6 2
+!CHECK [798] 1
+#SAY
+第二次职业晋级需要完成 {FCOLOR=250}神舰四任务{FCOLOR=255}\
+否则门都没有!!!\
+<结 束/@exit>
+#ACT
+BREAK
+#IF
+EQUAL D6 3
+!CHECK [800] 1
+#SAY
+第三次职业晋级需要完成 {FCOLOR=250}西沙四任务{FCOLOR=255}\
+否则门都没有!!!\
+<结 束/@exit>
+#ACT
+BREAK
+
+#ELSEACT
+GOTO @晋级开始_ing
+BREAK
+
+[@晋级开始_ing]
+#IF
+CHECKSHENGWANG %D2
+CheckJfPoint %D3
+#ACT
+DECSHENGWANG %D2
+DECJFPOINT %D3
+SETREG %D6
+DECLEVEL %D7
+SYSMSG "恭喜您职业晋级成功,属性提高了.."
+BREAK
+#SAY
+恭喜你晋级成功,这是你第<$NEWREGTIME>次晋级.\
+身份地位不同了,以后要多多注意自己的行为啦!\
+另外你的名字将显示特殊的封号,是不是很酷^-^\
+<退 出/@exit>
+
+#ELSESAY
+您的积分或声望不足\
+<结 束@exit>\
+#ELSEACT
+BREAK
+
+}
+;转职脚本

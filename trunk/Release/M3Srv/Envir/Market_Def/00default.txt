@@ -1,0 +1,617 @@
+;;Legend Of Mir 3 C3Engine
++5
++6
++10
++11
++15
++19
++20
++21
++22
++23
++24
++26
+
+
+[@main]
+#ACT
+;goto @weather_control_sabuk
+goto @Default_Setting_Sabuk
+goto @Defult_SafeZone_Setting
+goto @twoclick_system
+
+[@Defult_SafeZone_Setting]
+#CALL [\System\SafeZone.txt] @SafeZone
+
+;; Sabuk Castle Weather Control
+[@Weather_Control_Sabuk]
+#CALL [\System\Weather.txt] @Weather
+
+;; Sabuk Castle Base Setting
+[@Default_Setting_Sabuk]
+#CALL [\System\DefaultSabuk.txt] @SabukDefult
+;;------------------------------------------------------
+;;  System Funtion
+;;------------------------------------------------------
+
+;; Work at Sabuk Battle 2Hours Ago
+[@_War_Ready_Sabuk]
+#CALL [\System\CastleWar.txt] @CastleWarReady
+
+;; Work at Sabuk Battle Start
+[@_War_Start_Sabuk]
+#CALL [\System\CastleWar.txt] @CastleWarStart
+
+;; Work at Sabuk Battle Finish
+[@_War_Finish_Sabuk]
+#CALL [\System\CastleWar.txt] @CastleWarFinish
+
+;; Work at Flag Data Changed
+[@_CastleOwnerChanged_Sabuk]
+#CALL [\System\Flag.txt] @ChangeFlag
+
+[@_CastleFlagChanged_Sabuk]
+#CALL [\System\Flag.txt] @ChangeFlag
+
+[@_KILL]
+#IF
+#ACT
+BREAK
+
+[@_GROUPKILL]
+#IF
+#ACT
+BREAK
+
+[@_Die]
+#IF
+#ACT
+BREAK
+;#CALL [\WINMA_DATA\TriggerDetection\DeathTrigger.txt] @Main_Die
+
+[@_SNPC]
+#CALL [\WINMA_DATA\TriggerDetection\PortableTrigger.txt] @Main_dnpc
+
+
+[@KillMonster]
+#IF
+#ACT
+BREAK
+
+
+[@_LevelUp]
+#CALL [\WINMA_DATA\TriggerDetection\UpgradeTrigger.txt] @Main_levelup
+
+[@_UseItemClick]
+#CALL [\WINMA_DATA\TriggerDetection\DoubleTrigger.txt] @Main_2click
+
+[@_EveryDay]
+#CALL [\WINMA_DATA\TriggerDetection\DailyTaskTrigger.txt] @Main_today
+
+[@_USERLOGIN2]
+#CALL [\Vimascript\ApprenticeshipTest.TXT] @CHECKUNSTUDENT_LOGIN
+
+[@_TIMEREVENT]
+#CALL [\WINMA_DATA\TriggerDetection\PointTrigger.txt] @Main_TimeEvent
+
+[@_USERLOGIN]
+#CALL [\WINMA_DATA\TriggerDetection\Login.txt] @Main_user
+
+[@_ChuShi]
+#CALL [\Vimascript\ApprenticeshipTest.TXT] @StudentOutCheck
+
+[@twoclick_system]
+#CALL [\WINMA_ACT\TriggerPackage\DoubleTrigger.txt] @BAGITEM_2CLICK
+
+
+
+[@_答题]
+#IF
+#ACT
+mov A0 %ARG(1)
+mov A1 %ARG(2)
+mov A2 %ARG(3)
+mov A3 %ARG(4)
+mov A4 %ARG(5)
+
+#IF
+#SAY
+当前为第<$OUTPUT(D8)>题,使用★可以获得双倍文采\
+#IF
+ELarge D9 3
+#SAY
+ <★/@UseStar> 
+
+#IF
+ELarge D9 2
+#SAY
+ <★/@UseStar> 
+
+#IF
+ELarge D9 1
+#SAY
+ <★/@UseStar> \
+
+
+#IF
+#SAY
+{FCOLOR=249}请选择该问题的答案,回答正确增加相应文采值\
+窗口关闭可使用 @答题 每题回答时间10秒{FCOLOR=255}\
+ {FCOLOR=250}<$OUTPUT(A0)>{FCOLOR=255}:\
+
+
+ < Ａ /@_SendAnswer(1)><$OUTPUT(A1)>\
+ < Ｂ /@_SendAnswer(2)><$OUTPUT(A2)>\
+ < Ｃ /@_SendAnswer(3)><$OUTPUT(A3)>\
+ < Ｄ /@_SendAnswer(4)><$OUTPUT(A4)>\\\
+
+
+[@_SendAnswer()]
+#IF
+#ACT
+close
+SENDANSWER %ARG(1)
+break
+
+
+[@UseStar]
+#ACT
+actcmd SENDANSWERDOUBLE
+
+
+[@_CHECKPASSEVENT]
+#ACT
+break
+#ELSEACT
+sysmsg "如果解除 人物锁 窗口意外关闭,可输入 @人物锁 重新呼出...。"
+mov 密码错误次数 3
+delaygoto [local] 60 @kickuserq
+
+#ELSESAY
+您开启了人物保护功能:\
+1分钟内不输密码或者密码错误3次会断开与游戏的连接.\
+NPC{FCOLOR=250}啊梅{FCOLOR=255}可以进行[开启]或[关闭]人物保护功能\
+如果解除本窗口意外关闭,可输入 @人物锁 重新呼出...。\
+{FCOLOR=250}\\
+<输入解锁密码/@@*inputunlockpswd>\
+
+
+[@@*inputunlockpswd]
+#IF
+#ACT
+mov A0 %ONLINELOCKPSW
+mov A1 %INPUTSTR
+
+
+#IF
+equal A0 %A1
+#ACT
+actcmd SETSTORAGEPASSOK
+sysmsg "解锁成功"
+close
+break
+
+
+#IF
+EQUAL 密码错误次数 1
+#say
+密码错误3次。断开连接。
+#ACT
+actcmd KICKUSER
+break
+
+
+#ELSEACT
+DEC 密码错误次数 1
+#ELSEsay
+对不起，密码不正确，你还有<$OUTPUT(密码错误次数)>次机会\\
+<请输入解锁密码/@@*inputunlockpswd>\\
+
+
+[@kickuserq]
+#ELSEACT
+actcmd KICKUSER
+#ELSESAY
+输入密码超时，请重新登陆。
+
+[@_ONITEMDOWN]
+#ACT
+mov A1 %ARG(1)
+mov A2 %ARG(2)
+mov A3 %ARG(3)
+#IF
+EQUAL D8 1
+#ACT
+formatstr "'%s'在[%s:%s," %USERNAME,%A3,%D6
+mov A8 %A9
+formatstr "%s]消灭了'%s',爆出了一件罕见的极品'%s'." %D7,%A1,%A2
+Addstr A8 %A9
+linemsg [grobal] "<$OUTPUT(A8)>"
+
+[@_USEROFFLINE]
+#ACT
+setnewfame = 0
+set [122] 0
+killslave
+break
+
+[@_SYSTIMEREVENT]
+;;系统的自动时间事件
+#ACT
+break
+
+[@_ONSYSHOURCHANGE]
+;;系统每小时触发事件
+#CALL [\WINMA_DATA\TriggerDetection\HourchangeEvent.txt] @HourchangeEvent1
+
+[@_ONUSERHOURCHANGE]
+;;用户每小时触发事件
+#ACT
+break
+
+[@_ONSYSDAYCHANGE]
+;;系统每天触发事件
+#if
+#ACT
+actcmd RESETSERVERTOP 10
+
+
+[@_ONUSERDAYCHANGE]
+;;玩家每天触发事件
+#IF
+#ACT
+SET [997] 0
+SET [675] 0
+SET [676] 0
+SET [677] 0
+SET [678] 0
+SET [680] 0
+SET [681] 0
+SET [691] 0
+SET [700] 0
+SET [699] 0
+SET [671] 0
+SET [681] 0
+SET [690] 0
+SET [689] 0
+SET [611] 0
+SET [611] 0
+SET [612] 0
+SET [613] 0
+SET [614] 0
+SET [615] 0
+SET [616] 0
+SET [617] 0
+SET [618] 0
+SET [619] 0
+SET [620] 0
+SET [610] 0
+SET [601] 0
+SET [651] 0
+SET [652] 0
+SET [660] 0
+SET [662] 0
+SET [663] 0
+SET [670] 0
+SET [661] 0
+SET [621] 0
+SET [622] 0
+SET [623] 0
+SET [624] 0
+SET [625] 0
+SET [630] 0
+SET [707] 0
+SET [711] 0
+SET [720] 0
+SET [719] 0
+SET [727] 0
+SET [730] 0
+SET [729] 0
+SET [727] 0
+SET [731] 0
+SET [740] 0
+SET [734] 0
+SET [732] 0
+SET [733] 0
+SET [741] 0
+SET [748] 0
+SET [744] 0
+SET [691] 0
+SET [707] 0
+SET [709] 0
+SET [640] 0
+SET [632] 0
+SET [633] 0
+SET [634] 0
+SET [635] 0
+SET [631] 0
+SET [642] 0
+SET [650] 0
+SET [641] 0
+SET [642] 0
+SET [602] 0
+SET [603] 0
+SET [604] 0
+SET [605] 0
+SET [606] 0
+SET [607] 0
+SET [608] 0
+SET [609] 0
+[@_ONSYSWEEKCHANGE]
+;;系统每周触发事件
+
+[@_ONUSERWEEKCHANGE]
+;;玩家每周触发事件
+#IF
+#ACT
+actcmd SETDOUBLEEXP = 50400000
+sysmsg "双倍时间重置." 1
+break
+
+[@_CASTLE_NECKLACE_CALL]
+#IF
+#ACT
+mov A0 %ARG(1)
+#SAY
+沙巴克城主 <$OUTPUT(A0)> 发出了召唤,请问您是否要飞到其身边?\\
+<前往沙巴克/@GotoCastleLeader>\
+<拒绝/@exit>
+
+[@GotoCastleLeader]
+#IF
+!checkmapflag "NONECKLACEMOVE"
+#ACT
+
+MovetoUser %A0
+
+[@_怪物通缉令（鬼将）]
+#IF
+#ACT
+mov A1 "潘夜鬼将"
+mov A2 "沃玛神殿二层"
+mov D2 50
+mov D3 360
+mov A3 "D023"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（鬼将） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+
+
+[@_怪物通缉令（护法天）]
+#IF
+#ACT
+mov A1 "护法天"
+mov A2 "赤月山谷五层"
+mov D2 150
+mov D3 25
+mov A3 "D10151"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（护法天） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+[@_怪物通缉令（骨鬼将）]
+#IF
+#ACT
+mov A1 "骨鬼将"
+mov A2 "石阁六层"
+mov D2 25
+mov D3 30
+mov A3 "D716"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（骨鬼将） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+[@_怪物通缉令（神鬼王）]
+#IF
+#ACT
+mov A1 "神鬼王"
+mov A2 "祖玛神殿七层大厅"
+mov D2 28
+mov D3 28
+mov A3 "D5071"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（神鬼王） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+
+
+[@_怪物通缉令（队长）]
+#IF
+#ACT
+mov A1 "诺玛突击队长"
+mov A2 "天外古刹"
+mov D2 88
+mov D3 90
+mov A3 "8_002"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（队长） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+[@_怪物通缉令（守卫）]
+#IF
+#ACT
+mov A1 "霸王守卫"
+mov A2 "沙漠地下三层"
+mov D2 358
+mov D3 58
+mov A3 "D20023"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（守卫） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+[@_怪物通缉令（魔石）]
+#IF
+#ACT
+mov A1 "魔石守护神"
+mov A2 "冰宫地下4层"
+mov D2 266
+mov D3 255
+mov A3 "d2104"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（魔石） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+[@_怪物通缉令（寒冰）]
+#IF
+#ACT
+mov A1 "寒冰守护神"
+mov A2 "神舰地下1层"
+mov D2 78
+mov D3 66
+mov A3 "D903"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（寒冰） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+
+[@_怪物通缉令（霸王教主）]
+#IF
+#ACT
+mov A1 "霸王教主"
+mov A2 "天外天的苍茫大厅"
+mov D2 154
+mov D3 154
+mov A3 "D22021"
+
+mov A0 %USERMAP
+mov A4 %USERX
+mov A5 %USERY
+#IF
+EQUAL A0 %A3
+EQUAL A4 %D2
+EQUAL A5 %D3
+#ACT
+formatstr "%s,%s,%s,2" %A0 %A4 %A5
+MongenP %A9 %A1 1
+take 怪物通缉令（霸王教主） 1
+#ELSEACT
+SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
+;;;;
+
+[@_PUTDOWN]
+#IF
+ Equal D99 -1
+#ACT
+ Sendmsg 5 材料-1
+ break
+#IF
+Equal D99 108
+#ACT
+ Successchange + %D98
+ SetKonButton 1 1
+#ELSEACT 
+ PUTDOWNFAIL %D97
+ Sendmsg 5 <$OUTPUT(A99)>不是打孔材料
+
+[@_PUTUP]
+#IF
+Equal D99 108
+#ACT
+ Successchange - %D98
+
+[@_HOLESUCCESS]
+#ACT
+ randomex D1 7 
+ SETHOLECOLOR %D99 %D1
+
+[@_PUTDOWNDIAMOND]
+#IF
+  CheckHoleColor %D97 %D98
+  Equal D99 109
+#ACT
+ SetKonButton 2 1
+ 
+#ELSEACT
+ PUTDOWNDIAMONDFAIL %D97
+ Sendmsg 5 宝石与孔颜色不符,<$OUTPUT(p9)>
+ break
+
+ 

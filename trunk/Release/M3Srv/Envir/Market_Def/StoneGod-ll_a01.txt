@@ -1,0 +1,16 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#say
+<[移动到道观]/@dg>\
+<离开/@exit>
+
+[@dg]
+#act
+mapmove 1 400 120
+break
+
+
+
+
+
+;;Legend Of Mir 3 C3Engine

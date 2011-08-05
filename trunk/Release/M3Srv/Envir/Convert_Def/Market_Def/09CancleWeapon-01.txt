@@ -1,0 +1,9 @@
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Upgrade Weapons/@RefineinitialWeapon> \
+<Upgrade Jewelry/@PreRefineAcessory> \
+<Refine Stone/@PreRefineGangOk>\
+<Exit/@exit>
+}
+

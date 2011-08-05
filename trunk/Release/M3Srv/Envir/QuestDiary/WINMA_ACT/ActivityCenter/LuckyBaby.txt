@@ -1,0 +1,51 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@换福娃]
+{
+#if
+#say
+tgmir3欢迎您，奥林匹克色彩终于有了中国红，中华民族的伟大腾飞不再是梦想，让五环旗飘扬在北京的上空。\
+在奥运期间我们将为大家开放集福娃活动，只要您每天收集了5个福娃，您将会得到3亿经验和奥运运动装一件。\
+<福娃兑换/@开还吧>\
+<离开/@exit>\
+
+
+[@开还吧]
+#IF
+Checkgroupcount
+check [606] 1
+#ACT
+SYSMSG "您今天已经兑换过了或者你组队了,无法完成操作"
+BREAK
+
+#elseact
+goto @继续换福娃
+
+[@继续换福娃]
+
+#if
+check [606] 0
+checkitem 贝贝 1
+checkitem 晶晶 1
+checkitem 欢欢 1
+checkitem 迎迎 1
+checkitem 妮妮 1
+#act
+take 贝贝 1
+take 晶晶 1
+take 欢欢 1
+take 迎迎 1
+take 妮妮 1
+give 奥运运动装（男） 1
+give 奥运运动装（女） 1
+GMEXECUTE adjustExp %USERNAME + 300000000
+set [606] 1
+#act
+SYSMSG "您已经用福娃换取了经验和运动装，请再接再厉。"
+break
+
+#elsesay
+对不起，您没有集齐所有的福娃或者您已经兑换过了。\
+<离开/@exit>
+
+}
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;savagerblue

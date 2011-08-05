@@ -1,0 +1,37 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+checkmonRecall
+checkitemw 灵魂魔戒 1 
+#ACT
+MOVR D9 8
+goto  @zhaohuanxx11
+
+[@zhaohuanxx11]
+#IF
+checkitemw 灵魂魔戒 1 
+equal D9 0
+#ACT
+SYSMSG "灵魂魔戒生效，召唤到怪物!"
+MonRecall 骷髅教主1 24 1 
+break
+
+#IF
+checkitemw 灵魂魔戒 1 
+equal D9 1
+#ACT
+SYSMSG "灵魂魔戒生效，召唤到怪物!"
+MonRecall 沃玛教主9 24 1 
+break
+
+#IF
+checkitemw 灵魂魔戒 1 
+equal D9 2
+#ACT
+SYSMSG "灵魂魔戒生效，召唤到怪物!"
+MonRecall 震天魔神9  24 1 
+break
+
+#ELSEACT
+break
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

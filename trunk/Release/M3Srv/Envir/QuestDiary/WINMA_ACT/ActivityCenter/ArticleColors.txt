@@ -1,0 +1,241 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版-宝箱解锁
+;;注意[006]这个标记不要和其他的脚本冲突，
+;;搜索整个Envir文件夹，确定[006]其他文件没使用
+;;得到的物品设置，请看文件下面
+[@文彩兑换_1]
+{
+#IF
+#ACT
+MOV D3 %WENCAI
+#SAY
+____欢迎您来到tgmir3，您目前的的文采值为{FCOLOR=250} <$OUTPUT(D3)> {FCOLOR=255}点\
+____七夕又到了，在这里祝大家节日快乐！\
+____这是tgmir3专门为玩家准备的七夕文彩抽奖活动，在活动中，\
+您可以用{FCOLOR=250}10{FCOLOR=255}点文彩值参加一次抽奖，奖品为“神秘钥匙，白金勋\
+章，金刚勋章，灵魂护身符（超大），魔晶石，连环明珠，游戏\
+点卷，祝福油等\
+____{FCOLOR=250}50{FCOLOR=255} 级以上的玩家可以参与抽奖\ \
+<参加抽奖/@检测测>\
+<离开/@exit>
+
+[@检测测]
+#if
+checklevel 50
+CHECKWENCAI 10
+#act
+goto @抽奖咯
+#elsesay
+您的等级不够50级或者您没有10点文采值
+
+
+[@抽奖咯]
+#IF
+checklevel 50
+CHECKWENCAI 10
+#ACT
+movr S2 11
+LoadValue B1 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品1
+LoadValue B2 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品2
+LoadValue B3 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品3
+LoadValue B4 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品4
+LoadValue B5 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品5
+LoadValue B6 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品6
+LoadValue B7 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品7
+LoadValue B8 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品8
+LoadValue B9 "QuestDiary\WINMA_ACT\ConsumerCredits\UnlockChest.txt" [得到物品] 物品9
+
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  0
+#SAY
+很不错，里面有100万金币.\
+<离 开/@exit>\
+#ACT
+give  金币 1000000
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  1
+#SAY
+很不错，你得到了250万的经验奖励.\
+
+<离 开/@exit>\
+#ACT
+GMEXECUTE adjustExp %USERNAME +  2500000
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  2
+#SAY
+很不错，你得到了500万的经验奖励.\
+
+<离 开/@exit>\
+#ACT
+GMEXECUTE adjustExp %USERNAME +  5000000
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+
+;;---------------------下面自行修改添加
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  3
+#SAY
+很不错，你得到了250万的经验奖励.\
+
+<离 开/@exit>\
+#ACT
+SETWENCAI - 10
+GMEXECUTE adjustExp %USERNAME +  2500000
+goto  @恢复初始
+break
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  4
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B2)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B2  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  5
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B3)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B3  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  6
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B4)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B4  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  7
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B5)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B5  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  8
+#SAY
+很不错，里面有100万金币.\
+
+<离 开/@exit>\
+#ACT
+give 金币 1000000
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  9
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B7)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B7  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  10
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B8)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B8  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+#IF
+checklevel 50
+CHECKWENCAI 10
+equal   S2  11
+#SAY
+很不错，你得到了{FCOLOR=250}<$OUTPUT(B9)>{FCOLOR=255}.\
+
+<离 开/@exit>\
+#ACT
+give %B9  1
+SETWENCAI - 10
+goto  @恢复初始
+break
+
+
+[@恢复初始]
+#ACT
+mov  S2 0
+mov  D1 0
+break
+
+}
+
+[得到物品]
+物品1=连环明珠
+物品2=金条
+物品3=游戏点卷
+物品4=神秘钥匙
+物品5=白金勋章
+物品6=金刚勋章
+物品7=灵魂护身符（超大）
+物品8=魔晶石
+物品9=连环明珠
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

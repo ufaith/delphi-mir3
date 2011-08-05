@@ -1,0 +1,20 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@BuyPotion]
+{
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\SpecialAbility\BuyPotion.txt] @BuyPotion_1
+
+
+[@BuyPotionCheck]
+#IF
+checkgold 1000000
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\SpecialAbility\BuyPotion.txt] @BuyPotion_2
+
+#ACT
+give 亡灵之药水 1
+take 金币 1000000
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\SpecialAbility\BuyPotion.txt] @BuyPotion_3
+
+}

@@ -1,0 +1,3 @@
+;;Legend Of Mir 3 C3Engine
+[LIneMSG]
+MSG01=ªÓ∂Ø÷’÷π¡À°£

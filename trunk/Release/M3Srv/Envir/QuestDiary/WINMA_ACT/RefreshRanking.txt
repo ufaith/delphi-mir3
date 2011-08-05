@@ -1,0 +1,245 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@levelorder]
+{
+#SAY
+刷新排名需要 {FCOLOR=250}2点积分{FCOLOR=255},请先确认!\
+<开始刷新排名/@jiancespmjf>\
+<结 束/@exit>\
+
+[@jiancespmjf]
+#IF
+!CHECKJFPOINT 2
+#ACT
+SYSMSG "你没有那么多积分"
+BREAK
+CLOSE
+
+#ELSEACT
+goto @shualapm^$
+
+[@shualapm^$]
+#ACT
+DECJFPOINT 2
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+ReadValueSql  "TBL_CHARACTER"  %A9  "FLD_LEVEL" @fristone
+
+[@fristone()]
+#ACT
+MOV D0 %ARG(1)
+#IF
+CHECKJOB warrior
+checknamelist "..\QuestDiary\WINMA_DATA\TopPlayer\Registration.txt" 
+#ACT
+GOTO @numonezhan
+BREAK
+#IF
+CHECKJOB taoist
+checknamelist "..\QuestDiary\WINMA_DATA\TopPlayer\Registration.txt" 
+#ACT
+GOTO @numonedao
+BREAK
+#IF
+CHECKJOB wizard
+checknamelist "..\QuestDiary\WINMA_DATA\TopPlayer\Registration.txt" 
+#ACT
+GOTO @numonefa
+BREAK
+#ELSEACT
+BREAK
+
+[@numonezhan]
+#ACT
+LoadValue D1 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanfrist] level
+LoadValue D2 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] level 
+LoadValue D3 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] level
+LoadValue A1 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanfrist] name
+LoadValue A2 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] name 
+LoadValue A3 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] name
+#IF
+LARGE D0 %D1
+!EQUAL A1 %USERNAME
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanfrist] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanfrist] name %USERNAME
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] name %A1
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] level %D1
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] name %A2
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] level %D2
+GOTO @shuaxinok
+BREAK
+
+#IF
+LARGE D0 %D1
+EQUAL A1 %USERNAME
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanfrist] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanfrist] name %USERNAME
+GOTO @shuaxinok
+BREAK
+
+#IF
+!equal A1 %USERNAME
+!EQUAL A2 %USERNAME
+LARGE D0 %D2
+ESMALL D0 %D1
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] name %USERNAME
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] name %A2
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] level %D2 
+GOTO @shuaxinok
+BREAK
+#IF
+!EQUAL A1 %USERNAME
+equal A2 %USERNAME
+LARGE D0 %D2
+ESMALL D0 %D1
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhansecond] name %USERNAME
+GOTO @shuaxinok
+BREAK
+#IF
+!equal A1 %USERNAME
+!equal A2 %USERNAME
+LARGE D0 %D3
+ESMALL D0 %D2
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [zhanthrid] name %USERNAME
+GOTO @shuaxinok
+BREAK
+#ELSEACT
+BREAK
+
+[@numonedao]
+#ACT
+LoadValue D1 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daofrist] level
+LoadValue D2 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] level 
+LoadValue D3 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] level
+LoadValue A1 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daofrist] name
+LoadValue A2 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] name 
+LoadValue A3 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] name
+#IF
+LARGE D0 %D1
+!EQUAL A1 %USERNAME
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daofrist] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daofrist] name %USERNAME
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] name %A1
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] level %D1
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] name %A2
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] level %D2
+GOTO @shuaxinok
+BREAK
+
+#IF
+LARGE D0 %D1
+EQUAL A1 %USERNAME
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daofrist] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daofrist] name %USERNAME
+GOTO @shuaxinok
+BREAK
+
+#IF
+!equal A1 %USERNAME
+!EQUAL A2 %USERNAME
+LARGE D0 %D2
+ESMALL D0 %D1
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] name %USERNAME
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] name %A2
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] level %D2 
+GOTO @shuaxinok
+BREAK
+#IF
+!EQUAL A1 %USERNAME
+equal A2 %USERNAME
+LARGE D0 %D2
+ESMALL D0 %D1
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daosecond] name %USERNAME
+GOTO @shuaxinok
+BREAK
+#IF
+!equal A1 %USERNAME
+!equal A2 %USERNAME
+LARGE D0 %D3
+ESMALL D0 %D2
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [daothrid] name %USERNAME
+GOTO @shuaxinok
+BREAK
+#ELSEACT
+BREAK
+
+[@numonefa]
+#ACT
+LoadValue D1 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fafrist] level
+LoadValue D2 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] level 
+LoadValue D3 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] level
+LoadValue A1 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fafrist] name
+LoadValue A2 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] name 
+LoadValue A3 "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] name
+#IF
+LARGE D0 %D1
+!EQUAL A1 %USERNAME
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fafrist] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fafrist] name %USERNAME
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] name %A1
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] level %D1
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] name %A2
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] level %D2
+GOTO @shuaxinok
+BREAK
+
+#IF
+LARGE D0 %D1
+EQUAL A1 %USERNAME
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fafrist] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fafrist] name %USERNAME
+GOTO @shuaxinok
+BREAK
+
+#IF
+!equal A1 %USERNAME
+!EQUAL A2 %USERNAME
+LARGE D0 %D2
+ESMALL D0 %D1
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] name %USERNAME
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] name %A2
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] level %D2 
+GOTO @shuaxinok
+BREAK
+#IF
+!EQUAL A1 %USERNAME
+equal A2 %USERNAME
+LARGE D0 %D2
+ESMALL D0 %D1
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fasecond] name %USERNAME
+GOTO @shuaxinok
+BREAK
+#IF
+!equal A1 %USERNAME
+!equal A2 %USERNAME
+LARGE D0 %D3
+ESMALL D0 %D2
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] level %D0
+SAVEVALUE "QuestDiary\WINMA_DATA\TopPlayer\Rankings.txt" [fathrid] name %USERNAME
+GOTO @shuaxinok
+BREAK
+#ELSEACT
+BREAK
+
+}

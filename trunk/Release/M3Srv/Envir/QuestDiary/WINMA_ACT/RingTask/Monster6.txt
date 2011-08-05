@@ -1,0 +1,98 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@六环恶形鬼]
+#IF
+CHECK [652] 1
+#ELSEACT
+break
+
+
+#IF
+
+CHECK [660] 0
+Small 恶形鬼NUM 20
+#ACT
+inc 恶形鬼NUM 1
+Sysmsg "猎杀恶形鬼+1 已杀<$OUTPUT(恶形鬼NUM)>"
+
+#IF
+Elarge 恶形鬼NUM 20
+Elarge 海神NUM 20
+Elarge 爆毒NUM 20
+Elarge 犬猴NUM 20
+#ACT
+SET [660] 1
+SYSMSG "任务全部完成"
+
+
+
+[@六环海神将领]
+#IF
+CHECK [652] 1
+#ELSEACT
+break
+
+#IF
+CHECK [660] 0
+Small 海神NUM 20
+#ACT
+inc 海神NUM 1
+Sysmsg "猎杀海神将领+1 已消灭<$OUTPUT(海神NUM)>"
+
+#IF
+Elarge 恶形鬼NUM 20
+Elarge 海神NUM 20
+Elarge 爆毒NUM 20
+Elarge 犬猴NUM 20
+#ACT
+SET [660] 1
+SYSMSG "任务全部完成"
+
+
+
+[@六环爆毒神魔]
+#IF
+CHECK [652] 1
+#ELSEACT
+break
+
+#IF
+CHECK [660] 0
+Small 爆毒NUM 20
+#ACT
+inc 爆毒NUM 1
+Sysmsg "猎杀爆毒神魔+1 已消灭<$OUTPUT(爆毒NUM)>"
+
+#IF
+Elarge 恶形鬼NUM 20
+Elarge 海神NUM 20
+Elarge 爆毒NUM 20
+Elarge 犬猴NUM 20
+#ACT
+SET [650] 1
+SYSMSG "任务全部完成"
+
+
+
+
+[@六环犬猴魔]
+#IF
+CHECK [652] 1
+#ELSEACT
+break
+
+#IF
+CHECK [660] 0
+Small 犬猴NUM 20
+#ACT
+inc 犬猴NUM 1
+Sysmsg "猎杀犬猴魔+1 已消灭<$OUTPUT(犬猴NUM)>"
+
+#IF
+Elarge 恶形鬼NUM 20
+Elarge 海神NUM 20
+Elarge 爆毒NUM 20
+Elarge 犬猴NUM 20
+#ACT
+SET [660] 1
+SYSMSG "任务全部完成"
+

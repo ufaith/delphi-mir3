@@ -1,0 +1,27 @@
+;;Legend Of Mir 3 C3Engine
+[@十月一xxx]
+
+{
+#if
+#act
+#say
+进入上古之地需要收取{FCOLOR=250}神秘钥匙{FCOLOR=250}一把,\
+上古之地危险异常,请慎入\
+<进入/@移动去xx>\
+<离开/@exit>
+
+[@移动去xx]
+#if
+#act
+#if
+checkitem 神秘钥匙 1
+#act
+take 神秘钥匙 1
+mapmove zzz_000 83 80
+
+
+#elsesay
+对不起，您没有神秘钥匙我不能让您进入。\
+<关闭/@exit>
+
+}

@@ -1,0 +1,3 @@
+;;Legend Of Mir 3 C3Engine
+[InputGold]
+Gold = 500000

@@ -1,0 +1,13 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\09CancleWeapon-01.txt] @NPC_Main
+
+[@RefineinitialWeapon]
+#CALL [\\Refine\Cancle.txt] @checkRefinePoints
+
+[@PreRefineAcessory]
+#CALL [\\Refine\Accessory.txt] @RefineAccessory
+
+[@PreRefineGangOk]
+#CALL [\\Refine\GangOk.txt] @RefineGangOk

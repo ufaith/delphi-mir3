@@ -1,0 +1,272 @@
+;;Legend Of Mir 3 C3Engine
+[@Marrage]
+{
+#Define N50{START} N50
+#Define N51{WEDDING} N51
+#Define N53{TIME} N53
+#Define N55{WAITINGTIMEOUT} N55
+#Define N56{MAN} N6
+#Define N57{GIRL} N7
+
+#Define B1{MANNAME} B1
+#Define B2{GIRLNAME} B2
+#Define B3{INPUTGIRLNAME} B3
+
+#IF
+Equal N50{START} 1
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_1
+
+#ELSESAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_2
+
+#IF
+Equal B1{MANNAME} %USERNAME
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_3
+
+#IF
+IsAdmin
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_4
+
+end
+
+
+[@MarriageQuestion]
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_5
+
+[@wantGetMarried]
+#IF
+!CheckLevel 22
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_6
+#ACT
+break
+
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_7
+#ACT
+break
+
+#IF
+Gender [man]
+#ACT
+goto @wantGetMarried_man
+#ELSEACT
+goto @wantGetMarried_woman
+BREAK
+
+[@wantGetMarried_woman]
+#IF
+equal N56{MAN} 1
+equal B3{INPUTGIRLNAME} %USERNAME
+#ACT
+GOTO @wantGetMarried_woman_ST
+BREAK
+#ELSEACT
+SysMsg "新郎还没有申请结婚。"
+close
+break
+
+[@wantGetMarried_woman_ST]
+#SAY
+目前是 {FCOLOR=250}<$output(B1)>{FCOLOR=255} 向您发起的结婚请求 {FCOLOR=249}(看清楚哦){FCOLOR=255}\
+您确定是他要娶的妻子吗？\
+<立即支付50万进行婚礼/@wantGetMarried_GIVE_GOLD>\
+<他不是我要嫁的人/@exit>\
+
+[@wantGetMarried_GIVE_GOLD]
+#IF
+CheckGold 500000
+#ACT
+Take 金币 500000
+mov N57{GIRL} 1
+mov B2{GIRLNAME} %USERNAME
+SysMsg "结婚申请完成了。"
+close
+#ELSEACT
+SysMsg "婚礼费用不够，需要50万金币。"
+close
+
+[@wantGetMarried_man]
+#IF
+Equal B1{MANNAME} ""
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_8
+
+#ELSESAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_9
+
+[@@InputMarried_Woman]
+#IF
+Mov B5 %INPUTSTR
+!Equal B5 ""
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_10
+
+#ELSESAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_11
+
+
+[@ProcessMarried]
+#IF
+Equal N56{MAN} 1
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_12
+#ACT
+break
+
+#IF
+!Equal B1{MANNAME} ""
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_13
+#ACT
+break
+
+#IF
+!Equal B3{INPUTGIRLNAME} ""
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_14
+#ACT
+break
+
+#IF
+!CheckGold 500000
+#ACT
+SysMsg "婚礼费用不够，需要50万金币。"
+close
+break
+#ELSEACT
+Take 金币 500000
+mov B1{MANNAME} %USERNAME
+mov B3{INPUTGIRLNAME} %B5
+mov N56{MAN} 1
+mov N55{WAITINGTIMEOUT} 0
+SET [019] 0
+Delaygoto [Grobal] 5 @startWeddingloop
+SysMsg "结婚申请完成了。"
+EventMsg  "0" "(求婚)<$OUTPUT(B1)>先生向<$OUTPUT(B3)>小姐郑重求婚，希望<$OUTPUT(B3)>小姐能够答应<$OUTPUT(B1)>先生的请求，速找司仪（比奇 388:288）申请结婚。"
+;LineMsg "Grobal" "(求婚)<$OUTPUT(B1)>先生向<$OUTPUT(B3)>小姐郑重求婚，希望<$OUTPUT(B3)>小姐能够答应<$OUTPUT(B1)>先生的请求，速找司仪（比奇 388:288）申请结婚。"
+close
+
+
+[@startWeddingloop]
+#IF
+Equal N50{START} 1
+#ACT
+SYSMSG "已经有婚礼正在举行,请稍后申请."
+BREAK
+#IF
+CHECK [019] 1
+#ACT
+BREAK
+#IF
+Inc N55{WAITINGTIMEOUT} 1
+Large N55{WAITINGTIMEOUT} 5
+#ACT
+Sysmsg "因为婚礼时间已过，结婚被取消了。"
+goto @CancelWedding
+break
+
+#IF
+Equal N56{MAN} 1
+Equal N57{GIRL} 1
+#ELSEACT
+SysMsg "等待新娘申请。"
+Delaygoto [Grobal] 5 @startWeddingloop
+break
+
+#IF
+#ACT
+Mov N50{START} 1
+mov N51{WEDDING} 1
+Mov N53{TIME} 0
+EventMsg "0" "新郎<$OUTPUT(B1)>和新娘<$OUTPUT(B1)>的结婚典礼即将举行。"
+SysMsg "新娘已经申请结婚,婚礼准备就绪。"
+Delaygoto [Grobal] 5 @weddingCeremony
+close
+
+[@weddingCeremony]
+#IF
+Equal N51{WEDDING} 1
+#ACT
+GetMarried %B1 %B2
+EventMsg "0" "新郎<$OUTPUT(B1)>和新娘<$OUTPUT(B2)>的婚礼结束。祝两位新人白头偕老！" 
+GOTO @CancelWedding
+BREAK
+#ELSEACT
+SYSMSG "婚礼意外终止,请重新申请."
+GOTO @CancelWedding
+BREAK
+
+[@wantDivorce]
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_15
+
+#ELSESAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_16
+
+[@divorcenow]
+#IF
+checkgold 5000000
+#ACT
+take 金币 5000000
+Divorce
+close
+
+[@TakeMarriedRing]
+#SAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_17
+
+#ELSESAY
+#INCLUDE [..\Convert_Def\QuestDiary\Marriage\Marriage.txt] @Marriage_18
+
+[@ExchangeMarriedRing]
+#IF
+checkgold 200000
+#ACT
+take 金币 200000
+CancelMarriageRing
+SysMsg "结婚戒指的功能消失了。"
+close
+
+#ELSESAY
+钱不够。\\
+<关  闭/@exit>
+
+[@ResetWeddingVariables]
+#ACT
+goto @cancelWedding
+close
+break
+
+[@PreCancelWedding]
+#ACT
+SysMsg "放弃了结婚申请。"
+goto @CancelWedding
+break
+
+[@CancelWedding]
+#ACT
+SET [019] 1
+Mov N50{START} 0
+Mov N51{WEDDING} 0
+Mov N53{TIME} 0
+Mov N55{WAITINGTIMEOUT} 0
+Mov N56{MAN} 0
+Mov N57{GIRL} 0
+Mov B1{MANNAME} ""
+Mov B2{GIRLNAME} ""
+Mov B3{INPUTGIRLNAME} ""
+Mov B4 ""
+Mov B8 ""
+Mov B9 ""
+close
+break
+
+[@quanfushiai]
+#CALL [WINMA_ACT\ConsumerCredits\全服示爱.txt] @全服示爱X
+
+}

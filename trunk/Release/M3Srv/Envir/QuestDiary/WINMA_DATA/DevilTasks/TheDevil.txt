@@ -1,0 +1,17 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+check [011] 1
+checklevel  45
+#ACT
+enter_ok
+break
+
+#ELSESAY
+(魔界入口被战神将军用精神力封住了，无法进入..)\
+(问问战神将军怎么才可以进的去.)\
+<离 开/@exit>\
+#ELSEACT
+enter_fail
+break
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

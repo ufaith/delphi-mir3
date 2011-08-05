@@ -1,0 +1,53 @@
+[@NPC_RedPlayer]
+{
+Sorry you are bad for business\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Exit/@exit>
+
+}
+
+[@NPC_Main_0_1]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Exit/@exit>
+
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+Item has been repaired.\ \
+<Back/@main>
+}
+

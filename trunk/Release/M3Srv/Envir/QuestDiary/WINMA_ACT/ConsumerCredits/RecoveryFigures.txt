@@ -1,0 +1,95 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@恢复误删X]
+{
+#SAY
+____您目前的积分值为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
+____在我这里可以恢复被你错误删除的人物.恢复一个人物需要 {FCOLOR=250}\
+10点{FCOLOR=255} 积分.你要恢复人物吗？要恢复就请输入名字.\ \
+
+<输入被删除的人物名字/@@shuru>\
+<返回上一页/@积分列表_K>\
+<关 闭/@exit>
+
+[@@shuru]
+#ACT
+mov  A4  %INPUTSTR
+#IF
+#SAY
+{FCOLOR=249}请勿输入包含空格的短语{FCOLOR=255}\
+<返 回/@恢复误删X>
+#ACT
+BREAK
+#IF
+Equal A4 ""
+#SAY
+角色名不能为空,请重新输入\
+<返 回/@恢复误删X>
+#ACT
+BREAK
+
+#ELSEACT
+FormatStr "FLD_CHARNAME='%s'" %A4
+ReadValueSql  "TBL_CHARACTER"  %A9  "FLD_CHARNAME,FLD_USERID,FLD_DELETED"  [@验证IDxx]
+
+[@验证IDxx()]
+#ACT
+mov    A5      %ARG(1)
+mov    A6      %ARG(2)
+mov    A7      %ARG(3)
+
+#IF
+!Equal A6 %USERID
+#SAY
+{FCOLOR=250}查无此人{FCOLOR=255},您只能恢复同ID下的角色\
+<返 回/@恢复误删X>
+#ACT
+BREAK
+
+#IF
+equal A5 %A4
+equal A7 "0"
+#SAY
+人物 {FCOLOR=250}<$OUTPUT(A4)>{FCOLOR=255} 没被删除.\\
+<返 回/@恢复误删X>\
+#ACT
+BREAK
+
+#IF
+equal A5 %A4
+equal A7 "1"
+#SAY
+您目前的积分值为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
+人物 {FCOLOR=250}<$OUTPUT(A4)>{FCOLOR=255} 被删除了，你现在确定要恢复吗？\
+一个ID最多能存在4个人物.你确定还有空位吗?\
+<确定恢复人物/@hueifurw>\
+<离 开/@exit>\
+#ACT
+BREAK
+
+#ELSEACT
+BREAK
+
+[@hueifurw]
+#IF
+CHECKJFPOINT 10
+#ACT
+DECJFPOINT 10
+goto @hueifurenwu+
+
+#ELSESAY
+您的积分不够.无法执行恢复人物的功能.\
+<离 开/@exit>\
+
+[@hueifurenwu+]
+#ACT
+   FormatStr "FLD_CHARNAME='%s'" %A4
+   mov   A8     %A9
+   FormatStr "FLD_DELETED='%s'" 0
+   UPDATEVALUESQL "TBL_CHARACTER" %A8 %A9
+#SAY
+人物 {FCOLOR=250}<$OUTPUT(A4)>{FCOLOR=255} 被成功恢复.\\
+您目前的积分值为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
+<离 开/@EXIT>\
+
+
+}

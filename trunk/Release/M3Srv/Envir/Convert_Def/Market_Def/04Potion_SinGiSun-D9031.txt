@@ -1,0 +1,15 @@
+[@NPC_Main]
+{
+Welcome, how may i help you?\
+<Buy/@BuySpecialPotion> Dead Syrup\
+<Buy/@buy>\ \
+<Exit/@exit>
+
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+

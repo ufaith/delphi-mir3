@@ -1,0 +1,9 @@
+﻿;;Legend Of Mir 3 C3Engine
+[@AntTele_1]
+{
+Please select were you would like to go. \ \
+<[Use Integral Teleport]/@TelePortRootin(ji,0,Center)>\\
+<Oasis Village : 500 Gold/@TelePortRootin(Oasis,500,Center)> \
+
+
+}

@@ -1,0 +1,42 @@
+[@NPC_Main]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+Welcome, how may i help you?\ \
+<Storage/@storage>\
+<Receive/@PreGetback>\
+<Warehouse Password/@StgPassword>\
+<Today's Tasks/@TQuest>\
+<Integral Uses/@jifenshiyong>\
+<Consignment/@wuping>\
+<Exit/@exit>
+[@wuping]
+#CALL [\WINMA_ACT\Commission.txt] @jishou
+[@jifenshiyong]
+#CALL [\WINMA_ACT\ConsumerCredits\PointsList.txt] @积分列表
+}
+
+
+[@NPC_Storage]
+{
+What do you want to store?\ \
+<Back/@main>
+}
+
+[@NPC_Getback]
+{
+Please select the items you wish to remove.\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

@@ -1,0 +1,6 @@
+[@main]
+#IF
+CHECKLEVELEX > 21
+#ACT
+mapmove G008 39 42
+break

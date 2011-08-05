@@ -1,0 +1,37 @@
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Buy Horse/@BuyHorseWhite> {FCOLOR=250}White Horse (20 million Gold,  Level 40 Required){FCOLOR=255}\
+<Exit/@exit>
+}
+
+[@NPC_Main_NoMoney]
+{
+You do not have enough gold!\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_NoLv]
+{
+Sorry you need to be Level 40 or above!.\ \
+<Exit/@exit>
+}
+
+[@NPC_BuyHorseWhite_nOmONEY]
+{
+Sorry you do not have enough Gold\ \
+<Exit/@exit>
+}
+
+[@NPC_BuyHorseWhite_Fail]
+{
+You have horses. . I can not put this{FCOLOR=250}Famous{FCOLOR=255}White horse to horse people have. .\ \
+<Exit/@exit>
+}
+
+[@NPC_BuyHorseWhite_Complete]
+{
+名品白马在这里。。。虽然贵，不过这个{FCOLOR=250}名品{FCOLOR=255}白马是物有所值。。。\ \
+<Exit/@exit>
+}
+

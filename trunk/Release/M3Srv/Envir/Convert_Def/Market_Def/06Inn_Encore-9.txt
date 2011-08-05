@@ -1,0 +1,26 @@
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Storage/@storage>\
+<Receive/@PreGetback>\
+<Warehouse Password/@StgPassword>\
+<Consignment/@wuping>\
+<Exit/@exit>
+
+[@wuping]
+#CALL [\WINMA_ACT\Commission.txt] @jishou
+
+}
+
+[@NPC_Storage]
+{
+What do you want to store?\ \
+<Back/@main>
+}
+
+[@NPC_Getback]
+{
+Please select the items you wish to remove.\ \
+<Back/@main>
+}
+

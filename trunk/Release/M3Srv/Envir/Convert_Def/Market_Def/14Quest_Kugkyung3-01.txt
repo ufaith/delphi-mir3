@@ -1,0 +1,19 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+我打算在沙漠地区寻找新的贸易道路，因此正在准备从那里横断沙漠。\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+您拿给我的神钟将会为开拓比奇省的未来派上大用场的！ \ \
+ <Exit/@exit>
+}
+
