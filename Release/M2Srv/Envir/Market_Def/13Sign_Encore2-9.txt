@@ -1,4 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#SAY
-	#INCLUDE [..\Convert_Def\Market_Def\13Sign_Encore2-9.txt] @NPC_Main

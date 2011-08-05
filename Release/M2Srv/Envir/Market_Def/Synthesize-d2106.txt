@@ -1,3 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#CALL [\WINMA_ACT\SyntheticFragrance.txt] @飞龙合成开始

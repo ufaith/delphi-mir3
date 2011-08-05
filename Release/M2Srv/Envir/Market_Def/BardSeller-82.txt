@@ -1,3 +1,0 @@
-;=中国怪客联盟= www.51kiss.net
-[@main]
-#CALL [\WINMA_ACT\Commission.txt] @jishou

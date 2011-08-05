@@ -1,5 +1,0 @@
-;;;fdafdasfdsafdsa
-[@main]
-#if
-#say
-系列新功能,新任务正在开发中，让我们共同期待!\

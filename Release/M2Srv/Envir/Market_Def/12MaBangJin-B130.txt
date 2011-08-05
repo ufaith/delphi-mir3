@@ -1,3 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#CALL [\Mabangjin\play21_30.txt] @Ma30

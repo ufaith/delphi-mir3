@@ -1,6 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-
-
-
-#CALL [teleport\MongChonTele.txt] @Monchon_Teleport_West

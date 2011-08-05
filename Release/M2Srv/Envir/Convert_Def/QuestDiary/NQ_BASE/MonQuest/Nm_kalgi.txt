@@ -1,5 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@Nm_kalgi_1]
-{
-(这个好像是竹棍)\
-}

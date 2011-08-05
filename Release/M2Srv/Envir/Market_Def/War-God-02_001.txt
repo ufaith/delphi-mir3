@@ -1,3 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#CALL [\WINMA_DATA\DevilTasks\WarGeneral.txt] @Õ½Éñ_1

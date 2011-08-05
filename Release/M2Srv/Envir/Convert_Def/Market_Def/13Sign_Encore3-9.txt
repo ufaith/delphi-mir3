@@ -1,7 +1,0 @@
-[@NPC_Main]
-{
-{FCOLOR=250}Locations{FCOLOR=255} \ \
-North - 黑道宫  \ \
-Southwest - 村庄  \ \
-Southeast - 真天宫  \ \
-}

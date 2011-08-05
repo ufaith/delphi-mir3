@@ -1,2 +1,0 @@
-[@main]
-#CALL [\Event\PCevent\03_08_Event.txt] @point200

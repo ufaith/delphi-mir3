@@ -1,5 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@massheal1_1]
-{
-(几乎都处理哟...) \
-}

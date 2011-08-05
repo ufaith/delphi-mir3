@@ -1,9 +1,0 @@
-;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
-[@main]
-#ACT
-ADDSHENGWANG 2
-sysmsg "获得声望2点" 1
-lineMsg [Grobal] "恭喜 [<$USERNAME>],消灭了地天灭王..."
-#ELSEACT
-break
-;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

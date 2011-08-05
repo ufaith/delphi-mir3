@@ -1,3 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#CALL [\MU_taoist\amyen.txt] @mugong_poison_test

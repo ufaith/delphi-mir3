@@ -1,3 +1,0 @@
-[Setup]
-ItemNumber=0
-ItemNumberEx=1073741823

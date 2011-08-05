@@ -1,4 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#CALL [WINMA_ACT\ConsumerCredits\PointsList.txt] @积分列表
-;;;;;;;;;;;;;;;;;

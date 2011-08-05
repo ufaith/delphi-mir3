@@ -1,8 +1,0 @@
-;;;;;;;;;;;;fdafdfddsfdafdafda;;;
-[@main]
-#IF
-#ACT
-GMEXECUTE adjustExp %USERNAME + 100000000
-sysmsg "恭喜您抗震成功获得了100000000的经验"
-break
-;;;;;;;;;;;;;;fdafdafdffdafdad

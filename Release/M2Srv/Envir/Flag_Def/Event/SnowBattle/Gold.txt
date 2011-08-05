@@ -1,5 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[Gold]
-PersonNum=0
-Gold=0
-Reward=0

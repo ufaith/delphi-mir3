@@ -1,8 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[FLAG]
-Gate = 0
-End = 0
-Problem = 0
-Start = 0
-AdminPro = 0
-AdminSentence = 0

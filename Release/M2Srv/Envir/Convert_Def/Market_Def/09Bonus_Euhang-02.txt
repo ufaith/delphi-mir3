@@ -1,7 +1,0 @@
-[@NPC_Main]
-{
-Welcome, how may i help you?\ \
-<Upgrade Level Value/@LevelUp> \ 
-<Upgrade Ability Value /@quicknengli>\\
-<Exit/@exit>
-}

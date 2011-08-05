@@ -1,6 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[Monster]
-Name1=猿猴战士
-Name2=猿猴战将
-Name3=魔神怪1
-Name4=聚宝箱4
