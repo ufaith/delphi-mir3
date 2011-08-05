@@ -1,0 +1,3 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#CALL [\WINMA_DATA\DevilTasks\Blacksmith.txt] @½ð¸ÕÌú½³V

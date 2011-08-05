@@ -1,0 +1,8 @@
+;;Legend Of Mir 3 C3Engine
+[@WoomaQuest]
+#IF
+check [276] 0
+#ACT
+enter_fail
+#ELSEACT
+enter_ok

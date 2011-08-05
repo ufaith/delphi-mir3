@@ -1,0 +1,22 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+呵！今天好想喝酒啊！\
+可是你兜里空空的，怎么让你给我买酒呢？\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+是您哪！\
+又想要给我点什么吧~！唔……就给我买一瓶酒吧……\
+不！~尽管这样也要有卫士的尊严啊！ \
+<Exit/@exit>
+}
+

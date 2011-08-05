@@ -1,0 +1,5 @@
+;;Legend Of Mir 3 C3Engine
+[@Nm_WoomaGisa_1]
+{
+(这是灵魂明珠吗？...拿去给无名老人看看)\
+}

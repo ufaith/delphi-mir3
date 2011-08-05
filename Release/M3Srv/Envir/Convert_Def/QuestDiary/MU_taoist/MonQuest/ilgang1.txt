@@ -1,0 +1,5 @@
+;;Legend Of Mir 3 C3Engine
+[@ilgang1_1]
+{
+(噢，终于通过了学习精神力战法的测试...)
+}

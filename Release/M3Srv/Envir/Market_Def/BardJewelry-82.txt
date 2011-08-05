@@ -1,0 +1,51 @@
+;;Legend Of Mir 3 C3Engine
+%100
++19
++20
++21
++22
++23
++24
++26
+[@main]
+#IF
+checkpkpoint 2
+#SAY
+我不想和你这手上沾满血腥的人打交道,你找其他人吧!\ 
+<退出/@exit>
+#ELSEACT
+goto @main_0_0
+
+[@main_0_0]
+#IF
+#SAY
+有什么我可以帮你的么?\ \
+ 我要 <Buy/@buy>\
+ 我要 <Sell/@sell>\
+ 我要 <Repair/@repair>\
+<新首饰合成/@jifenshoushi>\
+ <离开/@exit>
+
+[@buy]
+#say
+你想买什么东西?\ \
+ <返回/@main>
+
+[@sell]
+#say
+你想要卖什么?\\
+ <返回/@main>
+ 
+[@repair]
+#say
+你想修理什么? \ \
+<返回/@main>
+
+[@jifenshoushi]
+#CALL [\WINMA_ACT\SyntheticJewelry.txt] @首饰合成开始XC
+
+[Goods]
+;商品    库存       单位
+;----------战士首饰----------
+
+

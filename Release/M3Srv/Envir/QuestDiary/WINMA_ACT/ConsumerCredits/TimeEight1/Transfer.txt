@@ -1,0 +1,147 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#ACT
+;;SET [920] 0
+MOV A0 %USERNAME
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+ReadValueSql "TBL_CHARACTER" %A9 "FLD_SJBDC" @S_J1
+
+[@S_J1()]
+#ACT
+MOV D9 %ARG(1)
+LOADVALUE D8 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control 总层数
+#IF
+!EQUAL D9 %D8
+#ACT
+MOV D8 %D9
+INC D9 1
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+mov A5 %A9
+FormatStr "FLD_SJBDC='%s'" %D9
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+MOV A7 "第"
+ADDSTR A7 %D9
+ADDSTR A7 "层活跃值"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control %A7
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control 选择时间
+goto @时八算时_1
+#ELSEACT
+goto @时八奖_1
+
+[@时八算时_1]
+#act
+mov A0 %USERNAME 
+MOV A7 "第"
+ADDSTR A7 %D9
+ADDSTR A7 "层活跃值"
+MOV A6 "第"
+ADDSTR A6 %D9
+ADDSTR A6 "层地图"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control %A7
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control %A6
+#IF
+ONLINELONGMIN > %D0
+#ACT
+;;SET [920] 1
+Delaygoto [local] 5 @时八计始_1
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control 进入时间
+#SAY
+恭喜<$OUTPUT(A0)>,你现在是闯过<$OUTPUT(D8)>关!\
+进入<$OUTPUT(D9)>层.需要<$OUTPUT(D0)>点活跃值!\
+你有{FCOLOR=250}<$OUTPUT(D7)>{FCOLOR=255}秒在此逗留,完了就到下一层了!\
+{FCOLOR=249}快点去收拾家当哦!{FCOLOR=255}\
+#ELSEACT
+SYSMSG "对不起,你得积分不足!"
+goto @时八计始_1
+
+[@时八计始_1]
+#ACT
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control 进入时间
+close
+GOTO @时八测时件_1
+
+[@时八测时件_1]
+#IF
+SMALL D7 1
+#ACT
+GOTO @八入_1
+#ELSEACT
+GOTO @倒数时八_1
+
+[@倒数时八_1]
+#ACT
+SYSMSG "还剩下<$OUTPUT(D7)>秒!"
+DEC D7 1
+Delaygoto [local] 2 @时八测时件_1
+
+[@出十八_1]
+#ACT
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control 回去地图代码  
+loadvalue D2 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control X坐标  
+loadvalue D3 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control Y坐标 
+MAPMOVE %A1 %D2 %D3
+SYSMSG "回去顺风哦!"
+Breaktimerecall
+break
+
+[@八入_1]
+#act
+mov A0 %USERNAME 
+MOV A7 "第"
+ADDSTR A7 %D9
+ADDSTR A7 "层活跃值"
+MOV A6 "第"
+ADDSTR A6 %D9
+ADDSTR A6 "层地图"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control %A7
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control %A6
+#if
+ONLINELONGMIN > %D0
+#act
+SETONLINETIME - %D0
+mapmove  %A1
+SysMsg  "你消耗了<$OUTPUT(D0)>点活跃值进入时间八大<$OUTPUT(D9)>层,祝您好运！
+#ELSEACT
+SYSMSG  "对不起,你的活跃值不足!"
+GOTO @出十八_1
+
+[@开时八机时1_1]
+#ACT
+loadvalue D7 "QuestDiary\WINMA_DATA\Control\TimeEight1.txt" Control 进入时间
+close
+GOTO @时八时测1_1
+
+[@时八时测1_1]
+#IF
+SMALL D7 1
+#ACT
+GOTO @出十八_1
+#ELSEACT
+SYSMSG "恭喜你过关,你还剩下<$OUTPUT(D7)>秒在这里停留!"
+DEC D7 1
+Delaygoto [local] 2 @时八时测1_1
+
+[@时八奖_1]
+#IF
+#SAY
+{FCOLOR=250}<$USERNAME>{FCOLOR=255} 恭喜你挑战成功\\
+系统将奖励你 {FCOLOR=250}2块{FCOLOR=255} 封魔石和 {FCOLOR=250}10W金币{FCOLOR=255}\\
+;以及{FCOLOR=250}1个{FCOLOR=255} 神秘钥匙 \\
+感谢您的参与,同时您的 {FCOLOR=250}声望{FCOLOR=255} 提升1点\\
+{FCOLOR=250}您现在有资格去挑战暗影禁地了...{FCOLOR=255}\
+#ACT
+ADDSHENGWANG 1
+give 封魔石 2
+;give 神秘钥匙 1
+give 金币 100000
+;SET [920] 1
+;set [018] 1
+lineMsg [Grobal] 一位伟大的勇士'<$USERNAME>'成功通过时间八大教主的重重考验
+sysmsg "恭喜您 <$USERNAME>,获得了2块封魔石+10W金币,声望提升1点"
+Delaygoto [local] 3 @开时八机时1_1
+BREAK
+#ELSEACT
+SYSMSG "发现[双杀数据]系统终止"
+GOTO @出十八_1
+BREAK
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

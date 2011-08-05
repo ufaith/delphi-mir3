@@ -1,0 +1,6 @@
+;;Legend Of Mir 3 C3Engine
+[ItemLimit]
+Name=
+
+[ItemCost]
+Name=½ð±Ò

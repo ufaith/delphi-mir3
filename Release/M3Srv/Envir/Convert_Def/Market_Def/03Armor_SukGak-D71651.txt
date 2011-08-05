@@ -1,0 +1,19 @@
+[@NPC_RedPlayer]
+{
+Welcome, how may i help you?\
+<Repair/@repair>\
+<Exit/@exit>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+You have successfully repaired your item.\ \
+<Back/@main>
+}
+

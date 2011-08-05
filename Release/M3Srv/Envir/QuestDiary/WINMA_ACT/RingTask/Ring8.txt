@@ -1,0 +1,55 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@第八环X]
+{
+#IF
+CHECK [680] 0  ;七环捉怪任务完成标志
+check [671] 0  ;七环捉怪任务领奖标志
+#ACT
+GOTO @八环任务开始x
+BREAK
+
+#IF
+check [680] 1
+check [671] 0
+checkitem 赤血宝剑 1
+#ACT
+GOTO @八环任务领奖x
+break
+
+#IF
+CHECK [680] 1
+#ACT
+GOTO @8任务说明x
+BREAK
+
+[@八环任务开始x]
+#IF
+#ACT
+SET [680] 1
+#SAY
+我的一位好友最近钟爱赤血宝剑，如果少侠能够帮我找到一把，我将万分感激。\
+赤血魔剑可在神舰怪物身上得到。\
+<离开/@exit>\
+
+
+[@8任务说明x]
+#IF
+#SAY
+我的一位好友最近钟爱赤血宝剑，如果少侠能够帮我找到一把，我将万分感激。\
+赤血魔剑可在神舰怪物身上得到。\
+<离开/@exit>\
+
+
+[@八环任务领奖x]
+#IF
+check [671] 0
+checkitem 赤血宝剑 1
+#ACT
+set [671] 1
+take 赤血宝剑 1
+GMEXECUTE adjustExp %USERNAME + 30000000
+SYSMSG "恭喜您完成了第八环任务，可以开始第九环任务了!"
+SYSMSG "您得到了3000万经验的奖励!"
+break
+
+}

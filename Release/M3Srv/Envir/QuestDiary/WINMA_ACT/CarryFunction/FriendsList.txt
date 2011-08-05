@@ -1,0 +1,373 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@好友列表_1]
+{
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME 总好友数
+MOV A5 ""
+MOV A8 ""
+GOTO @好友循环列表
+
+[@好友循环列表]
+#IF
+LARGE D0 0
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME %D0
+LOADVALUE D1 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A0 %USERNAME 
+GOTO @运算好友
+#ELSEACT
+goto @好友列表显示
+
+[@运算好友]
+#IF
+CheckOnline %A0
+#ACT
+ADDSTR A8 "  {FCOLOR=250}在线{FCOLOR=255}\"
+GOTO @运算好友1
+#ELSEACT
+ADDSTR A8 "  {FCOLOR=249}离线{FCOLOR=255}\"
+GOTO @运算好友1
+
+[@运算好友1]
+#IF
+EQUAL D1 1
+#ACT
+ADDSTR A5 "<[传送:"
+ADDSTR A5 %A0
+ADDSTR A5 "]/@好友列表("
+ADDSTR A5 %D0 
+ADDSTR A5 ")> <[修改]/@@修改好友("
+ADDSTR A5 %D0
+ADDSTR A5 ")> <[申请传送]/@申请传送( 
+ADDSTR A5 %D0
+ADDSTR A5 ")> {FCOLOR=250}状态:{FCOLOR=253}接受{FCOLOR=255}"
+ADDSTR A5 %A8
+ADDSTR A5 "\"
+mov A8 ""
+DEC D0 1
+GOTO @好友循环列表
+BREAK
+#IF
+EQUAL D1 2
+#ACT
+ADDSTR A5 "<[传送:"
+ADDSTR A5 %A0
+ADDSTR A5 "]/@好友列表("
+ADDSTR A5 %D0 
+ADDSTR A5 ")> <[修改]/@@修改好友("
+ADDSTR A5 %D0
+ADDSTR A5 ")> <[申请传送]/@申请传送( 
+ADDSTR A5 %D0
+ADDSTR A5 ")> {FCOLOR=250}状态:{FCOLOR=249}拒绝{FCOLOR=255}"
+ADDSTR A5 %A8
+ADDSTR A5 "\"
+mov A8 ""
+DEC D0 1
+GOTO @好友循环列表
+BREAK
+#ELSEACT
+ADDSTR A5 "<[传送:"
+ADDSTR A5 %A0
+ADDSTR A5 "]/@好友列表("
+ADDSTR A5 %D0 
+ADDSTR A5 ")> <[修改]/@@修改好友("
+ADDSTR A5 %D0
+ADDSTR A5 ")> <[申请传送]/@申请传送( 
+ADDSTR A5 %D0
+ADDSTR A5 ")> {FCOLOR=250}状态:{FCOLOR=255}无 "
+ADDSTR A5 %A8
+ADDSTR A5 "\"
+mov A8 ""
+DEC D0 1
+GOTO @好友循环列表
+BREAK
+
+[@好友列表显示]
+#ACT
+LOADVALUE A2 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %USERNAME 申请者
+#IF
+EQUAL A2 ""
+#SAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <添 加 好友 列 表/@申请好友>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+<$OUTPUT(A5)>
+;</@好友列表(1)></@好友列表(2)></@好友列表(3)></@好友列表(4)></@好友列表(5)></@好友列表(6)></@好友列表(7)></@好友列表(8)></@好友列表(9)></@好友列表(10)></@好友列表(11)></@好友列表(12)></@好友列表(13)></@好友列表(14)></@好友列表(15)></@好友列表(16)></@好友列表(17)></@好友列表(18)></@好友列表(19)></@好友列表(20)>
+;</@@修改好友(1)></@@修改好友(2)></@@修改好友(3)></@@修改好友(4)></@@修改好友(5)></@@修改好友(6)></@@修改好友(7)></@@修改好友(8)></@@修改好友(9)></@@修改好友(10)></@@修改好友(11)></@@修改好友(12)></@@修改好友(13)></@@修改好友(14)></@@修改好友(15)></@@修改好友(16)></@@修改好友(17)></@@修改好友(18)></@@修改好友(19)></@@修改好友(20)></@申请传送(1)></@申请传送(2)></@申请传送(3)></@申请传送(4)></@申请传送(5)></@申请传送(6)></@申请传送(7)></@申请传送(8)></@申请传送(9)></@申请传送(10)></@申请传送(11)></@申请传送(12)></@申请传送(13)></@申请传送(14)></@申请传送(15)></@申请传送(16)></@申请传送(17)></@申请传送(18)></@申请传送(19)></@申请传送(20)>
+#ELSEACT
+MOV A3 "{FCOLOR=250}申请者:{FCOLOR=252}"
+ADDSTR A3 %A2
+ADDSTR A3 "{FCOLOR=255} <[接 受]/@接受申请> <[拒 绝]/@拒绝申请>"
+GOTO @ANOTHER
+
+[@ANOTHER]
+#SAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <添 加 好友 列 表/@申请好友>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+<$OUTPUT(A3)>\
+<$OUTPUT(A5)>\
+<$OUTPUT(A8)>\
+;</@好友列表(1)></@好友列表(2)></@好友列表(3)></@好友列表(4)></@好友列表(5)></@好友列表(6)></@好友列表(7)></@好友列表(8)></@好友列表(9)></@好友列表(10)></@好友列表(11)></@好友列表(12)></@好友列表(13)></@好友列表(14)></@好友列表(15)></@好友列表(16)></@好友列表(17)></@好友列表(18)></@好友列表(19)></@好友列表(20)></@@修改好友(1)></@@修改好友(2)></@@修改好友(3)></@@修改好友(4)></@@修改好友(5)></@@修改好友(6)></@@修改好友(7)></@@修改好友(8)></@@修改好友(9)></@@修改好友(10)></@@修改好友(11)></@@修改好友(12)></@@修改好友(13)></@@修改好友(14)></@@修改好友(15)></@@修改好友(16)></@@修改好友(17)></@@修改好友(18)></@@修改好友(19)></@@修改好友(20)></@接受申请></@拒绝申请></@申请传送(1)></@申请传送(2)></@申请传送(3)></@申请传送(4)></@申请传送(5)></@申请传送(6)></@申请传送(7)></@申请传送(8)></@申请传送(9)></@申请传送(10)></@申请传送(11)></@申请传送(12)></@申请传送(13)></@申请传送(14)></@申请传送(15)></@申请传送(16)></@申请传送(17)></@申请传送(18)></@申请传送(19)></@申请传送(20)>
+
+[@申请好友]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME 总好友数
+#IF
+ELARGE D0 10
+#ACT
+close
+SysMsg "【温馨提示】您的好友数已满!"
+#elseSAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [{FCOLOR=249}  添 加 好友 列 表  {FCOLOR=161}]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+_         [ <请输入你要加入的玩家名字/@@inputuname> ]{FCOLOR=255}
+
+[@@inputuname]
+#ACT
+MOV A6 %INPUTSTR
+FormatStr "where sChrName='%s'" %A6
+ReadSql "MIR_HUM_INFO" "sChrName" A1 %A9
+
+
+#IF
+equal A1 <$USERNAME>
+#SAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [{FCOLOR=249}  添 加 好友 列 表  {FCOLOR=161}]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+_         [ <请输入你要加入的玩家名字/@@inputuname> ]\
+──────────{FCOLOR=253}温馨提示{FCOLOR=161}──────────\
+_     {FCOLOR=253}对不起,不能加自己为好友{FCOLOR=161}[{FCOLOR=253} 请重新输入 {FCOLOR=161}]{FCOLOR=255}\
+#ACT
+BREAK
+
+#IF
+EQUAL A1 ""
+#SAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [{FCOLOR=249}  添 加 好友 列 表  {FCOLOR=161}]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+_         [ <请输入你要加入的玩家名字/@@inputuname> ]\
+──────────{FCOLOR=253}温馨提示{FCOLOR=161}──────────\
+_     {FCOLOR=253}对不起,游戏内没有该角色{FCOLOR=161}[{FCOLOR=253} 请重新输入 {FCOLOR=161}]{FCOLOR=255}\
+#ACT
+BREAK
+#ELSEACT
+GOTO @记录好友资料
+
+[@记录好友资料]
+#ACT
+INC D0 1 
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME %D0 %A6
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME 总好友数 %D0
+DELAYGOTO  1 @好友列表_1
+#SAY
+╭⌒╮','╭ ⌒╮　╱　╱╱　╱╱　{FCOLOR=253}☆{FCOLOR=255} \
+',' ',' ',' ','{FCOLOR=253}☆{FCOLOR=255}　　╱{FCOLOR=249}★{FCOLOR=255}　╱╱　╱╱ \
+','{FCOLOR=254}风雨无阻,服务第一 {FCOLOR=253}☆{FCOLOR=255}╱　{FCOLOR=253}☆{FCOLOR=255}╱ ╱ \
+{FCOLOR=249}★{FCOLOR=255}╱','╱{FCOLOR=253}☆{FCOLOR=255},' ╱',',{FCOLOR=249}★{FCOLOR=255} ╱{FCOLOR=253}☆{FCOLOR=255} ╱{FCOLOR=249}★{FCOLOR=255}╱{FCOLOR=253}☆{FCOLOR=255}\
+正在为您{FCOLOR=250}添加好友{FCOLOR=255}......请梢侯........{FCOLOR=255}\
+
+[@申请传送()]
+#ACT
+MOV D8 %ARG(1)
+LOADVALUE A6 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME %D8
+LOADVALUE A4 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A6 申请者
+#IF
+EQUAL A4 "" 
+#ACT
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A6 申请者 %USERNAME
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A6 %USERNAME 0
+#SAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <添 加 好友 列 表/@申请好友>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+──────────{FCOLOR=253}温馨提示{FCOLOR=161}──────────\
+【申请完毕】请等待该玩家接受后--立刻使用传送功能{FCOLOR=255}\
+_                 <【返回主菜单】/@好友列表_1>
+#ELSESAY
+{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <添 加 好友 列 表/@申请好友>  ]\
+─────────[ 好友传送 ]─────────{FCOLOR=255}\
+由于{FCOLOR=250}没有原地复活{FCOLOR=255}. 所以好友传送{FCOLOR=250}非常重要{FCOLOR=255}. 每位玩家\
+最多拥有{FCOLOR=250}10个好友{FCOLOR=255}. 每次移动消耗{FCOLOR=250}30个积分{FCOLOR=255}. 使用说明{FCOLOR=249}\
+申请移动到列表中玩家身边.前提-该玩家接受您的请求\
+请求通过后,请第一时间移动到该玩家身边.否则可能您\
+所到的坐标会有偏差.接受的玩家,最好能原地稍等片刻\{FCOLOR=161}
+─────────[ 好友传送 ]─────────\
+_            [  <返 回 上层 菜 单/@Main_dnpc>  ]\
+──────────{FCOLOR=253}温馨提示{FCOLOR=161}──────────\
+【申请失败】对不起,该玩家在使用该功能,请稍候申请{FCOLOR=255}\
+_                 <【返回主菜单】/@好友列表_1>
+ 
+[@接受申请]
+#ACT
+LOADVALUE A2 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %USERNAME 申请者
+MOV A7 %USERMAP
+#IF
+!EQUAL A7 z010
+!EQUAL A7 kt0001
+!EQUAL A7 RUSH1
+!EQUAL A7 E003
+!EQUAL A7 E004
+!EQUAL A7 E006
+!EQUAL A7 01_003
+!EQUAL A7 02_0011
+!EQUAL A7 1_012
+!EQUAL A7 D0002_002
+!EQUAL A7 D0002_003
+!EQUAL A7 D0002_004
+!EQUAL A7 02_006
+!EQUAL A7 02_0061
+!EQUAL A7 02_0062
+!EQUAL A7 1_014
+!EQUAL A7 1_0141
+!EQUAL A7 1_0142
+#ACT
+;Close
+;SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %USERNAME %A2 1
+;SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\PlayersCoordinate.ini" %USERNAME 地图 %A7 
+;SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\PlayersCoordinate.ini" %USERNAME X坐标 %USERX
+;SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\PlayersCoordinate.ini" %USERNAME Y坐标 %USERY
+#SAY 
+【温馨提示】请在此等待你的好友.提醒他.马上过来.
+#ELSESAY
+【温馨提示】该地区被禁止,不能让您的好友过来...
+#ELSEACT
+BREAK
+
+[@拒绝申请]
+#ACT
+LOADVALUE A2 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %USERNAME 申请者
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %USERNAME %A2 2
+MOV A2 ""
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %USERNAME 申请者 %A2
+#SAY
+【温馨提示】拒绝成功.该玩家不能来到您的身边.
+
+[@@修改好友()]
+#ACT
+MOV A6 %INPUTSTR
+MOV D0 %ARG(1)
+GOTO @积分分1
+
+[@积分分1]
+#ACT
+FormatStr "where sChrName='%s'" %A6
+ReadSql "MIR_HUM_INFO" "sChrName" A1 %A9
+
+#IF
+EQUAL A1 ""
+#ACT
+SYSMSG "【温馨提示】你输入的信息有误..."
+BREAK
+#IF
+EQUAL A1 %USERNAME
+#ACT
+SYSMSG "【温馨提示】不能修改自己为好友"
+BREAK
+#ELSEACT
+GOTO @发觉隧道局发
+
+[@发觉隧道局发]
+#ACT
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME %D0 %A6
+DELAYGOTO 1 @好友列表_1
+#SAY
+╭⌒╮','╭ ⌒╮　╱　╱╱　╱╱　{FCOLOR=253}☆{FCOLOR=255} \
+',' ',' ',' ','{FCOLOR=253}☆{FCOLOR=255}　　╱{FCOLOR=249}★{FCOLOR=255}　╱╱　╱╱ \
+','{FCOLOR=254}风雨无阻,服务第一 {FCOLOR=253}☆{FCOLOR=255}╱　{FCOLOR=253}☆{FCOLOR=255}╱ ╱ \
+{FCOLOR=249}★{FCOLOR=255}╱','╱{FCOLOR=253}☆{FCOLOR=255},' ╱',',{FCOLOR=249}★{FCOLOR=255} ╱{FCOLOR=253}☆{FCOLOR=255} ╱{FCOLOR=249}★{FCOLOR=255}╱{FCOLOR=253}☆{FCOLOR=255}\
+正在为您{FCOLOR=250}修改好友{FCOLOR=255}......请梢侯........{FCOLOR=255}\
+
+[@好友列表()]
+#ACT
+MOV D8 %ARG(1)
+LOADVALUE A6 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\FriendInformation.ini" %USERNAME %D8
+LOADVALUE D1 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A6 %USERNAME
+#IF
+EQUAL D1 1
+#ACT
+GOTO @JIFENKKF
+#ELSESAY
+【温馨提示】没有经得对方接受同意,您无法传送
+
+[@JIFENKKF]
+#IF
+CheckJfPoint 30
+#ACT
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A6 %USERNAME 0
+MOV A2 ""
+SAVEVALUE "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\RecipientsInformation.ini" %A6 申请者 %A2
+;LOADVALUE A3 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\PlayersCoordinate.ini" %A6 地图
+;LOADVALUE A4 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\PlayersCoordinate.ini" %A6 X坐标
+;LOADVALUE A5 "QuestDiary\WINMA_ACT\CarryFunction\FriendsList\PlayersCoordinate.ini" %A6 Y坐标
+GOTO @JIFENKKF_1
+#ELSESAY
+ 【温馨提示】您积分不足.无法使用该功能.
+
+[@JIFENKKF_1]
+#ACT
+decJFPOINT 30
+;MAPMOVE %A3 %A4 %A5
+GMEXECUTE FOLLOW %A6
+#SAY
+【温馨提示】来到了好友<$OUTPUT(A9)>的身边."
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

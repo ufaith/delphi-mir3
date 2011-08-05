@@ -1,0 +1,60 @@
+(@BUY @SELL @REPAIR)
+%200
+;
++5
++6
+;
++10
++11
+;
++15
+;
++19
++20
++21
++22
++23
++24
++26
+
+[@main]
+#IF
+CHECK [633] 1
+CHECK [640] 0
+#ACT
+Set [640] 1
+#SAY
+谢谢你给我带来老朋友的消息，回去转告他。我过几天就回去拜访他。\\
+
+
+#ELSEACT
+goto @Main_2
+
+[@Main_2]
+#IF
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\02Weapon_SinGiSun-D9012.txt] @NPC_Main
+
+[@Repair]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\02Weapon_SinGiSun-D9012.txt] @NPC_Repair
+
+[~@repair]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\02Weapon_SinGiSun-D9012.txt] @NPC_Repair_Complete
+
+[Goods]
+;ItemName      Volume     Hour
+乌木剑          20         23
+铁剑            10         24
+青铜斧          10         25
+八荒            10        24
+凌风            10        12
+斩马刀          10        21
+修罗            10        22
+诅咒海魂        10        24
+海魂            10        23
+诅咒半月        10        25
+半月            10        27
+鹤嘴锄          10        29
+风之鹤嘴锄      10        25

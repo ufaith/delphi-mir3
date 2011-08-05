@@ -1,0 +1,120 @@
+;-------------------By:TONGHUA--
+[@行会提交_1]
+{
+#ACT
+MOV N4 0
+LoadValue N4 "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME 总人数
+LoadValue D3 "系统设置.ini" [开区后] 行会提交开关
+
+#SAY
+____{FCOLOR=250}如果你感觉家族人少,而大家族奖励多多,你感觉不公平,你现\
+在可以马上选择我们,这里人不分贵贱, 家族不分人多少,奖励都\
+一样,是需要公平玩家的实至名归的选择!{FCOLOR=255}\
+
+{FCOLOR=251}行会贡献奖励:{FCOLOR=255}\
+{FCOLOR=251}奖励对象:{FCOLOR=255}{FCOLOR=249}服务器的所有玩家{FCOLOR=255}\
+{FCOLOR=251}奖励条件:{FCOLOR=255}冲级赛结束时法师达到47级,战士和道士达到46级后对\
+_________所在的行会贡献(对行会贡献过的玩家,至少1次)\
+{FCOLOR=251}具体奖励:{FCOLOR=255}冲级赛结束前贡献过的玩家都可以获得{FCOLOR=249}1000积分{FCOLOR=255}\
+{FCOLOR=251}兑现时间:{FCOLOR=255}{FCOLOR=253}冲级赛结束后当日晚20点15分{FCOLOR=255},达到条件的玩家到这里\
+_________领取奖励 \ \
+
+你现在所在行会的贡献度有 {FCOLOR=250}<$OUTPUT(N4)> {FCOLOR=255}点\
+您目前的积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点。\
+
+#IF
+equal D3 0
+#SAY
+<作出贡献/@提交活动_1>\
+#ELSESAY
+<领取奖品/@领取奖励_1>\
+
+[@提交活动_1]
+#ACT
+MOV B0 %USERNAME
+LoadValue N2 "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME 总人数
+LoadValue B1 "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" 提交人 %B0
+
+#IF
+equal B1 0
+OR equal B1 1
+#SAY
+你已经提交过行会贡献度\
+<离开/@exit>
+#ACT
+BREAK
+
+#if
+checklevel 46
+checkjob warrior
+#say
+<提交/@提交活动_ZY>\
+#act
+break
+
+#if
+checklevel 47
+checkjob wizard
+#say
+<提交/@提交活动_ZY>\
+#act
+break
+
+#if
+checklevel 46
+checkjob taoist
+#say
+<提交/@提交活动_ZY>\
+#act
+break
+
+#IF
+#SAY
+对不起，您不够级别...\
+<离开/@exit>
+
+[@提交活动_ZY]
+#IF
+HasGuild
+#ACT
+INC N2 1
+SAVEVALUE "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" 提交人 %B0 1
+SAVEVALUE "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME %B0 0
+SAVEVALUE "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME 总人数 %N2
+#SAY
+提交完毕
+#ELSESAY
+你没有加入行会\
+<关 闭/@exit>
+
+[@领取奖励_1]
+#ACT
+MOV B6 %USERNAME
+LoadValue N8 "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME 总人数
+LoadValue B8 "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME %B6
+
+#if
+elarge N8 1
+#ACT
+GOTO @发奖了_1
+#ELSESAY
+对不起,你所在的行会贡献不到1点。
+#ACT
+break
+
+[@发奖了_1]
+#IF
+equal B8 0
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\GuildApplication\Variable.txt" %GUILDNAME %B6 1
+ADDJFPOINT 1000
+#say
+你领取了你赢得的奖励了,您目前的积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点。\
+<离开/@exit>
+#ELSESAY
+错误提示：\
+1.你没有参加此活动\
+2.你已经领取过了\
+<关 闭/@exit>
+}
+;-------------------BY:TONGHUA--

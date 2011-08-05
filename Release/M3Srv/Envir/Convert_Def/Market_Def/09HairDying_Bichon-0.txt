@@ -1,0 +1,48 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Welcome, how may i help you?\ \
+<Change Hair Color/@ChangeHairColor>\
+<Change Hair Style/@ChangeHairShape>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_changeHairColor]
+{
+It will cost 5000 Gold to change hair color. Please select the color you wish to use.\
+<White/@HairColor(1)> ,<Black/@HairColor(2)> , <Gray/@HairColor(3)>\
+<Dye Hair/@HairColor(4)>\
+<Back/@main>
+}
+
+[@NPC_changeHairShape_Man]
+{
+It will cost 10,000 Gold to change hair style. Please select the style you wish to use.\
+<Bald/@HairShape(0)> , <Tonsure/@HairShape(1)> , <Long/@HairShape(2)> , <Short/@HairShape(3)> , <Chignon/@HairShape(4)>, <Shaggy/@HairShape(5)>\
+<Back/@main>
+}
+
+[@NPC_changeHairShape_WoMan]
+{
+It will cost 10,000 Gold to change hair style. Please select the style you wish to use.\
+<Straight/@HairShape(1)> , <Chignon/@HairShape(2)> , <Short/@HairShape(3)> , <Braiding/@HairShape(4)> <Short/@HairShape(5)>\
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}

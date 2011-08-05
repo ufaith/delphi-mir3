@@ -1,0 +1,372 @@
+;;Legend Of Mir 3 C3Engine
+[@Marrage]
+{
+#Define N50{START} N50
+#Define N51{WEDDING} N51
+#Define N53{TIME} N53
+#Define N55{WAITINGTIMEOUT} N55
+#Define N56{MAN} N6
+#Define N57{GIRL} N7
+
+#Define B1{MANNAME} B1
+#Define B2{GIRLNAME} B2
+#Define B3{INPUTGIRLNAME} B3
+
+#IF
+Equal N50{START} 1
+
+#SAY
+_现在正在举行结婚典礼，请等婚礼结束。\\
+
+#ELSESAY
+_我以比奇城主的身份为想结婚的预备夫妇进行结婚典礼.\
+_申请结婚等待时间为10秒钟,如超过10秒钟女方不进行申请婚礼会被取消.当然申请花费的钱也没收不会归还了.\
+_<申请结婚。/@wantGetMarried>\
+_<申请离婚。/@wantDivorce>\
+_<取下结婚戒指。/@TakeMarriedRing>\\
+_<询问关于结婚方面的问题。/@MarriageQuestion>\
+
+#IF
+Equal B1{MANNAME} %USERNAME
+
+#SAY
+<放弃了结婚申请。/@PreCancelWedding>\\
+
+#IF
+IsAdmin
+
+#SAY
+_<变数初始化/@ResetWeddingVariables>\
+
+[@MarriageQuestion]
+#IF
+
+#SAY
+_如果想结婚的话{FCOLOR=250}等级在22级以上{FCOLOR=255}的男女一起来申请就可以了。并且两人必须是{FCOLOR=250}未婚{FCOLOR=255}。\
+;_因为同时来很多人申请结婚的话会很乱，所以新郎必须站在 {FCOLOR=250}(42,30){FCOLOR=255}处，新娘必须站在 {FCOLOR=250}(43,31){FCOLOR=255}处申请才会成功。\
+_婚礼费用双方各付{FCOLOR=250}50万{FCOLOR=255}，如果按我说的进行婚礼的话，会得到终生的伴侣。\\
+_<关  闭/@exit>
+
+[@wantGetMarried]
+#IF
+!CheckLevel 22
+
+#SAY
+_不管怎么着急你这么低的级别想结婚是不行的，作为夫妇要想尽到尽到义务，至少要到脱掉轻型铠甲的级别不是嘛。\
+_等两个人都到{FCOLOR=250}22级以后{FCOLOR=255}再来申请吧。\\
+_<关  闭/@exit>
+#ACT
+break
+
+
+#SAY
+_竟有这种人... 和自己的伴侣还没有分手，就来找我想和别人举办婚礼。难道你想挑战比奇城主的权位吗? 赶快给我消失!\\
+_<关  闭/@exit>
+#ACT
+break
+
+#IF
+Gender [man]
+#ACT
+goto @wantGetMarried_man
+#ELSEACT
+goto @wantGetMarried_woman
+
+
+
+[@wantGetMarried_woman]
+#IF
+equal N56{MAN} 1
+equal B3{INPUTGIRLNAME} %USERNAME
+#ELSEACT
+SysMsg "新郎还没有申请结婚。"
+close
+break
+
+#IF
+CheckGold 500000
+#ACT
+Take 金币 500000
+mov N57{GIRL} 1
+mov B2{GIRLNAME} %USERNAME
+SysMsg "结婚申请完成了。"
+close
+#ELSEACT
+SysMsg "婚礼费用不够，需要50万金币。"
+close
+
+
+
+[@wantGetMarried_man]
+#IF
+Equal B1{MANNAME} ""
+#SAY
+_你要求婚的姑娘的名字是什么?\\
+<请正确输入新娘的名字。/@@InputMarried_Woman>
+
+
+#ELSESAY
+_{FCOLOR=254}现在不能申请结婚。{FCOLOR=250}\\
+<关  闭/@exit>
+
+
+[@@InputMarried_Woman]
+#IF
+Mov A5 %INPUTSTR
+!Equal A5 ""
+
+#SAY
+_要和你结婚的姑娘的名字是{FCOLOR=250}<$OUTPUT(A5)>{FCOLOR=255}对吗?\
+_您确定姑娘能马上接受申请吗?只有10秒的申请时间哦~\
+<对。/@ProcessMarried> \
+<不对。/@wantGetMarried_man> \
+
+
+[@ProcessMarried]
+#IF
+Equal N56{MAN} 1
+
+#SAY
+_别人正在进行婚礼。\
+
+#ACT
+break
+
+#IF
+!Equal B1{MANNAME} ""
+
+#SAY
+_现在正在进行婚礼，请等婚礼结束。\\
+
+#ACT
+
+break
+
+#IF
+!Equal B3{INPUTGIRLNAME} ""
+
+#SAY
+_现在正在进行婚礼，请等婚礼结束。\\
+
+#ACT
+
+break
+
+#IF
+!CheckGold 500000
+#ACT
+SysMsg "婚礼费用不够，需要50万金币。"
+close
+break
+
+#ELSEACT
+Take 金币 500000
+mov B1{MANNAME} %USERNAME
+mov B3{INPUTGIRLNAME} %A5
+mov N56{MAN} 1
+mov N55{WAITINGTIMEOUT} 0
+Delaygoto [Grobal] 5 @startWeddingloop
+SysMsg "结婚申请完成了。"
+EventMsg  "0" "(求婚)<$OUTPUT(B1)>先生向<$OUTPUT(B3)>小姐郑重求婚，希望<$OUTPUT(B3)>小姐能够答应<$OUTPUT(B1)>先生的请求，请女方在10秒内速到比齐司仪处申请结婚。"
+close
+
+
+[@startWeddingloop]
+#IF
+Equal N50{START} 1
+#ACT
+break
+
+#IF
+Inc N55{WAITINGTIMEOUT} 1
+Large N55{WAITINGTIMEOUT} 10
+#ACT
+Sysmsg "因为婚礼时间已过，结婚被取消了。"
+goto @CancelWedding
+break
+
+#IF
+Equal N56{MAN} 1
+Equal N57{GIRL} 1
+#ELSEACT
+SysMsg "等待新娘申请。请敦促新娘尽快在10秒内申请,否则时间一过,婚礼申请将会取消."
+Delaygoto [Grobal] 5 @startWeddingloop
+break
+
+#IF
+#ACT
+Mov N50{START} 1
+mov N51{WEDDING} 1
+Mov N53{TIME} 0
+EventMsg "global" "新郎<$OUTPUT(B1)>和新娘<$OUTPUT(B1)>的结婚典礼即将举行。"
+SysMsg "婚礼准备就绪。"
+Delaygoto [Grobal] 3 @weddingCeremony
+close
+
+
+
+[@weddingCeremony]
+#IF
+Equal N51{WEDDING} 0
+#ACT
+speak "结婚典礼取消了 1"
+goto @CancelWedding
+break
+
+#IF
+Large N53{TIME} 6
+#ACT
+speak "预约的婚礼时间已过。"
+goto @CancelWedding
+break
+
+#IF
+Equal N51{WEDDING} 1
+#ACT
+EventMsg "global" "现在开始举行新郎<$OUTPUT(B1)>和新娘<$OUTPUT(B2)>的婚礼。" 10005
+Mov N51{WEDDING} 2
+Inc N53{TIME} 1
+Delaygoto [Grobal] 5 @weddingCeremony
+break
+
+
+#IF
+Equal N51{WEDDING} 2
+#ACT
+Eventmsg "global" "请新郎新娘交换作为结婚信物的戒指。" 10005
+GetMarried %B1 %B2
+mov N51{WEDDING} 3
+Delaygoto [Grobal] 5 @weddingCeremony
+break
+
+
+#IF
+Equal N51{WEDDING} 3
+#ACT
+EventMsg "global"  "新郎<$OUTPUT(B1)>和新娘<$OUTPUT(B2)>的婚礼结束。祝两位新人白头偕老！" 
+goto @cancelWedding
+Break
+
+#IF
+#ACT
+Inc N53{TIME} 1
+Delaygoto [Grobal] 5 @weddingCeremony
+
+
+
+[@wantDivorce]
+
+#SAY
+你不是说除非切下你的手指，否则你将终生带着它吗? \
+也是，能够遵守自己的诺言也就不会来这里了...如果不后悔的话就交离婚费200万吧。\\
+<交钱离婚。/@divorcenow>\
+
+
+#ELSESAY
+没有结婚的人要离婚，像话吗! \\
+<关  闭/@exit>
+
+
+[@divorcenow]
+#IF
+checkgold 2000000
+#ACT
+take 金币 2000000
+Divorce
+close
+
+
+[@TakeMarriedRing]
+
+#SAY
+你是不是因为心里有了别人才违背誓言的? \
+我也不想知道是什么原因，只要你交200,000金币就当你没有结过这次婚。\
+只要你交出这笔钱以前的婚姻就当无效，并且结婚戒指也能取下。取下的戒指只要和你新的伴侣交换得到新戒指 \
+它就会重新成为结婚戒指。\\
+<即使交20万，也要取下结婚戒指。/@ExchangeMarriedRing> \
+
+#ELSESAY
+你不是连要取下的戒指都没有吗? 你是不是太想结婚而产生错觉了...那么赶快找个伴侣来吧。\\
+<放弃/@exit>
+
+
+[@ExchangeMarriedRing]
+#IF
+checkgold 200000
+#ACT
+take 金币 200000
+CancelMarriageRing
+SysMsg "结婚戒指的功能消失了。"
+close
+
+#ELSESAY
+钱不够。\\
+<关  闭/@exit>
+
+[@ResetWeddingVariables]
+#ACT
+goto @cancelWedding
+close
+break
+
+
+[@PreCancelWedding]
+#ACT
+SysMsg "放弃了结婚申请。"
+goto @CancelWedding
+break
+
+
+
+
+[@CancelWedding]
+#ACT
+Mov N50{START} 0
+Mov N51{WEDDING} 0
+Mov N53{TIME} 0
+Mov N55{WAITINGTIMEOUT} 0
+Mov N56{MAN} 0
+Mov N57{GIRL} 0
+Mov B1{MANNAME} ""
+Mov B2{GIRLNAME} ""
+Mov B3{INPUTGIRLNAME} ""
+Mov B4 ""
+Mov B8 ""
+Mov B9 ""
+close
+break
+
+[@quanfushiai]
+#say
+你是不是有你钟意的对像？\
+你想向她(他)求婚吗？我可以帮你!\
+你可以发全服的红字，让全服的人都看到你的话，\
+收费50W一次。\
+<温馨传话/@qiuai2>\
+<离开/@exit>
+end
+
+[@qiuai2]
+#say
+请点击：输入温馨传话内容\
+注意：\
+输入的字符请不要太长.\
+<输入温馨传话内容/@@qiuai3>\
+<关 闭/@exit>
+
+[@@qiuai3]
+#if
+CheckGold 500000
+#ACT
+mov  A0  %INPUTSTR
+mov  A1  %USERNAME
+Take 金币 500000
+lineMsg [Grobal] "(温馨传话)<$OUTPUT(A1)>:<$OUTPUT(A0)>"
+#say
+您的消息已发送成功。本条消息发送50万，接收免费。\
+#elsesay
+你的钱不够!
+close
+
+
+}

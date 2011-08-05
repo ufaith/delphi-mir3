@@ -1,0 +1,20 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main]
+{
+我们特别吃喜欢人类饲养的 {FCOLOR=250}家畜肉{FCOLOR=255}. 因为它们的肉比蜥蜴肉嫩多了.\
+Welcome. how may i help you?\ \
+<Sell /@sell>\
+<Exit/@exit>
+}
+
+[@NPC_Sell]
+{
+Please select the meat you wish to sell.\ \
+<Back/@main>
+}
+

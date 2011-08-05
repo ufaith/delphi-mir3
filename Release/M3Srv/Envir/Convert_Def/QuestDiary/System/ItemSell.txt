@@ -1,0 +1,29 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_Noitems]
+{
+无法购买物品. 
+<Exit/@exit>
+}
+
+[@NPC_SoldOut]
+{
+   <$OUTPUT(A0)>物品已经卖光了.
+<Exit/@exit>
+}
+
+[@NPC_SoldOut_1]
+{
+   <$OUTPUT(A0)>已经卖光了.
+<Exit/@exit>
+}
+
+[@NPC_Buy_ScrollPortal]
+{
+您购买了<$OUTPUT(A0)>.
+<再购买/@ItemLimit>
+}
+
+[@NPC_NotEnoughGold]
+{
+您没有足够钱.
+}

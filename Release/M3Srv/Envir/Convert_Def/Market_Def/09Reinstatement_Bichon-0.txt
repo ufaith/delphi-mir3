@@ -1,0 +1,64 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Bingo Help/@Bingo>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Bingo Help/@Bingo>\
+<Quest/@NQuest01_1>{FCOLOR=250}Beach Provincial Business{FCOLOR=255}\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_2]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Bingo Help/@Bingo>\
+<Quest/@NQuest01_2>{FCOLOR=250}Legendary Chamber of Commerce{FCOLOR=255}\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Bingo]
+{
+1st Prize 1,000,000 Gold\
+2nd Prize  200,000 Gold\
+3rd Prize  100,000 Gold\
+4th Prize   10,000 Gold\
+5th Prize    1,000 Gold\
+6th Prize      500 Gold\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

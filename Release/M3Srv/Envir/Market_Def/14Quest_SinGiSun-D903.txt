@@ -1,0 +1,15 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#IF
+CHECK [729] 1
+#ACT
+goto @Main_1
+
+#ELSEACT
+goto @Main_2
+
+[@Main_1]
+#CALL [\WINMA_ACT\RingTask\Ring13.txt] @∞‘Õı”ƒ¡Èµ˜”√
+
+[@Main_2]
+#CALL [\SinGiSun\SinGiSun.txt] @sinGisun_open

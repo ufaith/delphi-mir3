@@ -1,0 +1,89 @@
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Show/@mutedo_test>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_2]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Show/@mutedo_test_complete>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_3]
+{
+Welcome, how may i help you?\
+<Buy/@buy>\
+<Sell/@sell>\
+<Repair/@repair>\
+<Special Repair/@Special_Repair(1)>\
+<Lost/@mutedo_test_complete_retry>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Buy]
+{
+Please select the items you wish to purchase.\ \
+<Back/@main>
+}
+
+[@NPC_Sell]
+{
+Please select the items you wish to sell.\ \
+<Back/@main>
+}
+
+[@NPC_Repair]
+{
+Please select the item you wish to repair.\ \
+<Back/@main>
+}
+
+[@NPC_Repair_Complete]
+{
+Item has been repaired.\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

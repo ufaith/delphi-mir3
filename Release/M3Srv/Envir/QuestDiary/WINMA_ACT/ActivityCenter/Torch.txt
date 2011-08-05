@@ -1,0 +1,47 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@火炬活动]
+{
+#IF
+#SAY
+欢迎您来到tgmir3,热切盼望的北京奥运终于到来了。这是tgmir3为大家在奥运期间准备的“火炬”传递活动。\
+在活动期间只要您在这里提交火炬后，便可以重新反回八大暗影，每位玩家每天只能提交一次。\
+<提交火炬/@提火炬>\
+<离开/@exit>
+
+[@提火炬]
+#IF
+check [997] 1
+Checkgroupcount
+#ACT
+SYSMSG "您今天已经提交过了，或你组队了,无法完成操作"
+BREAK
+
+#elseact
+goto @继续ti
+
+[@继续ti]
+
+#if
+check [997] 0
+checkitem 火炬 1
+#ACT
+
+take 火炬 1
+set [997] 1
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+mov A5 %A9
+FormatStr "FLD_BADA='%s'" 0
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+
+FormatStr "FLD_ANYIN='%s'" 0
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+
+SYSMSG "您今天又多了一次进入八大和暗影的机会了"
+break
+
+#elsesay
+对不起，您今天已经兑换过了，或者您没有火炬。\
+<离开/@exit>
+
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

@@ -1,0 +1,33 @@
+;;行会成员领资金
+
+[@领奖品38]
+{
+#IF
+#ACT
+#SAY
+今天是三八节，tgmir3祝所有的女同胞幸福安康，在这里50级以上的女同胞可以领到节日礼品。\
+<领礼品/@lingzj>\
+<离开/@exit>
+
+[@lingzj]
+#ACT
+MOV B0 %USERNAME
+LoadValue N1 "QuestDiary\行会提交\三八节日.txt" [领奖否] %B0
+#IF
+CHECKLEVEL 50
+GENDER MAN 0
+EQUAL N1 0
+#ACT
+GIVE 玫瑰 3
+SaveValue "QuestDiary\行会提交\三八节日.txt" [领奖否] %B0 1
+#SAY
+领奖完毕，祝您节日快乐。\
+<离开/@exit>
+
+#ELSESAY
+错误原因：\
+1.您是男同胞。\
+2.您等级没有达到50级。\
+3.您已经领取过奖品了。\
+<关闭/@exit>
+}

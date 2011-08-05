@@ -1,0 +1,250 @@
+;你和盛大机 
+[@main]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME
+#IF
+EQUAL D0 0
+#SAY
+谁能救救我？我已经被困多年了！\
+#ACT
+BREAK
+#IF
+EQUAL D0 2
+CHECKITEM 头子证件 1
+#SAY
+是啊尔特让你来的？当年的天下第一武士竟然活着？\
+<是的，他隐居了/@来了>
+#ACT
+BREAK
+#IF
+EQUAL D0 3
+#ACT
+GIVE 赋魂铃铛 1
+#SAY
+____太好了，果然是一个勇敢的战士，啊尔特没看错你，证件我\
+收下啦.拿好这个，将他交给啊尔特他会感谢你的....\ \
+<好的，我一定办到/@送回去阿>
+#ACT
+BREAK
+#if
+equal D0 5
+CHECKITEM 受胎石 1
+#SAY
+____如我所料，你还是回来了，啊尔特给你报酬了吧？他有没有\
+东西要交给我？\ \
+<是的，他让我把受胎石给你/@受胎石>
+#ACT
+BREAK
+#IF
+EQUAL D0 7
+#SAY
+____真是英雄出少年啊...我的封印已经解除了，但是我还是无法\
+复活，请带着 连环明珠去找 地天灭王吧...将它消灭后，他着它\
+爆出的 诞生珠子来找我....拜托了\ \
+<不用客气，我一定完成任务/@完成任务3>
+#ACT
+BREAK
+#IF
+EQUAL D0 8
+#SAY
+只有找到诞生珠子，我才能复活...年轻人，拜托了........\
+#ACT
+BREAK
+#IF
+EQUAL D0 9
+CHECKITEM 诞生珠子 1
+#SAY
+感谢你让我获得了重生，神会保佑你的...你有什么愿望要实现吗？\\
+<......./@4renwu_1>\
+#elseact
+goto @xiamian 
+
+[@xiamian]
+#ACT
+LOADVALUE D0 "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 
+#IF
+EQUAL D0 1
+#say
+请去找阿尔特！
+#ACT
+BREAK
+#IF
+EQUAL D0 6
+#SAY
+请帮我杀了魔石守护神吧
+#ACT
+BREAK
+#IF
+EQUAL D0 4
+#SAY
+回去找阿尔特，他会给你报酬的
+#ACT
+BREAK
+#IF
+EQUAL D0 10
+#SAY
+地天灭王封印了我的躯体...只有诞生珠子才救的了我.....
+#ACT
+BREAK
+#IF
+EQUAL D0 11
+CHECKITEM 诞生珠子 1
+#ACT
+TAKE 诞生珠子 1
+GIVE 英雄手套 1
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 10
+#SAY
+你杀死了地天灭王？无论如何我还是要谢谢你，拿好....
+#ELSESAY
+地天灭王封印了我的躯体...只有诞生珠子才救的了我...
+
+[@4renwu_1]
+#SAY
+邪恶的地天灭王被你杀了，无论如何我要感谢你，这是当年啊尔特给我的武功秘籍，可是我已经没机会修炼了，现在就将此交给你...\\
+<万分感谢/@举手之劳>\
+
+[@举手之劳]
+#ACT
+TAKE 诞生珠子 1
+GOTO @完成任务4奖励
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 10
+#SAY
+神会保佑你的.........
+
+[@完成任务4奖励]
+#ACT
+LOADVALUE D2 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第四个任务 声望
+#IF
+
+CHECKNEWFAME 
+
+#ACT
+MOV D3 %P9
+INC D3 %D2
+
+SETFAME %D3
+
+GOTO @奖励了哦1
+
+[@奖励了哦1]
+#IF
+CHECKJOB wizard
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第四个任务 法师
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#IF
+CHECKJOB taoist
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第四个任务 道士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#SAY
+你真是一个好人，请务必将此交给沙漠幽灵!
+#IF
+CHECKJOB warrior
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第四个任务 战士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+
+[@完成任务3]
+#ACT
+GOTO @完成任务3奖励
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 8
+GIVE 连环明珠 1
+close
+
+[@完成任务3奖励]
+#ACT
+LOADVALUE D2 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第三个任务 声望
+#IF
+
+CHECKNEWFAME 
+
+#ACT
+MOV D3 %P9
+INC D3 %D2
+
+SETFAME %D3
+
+GOTO @奖励了哦
+
+[@奖励了哦]
+#IF
+CHECKJOB wizard
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第三个任务 法师
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+SYSMSG "任务日志改变"
+#IF
+CHECKJOB taoist
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第三个任务 道士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+#SAY
+你真是一个好人，请务必将此交给沙漠幽灵!
+#IF
+CHECKJOB warrior
+#ACT
+LOADVALUE A0 "QuestDiary\WINMA_DATA\DesertTask\Awards.txt" 第三个任务 战士
+GIVE %A0 1
+SYSMSG "获得<$OUTPUT(A0)>"
+
+[@受胎石]
+#SAY
+____他想让我重生？上次事情激怒了地天灭王，我的躯体已经受\
+到了诅咒....\
+____唯一的办法就是消灭 魔石守护神 这样我才有机会获得重生，\
+它就在你面前的房间里...\ \
+
+<好，我这就去/@杀死魔石>
+
+[@杀死魔石]
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 6
+SYSMSG '任务日志改变!"
+take 受胎石 1
+close
+
+[@送回去阿]
+#ACT
+SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 4
+MAPMOVE 41  86 259
+
+
+[@来了]
+#SAY
+____太好了，咦？！这是什么？这是啊尔特让你带来的？没想到\
+他还保留着这个....可以给我吗？\ \
+<恩，这是他让我给你的/@给你的>\
+<我不相信你/@exit>
+
+
+[@给你的]
+#SAY
+____太好了，这是当年我们结拜时的信物，真没想到他还活着，\
+而我....我的灵魂已被地天灭王控制....\
+____不好！！！你被发现了，快跑！！\ \
+<让我来干掉他们/@干掉他们>\
+<哈哈,我还是先走啦/@先走>\
+
+[@干掉他们]
+#IF
+checkhum Z012 1
+#act
+sysmsg "目前有人在里面,不能进去!"
+BREAK
+#ELSEACT
+TAKE 头子证件 1
+monclear Z012
+Param1 Z012
+Param2 10
+Param3 8
+MonGen 变异毒蜥 2 2
+MAPMOVE Z012
+SYSMSG "请把他们都杀掉"
+BREAK
+;你和盛大机 

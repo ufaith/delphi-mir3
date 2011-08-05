@@ -1,0 +1,21 @@
+;;Legend Of Mir 3 C3Engine
+[@Na_RoomGadung_1]
+{
+(入口被堵住了)\
+}
+
+[@Na_RoomGadung_2]
+{
+(入口被堵住了)\
+}
+
+[@Na_RoomGadung_3]
+{
+(入口被堵住了)\
+}
+
+[@Na_RoomGadung_4]
+{
+(入口被堵住了)\
+}
+

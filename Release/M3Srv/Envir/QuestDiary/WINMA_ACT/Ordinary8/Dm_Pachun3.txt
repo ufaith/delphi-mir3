@@ -1,0 +1,15 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+#SAY
+终于抓到霸王教主了，恭喜。\
+全体员工再赠送您2颗封魔石。1分钟后将传送您回道观。\
+再次感谢您对我们的支持！\
+#ACT
+give 封魔石 2
+Delaygoto [local] 180 @moveout
+break
+[@moveout]
+#act 
+mapmove 1 400 125
+break

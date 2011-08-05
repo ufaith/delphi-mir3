@@ -1,0 +1,178 @@
+(@BUY @SELL @REPAIR)
+%100
++51
++4
+
+
+[@main]
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Quest Separate Block
+;;------------------------------------------------------------------------------
+#IF
+checkpkpoint 2
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_RedPlayer
+#ELSEACT
+goto @main_0
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Npc Menu Block
+;;------------------------------------------------------------------------------
+
+[@main_0]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_Main
+ 
+;----------------------------------------------------------
+
+[@buy]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_Buy
+
+[@sell]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_Sell
+
+[@helpbooks]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_HelpBooks
+
+[@help_31]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_Help_31
+
+[@help_32]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_Help_32
+
+[@help_33]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_Help_33
+
+[Goods]
+;ItemName      Volume     Hour
+治愈术（秘籍）    100            1
+半月弯刀（秘籍）       100            1
+疾光电影（秘籍）       100            1
+冰沙掌（秘籍）       100            1
+风震天（秘籍）       100            1
+火墙（秘籍）       100            1
+幽灵盾（秘籍）       100            1
+集体隐身术（秘籍）       100            1
+月魂灵波（秘籍）       100            1
+神圣战甲术（秘籍）       100            1
+困魔咒（秘籍）       100            1
+空拳刀法（秘籍）       100            1
+强魔震法（秘籍）       100            1
+群体治愈术（秘籍）       100            1
+超强召唤骷髅（秘籍）       100            1
+基本剑术（秘籍）       100            1
+攻杀剑术（秘籍）       100            1
+刺杀剑术（秘籍）       100            1
+火球术（秘籍）         100            1
+霹雳掌（秘籍）         100            1
+冰月神掌（秘籍）       100            1
+风掌（秘籍）           100            1
+抗拒火环（秘籍）       100            1
+诱惑之光（秘籍）       100            1
+瞬息移动（秘籍）       100            1
+大火球（秘籍）         100            1
+雷电术（秘籍）         100            1
+冰月震天（秘籍）       100            1
+击风（秘籍）           100            1
+地狱火（秘籍）         100            1
+精神力战法（秘籍）       100            1
+施毒术（秘籍）       100            1
+灵魂火符（秘籍）       100            1
+月魂断玉（秘籍）       100            1
+召唤骷髅（秘籍）       100            1
+隐身术（秘籍）       100            1
+
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Area Quest Block
+;;------------------------------------------------------------------------------
+
+;;------------------------------------------------------------------------------
+;;------------------------------------------------------------------------------
+;; Daily Quest Block
+;;------------------------------------------------------------------------------
+[@TQuest]
+#IF
+CheckDailyQuest 563
+#ACT
+goto @TQuest563_0
+break
+;
+#IF
+CheckDailyQuest 551
+#ACT
+goto @TQuest1_0
+break
+;
+#ELSESAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_TQuest
+
+;------------------------
+
+[@TQuest563_0]
+#IF
+check [310] 1
+#ACT
+goto @TQuest1_6
+break
+;
+#IF
+check [307] 1
+#ACT
+goto @TQuest563_2
+break
+;
+#ELSEACT
+goto @TQuest563_1
+
+;--------------
+
+[@TQuest563_1]
+;;;;#CALL [\QT_TODAY\5thClass.txt] @563_START
+
+[@TQuest563_2]
+;;;;#CALL [\QT_TODAY\5thClass.txt] @563_CHECK1
+
+;--------------
+
+[@TQuest1_0]
+#IF
+check [310] 1
+#ACT
+goto @TQuest1_6
+break
+;
+#IF
+check [307] 1
+#ACT
+goto @TQuest1_2
+break
+;
+#ELSEACT
+goto @TQuest1_1
+;--------------
+
+[@TQuest1_1]
+;;;;#CALL [\QT_TODAY\5thClass.txt] @551_START
+
+[@TQuest1_2]
+;;;;#CALL [\QT_TODAY\5thClass.txt] @551_CHECK1
+
+;--------------
+
+[@TQuest1_6]
+#SAY
+	#INCLUDE [..\Convert_Def\Market_Def\05Book_DoGwan-1.txt] @NPC_TQuest_1
+
+;----------------------
+[@奖励声望]
+#CALL [\WINMA_ACT\TaskSystem\TODAY.txt] @每日任务声望X

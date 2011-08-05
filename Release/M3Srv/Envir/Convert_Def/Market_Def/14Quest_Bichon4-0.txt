@@ -1,0 +1,21 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+啊！好累啊！\
+别来烦我！\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+最近身体不太好……\
+还是先就此罢手吧~！\ \
+<Exit/@exit>
+}
+

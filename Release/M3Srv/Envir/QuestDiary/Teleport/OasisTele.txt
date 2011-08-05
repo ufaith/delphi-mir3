@@ -1,0 +1,15 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@Oasis_Teleport]
+{
+#IF
+!CheckPkPoint 2
+#SAY
+	#INCLUDE [..\Convert_Def\QuestDiary\Teleport\OasisTele.txt] @OasisTele_1
+
+#ELSEACT
+mapmove 81 125 274                                    ;; 弧盎捞 捞悼
+
+[@TelePortRootin()]
+#CALL [Teleport\MoveRootin.txt] @TelePortMove         ;; 捞悼 风凭
+}
+

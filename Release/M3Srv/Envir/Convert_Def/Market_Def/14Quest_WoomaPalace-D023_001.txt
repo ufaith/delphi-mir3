@@ -1,0 +1,6 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_Main_Else]
+{
+£¨¡£¡£¡£¡££©\
+}
+

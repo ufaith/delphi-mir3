@@ -1,0 +1,14 @@
+;;;;Deepblue
+[@自动传]
+{
+#IF
+;;dayofweek sat
+;hour  16 16
+;min   1  3
+#ACT
+mapting zqhd  1  402 124
+;LineMsg "Grobal" "恭祝所有玩家中秋节快乐！"
+break
+
+}
+;;gfdfafda

@@ -1,0 +1,7 @@
+[@NPC_Main]
+{
+{FCOLOR=250}Locations{FCOLOR=255} \ \
+North - 真天宫 \ \
+West - 失乐园村庄 \ \
+Southeast - 连接沙漠 \ \
+}

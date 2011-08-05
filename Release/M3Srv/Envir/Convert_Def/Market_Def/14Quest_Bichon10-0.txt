@@ -1,0 +1,33 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+呃。。 什么？\
+\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+真是的。。。 这世道太冷漠了。生了人又生钱，生了钱又生人！\
+\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main_2]
+{
+虽然现在我成了这副样子。。可你仍然帮我维护我那点小小的自尊心， 谢谢。\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main_3]
+{
+我真不知道该怎么表达我的谢意。。。真是太感谢了。\ \
+ <Exit/@exit>
+}
+

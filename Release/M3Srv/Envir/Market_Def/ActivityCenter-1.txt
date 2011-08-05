@@ -1,0 +1,498 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#IF
+#SAY
+______{FCOLOR=250} 您好！欢迎使用我要上传奇活动管理系统{FCOLOR=255}\
+______________{FCOLOR=249}〖{FCOLOR=251}   常用功能菜单   {FCOLOR=249}〗{FCOLOR=255} \
+
+
+{FCOLOR=220}┏━━━━━━━━━━━┳━━━━━━━━━━━┓{FCOLOR=255}\
+{FCOLOR=220}┃   <【刷怪时间查询】/@sgcxxx>   ┃   <【双倍经验时间】/@领取双>   ┃{FCOLOR=255}\
+{FCOLOR=220}┃   <【材料兑换活动】/@cailiao_dh>   ┃   <【时间八大禁区】/@时间八大进X>   ┃{FCOLOR=255}\
+{FCOLOR=220}┗━━━━━━━━━━━┻━━━━━━━━━━━┛{FCOLOR=255}\
+______________{FCOLOR=249}〖{FCOLOR=251}   行会功能菜单   {FCOLOR=249}〗{FCOLOR=255} \
+{FCOLOR=220}┏━━━━━┳━━━━━┳━━━━━┳━━━━━┓{FCOLOR=255}\
+{FCOLOR=220}┃<[行会贡献]/@领取领>┃<[成员资金]/@行领金>┃<[申请号角]/@appr>┃[行会活动]┃{FCOLOR=255}\
+{FCOLOR=220}┗━━━━━┻━━━━━┻━━━━━┻━━━━━┛{FCOLOR=255}\
+______________{FCOLOR=249}〖{FCOLOR=251}   新地图任务   {FCOLOR=249}〗{FCOLOR=255} \
+{FCOLOR=220}┏━━━━━━━┳━━━━━━━┳━━━━━━━┓{FCOLOR=255}\
+{FCOLOR=220}┃  <[楼兰遗址]/@go楼兰>  ┃  <[上古之地]/@shashizhe>  ┃  <[环式任务]/@跑环x>  ┃{FCOLOR=255}\
+{FCOLOR=220}┃  <[赤 龙 城]/@go赤龙>  ┃  <[龙穴溪谷]/@go龙穴>  ┃  <[月 河 渊]/@go月河>  ┃{FCOLOR=255}\
+{FCOLOR=220}┗━━━━━━━┻━━━━━━━┻━━━━━━━┛{FCOLOR=255}\
+______________{FCOLOR=249}〖{FCOLOR=251}   活动奖励菜单   {FCOLOR=249}〗{FCOLOR=255} \
+{FCOLOR=220}┏━━━━━━━┳━━━━━━━┳━━━━━━━┓{FCOLOR=255}\
+{FCOLOR=220}┃<[新人冲级领奖]/@new_lj>┃[游戏待增功能]┃<[天地人令兑换]/@tdrd>┃{FCOLOR=255}\
+{FCOLOR=220}┗━━━━━━━┻━━━━━━━┻━━━━━━━┛{FCOLOR=255}\
+________{FCOLOR=250}欢迎您来到我要上传奇！祝您游戏愉快！\
+___{FCOLOR=250}如果您在游戏中遇到问题,请联系客服QQ: <$QQ>{FCOLOR=255}\
+
+[@go月河]
+#CALL [\feifan\游戏活动\月河渊.txt]  @go月河渊
+
+[@go赤龙]
+#CALL [\feifan\游戏活动\赤龙城.txt]  @go赤龙城
+
+[@go龙穴]
+#CALL [\feifan\游戏活动\龙穴溪谷.txt]  @go龙穴溪谷
+
+[@huojux]
+#CALL [WINMA_ACT\ActivityCenter\Torch.txt] @火炬活动
+
+
+[@兑换文才x]
+#CALL [WINMA_ACT\ActivityCenter\ArticleColors.txt] @文彩兑换_1
+
+[@文才换x]
+#CALL [WINMA_ACT\ActivityCenter\TextColor.txt] @文采换内X
+
+[@tdrd]
+#CALL [WINMA_ACT\ActivityCenter\TopPlayer.txt] @天地人X
+
+
+[@时间八大进X]
+#CALL [WINMA_ACT\ConsumerCredits\TimeEight1\Enter.txt] @进时八1x
+
+[@领取双]
+#CALL [WINMA_ACT\ActivityCenter\DoubleExperience.txt] @doubleexppre
+
+[@oppoen]
+#CALL [WINMA_ACT\ActivityCenter\YearGifts.txt] @兑换礼包x
+
+[@snowss]
+#CALL [WINMA_ACT\ActivityCenter\Frost.txt] @霜雪兑X
+
+[@godan]
+
+#if
+
+#act
+mapmove d033 221 188
+break
+
+[@momojie]
+
+#if
+#act
+mapmove d033 221 188
+break
+
+[@光光光棍]
+#CALL [WINMA_ACT\ActivityCenter\Singles.txt] @光棍节领
+
+[@go楼兰]
+
+
+#if
+checklevel 60
+#act
+mapmove ll_a01 72 71
+break
+#elsesay
+您的等级不够60级不能进入此地图\
+<离开/@exit>
+
+[@中秋传送]
+#if
+checklevel 60
+#act
+mapmove zqhd
+break
+#elsesay
+您的等级不够，60级才可以进入这个地图\
+<离开/@exit>
+
+[@yule1]
+#CALL [WINMA_ACT\ActivityCenter\EntertainmentTransfer.txt] @娱乐游x
+
+
+[@sgcxxx]
+#CALL [WINMA_ACT\ActivityCenter\ServerStartupTime.txt] @启动时间x
+
+[@swzb1]
+#CALL [WINMA_ACT\ActivityCenter\PrestigeEquipment.txt] @换装备了
+
+[@wudui]
+#CALL [feifan\游戏活动\兑换.txt] @duihuan
+
+[@供品对换]
+#CALL [\feifan\游戏活动\贡品兑换.txt]  @开区7月活动
+
+[@shashizhe]
+#CALL [\feifan\游戏活动\十月一传送.txt]  @十月一xxx
+
+[@chongjiling]
+#CALL [\feifan\冲几几.txt] @全民冲级领奖品
+
+[@领取领]
+#call [\feifan\行会相关\行会贡献.txt] @行会提交_1
+
+[@行领金]
+#CALL [feifan\行会相关\奖金行会.txt] @领资金喽
+
+[@2bigsai_lj]
+#CALL [WINMA_ACT\ActivityCenter\LevelingGame.txt] @冲级领奖x 
+
+[@neice_cjs]
+#CALL [WINMA_ACT\ActivityCenter\LevelingGame1.txt] @内测冲级赛x 
+
+[@quanmin_lj]
+#CALL [WINMA_ACT\ActivityCenter\NationalLeveling.txt] @全民冲级赛领奖%
+
+[@new_lj]
+#CALL [WINMA_ACT\ActivityCenter\CollectPrizes.txt] @lingquxxxx  
+
+[@cailiao_dh]
+#CALL [WINMA_ACT\ActivityCenter\MaterialExchange.txt]  @材料兑换X
+
+[@appr]
+#CALL [WINMA_ACT\ActivityCenter\ApplicationHorn.txt] @申请行会
+
+[@mihu]
+#CALL [WINMA_ACT\Maze\Script.txt] @jr_exp
+
+[@跑环x]
+#IF
+checklevel 40
+#SAY
+开放精彩环式任务，通过跑环您可以得到经验，金币等奖品\
+目前只开放经验奖励\
+等级为40级以上的玩家可以做环式任务\
+<了解今日环式任务/@start环式>\
+<离开/@exit>
+#elsesay
+您的等级不够40级，请40级以后再来找我\
+
+[@start环式]
+#IF
+CHECK [601] 1
+CHECK [611] 0
+CHECK [621] 0
+CHECK [631] 0
+CHECK [641] 0
+CHECK [651] 0
+CHECK [661] 0
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_2
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 0
+CHECK [631] 0
+CHECK [641] 0
+CHECK [651] 0
+CHECK [661] 0
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_3
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 0
+CHECK [641] 0
+CHECK [651] 0
+CHECK [661] 0
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_4
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 0
+CHECK [651] 0
+CHECK [661] 0
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_5
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 0
+CHECK [661] 0
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_6
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 0
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_7
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 0
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_8
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 0
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_9
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 1
+CHECK [691] 0
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_10
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 1
+CHECK [691] 1
+CHECK [707] 0
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_11
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 1
+CHECK [691] 1
+CHECK [707] 1
+CHECK [711] 0
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_12
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 1
+CHECK [691] 1
+CHECK [707] 1
+CHECK [711] 1
+CHECK [727] 0
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_13
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 1
+CHECK [691] 1
+CHECK [707] 1
+CHECK [711] 1
+CHECK [727] 1	
+CHECK [731] 0
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_14
+BREAK
+
+#IF
+CHECK [601] 1
+CHECK [611] 1
+CHECK [621] 1
+CHECK [631] 1
+CHECK [641] 1
+CHECK [651] 1
+CHECK [661] 1
+CHECK [671] 1
+CHECK [681] 1
+CHECK [691] 1
+CHECK [707] 1
+CHECK [711] 1
+CHECK [727] 1
+CHECK [731] 1
+CHECK [741] 0
+#ACT
+GOTO @环开始拉_15
+BREAK
+
+#IF
+CHECK
+#IF
+CHECK [601] 0
+#ACT
+GOTO @环开始拉_1
+BREAK
+
+[@环开始拉_1]
+#CALL [\WINMA_ACT\RingTask\Ring1.txt] @第一环X
+
+[@环开始拉_2]
+#CALL [\WINMA_ACT\RingTask\Ring2.txt] @第二环X
+
+[@环开始拉_3]
+#CALL [\WINMA_ACT\RingTask\Ring3.txt] @第三环X
+
+[@环开始拉_4]
+#CALL [\WINMA_ACT\RingTask\Ring4.txt] @第四环X
+
+[@环开始拉_5]
+#CALL [\WINMA_ACT\RingTask\Ring5.txt] @第五环X
+
+[@环开始拉_6]
+#CALL [\WINMA_ACT\RingTask\Ring6.txt] @第六环X
+
+[@环开始拉_7]
+#CALL [\WINMA_ACT\RingTask\Ring7.txt] @第七环X
+
+[@环开始拉_8]
+#CALL [\WINMA_ACT\RingTask\Ring8.txt] @第八环X
+
+[@环开始拉_9]
+#CALL [\WINMA_ACT\RingTask\Ring9.txt] @第九环X
+
+[@环开始拉_10]
+#CALL [\WINMA_ACT\RingTask\Ring10.txt] @第十环X
+
+[@环开始拉_11]
+#CALL [\WINMA_ACT\RingTask\Ring11.txt] @第十一环X
+
+[@环开始拉_12]
+#CALL [\WINMA_ACT\RingTask\Ring12.txt] @第十二环X
+
+[@环开始拉_13]
+#CALL [\WINMA_ACT\RingTask\Ring13.txt] @第十三环X
+
+[@环开始拉_14]
+#CALL [\WINMA_ACT\RingTask\Ring14.txt] @第十四环X
+
+[@环开始拉_15]
+#CALL [\WINMA_ACT\RingTask\Ring15.txt] @第十五环X
+;;Legend Of Mir 3 C3Engine

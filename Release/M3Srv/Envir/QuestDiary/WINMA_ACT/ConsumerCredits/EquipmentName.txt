@@ -1,0 +1,73 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@装备刻名X]
+{
+#ACT
+LOADVALUE D7 "QuestDiary\WINMA_DATA\Control\SystemControl.txt" Control 装备刻名
+#SAY
+每次收费{FCOLOR=250} <$OUTPUT(D7)> {FCOLOR=255}点积分，请用当前角色操作 千万注意!{FCOLOR=250}不要超过6个\
+汉字{FCOLOR=255} 否则物品{FCOLOR=250}消失{FCOLOR=255}了不要哭阿!\
+只能对你身上佩带的装备进行刻名\
+{FCOLOR=250}武器刻名请去求助沙巴克的啊翔{FCOLOR=255}\ 
+ {FCOLOR=250}千万注意不要超过6个汉字否则物品会消失{FCOLOR=255}\\
+ <头盔/@刻名字(4,头盔)> <项链/@刻名字(3,项链)>\
+ <衣服/@刻名字(0,衣服)> <鞋子/@刻名字(10,鞋子)>\
+ <手镯（左）/@刻名字(5,手镯（左）)> <手镯（右）/@刻名字(6,手镯（右）)>\
+ <戒指（左）/@刻名字(7,戒指（左）)> <戒指（右）/@刻名字(8,戒指（右）)>\\
+ <返 回/@积分列表_K>\
+ <关 闭/@exit>
+#ELSESAY
+ 对不起,你的积分不足\
+ <结 束/@exit>
+
+[@刻名字()]
+#ACT
+ Mov D0 %ARG(1)
+ Mov A5 %ARG(2)
+#IF
+CheckJfPoint %D7
+#SAY
+ 请输入你要在<$OUTPUT(A5)>上刻的名字：\\
+ <输入名字/@@输入名字>\\
+ <关 闭/@exit>
+#ELSESAY
+1 你身上该处没有装备\
+2 你积分不足\
+ <返 回/@装备刻名X>\
+
+
+[@@输入名字]
+#ACT
+mov A7 %INPUTSTR
+#IF
+#ACT
+SYSMSG "请勿输入包含空格的字符"
+GOTO @装备刻名X
+BREAK
+#IF
+Equal A7 "结婚戒指"
+#ACT
+SYSMSG "名字不能为[结婚戒指]"
+GOTO @装备刻名X
+BREAK
+#IF
+Equal A7 "沙召唤项链"
+#ACT
+SYSMSG "名字不能为[沙召唤项链]"
+GOTO @装备刻名X
+BREAK
+#IF
+EQUAL A7 ""
+#ACT
+SYSMSG "输入不能为空"
+GOTO @装备刻名X
+BREAK
+
+#ELSEACT
+DECJFPOINT %D7
+SetUseItemName %D0 %A7
+#ELSESAY
+<$OUTPUT(A5)>的装备刻名成功！名字为 {FCOLOR=250}<$OUTPUT(A7)>{FCOLOR=255}\\
+<返 回/@积分列表_K>\
+<关 闭/@exit>
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

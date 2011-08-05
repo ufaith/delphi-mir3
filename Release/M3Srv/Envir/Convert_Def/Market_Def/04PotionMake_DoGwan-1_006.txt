@@ -1,0 +1,28 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+嗯，这里进行试验，制造各类药粉，同时也传授知识。为了集中精力做研究，我不再制作药了。\
+想制作药的话去找比奇县的老黄和 沙漠土城的老郑吧。\ \
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+ <Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

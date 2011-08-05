@@ -1,0 +1,19 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+CHECKgold 2000000
+#ACT
+Delaygoto 30 @movenext1
+#SAY
+  30秒后,您将被传送到铁城!
+
+#ELSEACT
+SYSMSG  "对不起,你的金币不足!"
+[@movenext1]
+#if
+checkgold 2000000
+#act
+take 金币 2000000
+mapmove ll_e151
+#ELSEACT
+break

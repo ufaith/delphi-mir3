@@ -1,0 +1,25 @@
+;;Legend Of Mir 3 C3Engine
+[@NPC_RedPlayer]
+{
+I do not want people like you here.\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0]
+{
+王小二大人的独生女王丽灵小姐真的是貌美如花啊！不过像我这样的老光棍又焉敢心生非分之想呢！哈哈哈……\
+ <Exit/@exit>
+}
+
+[@NPC_Main_1]
+{
+原来王小姐在葫芦瓶里面……眼睁睁的看着却没能从妖怪手里把她救出来……唉！\ \
+ <Exit/@exit>
+}
+
+[@NPC_Main_2]
+{
+那个妖怪一定会受到上天的惩罚的！胆敢对王小姐……这个混蛋！做得好！\ \
+ <Exit/@exit>
+}
+

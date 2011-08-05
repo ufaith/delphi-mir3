@@ -1,0 +1,24 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#IF
+checkitem 连环明珠 1
+#ACT
+take 连环明珠 1
+Delaygoto [local] 7200 @likaid904
+;TimeRecall 120
+enter_ok
+#ELSESAY
+	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\MapQuest\Na_RoomSinGiKing.txt] @NPC_Main
+#ELSEACT
+enter_fail
+
+[@likaid904]
+#act
+   mov    A5      %USERMAP
+
+#if
+equal A5  d904
+#ACT
+   mapmove   D903 53 52
+#ELSEACT
+break

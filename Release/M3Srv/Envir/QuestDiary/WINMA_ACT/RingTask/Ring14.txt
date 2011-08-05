@@ -1,0 +1,108 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@第十四环X]
+{
+#IF
+CHECK [727] 1
+CHECK [731] 0
+CHECK [740] 0
+CHECK [734] 0
+#ACT
+GOTO @十四环任务开始X
+BREAK
+
+
+#IF
+CHECK [734] 1
+#ACT
+GOTO @14_1环任务领奖
+BREAK
+
+
+#IF
+CHECK [740] 1
+CHECK [732] 1
+CHECK [733] 0
+#SAY
+听说神舰的“霸王守卫”最近在西沙漠捣乱，请少侠帮忙消灭它。\
+#ACT
+break
+
+#IF
+CHECK [740] 1
+CHECK [732] 0
+CHECK [733] 1
+#SAY
+听说西沙漠的“魔石守护神”最近在冰宫捣乱，请少侠帮忙消灭它。\
+#ACT
+break
+
+#IF
+CHECK [740] 1
+CHECK [732] 1
+CHECK [733] 1
+#SAY
+听说冰宫的“寒冰守护神”最近在神舰捣乱，请少侠帮忙消灭它。\
+#ACT
+break
+
+[@十四环任务开始X]
+#IF
+CHECK [727] 1
+CHECK [731] 0
+CHECK [740] 0
+#ACT
+movr D0 2
+#ELSEACT
+break
+
+#IF
+EQUAL D0 0
+#ACT
+set [732] 1
+set [733] 0
+set [740] 1
+give 怪物通缉令（守卫） 1
+break
+#SAY
+听说神舰的“霸王守卫”最近在西沙漠捣乱，请少侠帮忙消灭它。\\
+
+#IF
+EQUAL D0 1
+#ACT
+set [732] 0
+set [733] 1
+set [740] 1
+give 怪物通缉令（魔石） 1
+break
+#SAY
+听说西沙漠的“魔石守护神”最近在冰宫捣乱，请少侠帮忙消灭它。\\
+
+
+#IF
+EQUAL D0 1
+#ACT
+set [732] 1
+set [733] 1
+set [740] 1
+give 怪物通缉令（寒冰） 1
+break
+#SAY
+听说冰宫的“寒冰守护神”最近在神舰捣乱，请少侠帮忙消灭它。\\
+
+
+[@14_1环任务领奖]
+#IF
+CHECK [734] 1
+#ACT 
+GMEXECUTE adjustExp %USERNAME + 70000000
+SET [731] 1
+SYSMSG "恭喜您完成了第十四环任务，可以开始第十五环任务了!"
+SYSMSG "您得到了7000万经验的奖励!"
+BREAK
+
+
+
+
+}
+
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

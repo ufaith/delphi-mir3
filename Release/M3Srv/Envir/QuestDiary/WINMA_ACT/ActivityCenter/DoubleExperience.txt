@@ -1,0 +1,85 @@
+;;vimascript
+[@doubleexppre]
+{
+;#IF
+;#ACT
+;MOV D0 0
+;loadvalue D0 "系统设置.INI" 开区后 开启双倍npc时间
+
+;#IF
+;Esmall D0 %CURHOUR
+;#ELSEACT
+;break
+;#elsesay
+;开区第<$OUTPUT(D0)>小时后才会开启双倍经验系统!\\
+;<离开/@EXIT>\
+
+
+#IF
+CHECKDOUBLEEXP
+#ACT
+mov D0 %P9
+
+#IF
+dayofweek Mon
+#ACT
+dec D0 720
+
+
+#IF
+dayofweek Tue
+#ACT
+dec D0 600
+
+#IF
+dayofweek Wed
+#ACT
+dec D0 480
+
+#IF
+dayofweek Thu
+#ACT
+dec D0 360
+
+#IF
+dayofweek Fri
+#ACT
+dec D0 240
+
+#IF
+dayofweek Sat
+#ACT
+dec D0 120
+
+
+#IF
+large D0 0
+#SAY
+____{FCOLOR=250}您好！欢迎领取奖励双倍时间。{FCOLOR=255}\
+每天可以领取2小时的双倍经验时间。\
+一周内可以累计。每周日24:00清零\\
+你今天还剩余{FCOLOR=253}<$OUTPUT(D0)>{FCOLOR=255}分钟双倍时间。\
+<领取1小时双倍时间/@doubleexp1hour(60)>  <领取2小时双倍时间/@doubleexp1hour(120)>\
+<领取3小时双倍时间/@doubleexp1hour(180)>  <领取4小时双倍时间/@doubleexp1hour(240)>\\
+<返回/@BACK>
+#ELSESAY
+对不起，今天的双倍时间你已经全部用完了。\
+请明天再来领取。\\
+<关闭/@exit>
+
+[@doubleexp1hour()]
+#IF
+#ACT
+mov D7 %ARG(1)
+STARTDOUBLEEXP %D7
+#SAY
+双倍时间开始。\\
+<关闭/@exit>
+#ELSESAY
+对不起，你当前已领取的双倍经验尚未用完.\
+请在系统提示双倍经验结束之后再领取.\\
+<关闭/@exit>
+
+
+}
+;;...........................

@@ -1,0 +1,435 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@管理菜单_1]
+{
+#ACT
+mov N3 %ONLINECOUNT
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+
+[@fajiangli]
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ 发放物品 ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+─────────[ 发放物品 ]─────────\
+道馆城市:  <掉内测积分兑换券/@diao_zuanshi>  <掉积分兑换券碎片/@diao_suipian>\ 
+___________<掉金币/@diao_jinbi>   <掉宝箱/@diao_hezi>   <掉糖果/@diao_tangguo>\
+
+[@开区刷怪]
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ 开区刷怪 ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+─────────[ 开区刷怪 ]─────────\
+_    [ <输入刷怪次数/@@shurushuaguai> ]      [ <立即停止刷怪/@kaiqutingguai> ]\
+
+[@怪物清除]
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ 怪物清理 ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+─────────[ 怪物清理 ]─────────\
+{FCOLOR=255}[ <重新刷大BOSS/@cxshuada> ][ <重新刷小BOSS/@cxshuaxiao> ][ <清理当前怪物/@qinglidqguai> ]
+
+[@guanli_gongcheng]
+#CALL [\WINMA_ACT\CarryFunction\MonsterSiege.txt] @怪物攻城_1
+
+
+[@冲直积分]
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ 给玩家冲直积分 ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+───────[ 给玩家冲直积分 ]─────────\
+{FCOLOR=255}[ <请输入玩家名/@@GmSendJifen_InputName> ] 
+
+
+[@guanli_feifei]
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ 超级传送 ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+─────────[ 超级传送 ]─────────\
+═══════[{FCOLOR=249} 常用传送→GM专用 {FCOLOR=255}]═══════\
+<道馆城市/@StartGMMove(1,416,179,道馆城市)>  <银杏山村/@StartGMMove(02,249,144,银杏山村)>   <比奇城市/@StartGMMove(0,466,372,比奇城市)>   <沙漠土城/@StartGMMove(5,227,128,沙漠土城)>  <沙巴克城/@StartGMMove(3,222,160,沙巴克城)>\
+<银杏加点/@StartGMMove(02,247,236,银杏加点)>  <结婚传送/@StartGMMove(0,393,295,礼堂)>   <流 放 岛/@StartGMMove(81,130,264,流放岛)>   <新手练级/@StartGMMove(d011,129,204,新手地图)>  <挑战魔界/@StartGMMove(D0002_001,8,12,飞天武术馆)>\
+═══════[{FCOLOR=249} 地图传送→GM专用 {FCOLOR=255}]═══════\
+<石阁猪洞/@StartGMMove(D712,365,226,石阁猪洞)>  <绿洲沙漠/@StartGMMove(6,272,731,沙漠)>   <沃玛神殿/@StartGMMove(D023,200,196,沃玛神殿)>   <赤月峡谷/@StartGMMove(d10151,89,49,赤月峡谷)>  <万年峡谷/@StartGMMove(d6015,10,26,万年峡谷)>\
+<潘夜石窟/@StartGMMove(d1215,371,47,潘夜石窟)>  <潘夜神殿/@StartGMMove(D1101,135,180,潘夜神殿)>   <祖玛神殿/@StartGMMove(d505,96,101,祖玛神殿)>   <黑 度 宫/@StartGMMove(d1510,15,45,黑度宫)>  <真 天 宫/@StartGMMove(d15023,160,152,真天宫)>\
+<神舰入口/@StartGMMove(D900,20,22,神舰入口)>  <诺玛遗址/@StartGMMove(d1602,194,201,诺玛遗址)>   <西 沙 漠/@StartGMMove(d2001,283,280,西沙漠)>   <冰宫雪原/@StartGMMove(82,207,126,冰宫雪原)>  <绝情神殿/@StartGMMove(8_002,79,75,绝情神殿)>\
+═══════[{FCOLOR=249} 教主传送→GM专用 {FCOLOR=255}]═══════\
+<沃玛教主/@StartGMMove(d023,49,363,沃玛教主房间)>  <骷髅教主/@StartGMMove(D1215,200,200,骷髅教主房间)>   <触 龙 神/@StartGMMove(d6015,71,170,触龙神房间)>   <赤月恶魔/@StartGMMove(d10151,150,20,赤月恶魔房间)>  <牛 魔 王/@StartGMMove(D1115,204,195,牛魔王房间)>\
+<祖玛教主/@StartGMMove(d5073,58,12,祖玛教主房间)>             <震天魔神/@StartGMMove(D15054,287,290,震天魔神房间)>             <霸王教主/@StartGMMove(D903,51,54,霸王教主房间)>
+
+[@StartGMMove()]
+#ACT
+Mov  地图  %ARG(1)
+Mov  坐标1  %ARG(2)
+Mov  坐标2  %ARG(3)
+Mov  地图名  %ARG(4)
+#IF
+#ACT
+close
+mapmove %地图 %坐标1 %坐标2
+SysMsg  "<$OUTPUT(地图名)> 到了."
+
+
+[@物品清理]
+#ACT
+Close
+MOV A0 %USERMAP
+MOV A1 %USERX
+MOV A2 %USERY
+MOV A3 ""
+ADDSTR A3 %A0
+ADDSTR A3 ","
+ADDSTR A3 %A1
+ADDSTR A3 ","
+ADDSTR A3 %A2
+ADDSTR A3 ",100"
+Clearitemmap %A3 *
+SYSMSG "亲爱的[ <$USERNAME> ]您身边的地面已经清理完毕"
+
+[@cxshuada]
+#CALL [WINMA_ACT\CarryFunction\DailyBOSS.txt] @每日BOSS_1
+
+[@cxshuaxiao]
+#CALL [WINMA_ACT\CarryFunction\DailySmallBOSS.txt] @每日小BOSS_1
+
+[@qinglidqguai]
+#ACT
+Close
+MOV A0 %USERMAP
+Monclear %A0
+SYSMSG "亲爱的[ <$USERNAME> ]您所在地图的怪物清理完毕"
+
+[@@shurushuaguai]
+#ACT
+Close
+mov   D2  %INPUTSTR
+SaveValue "ParamControl\开区刷怪.ini" [开区后] 开区刷怪 %D2
+SYSMSG "亲爱的[ <$USERNAME> ]开区刷怪[ <$OUTPUT(D2)> ]次.现在开始执行"
+GOTO @shurushuaguai_1
+
+[@shurushuaguai_1]
+#CALL [WINMA_ACT\CarryFunction\StrangeZone.txt] @开区刷怪_1
+
+[@kaiqutingguai]
+#ACT
+Close
+SaveValue "ParamControl\开区刷怪.ini" [开区后] 开区刷怪 0
+SYSMSG "亲爱的[ <$USERNAME> ]开区刷怪.现在停止了"
+
+[@diao_zuanshi]
+#ACT
+DropItemMap "1, 405, 124, 30" 内测积分兑换券  1  50 
+lineMsg [Grobal] "打雷了,下雨了,道观天上掉内测积分兑换券了!"
+
+[@diao_suipian]
+#ACT
+DropItemMap "1, 405, 124, 30" 积分兑换券碎片  1  50 
+lineMsg [Grobal] "打雷了,下雨了,道观天上掉积分兑换券碎片了!"
+
+[@diao_jinbi]
+#ACT
+DropItemMap "1, 405, 124, 30" 金币  5000  200 
+lineMsg [Grobal] "打雷了,下雨了,道观天上掉金币了!"
+
+[@diao_hezi]
+#ACT
+DropItemMap "1, 405, 124, 30" 宝箱 1  25
+lineMsg [Grobal] "打雷了,下雨了,道观天上掉宝箱了!"
+
+[@diao_tangguo]
+#ACT
+DropItemMap "1, 405, 124, 30" 魔法糖果 1 20
+DropItemMap "1, 405, 124, 30" 灵魂糖果 1 20
+DropItemMap "1, 405, 124, 30" 攻击糖果 1 20
+lineMsg [Grobal] "打雷了,下雨了,道观天上掉糖果了!"
+
+[@@GMSETJF]
+#IF
+ISADMIN
+#ACT
+mov D0 %INPUTNUM
+ADDJFPOINT %D0
+sysmsg "积分增加<$OUTPUT(D0)>,您目前积分<$NEWJFPOINT>!"
+
+[@@GMSETFAME]
+#IF
+ISADMIN
+#ACT
+mov D0 %INPUTNUM
+ADDSHENGWANG %D0
+sysmsg "声望增加<$OUTPUT(D0)>,您目前声望<$SHENGWANG>!"
+
+
+[@OpenTwoExp]
+#if
+#act
+;actcmd SETSERVEREXPMULTIPLE 2
+LineMsg "Grobal" "(*) 请大家注意，从现在开始，所有的怪物经验提高一倍！"
+
+
+[@StopTwoExpX]
+#act
+;actcmd SETSERVEREXPMULTIPLE 1
+LineMsg "Grobal" "(*) 请大家注意，从现在开始，所有的怪物经验恢复了！"
+
+
+[@@GmSendJifen_InputName]
+#IF
+    IsAdmin
+#ACT
+    Mov 人名 %InputStr
+
+#IF
+    Equal 人名 ""
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+───────[ 给玩家冲直积分 ]─────────\
+输入的角色名不能为空.... \ \
+#ACT
+    Break
+
+#IF
+    !Equal 人名 ""
+#ACT
+    FormatStr "FLD_CHARNAME='%s'" %人名
+    ReadValueSql "TBL_CHARACTER" %A9 "FLD_CHARNAME" [@GmSendJifen_CheckName]
+
+[@GmSendJifen_CheckName()]
+#ACT
+    Mov 人物名 %ARG(1)
+
+#IF
+    Equal 人物名 ""
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+───────[ 给玩家冲直积分 ]─────────\
+该角色名不存在或未开通积分系统....请确认后重新输入.......\ \
+#ACT
+    Break
+
+#IF
+    !Equal 人物名 ""
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ 给玩家冲直积分 ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+───────[ 给玩家冲直积分 ]─────────\
+请输入您要对 {FCOLOR=249}<$OUTPUT(人物名)>{FCOLOR=255} 充值的游戏点卷的数量...\ \
+__[ <请输入游戏点卷的数量/@@GmSendJifen_InputNum> ] \
+
+[@@GmSendJifen_InputNum]
+#IF
+    IsAdmin
+#ACT
+    Mov 充值点卷 %InPutStr
+
+#IF
+    Equal 充值点卷 ""
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+───────[ 给玩家冲直积分 ]─────────\
+输入的游戏点卷数量不能为空...... \
+#ACT
+    Break
+
+#IF
+    Small 充值点卷 0
+#ACT
+    Mov 数字算法 "-"
+
+#IF
+    Elarge 充值点卷 0
+#ACT
+    Mov 数字算法 "+"
+
+#IF
+    !Equal 充值点卷 ""
+#ACT
+    FormatStr "FLD_CHARNAME='%s'" %人名
+    ReadValueSql "TBL_CHARACTER" %A9 "FLD_VIP" [@GmSendJifen_CheckJF]
+
+[@GmSendJifen_CheckJF()]
+#ACT
+    Mov 剩余点卷 %ARG(1)
+    SysMsg "<$OUTPUT(人名)>充值前的积分为'<$OUTPUT(剩余点卷)>'点积分..."
+    Inc 剩余点卷 %充值点卷
+    FormatStr "FLD_CHARNAME='%s'" %人名
+    Mov A8 %A9
+    FormatStr "FLD_VIP=%s" %剩余点卷
+    UpDateValueSql "TBL_CHARACTER" %A8 %A9
+    DelayGoto [local] 2 @GmSendJifenAccess
+    FormatStr "FLD_CHARNAME='%s'" %人名
+    ReadValueSql "TBL_CHARACTER" %A9 "FLD_VIP" [@GmSendLookOverJifen_CheckJF]
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ 给玩家冲直积分 ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+───────[ 给玩家冲直积分 ]─────────\
+操作进行中....请稍等............
+
+
+[@查看积分]
+#IF
+   IsAdmin
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ 查看给玩家积分 ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+────────[ 查看玩家积分 ]─────────\
+__[ <请输入你要查看的角色名/@@GmLookOverJifen_InputName> ]\
+
+[@@GmLookOverJifen_InputName]
+#IF
+    IsAdmin
+#ACT
+    Mov 人名 %InputStr
+
+#IF
+    Equal 人名 ""
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+────────[ 查看玩家积分 ]─────────\
+输入的角色名不能为空.... \
+#ACT
+    Break
+
+#IF
+    !Equal 人名 ""
+#ACT
+    FormatStr "FLD_CHARNAME='%s'" %人名
+    ReadValueSql "TBL_CHARACTER" %A9 "FLD_CHARNAME,FLD_VIP" [@GmJifenLookOver_CheckName]
+
+[@GmJifenLookOver_CheckName()]
+#ACT
+    Mov 人物名 %ARG(1)
+    Mov 剩余点卷 %ARG(2)
+
+#IF
+    Equal 人物名 ""
+#SAY
+─────────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+────────[ 查看玩家积分 ]─────────\
+该角色名不存在....请确认后重新输入.......\
+#ACT
+    Break
+
+#IF
+    Equal 人物名 %人名
+#SAY
+──────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ 查看给玩家积分 ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+────────[ 查看玩家积分 ]─────────\
+__<$OUTPUT(人名)> 当前游戏点卷数量为{FCOLOR=249}<$OUTPUT(剩余点卷)>{FCOLOR=255}...
+
+[@GmSendLookOverJifen_CheckJF()]
+#ACT
+    Mov 剩余点卷 %ARG(1)
+    SysMsg "<$OUTPUT(人名)>充值后的游戏点卷数量为'<$OUTPUT(剩余点卷)>'个..."
+
+[@GmSendJifenAccess]
+#SAY
+──────[ 在线情况 ]─────────\
+当前在线真实人数为[{FCOLOR=250} <$OUTPUT(N3)> {FCOLOR=255}]人\
+─────────[ 管理系统 ]─────────\
+___{FCOLOR=255}[ <关  闭双倍经验/@StopTwoExpX> ]      [ <开  启双倍经验/@OpenTwoExp> ]\\
+___{FCOLOR=255}[ <增加自己的积分/@@GMSETJF> ]      [ <增加自己的声望/@@GMSETFAME> ]\\
+___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ 查看给玩家积分 ]\\ 
+{FCOLOR=255}[ <超级传送/@guanli_feifei> ]      [ <发放物品/@fajiangli> ]      [ <开区刷怪/@开区刷怪> ]\\
+{FCOLOR=255}[ <怪物清理/@怪物清除> ]      [ <地面清理/@物品清理> ]      [ <怪物攻城/@guanli_gongcheng> ]\
+────────[ 查看玩家积分 ]─────────\
+充值成功...你对<$OUTPUT(人名)>充了<$OUTPUT(充值点卷)>个游戏点卷...\
+角色<$OUTPUT(人名)>剩余<$OUTPUT(剩余点卷)>个游戏点卷...\
+}
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

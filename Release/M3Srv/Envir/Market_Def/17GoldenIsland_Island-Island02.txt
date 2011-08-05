@@ -1,0 +1,10 @@
+;;Legend Of Mir 3 C3Engine
+[@main]
+#SAY
+不错嘛，成为生存游戏中的大赢家。\ \
+<离开生存游戏场地/@ExitIsland>\
+
+[@ExitIsland]
+#ACT
+MapMove 01 424 313 3
+close

@@ -1,0 +1,34 @@
+[@NPC_RedPlayer]
+{
+Sorry you are bad for business\ \
+<Exit/@exit>
+}
+
+[@NPC_Main_0_0]
+{
+Here is SabukWall{FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} Guild territory.\
+How may i help you?\ \
+<Sell/@sell>\
+<Today's Tasks/@TQuest>\
+<Exit/@exit>
+}
+
+[@NPC_Main_0_1]
+{
+Buying high-quality meat.\
+The higher the quality the better the price.\ \
+<Back/@main>
+}
+
+[@NPC_TQuest]
+{
+We do not have anything for you today.\ \
+<Exit/@exit>
+}
+
+[@NPC_TQuest_1]
+{
+No longer have anything for you.\ \
+<Exit/@exit>
+}
+

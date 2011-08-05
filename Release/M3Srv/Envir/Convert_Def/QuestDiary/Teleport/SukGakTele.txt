@@ -1,0 +1,8 @@
+﻿;;Legend Of Mir 3 C3Engine
+[@SukGakTele_1]
+{
+Please select were you would like to go. \ \
+<CityWall : 500 Gold/@TelePortRootin(MongChon,500,West)> \
+<[Use Integral Teleport]/@TelePortRootin(ji,0,Center)>\\
+
+}
