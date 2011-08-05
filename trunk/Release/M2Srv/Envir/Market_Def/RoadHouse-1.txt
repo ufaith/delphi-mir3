@@ -1,3 +1,0 @@
-[@main]
-#CALL [vimascript\PointSystem\Point.txt] @TimeAddExp
-;#CALL [vimascript\PointSystem\MeasuredPoint.txt] @TimeAddExpNE

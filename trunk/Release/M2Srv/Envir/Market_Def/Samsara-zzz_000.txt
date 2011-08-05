@@ -1,5 +1,0 @@
-;;;fdafdasfdsafdsa
-[@main]
-#if
-#say
-此地非常危险，请玩家慎入\

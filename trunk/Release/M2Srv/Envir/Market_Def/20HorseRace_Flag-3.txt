@@ -1,4 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#SAY
-	#INCLUDE [..\Convert_Def\Market_Def\20HorseRace_Flag-3.txt] @NPC_Main

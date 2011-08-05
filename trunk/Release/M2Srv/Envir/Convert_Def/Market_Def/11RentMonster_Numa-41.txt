@@ -1,5 +1,0 @@
-[@NPC_RedPlayer]
-{
-I do not want people like you here.\  \
-<Exit/@exit>
-}

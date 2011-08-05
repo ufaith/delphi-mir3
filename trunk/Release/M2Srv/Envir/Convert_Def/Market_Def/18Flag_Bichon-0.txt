@@ -1,6 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@NPC_Main]
-{
-<$GUILD> ÐÐ»áÆìÖÄ \ \
-<Exit/@exit>
-}

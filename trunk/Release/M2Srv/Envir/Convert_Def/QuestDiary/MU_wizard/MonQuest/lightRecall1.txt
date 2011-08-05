@@ -1,5 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@lightRecall1_1]
-{
-(嘿，终于通过了学习雷电术的测试。。。)\
-}

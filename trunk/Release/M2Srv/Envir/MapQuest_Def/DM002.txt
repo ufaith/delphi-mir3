@@ -1,3 +1,0 @@
-[@MAIN]
-#ACT
-  MOV D7 0

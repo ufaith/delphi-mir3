@@ -1,6 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-
-
-
-#CALL [\\teleport\BiChonTele.txt] @Bichon_Teleport_West

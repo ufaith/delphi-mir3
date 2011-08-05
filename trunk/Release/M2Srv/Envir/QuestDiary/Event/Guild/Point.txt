@@ -1,6 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@GuildPoint]
-{
-#SAY
-	#INCLUDE [..\Convert_Def\QuestDiary\Event\Guild\Point.txt] @Guild_Point_Main
-}

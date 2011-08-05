@@ -1,6 +1,0 @@
-[@main]
-#IF
-CHECKLEVELEX > 17
-#ACT
-mapmove G003 39 42
-break

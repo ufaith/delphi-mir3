@@ -1,7 +1,0 @@
-;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
-[@main]
-#IF
-#SAY
-	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\MonQuest\Nm_SinGiPachun.txt] @NPC_Main
-#ACT
-set [798] 1

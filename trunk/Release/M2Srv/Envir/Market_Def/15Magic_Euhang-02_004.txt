@@ -1,3 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[@main]
-#CALL [\MU_wizard\fireUpbolt.txt] @upfireball_test

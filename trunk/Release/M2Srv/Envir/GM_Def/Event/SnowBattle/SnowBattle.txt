@@ -1,9 +1,0 @@
-;;Legend Of Mir 3 C3Engine
-[Snow]
-Name=Ñ©Çò
-Amount=1
-
-[Fee]
-name=½ð±Ò
-Amount=50000
-

@@ -1,8 +1,0 @@
-[@NPC_Main]
-{
-{FCOLOR=250}Locations{FCOLOR=255} \ \
-Northwest - 村庄 \ \
-Northeast - 道馆 \ \
-Southeast - 连接沙漠 \ \
-}
-

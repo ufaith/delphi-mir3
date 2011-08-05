@@ -1,8 +1,0 @@
-[@main]
-#IF
-checkmonmap T234 5
-#ELSEACT
-MONGENEX T234   15  25    ±©—¿÷©÷Î    3 1
-MONGENEX T234   15  25    ÃÏ¿«÷©÷Î    3 1
-MONGENEX T234   15  25    ÃÏ¿«÷©÷Î0    3 1
-MONGENEX T234   25  15    ±©—¿÷©÷Î0    3 1
