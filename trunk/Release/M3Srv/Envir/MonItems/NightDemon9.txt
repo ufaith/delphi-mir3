@@ -1,0 +1,104 @@
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+;1/50   GamePoints
+1/3    Gold 12000
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 1
+;-------------------------------------------------------------------------------
+1/80   DragonRing
+1/80   FireJadeRing
+1/80   TianmingRing
+
+1/80   GoldBracelet
+1/80   DeathGlove
+1/80   GhostGlove
+
+1/80   GloryNecklace
+1/80   AngerBell
+1/80   LotusMirror
+1/80   GhostNecklace
+
+1/80   ColorfulShoes
+
+1/80   BambooHat
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 2
+;-------------------------------------------------------------------------------
+1/150   BlackGlove
+
+1/150   SkiesNecklace
+1/150   SilverMirrorNecklace
+1/150   ColorfulNecklace
+1/150   SoulNecklace
+1/150   WarriorNecklace
+
+1/150   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 3
+;-------------------------------------------------------------------------------
+1/600  FortunatelyRing
+
+1/600  DevilRobe(M)
+1/600  DevilRobe(F)
+1/600  WarArmor(M)
+1/600  WarArmor(F)
+1/600  SpecterArmor(M)
+1/600  SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ∫∏Ω∫±ﬁ ¿¸øÎ æ∆¿Ã≈€µÈ
+;-------------------------------------------------------------------------------
+1/1000   NightBloodDrink 
+1/1000   PolarNightStick  
+1/1000  NightInferno
+
+1/1800  KnightBracelet
+1/1800  DragonBracelet
+1/1800  LoveBracelet
+
+1/5000  DamageNecklace
+1/5000  WindIndia
+1/5000  ResentmentNecklace
+1/5000  DarkSeal(Fire)
+1/5000  DarkSeal(Wind)
+1/5000  DarkSeal(Thunder) 
+1/5000  DarkSeal(Ice)
+1/5000  ResentmentNecklace£®…Ò •£©
+1/5000  ResentmentNecklace£®∞µ∫⁄£©
+1/5000  ResentmentNecklace£®ª√”∞£©
+
+1/50000  PurpleRing
+1/50000  ShengRing
+1/50000  LotteryRing
+1/50000  SecretRing
+
+1/50000  MeteorsNecklace
+1/50000  MagicChain
+1/50000  FiveGodMirrors
+1/50000  UniverseStretch
+
+1/5000 Chest

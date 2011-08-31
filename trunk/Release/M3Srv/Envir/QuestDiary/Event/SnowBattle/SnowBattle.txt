@@ -87,16 +87,16 @@ LoadValue P1 "Flag_Def\event\SnowBattle\Flag.txt" [Event_Timer] [Time]
 #IF
 !CheckMonMap "Snow,43,29,5" %P0 
 #ACT
-MonGenP "Snow,43,29,4" —©»À %P0
-;ApplyMonEx "Snow,43,29,10" —©»À [Monsterside]
-;ApplyMonEx "Snow,43,29,10" —©»À [Runaway]
+MonGenP "Snow,43,29,4" Snowman %P0
+;ApplyMonEx "Snow,43,29,10" Snowman [Monsterside]
+;ApplyMonEx "Snow,43,29,10" Snowman [Runaway]
 
 #IF
 !CheckMonMap "Snow,16,29,5" %P0 
 #ACT
-MonGenP "Snow,16,29,4" —©»À %P0 
-;ApplyMonEx "Snow,16,29,10" —©»À [Monsterside]
-;ApplyMonEx "Snow,16,29,10" —©»À [Runaway]
+MonGenP "Snow,16,29,4" Snowman %P0 
+;ApplyMonEx "Snow,16,29,10" Snowman [Monsterside]
+;ApplyMonEx "Snow,16,29,10" Snowman [Runaway]
 
 ;----------------120√  ≥≤æ—¿ª∂ß º≠µÁµ•Ω∫Ω∫∆Á πﬂµø
 #IF

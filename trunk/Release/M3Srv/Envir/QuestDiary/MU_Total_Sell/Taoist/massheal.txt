@@ -15,7 +15,7 @@ goto @Mu_Taoist_holy_massheal_next_1
 <关闭/@Mu_Taoist_holy_massheal_next_5>
 [@Mu_Taoist_holy_massheal_next_2]
 #IF
-checkitem 群体治愈术 1
+checkitem MassHealing 1
 #ACT
 goto @Mu_Taoist_holy_massheal_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Taoist_holy_massheal_next_3
 [@Mu_Taoist_holy_massheal_next_3]
 #IF
 checkgold 3100
-checkitem 群体治愈术 1
+checkitem MassHealing 1
 #ACT
-take 群体治愈术 1
-take 金币 3100
+take MassHealing 1
+take Gold 3100
 goto @Mu_Taoist_holy_massheal_next_4
 #ELSESAY
 从我这里学魔法需要先支付费用，这部分费用将会用于道馆的运营经费。\ \
@@ -42,7 +42,7 @@ random 20
 魔法书秘籍已经写好了，上面有修炼时需要留意的地方和重要内容，可以作参考。道士的魔法大都是帮助他人的善意魔法，好好修炼武功，一定保护好无辜百姓。\
 <Exit/@exit>
 #ELSEACT
-give 群体治愈术（秘籍） 1
+give MassHealing 1
 [@Mu_Taoist_holy_massheal_next_5]
 #IF
 #SAY

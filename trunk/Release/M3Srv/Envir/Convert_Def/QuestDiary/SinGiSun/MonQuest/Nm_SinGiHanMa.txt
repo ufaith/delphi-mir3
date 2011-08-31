@@ -1,7 +1,7 @@
 ;;Legend Of Mir 3 C3Engine
 [@NPC_Main]
 {
-（梅山侠的朋友终于可以得到安息了……咦，这是什么东西？遗骸？）\\
+（梅山侠的朋友终于可以得到安息了……咦，这是什么东西？Remains？）\\
 <Exit/@exit>
 }
 

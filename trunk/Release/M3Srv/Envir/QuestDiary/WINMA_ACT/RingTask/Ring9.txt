@@ -24,7 +24,7 @@ BREAK
 CHECK [689] 0
 CHECK [690] 0
 #SAY
-听说诺玛的“诺玛突击队长”最近在天外天的天外古刹捣乱，
+听说诺玛的“NormaChief”最近在天外天的天外古刹捣乱，
 请少侠帮忙消灭它。\
 <给我通缉令，我接受任务/@接受杀怪任务9_1>\
 <离开/@exit>\
@@ -35,7 +35,7 @@ CHECK [689] 0
 CHECK [690] 0
 #ACT
 SET [689] 1
-GIVE 怪物通缉令（队长） 1
+GIVE MonsterWanted(Captain) 1
 BREAK
 SYSMSG "您已经领取了怪物通缉令，赶快去杀了它吧!"
 close

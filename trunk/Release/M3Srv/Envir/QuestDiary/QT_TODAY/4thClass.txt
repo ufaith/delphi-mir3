@@ -46,7 +46,7 @@ check [307] 1
 
 [@401_CHECK1_2]
 #IF
-checkitem 金矿 2
+checkitem GoldOre 2
 #ACT
 goto @401_CHECK1_3
 #ELSESAY
@@ -60,14 +60,14 @@ movr  D0    100   ;;; 0-99 鳖瘤狼 函荐甫 积己 D0 持绰促.
 check [310] 0
 check [307] 1
 small D0    90
-checkitem 金矿 2
+checkitem GoldOre 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @401_Say_7
 
 #ACT        ;; 90欺季飘 犬伏肺 陛傈 2父傈 瘤鞭
 LoadValue A0 "GM_Def\QT_TODAY\400Reward.txt" [401] [Reward_Race_90]
 LoadValue D1 "GM_Def\QT_TODAY\400Reward.txt" [401] [Reward_Amount_90]
-take 金矿 2
+take GoldOre 2
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -78,14 +78,14 @@ break
 check [310] 0
 check [307] 1
 large D0  89
-checkitem 金矿 2
+checkitem GoldOre 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @401_Say_7
 
 #ACT         ;; 10欺季飘 犬伏肺 孺硼付馆瘤 瘤鞭
 LoadValue A0 "GM_Def\QT_TODAY\400Reward.txt" [401] [Reward_Race_10]
 LoadValue D1 "GM_Def\QT_TODAY\400Reward.txt" [401] [Reward_Amount_10]
-take 金矿 2
+take GoldOre 2
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -327,8 +327,8 @@ check [307] 1
 
 [@404_CHECK1_2]
 #IF
-checkitem 战神油 1
-checkitem 修复油 5
+checkitem WarOil 1
+checkitem RepairOil 5
 #ACT
 goto @404_CHECK1_3
 #ELSESAY
@@ -341,16 +341,16 @@ goto @404_CHECK1_3
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 战神油 1
-checkitem 修复油 5
+checkitem WarOil 1
+checkitem RepairOil 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @404_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [404] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [404] [Reward_Amount_90]
-take 战神油 1
-take 修复油 5
+take WarOil 1
+take RepairOil 5
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -361,16 +361,16 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 战神油 1
-checkitem 修复油 5
+checkitem WarOil 1
+checkitem RepairOil 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @404_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [404] [Reward_Race_10]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [404] [Reward_Amount_10] 
-take 战神油 1
-take 修复油 5
+take WarOil 1
+take RepairOil 5
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -422,7 +422,7 @@ check [307] 1
 
 [@405_CHECK1_2]
 #IF
-checkitem 魔法强效神水（小） 2
+checkitem MagicWater(S) 2
 #ACT
 goto @405_CHECK1_3
 #ELSESAY
@@ -436,14 +436,14 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 魔法强效神水（小） 2
+checkitem MagicWater(S) 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @405_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [405] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [405] [Reward_Amount_90] 
-take 魔法强效神水（小） 2
+take MagicWater(S) 2
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -454,14 +454,14 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 魔法强效神水（小） 2
+checkitem MagicWater(S) 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @405_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [405] [Reward_Race_10]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [405] [Reward_Amount_10]
-take 魔法强效神水（小） 2
+take MagicWater(S) 2
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -699,8 +699,8 @@ check [307] 1
 
 [@408_CHECK1_2]
 #IF
-checkitem 牛肉 5
-checkduraeva 牛肉 14
+checkitem Beef 5
+checkduraeva Beef 14
 #ACT
 goto @408_CHECK1_2_1
 #ELSESAY
@@ -708,8 +708,8 @@ goto @408_CHECK1_2_1
 
 [@408_CHECK1_2_1]
 #IF
-checkitem 肉 1
-checkduraeva 肉 15
+checkitem Meat 1
+checkduraeva Meat 15
 #ACT
 goto @408_CHECK1_3
 #ELSESAY
@@ -723,10 +723,10 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 牛肉 5
-checkduraeva 牛肉 14
-checkitem 肉 1
-checkduraeva 肉 15
+checkitem Beef 5
+checkduraeva Beef 14
+checkitem Meat 1
+checkduraeva Meat 15
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @408_Say_8
 
@@ -735,8 +735,8 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [408] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [408] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [408] [Reward_Race_90_1]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [408] [Reward_Amount_90_1]
-take 牛肉 5
-take 肉 1
+take Beef 5
+take Meat 1
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -750,8 +750,8 @@ break
 #ELSEACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [408] [Reward_Race_10]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [408] [Reward_Amount_10]
-take 牛肉 5
-take 肉 1
+take Beef 5
+take Meat 1
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -804,8 +804,8 @@ check [307] 1
 
 [@409_CHECK1_2]
 #IF
-checkitem 铜矿 10
-checkduraeva 铜矿 10
+checkitem CopperOre 10
+checkduraeva CopperOre 10
 
 #ACT
 goto @409_CHECK1_3
@@ -820,15 +820,15 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 铜矿 10
-checkduraeva 铜矿 10
+checkitem CopperOre 10
+checkduraeva CopperOre 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @409_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [409] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [409] [Reward_Amount_90]
-take 铜矿 10
+take CopperOre 10
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -839,8 +839,8 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 铜矿 10
-checkduraeva 铜矿 10
+checkitem CopperOre 10
+checkduraeva CopperOre 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @409_Say_8
 
@@ -855,15 +855,15 @@ movr D0 2
 equal D0 0
 check [307] 1
 check [310] 0
-checkitem 铜矿 10
-checkduraeva 铜矿 10
+checkitem CopperOre 10
+checkduraeva CopperOre 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @409_Say_7
 
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [409] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [409] [Reward_Amount_10]
-take 铜矿 10
+take CopperOre 10
 give %A1 %D2
 reset [307] 2
 set [310] 1
@@ -874,15 +874,15 @@ break
 equal D0 1
 check [307] 1
 check [310] 0
-checkitem 铜矿 10
-checkduraeva 铜矿 10
+checkitem CopperOre 10
+checkduraeva CopperOre 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @409_Say_7
 
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [409] [Reward_Race_10_1Th]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [409] [Reward_Amount_10_1Th]
-take 铜矿 10
+take CopperOre 10
 give %A2 %D3
 reset [307] 2
 set [310] 1
@@ -934,8 +934,8 @@ check [307] 1
 
 [@410_CHECK1_2]
 #IF
-checkitem 银矿 1
-checkdura 银矿 16
+checkitem SilverOre 1
+checkdura SilverOre 16
 #ACT
 goto @410_CHECK1_3
 #ELSESAY
@@ -948,8 +948,8 @@ movr D0 100
 #IF
 check [310] 0
 check [307] 1
-checkitem 银矿 1
-checkdura 银矿 16
+checkitem SilverOre 1
+checkdura SilverOre 16
 Small D0 90
 
 #ACT
@@ -967,15 +967,15 @@ movr D0 2
 equal D0 0
 check [307] 1
 check [310] 0
-checkitem 银矿 1
-checkdura 银矿 16
+checkitem SilverOre 1
+checkdura SilverOre 16
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @410_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [410] [Reward_Race_90_man]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [410] [Reward_Amount_90_man]
-take 银矿 1
+take SilverOre 1
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -986,15 +986,15 @@ break
 equal D0 1
 check [307] 1
 check [310] 0
-checkitem 银矿 1
-checkdura 银矿 16
+checkitem SilverOre 1
+checkdura SilverOre 16
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @410_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [410] [Reward_Race_90_woman]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [410] [Reward_Amount_90_woman]
-take 银矿 1
+take SilverOre 1
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1006,15 +1006,15 @@ break
 #IF
 check [310] 0
 check [307] 1
-checkitem 银矿 1
-checkdura 银矿 16
+checkitem SilverOre 1
+checkdura SilverOre 16
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @410_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [410] [Reward_Race_10]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [410] [Reward_Amount_10]
-take 银矿 1
+take SilverOre 1
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1253,8 +1253,8 @@ check [307] 1
 
 [@413_CHECK1_2]
 #IF
-checkitem 铁矿 1
-checkdura 铁矿 17
+checkitem IronOre 1
+checkdura IronOre 17
 #ACT
 goto @413_CHECK1_3
 #ELSESAY
@@ -1268,15 +1268,15 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 铁矿 1
-checkdura 铁矿 17
+checkitem IronOre 1
+checkdura IronOre 17
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @413_Say_7
 
 #ACT
 LoadValue A0 "GM_Def\QT_TODAY\400Reward.txt" [413] [Reward_Race_90]
 LoadValue D1 "GM_Def\QT_TODAY\400Reward.txt" [413] [Reward_Amount_90]
-take 铁矿 1
+take IronOre 1
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1287,15 +1287,15 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 铁矿 1
-checkdura 铁矿 17
+checkitem IronOre 1
+checkdura IronOre 17
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @413_Say_7
 
 #ACT
 LoadValue A0 "GM_Def\QT_TODAY\400Reward.txt" [413] [Reward_Race_10]
 LoadValue D1 "GM_Def\QT_TODAY\400Reward.txt" [413] [Reward_Amount_10]
-take 铁矿 1
+take IronOre 1
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1842,7 +1842,7 @@ check [307] 1
 [@419_CHECK1_2]
 #IF
 checkitem 蚂蚁卵 20
-checkitem 自然神水（小） 2
+checkitem NaturalWater(S) 2
 #ACT
 goto @419_CHECK1_3
 #ELSESAY
@@ -1857,7 +1857,7 @@ check [310] 0
 check [307] 1
 small D0 90
 checkitem 蚂蚁卵 20
-checkitem 自然神水（小） 2
+checkitem NaturalWater(S) 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @419_Say_7
 
@@ -1867,7 +1867,7 @@ LoadValue D1 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Amount_90]
 LoadValue A1 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Race_90_1Th]
 LoadValue D2 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Amount_90_1Th]
 take 蚂蚁卵 20
-take 自然神水（小） 2
+take NaturalWater(S) 2
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -1880,7 +1880,7 @@ check [310] 0
 check [307] 1
 large D0 89
 checkitem 蚂蚁卵 20
-checkitem 自然神水（小） 2
+checkitem NaturalWater(S) 2
 
 #ACT
 goto @419_Reward_Check
@@ -1894,7 +1894,7 @@ equal D0 0
 check [307] 1
 check [310] 0
 checkitem 蚂蚁卵 20
-checkitem 自然神水（小） 2
+checkitem NaturalWater(S) 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @419_Say_7
 
@@ -1902,7 +1902,7 @@ checkitem 自然神水（小） 2
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Race_10_man]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Amount_10_man]
 take 蚂蚁卵 20
-take 自然神水（小） 2
+take NaturalWater(S) 2
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1914,7 +1914,7 @@ equal D0 1
 check [307] 1
 check [310] 0
 checkitem 蚂蚁卵 20
-checkitem 自然神水（小） 2
+checkitem NaturalWater(S) 2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @419_Say_7
 
@@ -1922,7 +1922,7 @@ checkitem 自然神水（小） 2
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Race_10_woman]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [419] [Reward_Amount_10_woman]
 take 蚂蚁卵 20
-take 自然神水（小） 2
+take NaturalWater(S) 2
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1984,7 +1984,7 @@ check [307] 1
 [@420_CHECK1_2]
 #IF
 checkitem 蚂蚁卵 50
-checkitem 体力强效神水（小） 3
+checkitem StrengthWater(S) 3
 #ACT
 goto @420_CHECK1_3
 #ELSESAY
@@ -1999,7 +1999,7 @@ check [310] 0
 check [307] 1
 small D0 90
 checkitem 蚂蚁卵 50
-checkitem 体力强效神水（小） 3
+checkitem StrengthWater(S) 3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @420_Say_7
 
@@ -2009,7 +2009,7 @@ Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [420] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [420] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [420] [Reward_Amount_90_1Th]
 take 蚂蚁卵 50
-take 体力强效神水（小） 3
+take StrengthWater(S) 3
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -2022,7 +2022,7 @@ check [310] 0
 check [307] 1
 large D0 89
 checkitem 蚂蚁卵 50
-checkitem 体力强效神水（小） 3
+checkitem StrengthWater(S) 3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @420_Say_7
 
@@ -2030,7 +2030,7 @@ checkitem 体力强效神水（小） 3
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [420] [Reward_Race_10]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [420] [Reward_Amount_10]
 take 蚂蚁卵 50
-take 体力强效神水（小） 3
+take StrengthWater(S) 3
 give %A2 %D3
 reset [307] 2
 set [310] 1
@@ -2083,7 +2083,7 @@ check [307] 1
 
 [@421_CHECK1_2]
 #IF
-checkitem 食人树叶 20
+checkitem CannibalLeaf 20
 checkitem 食人树的果实 5
 #ACT
 goto @421_CHECK1_3
@@ -2098,7 +2098,7 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 食人树叶 20
+checkitem CannibalLeaf 20
 checkitem 食人树的果实 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @421_Say_7
@@ -2106,7 +2106,7 @@ checkitem 食人树的果实 5
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [421] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [421] [Reward_Amount_90]
-take 食人树叶 20
+take CannibalLeaf 20
 take 食人树的果实 5
 give %A0 %D1
 reset [307] 2
@@ -2118,7 +2118,7 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 食人树叶 20
+checkitem CannibalLeaf 20
 checkitem 食人树的果实 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @421_Say_7
@@ -2126,7 +2126,7 @@ checkitem 食人树的果实 5
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [421] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [421] [Reward_Amount_10]
-take 食人树叶 20
+take CannibalLeaf 20
 take 食人树的果实 5
 give %A1 %D2
 reset [307] 2
@@ -2281,7 +2281,7 @@ check [307] 1
 
 [@423_CHECK1_2]
 #IF
-checkitem 回城卷 10
+checkitem TownTeleport 10
 checkitem 皮 40
 #ACT
 goto @423_CHECK1_3
@@ -2296,7 +2296,7 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 回城卷 10
+checkitem TownTeleport 10
 checkitem 皮 40
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @423_Say_7
@@ -2304,7 +2304,7 @@ checkitem 皮 40
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [423] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [423] [Reward_Amount_90]
-take 回城卷 10
+take TownTeleport 10
 take 皮 40
 give %A0 %D1
 reset [307] 2
@@ -2316,7 +2316,7 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 回城卷 10
+checkitem TownTeleport 10
 checkitem 皮 40
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @423_Say_7
@@ -2324,7 +2324,7 @@ checkitem 皮 40
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [423] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [423] [Reward_Amount_10]
-take 回城卷 10
+take TownTeleport 10
 take 皮 40
 give %A1 %D2
 reset [307] 2
@@ -2378,8 +2378,8 @@ check [307] 1
 
 [@424_CHECK1_2]
 #IF
-checkitem 铁矿 10
-checkduraeva 铁矿 10
+checkitem IronOre 10
+checkduraeva IronOre 10
 #ACT
 goto @424_CHECK1_2_1
 #ELSESAY
@@ -2387,8 +2387,8 @@ goto @424_CHECK1_2_1
 
 [@424_CHECK1_2_1]
 #IF
-checkitem 黑铁 5
-checkduraeva 黑铁 7
+checkitem BlackIronOre 5
+checkduraeva BlackIronOre 7
 #ACT
 goto @424_CHECK1_3
 #ELSESAY
@@ -2402,10 +2402,10 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 铁矿 10
-checkduraeva 铁矿 10
-checkitem 黑铁 5
-checkduraeva 黑铁 7
+checkitem IronOre 10
+checkduraeva IronOre 10
+checkitem BlackIronOre 5
+checkduraeva BlackIronOre 7
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @424_Say_8
 
@@ -2414,8 +2414,8 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [424] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [424] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [424] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [424] [Reward_Amount_90_1Th]
-take 铁矿 10
-take 黑铁 5
+take IronOre 10
+take BlackIronOre 5
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -2428,18 +2428,18 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 铁矿 10
-checkduraeva 铁矿 10
-checkitem 黑铁 5
-checkduraeva 黑铁 7
+checkitem IronOre 10
+checkduraeva IronOre 10
+checkitem BlackIronOre 5
+checkduraeva BlackIronOre 7
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @424_Say_8
 
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [424] [Reward_Race_10]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [424] [Reward_Amount_10]
-take 铁矿 10
-take 黑铁 5
+take IronOre 10
+take BlackIronOre 5
 give %A2 %D3
 reset [307] 2
 GOTO @奖励声望
@@ -2498,8 +2498,8 @@ check [307] 1
 
 [@425_CHECK1_2]
 #IF
-checkitem 金矿 5
-checkduraeva 金矿 3
+checkitem GoldOre 5
+checkduraeva GoldOre 3
 #ACT
 goto @425_CHECK1_2_1
 #ELSESAY
@@ -2507,8 +2507,8 @@ goto @425_CHECK1_2_1
 
 [@425_CHECK1_2_1]
 #IF
-checkitem 银矿 5
-checkduraeva 银矿 5
+checkitem SilverOre 5
+checkduraeva SilverOre 5
 #ACT
 goto @425_CHECK1_3
 #ELSESAY
@@ -2522,10 +2522,10 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 金矿 5
-checkduraeva 金矿 3
-checkitem 银矿 5
-checkduraeva 银矿 5
+checkitem GoldOre 5
+checkduraeva GoldOre 3
+checkitem SilverOre 5
+checkduraeva SilverOre 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @425_Say_8
 
@@ -2534,8 +2534,8 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [425] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [425] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [425] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [425] [Reward_Amount_90_1Th]
-take 金矿 5
-take 银矿 5
+take GoldOre 5
+take SilverOre 5
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -2547,18 +2547,18 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 金矿 5
-checkduraeva 金矿 3
-checkitem 银矿 5
-checkduraeva 银矿 5
+checkitem GoldOre 5
+checkduraeva GoldOre 3
+checkitem SilverOre 5
+checkduraeva SilverOre 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @425_Say_8
 
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [425] [Reward_Race_10]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [425] [Reward_Amount_10]
-take 金矿 5
-take 银矿 5
+take GoldOre 5
+take SilverOre 5
 give %A2 %D3
 reset [307] 2
 set [310] 1
@@ -2611,7 +2611,7 @@ check [307] 1
 
 [@426_CHECK1_2]
 #IF
-checkitem 亮蜡烛 10
+checkitem LightCandles 10
 checkitem 食人树的果实 10
 #ACT
 goto @426_CHECK1_3
@@ -2626,7 +2626,7 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 亮蜡烛 10
+checkitem LightCandles 10
 checkitem 食人树的果实 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @426_Say_7
@@ -2634,7 +2634,7 @@ checkitem 食人树的果实 10
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [426] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [426] [Reward_Amount_90]
-take 亮蜡烛 10
+take LightCandles 10
 take 食人树的果实 10
 give %A0 %D1
 reset [307] 2
@@ -2647,7 +2647,7 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 亮蜡烛 10
+checkitem LightCandles 10
 checkitem 食人树的果实 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @426_Say_7
@@ -2655,7 +2655,7 @@ checkitem 食人树的果实 10
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [426] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [426] [Reward_Amount_10]
-take 亮蜡烛 10
+take LightCandles 10
 take 食人树的果实 10
 give %A1 %D2
 reset [307] 2
@@ -2709,8 +2709,8 @@ check [307] 1
 
 [@427_CHECK1_2]
 #IF
-checkitem 牛肉 10
-checkduraeva 牛肉 10
+checkitem Beef 10
+checkduraeva Beef 10
 #ACT
 goto @427_CHECK1_2_1
 #ELSESAY
@@ -2718,8 +2718,8 @@ goto @427_CHECK1_2_1
 
 [@427_CHECK1_2_1]
 #IF
-checkitem 鸡肉 10
-checkduraeva 鸡肉 4
+checkitem Chicken 10
+checkduraeva Chicken 4
 #ACT
 goto @427_CHECK1_3
 #ELSESAY
@@ -2733,18 +2733,18 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 牛肉 10
-checkduraeva 牛肉 10
-checkitem 鸡肉 10
-checkduraeva 鸡肉 4
+checkitem Beef 10
+checkduraeva Beef 10
+checkitem Chicken 10
+checkduraeva Chicken 4
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @427_Say_8
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [427] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [427] [Reward_Amount_90]
-take 牛肉 10
-take 鸡肉 10
+take Beef 10
+take Chicken 10
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -2755,18 +2755,18 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 牛肉 10
-checkduraeva 牛肉 10
-checkitem 鸡肉 10
-checkduraeva 鸡肉 4
+checkitem Beef 10
+checkduraeva Beef 10
+checkitem Chicken 10
+checkduraeva Chicken 4
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @427_Say_8
 
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [427] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [427] [Reward_Amount_10]
-take 牛肉 10
-take 鸡肉 10
+take Beef 10
+take Chicken 10
 give %A1 %D2
 reset [307] 2
 set [310] 1
@@ -2822,7 +2822,7 @@ check [307] 1
 
 [@428_CHECK1_2]
 #IF
-checkitem 强效太阳水 5
+checkitem SunPotion(M) 5
 #ACT
 goto @428_CHECK1_3
 #ELSESAY
@@ -2836,7 +2836,7 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 强效太阳水 5
+checkitem SunPotion(M) 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @428_Say_7
 
@@ -2845,7 +2845,7 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [428] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [428] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [428] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [428] [Reward_Amount_90_1Th]
-take 强效太阳水 5
+take SunPotion(M) 5
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -2857,14 +2857,14 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 强效太阳水 5
+checkitem SunPotion(M) 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @428_Say_7
 
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [428] [Reward_Race_10]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [428] [Reward_Amount_10]
-take 强效太阳水 5
+take SunPotion(M) 5
 give %A1 %D2
 reset [307] 2
 set [310] 1
@@ -3454,8 +3454,8 @@ check [307] 1
 
 [@434_CHECK1_2]
 #IF
-checkitem 铁矿 10
-checkduraeva 铁矿 10
+checkitem IronOre 10
+checkduraeva IronOre 10
 #ACT
 goto @434_CHECK1_2_1
 #ELSESAY
@@ -3463,8 +3463,8 @@ goto @434_CHECK1_2_1
 
 [@434_CHECK1_2_1]
 #IF
-checkitem 铜矿 10
-checkduraeva 铜矿 15
+checkitem CopperOre 10
+checkduraeva CopperOre 15
 #ACT
 goto @434_CHECK1_3
 #ELSESAY
@@ -3478,10 +3478,10 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90	
-checkitem 黑铁 10
-checkduraeva 黑铁 10
-checkitem 铜矿 10
-checkduraeva 铜矿 15
+checkitem BlackIronOre 10
+checkduraeva BlackIronOre 10
+checkitem CopperOre 10
+checkduraeva CopperOre 15
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @434_Say_7
 
@@ -3490,8 +3490,8 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [434] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [434] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [434] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [434] [Reward_Amount_90_1Th]
-take 铁矿 10
-take 黑铁 10
+take IronOre 10
+take BlackIronOre 10
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -3503,18 +3503,18 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 黑铁 10
-checkduraeva 黑铁 10
-checkitem 铜矿 10
-checkduraeva 铜矿 15
+checkitem BlackIronOre 10
+checkduraeva BlackIronOre 10
+checkitem CopperOre 10
+checkduraeva CopperOre 15
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @434_Say_7
 
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [434] [Reward_Race_10]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [434] [Reward_Amount_10]
-take 铁矿 10
-take 黑铁 10
+take IronOre 10
+take BlackIronOre 10
 give %A2 %D3
 reset [307] 2
 set [310] 1
@@ -3570,8 +3570,8 @@ check [307] 1
 
 [@435_CHECK1_2]
 #IF
-checkitem 银矿 10
-checkduraeva 银矿 10
+checkitem SilverOre 10
+checkduraeva SilverOre 10
 #ACT
 goto @435_CHECK1_2_1
 #ELSESAY
@@ -3592,8 +3592,8 @@ movr D0 100
 #IF
 check [310] 0
 check [307] 1
-checkitem 银矿 10
-checkduraeva 银矿 10
+checkitem SilverOre 10
+checkduraeva SilverOre 10
 checkitem 蚂蚁卵 30
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @435_Say_7
@@ -3603,7 +3603,7 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Amount_90_1Th]
-take 银矿 10
+take SilverOre 10
 take 蚂蚁卵 30
 give %A0 %D1
 give %A1 %D2
@@ -3616,8 +3616,8 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 银矿 10
-checkduraeva 银矿 10
+checkitem SilverOre 10
+checkduraeva SilverOre 10
 checkitem 蚂蚁卵 30
 
 #ACT
@@ -3628,15 +3628,15 @@ goto @435_Reward_Check
 Gender Man
 check [307] 1
 check [310] 0
-checkitem 银矿 10
-checkduraeva 银矿 10
+checkitem SilverOre 10
+checkduraeva SilverOre 10
 checkitem 蚂蚁卵 30
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @435_Say_7
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Race_10_man]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Amount_10_man]
-take 银矿 10
+take SilverOre 10
 take 蚂蚁卵 30
 give %A2 %D3
 reset [307] 2
@@ -3649,7 +3649,7 @@ break
 #ELSEACT
 Loadvalue A3 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Race_10_woman]
 Loadvalue D4 "GM_Def\QT_TODAY\400Reward.txt" [435] [Reward_Amount_10_woman]
-take 银矿 10
+take SilverOre 10
 take 蚂蚁卵 30
 give %A3 %D4
 reset [307] 2
@@ -3799,8 +3799,8 @@ check [307] 1
 
 [@437_CHECK1_2]
 #IF
-checkitem 牛肉 10
-checkduraeva 牛肉 10
+checkitem Beef 10
+checkduraeva Beef 10
 #ACT
 goto @437_CHECK1_2_1
 #ELSESAY
@@ -3808,8 +3808,8 @@ goto @437_CHECK1_2_1
 
 [@437_CHECK1_2_1]
 #IF
-checkitem 鸡肉 10
-checkduraeva 鸡肉 5
+checkitem Chicken 10
+checkduraeva Chicken 5
 #ACT
 goto @437_CHECK1_3
 #ELSESAY
@@ -3823,10 +3823,10 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 牛肉 10
-checkduraeva 牛肉 10
-checkitem 鸡肉 10
-checkduraeva 鸡肉 5
+checkitem Beef 10
+checkduraeva Beef 10
+checkitem Chicken 10
+checkduraeva Chicken 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @437_Say_7
 
@@ -3835,8 +3835,8 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [437] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [437] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [437] [Reward_Race_90_1Th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [437] [Reward_Amount_90_1Th]
-take 牛肉 10
-take 鸡肉 10
+take Beef 10
+take Chicken 10
 give %A0 %D1
 give %A1 %D2
 reset [307] 2
@@ -3848,18 +3848,18 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 牛肉 10
-checkduraeva 牛肉 10
-checkitem 鸡肉 10
-checkduraeva 鸡肉 5
+checkitem Beef 10
+checkduraeva Beef 10
+checkitem Chicken 10
+checkduraeva Chicken 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @437_Say_7
 
 #ACT
 Loadvalue A2 "GM_Def\QT_TODAY\400Reward.txt" [437] [Reward_Race_10]
 Loadvalue D3 "GM_Def\QT_TODAY\400Reward.txt" [437] [Reward_Amount_10]
-take 牛肉 10
-take 鸡肉 10
+take Beef 10
+take Chicken 10
 give %A2 %D3
 reset [307] 2
 set [310] 1
@@ -4210,8 +4210,8 @@ check [307] 1
 
 [@441_CHECK1_2]
 #IF
-checkitem 羊肉 10
-checkduraeva 羊肉 10
+checkitem Lamb 10
+checkduraeva Lamb 10
 #ACT
 goto @441_CHECK1_3
 #ELSESAY
@@ -4225,15 +4225,15 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem 羊肉 10
-checkduraeva 羊肉 10
+checkitem Lamb 10
+checkduraeva Lamb 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @441_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [441] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [441] [Reward_Amount_90]
-take 羊肉 10
+take Lamb 10
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -4244,15 +4244,15 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem 羊肉 10
-checkduraeva 羊肉 10
+checkitem Lamb 10
+checkduraeva Lamb 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @441_Say_7
 
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [441] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [441] [Reward_Amount_10]
-take 羊肉 10
+take Lamb 10
 give %A1 %D2
 reset [307] 2
 set [310] 1

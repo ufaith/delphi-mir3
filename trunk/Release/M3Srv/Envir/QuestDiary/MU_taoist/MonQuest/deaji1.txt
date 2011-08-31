@@ -15,5 +15,5 @@ break
 #IF
 random 50
 #ACT
-give ÉñÊ¥Õ½¼×Êõ 1
+give Resilience 1
 map D400_001

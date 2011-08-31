@@ -56,7 +56,7 @@ goto @main-1_1
 #IF
 checkgold 5000
 #ACT
-take 金币 5000
+take Gold 5000
 set [574] 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_5
@@ -76,7 +76,7 @@ goto @main-1_3
 #IF
 checkgold 100000
 #ACT
-take 金币 100000
+take Gold 100000
 set [304] 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_8
@@ -111,7 +111,7 @@ mov d8 0
 #IF
 checkgold 40000
 #ACT
-take 金币 500
+take Gold 500
 set [574] 1
 set [305] 1
 mov d4 1
@@ -123,7 +123,7 @@ goto @main-2
 #IF
 checkgold 40000
 #ACT
-take 金币 1000
+take Gold 1000
 set [574] 1
 set [306] 1
 mov d4 1
@@ -13641,7 +13641,7 @@ goto @main-7-5
 #IF
 check [305] 1
 #ACT
-give 金币 20000
+give Gold 20000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13653,7 +13653,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_31
 
 #ELSEACT
-give 金币 40000
+give Gold 40000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13668,7 +13668,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13680,7 +13680,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_33
 
 #ELSEACT
-give 金币 16000
+give Gold 16000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13695,7 +13695,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 4000
+give Gold 4000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13707,7 +13707,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_35
 
 #ELSEACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13722,7 +13722,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 2000
+give Gold 2000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13734,7 +13734,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_37
 
 #ELSEACT
-give 金币 4000
+give Gold 4000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13772,7 +13772,7 @@ goto @main-7-1
 #IF
 check [305] 1
 #ACT
-give 金币 20000
+give Gold 20000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13784,7 +13784,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_39
 
 #ELSEACT
-give 金币 40000
+give Gold 40000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13799,7 +13799,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13811,7 +13811,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_41
 
 #ELSEACT
-give 金币 16000
+give Gold 16000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13826,7 +13826,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 4000
+give Gold 4000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13838,7 +13838,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_43
 
 #ELSEACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13853,7 +13853,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 2000
+give Gold 2000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13865,7 +13865,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_45
 
 #ELSEACT
-give 金币 4000
+give Gold 4000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13898,7 +13898,7 @@ goto @main-7-2
 #IF
 check [305] 1
 #ACT
-give 金币 20000
+give Gold 20000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13910,7 +13910,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_47
 
 #ELSEACT
-give 金币 40000
+give Gold 40000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13925,7 +13925,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13937,7 +13937,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_49
 
 #ELSEACT
-give 金币 16000
+give Gold 16000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13952,7 +13952,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 4000
+give Gold 4000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13964,7 +13964,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_51
 
 #ELSEACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -13992,7 +13992,7 @@ goto @main-7-3
 #IF
 check [305] 1
 #ACT
-give 金币 20000
+give Gold 20000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14004,7 +14004,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_53
 
 #ELSEACT
-give 金币 40000
+give Gold 40000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14019,7 +14019,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 8000
+give Gold 8000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14031,7 +14031,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_55
 
 #ELSEACT
-give 金币 16000
+give Gold 16000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14046,7 +14046,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 20000
+give Gold 20000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14058,7 +14058,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_57
 
 #ELSEACT
-give 金币 40000
+give Gold 40000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14098,7 +14098,7 @@ goto @main-8-1_0
 #IF
 check [305] 1
 #ACT
-take 金币 1500
+take Gold 1500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14110,7 +14110,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_60
 
 #ELSEACT
-take 金币 3000
+take Gold 3000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14125,7 +14125,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 1500
+take Gold 1500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14137,7 +14137,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_62
 
 #ELSEACT
-take 金币 3000
+take Gold 3000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14182,7 +14182,7 @@ goto @main-8-2_0
 #IF
 check [305] 1
 #ACT
-take 金币 3500
+take Gold 3500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14194,7 +14194,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_65
 
 #ELSEACT
-take 金币 7000
+take Gold 7000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14209,7 +14209,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 3500
+take Gold 3500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14221,7 +14221,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_67
 
 #ELSEACT
-take 金币 7000
+take Gold 7000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14236,7 +14236,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 3500
+take Gold 3500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14248,7 +14248,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_69
 
 #ELSEACT
-take 金币 7000
+take Gold 7000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14298,7 +14298,7 @@ goto @main-8-3_0
 #IF
 check [305] 1
 #ACT
-take 金币 7500
+take Gold 7500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14310,7 +14310,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_72
 
 #ELSEACT
-take 金币 15000
+take Gold 15000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14325,7 +14325,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 7500
+take Gold 7500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14337,7 +14337,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_74
 
 #ELSEACT
-take 金币 15000
+take Gold 15000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14352,7 +14352,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 7500
+take Gold 7500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14364,7 +14364,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_76
 
 #ELSEACT
-take 金币 15000
+take Gold 15000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14379,7 +14379,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 7500
+take Gold 7500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14391,7 +14391,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_78
 
 #ELSEACT
-take 金币 15000
+take Gold 15000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14446,7 +14446,7 @@ goto @main-8-4_0
 #IF
 check [305] 1
 #ACT
-take 金币 19500
+take Gold 19500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14458,7 +14458,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_81
 
 #ELSEACT
-take 金币 39000
+take Gold 39000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14473,7 +14473,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 19500
+take Gold 19500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14485,7 +14485,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_83
 
 #ELSEACT
-take 金币 39000
+take Gold 39000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14500,7 +14500,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 19500
+take Gold 19500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14512,7 +14512,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_85
 
 #ELSEACT
-take 金币 39000
+take Gold 39000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14527,7 +14527,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 19500
+take Gold 19500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14539,7 +14539,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_87
 
 #ELSEACT
-take 金币 39000
+take Gold 39000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14554,7 +14554,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-take 金币 19500
+take Gold 19500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14566,7 +14566,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_89
 
 #ELSEACT
-take 金币 39000
+take Gold 39000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14581,7 +14581,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 250
+give Gold 250
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14593,7 +14593,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_91
 
 #ELSEACT
-give 金币 1000
+give Gold 1000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14608,7 +14608,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 500
+give Gold 500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14620,7 +14620,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_93
 
 #ELSEACT
-give 金币 1000
+give Gold 1000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14635,7 +14635,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 500
+give Gold 500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14647,7 +14647,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_95
 
 #ELSEACT
-give 金币 1000
+give Gold 1000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14662,7 +14662,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 500
+give Gold 500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14674,7 +14674,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_97
 
 #ELSEACT
-give 金币 1000
+give Gold 1000
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14689,7 +14689,7 @@ set [306] 0
 #IF
 check [305] 1
 #ACT
-give 金币 500
+give Gold 500
 mov d4 0
 mov d5 0
 mov d6 0
@@ -14701,7 +14701,7 @@ set [305] 0
 	#INCLUDE [..\Convert_Def\QuestDiary\Event\DiceGame\Dice.txt] @Dice_99
 
 #ELSEACT
-give 金币 1000
+give Gold 1000
 mov d4 0
 mov d5 0
 mov d6 0

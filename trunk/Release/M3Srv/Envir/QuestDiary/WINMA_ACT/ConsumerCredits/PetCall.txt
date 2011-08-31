@@ -24,10 +24,10 @@
 checklevel 41
 #SAY
 您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点，这里是你可以租用的怪物。。\ \
-<七级火焰狮子[2积分+30000金币]/@Tamingdd(火焰狮子,4,30000)> \
-<七级潘夜左护卫[2积分+30000金币]/@Tamingdd(潘夜左护卫,4,30000)> \ 
-<七级潘夜右护卫[2积分+30000金币]/@Tamingdd(潘夜右护卫,4,30000)> \
-<七级潘夜战士[2积分+30000金币]/@Tamingdd(潘夜战士,4,30000)> \ \
+<七级火焰狮子[2积分+30000金币]/@Tamingdd(FireLion,4,30000)> \
+<七级潘夜左护卫[2积分+30000金币]/@Tamingdd(NightLeftGuard,4,30000)> \ 
+<七级潘夜右护卫[2积分+30000金币]/@Tamingdd(NightGuard,4,30000)> \
+<七级潘夜战士[2积分+30000金币]/@Tamingdd(NightWarrior,4,30000)> \ \
 #ACT
 break
 
@@ -35,10 +35,10 @@ break
 checklevel 31
 #SAY
 您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点，这里是你可以租用的怪物。。\ \
-<七级骷髅士兵[2积分+20000金币]/@Tamingdd(骷髅士兵,4,20000)> \
-<七级骷髅弓箭手[2积分+20000金币]/@Tamingdd(骷髅弓箭手,4,20000)> \
-<七级骷髅武士[2积分+20000金币]/@Tamingdd(骷髅武士,4,20000)>\
-<七级骷髅武将[2积分+20000金币]/@Tamingdd(骷髅武将,4,20000)> \ \
+<七级骷髅士兵[2积分+20000金币]/@Tamingdd(SkeletonSoldier,4,20000)> \
+<七级骷髅弓箭手[2积分+20000金币]/@Tamingdd(SkeletonArcher,4,20000)> \
+<七级骷髅武士[2积分+20000金币]/@Tamingdd(SkeletonWarrior,4,20000)>\
+<七级骷髅武将[2积分+20000金币]/@Tamingdd(SkeletonGeneral,4,20000)> \ \
 #ACT
  break
 	
@@ -46,9 +46,9 @@ checklevel 31
 checklevel 21
 #SAY
 您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点，这里是你可以租用的怪物。。\ \
-<七级红野猪[2积分+8000金币]/@Tamingdd(红野猪,4,8000)> \
-<七级黑野猪[2积分+10000金币]/@Tamingdd(黑野猪,4,10000)> \ 
-<七级蝎蛇[2积分+10000金币]/@Tamingdd(蝎蛇,4,10000)> \ \
+<七级红野猪[2积分+8000金币]/@Tamingdd(RedBoar,4,8000)> \
+<七级黑野猪[2积分+10000金币]/@Tamingdd(WildBoar,4,10000)> \ 
+<七级蝎蛇[2积分+10000金币]/@Tamingdd(Scorpion,4,10000)> \ \
 #ACT
 BREAK	
 
@@ -56,8 +56,8 @@ BREAK
 checklevel 11
 #SAY
 您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点，这里是你可以租用的怪物。。\ \
-<七级沃玛勇士[2积分+6000金币]/@Tamingdd(沃玛勇士,4,6000)>\
-<七级沃玛战将[2积分+6000金币]/@Tamingdd(沃玛战将,4,6000)> \ \
+<七级沃玛勇士[2积分+6000金币]/@Tamingdd(WoomaWarrior,4,6000)>\
+<七级沃玛战将[2积分+6000金币]/@Tamingdd(WoomaWarLord,4,6000)> \ \
 #ACT
 break
 	
@@ -65,8 +65,8 @@ break
 checklevel 1
 #SAY
 您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点，这里是你可以租用的怪物。。\ \
-<七级掷斧骷髅[2积分]/@Tamingdd(掷斧骷髅,4,0)> \
-<七级骷髅战将[2积分]/@Tamingdd(骷髅战将,4,0)> \ \
+<七级掷斧骷髅[2积分]/@Tamingdd(SkeletonAxer,4,0)> \
+<七级骷髅战将[2积分]/@Tamingdd(SkeletonsFighter,4,0)> \ \
 
 
 ;-------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ checkgold  %N4
 checkmonRecall
 #ACT
 DECJFPOINT 2
-take       金币     %N4
+take       Gold     %N4
 MonRecall  %A1      %N3        6  
 break
 #SAY
@@ -111,12 +111,12 @@ break
 {
 #SAY
 所有怪物使用时间为24小时.\
-<潘夜牛魔王（7级）         [80点积分]/@超级购买宝宝d(潘夜牛魔王9,24,80,7)>\
-<骷髅教主（7级）         [80点积分]/@超级购买宝宝d(骷髅教主1,24,80,7)>\
-<震天首将（7级）         [50点积分]/@超级购买宝宝d(震天首将,24,50,7)>\
-<潘夜鬼将（7级）         [35点积分]/@超级购买宝宝d(潘夜鬼将,24,35,7)>\
-<大法老（7级）           [25点积分]/@超级购买宝宝d(大法老,24,25,7)>\
-<神鬼王（7级）           [20点积分]/@超级购买宝宝d(神鬼王,24,20,7)>\ \ \
+<NightDemon（7级）         [80点积分]/@超级购买宝宝d(NightDemon9,24,80,7)>\
+<SkeltonLeader（7级）         [80点积分]/@超级购买宝宝d(SkeltonLeader1,24,80,7)>\
+<ShakeDay（7级）         [50点积分]/@超级购买宝宝d(ShakeDay,24,50,7)>\
+<NightGhost（7级）         [35点积分]/@超级购买宝宝d(NightGhost,24,35,7)>\
+<Pharaoh（7级）           [25点积分]/@超级购买宝宝d(Pharaoh,24,25,7)>\
+<GhostKing（7级）           [20点积分]/@超级购买宝宝d(GhostKing,24,20,7)>\ \ \
 <返回上一页/@积分列表_K>\
 <关 闭/@exit>
 
@@ -156,9 +156,9 @@ MonRecall  %A1      %N1        %N3
 [@加血_baod]
 #SAY
 在这里你可以召唤助手来帮您PK或打怪,助手可以给您加血\
-<召唤初级助手   咸蛋   [4点积分]/@zhushou1dd(咸蛋,24,4,1)>\ 
-<召唤中级助手   如花   [8点积分]/@zhushou1dd(如花,24,8,2)>\
-<召唤高级助手   超级蛋蛋  [10点积分]/@zhushou1dd(超级蛋蛋,24,10,3)>\
+<召唤初级助手   SaltedEgg   [4点积分]/@zhushou1dd(SaltedEgg,24,4,1)>\ 
+<召唤中级助手   Flowery   [8点积分]/@zhushou1dd(Flowery,24,8,2)>\
+<召唤高级助手   SuperEgg  [10点积分]/@zhushou1dd(SuperEgg,24,10,3)>\
 \
 <返回上一页/@积分列表_K>\
 <关 闭/@exit>

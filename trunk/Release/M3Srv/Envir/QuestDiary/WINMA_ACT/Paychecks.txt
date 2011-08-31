@@ -7,7 +7,7 @@ IsCastleGuild Sabuk
 <$USERNAME> 你好!\
 我是沙巴克财务大臣，根据沙巴克领袖的命令.\
 我负责发放 {FCOLOR=250}<$CS_SABUK_OWNER>{FCOLOR=255} 行会的成员每天的薪水.\
-42级以上行会成员每天可以领 {FCOLOR=250}五十万{FCOLOR=255} 金币.\
+42级以上行会成员每天可以领 {FCOLOR=250}五十万{FCOLOR=255} Gold.\
 \\
 <领取工资./@main-1>\ 
 <离 开./@exit> \
@@ -97,7 +97,7 @@ set [874] 0
 set [875] 0
 set [876] 0
 set [877] 0
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 
@@ -118,7 +118,7 @@ set [874] 0
 set [875] 0
 set [876] 0
 set [877] 0
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 
@@ -139,7 +139,7 @@ set [874] 0
 set [875] 0
 set [876] 0
 set [877] 0
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 
@@ -160,7 +160,7 @@ set [874] 1
 set [875] 0
 set [876] 0
 set [877] 0
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 
@@ -181,7 +181,7 @@ set [874] 0
 set [875] 1
 set [876] 0
 set [877] 0
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 
@@ -202,7 +202,7 @@ set [874] 0
 set [875] 0
 set [876] 1
 set [877] 0
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 #ELSEACT
@@ -222,7 +222,7 @@ set [874] 0
 set [875] 0
 set [876] 0
 set [877] 1
-give 金币 500000
+give Gold 500000
 ;;lineMsg [Grobal] "沙巴克行会'<$CS_SABUK_OWNER>' 的成员'<$OUTPUT(A1)>'领取了50万工资，请还没领工资的沙城成员到沙皇宫来领工资。"
 goto  @linggongzi
 

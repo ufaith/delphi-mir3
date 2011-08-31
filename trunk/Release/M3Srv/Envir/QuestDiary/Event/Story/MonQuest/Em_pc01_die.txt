@@ -6,13 +6,13 @@ Delaygoto [Grobal] 7 @pachon_Ending_1_1
 
 [@pachon_Ending_1_1]
 #IF
-checkmonmap 0 1 沃玛教主
+checkmonmap 0 1 WoomaLeader
 #ELSEACT
 goto @next
 
 [@next]
 #IF
-checkmonmap 0 1 骷髅教主
+checkmonmap 0 1 SkeltonLeader
 #ELSEACT
 Delaygoto [Grobal] 7 @pachon_Ending2
 
@@ -28,12 +28,12 @@ Delaygoto [Grobal] 7 @pachon_Ending_2_1
 
 [@pachon_Ending_2_1]
 #IF
-checkmonmap 0 1 霸王守卫
+checkmonmap 0 1 OverlordGuard
 #ELSEACT
 goto @next1
 [@next1]
 #IF
-checkmonmap 0 1 骷髅教主
+checkmonmap 0 1 SkeltonLeader
 #ELSEACT
 Delaygoto [Grobal] 7 @pachon_Ending2
 
@@ -44,13 +44,13 @@ Delaygoto [Grobal] 7 @pachon_Ending_3_1
 
 [@pachon_Ending_3_1]
 #IF
-checkmonmap 0 1 霸王守卫
+checkmonmap 0 1 OverlordGuard
 #ELSEACT
 Delaygoto [Grobal] 7 @next2
 
 [@next2]
 #IF
-checkmonmap 0 1 沃玛教主
+checkmonmap 0 1 WoomaLeader
 #ELSEACT
 Delaygoto [Grobal] 7 @pachon_ending2
 

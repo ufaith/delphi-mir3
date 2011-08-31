@@ -1,0 +1,80 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템
+;-------------------------------------------------------------------------------
+1/10000   Spar
+1/1    Gold 48000
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/10   BlackGlove
+
+1/10   SkiesNecklace
+1/10   SilverMirrorNecklace
+
+1/10   ColorfulNecklace
+1/10   SoulNecklace
+1/10   WarriorNecklace
+
+1/10   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/20   FortunatelyRing
+
+1/20   DevilRobe(M)
+1/20   DevilRobe(F)
+1/20   WarArmor(M)
+1/20   WarArmor(F)
+1/20   SpecterArmor(M)
+1/20   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/10  CelestialArmor(M)
+1/10  CelestialArmor(F)
+1/10  DragonArmor(M)
+1/10  DragonArmor(F)
+1/10  VestmentArmor(M)
+1/10  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 보스급 전용 아이템들
+;-------------------------------------------------------------------------------
+1/10   BlessingOil
+1/10   WeaponOil
+
+1/100   FerricyanideSword
+1/100   RulingStick
+1/100   PromiseStaff
+1/100   GuYuToken
+
+1/100   MeteorKnife
+1/100   Shadowbane
+1/100   MagicBlade
+
+1/320  Thunderbolt
+1/320  DragonsSword
+1/320  SoulsStaff
+
+1/200   BraveMedal
+1/400   VenerableMedal
+1/800   KingMedal
+1/8000   PrayerBlade

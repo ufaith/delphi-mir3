@@ -19,8 +19,8 @@ break
 #IF
 checkgold 100000
 #ACT
-take 金币 100000
-makeshooter 投石车 100
+take Gold 100000
+makeshooter Catapult 100
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\ShooterMarket.txt] @ShooterMarket_3
 
@@ -40,8 +40,8 @@ break
 #IF
 checkgold 100000
 #ACT
-take 金币 100000
-makeshooter 弩车 100
+take Gold 100000
+makeshooter CrossbowVehicle 100
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\ShooterMarket.txt] @ShooterMarket_6
 
@@ -79,8 +79,8 @@ checksavedshooter  1
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\ShooterMarket.txt] @ShooterMarket_11
 
 #ACT
-take 金币 1000
-makeshooter 投石车
+take Gold 1000
+makeshooter Catapult
 break
 
 #IF
@@ -89,7 +89,7 @@ checksavedshooter  2
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\ShooterMarket.txt] @ShooterMarket_12
 
 #ACT
-makeshooter 弩车
+makeshooter CrossbowVehicle
 break
 
 #IF
@@ -106,7 +106,7 @@ checkshooter
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\ShooterMarket.txt] @ShooterMarket_14
 
 #ACT
-give 金币 50000
+give Gold 50000
 killshooter
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\ShooterMarket.txt] @ShooterMarket_15

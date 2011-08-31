@@ -8,12 +8,12 @@ breaktimerecall
 
 [@Ma11_game]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play11_20.txt] @play11_20_2
 
 #ACT
-take ³ïÂë 1
+take Chip 1
 mov n1 0
 #ELSEACT
 mapmove 01 428 314
@@ -49,9 +49,9 @@ goto @Ma11_dicestart
 
 [@Ma11_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma11_cube
@@ -109,7 +109,7 @@ breaktimerecall
 
 [@Ma12_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 movr d0 6
 inc d0 1
@@ -154,22 +154,22 @@ breaktimerecall
 [@Ma13_cube]
 #IF
 equal d0 0
-checkitem ³ïÂë 1
+checkitem Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play11_20.txt] @play11_20_8
 
 #ACT
-take ³ïÂë 1
+take Chip 1
 break
 
 #IF
 equal d0 1
-checkitem ³ïÂë 1
+checkitem Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play11_20.txt] @play11_20_9
 
 #ACT
-take ³ïÂë 1
+take Chip 1
 break
 
 #ELSEACT
@@ -219,22 +219,22 @@ breaktimerecall
 #IF
 equal d0 0
 #ACT
-take ³ïÂë 10
+take Chip 10
 goto @Ma14_pre_cube
 break
 
 #IF
 equal d0 1
 #ACT
-give ³ïÂë 6
+give Chip 6
 goto @Ma14_pre_cube
 break
 
 [@Ma14_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @cube
@@ -298,32 +298,32 @@ goto @Ma15_game_check
 #IF
 #ACT
 set [799] 1
-give º××ì³ú 1
-take Í­¿ó 40
+give Pickaxe 1
+take CopperOre 40
 TimeRecall 5
 map B115_001
 
 [@Ma15_game_check]
 #IF
-checkitem Í­¿ó 1
-checkdura Í­¿ó 10
+checkitem CopperOre 1
+checkdura CopperOre 10
 #ACT
-takew º××ì³ú 1
-take º××ì³ú 1
-take Í­¿ó 40
+takew Pickaxe 1
+take Pickaxe 1
+take CopperOre 40
 goto @Ma15_pre_cube
 #ELSEACT
-takew º××ì³ú 1
-take º××ì³ú 1
-take Í­¿ó 40
+takew Pickaxe 1
+take Pickaxe 1
+take CopperOre 40
 mapmove 01 428 314
 
 [@Ma15_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma15_cube
@@ -382,26 +382,26 @@ movr d0 3
 
 [@Ma16_exchange]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 equal d0 0
 #ACT
-take ³ïÂë 1
+take Chip 1
 ExchangeMap B108
 break
 
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 equal d0 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 ExchangeMap B114
 break
 
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 equal d0 2
 #ACT
-take ³ïÂë 1
+take Chip 1
 ExchangeMap B119
 break
 
@@ -439,9 +439,9 @@ break
 
 [@Ma17_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma17_cube
@@ -499,9 +499,9 @@ breaktimerecall
 
 [@Ma18_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma18_cube
@@ -559,9 +559,9 @@ breaktimerecall
 
 [@Ma19_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma19_cube
@@ -622,9 +622,9 @@ breaktimerecall
 
 [@Ma20_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma20_cube

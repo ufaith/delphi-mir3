@@ -32,7 +32,7 @@ goto @mugong_poison_next
 
 [@mugong_poison_next2_1]
 #IF
-checkmagic 施毒术
+checkmagic Poisoning
 #SAY
 你已经掌握了施毒术，也没有再学习的必要了。。\ \
 <Exit/@exit>
@@ -59,19 +59,19 @@ SET [502] 1
 set [503] 0
 #ELSEACT
 SET [502] 1
-take 蛆卵 20
-take 蝎子的尾巴 20
-take 食人树叶 20
-take 食人树的果实 20
-take 毒蜘蛛牙齿 20
+take MaggotEggs 20
+take ScorpionTail 20
+take CannibalLeaf 20
+take FreshFruit 20
+take SpiderTeeth 20
 Monclear 1_008
 Param1 1_008
 Param2 5
 Param3 14
-MonGen 毒蜘蛛61      3 2
-MonGen 食人花61      3 2
-MonGen 蝎子61        3 2
-MonGen 洞蛆61  3 2
+MonGen PoisonousSpider61      3 2
+MonGen Piranha61      3 2
+MonGen DeadlyScorpion61        3 2
+MonGen Maggot61  3 2
 TimeRecall 5
 map 1_008
 
@@ -107,20 +107,20 @@ goto @mugong_poison_test_next
 
 [@mugong_poison_test_chk]
 #IF
-checkitem 蛆卵 1
-checkitem 蝎子的尾巴 1
-checkitem 食人树叶 1
-checkitem 食人树的果实 1
-checkitem 毒蜘蛛牙齿 1
+checkitem MaggotEggs 1
+checkitem ScorpionTail 1
+checkitem CannibalLeaf 1
+checkitem FreshFruit 1
+checkitem SpiderTeeth 1
 #ACT
-take 蛆卵 1
-take 蝎子的尾巴 1
-take 食人树叶 1
-take 食人树的果实 1
-take 毒蜘蛛牙齿 1
+take MaggotEggs 1
+take ScorpionTail 1
+take CannibalLeaf 1
+take FreshFruit 1
+take SpiderTeeth 1
 goto @mugong_poison_test_chk_1
 #ELSESAY
-现在材料还没有找齐嘛。我需要的材料是 {FCOLOR=250}蛆卵 1,蝎子的尾巴 1,食人树叶 1,食人树的果实 1, 毒蜘蛛牙齿  1个{FCOLOR=255} 。请听好，找到再来。\ 
+现在材料还没有找齐嘛。我需要的材料是 {FCOLOR=250}MaggotEggs 1,ScorpionTail 1,CannibalLeaf 1,FreshFruit 1, SpiderTeeth  1个{FCOLOR=255} 。请听好，找到再来。\ 
 如果在规定的时间里没有找到这些材料，无法修炼施毒术。。请确认材料并告诉我。。没有剩下多少时间了。。\ \
 <Exit/@exit>
 
@@ -128,11 +128,11 @@ goto @mugong_poison_test_chk_1
 #IF
 #ACT
 set [503] 1
-take 蛆卵 20
-take 蝎子的尾巴 20
-take 食人树叶 20
-take 食人树的果实 20
-take 毒蜘蛛牙齿 20
+take MaggotEggs 20
+take ScorpionTail 20
+take CannibalLeaf 20
+take FreshFruit 20
+take SpiderTeeth 20
 #SAY
 材料都收集好了哟。。那么出去看吧。。。\ \
 <下一步/@mugong_poison_test_next>
@@ -170,9 +170,9 @@ break
 #IF
 check [717] 0
 #ACT
-give 施毒术（秘籍） 1
-give 金币 14000
-give 天仙之珠
+give Poisoning 1
+give Gold 14000
+give PearlNecklace
 reset [502] 1
 SET [717] 1
 #SAY
@@ -185,7 +185,7 @@ SET [717] 1
 {
 #IF
 #SAY
-如果想学习势毒术，处理了训练场的怪兽后，要从他们的尸体上采取 {FCOLOR=250}蛆卵,蝎子的尾巴,食人树叶,食人树的果实, 毒蜘蛛牙齿 {FCOLOR=255} 。
+如果想学习势毒术，处理了训练场的怪兽后，要从他们的尸体上采取 {FCOLOR=250}MaggotEggs,ScorpionTail,CannibalLeaf,FreshFruit, SpiderTeeth {FCOLOR=255} 。
 我将站在考场里面，把采取的毒粉交给我。然后再把你重新送到这里。\ \
 <Exit/@exit>
 }

@@ -61,12 +61,12 @@ goto @main_0_0
 
 [Goods]
 ;ItemName      Volume     Hour
-水晶魔戒 20 1
-莲花宝镜 20 1
-五彩项链 20 1
-遗魂项链 20 1
-愤怒之钟 20 1
-真善项链 20 1
+CrystalRing 20 1
+LotusMirror 20 1
+ColorfulNecklace 20 1
+SoulNecklace 20 1
+AngerBell 20 1
+FriendlyNecklace 20 1
 
 
 ;;------------------------------------------------------------------------------

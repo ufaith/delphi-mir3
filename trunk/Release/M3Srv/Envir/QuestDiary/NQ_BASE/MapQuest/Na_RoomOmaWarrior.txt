@@ -97,21 +97,21 @@ goto @enterh_omay_1
 
 [@enterh_omay_1]
 #IF
-checkitem Ω«µ— 1
+checkitem AngleFlute 1
 #ACT
 Monclear D001_001
 Param1 D001_001
 Param2 19
 Param3 12
-MonGen ∞Î ﬁ”¬ ø61 1 1
+MonGen BeastWarrior61 1 1
 Param1 D001_001
 Param2 9
 Param3 13
-MonGen ∞Î ﬁ’Ω ø61 3 2
+MonGen BeastFighter61 3 2
 Param1 D001_001
 Param2 13
 Param3 16
-MonGen ∞Î ﬁ’Ω ø61 4 2
+MonGen BeastFighter61 4 2
 SET [186] 1
 enter_ok
 #ELSESAY

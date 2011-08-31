@@ -32,7 +32,7 @@ goto @Guyonggap_start_3
 
 [@Guyonggap_start_3]
 #IF
-checkitemw ÇáÐÍ¿ø¼×£¨ÄÐ£©
+checkitemw LightArmor(M)
 #ACT
 goto @Guyonggap_start_6
 #ELSEACT
@@ -40,7 +40,7 @@ goto @Guyonggap_start_3_1
 
 [@Guyonggap_start_3_1]
 #IF
-checkitemw ÇáÐÍ¿ø¼×£¨Å®£©
+checkitemw LightArmor(F)
 #ACT
 goto @Guyonggap_start_6
 #ELSEACT
@@ -124,7 +124,7 @@ goto @Guyonggap_start_11
 
 [@Guyonggap_start_11]
 #IF
-checkitemw ÇáÐÍ¿ø¼×£¨ÄÐ£©
+checkitemw LightArmor(M)
 #ACT
 goto @Guyonggap_start_14
 #ELSEACT
@@ -132,7 +132,7 @@ goto @Guyonggap_start_11_1
 
 [@Guyonggap_start_11_1]
 #IF
-checkitemw ÇáÐÍ¿ø¼×£¨Å®£©
+checkitemw LightArmor(F)
 #ACT
 goto @Guyonggap_start_14
 #ELSEACT
@@ -240,8 +240,8 @@ set [160] 1
 #IF
 check [160] 1
 check [170] 0
-checkitem Ìú¿ó 5
-checkduraeva Ìú¿ó 13
+checkitem IronOre 5
+checkduraeva IronOre 13
 #ACT
 goto @give_iron_1
 #ELSESAY
@@ -264,11 +264,11 @@ goto @give_iron_2_2
 
 [@give_iron_2_1]
 #IF
-checkitem Ìú¿ó 5
-checkduraeva Ìú¿ó 13
+checkitem IronOre 5
+checkduraeva IronOre 13
 #ACT
-take Ìú¿ó 5
-give ÄÍ¾ÃÇáÐÍ¿ø¼×£¨ÄÐ£© 1
+take IronOre 5
+give DurableArmor(M) 1
 goto @give_iron_3
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\kyunggap.txt] @kyunggap_23
@@ -276,11 +276,11 @@ goto @give_iron_3
 
 [@give_iron_2_2]
 #IF
-checkitem Ìú¿ó 5
-checkduraeva Ìú¿ó 13
+checkitem IronOre 5
+checkduraeva IronOre 13
 #ACT
-take Ìú¿ó 5
-give ÄÍ¾ÃÇáÐÍ¿ø¼×£¨Å®£© 1
+take IronOre 5
+give DurableArmor(F) 1
 goto @give_iron_3
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\kyunggap.txt] @kyunggap_24

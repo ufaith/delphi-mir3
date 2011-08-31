@@ -31,7 +31,7 @@ mov  D1   %P9
 
 [@SRepair_Weapon]
 #IF
-checkitemw º××ì³ú 1
+checkitemw Pickaxe 1
 #ACT
 break
 
@@ -43,7 +43,7 @@ goto @SRepair_Weapon_Check
 
 [@SRepair_Weapon_Check]
 #IF
-checkitemw ·çÖ®º××ì³ú 1
+checkitemw WindPickaxe 1
 #ACT
 break
 
@@ -76,7 +76,7 @@ GetRepairCost  %D0
 Equal  D1  %P9
 #ACT
 RepairItem  %D0
-take ½ð±Ò  %P9
+take Gold  %P9
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Repair\TotalRepair.txt] @Repair_Complete
 

@@ -15,7 +15,7 @@ goto @Mu_Wizard_fire_shild_next_1
 <结束/@Mu_Wizard_fire_shild_next_5>
 [@Mu_Wizard_fire_shild_next_2]
 #IF
-checkitem 魔法盾 1
+checkitem MagicShield 1
 #ACT
 goto @Mu_Wizard_fire_shild_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Wizard_fire_shild_next_3
 [@Mu_Wizard_fire_shild_next_3]
 #IF
 checkgold 2900
-checkitem 魔法盾 1
+checkitem MagicShield 1
 #ACT
-take 魔法盾 1
-take 金币 2900
+take MagicShield 1
+take Gold 2900
 goto @Mu_Wizard_fire_shild_next_4
 #ELSESAY
 喂！我没有说我不能免费传授武功吗？难道让我挖沙子吃活着吗？快点拿学费来！\ \
@@ -42,7 +42,7 @@ random 20
 这里有秘诀。天气很热，看很旧的书进行解释，直出冷汗。下次，请拿保存状态稍好写的书来。\ \
 <Exit/@exit>
 #ELSEACT
-give 魔法盾（秘籍） 1
+give MagicShield 1
 [@Mu_Wizard_fire_shild_next_5]
 #IF
 #SAY

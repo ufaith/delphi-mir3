@@ -2,569 +2,569 @@
 [101]
 任务=找寻僵尸骨头1000个
 声望=1
-Reward_Race_60_1Th_Type1 = 魄冰刺（秘籍）
+Reward_Race_60_1Th_Type1 = Assault
 Reward_Amount_60_1Th_Type1 = 1
-Reward_Race_60_1Th_Type2 = 金币
+Reward_Race_60_1Th_Type2 = Gold
 Reward_Amount_60_1Th_Type2 = 150000
 
-Reward_Race_60_2Th_Type1 = 十方斩（秘籍）
+Reward_Race_60_2Th_Type1 = DestructSurge
 Reward_Amount_60_2Th_Type1 = 1
-Reward_Race_60_2Th_Type2 = 金币
+Reward_Race_60_2Th_Type2 = Gold
 Reward_Amount_60_2Th_Type2 = 150000
 
-Reward_Race_60_3Th_Type1 = 云寂术（秘籍）
+Reward_Race_60_3Th_Type1 = Lonesome
 Reward_Amount_60_3Th_Type1 = 1
-Reward_Race_60_3Th_Type2 = 金币
+Reward_Race_60_3Th_Type2 = Gold
 Reward_Amount_60_3Th_Type2 = 150000
 
-Reward_Race_30_1Th_Type1_Man = 骨玉权杖
+Reward_Race_30_1Th_Type1_Man = GuYuToken
 Reward_Amount_30_1Th_Type1_Man = 1
-Reward_Race_30_1Th_Type2_Man = 金币
+Reward_Race_30_1Th_Type2_Man = Gold
 Reward_Amount_30_1Th_Type2_Man = 150000
 
-Reward_Race_30_1Th_Type1_Woman = 骨玉权杖
+Reward_Race_30_1Th_Type1_Woman = GuYuToken
 Reward_Amount_30_1Th_Type1_Woman = 1
-Reward_Race_30_1Th_Type2_Woman = 金币
+Reward_Race_30_1Th_Type2_Woman = Gold
 Reward_Amount_30_1Th_Type2_Woman = 150000
 
-Reward_Race_30_2Th_Type1_Man = 无极棍
+Reward_Race_30_2Th_Type1_Man = PromiseStaff
 Reward_Amount_30_2Th_Type1_Man = 1
-Reward_Race_30_2Th_Type2_Man = 金币
+Reward_Race_30_2Th_Type2_Man = Gold
 Reward_Amount_30_2Th_Type2_Man = 150000
 
-Reward_Race_30_2Th_Type1_Woman = 无极棍
+Reward_Race_30_2Th_Type1_Woman = PromiseStaff
 Reward_Amount_30_2Th_Type1_Woman = 1
-Reward_Race_30_2Th_Type2_Woman = 金币
+Reward_Race_30_2Th_Type2_Woman = Gold
 Reward_Amount_30_2Th_Type2_Woman = 150000
 
-Reward_Race_30_3Th_Type1_Man = 裁决之杖
+Reward_Race_30_3Th_Type1_Man = RulingStick
 Reward_Amount_30_3Th_Type1_Man = 1
-Reward_Race_30_3Th_Type2_Man = 金币
+Reward_Race_30_3Th_Type2_Man = Gold
 Reward_Amount_30_3Th_Type2_Man = 150000
 
-Reward_Race_30_3Th_Type1_Woman = 裁决之杖
+Reward_Race_30_3Th_Type1_Woman = RulingStick
 Reward_Amount_30_3Th_Type1_Woman = 1
-Reward_Race_30_3Th_Type2_Woman = 金币
+Reward_Race_30_3Th_Type2_Woman = Gold
 Reward_Amount_30_3Th_Type2_Woman = 150000
 
-Reward_Race_10_1Th = 墨龙嗜魂法杖
+Reward_Race_10_1Th = SoulStaff
 Reward_Amount_10_1Th = 1
 
-Reward_Race_10_2Th = 墨龙龙纹剑
+Reward_Race_10_2Th = DragonSword
 Reward_Amount_10_2Th = 1
 
-Reward_Race_10_3Th = 墨龙屠龙
+Reward_Race_10_3Th = MolongDragon
 Reward_Amount_10_3Th = 1
 
 
 [102]
 任务=找寻蜘蛛线500个
 声望=1
-Reward_Race_80_1Th = 怒神霹雳（秘籍）
+Reward_Race_80_1Th = AngryThunder
 Reward_Amount_80_1Th = 1
 
-Reward_Race_80_2Th = 十方斩（秘籍）
+Reward_Race_80_2Th = DestructSurge
 Reward_Amount_80_2Th = 1
 
-Reward_Race_80_3Th = 云寂术（秘籍）
+Reward_Race_80_3Th = Lonesome
 Reward_Amount_80_3Th = 1
 
-Reward_Race_10_1Th = 莲丸戒指
+Reward_Race_10_1Th = LotusRing
 Reward_Amount_10_1Th = 1
 
-Reward_Race_10_2Th = 石榴戒指
+Reward_Race_10_2Th = GarnetRing
 Reward_Amount_10_2Th = 1
 
-Reward_Race_10_3Th = 魔灵戒指
+Reward_Race_10_3Th = DaimonRing
 Reward_Amount_10_3Th = 1
 
-Reward_Race_10_1Th_1 = 魔灵戒指
+Reward_Race_10_1Th_1 = DaimonRing
 Reward_Amount_10_1Th_1 = 1
 
-Reward_Race_10_2Th_1 = 莲丸戒指
+Reward_Race_10_2Th_1 = LotusRing
 Reward_Amount_10_2Th_1 = 1
 
-Reward_Race_10_2Th_1 = 石榴戒指
+Reward_Race_10_2Th_1 = GarnetRing
 Reward_Amount_10_2Th_1 = 1
 
 [103]
-任务=找寻蜘蛛线 , 僵尸骨头, 蚂蚁卵, 指甲, 宝玉 各500个
+任务=找寻蜘蛛线 , ZombieBone, AntEggs, Fingernail, Gem 各500个
 声望=2
-Reward_Race_90_1Th_Type1 = 飞魂魔刃
+Reward_Race_90_1Th_Type1 = MagicBlade
 Reward_Amount_90_1Th_Type1 = 1
-Reward_Race_90_1Th_Type2 = 金币
+Reward_Race_90_1Th_Type2 = Gold
 Reward_Amount_90_1Th_Type2 = 100000
 
-Reward_Race_90_2Th_Type1 = 封魔剑
+Reward_Race_90_2Th_Type1 = Shadowbane
 Reward_Amount_90_2Th_Type1 = 1
-Reward_Race_90_2Th_Type2 = 金币
+Reward_Race_90_2Th_Type2 = Gold
 Reward_Amount_90_2Th_Type2 = 100000
 
-Reward_Race_90_3Th_Type1 = 旋风流星刀
+Reward_Race_90_3Th_Type1 = MeteorKnife
 Reward_Amount_90_3Th_Type1 = 1
-Reward_Race_90_3Th_Type2 = 金币
+Reward_Race_90_3Th_Type2 = Gold
 Reward_Amount_90_3Th_Type2 = 100000
 
-Reward_Race_9_1Th = 心魔戒指
+Reward_Race_9_1Th = HeartRing
 Reward_Amount_9_1Th = 1
 
-Reward_Race_9_2Th = 虚空道环
+Reward_Race_9_2Th = VoidRing
 Reward_Amount_9_2Th = 1
 
-Reward_Race_9_3Th = 六棱戒
+Reward_Race_9_3Th = HexagonalRing
 Reward_Amount_9_3Th = 1
 
-Reward_Race_1_1Th = 魔令手镯 
+Reward_Race_1_1Th = EvilSpiritBracelet 
 Reward_Amount_1_1Th = 1
 
-Reward_Race_1_2Th = 六棱戒
+Reward_Race_1_2Th = HexagonalRing
 Reward_Amount_1_2Th = 1
 
-Reward_Race_1_3Th = 传送戒指
+Reward_Race_1_3Th = TeleportRing
 Reward_Amount_1_3Th = 1
 
 
 [104]
 任务=找触龙神的外皮
 声望=2
-Reward_Race_80_1Th_Type1 = 毁灭手镯 
+Reward_Race_80_1Th_Type1 = DestructionBracelet 
 Reward_Amount_80_1Th_Type1 = 1
-Reward_Race_80_1Th_Type2 = 金币
+Reward_Race_80_1Th_Type2 = Gold
 Reward_Amount_80_1Th_Type2 = 50000
 
-Reward_Race_80_2Th_Type1 = 莲丸戒指
+Reward_Race_80_2Th_Type1 = LotusRing
 Reward_Amount_80_2Th_Type1 = 1
-Reward_Race_80_2Th_Type2 = 金币
+Reward_Race_80_2Th_Type2 = Gold
 Reward_Amount_80_2Th_Type2 = 50000
 
-Reward_Race_80_1Th_Type1 = 魔灵戒指
+Reward_Race_80_1Th_Type1 = DaimonRing
 Reward_Amount_80_1Th_Type1 = 1
-Reward_Race_80_2Th_Type2 = 金币
+Reward_Race_80_2Th_Type2 = Gold
 Reward_Amount_80_2Th_Type2 = 50000
 
-Reward_Race_19_1Th_Type1 = 嗜魂法杖
+Reward_Race_19_1Th_Type1 = SoulsStaff
 Reward_Amount_19_1Th_Type1 = 1
-Reward_Race_19_1Th_Type2 = 金币
+Reward_Race_19_1Th_Type2 = Gold
 Reward_Amount_19_1Th_Type2 = 100000
 
-Reward_Race_19_2Th_Type1 = 龙纹剑
+Reward_Race_19_2Th_Type1 = DragonsSword
 Reward_Amount_19_2Th_Type1 = 1
-Reward_Race_19_2Th_Type2 = 金币
+Reward_Race_19_2Th_Type2 = Gold
 Reward_Amount_19_2Th_Type2 = 100000
 
-Reward_Race_19_3Th_Type1 = 霹雷
+Reward_Race_19_3Th_Type1 = Thunderbolt
 Reward_Amount_19_3Th_Type1 = 1
-Reward_Race_19_3Th_Type2 = 金币
+Reward_Race_19_3Th_Type2 = Gold
 Reward_Amount_19_3Th_Type2 = 100000
 
-Reward_Race_1 = 传送戒指
+Reward_Race_1 = TeleportRing
 Reward_Amount_1 = 1
 
 [105]
 任务=杀赤月恶魔
 声望=2
-Reward_Race_80_1Th = 焰天火雨（秘籍）
+Reward_Race_80_1Th = FireRain
 Reward_Amount_80_1Th = 1
 
-Reward_Race_80_2Th = 乾坤大挪移（秘籍）
+Reward_Race_80_2Th = Interchange
 Reward_Amount_80_2Th = 1
 
-Reward_Race_80_3Th = 移花接玉（秘籍）
+Reward_Race_80_3Th = Yihuajieyu
 Reward_Amount_80_3Th = 1
 
-Reward_Race_19_1Th = 飞魂魔刃
+Reward_Race_19_1Th = MagicBlade
 Reward_Amount_19_1Th = 1
 
-Reward_Race_19_2Th = 封魔剑
+Reward_Race_19_2Th = Shadowbane
 Reward_Amount_19_2Th = 1
 
-Reward_Race_19_3Th = 旋风流星刀
+Reward_Race_19_3Th = MeteorKnife
 Reward_Amount_19_3Th = 1
 
-Reward_Race_1_1Th = 旋风流星刀
+Reward_Race_1_1Th = MeteorKnife
 Reward_Amount_1_1Th = 1
 
-Reward_Race_1_2Th = 旋风流星刀
+Reward_Race_1_2Th = MeteorKnife
 Reward_Amount_1_2Th = 1
 
-Reward_Race_1_3Th = 传送戒指
+Reward_Race_1_3Th = TeleportRing
 Reward_Amount_1_3Th = 1
 
 [106]
 任务=金色栗子20个, 银色栗子20个, 铜色栗子20个,褐色栗子20个
 声望=3
-Reward_Race_90 = 流星项链
+Reward_Race_90 = MeteorsNecklace
 Reward_Amount_90 = 1
 
-Reward_Race_9 = 破血狂杀（秘籍）
+Reward_Race_9 = Might
 Reward_Amount_9 = 1
 
-Reward_Race_1_1 = 破血狂杀（秘籍）
+Reward_Race_1_1 = Might
 Reward_Amount_1_1 = 1
 
-Reward_Race_1_2 = 破血狂杀（秘籍）
+Reward_Race_1_2 = Might
 Reward_Amount_1_2 = 1
 
-Reward_Race_1_3 = 传送戒指
+Reward_Race_1_3 = TeleportRing
 Reward_Amount_1_3 = 1
 
 
 [107]
 任务=杀祖玛教主
 声望=2
-Reward_Race_75_1Th = 斗转星移（秘籍）
+Reward_Race_75_1Th = Beckon
 Reward_Amount_75_1Th = 1
 
-Reward_Race_75_2Th = 乾坤大挪移（秘籍）
+Reward_Race_75_2Th = Interchange
 Reward_Amount_75_2Th = 1
 
-Reward_Race_75_3Th = 十方斩（秘籍）
+Reward_Race_75_3Th = DestructSurge
 Reward_Amount_75_3Th = 1
 
-Reward_Race_24_1Th = 裁决之杖
+Reward_Race_24_1Th = RulingStick
 Reward_Amount_24_1Th = 1
 
-Reward_Race_24_2Th = 井中月
+Reward_Race_24_2Th = Jingzhong
 Reward_Amount_24_2Th = 1
 
-Reward_Race_24_3Th = 游戏点卷
+Reward_Race_24_3Th = GamePoints
 Reward_Amount_24_3Th = 1
 
-Reward_Race_1_1Th = 铁轮
+Reward_Race_1_1Th = IronTire
 Reward_Amount_1_1Th = 1
 
-Reward_Race_1_2Th = 逍遥扇
+Reward_Race_1_2Th = HappyFan
 Reward_Amount_1_2Th = 1
 
-Reward_Race_1_3Th = 屠龙
+Reward_Race_1_3Th = Dragon
 Reward_Amount_1_3Th = 1
 
 [108]
 任务=处理了神鬼王
 声望=1
-Reward_Race_90_1Th = 祝福油
+Reward_Race_90_1Th = BlessingOil
 Reward_Amount_90_1Th = 5
-Reward_Race_90_2Th = 回生神水
+Reward_Race_90_2Th = Resurrection
 Reward_Amount_90_2Th = 5
 
-Reward_Race_9_1Th = 诅咒银蛇
+Reward_Race_9_1Th = SnakeCurse
 Reward_Amount_9_1Th = 1
 
-Reward_Race_9_2Th = 诺玛族魔杖
+Reward_Race_9_2Th = NormaWand
 Reward_Amount_9_2Th = 1
 
-Reward_Race_9_3Th = 井中月
+Reward_Race_9_3Th = Jingzhong
 Reward_Amount_9_3Th = 1
 
-Reward_Race_1 = 铁布衫（秘籍）
+Reward_Race_1 = Defiance
 Reward_Amount_1 = 1
 
 [109]
 任务=杀潘夜牛魔王
 声望=2
-Reward_Race_90 = 游戏点卷
+Reward_Race_90 = GamePoints
 Reward_Amount_90 = 1
 
-Reward_Race_5 = 游戏点卷
+Reward_Race_5 = GamePoints
 Reward_Amount_5 = 5
 
-Reward_Race_5_1 = 心魔戒指
+Reward_Race_5_1 = HeartRing
 Reward_Amount_5_1 = 1
 
-Reward_Race_5_2 = 虚空道环
+Reward_Race_5_2 = VoidRing
 Reward_Amount_5_2 = 1
 
-Reward_Race_5_3 = 六棱戒
+Reward_Race_5_3 = HexagonalRing
 Reward_Amount_5_3 = 1
 
 [110]
 任务=杀霸王守卫
 声望=1
-Reward_Race_49 = 斗转星移（秘籍） 
+Reward_Race_49 = Beckon 
 Reward_Amount_49 = 1
 
-Reward_Race_49_1 = 青摇戒指
+Reward_Race_49_1 = GreenRing
 Reward_Amount_49_1 = 1
 
-Reward_Race_1 = 神力戒指
+Reward_Race_1 = DivineRing
 Reward_Amount_1 = 1
 
-Reward_Race_1_2 = 天赐战甲（男）
+Reward_Race_1_2 = HeavenArmor(M)
 Reward_Amount_1_2 = 1
 
-Reward_Race_1_3 = 天赐战甲（女）
+Reward_Race_1_3 = HeavenArmor(F)
 Reward_Amount_1_3 = 1
 
 
 [111]
 任务=抓诺玛突击队队长
 声望=1
-Reward_Race_80_1Th_Type1 = 诺玛族魔杖
+Reward_Race_80_1Th_Type1 = NormaWand
 Reward_Amount_80_1Th_Type1 = 1
-Reward_Race_80_1Th_Type2 = 金币
+Reward_Race_80_1Th_Type2 = Gold
 Reward_Amount_80_1Th_Type2 = 150000
 
-Reward_Race_80_2Th_Type1 = 裁决之杖
+Reward_Race_80_2Th_Type1 = RulingStick
 Reward_Amount_80_2Th_Type = 1
-Reward_Race_80_2Th_Type2 = 金币
+Reward_Race_80_2Th_Type2 = Gold
 Reward_Amount_80_2Th_Type2 = 150000
 
-Reward_Race_80_3Th_Type1 = 阴阳法环（秘籍）
+Reward_Race_80_3Th_Type1 = Masculine
 Reward_Amount_80_3Th_Type1 = 1
-Reward_Race_80_3Th_Type2 = 金币
+Reward_Race_80_3Th_Type2 = Gold
 Reward_Amount_80_3Th_Type2 = 150000
 
-Reward_Race_10 = 诺玛嗜魂法杖
+Reward_Race_10 = NormaSoulStaff
 Reward_Amount_10 = 1
 
-Reward_Race_10_1 = 诺玛屠龙
+Reward_Race_10_1 = NormaBravo
 Reward_Amount_10_1 = 1
 
 [112]
-任务=指甲 1000个
+任务=Fingernail 1000个
 声望=1
-Reward_Race_80_Type1 = 无极棍
+Reward_Race_80_Type1 = PromiseStaff
 Reward_Amount_80_Type1 = 1
-Reward_Race_80_Type2 = 金币
+Reward_Race_80_Type2 = Gold
 Reward_Amount_80_Type2 = 150000
 
-Reward_Race_19 = 虚空道环
+Reward_Race_19 = VoidRing
 Reward_Amount_19 = 1
 
-Reward_Race_1 = 霹雷
+Reward_Race_1 = Thunderbolt
 Reward_Amount_1
 
 [113]
 任务=杀沃玛教主
 声望=1
-Reward_Race_90_1Th = 祖玛骨玉权杖 
+Reward_Race_90_1Th = ZumaToken 
 Reward_Amount_90_1Th = 1
 
-Reward_Race_90_2Th = 祖玛裁决之杖 
+Reward_Race_90_2Th = ZumaRuling 
 Reward_Amount_90_2Th = 1
 
-Reward_Race_90_3Th = 祖玛无极棍
+Reward_Race_90_3Th = ZumaStick
 Reward_Amount_90_3Th = 1
 
-Reward_Race_9 = 游戏点卷
+Reward_Race_9 = GamePoints
 Reward_Amount_9 = 2
 
-Reward_Race_1 = 破坏项链
+Reward_Race_1 = DamageNecklace
 Reward_Amount_1 = 1
 
 [114]
 任务=找寻500个潘夜珠
 声望=2
-Reward_Race_90_1Th_Type1_Man = 袁灵法衣（男）
+Reward_Race_90_1Th_Type1_Man = VestmentArmor(M)
 Reward_Amount_90_1Th_Type1_Man = 1
-Reward_Race_90_1Th_Type2_Man = 金币
+Reward_Race_90_1Th_Type2_Man = Gold
 Reward_Amount_90_1Th_Type2_Man = 150000
 
-Reward_Race_90_1Th_Type1_WoMan = 袁灵法衣（女）
+Reward_Race_90_1Th_Type1_WoMan = VestmentArmor(F)
 Reward_Amount_90_1Th_Type1_WoMan = 1
-Reward_Race_90_1Th_Type2_WoMan = 金币
+Reward_Race_90_1Th_Type2_WoMan = Gold
 Reward_Amount_90_1Th_Type2_WoMan = 150000
 
-Reward_Race_90_2Th_Type1_Man = 天极道衣（男）
+Reward_Race_90_2Th_Type1_Man = CelestialArmor(M)
 Reward_Amount_90_2Th_Type1_Man = 1
-Reward_Race_90_2Th_Type2_Man = 金币
+Reward_Race_90_2Th_Type2_Man = Gold
 Reward_Amount_90_2Th_Type2_Man = 150000
 
-Reward_Race_90_2Th_Type1_WoMan = 天极道衣（女）
+Reward_Race_90_2Th_Type1_WoMan = CelestialArmor(F)
 Reward_Amount_90_2Th_Type1_WoMan = 1
-Reward_Race_90_2Th_Type2_WoMan = 金币
+Reward_Race_90_2Th_Type2_WoMan = Gold
 Reward_Amount_90_2Th_Type2_WoMan = 150000
 
-Reward_Race_90_3Th_Type1_Man = 龙鳞战甲（男）
+Reward_Race_90_3Th_Type1_Man = DragonArmor(M)
 Reward_Amount_90_3Th_Type1_Man = 1
-Reward_Race_90_3Th_Type2_Man = 金币
+Reward_Race_90_3Th_Type2_Man = Gold
 Reward_Amount_90_3Th_Type2_Man = 150000
 
-Reward_Race_90_3Th_Type1_WoMan = 龙鳞战甲（女）
+Reward_Race_90_3Th_Type1_WoMan = DragonArmor(F)
 Reward_Amount_90_3Th_Type1_WoMan = 1
-Reward_Race_90_3Th_Type2_WoMan = 金币
+Reward_Race_90_3Th_Type2_WoMan = Gold
 Reward_Amount_90_3Th_Type2_WoMan = 150000
 
-Reward_Race_9 = 月光鞋
+Reward_Race_9 = MoonBoots
 Reward_Amount_9 = 1
 
-Reward_Race_1 = 毁灭手镯
+Reward_Race_1 = DestructionBracelet
 Reward_Amount_1 = 1
 
 [115]
 任务=杀死霸王教主
 声望=3
-Reward_Race_80_1Th = 飞魂魔刃
+Reward_Race_80_1Th = MagicBlade
 Reward_Amount_80_1Th = 1
 
-Reward_Race_80_2Th = 封魔剑
+Reward_Race_80_2Th = Shadowbane
 Reward_Amount_80_2Th = 1
 
-Reward_Race_80_3Th = 旋风流星刀
+Reward_Race_80_3Th = MeteorKnife
 Reward_Amount_80_3Th = 1
 
-Reward_Race_15_1Th = 铁轮
+Reward_Race_15_1Th = IronTire
 Reward_Amount_15_1Th = 1
 
-Reward_Race_15_2Th = 龙纹剑
+Reward_Race_15_2Th = DragonsSword
 Reward_Amount_15_2Th = 1
 
-Reward_Race_15_3Th = 霹雷
+Reward_Race_15_3Th = Thunderbolt
 Reward_Amount_15_3Th = 1
 
-Reward_Race_5_1Th = 神力戒指
+Reward_Race_5_1Th = DivineRing
 Reward_Amount_5_1Th = 1
 
-Reward_Race_5_2Th = 神力戒指
+Reward_Race_5_2Th = DivineRing
 Reward_Amount_5_2Th = 1
 
-Reward_Race_5_3Th = 传送戒指
+Reward_Race_5_3Th = TeleportRing
 Reward_Amount_5_3Th = 1
 
 [116]
-任务=七点白蛇牙齿 50个
+任务=WhiteSnakeTeeth 50个
 声望=2
-Reward_Race_80_Type1 = 气血项链
+Reward_Race_80_Type1 = BloodNecklace
 Reward_Amount_80_Type1 = 1
-Reward_Race_80_Type2 = 金币
+Reward_Race_80_Type2 = Gold
 Reward_Amount_80_Type2 = 150000
 
-Reward_Race_19_1Th = 铁轮
+Reward_Race_19_1Th = IronTire
 Reward_Amount_19_1Th = 1
 
-Reward_Race_19_2Th = 龙纹剑
+Reward_Race_19_2Th = DragonsSword
 Reward_Amount_19_2Th = 1
 
-Reward_Race_19_3Th = 霹雷
+Reward_Race_19_3Th = Thunderbolt
 Reward_Amount_19_3Th = 1
 
-Reward_Race_1 = 传送戒指
+Reward_Race_1 = TeleportRing
 Reward_Amount_1 = 1
 
 
 [117]
-任务=祖玛卫士雕像 300个
+任务=ZumaGuardianStatue 300个
 声望=2
-Reward_Race_90_1Th_Type1_Man = 乾坤大挪移（秘籍）
+Reward_Race_90_1Th_Type1_Man = Interchange
 Reward_Amount_90_1Th_Type1_Man = 1
-Reward_Race_90_1Th_Type2_Man = 金币
+Reward_Race_90_1Th_Type2_Man = Gold
 Reward_Amount_90_1Th_Type2_Man = 150000
 
-Reward_Race_90_1Th_Type1_Woman = 乾坤大挪移（秘籍）
+Reward_Race_90_1Th_Type1_Woman = Interchange
 Reward_Amount_90_1Th_Type1_Woman = 1
-Reward_Race_90_1Th_Type2_Woman = 金币
+Reward_Race_90_1Th_Type2_Woman = Gold
 Reward_Amount_90_1Th_Type2_Woman = 150000
 
-Reward_Race_90_2Th_Type1_Man = 乾坤大挪移（秘籍）
+Reward_Race_90_2Th_Type1_Man = Interchange
 Reward_Amount_90_2Th_Type1_Man = 1
-Reward_Race_90_2Th_Type2_Man = 金币
+Reward_Race_90_2Th_Type2_Man = Gold
 Reward_Amount_90_2Th_Type2_Man = 150000
 
-Reward_Race_90_2Th_Type1_Woman = 乾坤大挪移（秘籍）
+Reward_Race_90_2Th_Type1_Woman = Interchange
 Reward_Amount_90_2Th_Type1_Woman = 1
-Reward_Race_90_2Th_Type2_Woman = 金币
+Reward_Race_90_2Th_Type2_Woman = Gold
 Reward_Amount_90_2Th_Type2_Woman = 150000
 
-Reward_Race_90_3Th_Type1_Man = 斗转星移（秘籍）
+Reward_Race_90_3Th_Type1_Man = Beckon
 Reward_Amount_90_3Th_Type1_Man = 1
-Reward_Race_90_3Th_Type2_Man = 金币
+Reward_Race_90_3Th_Type2_Man = Gold
 Reward_Amount_90_3Th_Type2_Man = 150000
 
-Reward_Race_90_3Th_Type1_Woman = 斗转星移（秘籍）
+Reward_Race_90_3Th_Type1_Woman = Beckon
 Reward_Amount_90_3Th_Type1_Woman = 1
-Reward_Race_90_3Th_Type2_Woman = 金币
+Reward_Race_90_3Th_Type2_Woman = Gold
 Reward_Amount_90_3Th_Type2_Woman = 150000
 
-Reward_Race_5 = 骨玉权杖
+Reward_Race_5 = GuYuToken
 Reward_Amount_5 = 1
 
-Reward_Race_5_1 = 骨玉权杖
+Reward_Race_5_1 = GuYuToken
 Reward_Amount_5_1 = 1
 
 [118]
 任务=找寻血巨人心脏300个
 声望=2
-Reward_Race_90_1Th_Type1_Man = 斗转星移（秘籍）
+Reward_Race_90_1Th_Type1_Man = Beckon
 Reward_Amount_90_1Th_Type1_Man = 1
-Reward_Race_90_1Th_Type2_Man = 金币
+Reward_Race_90_1Th_Type2_Man = Gold
 Reward_Amount_90_1Th_Type2_Man = 150000
 
-Reward_Race_90_1Th_Type1_WoMan = 乾坤大挪移（秘籍）
+Reward_Race_90_1Th_Type1_WoMan = Interchange
 Reward_Amount_90_1Th_Type1_WoMan = 1
-Reward_Race_90_1Th_Type2_WoMan = 金币
+Reward_Race_90_1Th_Type2_WoMan = Gold
 Reward_Amount_90_1Th_Type2_WoMan = 150000
 
-Reward_Race_90_2Th_Type1_Man = 焰天火雨（秘籍）
+Reward_Race_90_2Th_Type1_Man = FireRain
 Reward_Amount_90_2Th_Type1_Man = 1
-Reward_Race_90_2Th_Type2_Man = 金币
+Reward_Race_90_2Th_Type2_Man = Gold
 Reward_Amount_90_2Th_Type2_Man = 150000
-Reward_Race_90_2Th_Type1_WoMan = 乾坤大挪移（秘籍）
+Reward_Race_90_2Th_Type1_WoMan = Interchange
 Reward_Amount_90_2Th_Type1_WoMan
-Reward_Race_90_2Th_Type2_WoMan = 金币
+Reward_Race_90_2Th_Type2_WoMan = Gold
 Reward_Amount_90_2Th_Type2_WoMan = 150000
 
-Reward_Race_90_3Th_Type1_Man =斗转星移（秘籍）
+Reward_Race_90_3Th_Type1_Man =Beckon
 Reward_Amount_90_3Th_Type1_Man = 1
-Reward_Race_90_3Th_Type2_Man = 金币
+Reward_Race_90_3Th_Type2_Man = Gold
 Reward_Amount_90_3Th_Type2_Man = 150000
 
-Reward_Race_90_3Th_Type1_WoMan = 焰天火雨（秘籍）
+Reward_Race_90_3Th_Type1_WoMan = FireRain
 Reward_Amount_90_3Th_Type1_WoMan = 1
-Reward_Race_90_3Th_Type2_WoMan = 金币
+Reward_Race_90_3Th_Type2_WoMan = Gold
 Reward_Amount_90_3Th_Type2_WoMan = 150000
 
-Reward_Race_9 = 骨玉权杖
+Reward_Race_9 = GuYuToken
 Reward_Amount_9 = 1
 
-Reward_Race_1 = 屠龙
+Reward_Race_1 = Dragon
 Reward_Amount_1 = 1
 
 [119]
 任务=收集300个石人心核
 声望=2
-Reward_Race_80_1Th = 井中月
+Reward_Race_80_1Th = Jingzhong
 Reward_Amount_80_1Th = 1
 
-Reward_Race_80_2Th = 祖玛裁决之杖
+Reward_Race_80_2Th = ZumaRuling
 Reward_Amount_80_2Th = 1
 
-Reward_Race_80_3Th = 裁决之杖
+Reward_Race_80_3Th = RulingStick
 Reward_Amount_80_3Th = 1
 
-Reward_Race_19_1Th = 魔灵戒指
+Reward_Race_19_1Th = DaimonRing
 Reward_Amount_19_1Th = 1
-Reward_Race_19_1Th_1 = 金币
+Reward_Race_19_1Th_1 = Gold
 Reward_Amount_19_1Th_1 = 100000
 
-Reward_Race_19_2Th = 天机戒指
+Reward_Race_19_2Th = SecretRing
 Reward_Amount_19_2Th = 2
-Reward_Race_19_2Th_1 = 金币
+Reward_Race_19_2Th_1 = Gold
 Reward_Amount_19_2Th_1 = 100000
 
-Reward_Race_19_3Th = 乾坤一气
+Reward_Race_19_3Th = UniverseStretch
 Reward_Amount_19_3Th = 1
-Reward_Race_19_3Th = 金币
+Reward_Race_19_3Th = Gold
 Reward_Amount_19_3Th = 100000
 
-Reward_Race_1 = 逍遥扇
+Reward_Race_1 = HappyFan
 Reward_Amount_1 = 1
 
 [120]
 任务=杀骷髅教主
 声望=1
-Reward_Race_90 = 月光鞋
+Reward_Race_90 = MoonBoots
 Reward_Amount_90 = 1
 
-Reward_Race_9_1Th = 诺玛族魔杖
+Reward_Race_9_1Th = NormaWand
 Reward_Amount_9_1Th = 1
 
-Reward_Race_9_2Th = 无极棍
+Reward_Race_9_2Th = PromiseStaff
 Reward_Amount_9_2Th = 1
 
-Reward_Race_9_3Th = 旋风流星刀
+Reward_Race_9_3Th = MeteorKnife
 Reward_Amount_9_3Th = 1
 
-Reward_Race_1 = 虚空道环
+Reward_Race_1 = VoidRing
 Reward_Amount_1 = 1
 
 

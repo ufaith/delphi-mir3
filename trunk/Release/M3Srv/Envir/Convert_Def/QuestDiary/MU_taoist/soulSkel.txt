@@ -17,7 +17,7 @@
 [@soulSkel_3]
 {
 感受到保护你的正气了吧!\ 
-你已经修炼了 {FCOLOR=250}召唤骷髅{FCOLOR=255} ，也没有必要在接受我的指教了。
+你已经修炼了 {FCOLOR=250}SummonTaoLord{FCOLOR=255} ，也没有必要在接受我的指教了。
 <Exit/@exit>
 }
 

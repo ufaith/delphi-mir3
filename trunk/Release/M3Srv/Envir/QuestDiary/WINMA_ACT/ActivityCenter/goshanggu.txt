@@ -1,10 +1,10 @@
 ;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
 [@main]
 #IF
-checkitem 神秘钥匙 1
+checkitem SecretKey 1
 #ACT
 TimeRecall 120
-take 神秘钥匙 1
+take SecretKey 1
 enter_ok
 #ELSESAY
 （看来这里受魔咒的控制，无法进入。。。）\\

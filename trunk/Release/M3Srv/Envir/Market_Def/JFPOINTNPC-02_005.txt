@@ -8,15 +8,15 @@
 <全民冲级/@冲ji>\\
 ;<清理地面/@cleardaox>\
 <地图清怪/@地图清理怪1>\\
-<魔晶石/@撒雪球0>\
-<玫瑰/@撒玫瑰0>\
-<攻击糖果/@肉粽0>\
-<魔法糖果/@豆粽0>\
-<灵魂糖果/@白粽0>\
-<体力糖果/@小枣粽0>\
-<疾风糖果/@豆沙粽0>\
-;<月饼（魔力）/@沙粽0>\
-<金条/@金条0>\
+<Spar/@撒雪球0>\
+<Rose/@撒玫瑰0>\
+<AttackCandy/@肉粽0>\
+<MagicCandy/@豆粽0>\
+<SoulCandy/@白粽0>\
+<PhysicalCandy/@小枣粽0>\
+<BlastCandy/@豆沙粽0>\
+;<MoonCake(Magic)/@沙粽0>\
+<GoldBar/@金条0>\
 <环式任务测试/@跑环x>\\
 <修复不能兑换天地人/@清二环>\
 <清除一环标签/@清一环>\
@@ -441,37 +441,37 @@ SYSMSG "已经清除怪物！"
 
 [@撒雪球0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 魔晶石 1  10
+DropItemMap "zqhd, 47, 34, 40" Spar 1  10
 
 [@撒玫瑰0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 玫瑰 1  50
+DropItemMap "zqhd, 47, 34, 40" Rose 1  50
 
 
 [@肉粽0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 攻击糖果 1  10
+DropItemMap "zqhd, 47, 34, 40" AttackCandy 1  10
 
 [@豆粽0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 魔法糖果 1  10
+DropItemMap "zqhd, 47, 34, 40" MagicCandy 1  10
 
 
 [@白粽0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 灵魂糖果 1  10
+DropItemMap "zqhd, 47, 34, 40" SoulCandy 1  10
 
 
 [@小枣粽0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 体力糖果 1  10
+DropItemMap "zqhd, 47, 34, 40" PhysicalCandy 1  10
 
 
 [@豆沙粽0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 疾风糖果 1  10
+DropItemMap "zqhd, 47, 34, 40" BlastCandy 1  10
 
 
 [@金条0]
 #ACT
-DropItemMap "zqhd, 47, 34, 40" 金条 1  100
+DropItemMap "zqhd, 47, 34, 40" GoldBar 1  100

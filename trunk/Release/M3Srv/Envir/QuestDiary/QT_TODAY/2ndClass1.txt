@@ -956,8 +956,8 @@ check [307] 1
 
 [@227_CHECK1_2]
 #IF
-checkitem Ìú¿ó 5
-checkduraeva Ìú¿ó 15
+checkitem IronOre 5
+checkduraeva IronOre 15
 #ACT
 goto @227_CHECK1_2_1
 #ELSESAY
@@ -965,8 +965,8 @@ goto @227_CHECK1_2_1
 
 [@227_CHECK1_2_1]
 #IF
-checkitem ºÚÌú 5
-checkduraeva ºÚÌú 15
+checkitem BlackIronOre 5
+checkduraeva BlackIronOre 15
 #ACT
 goto @227_CHECK1_2_2
 #ELSESAY
@@ -984,8 +984,8 @@ goto @227_CHECK1_3
 #IF
 check [310] 0
 check [307] 1
-checkitem Ìú¿ó 5
-checkitem ºÚÌú 5
+checkitem IronOre 5
+checkitem BlackIronOre 5
 #ACT
 movr s0 100
 inc s0 1
@@ -1001,16 +1001,16 @@ break
 #IF
 check [310] 0
 check [307] 1
-checkitem Ìú¿ó 5
-checkitem ºÚÌú 5
+checkitem IronOre 5
+checkitem BlackIronOre 5
 small s0 10
 #ACT
 	LoadValue A0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Race_10_Type1_1]
 	LoadValue D0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Amount_10_Type1_1]
 	Give %A0 %D0
 	Mov A0 0
-take Ìú¿ó 5
-take ºÚÌú 5
+take IronOre 5
+take BlackIronOre 5
 reset [307] 2
 set [310] 1
 GOTO @½±ÀøÉùÍû
@@ -1026,15 +1026,15 @@ goto @227_Reward_Second
 Large S0 79
 check [310] 0
 check [307] 1
-checkitem Ìú¿ó 5
-checkitem ºÚÌú 5
+checkitem IronOre 5
+checkitem BlackIronOre 5
 #ACT
 	LoadValue A0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Race_20_Type1_1]
 	LoadValue D0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Amount_20_Type1_1]
 	Give %A0 %D0
 	Mov A0 0
-take Ìú¿ó 5
-take ºÚÌú 5
+take IronOre 5
+take BlackIronOre 5
 give ½ð±Ò 140000
 ;
 reset [307] 2
@@ -1050,8 +1050,8 @@ mov s0 0
 	LoadValue D0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Amount_70_Type1_1]
 	Give %A0 %D0
 	Mov A0 0
-take Ìú¿ó 5
-take ºÚÌú 5
+take IronOre 5
+take BlackIronOre 5
 give ½ð±Ò 140000
 ;
 reset [307] 2

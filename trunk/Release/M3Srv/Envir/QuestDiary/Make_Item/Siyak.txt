@@ -9,11 +9,11 @@
 
 [@Make_Potion_HPPotionS]
 #IF
-checkitem ÉÕ¾Æ 1
-checkitem ¶¾Éßµ¨Ö­ 6
+checkitem Liquor 1
+checkitem SnakeBile 6
 #ACT
-take ÉÕ¾Æ 1
-take ¶¾Éßµ¨Ö­ 6
+take Liquor 1
+take SnakeBile 6
 give Ã¼·ÂÈ¸º¹¾à(¼Ò) 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_2
@@ -26,11 +26,11 @@ give Ã¼·ÂÈ¸º¹¾à(¼Ò) 10
 
 [@Make_Potion_HPPotionM]
 #IF
-checkitem ÉÕ¾Æ 1
-checkitem ÷¼÷Ã¹Ç 10
+checkitem Liquor 1
+checkitem SkeltonBone 10
 #ACT
-take ÉÕ¾Æ 1
-take ÷¼÷Ã¹Ç 10
+take Liquor 1
+take SkeltonBone 10
 mov d0 0
 goto @Make_Potion_HPPotionM_1
 #ELSESAY
@@ -58,7 +58,7 @@ mov d0 0
 [@Make_Potion_HPPotionM_3]
 #IF
 #ACT
-give ½ð´´Ò©£¨ÖÐ£© 10
+give HPPotion(M) 10
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_6
@@ -68,13 +68,13 @@ mov d0 0
 
 [@Make_Potion_HPPotionL]
 #IF
-checkitem ÂìÒÏÂÑ 3
-checkitem ÉÕ¾Æ 2
-checkitem ÑÀ³Ý 3
+checkitem AntEggs 3
+checkitem Liquor 2
+checkitem Tooth 3
 #ACT
-take ÂìÒÏÂÑ 3
-take ÉÕ¾Æ 2
-take ÑÀ³Ý 3
+take AntEggs 3
+take Liquor 2
+take Tooth 3
 mov d0 0
 goto @Make_Potion_HPPotionL_1
 #ELSESAY
@@ -102,7 +102,7 @@ mov d0 0
 [@Make_Potion_HPPotionL_3]
 #IF
 #ACT
-give ½ð´´Ò©£¨´ó£© 10
+give HPPotion(L) 10
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_9
@@ -113,14 +113,14 @@ mov d0 0
 [@Make_Potion_HPPotionXL]
 #IF
 checkitem Ò¹Ã÷Öé 3
-checkitem ÉÕ¾Æ 3
-checkitem ÉñÁéµñÏñ 3
-checkitem ÅËÒ¹Ö®Àá 4
+checkitem Liquor 3
+checkitem GodsStatue 3
+checkitem NightTears 4
 #ACT
 take Ò¹Ã÷Öé 3
-take ÉÕ¾Æ 3
-take ÉñÁéµñÏñ 3
-take ÅËÒ¹Ö®Àá 4
+take Liquor 3
+take GodsStatue 3
+take NightTears 4
 mov d0 0
 goto @Make_Potion_HPPotionXL_1
 #ELSESAY
@@ -148,7 +148,7 @@ mov d0 0
 [@Make_Potion_HPPotionXL_3]
 #IF
 #ACT
-give ½ð´´Ò©£¨ÌØ£© 10
+give HPPotion(XL) 10
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_12
@@ -159,12 +159,12 @@ mov d0 0
 
 [@Make_Potion_MPPotionS]
 #IF
-checkitem ÷¼÷Ã¹Ç 3
-checkitem ÉÕ¾Æ 1
+checkitem SkeltonBone 3
+checkitem Liquor 1
 #ACT
-take ÷¼÷Ã¹Ç 3
-take ÉÕ¾Æ 1
-give Ä§·¨Ò©£¨Ð¡£© 10
+take SkeltonBone 3
+take Liquor 1
+give MPPotion(S) 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_13
 
@@ -178,11 +178,11 @@ give Ä§·¨Ò©£¨Ð¡£© 10
 
 [@Make_Potion_MPPotionM]
 #IF
-checkitem ½©Ê¬¹ÇÍ· 5
-checkitem ÉÕ¾Æ 1
+checkitem ZombieBone 5
+checkitem Liquor 1
 #ACT
-take ½©Ê¬¹ÇÍ· 5
-take ÉÕ¾Æ 1
+take ZombieBone 5
+take Liquor 1
 mov d0 0
 goto @Make_Potion_MPPotionM_1
 #ELSESAY
@@ -210,7 +210,7 @@ mov d0 0
 [@Make_Potion_MPPotionM_3]
 #IF
 #ACT
-give Ä§·¨Ò©£¨ÖÐ£© 10
+give MPPotion(M) 10
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_17
@@ -220,13 +220,13 @@ mov d0 0
 
 [@Make_Potion_MPPotionL]
 #IF
-checkitem ºÅ½Ç 3
-checkitem ÑÀ³Ý 3
-checkitem ÉÕ¾Æ 2
+checkitem Horn 3
+checkitem Tooth 3
+checkitem Liquor 2
 #ACT
-take ºÅ½Ç 3
-take ÑÀ³Ý 3
-take ÉÕ¾Æ 2
+take Horn 3
+take Tooth 3
+take Liquor 2
 mov d0 0
 goto @Make_Potion_MPPotionL_1
 #ELSESAY
@@ -254,7 +254,7 @@ mov d0 0
 [@Make_Potion_MPPotionL_3]
 #IF
 #ACT
-give Ä§·¨Ò©£¨´ó£© 10
+give MPPotion(L) 10
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_20
@@ -264,13 +264,13 @@ mov d0 0
 
 [@Make_Potion_MPPotionXL]
 #IF
-checkitem ÉÕ¾Æ 3
-checkitem ÉñÁéµñÏñ 4
-checkitem ±¦Óñ 6
+checkitem Liquor 3
+checkitem GodsStatue 4
+checkitem Gem 6
 #ACT
-take ÉÕ¾Æ 3
-take ÉñÁéµñÏñ 4
-take ±¦Óñ 6
+take Liquor 3
+take GodsStatue 4
+take Gem 6
 mov d0 0
 goto @Make_Potion_MPPotionXL_1
 #ELSESAY
@@ -298,7 +298,7 @@ mov d0 0
 [@Make_Potion_MPPotionXL_3]
 #IF
 #ACT
-give Ä§·¨Ò©£¨ÌØ£© 10
+give MPPotion(XL) 10
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Siyak.txt] @Siyak_23

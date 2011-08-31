@@ -32,5 +32,5 @@ break
 #ELSESAY
 	#INCLUDE [..\convert_Def\Market_Def\09HorseMarket_Encore-9.txt] @NPC_BuyHorseWhite_Complete
 #ELSEACT
-take ½ð±Ò 20000000
-horsecall °×Âí
+take Gold 20000000
+horsecall WhiteHorse

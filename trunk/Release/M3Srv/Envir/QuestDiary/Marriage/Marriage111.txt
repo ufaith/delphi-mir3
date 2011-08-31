@@ -81,7 +81,7 @@ break
 #IF
 CheckGold 500000
 #ACT
-Take 金币 500000
+Take Gold 500000
 mov N57{GIRL} 1
 mov B2{GIRLNAME} %USERNAME
 SysMsg "结婚申请完成了。"
@@ -139,7 +139,7 @@ SysMsg "婚礼费用不够，需要50万金币。"
 close
 break
 #ELSEACT
-Take 金币 500000
+Take Gold 500000
 mov B1{MANNAME} %USERNAME
 mov B3{INPUTGIRLNAME} %B5
 mov N56{MAN} 1
@@ -212,7 +212,7 @@ BREAK
 #IF
 checkgold 5000000
 #ACT
-take 金币 5000000
+take Gold 5000000
 Divorce
 close
 
@@ -227,7 +227,7 @@ close
 #IF
 checkgold 200000
 #ACT
-take 金币 200000
+take Gold 200000
 CancelMarriageRing
 SysMsg "结婚戒指的功能消失了。"
 close

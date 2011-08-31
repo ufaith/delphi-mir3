@@ -38,16 +38,16 @@
 [@GMSettingStartIsland]
 #IF
 #ACT
-	MonClear "Island02" "猿猴战士"                           ; 葛电 阁胶磐 昏力
-	MonClear "Island02" "猿猴战将"
-	MonClear "Island02" "魔神怪1"
-	MonClear "Island02" "聚宝箱4"
+	MonClear "Island02" "MonkeyFighter"                           ; 葛电 阁胶磐 昏力
+	MonClear "Island02" "MonkeyWarrior"
+	MonClear "Island02" "SpiritGhost1"
+	MonClear "Island02" "PolyChest4"
 	ResetMapAttr "Island02"                                ; 捞亥飘甘 加己(SetEventMap)鳖瘤 檬扁拳凳
-	ClearItemMap "Island02, 100, 100, 9999" 金币
+	ClearItemMap "Island02, 100, 100, 9999" Gold
 	SetEventDamage Island02  5                             ; 5硅 单固瘤
 	SetEventMap  "Island02"                                ; new cmd 捞亥飘甘栏肺 父惦 (ResetEventMap)
 	ChangeMapAttr  "Island02" "NOCHAT"                     ; 盲泼阑 且荐 绝霸 技泼
-	SendCmd  "Island02, 95, 135, 5"  生存游戏场美眉  Hide
+	SendCmd  "Island02, 95, 135, 5"  生存游戏场美眉  Invisibility
 	LoadValue A0 [Convert_Def\QuestDiary\Event\Island\GmStart.txt] [Event_Island_GmStart_EventMsg] [Msg1]
 	LineMsg  "Grobal"  %A0
 	goto @GenMonkeys                                       ; 阁胶磐 哩 包府 何盒
@@ -73,10 +73,10 @@ end
 [@FinishConFirm]
 begin
   #ACT
-		MonClear "Island02" "猿猴战士"                           ; 葛电 阁胶磐 昏力
-		MonClear "Island02" "猿猴战将"
-		MonClear "Island02" "魔神怪1"
-		MonClear "Island02" "聚宝箱4"
+		MonClear "Island02" "MonkeyFighter"                           ; 葛电 阁胶磐 昏力
+		MonClear "Island02" "MonkeyWarrior"
+		MonClear "Island02" "SpiritGhost1"
+		MonClear "Island02" "PolyChest4"
    	LoadValue A0 [Convert_Def\QuestDiary\Event\Island\GmStart.txt] [Event_Island_GmStart_EventMsg] [Msg2]
    	LoadValue A1 [Convert_Def\QuestDiary\Event\Island\GmStart.txt] [Event_Island_GmStart_EventMsg] [Msg3]
 		LineMsg  "Grobal"  %A0

@@ -358,7 +358,7 @@ goto @INVITE_GUARD1_1
 
 [@INVITE_GUARD1_1]
 #IF
-checkitem …’æ∆ 1
+checkitem Liquor 1
 #ACT
 goto @INVITE_GUARD1_2_1
 #ELSESAY
@@ -377,9 +377,9 @@ gender man
 
 [@INVITE_GUARD1_3]
 #IF
-checkitem …’æ∆ 1
+checkitem Liquor 1
 #ACT
-take …’æ∆ 1
+take Liquor 1
 goto @INVITE_GUARD1_4
 set [136] 1
 #ELSEACT
@@ -417,7 +417,7 @@ set [137] 1
 
 [@INVITE_GUARD1_8]
 #IF
-checkitem …’æ∆ 1
+checkitem Liquor 1
 #ACT
 goto  @INVITE_GUARD1_9
 #ELSESAY
@@ -434,9 +434,9 @@ check [134] 1
 
 [@INVITE_GUARD1_10]
 #IF
-checkitem …’æ∆ 1
+checkitem Liquor 1
 #ACT
-take …’æ∆ 1
+take Liquor 1
 set [138] 1
 goto @INVITE_GUARD1_11
 #ELSESAY
@@ -463,7 +463,7 @@ check [134] 1
 #IF
 checkgold 100
 #ACT
-take Ω±“ 100
+take Gold 100
 goto @INVITE_GUARD1_15
 #ELSEACT
 goto @INVITE_GUARD1_16
@@ -623,7 +623,7 @@ check [145] 0
 check [134] 1
 checkgold 100
 #ACT
-take Ω±“ 100
+take Gold 100
 set [141] 1
 goto @INVITE_GUARD3_5
 #ELSEACT
@@ -682,16 +682,16 @@ check [145] 0
 check [134] 1
 #ACT
 set [143] 1
-give Ω±“ 1
+give Gold 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\bichun.txt] @bichun_67
 
 
 [@INVITE_GUARD3_20]
 #IF
-checkitem …’æ∆ 5
+checkitem Liquor 5
 #ACT
-take …’æ∆ 5
+take Liquor 5
 set [144] 1
 goto @INVITE_GUARD3_21
 #ELSEACT
@@ -699,7 +699,7 @@ goto @INVITE_GUARD3_20_1
 
 [@INVITE_GUARD3_20_1]
 #IF
-checkitem …’æ∆ 1
+checkitem Liquor 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\bichun.txt] @bichun_68
 

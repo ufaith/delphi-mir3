@@ -1,0 +1,77 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/4   Gold  1800
+1/80  FirnFrost
+1/80  FirnFrost
+1/10   HPPotion(L)
+1/40  MPPotion(L)
+1/20  HPPotion(XL)
+1/80  MPPotion(XL)
+
+1/10  Relics
+
+1/500   BlackGlove
+
+1/500   SkiesNecklace
+1/500   SilverMirrorNecklace
+
+1/500   ColorfulNecklace
+1/500   SoulNecklace
+1/500   WarriorNecklace
+
+1/500   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/1000   FortunatelyRing
+
+1/1000   DevilRobe(M)
+1/1000   DevilRobe(F)
+1/1000   WarArmor(M)
+1/1000   WarArmor(F)
+1/1000   SpecterArmor(M)
+1/1000   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/4000  CelestialArmor(M)
+1/4000  CelestialArmor(F)
+1/4000  DragonArmor(M)
+1/4000  DragonArmor(F)
+1/4000  VestmentArmor(M)
+1/4000  VestmentArmor(F)
+
+1/80000 HeavenArmor(M)   
+1/80000 HeavenArmor(F)  
+1/150000 MasterArmor(M)
+1/150000 MasterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/400001  槿낸썰寧
+1/400002  StarBracelet
+1/400003  StarNecklace
+1/400004  HolyHeartRing
+1/400005  HolyHeartBracelet
+1/400006  HolyHeartNecklace
+1/400007  WarDaysRing
+1/400008  WarDaysBracelet
+1/400009  WarDaysNecklace
+
+1/2000   BraveMedal
+1/6000   VenerableMedal
+1/12000  KingMedal
+
+1/200000   GoldBoots
+1/200000   HeavenBoots
+1/200000   DragonBoots
+1/9000    Chest
+
+1/400000  AlloyHelmet
+1/400000  KirinHelmet
+1/300000  BattleBoots
+1/300000  WhiteBoots

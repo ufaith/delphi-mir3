@@ -28,8 +28,8 @@ goto @WomanCloth
 #IF
 checkgold 50000
 #ACT
-take 金币 50000
-give 新年吉服（男） 1
+take Gold 50000
+give FestiveArmor(M) 1
 #SAY
  哦，是位先生，迎接新春佳节，我们商会准备了新年吉服。
  服装轻而坚固，您会发现比一般的盔甲性能好很多。\\
@@ -39,8 +39,8 @@ give 新年吉服（男） 1
 #IF
 checkgold 50000
 #ACT
-take 金币 50000
-give 新年吉服（女） 1
+take Gold 50000
+give FestiveArmor(F) 1
 #SAY
  您购买了美丽的女士专用新年吉服，服装轻而坚固。
  相信您会满意的。\\

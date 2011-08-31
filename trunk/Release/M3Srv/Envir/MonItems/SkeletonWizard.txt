@@ -1,0 +1,85 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/10000   Spar
+1/1    Gold 8000
+1/2    SunPotion(S)
+1/2    SunPotion(S)
+1/2    SunPotion(S)
+1/2    SunPotion(S)
+1/2    SunPotion(S)
+1/2    HPPotion(M)
+1/2    HPPotion(M)
+1/2    HPPotion(M)
+1/2    HPPotion(M)
+1/2    HPPotion(M)
+1/2    MPPotion(M)
+1/2    MPPotion(M)
+1/2    MPPotion(M)
+1/2    MPPotion(M)
+1/2    MPPotion(M)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/3   BronzeSword
+1/3   SteelSword
+1/20  EbonySword
+
+1/3   Ring
+1/3   CrystalRing
+1/3   짇없槿뻔
+1/3   BronzeRing
+1/3   HornRing
+1/3   BlueCrystalRing
+
+1/3   SilverBracelet
+1/3   LeatherGlove
+1/3   SteelBracelet
+
+1/3   Sandals
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/5   LargeBracelet
+1/5   TaoistBracelet
+1/5   EbonyBracelet
+1/5   MagicBracelet
+
+1/5   BlackNecklace
+1/5   EbonyNecklace
+1/5   CrystalNecklace
+
+1/5   BronzeHelmet
+
+1/5   LightArmor(M)
+1/5   LightArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/20   BronzeAxe
+1/20   SeaSoul
+1/20   HalfMonth
+
+1/20   PearlRing
+1/20   SnakeEyeRing
+1/20   BlackCrystalRing
+
+1/20   SmallBracelet
+
+1/20   LanternNecklace
+1/20   AmberNecklace
+1/20   DevilsNecklace
+1/20   FriendlyNecklace
+
+1/20   Boots
+
+1/20   MagicHelmet
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/10   BlessingOil
+1/10   WeaponOil

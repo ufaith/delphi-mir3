@@ -1,0 +1,74 @@
+;----------------------------------------------------------
+;;              XmasTree
+;----------------------------------------------------------
+1/100    Gold  15000
+1/10    HPPotion(S)
+1/10    MPPotion(S)
+1/10    HPPotion(M)
+1/10    MPPotion(M)
+1/10    HPPotion(L)
+1/10    MPPotion(L)
+1/10    HPPotion(XL)
+1/10    MPPotion(XL)
+1/10    HPPotion(S)
+1/10    MPPotion(S)
+1/10    HPPotion(M)
+1/10    MPPotion(M)
+1/10    HPPotion(L)
+1/10    MPPotion(L)
+1/10    HPPotion(XL)
+1/10    MPPotion(XL)
+1/10    HPPotion(S)
+1/10    MPPotion(S)
+1/10    HPPotion(M)
+1/10    MPPotion(M)
+1/10    HPPotion(L)
+1/10    MPPotion(L)
+1/10    HPPotion(XL)
+1/10    MPPotion(XL)
+
+1/2400  UnicornArmor(M)
+1/2400  UnicornArmor(F)
+1/2400  ImmortalArmor(M)
+1/2400  ImmortalArmor(F)
+1/2400  ElementArmor(M)
+1/2400  ElementArmor(F)
+
+1/400  Assault
+1/400  DestructSurge
+1/400  Lonesome
+1/400  Beckon
+1/800  Transfer
+1/800  FireRain
+1/800  Yihuajieyu
+1/1500  Defiance
+1/1500  AngryThunder
+1/3000  Masculine
+;1/3000  Might
+;1/4000  CoagulationSoul£®√ÿºÆ£©11
+;1/3000  Shade
+
+1/700  WildNecklace
+1/700  MagicCloudNecklace
+1/700  CenteringNecklace
+1/700  DisciplingRing
+1/700  RyomaRing
+1/700  AlbatronRing
+
+1/500  FerricyanideSword
+
+1/700  RulingStick
+1/700  PromiseStaff
+1/700  GuYuToken
+
+1/2000  MeteorKnife
+1/2000  Shadowbane
+1/2000  MagicBlade
+
+1/200   Chest
+1/100   PlatinumMedal
+1/12    GoldBar
+1/40    GamePoints
+1/100   JingangMedal
+1/100   KingMedal
+1/100   Rose

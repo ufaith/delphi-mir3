@@ -306,9 +306,9 @@ SMALL D6 1
 SYSMSG "你输入的数值有误!"
 break
 #IF
-checkitem 游戏点卷 %D6
+checkitem GamePoints %D6
 #ACT
-take 游戏点卷 %D6 
+take GamePoints %D6 
 MOV P1 20
 MOV P2 %D6
 MUL P1 P2

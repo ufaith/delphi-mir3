@@ -28,9 +28,9 @@ goto @sujun1
 set [245] 1
 set [244] 0
 set [243] 0
-give 不死牌 1
-give 金币 12000
-take 毁灭护身符 1
+give DieCard 1
+give Gold 12000
+take DestructionAmulet 1
 ;
 mapmove d422 169 188
 ;

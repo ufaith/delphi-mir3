@@ -15,7 +15,7 @@ goto @Mu_Taoist_soul_sinsu_next_1
 <结束/@Mu_Taoist_soul_sinsu_next_5>
 [@Mu_Taoist_soul_sinsu_next_2]
 #IF
-checkitem 召唤神兽 1
+checkitem SummonShinso 1
 #ACT
 goto @Mu_Taoist_soul_sinsu_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Taoist_soul_sinsu_next_3
 [@Mu_Taoist_soul_sinsu_next_3]
 #IF
 checkgold 3000
-checkitem 召唤神兽 1
+checkitem SummonShinso 1
 #ACT
-take 召唤神兽 1
-take 金币 3000
+take SummonShinso 1
+take Gold 3000
 goto @Mu_Taoist_soul_sinsu_next_4
 #ELSESAY
 喂！我没有说我不能免费传授武功吗？难道让我挖沙子吃活着吗？快点拿学费来！\ \
@@ -42,7 +42,7 @@ random 20
 这里有秘诀。天气很热，看很旧的书进行解释，直出冷汗。下次，请拿保存状态稍好写的书来。\ \
 <Exit/@exit>
 #ELSEACT
-give 召唤神兽（秘籍） 1
+give SummonShinso 1
 [@Mu_Taoist_soul_sinsu_next_5]
 #IF
 #SAY

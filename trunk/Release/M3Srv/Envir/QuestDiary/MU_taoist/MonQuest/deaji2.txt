@@ -18,5 +18,5 @@ random 10
 #SAY
 (原来这就是起爆石啊... 得赶快带给清明子..) \ \
 #ACT
-give 起爆石 1
+give InitiationStone 1
 SET [516] 1

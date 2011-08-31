@@ -15,7 +15,7 @@ goto @Mu_Wizard_fire_pokyel_next_1
 <结束/@Mu_Wizard_fire_pokyel_next_5>
 [@Mu_Wizard_fire_pokyel_next_2]
 #IF
-checkitem 爆裂火焰 1
+checkitem Explosion 1
 #ACT
 goto @Mu_Wizard_fire_pokyel_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Wizard_fire_pokyel_next_3
 [@Mu_Wizard_fire_pokyel_next_3]
 #IF
 checkgold 3200
-checkitem 爆裂火焰 1
+checkitem Explosion 1
 #ACT
-take 爆裂火焰 1
-take 金币 3200
+take Explosion 1
+take Gold 3200
 goto @Mu_Wizard_fire_pokyel_next_4
 #ELSESAY
 世界上的事情没有免费的。修炼武功也是同样的。下次不要忘了带修炼费来。\ \
@@ -42,7 +42,7 @@ random 20
 这里有秘诀，请拿着吧！江湖是很冷酷的地方。你千万要专心于一个领域。如果不如此，不要说天下绝世武功，就是成为一名真正的人都很困难。江湖呀。。\ \
 <Exit/@exit>
 #ELSEACT
-give 爆裂火焰（秘籍） 1
+give Explosion 1
 [@Mu_Wizard_fire_pokyel_next_5]
 #IF
 #SAY

@@ -48,7 +48,7 @@ MOV P2 4
 DEC D0 48
 MUL D1 P2
 INC D0 %P9
-GIVE 游戏点卷 %D0
+GIVE GamePoints %D0
 SET [998] 1
 LineMsg  "Grobal" 恭喜玩家〖<$OUTPUT(A8)>〗抽奖获得了<$OUTPUT(D0)>个游戏点卷!
 break

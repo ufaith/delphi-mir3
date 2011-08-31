@@ -15,55 +15,55 @@ goto @Check_OldItem
 
 [@Check_OldItem]
 #IF
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
 goto @Make_AtomItem_1
 break
 
 #IF
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
 goto @Make_AtomItem_1
 
@@ -78,99 +78,99 @@ goto @Make_AtomItem_1
 [@Atom_Fire]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（火） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（火） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（火） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（火） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（火） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（火） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（火） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（火） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（火） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
@@ -181,99 +181,99 @@ break
 [@Atom_Ice]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（冰） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（冰） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（冰） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（冰） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（冰） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（冰） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（冰） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（冰） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（冰） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
@@ -284,11 +284,11 @@ break
 [@Atom_Light]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（雷） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
@@ -296,11 +296,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（雷） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
@@ -308,11 +308,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（雷） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
@@ -320,11 +320,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（雷） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
@@ -332,11 +332,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（雷） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
@@ -344,11 +344,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（雷） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
@@ -356,11 +356,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（雷） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
@@ -368,11 +368,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（雷） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
@@ -380,11 +380,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（雷） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
@@ -396,11 +396,11 @@ break
 [@Atom_Wind]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（风） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
@@ -408,11 +408,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（风） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
@@ -420,11 +420,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（风） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
@@ -432,11 +432,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（风） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
@@ -444,11 +444,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（风） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
@@ -456,11 +456,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（风） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
@@ -468,11 +468,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（风） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
@@ -480,11 +480,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（风） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
@@ -492,11 +492,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（风） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
@@ -508,11 +508,11 @@ break
 [@Atom_Holy]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（神圣） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
@@ -520,11 +520,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（神圣） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
@@ -532,11 +532,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（神圣） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
@@ -544,11 +544,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（神圣） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
@@ -556,11 +556,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（神圣） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
@@ -568,11 +568,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（神圣） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
@@ -580,11 +580,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（神圣） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
@@ -592,11 +592,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（神圣） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
@@ -604,11 +604,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（神圣） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
@@ -620,11 +620,11 @@ break
 [@Atom_Dark]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（暗黑） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
@@ -632,11 +632,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（暗黑） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
@@ -644,11 +644,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（暗黑） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
@@ -656,11 +656,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（暗黑） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
@@ -668,11 +668,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（暗黑） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
@@ -680,11 +680,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（暗黑） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
@@ -692,11 +692,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（暗黑） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
@@ -704,11 +704,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（暗黑） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
@@ -716,11 +716,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（暗黑） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 _世尊手镯（暗黑）捞 咯扁 乐嚼聪促.\ \
@@ -732,11 +732,11 @@ _世尊手镯（暗黑）捞 咯扁 乐嚼聪促.\ \
 [@Atom_Phantom]
 #IF
 checkgold 1000000
-checkitem 生锈师承戒指 1
+checkitem TransitRustilyRing 1
 #ACT
-take 生锈师承戒指 1
-take 金币 1000000
-give 师承戒指（幻影） 1
+take TransitRustilyRing 1
+take Gold 1000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
@@ -744,11 +744,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈龙马戒指 1
+checkitem RustyHorseRing 1
 #ACT
-take 生锈龙马戒指 1
-take 金币 1000000
-give 龙马戒指（幻影） 1
+take RustyHorseRing 1
+take Gold 1000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
@@ -756,11 +756,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈青云戒指 1
+checkitem RustyBlueRing 1
 #ACT
-take 生锈青云戒指 1
-take 金币 1000000
-give 青云戒指（幻影） 1
+take RustyBlueRing 1
+take Gold 1000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
@@ -768,11 +768,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈破荒项链 1
+checkitem RustyWildNecklace 1
 #ACT
-take 生锈破荒项链 1
-take 金币 1000000
-give 破荒项链（幻影） 1
+take RustyWildNecklace 1
+take Gold 1000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
@@ -780,11 +780,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈魔云项链 1
+checkitem RustyCloudNecklace 1
 #ACT
-take 生锈魔云项链 1
-take 金币 1000000
-give 魔云项链（幻影） 1
+take RustyCloudNecklace 1
+take Gold 1000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
@@ -792,11 +792,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈定心项链 1
+checkitem RustyCalmNecklace 1
 #ACT
-take 生锈定心项链 1
-take 金币 1000000
-give 定心项链（幻影） 1
+take RustyCalmNecklace 1
+take Gold 1000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
@@ -804,11 +804,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈金棱手镯 1
+checkitem RustyGoldenBracelet 1
 #ACT
-take 生锈金棱手镯 1
-take 金币 1000000
-give 金棱手镯（幻影） 1
+take RustyGoldenBracelet 1
+take Gold 1000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
@@ -816,11 +816,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈思过手镯 1
+checkitem RustyThinkBracelet 1
 #ACT
-take 生锈思过手镯 1
-take 金币 1000000
-give 思过手镯（幻影） 1
+take RustyThinkBracelet 1
+take Gold 1000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
@@ -828,11 +828,11 @@ break
 
 #IF
 checkgold 1000000
-checkitem 生锈世尊手镯 1
+checkitem RustyReveresBracelet 1
 #ACT
-take 生锈世尊手镯 1
-take 金币 1000000
-give 世尊手镯（幻影） 1
+take RustyReveresBracelet 1
+take Gold 1000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
@@ -851,379 +851,379 @@ goto @Change_ItemAtom_1
 
 [@Change_ItemAtom_1]
 #IF
-checkitem 师承戒指（火） 1
+checkitem DisciplingRing（火） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 师承戒指（冰） 1
+checkitem DisciplingRing（冰） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 师承戒指（雷） 1
+checkitem DisciplingRing（雷） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 师承戒指（风） 1
+checkitem DisciplingRing（风） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 师承戒指（神圣） 1
+checkitem DisciplingRing（神圣） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 师承戒指（暗黑） 1
+checkitem DisciplingRing（暗黑） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 师承戒指（幻影） 1
+checkitem DisciplingRing（幻影） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（火） 1
+checkitem RyomaRing（火） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（冰） 1
+checkitem RyomaRing（冰） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（雷） 1
+checkitem RyomaRing（雷） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（风） 1
+checkitem RyomaRing（风） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（神圣） 1
+checkitem RyomaRing（神圣） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（暗黑） 1
+checkitem RyomaRing（暗黑） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 龙马戒指（幻影） 1
+checkitem RyomaRing（幻影） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（火） 1
+checkitem AlbatronRing（火） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（冰） 1
+checkitem AlbatronRing（冰） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（雷） 1
+checkitem AlbatronRing（雷） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（风） 1
+checkitem AlbatronRing（风） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（神圣） 1
+checkitem AlbatronRing（神圣） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（暗黑） 1
+checkitem AlbatronRing（暗黑） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 青云戒指（幻影） 1
+checkitem AlbatronRing（幻影） 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（火） 1
+checkitem BrokenNecklace(Fire) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（冰） 1
+checkitem BrokenNecklace(Ice) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（雷） 1
+checkitem BrokenNecklace(Thunder) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（风） 1
+checkitem BrokenNecklace(Wind) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（神圣） 1
+checkitem BrokenNecklace(Sacred) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（暗黑） 1
+checkitem BrokenNecklace(Dark) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 破荒项链（幻影） 1
+checkitem BrokenNecklace(Mirage) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（火） 1
+checkitem CloudNecklace(Fire) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（冰） 1
+checkitem CloudNecklace(Ice) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（雷） 1
+checkitem CloudNecklace(Thunder) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（风） 1
+checkitem CloudNecklace(Wind) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（神圣） 1
+checkitem CloudNecklace(Sacred) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（暗黑） 1
+checkitem CloudNecklace(Dark) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 魔云项链（幻影） 1
+checkitem CloudNecklace(Mirage) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（火） 1
+checkitem CenteringNecklace(Fire) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（冰） 1
+checkitem CenteringNecklace(Ice) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（雷） 1
+checkitem CenteringNecklace(Thunder) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（风） 1
+checkitem CenteringNecklace(Wind) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（神圣） 1
+checkitem CenteringNecklace(Sacred) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（暗黑） 1
+checkitem CenteringNecklace(Dark) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 定心项链（幻影） 1
+checkitem CenteringNecklace(Mirage) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（火） 1
+checkitem GoldBracelet(Fire) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（冰） 1
+checkitem GoldBracelet(Ice) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（雷） 1
+checkitem GoldBracelet(Thunder) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（风） 1
+checkitem GoldBracelet(Wind) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（神圣） 1
+checkitem GoldBracelet(Holy) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（暗黑） 1
+checkitem GoldBracelet(Dark) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 金棱手镯（幻影） 1
+checkitem GoldBracelet(Phantom) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（火） 1
+checkitem ThinkBracelet(Fire) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（冰） 1
+checkitem ThinkBracelet(Ice) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（雷） 1
+checkitem ThinkBracelet(Thunder) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（风） 1
+checkitem ThinkBracelet(Wind) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（神圣） 1
+checkitem ThinkBracelet(Holy) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（暗黑） 1
+checkitem ThinkBracelet(Dark) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 思过手镯（幻影） 1
+checkitem ThinkBracelet(Phantom) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（火） 1
+checkitem BuddhaBracelet(Fire) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（冰） 1
+checkitem BuddhaBracelet(Ice) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（雷） 1
+checkitem BuddhaBracelet(Thunder) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（风） 1
+checkitem BuddhaBracelet(Wind) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（神圣） 1
+checkitem BuddhaBracelet(Holy) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（暗黑） 1
+checkitem BuddhaBracelet(Dark) 1
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-checkitem 世尊手镯（幻影） 1
+checkitem BuddhaBracelet(Phantom) 1
 #ACT
 goto @Change_ItemAtom_3
 break
@@ -1233,379 +1233,379 @@ break
 
 [@Change_ItemAtom_2]
 #IF
-;;;;checkdura 师承戒指（火） 7
+;;;;checkdura DisciplingRing（火） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 师承戒指（冰） 7
+;;;;checkdura DisciplingRing（冰） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 师承戒指（雷） 7
+;;;;checkdura DisciplingRing（雷） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 师承戒指（风） 7
+;;;;checkdura DisciplingRing（风） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 师承戒指（神圣） 7
+;;;;checkdura DisciplingRing（神圣） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 师承戒指（暗黑） 7
+;;;;checkdura DisciplingRing（暗黑） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 师承戒指（幻影） 7
+;;;;checkdura DisciplingRing（幻影） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（火） 7
+;;;;checkdura RyomaRing（火） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（冰） 7
+;;;;checkdura RyomaRing（冰） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（雷） 7
+;;;;checkdura RyomaRing（雷） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（风） 7
+;;;;checkdura RyomaRing（风） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（神圣） 7
+;;;;checkdura RyomaRing（神圣） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（暗黑） 7
+;;;;checkdura RyomaRing（暗黑） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 龙马戒指（幻影） 7
+;;;;checkdura RyomaRing（幻影） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（火） 7
+;;;;checkdura AlbatronRing（火） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（冰） 7
+;;;;checkdura AlbatronRing（冰） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（雷） 7
+;;;;checkdura AlbatronRing（雷） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（风） 7
+;;;;checkdura AlbatronRing（风） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（神圣） 7
+;;;;checkdura AlbatronRing（神圣） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（暗黑） 7
+;;;;checkdura AlbatronRing（暗黑） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 青云戒指（幻影） 7
+;;;;checkdura AlbatronRing（幻影） 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（火） 7
+;;;;checkdura BrokenNecklace(Fire) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（冰） 7
+;;;;checkdura BrokenNecklace(Ice) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（雷） 7
+;;;;checkdura BrokenNecklace(Thunder) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（风） 7
+;;;;checkdura BrokenNecklace(Wind) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（神圣） 7
+;;;;checkdura BrokenNecklace(Sacred) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（暗黑） 7
+;;;;checkdura BrokenNecklace(Dark) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 破荒项链（幻影） 7
+;;;;checkdura BrokenNecklace(Mirage) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（火） 7
+;;;;checkdura CloudNecklace(Fire) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（冰） 7
+;;;;checkdura CloudNecklace(Ice) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（雷） 7
+;;;;checkdura CloudNecklace(Thunder) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（风） 7
+;;;;checkdura CloudNecklace(Wind) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（神圣） 7
+;;;;checkdura CloudNecklace(Sacred) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（暗黑） 7
+;;;;checkdura CloudNecklace(Dark) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 魔云项链（幻影） 7
+;;;;checkdura CloudNecklace(Mirage) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（火） 7
+;;;;checkdura CenteringNecklace(Fire) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（冰） 7
+;;;;checkdura CenteringNecklace(Ice) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（雷） 7
+;;;;checkdura CenteringNecklace(Thunder) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（风） 7
+;;;;checkdura CenteringNecklace(Wind) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（神圣） 7
+;;;;checkdura CenteringNecklace(Sacred) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（暗黑） 7
+;;;;checkdura CenteringNecklace(Dark) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 定心项链（幻影） 7
+;;;;checkdura CenteringNecklace(Mirage) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（火） 7
+;;;;checkdura GoldBracelet(Fire) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（冰） 7
+;;;;checkdura GoldBracelet(Ice) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（雷） 7
+;;;;checkdura GoldBracelet(Thunder) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（风） 7
+;;;;checkdura GoldBracelet(Wind) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（神圣） 7
+;;;;checkdura GoldBracelet(Holy) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（暗黑） 7
+;;;;checkdura GoldBracelet(Dark) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 金棱手镯（幻影） 7
+;;;;checkdura GoldBracelet(Phantom) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（火） 7
+;;;;checkdura ThinkBracelet(Fire) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（冰） 7
+;;;;checkdura ThinkBracelet(Ice) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（雷） 7
+;;;;checkdura ThinkBracelet(Thunder) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（风） 7
+;;;;checkdura ThinkBracelet(Wind) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（神圣） 7
+;;;;checkdura ThinkBracelet(Holy) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（暗黑） 7
+;;;;checkdura ThinkBracelet(Dark) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 思过手镯（幻影） 7
+;;;;checkdura ThinkBracelet(Phantom) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（火） 7
+;;;;checkdura BuddhaBracelet(Fire) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（冰） 7
+;;;;checkdura BuddhaBracelet(Ice) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（雷） 7
+;;;;checkdura BuddhaBracelet(Thunder) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（风） 7
+;;;;checkdura BuddhaBracelet(Wind) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（神圣） 7
+;;;;checkdura BuddhaBracelet(Holy) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（暗黑） 7
+;;;;checkdura BuddhaBracelet(Dark) 7
 #ACT
 goto @Change_ItemAtom_3
 break
 
 #IF
-;;;;checkdura 世尊手镯（幻影） 7
+;;;;checkdura BuddhaBracelet(Phantom) 7
 #ACT
 goto @Change_ItemAtom_3
 break
@@ -1620,814 +1620,814 @@ break
 
 [@Change_ItemAtom_Fire]
 #IF
-checkitem 师承戒指（火） 1
+checkitem DisciplingRing（火） 1
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
+checkitem DisciplingRing（冰） 1
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
+checkitem DisciplingRing（雷） 1
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
+checkitem DisciplingRing（风） 1
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
+checkitem DisciplingRing（神圣） 1
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（火） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（火） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（火） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（火） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（火） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（火） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（火） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（火） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（火） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（火） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Fire) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Fire_SeiJon
@@ -2438,819 +2438,819 @@ break
 
 [@Change_ItemAtom_Ice]
 #IF
-checkitem 师承戒指（火） 1
-;;;;checkdura 师承戒指（火） 7
+checkitem DisciplingRing（火） 1
+;;;;checkdura DisciplingRing（火） 7
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
-;;;;checkdura 师承戒指（冰） 7
+checkitem DisciplingRing（冰） 1
+;;;;checkdura DisciplingRing（冰） 7
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
-;;;;checkdura 师承戒指（雷） 7
+checkitem DisciplingRing（雷） 1
+;;;;checkdura DisciplingRing（雷） 7
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
-;;;;checkdura 师承戒指（风） 7
+checkitem DisciplingRing（风） 1
+;;;;checkdura DisciplingRing（风） 7
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
-;;;;checkdura 师承戒指（神圣） 7
+checkitem DisciplingRing（神圣） 1
+;;;;checkdura DisciplingRing（神圣） 7
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（冰） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（冰） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（冰） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（冰） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（冰） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（冰） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（冰） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（冰） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（冰） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（冰） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Ice) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Ice_SeiJon
@@ -3261,819 +3261,819 @@ break
 
 [@Change_ItemAtom_Light]
 #IF
-checkitem 师承戒指（火） 1
-;;;;checkdura 师承戒指（火） 7
+checkitem DisciplingRing（火） 1
+;;;;checkdura DisciplingRing（火） 7
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
-;;;;checkdura 师承戒指（冰） 7
+checkitem DisciplingRing（冰） 1
+;;;;checkdura DisciplingRing（冰） 7
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
-;;;;checkdura 师承戒指（雷） 7
+checkitem DisciplingRing（雷） 1
+;;;;checkdura DisciplingRing（雷） 7
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
-;;;;checkdura 师承戒指（风） 7
+checkitem DisciplingRing（风） 1
+;;;;checkdura DisciplingRing（风） 7
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
-;;;;checkdura 师承戒指（神圣） 7
+checkitem DisciplingRing（神圣） 1
+;;;;checkdura DisciplingRing（神圣） 7
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（雷） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（雷） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（雷） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（雷） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（雷） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（雷） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（雷） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（雷） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（雷） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（雷） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Thunder) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Light_SeiJon
@@ -4084,819 +4084,819 @@ break
 
 [@Change_ItemAtom_Wind]
 #IF
-checkitem 师承戒指（火） 1
-;;;;checkdura 师承戒指（火） 7
+checkitem DisciplingRing（火） 1
+;;;;checkdura DisciplingRing（火） 7
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
-;;;;checkdura 师承戒指（冰） 7
+checkitem DisciplingRing（冰） 1
+;;;;checkdura DisciplingRing（冰） 7
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
-;;;;checkdura 师承戒指（雷） 7
+checkitem DisciplingRing（雷） 1
+;;;;checkdura DisciplingRing（雷） 7
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
-;;;;checkdura 师承戒指（风） 7
+checkitem DisciplingRing（风） 1
+;;;;checkdura DisciplingRing（风） 7
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
-;;;;checkdura 师承戒指（神圣） 7
+checkitem DisciplingRing（神圣） 1
+;;;;checkdura DisciplingRing（神圣） 7
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（风） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（风） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（风） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（风） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（风） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（风） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（风） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（风） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（风） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（风） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Wind) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Wind_SeiJon
@@ -4907,819 +4907,819 @@ break
 
 [@Change_ItemAtom_Holy]
 #IF
-checkitem 师承戒指（火） 1
-;;;;checkdura 师承戒指（火） 7
+checkitem DisciplingRing（火） 1
+;;;;checkdura DisciplingRing（火） 7
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
-;;;;checkdura 师承戒指（冰） 7
+checkitem DisciplingRing（冰） 1
+;;;;checkdura DisciplingRing（冰） 7
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
-;;;;checkdura 师承戒指（雷） 7
+checkitem DisciplingRing（雷） 1
+;;;;checkdura DisciplingRing（雷） 7
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
-;;;;checkdura 师承戒指（风） 7
+checkitem DisciplingRing（风） 1
+;;;;checkdura DisciplingRing（风） 7
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
-;;;;checkdura 师承戒指（神圣） 7
+checkitem DisciplingRing（神圣） 1
+;;;;checkdura DisciplingRing（神圣） 7
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（神圣） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（神圣） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（神圣） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（神圣） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（神圣） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（神圣） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（神圣） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Sacred) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（神圣） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（神圣） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（神圣） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Holy) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Holy_SeiJon
@@ -5730,819 +5730,819 @@ break
 
 [@Change_ItemAtom_Dark]
 #IF
-checkitem 师承戒指（火） 1
-;;;;checkdura 师承戒指（火） 7
+checkitem DisciplingRing（火） 1
+;;;;checkdura DisciplingRing（火） 7
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
-;;;;checkdura 师承戒指（冰） 7
+checkitem DisciplingRing（冰） 1
+;;;;checkdura DisciplingRing（冰） 7
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
-;;;;checkdura 师承戒指（雷） 7
+checkitem DisciplingRing（雷） 1
+;;;;checkdura DisciplingRing（雷） 7
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
-;;;;checkdura 师承戒指（风） 7
+checkitem DisciplingRing（风） 1
+;;;;checkdura DisciplingRing（风） 7
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
-;;;;checkdura 师承戒指（神圣） 7
+checkitem DisciplingRing（神圣） 1
+;;;;checkdura DisciplingRing（神圣） 7
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（暗黑） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（暗黑） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（暗黑） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（暗黑） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（暗黑） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（暗黑） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（暗黑） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（暗黑） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（暗黑） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（暗黑） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Dark) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Dark_SeiJon
@@ -6553,819 +6553,819 @@ break
 
 [@Change_ItemAtom_Phantom]
 #IF
-checkitem 师承戒指（火） 1
-;;;;checkdura 师承戒指（火） 7
+checkitem DisciplingRing（火） 1
+;;;;checkdura DisciplingRing（火） 7
 checkgold 4000000
 #ACT
-take 师承戒指（火） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（火） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 师承戒指（冰） 1
-;;;;checkdura 师承戒指（冰） 7
+checkitem DisciplingRing（冰） 1
+;;;;checkdura DisciplingRing（冰） 7
 checkgold 4000000
 #ACT
-take 师承戒指（冰） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（冰） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 师承戒指（雷） 1
-;;;;checkdura 师承戒指（雷） 7
+checkitem DisciplingRing（雷） 1
+;;;;checkdura DisciplingRing（雷） 7
 checkgold 4000000
 #ACT
-take 师承戒指（雷） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（雷） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 师承戒指（风） 1
-;;;;checkdura 师承戒指（风） 7
+checkitem DisciplingRing（风） 1
+;;;;checkdura DisciplingRing（风） 7
 checkgold 4000000
 #ACT
-take 师承戒指（风） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（风） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 师承戒指（神圣） 1
-;;;;checkdura 师承戒指（神圣） 7
+checkitem DisciplingRing（神圣） 1
+;;;;checkdura DisciplingRing（神圣） 7
 checkgold 4000000
 #ACT
-take 师承戒指（神圣） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（神圣） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 师承戒指（暗黑） 1
-;;;;checkdura 师承戒指（暗黑） 7
+checkitem DisciplingRing（暗黑） 1
+;;;;checkdura DisciplingRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 师承戒指（暗黑） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（暗黑） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 师承戒指（幻影） 1
-;;;;checkdura 师承戒指（幻影） 7
+checkitem DisciplingRing（幻影） 1
+;;;;checkdura DisciplingRing（幻影） 7
 checkgold 4000000
 #ACT
-take 师承戒指（幻影） 1
-take 金币 4000000
-give 师承戒指（幻影） 1
+take DisciplingRing（幻影） 1
+take Gold 4000000
+give DisciplingRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_JungGun
 
 
 #IF
-checkitem 龙马戒指（火） 1
-;;;;checkdura 龙马戒指（火） 7
+checkitem RyomaRing（火） 1
+;;;;checkdura RyomaRing（火） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（火） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（火） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 龙马戒指（冰） 1
-;;;;checkdura 龙马戒指（冰） 7
+checkitem RyomaRing（冰） 1
+;;;;checkdura RyomaRing（冰） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（冰） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（冰） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 龙马戒指（雷） 1
-;;;;checkdura 龙马戒指（雷） 7
+checkitem RyomaRing（雷） 1
+;;;;checkdura RyomaRing（雷） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（雷） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（雷） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 龙马戒指（风） 1
-;;;;checkdura 龙马戒指（风） 7
+checkitem RyomaRing（风） 1
+;;;;checkdura RyomaRing（风） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（风） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（风） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 龙马戒指（神圣） 1
-;;;;checkdura 龙马戒指（神圣） 7
+checkitem RyomaRing（神圣） 1
+;;;;checkdura RyomaRing（神圣） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（神圣） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（神圣） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 龙马戒指（暗黑） 1
-;;;;checkdura 龙马戒指（暗黑） 7
+checkitem RyomaRing（暗黑） 1
+;;;;checkdura RyomaRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（暗黑） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（暗黑） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 龙马戒指（幻影） 1
-;;;;checkdura 龙马戒指（幻影） 7
+checkitem RyomaRing（幻影） 1
+;;;;checkdura RyomaRing（幻影） 7
 checkgold 4000000
 #ACT
-take 龙马戒指（幻影） 1
-take 金币 4000000
-give 龙马戒指（幻影） 1
+take RyomaRing（幻影） 1
+take Gold 4000000
+give RyomaRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_YongMa
 
 
 #IF
-checkitem 青云戒指（火） 1
-;;;;checkdura 青云戒指（火） 7
+checkitem AlbatronRing（火） 1
+;;;;checkdura AlbatronRing（火） 7
 checkgold 4000000
 #ACT
-take 青云戒指（火） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（火） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 青云戒指（冰） 1
-;;;;checkdura 青云戒指（冰） 7
+checkitem AlbatronRing（冰） 1
+;;;;checkdura AlbatronRing（冰） 7
 checkgold 4000000
 #ACT
-take 青云戒指（冰） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（冰） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 青云戒指（雷） 1
-;;;;checkdura 青云戒指（雷） 7
+checkitem AlbatronRing（雷） 1
+;;;;checkdura AlbatronRing（雷） 7
 checkgold 4000000
 #ACT
-take 青云戒指（雷） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（雷） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 青云戒指（风） 1
-;;;;checkdura 青云戒指（风） 7
+checkitem AlbatronRing（风） 1
+;;;;checkdura AlbatronRing（风） 7
 checkgold 4000000
 #ACT
-take 青云戒指（风） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（风） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 青云戒指（神圣） 1
-;;;;checkdura 青云戒指（神圣） 7
+checkitem AlbatronRing（神圣） 1
+;;;;checkdura AlbatronRing（神圣） 7
 checkgold 4000000
 #ACT
-take 青云戒指（神圣） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（神圣） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 青云戒指（暗黑） 1
-;;;;checkdura 青云戒指（暗黑） 7
+checkitem AlbatronRing（暗黑） 1
+;;;;checkdura AlbatronRing（暗黑） 7
 checkgold 4000000
 #ACT
-take 青云戒指（暗黑） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（暗黑） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 青云戒指（幻影） 1
-;;;;checkdura 青云戒指（幻影） 7
+checkitem AlbatronRing（幻影） 1
+;;;;checkdura AlbatronRing（幻影） 7
 checkgold 4000000
 #ACT
-take 青云戒指（幻影） 1
-take 金币 4000000
-give 青云戒指（幻影） 1
+take AlbatronRing（幻影） 1
+take Gold 4000000
+give AlbatronRing（幻影） 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_ChongMil
 
 
 #IF
-checkitem 破荒项链（火） 1
-;;;;checkdura 破荒项链（火） 7
+checkitem BrokenNecklace(Fire) 1
+;;;;checkdura BrokenNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 破荒项链（火） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Fire) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 破荒项链（冰） 1
-;;;;checkdura 破荒项链（冰） 7
+checkitem BrokenNecklace(Ice) 1
+;;;;checkdura BrokenNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 破荒项链（冰） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Ice) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 破荒项链（雷） 1
-;;;;checkdura 破荒项链（雷） 7
+checkitem BrokenNecklace(Thunder) 1
+;;;;checkdura BrokenNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 破荒项链（雷） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Thunder) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 破荒项链（风） 1
-;;;;checkdura 破荒项链（风） 7
+checkitem BrokenNecklace(Wind) 1
+;;;;checkdura BrokenNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 破荒项链（风） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Wind) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 破荒项链（神圣） 1
-;;;;checkdura 破荒项链（神圣） 7
+checkitem BrokenNecklace(Sacred) 1
+;;;;checkdura BrokenNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 破荒项链（神圣） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Sacred) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 破荒项链（暗黑） 1
-;;;;checkdura 破荒项链（暗黑） 7
+checkitem BrokenNecklace(Dark) 1
+;;;;checkdura BrokenNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 破荒项链（暗黑） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Dark) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 破荒项链（幻影） 1
-;;;;checkdura 破荒项链（幻影） 7
+checkitem BrokenNecklace(Mirage) 1
+;;;;checkdura BrokenNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 破荒项链（幻影） 1
-take 金币 4000000
-give 破荒项链（幻影） 1
+take BrokenNecklace(Mirage) 1
+take Gold 4000000
+give BrokenNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_PaHwang
 
 
 #IF
-checkitem 魔云项链（火） 1
-;;;;checkdura 魔云项链（火） 7
+checkitem CloudNecklace(Fire) 1
+;;;;checkdura CloudNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 魔云项链（火） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Fire) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 魔云项链（冰） 1
-;;;;checkdura 魔云项链（冰） 7
+checkitem CloudNecklace(Ice) 1
+;;;;checkdura CloudNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 魔云项链（冰） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Ice) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 魔云项链（雷） 1
-;;;;checkdura 魔云项链（雷） 7
+checkitem CloudNecklace(Thunder) 1
+;;;;checkdura CloudNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 魔云项链（雷） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Thunder) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 魔云项链（风） 1
-;;;;checkdura 魔云项链（风） 7
+checkitem CloudNecklace(Wind) 1
+;;;;checkdura CloudNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 魔云项链（风） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Wind) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 魔云项链（神圣） 1
-;;;;checkdura 魔云项链（神圣） 7
+checkitem CloudNecklace(Sacred) 1
+;;;;checkdura CloudNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 魔云项链（神圣） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Sacred) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 魔云项链（暗黑） 1
-;;;;checkdura 魔云项链（暗黑） 7
+checkitem CloudNecklace(Dark) 1
+;;;;checkdura CloudNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 魔云项链（暗黑） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Dark) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 魔云项链（幻影） 1
-;;;;checkdura 魔云项链（幻影） 7
+checkitem CloudNecklace(Mirage) 1
+;;;;checkdura CloudNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 魔云项链（幻影） 1
-take 金币 4000000
-give 魔云项链（幻影） 1
+take CloudNecklace(Mirage) 1
+take Gold 4000000
+give CloudNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_MaUn
 
 
 #IF
-checkitem 定心项链（火） 1
-;;;;checkdura 定心项链（火） 7
+checkitem CenteringNecklace(Fire) 1
+;;;;checkdura CenteringNecklace(Fire) 7
 checkgold 4000000
 #ACT
-take 定心项链（火） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Fire) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 定心项链（冰） 1
-;;;;checkdura 定心项链（冰） 7
+checkitem CenteringNecklace(Ice) 1
+;;;;checkdura CenteringNecklace(Ice) 7
 checkgold 4000000
 #ACT
-take 定心项链（冰） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Ice) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 定心项链（雷） 1
-;;;;checkdura 定心项链（雷） 7
+checkitem CenteringNecklace(Thunder) 1
+;;;;checkdura CenteringNecklace(Thunder) 7
 checkgold 4000000
 #ACT
-take 定心项链（雷） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Thunder) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 定心项链（风） 1
-;;;;checkdura 定心项链（风） 7
+checkitem CenteringNecklace(Wind) 1
+;;;;checkdura CenteringNecklace(Wind) 7
 checkgold 4000000
 #ACT
-take 定心项链（风） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Wind) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 定心项链（神圣） 1
-;;;;checkdura 定心项链（神圣） 7
+checkitem CenteringNecklace(Sacred) 1
+;;;;checkdura CenteringNecklace(Sacred) 7
 checkgold 4000000
 #ACT
-take 定心项链（神圣） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Sacred) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 定心项链（暗黑） 1
-;;;;checkdura 定心项链（暗黑） 7
+checkitem CenteringNecklace(Dark) 1
+;;;;checkdura CenteringNecklace(Dark) 7
 checkgold 4000000
 #ACT
-take 定心项链（暗黑） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Dark) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 定心项链（幻影） 1
-;;;;checkdura 定心项链（幻影） 7
+checkitem CenteringNecklace(Mirage) 1
+;;;;checkdura CenteringNecklace(Mirage) 7
 checkgold 4000000
 #ACT
-take 定心项链（幻影） 1
-take 金币 4000000
-give 定心项链（幻影） 1
+take CenteringNecklace(Mirage) 1
+take Gold 4000000
+give CenteringNecklace(Mirage) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SuSin
 
 
 #IF
-checkitem 金棱手镯（火） 1
-;;;;checkdura 金棱手镯（火） 7
+checkitem GoldBracelet(Fire) 1
+;;;;checkdura GoldBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（火） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Fire) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 金棱手镯（冰） 1
-;;;;checkdura 金棱手镯（冰） 7
+checkitem GoldBracelet(Ice) 1
+;;;;checkdura GoldBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（冰） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Ice) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 金棱手镯（雷） 1
-;;;;checkdura 金棱手镯（雷） 7
+checkitem GoldBracelet(Thunder) 1
+;;;;checkdura GoldBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（雷） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Thunder) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 金棱手镯（风） 1
-;;;;checkdura 金棱手镯（风） 7
+checkitem GoldBracelet(Wind) 1
+;;;;checkdura GoldBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（风） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Wind) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 金棱手镯（神圣） 1
-;;;;checkdura 金棱手镯（神圣） 7
+checkitem GoldBracelet(Holy) 1
+;;;;checkdura GoldBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（神圣） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Holy) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 金棱手镯（暗黑） 1
-;;;;checkdura 金棱手镯（暗黑） 7
+checkitem GoldBracelet(Dark) 1
+;;;;checkdura GoldBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（暗黑） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Dark) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 金棱手镯（幻影） 1
-;;;;checkdura 金棱手镯（幻影） 7
+checkitem GoldBracelet(Phantom) 1
+;;;;checkdura GoldBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 金棱手镯（幻影） 1
-take 金币 4000000
-give 金棱手镯（幻影） 1
+take GoldBracelet(Phantom) 1
+take Gold 4000000
+give GoldBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_KumGak
 
 
 #IF
-checkitem 思过手镯（火） 1
-;;;;checkdura 思过手镯（火） 7
+checkitem ThinkBracelet(Fire) 1
+;;;;checkdura ThinkBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 思过手镯（火） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Fire) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 思过手镯（冰） 1
-;;;;checkdura 思过手镯（冰） 7
+checkitem ThinkBracelet(Ice) 1
+;;;;checkdura ThinkBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 思过手镯（冰） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Ice) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 思过手镯（雷） 1
-;;;;checkdura 思过手镯（雷） 7
+checkitem ThinkBracelet(Thunder) 1
+;;;;checkdura ThinkBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 思过手镯（雷） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Thunder) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 思过手镯（风） 1
-;;;;checkdura 思过手镯（风） 7
+checkitem ThinkBracelet(Wind) 1
+;;;;checkdura ThinkBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 思过手镯（风） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Wind) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 思过手镯（神圣） 1
-;;;;checkdura 思过手镯（神圣） 7
+checkitem ThinkBracelet(Holy) 1
+;;;;checkdura ThinkBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 思过手镯（神圣） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Holy) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 思过手镯（暗黑） 1
-;;;;checkdura 思过手镯（暗黑） 7
+checkitem ThinkBracelet(Dark) 1
+;;;;checkdura ThinkBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 思过手镯（暗黑） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Dark) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 思过手镯（幻影） 1
-;;;;checkdura 思过手镯（幻影） 7
+checkitem ThinkBracelet(Phantom) 1
+;;;;checkdura ThinkBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 思过手镯（幻影） 1
-take 金币 4000000
-give 思过手镯（幻影） 1
+take ThinkBracelet(Phantom) 1
+take Gold 4000000
+give ThinkBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_GuiByub
 
 
 #IF
-checkitem 世尊手镯（火） 1
-;;;;checkdura 世尊手镯（火） 7
+checkitem BuddhaBracelet(Fire) 1
+;;;;checkdura BuddhaBracelet(Fire) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（火） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Fire) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
 
 
 #IF
-checkitem 世尊手镯（冰） 1
-;;;;checkdura 世尊手镯（冰） 7
+checkitem BuddhaBracelet(Ice) 1
+;;;;checkdura BuddhaBracelet(Ice) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（冰） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Ice) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
 
 
 #IF
-checkitem 世尊手镯（雷） 1
-;;;;checkdura 世尊手镯（雷） 7
+checkitem BuddhaBracelet(Thunder) 1
+;;;;checkdura BuddhaBracelet(Thunder) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（雷） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Thunder) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
 
 
 #IF
-checkitem 世尊手镯（风） 1
-;;;;checkdura 世尊手镯（风） 7
+checkitem BuddhaBracelet(Wind) 1
+;;;;checkdura BuddhaBracelet(Wind) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（风） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Wind) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
 
 
 #IF
-checkitem 世尊手镯（神圣） 1
-;;;;checkdura 世尊手镯（神圣） 7
+checkitem BuddhaBracelet(Holy) 1
+;;;;checkdura BuddhaBracelet(Holy) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（神圣） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Holy) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
 
 
 #IF
-checkitem 世尊手镯（暗黑） 1
-;;;;checkdura 世尊手镯（暗黑） 7
+checkitem BuddhaBracelet(Dark) 1
+;;;;checkdura BuddhaBracelet(Dark) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（暗黑） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Dark) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon
 
 
 #IF
-checkitem 世尊手镯（幻影） 1
-;;;;checkdura 世尊手镯（幻影） 7
+checkitem BuddhaBracelet(Phantom) 1
+;;;;checkdura BuddhaBracelet(Phantom) 7
 checkgold 4000000
 #ACT
-take 世尊手镯（幻影） 1
-take 金币 4000000
-give 世尊手镯（幻影） 1
+take BuddhaBracelet(Phantom) 1
+take Gold 4000000
+give BuddhaBracelet(Phantom) 1
 break
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\AtomItem.txt] @AtomItem_Phantom_SeiJon

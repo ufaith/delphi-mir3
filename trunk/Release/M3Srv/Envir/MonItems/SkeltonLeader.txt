@@ -1,0 +1,116 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템
+;-------------------------------------------------------------------------------
+1/1/10000   Spar
+1/30    SecretKey
+1/1    Gold 28000
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/5  BronzeAxe
+1/5  SeaSoul
+1/5  HalfMonth
+
+1/5  PearlRing
+1/5  SnakeEyeRing
+1/5  BlackCrystalRing
+
+1/5  SmallBracelet
+
+1/5  LanternNecklace
+1/5  AmberNecklace
+1/5  DevilsNecklace
+1/5  참선의구슬
+
+1/5  Boots
+
+1/5  MagicHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/10  ExorcizeSword
+1/10  YanYue
+1/10  ZhanmaSaber
+1/10  Ashura
+
+1/10  CharmRing
+1/10  EthicsRing
+1/10  CoralRing
+1/10  GoldRing
+
+1/10  SturdyGlove
+
+1/10  TaoistHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/40 ThreeBracelet
+1/40 SibeiBracelet
+
+1/40 BlueJadeNecklace
+1/40 Magnifier
+1/40 BambooFluteNecklace
+
+1/40 WomaHelmet
+
+1/40 HeavyArmor(M)
+1/40 HeavyArmor(F)
+1/40 MagicRobe(M)
+1/40 MagicRobe(F)
+1/40 SoulRobe(M)
+1/40 SoulRobe(F)
+
+;-------------------------------------------------------------------------------
+;; 보스급 전용 아이템들
+;-------------------------------------------------------------------------------
+1/10   BlessingOil
+1/10   WeaponOil
+
+1/20   RedBoots
+1/20   SlayerRing
+1/100   PalmBoots
+1/100   WalkerHelmet
+1/100   DragonHelmet
+1/100   HellGlove
+1/100   BlackBoots
+1/100   MoonBoots
+1/100   JediBoots
+
+1/1000  HexagonalRing
+1/1000  HeartRing
+1/1000  VoidRing
+
+1/400  DarkIronHelmet
+1/400  HeavenHelmet
+1/1000  TigerHelmet
+1/1000  AresHelmet
+
+1/1000  XianBoots
+1/1000  ShadowBoots
+1/1000  ValkyrieBoots
+
+1/200   BraveMedal
+1/400   VenerableMedal
+1/800   KingMedal
+1/1600  HolyMedal
+1/2000   FramedCard
+;1/2000  GamePoints
+1/10000   PrayerHelmet

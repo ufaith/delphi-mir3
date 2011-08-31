@@ -12,5 +12,5 @@
 
 [Goods]
 ;ItemName      Volume     Hour
-¼ý            50        8
-Ê¯Í·          50        9
+Arrow            50        8
+Stone          50        9

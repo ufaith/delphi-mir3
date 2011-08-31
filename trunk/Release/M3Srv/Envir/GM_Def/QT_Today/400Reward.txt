@@ -2,522 +2,522 @@
 [401]
 任务=找寻金矿（石）2个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 天鸣戒指
+Reward_Race_10 = TianmingRing
 Reward_Amount_10 = 1
 
 [402]
 任务=找寻毒蜘蛛牙齿5个 蝎子的尾巴3个 蛆卵2个
 声望=1
-Reward_Race_90 = 黄色药粉（中）
+Reward_Race_90 = YellowPowder(M)
 Reward_Amount_90 = 5
 
-Reward_Race_10 = 道士头盔
+Reward_Race_10 = TaoistHelmet
 Reward_Amount_10 = 1
 
 [403]
 任务=找寻褐色栗子5个
 声望=1
-Reward_Race_90 = 灵魂神水（大）
+Reward_Race_90 = SoulWater(L)
 Reward_Amount_90 = 2
 
-Reward_Race_10 = 双刃剑
+Reward_Race_10 = EagleSword
 Reward_Amount_10 = 1
 
 [404]
 任务=找寻修复油5个 战神油1个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 50000
 
-Reward_Race_10 = 幽灵手套
+Reward_Race_10 = GhostGlove
 Reward_Amount_10 = 1
 
 [405]
 任务=找寻魔法强效神水（小）2个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 紫碧螺
+Reward_Race_10 = PurpleSpiral
 Reward_Amount_10 = 1
 
 [406]
 任务=找寻虎蛇 20条
 声望=1
-Reward_Race_90 = 金戒指
+Reward_Race_90 = GoldRing
 Reward_Amount_90 = 1
 
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 10000
 
-Reward_Race_10 = 骷髅戒指
+Reward_Race_10 = SkeltonRing
 Reward_Amount_10 = 2
 
 [407]
 任务=找寻杀死红蛇50条
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10=天掌靴子
+Reward_Race_10=PalmBoots
 Reward_Amount_10=1
 
 [408]
 任务=找寻纯度为14以上的牛肉5块 纯度为15以上的肉1块
 声望=1
-Reward_Race_90=珍珠戒指
+Reward_Race_90=PearlRing
 Reward_Amount_90=2
-Reward_Race_90_1=金币
+Reward_Race_90_1=Gold
 Reward_Amount_90_1=20000
 
-Reward_Race_10=双刃剑
+Reward_Race_10=EagleSword
 Reward_Amount_10=1
 
 [409]
 任务=找寻纯度10以上的10个铜矿
 声望=1
-Reward_Race_90=金币
+Reward_Race_90=Gold
 Reward_Amount_90=25000
 
-Reward_Race_10=龙鳞战甲（男）
+Reward_Race_10=DragonArmor(M)
 Reward_Amount_10=1
 
-Reward_Race_10_1Th=龙鳞战甲（女）
+Reward_Race_10_1Th=DragonArmor(F)
 Reward_Amount_10_1Th=1
 
 
 [410]
 任务=找寻纯度为16以上的银矿1个
 声望=1
-Reward_Race_90_man = 灵魂战衣（男）
+Reward_Race_90_man = SoulRobe(M)
 Reward_Amount_90_man = 1
 
-Reward_Race_90_woman = 灵魂战衣（女）
+Reward_Race_90_woman = SoulRobe(F)
 Reward_Amount_90_woman = 1
 
-Reward_Race_10 = 金币
+Reward_Race_10 = Gold
 Reward_Amount_10 = 30000
 
 [411]
 任务=找寻褐色栗子5个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 金手镯
+Reward_Race_10 = GoldBracelet
 Reward_Amount_10 = 2
 
 [412]
 任务=找寻千年毒蛇血3瓶
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
-Reward_Race_90 = 魔法手镯
+Reward_Race_90 = MagicBracelet
 Reward_Amount_90 = 1
 
-Reward_Race_10 = 金币
+Reward_Race_10 = Gold
 Reward_Amount_10 = 30000
 
 [413]
 任务=找寻纯度为17以上的铁矿1个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 25000
 
-Reward_Race_10 = 月光石手镯
+Reward_Race_10 = MoonstoneBracelet
 Reward_Amount_10 = 1
 
 [414]
 任务=杀5头红野猪
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 黑皮手套
+Reward_Race_10 = BlackGlove
 Reward_Amount_10 = 1
 
 [415]
 任务=找寻20个僵尸骨头
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 双刃剑
+Reward_Race_10 = EagleSword
 Reward_Amount_10 = 1
 
 [416]
 任务=找寻50个蚂蚁卵
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 命运之刃
+Reward_Race_10 = DestinyBlade
 Reward_Amount_10 = 1
 
 [417]
 任务=找寻10个半兽利齿
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 魔杖
+Reward_Race_10 = Wand
 Reward_Amount_10 = 1
 
 [418]
 任务=找寻电僵尸骨2个和僧侣僵尸骨2个
 声望=1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 20000
-Reward_Race_90_1Th_man = 重盔甲（男）
+Reward_Race_90_1Th_man = HeavyArmor(M)
 Reward_Amount_90_1Th_man = 1
 
-Reward_Race_90_2Th = 金币
+Reward_Race_90_2Th = Gold
 Reward_Amount_90_2Th = 20000
-Reward_Race_90_2Th_woman = 重盔甲（女）
+Reward_Race_90_2Th_woman = HeavyArmor(F)
 Reward_Amount_90_2Th_woman = 1
 
-Reward_Race_10 = 八面太极戒指
+Reward_Race_10 = OctahedralRing
 Reward_Amount_10 = 1
 
 [419]
 任务=找寻自然神水（小）2个 蚂蚁卵20个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
-Reward_Race_90_1Th = 凤凰明珠
+Reward_Race_90_1Th = PearlPhoenix
 Reward_Amount_90_1Th = 1
 
-Reward_Race_10_man = 天极道衣（男）
+Reward_Race_10_man = CelestialArmor(M)
 Reward_Amount_10_man = 1
 
-Reward_Race_10_woman = 天极道衣（女）
+Reward_Race_10_woman = CelestialArmor(F)
 Reward_Amount_10_woman = 1
 
 [420]
 任务=找寻蚂蚁卵50个 体力强效神水（小）3个
 声望=1
-Reward_Race_90 = 龙骨戒指
+Reward_Race_90 = KeelRing
 Reward_Amount_90 = 2
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 30000
 
-Reward_Race_10 = 双刃剑
+Reward_Race_10 = EagleSword
 Reward_Amount_10 = 1
 
 [421]
 任务=找寻食人树叶20个和食人树的果实5个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
 
-Reward_Race_10 = 黑皮靴子
+Reward_Race_10 = BlackBoots
 Reward_Amount_10 = 1
 
 [422]
 任务=找寻毒蜘蛛牙齿5个和蝎子的尾巴10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 紫碧螺
+Reward_Race_10 = PurpleSpiral
 Reward_Amount_10 = 1
 
 [423]
 任务=找寻回城卷10个和皮40个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 黑皮手套
+Reward_Race_10 = BlackGlove
 Reward_Amount_10 = 1
 
 [424]
 任务=找寻纯度为7以上的黑铁 5个
 声望=1
-Reward_Race_90 = 偃月
+Reward_Race_90 = YanYue
 Reward_Amount_90 = 1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 50000
 
-Reward_Race_10 = 神圣铂金戒指
+Reward_Race_10 = HolyPlatinumRing
 Reward_Amount_10 = 1
 
 [425]
 任务=找寻纯度为3以上的金矿5个
 声望=1
-Reward_Race_90 = 八荒
+Reward_Race_90 = Glorious
 Reward_Amount_90 = 1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 10000
 
-Reward_Race_10 = 红叶血环
+Reward_Race_10 = BloodRing
 Reward_Amount_10 = 1
 
 [426]
 任务=找寻亮蜡烛10个和食人树的果实 10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 八面太极戒指
+Reward_Race_10 = OctahedralRing
 Reward_Amount_10 = 1
 
 [427]
 任务=找寻品质为4以上的鸡肉10个 品质为10以上的牛肉10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 月光石手镯
+Reward_Race_10 = MoonstoneBracelet
 Reward_Amount_10 = 1
 
 [428]
 任务=找寻强效太阳水5个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 15000
-Reward_Race_90_1Th = 波纹手镯
+Reward_Race_90_1Th = RippleBracelet
 Reward_Amount_90_1Th = 1
 
-Reward_Race_10 = 黑皮手套
+Reward_Race_10 = BlackGlove
 Reward_Amount_10 = 1
 
 [429]
 任务=找寻皮5个和跳蚤皮5个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
-Reward_Race_90_1Th = 金戒指
+Reward_Race_90_1Th = GoldRing
 Reward_Amount_90_1Th = 1
 
-Reward_Race_10 = 双刃剑
+Reward_Race_10 = EagleSword
 Reward_Amount_10 = 1
 
 [430]
 任务=找寻千年毒蛇血3个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10_man = 恶魔长袍（男）
+Reward_Race_10_man = DevilRobe(M)
 Reward_Amount_10_man = 1
 
-Reward_Race_10_woman = 恶魔长袍（女）
+Reward_Race_10_woman = DevilRobe(F)
 Reward_Amount_10_woman = 1
 
 [431]
 任务=找寻千年毒蛇血 1个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 红叶血环
+Reward_Race_10 = BloodRing
 Reward_Amount_10 = 1
 
 [432]
 任务=找寻蛆卵5个和毒蛇胆汁5个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10_man = 战神盔甲（男）
+Reward_Race_10_man = WarArmor(M)
 Reward_Amount_10_man = 1
 
-Reward_Race_10_woman = 战神盔甲（女）
+Reward_Race_10_woman = WarArmor(F)
 Reward_Amount_10_woman = 1
 
 [433]
 任务=找寻皮10个和千年毒蛇牙齿3个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 月光石手镯
+Reward_Race_10 = MoonstoneBracelet
 Reward_Amount_10 = 1
 
 [434]
 任务=找寻纯度为10以上的铁矿10个 纯度为15以上的铜矿10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
-Reward_Race_90_1Th = 金戒指
+Reward_Race_90_1Th = GoldRing
 Reward_Amount_90_1Th = 1
 
-Reward_Race_10 = 神圣铂金戒指
+Reward_Race_10 = HolyPlatinumRing
 Reward_Amount_10 = 1
 
 [435]
 任务=找寻纯度为10以上银矿10个 蚂蚁卵30个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
-Reward_Race_90_1Th = 波纹手镯
+Reward_Race_90_1Th = RippleBracelet
 Reward_Amount_90_1Th = 1
 
-Reward_Race_10_man = 恶魔长袍（男） 
+Reward_Race_10_man = DevilRobe(M) 
 Reward_Amount_10_man = 1
 
-Reward_Race_10_woman = 恶魔长袍（女）
+Reward_Race_10_woman = DevilRobe(F)
 Reward_Amount_10_woman = 1
 
 [436]
 任务=找寻蚂蚁卵20个和食人树的果实10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 月光石手镯
+Reward_Race_10 = MoonstoneBracelet
 Reward_Amount_10 = 1
 
 [437]
 任务=找寻品质为10以上的牛肉10个 品质为5以上的鸡肉10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
-Reward_Race_90_1Th = 道德戒指
+Reward_Race_90_1Th = EthicsRing
 Reward_Amount_90_1Th = 1
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [438]
 任务=找寻千年毒蛇牙齿3个 
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 紫碧螺
+Reward_Race_10 = PurpleSpiral
 Reward_Amount_10 = 1
 
 [439]
 任务=找寻皮10个 跳蚤皮10个
 声望=1
-Reward_Race_90 = 琥珀项链
+Reward_Race_90 = AmberNecklace
 Reward_Amount_90 = 1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 30000
 
-Reward_Race_10 = 祝福油
+Reward_Race_10 = BlessingOil
 Reward_Amount_10 = 2
 
 [440]
 任务=找寻半兽利齿10个，稻草人木剑10把
 声望=1
-Reward_Race_90 = 波纹手镯
+Reward_Race_90 = RippleBracelet
 Reward_Amount_90 = 1
 
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 30000
 
-Reward_Race_10 = 神圣铂金戒指
+Reward_Race_10 = HolyPlatinumRing
 Reward_Amount_10 = 1
 
 [441]
 任务=找寻品质为10 以上的羊肉10块
 声望=1
-Reward_Race_90 = 金戒指
+Reward_Race_90 = GoldRing
 Reward_Amount_90 = 1
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [442]
 任务=找寻千年毒蛇胆汁1个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10_man = 战神盔甲（男）
+Reward_Race_10_man = WarArmor(M)
 Reward_Amount_10_man = 1
 
-Reward_Race_10_woman = 战神盔甲（女）
+Reward_Race_10_woman = WarArmor(F)
 Reward_Amount_10_woman = 1
 
 [443]
 任务=杀多钩猫50只
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 紫碧螺
+Reward_Race_10 = PurpleSpiral
 Reward_Amount_10 = 1
 
 [444]
 任务=找寻魔法头盔
 声望=1
-Reward_Race_90 = 道士头盔
+Reward_Race_90 = TaoistHelmet
 Reward_Amount_90 = 1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 10000
 
-Reward_Race_10_man = 恶魔长袍（男）
+Reward_Race_10_man = DevilRobe(M)
 Reward_Amount_10_man = 1
 
-Reward_Race_10_woman = 恶魔长袍（女）
+Reward_Race_10_woman = DevilRobe(F)
 Reward_Amount_10_woman = 1
 
 [445]
 任务=找寻向边境城市尹老人转交医书
 声望=1
-Reward_Race_90 = 魔法手镯
+Reward_Race_90 = MagicBracelet
 Reward_Amount_90 = 1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 20000
 
-Reward_Race_10 = 双刃剑
+Reward_Race_10 = EagleSword
 Reward_Amount_10 = 1
 
 
 [446]
 任务=找寻骷髅骨20个
 声望=1
-Reward_Race_90 = 金戒指
+Reward_Race_90 = GoldRing
 Reward_Amount_90 = 1
-Reward_Race_90_1Th = 金币
+Reward_Race_90_1Th = Gold
 Reward_Amount_90_1Th = 10000
 
-Reward_Race_10 = 沃玛修罗
+Reward_Race_10 = WomaAshura
 Reward_Amount_10 = 1
 
 [447]
 任务=找寻边境城市书店转交书籍
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10_Man = 战神盔甲（男）
+Reward_Race_10_Man = WarArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 战神盔甲（女）
+Reward_Race_10_WoMan = WarArmor(F)
 Reward_Amount_10_WoMan = 1
 
 [448]
 任务=找寻劳动蚂蚁卵3个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [449]
 任务=找寻沃玛战士10只
 声望=1
-Reward_Race_90_man = 魔法长袍（男）
+Reward_Race_90_man = MagicRobe(M)
 Reward_Amount_90_man = 1
 
-Reward_Race_90_woman = 魔法长袍（女）
+Reward_Race_90_woman = MagicRobe(F)
 Reward_Amount_90_woman = 1
 
-Reward_Race_10 = 双刃剑
+Reward_Race_10 = EagleSword
 Reward_Amount_10 = 1
 
 [450]
 任务=找寻稻草人20个和多钩猫30只
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
 Reward_Race_10_Man = 灵魂道衣（男）
@@ -528,412 +528,412 @@ Reward_Amount_10_WoMan = 1
 [451]
 任务=找寻杀死30~50个半兽战士
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [453]
 任务=找寻15个蚂蚁卵
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 15000
 
-Reward_Race_10_Man = 战神盔甲（男）
+Reward_Race_10_Man = WarArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 战神盔甲（女）
+Reward_Race_10_WoMan = WarArmor(F)
 Reward_Amount_10_WoMan =1
 
 [454]
 任务=找寻盔甲蚂蚁卵1个和蚂蚁卵1个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 紫碧螺
+Reward_Race_10 = PurpleSpiral
 Reward_Amount_10 = 1
 
 [455]
 任务=找寻弄纯度10以上的5块羊肉
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 红叶血环
+Reward_Race_10 = BloodRing
 Reward_Amount_10 = 1
 
 [456]
 任务=找寻10只沃玛勇士
 声望=1
-Reward_Race = 金币
+Reward_Race = Gold
 Reward_Amount = 100000
 
 [457]
 任务=道馆的华玉 送信
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 50000
 
-Reward_Race_10_Man = 恶魔长袍（男）
+Reward_Race_10_Man = DevilRobe(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 恶魔长袍（女）
+Reward_Race_10_WoMan = DevilRobe(F)
 Reward_Amount_10_WoMan = 1
 
 [458]
 任务=武器店的啊潘 送信
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
 
-Reward_Race_10 = 沃玛偃月
+Reward_Race_10 = WomaYanyue
 Reward_Amount_10 = 1
 
 [459]
 任务=找寻皮10张
 声望=1
-Reward_Race_90 = 金戒指
+Reward_Race_90 = GoldRing
 Reward_Amount_90 = 1
 
-Reward_Race_10 = 红叶血环
+Reward_Race_10 = BloodRing
 Reward_Amount_10 = 1
 
 [460]
 任务=找寻万年雪霜10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
-Reward_Race_90_1th = 道士头盔
+Reward_Race_90_1th = TaoistHelmet
 Reward_Amount_90_1th = 1
 
-Reward_Race_10 = 银蛇
+Reward_Race_10 = SilverSnake
 Reward_Amount_10 = 1
 
 [461]
 任务=找寻钳虫皮20张
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [462]
 任务=找寻收集30个僵尸骨头
 声望=1
-Reward_Race_90 = 金手镯
+Reward_Race_90 = GoldBracelet
 Reward_Amount_90 = 1
 
-Reward_Race_10 = 震天项链
+Reward_Race_10 = SkiesNecklace
 Reward_Amount_10 = 1
 
 [463]
 任务=找寻七点白蛇
 声望=1
-Reward_Race_90 = 战神油
+Reward_Race_90 = WarOil
 Reward_Amount_90 = 1
 
-Reward_Race_10 = 祝福油
+Reward_Race_10 = BlessingOil
 Reward_Amount_10 = 2
 
 [465]
 任务=找寻金矿3个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10_Man = 战神盔甲（男）
+Reward_Race_10_Man = WarArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 战神盔甲（女）
+Reward_Race_10_WoMan = WarArmor(F)
 Reward_Amount_10_WoMan =1
 
 [466]
 任务=找寻七点白蛇胆
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
-Reward_Race_90_1th = 战神油
+Reward_Race_90_1th = WarOil
 Reward_Amount_90_1th = 1
 
-Reward_Race_10 = 白虎剑
+Reward_Race_10 = TigerSword
 Reward_Amount_10 = 1
 
 [467]
 任务=找寻小手镯20个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10_Man = 恶魔长袍（男）
+Reward_Race_10_Man = DevilRobe(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 恶魔长袍（女）
+Reward_Race_10_WoMan = DevilRobe(F)
 Reward_Amount_10_WoMan = 1
 
 [468]
 任务=找寻七点白蛇血
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
-Reward_Race_90_1th = 波纹手镯
+Reward_Race_90_1th = RippleBracelet
 Reward_Amount_90_1th = 1
 
-Reward_Race_10_Man = 恶魔长袍（男）
+Reward_Race_10_Man = DevilRobe(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 恶魔长袍（女）
+Reward_Race_10_WoMan = DevilRobe(F)
 Reward_Amount_10_WoMan = 1
 
 [469]
 任务=找寻半兽勇士1只
 声望=1
-Reward_Race_90 = 龙骨戒指
+Reward_Race_90 = KeelRing
 Reward_Amount_90 = 2
 
-Reward_Race_10 = 金币
+Reward_Race_10 = Gold
 Reward_Amount_10 = 30000
 
 [470]
 任务=找寻波纹手镯10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 50000
 
-Reward_Race_10 = 武器强化油 
+Reward_Race_10 = WeaponOil 
 Reward_Amount_10 = 2
 
 [471]
 任务=找寻钳虫皮10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10_Man = 灵魂战衣（男）
+Reward_Race_10_Man = SoulRobe(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 灵魂战衣（女）
+Reward_Race_10_WoMan = SoulRobe(F)
 Reward_Amount_10_WoMan = 1
 
 [472]
 任务=杀10盔甲虫 找铁夹子
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [473]
 任务=找寻邪恶钳虫皮
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 红光偃月
+Reward_Race_10 = RedYanyue
 Reward_Amount_10 = 1
 
 [474]
 任务=找寻皮45张
 声望=1
-Reward_Race_90_Man = 重盔甲（男）
+Reward_Race_90_Man = HeavyArmor(M)
 Reward_Amount_90_Man = 1
-Reward_Race_90_WoMan = 重盔甲（女）
+Reward_Race_90_WoMan = HeavyArmor(F)
 Reward_Amount_90_WoMan = 1
 
-Reward_Race_10 = 金币
+Reward_Race_10 = Gold
 Reward_Amount_10 = 30000
 
 [475]
 任务=找寻30张皮
 声望=1
-Reward_Race_90_Man = 魔法长袍（男）
+Reward_Race_90_Man = MagicRobe(M)
 Reward_Amount_90_Man = 1
-Reward_Race_90_WoMan = 魔法长袍（女）
+Reward_Race_90_WoMan = MagicRobe(F)
 Reward_Amount_90_WoMan = 1
 
-Reward_Race_10_Man = 恶魔长袍（男）
+Reward_Race_10_Man = DevilRobe(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan =恶魔长袍（女）
+Reward_Race_10_WoMan =DevilRobe(F)
 Reward_Amount_10_WoMan = 1
 
 [477]
 任务=找寻蚂蚁卵30个
 声望=1
-Reward_Race_90_Man = 灵魂战衣（男）
+Reward_Race_90_Man = SoulRobe(M)
 Reward_Amount_90_Man = 1
-Reward_Race_90_WoMan = 灵魂战衣（女）
+Reward_Race_90_WoMan = SoulRobe(F)
 Reward_Amount_90_WoMan = 1
 
-Reward_Race_10 = 红叶血环
+Reward_Race_10 = BloodRing
 Reward_Amount_10 = 1
 
 [479]
 任务=找寻多钩猫50只
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 10000
 
-Reward_Race_10 = 金币
+Reward_Race_10 = Gold
 Reward_Amount_10 = 30000
 
 [480]
 任务=找寻斩马刀
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
-Reward_Race_90_1th = 坚固手套
+Reward_Race_90_1th = SturdyGlove
 Reward_Amount_90_1th = 1
 
-Reward_Race_10_Man = 战神盔甲（男）
+Reward_Race_10_Man = WarArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 战神盔甲（女）
+Reward_Race_10_WoMan = WarArmor(F)
 Reward_Amount_10_WoMan =1
 
 [481]
 任务=找寻蜘蛛线25个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [482]
 任务=找寻不死骨头
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
-Reward_Race_90_1th = 竹笛
+Reward_Race_90_1th = BambooFluteNecklace
 Reward_Amount_90_1th = 1
 
-Reward_Race_10_Man = 袁灵法衣（男）
+Reward_Race_10_Man = VestmentArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 袁灵法衣（女）
+Reward_Race_10_WoMan = VestmentArmor(F)
 Reward_Amount_10_WoMan = 1
 
 [483]
 任务=杀100只浪子人鬼
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 黑光降魔
+Reward_Race_10 = BlackExorcizeSword
 Reward_Amount_10 = 1
 
 [484]
 任务=找寻蓝翡翠项链
 声望=1
-Reward_Race_90 = 灯笼项链
+Reward_Race_90 = LanternNecklace
 Reward_Amount_90 = 1
-Reward_Race_90_1th = 金币
+Reward_Race_90_1th = Gold
 Reward_Amount_90_1th = 20000
 
-Reward_Race_10_Man = 幽灵战衣（男）
+Reward_Race_10_Man = SpecterArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 幽灵战衣（女）
+Reward_Race_10_WoMan = SpecterArmor(F)
 Reward_Amount_10_WoMan = 1
 
 [485]
 任务=找寻腐蚀人鬼之泪
 声望=1
-Reward_Race_90 = 蓝翡翠项链
+Reward_Race_90 = BlueJadeNecklace
 Reward_Amount_90 = 1
-Reward_Race_90_1th = 金币
+Reward_Race_90_1th = Gold
 Reward_Amount_90_1th = 30000
 
-Reward_Race_10_Man = 战神盔甲（男）
+Reward_Race_10_Man = WarArmor(M)
 Reward_Amount_10_Man = 1
-Reward_Race_10_WoMan = 战神盔甲（女）
+Reward_Race_10_WoMan = WarArmor(F)
 Reward_Amount_10_WoMan =1
 
 [487]
 任务=找寻品质12的3块牛肉
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 20000
 
-Reward_Race_10 = 泰坦戒指
+Reward_Race_10 = TitanRing
 Reward_Amount_10 = 1
 
 [488]
 任务=找寻抓住千年毒蛇
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 力量戒指
+Reward_Race_10 = PowerRing
 Reward_Amount_10 = 1
 
 [490]
 任务=找寻火焰沃玛号角 10个
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 命运之刃
+Reward_Race_10 = DestinyBlade
 Reward_Amount_10 = 1
 
 [492]
 任务=找寻喝酒 -_-!
 声望=1
-Reward_Race = 金币
+Reward_Race = Gold
 Reward_Amount = 20000
 
 [494]
 任务=杀蚂蚁将军
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 武器强化油
+Reward_Race_10 = WeaponOil
 Reward_Amount_10 = 1
 
 [495]
 任务=杀骷髅精灵骨
 声望=1
-Reward_Race_90_Man = 恶魔长袍（男）
+Reward_Race_90_Man = DevilRobe(M)
 Reward_Amount_90_Man = 1
-Reward_Race_90_WoMan = 恶魔长袍（女）
+Reward_Race_90_WoMan = DevilRobe(F)
 Reward_Amount_90_WoMan = 1
 
-Reward_Race_10 = 幽灵手套
+Reward_Race_10 = GhostGlove
 Reward_Amount_10 = 1
 
 [496]
 任务=找寻七点白蛇牙齿
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
 
-Reward_Race_10 = 天掌靴子
+Reward_Race_10 = PalmBoots
 Reward_Amount_10 = 1
 
 [497]
 任务=屠宰70只羊
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 40000
 
-Reward_Race_10 = 泰坦戒指
+Reward_Race_10 = TitanRing
 Reward_Amount_10 = 1
 
 [498]
 任务=送信 龙叔 丘叔
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
-Reward_Race_90_1th = 魅力戒指
+Reward_Race_90_1th = CharmRing
 Reward_Amount_90_1th = 1
 
-Reward_Race_10 = 赤飞靴子
+Reward_Race_10 = RedBoots
 Reward_Amount_10 = 1
 
 [499]
 任务=杀红野猪
 声望=1
-Reward_Race_90 = 金币
+Reward_Race_90 = Gold
 Reward_Amount_90 = 30000
-Reward_Race_90_1th = 道德戒指
+Reward_Race_90_1th = EthicsRing
 Reward_Amount_90_1th = 1
 
-Reward_Race_10 = 命运之刃
+Reward_Race_10 = DestinyBlade
 Reward_Amount_10 = 1
 
 

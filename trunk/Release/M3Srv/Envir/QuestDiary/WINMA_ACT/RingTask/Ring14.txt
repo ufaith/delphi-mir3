@@ -23,7 +23,7 @@ CHECK [740] 1
 CHECK [732] 1
 CHECK [733] 0
 #SAY
-听说神舰的“霸王守卫”最近在西沙漠捣乱，请少侠帮忙消灭它。\
+听说神舰的“OverlordGuard”最近在西沙漠捣乱，请少侠帮忙消灭它。\
 #ACT
 break
 
@@ -32,7 +32,7 @@ CHECK [740] 1
 CHECK [732] 0
 CHECK [733] 1
 #SAY
-听说西沙漠的“魔石守护神”最近在冰宫捣乱，请少侠帮忙消灭它。\
+听说西沙漠的“StonePatron”最近在冰宫捣乱，请少侠帮忙消灭它。\
 #ACT
 break
 
@@ -41,7 +41,7 @@ CHECK [740] 1
 CHECK [732] 1
 CHECK [733] 1
 #SAY
-听说冰宫的“寒冰守护神”最近在神舰捣乱，请少侠帮忙消灭它。\
+听说冰宫的“IcePatron”最近在神舰捣乱，请少侠帮忙消灭它。\
 #ACT
 break
 
@@ -61,10 +61,10 @@ EQUAL D0 0
 set [732] 1
 set [733] 0
 set [740] 1
-give 怪物通缉令（守卫） 1
+give MonsterWanted(Guard) 1
 break
 #SAY
-听说神舰的“霸王守卫”最近在西沙漠捣乱，请少侠帮忙消灭它。\\
+听说神舰的“OverlordGuard”最近在西沙漠捣乱，请少侠帮忙消灭它。\\
 
 #IF
 EQUAL D0 1
@@ -72,10 +72,10 @@ EQUAL D0 1
 set [732] 0
 set [733] 1
 set [740] 1
-give 怪物通缉令（魔石） 1
+give MonsterWanted(Stone) 1
 break
 #SAY
-听说西沙漠的“魔石守护神”最近在冰宫捣乱，请少侠帮忙消灭它。\\
+听说西沙漠的“StonePatron”最近在冰宫捣乱，请少侠帮忙消灭它。\\
 
 
 #IF
@@ -84,10 +84,10 @@ EQUAL D0 1
 set [732] 1
 set [733] 1
 set [740] 1
-give 怪物通缉令（寒冰） 1
+give MonsterWanted(Ice) 1
 break
 #SAY
-听说冰宫的“寒冰守护神”最近在神舰捣乱，请少侠帮忙消灭它。\\
+听说冰宫的“IcePatron”最近在神舰捣乱，请少侠帮忙消灭它。\\
 
 
 [@14_1环任务领奖]

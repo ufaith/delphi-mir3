@@ -87,7 +87,7 @@ MOVR D3 5
 DEC D0 50
 INC D0 %D3
 SET [009] 1
-GIVE 游戏点卷 %D0
+GIVE GamePoints %D0
 GOTO @变量清%$#
 CLOSE
 BREAK
@@ -126,7 +126,7 @@ MOV D4 %P9
 DEC D0 50
 INC D0 %D4
 SET [009] 1
-GIVE 游戏点卷 %D0
+GIVE GamePoints %D0
 GOTO @变量清%$#
 CLOSE
 BREAK
@@ -165,7 +165,7 @@ MOV D4 %P9
 DEC D0 50
 INC D0 %D4
 SET [009] 1
-GIVE 游戏点卷 %D0
+GIVE GamePoints %D0
 GOTO @变量清%$#
 CLOSE
 BREAK

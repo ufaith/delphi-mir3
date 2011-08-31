@@ -24,6 +24,6 @@
 {FCOLOR=250}魔法时间延长, 麻痹 , 攻击速度 {FCOLOR=255} \ \
 
 {FCOLOR=250}其他制炼{FCOLOR=255}(武器等级10以上的剑) \ \
-{FCOLOR=250}武器名称{FCOLOR=255} : 金币 100万 \ \
+{FCOLOR=250}武器名称{FCOLOR=255} : Gold 100万 \ \
 <Back/@main>
 }

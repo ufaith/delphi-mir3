@@ -32,7 +32,7 @@
 
 [@bamgol_5]
 {
-如果想要为珍珍解毒的话，需要传说中的蛇{FCOLOR=250}千年毒蛇胆{FCOLOR=255}来制药，翻遍毒蛇山谷也一定要抓到{FCOLOR=250}千年毒蛇{FCOLOR=255}啊！\ \
+如果想要为珍珍解毒的话，需要传说中的蛇{FCOLOR=250}千年毒蛇胆{FCOLOR=255}来制药，翻遍毒蛇山谷也一定要抓到{FCOLOR=250}PoisonousSnake{FCOLOR=255}啊！\ \
 <前一步/@C_NQuest>
 }
 

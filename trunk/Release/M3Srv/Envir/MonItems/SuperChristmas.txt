@@ -1,0 +1,83 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1     GamePoints
+1/1     GamePoints
+1/1     GamePoints
+1/1     GamePoints
+1/1     GamePoints
+1/1    Gold  32000
+1/10    HPPotion(S)
+1/10    MPPotion(S)
+1/10    HPPotion(M)
+1/10    MPPotion(M)
+1/10    HPPotion(L)  
+1/10    MPPotion(L)
+1/10    HPPotion(XL)
+1/10    MPPotion(XL)
+1/10    HPPotion(S)
+1/10    MPPotion(S)
+1/10    HPPotion(M)
+1/10    MPPotion(M)
+1/10    HPPotion(L)
+1/10    MPPotion(L)
+1/10    HPPotion(XL)
+1/10    MPPotion(XL)
+1/10    HPPotion(S)
+1/10    MPPotion(S)
+1/10    HPPotion(M)
+1/10    MPPotion(M)
+1/10    HPPotion(L)
+1/10    MPPotion(L)
+1/10    HPPotion(XL)
+1/10    MPPotion(XL)
+1/1600  UnicornArmor(M)
+1/1600  UnicornArmor(F)
+1/1600  ImmortalArmor(M)
+1/1600  ImmortalArmor(F)
+1/1600  ElementArmor(M)
+1/1600  ElementArmor(F)
+
+
+1/100    Snowball
+1/800  Assault
+1/800  DestructSurge
+1/800  Lonesome
+1/800  Beckon
+1/1600  Transfer
+1/1600  FireRain
+1/1600  Yihuajieyu
+1/2000  Defiance
+1/2000  AngryThunder
+1/6000  Masculine
+1/6000  Might
+1/8000  CoagulationSoul（쵤석）11
+1/6000  Shade
+
+1/100  WildNecklace
+1/100  MagicCloudNecklace
+1/100  CenteringNecklace
+1/100  DisciplingRing
+1/100  RyomaRing
+1/100  AlbatronRing
+
+1/1000  FerricyanideSword
+
+1/14  RulingStick
+1/14  PromiseStaff
+1/14  GuYuToken
+
+
+1/100   MeteorKnife
+1/100   Shadowbane
+1/100   MagicBlade
+
+1/250  Thunderbolt
+1/250  DragonsSword
+1/250  SoulsStaff
+
+1/1   YuXiaRing
+1/1   YuIronNecklace
+1/1   MountRing
+1/1   IronTire
+1/1   TeleportRing

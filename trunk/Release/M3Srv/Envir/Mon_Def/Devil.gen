@@ -1,0 +1,35 @@
+;;Legend Of Mir 3 C3Engine
+[Gen]
+;-------------------------------------------------------------
+D033  200   200   WoomaLeader9         200   30     15
+D033  200   200   SkeltonLeader9         200   30     15
+D033  200   200   ZumaLeader9         200   30     15
+D033  200   200   NightDemon9       200   30     15
+D033  200   200   DevilThunder9         200   30     15
+D033  200   200   RedDevil9         200   10     15
+D033  200   200   OverlordFounder9         200   10     15
+;--------------------------------------------------------
+
+02_002   40  65     WoomaLeader9     15   3    15
+02_002   40  65     SkeltonLeader9     15   3    15
+02_002   40  65     ZumaLeader9     15   2    15
+02_002   40  65     NightDemon9   15   3    15
+02_002   64  40     DevilThunder9     8    3    15
+02_002   64  40     RedDevil9     8    2    15
+02_002   64  40     OverlordFounder9     8    2    15
+
+02_003   40  65     WoomaLeader9     15   3    15
+02_003   40  65     SkeltonLeader9     15   3    15
+02_003   40  65     ZumaLeader9     15   2    15
+02_003   40  65     NightDemon9   15   3    15
+02_003   64  40     DevilThunder9     8    3    15
+02_003   64  40     RedDevil9     8    2    15
+02_003   64  40     OverlordFounder9     8    2    15
+
+02_004   25  22     WoomaLeader9     10    2    12
+02_004   25  22     ZumaLeader9     10    4    12
+02_004   25  22     NightDemon9   10    2    12
+02_004   25  22     DevilThunder9     10    2    12
+02_004   25  22     OverlordFounder9     5     1    12
+
+02_004   44  24     ShenDragon8       0    1    60

@@ -35,7 +35,7 @@ checklevel 14
 
 [@mugong_fly_next1_1]
 #IF
-checkmagic 瞬息移动
+checkmagic Teleport
 #SAY
 你虽然还没有掌握瞬息移动，我很忙请回吧！\ 
 #ELSEACT
@@ -55,7 +55,7 @@ set [504] 1
 #IF
 #SAY
 正好有适合培养此种能力的场所，到那里去训练吧。到达该场地的过程中，会出现很多岔道。你要不断地同怪物打斗，时间很紧迫，几乎是凭本能选择一个方向走出岔道。\
-如此经过 {FCOLOR=250}5个岔路口{FCOLOR=255} ，才可以通过考场。当然是指找到正确出口的情况。在考场通道的最后段要解决掉挡着路的叫 {FCOLOR=250}沙漠树魔{FCOLOR=255}  的怪物，然后才可以向 {FCOLOR=250}下一个考场移动{FCOLOR=255} 。\ \
+如此经过 {FCOLOR=250}5个岔路口{FCOLOR=255} ，才可以通过考场。当然是指找到正确出口的情况。在考场通道的最后段要解决掉挡着路的叫 {FCOLOR=250}DesertTree{FCOLOR=255}  的怪物，然后才可以向 {FCOLOR=250}下一个考场移动{FCOLOR=255} 。\ \
 如果选择了错误的出口。。。你就要重新开始。在规定的时间内，有很多此机会。无论如何，祝你走运。努力试试！\ \
 <没有什么问题。/@mugong_fly_next5> \  
 <有些困难，可以给些帮助吗？/@mugong_fly_next3> \
@@ -195,7 +195,7 @@ goto @mugong_fly_next8_1
 Param1 02_010
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_next8_2
 
 [@mugong_fly_next8_2]
@@ -204,7 +204,7 @@ goto @mugong_fly_next8_2
 Param1 02_010
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_next8_3
 
 [@mugong_fly_next8_3]
@@ -213,7 +213,7 @@ goto @mugong_fly_next8_3
 Param1 02_010
 Param2 17
 Param3 51
-MonGen 骷髅精灵61  4 5
+MonGen SkeletonWizard61  4 5
 goto @mugong_fly_next8_4
 
 [@mugong_fly_next8_4]
@@ -222,7 +222,7 @@ goto @mugong_fly_next8_4
 Param1 02_010
 Param2 58
 Param3 8
-MonGen 掷斧骷髅61  2 5
+MonGen SkeletonAxer61  2 5
 goto @mugong_fly_next8_5
 
 [@mugong_fly_next8_5]
@@ -231,7 +231,7 @@ goto @mugong_fly_next8_5
 Param1 02_010
 Param2 36
 Param3 29
-MonGen 骷髅战士61  2 5
+MonGen SkeletonWarrior61  2 5
 goto @mugong_fly_next9_1
 
 [@mugong_fly_next9_1]
@@ -240,7 +240,7 @@ goto @mugong_fly_next9_1
 Param1 02_011
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_next9_2
 
 [@mugong_fly_next9_2]
@@ -249,7 +249,7 @@ goto @mugong_fly_next9_2
 Param1 02_011
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_next9_3
 
 [@mugong_fly_next9_3]
@@ -258,7 +258,7 @@ goto @mugong_fly_next9_3
 Param1 02_011
 Param2 17
 Param3 51
-MonGen  沃玛勇士61 4 5
+MonGen  WoomaWarrior61 4 5
 goto @mugong_fly_next9_4
 
 [@mugong_fly_next9_4]
@@ -267,7 +267,7 @@ goto @mugong_fly_next9_4
 Param1 02_011
 Param2 58
 Param3 8
-MonGen 沃玛勇士61 4 5
+MonGen WoomaWarrior61 4 5
 goto @mugong_fly_next9_5
 
 [@mugong_fly_next9_5]
@@ -276,7 +276,7 @@ goto @mugong_fly_next9_5
 Param1 02_011
 Param2 36
 Param3 29
-MonGen 火焰沃玛61  2 5
+MonGen FlamingWooma61  2 5
 goto @mugong_fly_next10_1
 
 [@mugong_fly_next10_1]
@@ -285,7 +285,7 @@ goto @mugong_fly_next10_1
 Param1 02_012
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_next10_2
 
 [@mugong_fly_next10_2]
@@ -294,7 +294,7 @@ goto @mugong_fly_next10_2
 Param1 02_012
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_next10_3
 
 [@mugong_fly_next10_3]
@@ -303,7 +303,7 @@ goto @mugong_fly_next10_3
 Param1 02_012
 Param2 17
 Param3 51
-MonGen 掷斧骷髅61  4 5
+MonGen SkeletonAxer61  4 5
 goto @mugong_fly_next10_4
 
 [@mugong_fly_next10_4]
@@ -312,7 +312,7 @@ goto @mugong_fly_next10_4
 Param1 02_012
 Param2 58
 Param3 8
-MonGen 骷髅精灵61  4 5
+MonGen SkeletonWizard61  4 5
 goto @mugong_fly_next10_5
 
 [@mugong_fly_next10_5]
@@ -321,7 +321,7 @@ goto @mugong_fly_next10_5
 Param1 02_012
 Param2 36
 Param3 29
-MonGen 骷髅战士61  3 5
+MonGen SkeletonWarrior61  3 5
 goto @mugong_fly_next11_1
 
 [@mugong_fly_next11_1]
@@ -330,7 +330,7 @@ goto @mugong_fly_next11_1
 Param1 02_013
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_next11_2
 
 [@mugong_fly_next11_2]
@@ -339,7 +339,7 @@ goto @mugong_fly_next11_2
 Param1 02_013
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_next11_3
 
 [@mugong_fly_next11_3]
@@ -348,7 +348,7 @@ goto @mugong_fly_next11_3
 Param1 02_013
 Param2 17
 Param3 51
-MonGen  沃玛勇士61 4 5
+MonGen  WoomaWarrior61 4 5
 goto @mugong_fly_next11_4
 
 [@mugong_fly_next11_4]
@@ -357,7 +357,7 @@ goto @mugong_fly_next11_4
 Param1 02_013
 Param2 58
 Param3 8
-MonGen 沃玛勇士61 4 5
+MonGen WoomaWarrior61 4 5
 goto @mugong_fly_next11_5
 
 [@mugong_fly_next11_5]
@@ -366,7 +366,7 @@ goto @mugong_fly_next11_5
 Param1 02_013
 Param2 36
 Param3 29
-MonGen 火焰沃玛61  3 5
+MonGen FlamingWooma61  3 5
 goto @mugong_fly_next12_1
 
 [@mugong_fly_next12_1]
@@ -375,7 +375,7 @@ goto @mugong_fly_next12_1
 Param1 02_014
 Param2 55
 Param3 91
-MonGen 沙漠树魔61 2 0
+MonGen DesertTree61 2 0
 goto @mugong_fly_next12_2
 
 [@mugong_fly_next12_2]
@@ -384,7 +384,7 @@ goto @mugong_fly_next12_2
 Param1 02_014
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  2 0
+MonGen DesertTree62  2 0
 goto @mugong_fly_next12_3
 
 [@mugong_fly_next12_3]
@@ -393,7 +393,7 @@ goto @mugong_fly_next12_3
 Param1 02_014
 Param2 17
 Param3 51
-MonGen 骷髅精灵61  4 5
+MonGen SkeletonWizard61  4 5
 goto @mugong_fly_next12_4
 
 [@mugong_fly_next12_4]
@@ -402,7 +402,7 @@ goto @mugong_fly_next12_4
 Param1 02_014
 Param2 58
 Param3 8
-MonGen 掷斧骷髅61  3 5
+MonGen SkeletonAxer61  3 5
 goto @mugong_fly_next12_5
 
 [@mugong_fly_next12_5]
@@ -411,7 +411,7 @@ goto @mugong_fly_next12_5
 Param1 02_014
 Param2 36
 Param3 29
-MonGen 骷髅战士61  3 5
+MonGen SkeletonWarrior61  3 5
 goto @mugong_fly_next13
 
 [@mugong_fly_next13]
@@ -522,7 +522,7 @@ goto @mugong_fly_restart1_1
 Param1 02_010
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_restart1_2
 
 [@mugong_fly_restart1_2]
@@ -531,7 +531,7 @@ goto @mugong_fly_restart1_2
 Param1 02_010
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_restart1_3
 
 [@mugong_fly_restart1_3]
@@ -540,7 +540,7 @@ goto @mugong_fly_restart1_3
 Param1 02_010
 Param2 17
 Param3 51
-MonGen 骷髅精灵61  4 5
+MonGen SkeletonWizard61  4 5
 goto @mugong_fly_restart1_4
 
 [@mugong_fly_restart1_4]
@@ -549,7 +549,7 @@ goto @mugong_fly_restart1_4
 Param1 02_010
 Param2 58
 Param3 8
-MonGen 掷斧骷髅61  2 5
+MonGen SkeletonAxer61  2 5
 goto @mugong_fly_restart1_5
 
 [@mugong_fly_restart1_5]
@@ -558,7 +558,7 @@ goto @mugong_fly_restart1_5
 Param1 02_010
 Param2 36
 Param3 29
-MonGen 骷髅战士61  1 5
+MonGen SkeletonWarrior61  1 5
 goto @mugong_fly_restart2_1
 
 [@mugong_fly_restart2_1]
@@ -567,7 +567,7 @@ goto @mugong_fly_restart2_1
 Param1 02_011
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_restart2_2
 
 [@mugong_fly_restart2_2]
@@ -576,7 +576,7 @@ goto @mugong_fly_restart2_2
 Param1 02_011
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_restart2_3
 
 [@mugong_fly_restart2_3]
@@ -585,7 +585,7 @@ goto @mugong_fly_restart2_3
 Param1 02_011
 Param2 17
 Param3 51
-MonGen  沃玛勇士61 4 5
+MonGen  WoomaWarrior61 4 5
 goto @mugong_fly_restart2_4
 
 [@mugong_fly_restart2_4]
@@ -594,7 +594,7 @@ goto @mugong_fly_restart2_4
 Param1 02_011
 Param2 58
 Param3 8
-MonGen 沃玛勇士61 4 5
+MonGen WoomaWarrior61 4 5
 goto @mugong_fly_restart2_5
 
 [@mugong_fly_restart2_5]
@@ -603,7 +603,7 @@ goto @mugong_fly_restart2_5
 Param1 02_011
 Param2 36
 Param3 29
-MonGen 火焰沃玛61  2 5
+MonGen FlamingWooma61  2 5
 goto @mugong_fly_restart3_1
 
 [@mugong_fly_restart3_1]
@@ -612,7 +612,7 @@ goto @mugong_fly_restart3_1
 Param1 02_012
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_restart3_2
 
 [@mugong_fly_restart3_2]
@@ -621,7 +621,7 @@ goto @mugong_fly_restart3_2
 Param1 02_012
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_restart3_3
 
 [@mugong_fly_restart3_3]
@@ -630,7 +630,7 @@ goto @mugong_fly_restart3_3
 Param1 02_012
 Param2 17
 Param3 51
-MonGen 掷斧骷髅61  4 5
+MonGen SkeletonAxer61  4 5
 goto @mugong_fly_restart3_4
 
 [@mugong_fly_restart3_4]
@@ -639,7 +639,7 @@ goto @mugong_fly_restart3_4
 Param1 02_012
 Param2 58
 Param3 8
-MonGen 骷髅精灵61  4 5
+MonGen SkeletonWizard61  4 5
 goto @mugong_fly_restart3_5
 
 [@mugong_fly_restart3_5]
@@ -648,7 +648,7 @@ goto @mugong_fly_restart3_5
 Param1 02_012
 Param2 36
 Param3 29
-MonGen 骷髅战士61  3 5
+MonGen SkeletonWarrior61  3 5
 goto @mugong_fly_restart4_1
 
 [@mugong_fly_restart4_1]
@@ -657,7 +657,7 @@ goto @mugong_fly_restart4_1
 Param1 02_013
 Param2 55
 Param3 91
-MonGen 沙漠树魔61  1 0
+MonGen DesertTree61  1 0
 goto @mugong_fly_restart4_2
 
 [@mugong_fly_restart4_2]
@@ -666,7 +666,7 @@ goto @mugong_fly_restart4_2
 Param1 02_013
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  1 0
+MonGen DesertTree62  1 0
 goto @mugong_fly_restart4_3
 
 [@mugong_fly_restart4_3]
@@ -675,7 +675,7 @@ goto @mugong_fly_restart4_3
 Param1 02_013
 Param2 17
 Param3 51
-MonGen  沃玛勇士61 4 5
+MonGen  WoomaWarrior61 4 5
 goto @mugong_fly_restart4_4
 
 [@mugong_fly_restart4_4]
@@ -684,7 +684,7 @@ goto @mugong_fly_restart4_4
 Param1 02_013
 Param2 58
 Param3 8
-MonGen 沃玛勇士61 3 5
+MonGen WoomaWarrior61 3 5
 goto @mugong_fly_restart4_5
 
 [@mugong_fly_restart4_5]
@@ -693,7 +693,7 @@ goto @mugong_fly_restart4_5
 Param1 02_013
 Param2 36
 Param3 29
-MonGen 火焰沃玛61  3 20
+MonGen FlamingWooma61  3 20
 goto @mugong_fly_restart5_1
 
 [@mugong_fly_restart5_1]
@@ -702,7 +702,7 @@ goto @mugong_fly_restart5_1
 Param1 02_014
 Param2 55
 Param3 91
-MonGen 沙漠树魔61 2 0
+MonGen DesertTree61 2 0
 goto @mugong_fly_restart5_2
 
 [@mugong_fly_restart5_2]
@@ -711,7 +711,7 @@ goto @mugong_fly_restart5_2
 Param1 02_014
 Param2 94
 Param3 44
-MonGen 沙漠树魔62  2 0
+MonGen DesertTree62  2 0
 goto @mugong_fly_restart5_3
 
 [@mugong_fly_restart5_3]
@@ -720,7 +720,7 @@ goto @mugong_fly_restart5_3
 Param1 02_014
 Param2 17
 Param3 51
-MonGen 骷髅精灵61  4 5
+MonGen SkeletonWizard61  4 5
 goto @mugong_fly_restart5_4
 
 [@mugong_fly_restart5_4]
@@ -729,7 +729,7 @@ goto @mugong_fly_restart5_4
 Param1 02_014
 Param2 58
 Param3 8
-MonGen 掷斧骷髅61  3 5
+MonGen SkeletonAxer61  3 5
 goto @mugong_fly_restart5_5
 
 [@mugong_fly_restart5_5]
@@ -738,7 +738,7 @@ goto @mugong_fly_restart5_5
 Param1 02_014
 Param2 36
 Param3 29
-MonGen 骷髅战士61  3 5
+MonGen SkeletonWarrior61  3 5
 goto @mugong_fly_restart6
 
 [@mugong_fly_restart6]
@@ -872,9 +872,9 @@ goto @mugong_fly_give
 #IF
 check [751] 0
 #ACT
-give 瞬息移动（秘籍） 1
-give 金币 19000
-give 变形银蛇戒指 1
+give Teleport 1
+give Gold 19000
+give SilverSnakeRing 1
 reset [504] 11
 set [751] 1
 #SAY
@@ -886,6 +886,6 @@ set [751] 1
 {
 #IF
 #SAY
-为了学习瞬息移动，在考场之内要 {FCOLOR=250}选择5次岔路口{FCOLOR=255} 。只有5次都选择正确了，才可以回到我这里。如果错了，又要重新回到起点。训练场之间移动的方法是解决掉挡着路的叫 {FCOLOR=250}沙漠树魔{FCOLOR=255} 的怪物，通路中间尽最大可能地回避怪物即可。\ \
+为了学习瞬息移动，在考场之内要 {FCOLOR=250}选择5次岔路口{FCOLOR=255} 。只有5次都选择正确了，才可以回到我这里。如果错了，又要重新回到起点。训练场之间移动的方法是解决掉挡着路的叫 {FCOLOR=250}DesertTree{FCOLOR=255} 的怪物，通路中间尽最大可能地回避怪物即可。\ \
 <Exit/@exit>
 }

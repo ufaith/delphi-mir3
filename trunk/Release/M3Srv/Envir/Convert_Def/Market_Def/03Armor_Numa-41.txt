@@ -44,6 +44,6 @@ Item has been repaired.\ \
 [@NPC_Goods]
 {
 ;掉落的物品     数量       hour
-魔法头盔        1         16
+MagicHelmet        1         16
 
 }

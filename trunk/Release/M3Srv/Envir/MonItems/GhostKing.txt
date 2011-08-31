@@ -1,0 +1,83 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1000   Spar
+1/1    Gold 18000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/8  ThreeBracelet
+1/8  SibeiBracelet
+
+1/8  BlueJadeNecklace
+1/8  Magnifier
+1/8  BambooFluteNecklace
+
+1/8  WomaHelmet
+
+1/8  HeavyArmor(M)
+1/8  HeavyArmor(F)
+1/8  MagicRobe(M)
+1/8  MagicRobe(F)
+1/8  SoulRobe(M)
+1/8  SoulRobe(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/15  DragonRing
+1/15  FireJadeRing
+1/15  TianmingRing
+
+1/15  GoldBracelet
+1/15  DeathGlove
+1/15  GhostGlove
+
+1/15  GloryNecklace
+1/15  AngerBell
+1/15  LotusMirror
+1/15  GhostNecklace
+
+1/15  ColorfulShoes
+
+1/15  BambooHat
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/60 BlackGlove
+
+1/60 SkiesNecklace
+1/60 SilverMirrorNecklace
+1/60 ColorfulNecklace
+1/60 SoulNecklace
+1/60 WarriorNecklace
+
+1/60 VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/200   RainbowNecklace
+1/200   RainbowBracelet
+1/200   RainbowRing
+
+1/200   GreenNecklace
+1/200   DemonBells
+1/200   SoulsNecklace

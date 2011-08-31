@@ -6,34 +6,34 @@ LoadValue D1 "ParamControl\开区刷怪.ini" [开区后] 开区刷怪
 #IF
 Elarge D1 1
 #ACT
-Monclear 1  牛
-Monclear 1  猪
-Monclear 1  鸡
+Monclear 1  Cow
+Monclear 1  Pig
+Monclear 1  Chicken
 Delaygoto [Grobal] 30 @开区刷怪_2
 #ELSEACT
 break
 
 [@开区刷怪_2]
 #ACT
-MonGenP   "1,407,124,12"    牛 20
-MonGenP   "1,393,120,12"    牛 20
-MonGenP   "1,382,145,12"    猪 20
-MonGenP   "1,408,151,12"    猪 20
-MonGenP   "1,378,125,12"    牛 20
-MonGenP   "1,407,124,12"    猪 20
-MonGenP   "1,393,120,12"    猪 20
-MonGenP   "1,382,145,12"    牛 20
-MonGenP   "1,408,151,12"    牛 20
-MonGenP   "1,378,125,12"    猪 20
-MonGenP   "1,403,185,12"    猪 20
-MonGenP   "1,403,185,12"    牛 20
-MonGenP   "1,371,95,12"     牛 20
-MonGenP   "1,371,95,12"     猪 20
-MonGenP   "1,407,124,12"    鸡 20
-MonGenP   "1,393,120,12"    鸡 20
-MonGenP   "1,382,145,12"    鸡 20
-MonGenP   "1,408,151,12"    鸡 20
-MonGenP   "1,378,125,12"    鸡 20
+MonGenP   "1,407,124,12"    Cow 20
+MonGenP   "1,393,120,12"    Cow 20
+MonGenP   "1,382,145,12"    Pig 20
+MonGenP   "1,408,151,12"    Pig 20
+MonGenP   "1,378,125,12"    Cow 20
+MonGenP   "1,407,124,12"    Pig 20
+MonGenP   "1,393,120,12"    Pig 20
+MonGenP   "1,382,145,12"    Cow 20
+MonGenP   "1,408,151,12"    Cow 20
+MonGenP   "1,378,125,12"    Pig 20
+MonGenP   "1,403,185,12"    Pig 20
+MonGenP   "1,403,185,12"    Cow 20
+MonGenP   "1,371,95,12"     Cow 20
+MonGenP   "1,371,95,12"     Pig 20
+MonGenP   "1,407,124,12"    Chicken 20
+MonGenP   "1,393,120,12"    Chicken 20
+MonGenP   "1,382,145,12"    Chicken 20
+MonGenP   "1,408,151,12"    Chicken 20
+MonGenP   "1,378,125,12"    Chicken 20
 dec D1 1
 SaveValue "ParamControl\开区刷怪.ini" [开区后] 开区刷怪 %D1
 Delaygoto [Grobal] 90 @开区刷怪_1

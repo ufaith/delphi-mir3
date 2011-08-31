@@ -6,7 +6,7 @@ SetItemEvent 3 6 @TWOCLICK_INGX
 
 [@TWOCLICK_INGX]
 #IF
-EQUAL A9 "新年祝贺卡"
+EQUAL A9 "NewYearsCard"
 #ACT
 GOTO @2CLICKto_spring1
 BREAK
@@ -15,11 +15,11 @@ BREAK
 
 [@2CLICKto_spring1]
 #ACT
-TAKE 新年祝贺卡 1
+TAKE NewYearsCard 1
 MOV A8 0
 MOV S2 0
 #SAY
-新年快乐,恭喜您集齐了1张《新年祝贺卡》,您可以输入20字以内的祝福短语,全服的玩家都能看到哦^_^而且如果您运气好的话还能随机获得 {FCOLOR=250}新年装备{FCOLOR=255},是不是很酷？\
+新年快乐,恭喜您集齐了1张《NewYearsCard》,您可以输入20字以内的祝福短语,全服的玩家都能看到哦^_^而且如果您运气好的话还能随机获得 {FCOLOR=250}新年装备{FCOLOR=255},是不是很酷？\
 <输入新年祝福短语/@@newyearblessing>\
 <结 束/@exit>
 
@@ -48,7 +48,7 @@ MOVR S2 10
 equal S2 1
 !CHECK [013] 1
 #ACT
-GIVE 贺岁新鞋 1
+GIVE NewYearBoots 1
 SET [013] 1
 MOV S2 0
 SYSMSG "恭喜您获得贺岁新鞋"
@@ -58,7 +58,7 @@ CLOSE
 equal S2 3
 !CHECK [014] 1
 #ACT
-GIVE 贺岁新帽 1
+GIVE NewYearHelmet 1
 SET [014] 1
 MOV S2 0
 SYSMSG "恭喜您获得贺岁新帽"
@@ -67,7 +67,7 @@ CLOSE
 #IF
 equal S2 6
 #ACT
-GIVE 金币 1000000
+GIVE Gold 1000000
 SYSMSG "恭喜您获得100万金币"
 MOV S2 0
 BREAK

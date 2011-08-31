@@ -1,0 +1,101 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1   ThunderGodBell
+1/4   Gold  600
+1/80  FirnFrost
+1/80  FirnFrost
+1/10   HPPotion(L)
+1/40  MPPotion(L)
+1/20  HPPotion(XL)
+1/80  MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 제료 아이템
+;-------------------------------------------------------------------------------
+1/10  Relics
+
+;-------------------------------------------------------------------------------
+;; 이벤트 아이템
+;-------------------------------------------------------------------------------
+;;1/10  환약(20000)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/500   BlackGlove
+
+1/500   SkiesNecklace
+1/500   SilverMirrorNecklace
+
+1/500   ColorfulNecklace
+1/500   SoulNecklace
+1/500   WarriorNecklace
+
+1/500   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/1000   FortunatelyRing
+
+1/1000   DevilRobe(M)
+1/1000   DevilRobe(F)
+1/1000   WarArmor(M)
+1/1000   WarArmor(F)
+1/1000   SpecterArmor(M)
+1/1000   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/4000  CelestialArmor(M)
+1/4000  CelestialArmor(F)
+1/4000  DragonArmor(M)
+1/4000  DragonArmor(F)
+1/4000  VestmentArmor(M)
+1/4000  VestmentArmor(F)
+
+1/18000  UnicornArmor(M)
+1/18000  UnicornArmor(F)
+1/18000  ImmortalArmor(M)
+1/18000  ImmortalArmor(F)
+1/18000  ElementArmor(M)
+1/18000  ElementArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/50000  WildNecklace
+1/50000  MagicCloudNecklace
+1/50000  CenteringNecklace
+1/50000  DisciplingRing
+1/50000  RyomaRing
+1/50000  AlbatronRing
+
+1/5000  FerricyanideSword
+
+1/7000  RulingStick
+1/7000  PromiseStaff
+1/7000  GuYuToken
+
+1/20000  MeteorKnife
+1/20000  Shadowbane
+1/20000  MagicBlade
+
+1/100000  TransitRustilyRing
+1/100000  RustyHorseRing
+1/100000  RustyBlueRing
+1/100000  RustyWildNecklace
+1/100000  RustyCloudNecklace
+1/100000  RustyCalmNecklace
+1/100000  RustyGoldenBracelet
+1/100000  RustyThinkBracelet
+1/100000  RustyReveresBracelet
+
+1/2000   BraveMedal
+1/6000   VenerableMedal
+1/12000  KingMedal
+1/24000  HolyMedal
+1/20000   FramedCard
+1/90000000 GamePoints

@@ -301,9 +301,9 @@ SMALL D6 1
 SYSMSG "你输入的数值有误!"
 break
 #IF
-checkitem 游戏点卷 %D6
+checkitem GamePoints %D6
 #ACT
-take 游戏点卷 %D6 
+take GamePoints %D6 
 MUL D6 20 %D6
 ADDJFPOINT %D6
 SYSMSG "兑换成功,你兑换了<$OUTPUT(D6)>点积分"

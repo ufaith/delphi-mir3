@@ -337,7 +337,7 @@ D043     [522]   1         [MonDie]      火焰沃玛      *         [MU_taoist\MonQ
 D903     [317]   1         [MonDie]      霸王守卫      *         [SinGiSun\MonQuest\Nm_SinGiHanMa]    [@main]                  Group      
 D904     [798]   0         [MonDie]      霸王教主      *         [SinGiSun\MonQuest\Nm_SinGiPachun1]  [@main]                  Group
 ;; ItemQuest
-D904     [798]   0         [GetItem]     霸王教主   霸王教主雕像 [SinGiSun\MonQuest\Nm_SinGiPachun]   [@main]                  Group
+D904     [798]   0         [GetItem]     霸王教主   KingStatue [SinGiSun\MonQuest\Nm_SinGiPachun]   [@main]                  Group
 ; MapQuest
 Z013     [0]     0         [Enter]       *             *         [SinGiSun\MapQuest\Na_ExitSinGiSun]  [@main]
 D90221   [0]     0         [Enter]       *             *         [SinGiSun\MapQuest\Na_RoomSinGiSub]  [@main]

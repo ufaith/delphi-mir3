@@ -12,9 +12,9 @@
 
 [@Special_Teleport]
 #IF
-checkitem 꾜鯉앴聯 1
+checkitem CrimeCard 1
 #ACT
-take 꾜鯉앴聯 1                  ;; 은업의증표를 지불 하고 이동 하는 특수 경우
+take CrimeCard 1                  ;; 은업의증표를 지불 하고 이동 하는 특수 경우
 mapmove 8 288 242
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Teleport\YubaeTele.txt] @YubaeTele_3

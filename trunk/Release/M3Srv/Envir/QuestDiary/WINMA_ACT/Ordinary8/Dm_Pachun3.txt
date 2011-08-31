@@ -6,7 +6,7 @@
 全体员工再赠送您2颗封魔石。1分钟后将传送您回道观。\
 再次感谢您对我们的支持！\
 #ACT
-give 封魔石 2
+give ShadowStone 2
 Delaygoto [local] 180 @moveout
 break
 [@moveout]

@@ -122,14 +122,14 @@ check [663] 1
 CHECK [661] 0
 CHECK [662] 1
 CHECK [663] 0
-checkitem 黑铁 20
-checkduraeva 黑铁 10
+checkitem BlackIronOre 20
+checkduraeva BlackIronOre 10
 #ACT
 set [661] 1
 set [670] 1
 set [662] 0
 set [663] 0
-take 黑铁 20
+take BlackIronOre 20
 GMEXECUTE adjustExp %USERNAME + 20000000
 SYSMSG "恭喜您完成了第七环任务，可以开始第八环任务了!"
 SYSMSG "您得到了2000万经验的奖励!"
@@ -139,14 +139,14 @@ break
 CHECK [661] 0
 CHECK [662] 0
 CHECK [663] 1
-checkitem 魔晶石 1
-checkduraeva 魔晶石 10
+checkitem Spar 1
+checkduraeva Spar 10
 #ACT
 set [661] 1
 set [670] 1
 set [662] 0
 set [663] 0
-take 魔晶石 1
+take Spar 1
 GMEXECUTE adjustExp %USERNAME + 25000000
 SYSMSG "恭喜您完成了第七环任务，可以开始第八环任务了!"
 SYSMSG "您得到了2500万经验的奖励!"
@@ -156,13 +156,13 @@ break
 CHECK [661] 0
 CHECK [662] 1
 CHECK [663] 1
-checkitem 连环明珠 5
+checkitem PearlChain 5
 #ACT
 set [661] 1
 set [670] 1
 set [662] 0
 set [663] 0
-take 连环明珠 5
+take PearlChain 5
 GMEXECUTE adjustExp %USERNAME + 25000000
 SYSMSG "恭喜您完成了第七环任务，可以开始第八环任务了!"
 SYSMSG "您得到了2500万经验的奖励!"

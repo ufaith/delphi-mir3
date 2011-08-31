@@ -31,7 +31,7 @@ BREAK
 
 #act
 set [997] 1
-give 绅士装 1
+give MaleAttire 1
 break
 goto @光棍节领
 #elsesay
@@ -61,7 +61,7 @@ break
 dec  D1  1
 SaveValue "QuestDiary\WINMA_DATA\Activities\FemaleBachelor.txt" [光棍节] [女光棍装数量] %D1
 ;lineMsg "Grobal" "〖<$OUTPUT(A8)>〗 领取了一件光棍节女同学礼物，现在还有 <$OUTPUT(D1)>个女同学礼物！"
-give 淑女装 1
+give FemaleAttire 1
 set [997] 1
 goto @光棍节领
 #act

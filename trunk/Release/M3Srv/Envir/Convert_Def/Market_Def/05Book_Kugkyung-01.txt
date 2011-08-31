@@ -29,19 +29,19 @@ Please select the items you wish to sell.\ \
 [@NPC_QuestionPrize]
 {
 你想听哪类书的介绍？\
-战士可以学习<基本剑术/@help_11>和<半月弯刀/@help_12>。\ \
+战士可以学习<Swordmanship/@help_11>和<HalfMoon/@help_12>。\ \
 <Back/@main>
 }
 
 [@NPC_Help_11]
 {
-等级为7时可以修炼{FCOLOR=250}基本剑术{FCOLOR=255}的第一阶段， 等级为11时修炼第2阶段，16级时可以完成第3阶段的修炼。\ \
+等级为7时可以修炼{FCOLOR=250}Swordmanship{FCOLOR=255}的第一阶段， 等级为11时修炼第2阶段，16级时可以完成第3阶段的修炼。\ \
 <前一步/@helpbooks>
 }
 
 [@NPC_Help_12]
 {
-等级为14时可以修炼{FCOLOR=250}半月弯刀{FCOLOR=255}的第一阶段， 等级为16时修炼第2阶段，18级时可以完成第3阶段的修炼。\ \
+等级为14时可以修炼{FCOLOR=250}HalfMoon{FCOLOR=255}的第一阶段， 等级为16时修炼第2阶段，18级时可以完成第3阶段的修炼。\ \
 <前一步/@helpbooks>
 }
 

@@ -468,8 +468,8 @@ check [307] 1
 
 [@455_CHECK1_2]
 #IF
-checkitem ÑòÈâ 5
-checkduraeva ÑòÈâ 10
+checkitem Lamb 5
+checkduraeva Lamb 10
 #ACT
 goto @455_check1_3
 #ELSESAY
@@ -483,14 +483,14 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem ÑòÈâ 5
+checkitem Lamb 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Amount_90]
-take ÑòÈâ 5
+take Lamb 5
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -501,14 +501,14 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem ÑòÈâ 5
+checkitem Lamb 5
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @455_Say_7
 
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Race_10]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [455] [Reward_Amount_10]
-take ÑòÈâ 5
+take Lamb 5
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1073,7 +1073,7 @@ check [307] 1
 #IF
 check [310] 0
 check [307] 1
-checkitem ÍòÄêÑ©Ëª 10
+checkitem FirnFrost 10
 #ACT
 goto @460_CHECK1_3
 #ELSESAY
@@ -1088,7 +1088,7 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem ÍòÄêÑ©Ëª 10
+checkitem FirnFrost 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_7
 
@@ -1098,7 +1098,7 @@ Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Amount_90]
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Race_90_1th]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Amount_90_1th]
-take ÍòÄêÑ©Ëª 10
+take FirnFrost 10
 give %A0 %D1
 give %A2 %D2
 reset [307] 2
@@ -1110,7 +1110,7 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem ÍòÄêÑ©Ëª 10
+checkitem FirnFrost 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @460_Say_8
 
@@ -1118,7 +1118,7 @@ checkitem ÍòÄêÑ©Ëª 10
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Race_10]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [460] [Reward_Amount_10]
-take ÍòÄêÑ©Ëª 10
+take FirnFrost 10
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1487,7 +1487,7 @@ check [307] 1
 
 [@465_CHECK1_2]
 #IF
-checkitem ½ð¿ó 3
+checkitem GoldOre 3
 #ACT
 goto @465_CHECK1_3
 #ELSESAY
@@ -1502,7 +1502,7 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem ½ð¿ó 3
+checkitem GoldOre 3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_7
 
@@ -1511,7 +1511,7 @@ checkitem ½ð¿ó 3
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Amount_90]
-take ½ð¿ó 3
+take GoldOre 3
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1523,7 +1523,7 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem ½ð¿ó 3
+checkitem GoldOre 3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_8
 
@@ -1540,7 +1540,7 @@ movr D0 2
 equal D0 0
 check [307] 1
 check [310] 0
-checkitem ½ð¿ó 3
+checkitem GoldOre 3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_9
 
@@ -1549,7 +1549,7 @@ checkitem ½ð¿ó 3
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Race_10_man]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Amount_10_man]
-take ½ð¿ó 3
+take GoldOre 3
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -1560,7 +1560,7 @@ break
 equal D0 1
 check [307] 1
 check [310] 0
-checkitem ½ð¿ó 3
+checkitem GoldOre 3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @465_Say_10
 
@@ -1568,7 +1568,7 @@ checkitem ½ð¿ó 3
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Race_10_woman]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [465] [Reward_Amount_10_woman]
-take ½ð¿ó 3
+take GoldOre 3
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -3884,8 +3884,8 @@ check [307] 1
 
 [@487_CHECK1_2]
 #IF
-checkitem Å£Èâ 5
-checkduraeva Å£Èâ 12
+checkitem Beef 5
+checkduraeva Beef 12
 #ACT
 goto @487_CHECK1_3
 #ELSESAY
@@ -3900,8 +3900,8 @@ movr D0 100
 check [310] 0
 check [307] 1
 small D0 90
-checkitem Å£Èâ 5
-checkduraeva Å£Èâ 12
+checkitem Beef 5
+checkduraeva Beef 12
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_7
 
@@ -3909,7 +3909,7 @@ checkduraeva Å£Èâ 12
 #ACT
 Loadvalue A0 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Race_90]
 Loadvalue D1 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Amount_90]
-take Å£Èâ 5
+take Beef 5
 give %A0 %D1
 reset [307] 2
 set [310] 1
@@ -3920,15 +3920,15 @@ break
 check [310] 0
 check [307] 1
 large D0 89
-checkitem Å£Èâ 5
-checkduraeva Å£Èâ 12
+checkitem Beef 5
+checkduraeva Beef 12
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @487_Say_8
 
 #ACT
 Loadvalue A1 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Race_10]
 Loadvalue D2 "GM_Def\QT_TODAY\400Reward.txt" [487] [Reward_Amount_10]
-take Å£Èâ 5
+take Beef 5
 give %A1 %D2
 reset [307] 2
 set [310] 1
@@ -4178,7 +4178,7 @@ check [307] 0
 #ACT
 set [307] 1
 take ½ð±Ò 400
-give ²Ê¾í 30
+give ColorFilm 30
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\QT_TODAY\4thClassSay.txt] @491_Say_3
 

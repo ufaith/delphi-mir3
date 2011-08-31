@@ -1,9 +1,9 @@
 ;;Legend Of Mir 3 C3Engine
 [Snow]
-Name=Ñ©Çò
+Name=Snowball
 Amount=1
 
 [Fee]
-name=½ð±Ò
+name=Gold
 Amount=50000
 

@@ -21,7 +21,7 @@
 
 [@ilgang_4]
 {
-看你的眼光很锐利，好象正在修炼 {FCOLOR=250}精神力战法{FCOLOR=255} 。\ \
+看你的眼光很锐利，好象正在修炼 {FCOLOR=250}SpiritSword{FCOLOR=255} 。\ \
 <Exit/@exit>
 }
 

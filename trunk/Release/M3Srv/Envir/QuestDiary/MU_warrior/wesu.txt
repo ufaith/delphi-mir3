@@ -10,7 +10,7 @@ check [700] 1
 #ACT
 break
 #IF
-checkmagic 基本剑术
+checkmagic Swordmanship
 #SAY
 我看你已经掌握了基本剑术。\ \
 <Exit/@exit>
@@ -28,7 +28,7 @@ goto @mugong_wesu_next1
 
 [@mugong_wesu_next1]
 #IF
-checkitem 基本剑术 1
+checkitem Swordmanship 1
 #ACT
 goto @mugong_wesu_next2
 #ELSESAY
@@ -53,10 +53,10 @@ goto @mugong_wesu_next2
 [@mugong_wesu_next4]
 #IF
 check [700] 0
-checkitem 基本剑术 1
+checkitem Swordmanship 1
 #ACT
-take 基本剑术 1
-give 基本剑术（秘籍） 1
+take Swordmanship 1
+give Swordmanship 1
 set [700] 1
 #SAY
 你现在已经有基本剑术秘籍了，以前不理解的部分也可以理解了。\ \

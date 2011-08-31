@@ -1,27 +1,27 @@
-爆毒神魔 @BDSM
+AntennaeGhost @BDSM
 
-红衣法师  @HYFS
-红衣法师2 @HYFS2
-红衣法师7 @HYFS7
+ScarletMaster  @HYFS
+ScarletMaster2 @HYFS2
+ScarletMaster7 @HYFS7
 
-触角神魔  @CJSM
-触角神魔2 @CJSM2
-触角神魔7 @CJSM7
+Antenna  @CJSM
+AntennaeGhost2 @CJSM2
+AntennaeGhost7 @CJSM7
 
-大法老 @DFL
-超级黑野猪 @CJHYZ
+Pharaoh @DFL
+BlackBoar @CJHYZ
 
 
-地天灭王 @DTMW D104175010
-楼兰贵族 @DTMW D104175010
-楼兰妖仆 @DTMW D104175010
-楼兰金甲武将 @LLJJWJ D189010
-楼兰守卫 @LLSW
-楼兰冥皇 @LLMH
-楼兰天神 @LLTS    D2087010
-楼兰右护法 @LLYHF D1009005
-楼兰左护法 @LLZHF D1020005
+ExtinguisheKing @DTMW D104175010
+LoulanNoble @DTMW D104175010
+LoulanServant @DTMW D104175010
+LoulanGeneral @LLJJWJ D189010
+LoulanGuard @LLSW
+LoulanEmperor @LLMH
+LoulanGod @LLTS    D2087010
+LoulanRightEnforcement @LLYHF D1009005
+LoulanLeftEnforcement @LLZHF D1020005
 
 ;;死亡效果
-稻草人 D68010
-稻草人0 D68010
+Scarecrow D68010
+Scarecrow0 D68010

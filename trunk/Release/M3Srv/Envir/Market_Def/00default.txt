@@ -367,7 +367,7 @@ MovetoUser %A0
 [@_怪物通缉令（鬼将）]
 #IF
 #ACT
-mov A1 "潘夜鬼将"
+mov A1 "NightGhost"
 mov A2 "沃玛神殿二层"
 mov D2 50
 mov D3 360
@@ -383,16 +383,16 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（鬼将） 1
+take MonsterWanted(Ghost) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
 
 
-[@_怪物通缉令（护法天）]
+[@_怪物通缉令（Custodian）]
 #IF
 #ACT
-mov A1 "护法天"
+mov A1 "Custodian"
 mov A2 "赤月山谷五层"
 mov D2 150
 mov D3 25
@@ -408,14 +408,14 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（护法天） 1
+take MonsterWanted (Law) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
-[@_怪物通缉令（骨鬼将）]
+[@_怪物通缉令（BoneGhost）]
 #IF
 #ACT
-mov A1 "骨鬼将"
+mov A1 "BoneGhost"
 mov A2 "石阁六层"
 mov D2 25
 mov D3 30
@@ -431,14 +431,14 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（骨鬼将） 1
+take MonsterMonted(BoneGhost) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
-[@_怪物通缉令（神鬼王）]
+[@_怪物通缉令（GhostKing）]
 #IF
 #ACT
-mov A1 "神鬼王"
+mov A1 "GhostKing"
 mov A2 "祖玛神殿七层大厅"
 mov D2 28
 mov D3 28
@@ -454,7 +454,7 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（神鬼王） 1
+take MonsterWanted(GhostKing) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
@@ -463,7 +463,7 @@ SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 [@_怪物通缉令（队长）]
 #IF
 #ACT
-mov A1 "诺玛突击队长"
+mov A1 "NormaChief"
 mov A2 "天外古刹"
 mov D2 88
 mov D3 90
@@ -479,14 +479,14 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（队长） 1
+take MonsterWanted(Captain) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
 [@_怪物通缉令（守卫）]
 #IF
 #ACT
-mov A1 "霸王守卫"
+mov A1 "OverlordGuard"
 mov A2 "沙漠地下三层"
 mov D2 358
 mov D3 58
@@ -502,14 +502,14 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（守卫） 1
+take MonsterWanted(Guard) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
 [@_怪物通缉令（魔石）]
 #IF
 #ACT
-mov A1 "魔石守护神"
+mov A1 "StonePatron"
 mov A2 "冰宫地下4层"
 mov D2 266
 mov D3 255
@@ -525,14 +525,14 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（魔石） 1
+take MonsterWanted(Stone) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
 [@_怪物通缉令（寒冰）]
 #IF
 #ACT
-mov A1 "寒冰守护神"
+mov A1 "IcePatron"
 mov A2 "神舰地下1层"
 mov D2 78
 mov D3 66
@@ -548,14 +548,14 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（寒冰） 1
+take MonsterWanted(Ice) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 
-[@_怪物通缉令（霸王教主）]
+[@_怪物通缉令（OverlordFounder）]
 #IF
 #ACT
-mov A1 "霸王教主"
+mov A1 "OverlordFounder"
 mov A2 "天外天的苍茫大厅"
 mov D2 154
 mov D3 154
@@ -571,7 +571,7 @@ EQUAL A5 %D3
 #ACT
 formatstr "%s,%s,%s,2" %A0 %A4 %A5
 MongenP %A9 %A1 1
-take 怪物通缉令（霸王教主） 1
+take MonsterWanted(Leader) 1
 #ELSEACT
 SYSMSG "请到<$OUTPUT(A2)>:<$OUTPUT(D2)>,<$OUTPUT(D3)> 再使用怪物通缉令"
 ;;;;

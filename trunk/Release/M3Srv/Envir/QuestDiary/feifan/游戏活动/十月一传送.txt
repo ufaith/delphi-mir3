@@ -5,7 +5,7 @@
 #if
 #act
 #say
-进入上古之地需要收取{FCOLOR=250}神秘钥匙{FCOLOR=250}一把,\
+进入上古之地需要收取{FCOLOR=250}SecretKey{FCOLOR=250}一把,\
 上古之地危险异常,请慎入\
 <进入/@移动去xx>\
 <离开/@exit>
@@ -14,9 +14,9 @@
 #if
 #act
 #if
-checkitem 神秘钥匙 1
+checkitem SecretKey 1
 #act
-take 神秘钥匙 1
+take SecretKey 1
 mapmove zzz_000 83 80
 
 

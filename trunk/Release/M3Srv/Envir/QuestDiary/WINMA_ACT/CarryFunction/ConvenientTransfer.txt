@@ -22,7 +22,7 @@ break
 #IF
 checkgold 5000
 #ACT
-take ½ð±Ò 5000
+take Gold 5000
 mov A1 %ARG(1)
 mov D2 %ARG(2)
 mov D3 %ARG(3)

@@ -8,6 +8,6 @@ TimeSet=600
 
 [Reward]
 
-Item=½ð±Ò
+Item=Gold
 
 Stock=300000

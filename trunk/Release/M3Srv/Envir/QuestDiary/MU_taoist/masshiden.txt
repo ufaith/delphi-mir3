@@ -37,7 +37,7 @@ break
 
 [@mugong_masshiding_pre2]
 #IF
-checkmagic 集体隐身术
+checkmagic MassInvis
 #ACT
 break
 #ELSEACT
@@ -105,7 +105,7 @@ check [723] 1
 break
 
 #IF
-checkmagic 集体隐身术
+checkmagic MassInvis
 #SAY
 那么困难学到的集体隐身术正在灵活地使用吧？\ \ 
 <Exit/@exit>
@@ -127,7 +127,7 @@ checklevel 23
 #ACT
 goto @mugong_masshiding0
 #ELSESAY
-集体隐身术。。如果对这样的武功感兴趣，好像需要再修炼些。\ \ 
+MassInvis。。如果对这样的武功感兴趣，好像需要再修炼些。\ \ 
 <Exit/@exit>
 
 [@mugong_masshiding0]
@@ -136,7 +136,7 @@ check [512] 1
 #ACT
 goto @mugong_masshiding0_1
 #ELSESAY
-集体隐身术。。。\
+MassInvis。。。\
 集体隐身术和隐身术相同的是可以隐藏自己的动静，不同的是 {FCOLOR=250}集体隐身术可以隐藏包括你同事动静的魔法{FCOLOR=255} 。\ \ 
 <Exit/@exit>
 
@@ -229,7 +229,7 @@ break
 check [513] 1
 check [514] 1
 check [723] 0
-checkitem 成致日志 1
+checkitem LogInto 1
 #ACT
 goto @mugong_masshiding_complete1
 #ELSESAY
@@ -239,9 +239,9 @@ goto @mugong_masshiding_complete1
 
 [@mugong_masshiding_complete1]
 #IF
-checkitem 成致日志
+checkitem LogInto
 #ACT
-take 成致日志 1
+take LogInto 1
 #SAY
 哦，终于找到了 {FCOLOR=250}日志{FCOLOR=255} 。用这个东西就可以发现道士失踪的原因哦。\
 (拿走日志后，看写的文章...)
@@ -263,9 +263,9 @@ take 成致日志 1
 #IF
 check [723] 0
 #ACT
-give 集体隐身术（秘籍）
-give 暗黑竹笛 1
-give 金币 21000
+give MassInvis
+give BambooFlute 1
+give Gold 21000
 reset [512] 2
 set [723] 1
 #SAY

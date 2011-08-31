@@ -1,3 +1,3 @@
 [混乱之治]
-行者帽=4
-霸龙头盔=1
+WalkerHelmet=4
+DragonHelmet=1

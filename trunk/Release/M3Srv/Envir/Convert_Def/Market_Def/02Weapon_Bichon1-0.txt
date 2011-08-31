@@ -30,7 +30,7 @@ Welcome, how may i help you?\ \
 [@NPC_Remove_Sword_Else]
 {
 You do not have a weapon equiped...\
-听说{FCOLOR=250}攻杀铁剑{FCOLOR=255}和 {FCOLOR=250}焱火剑{FCOLOR=255}一旦到手上就摘不下来。\ \
+听说{FCOLOR=250}IronSword{FCOLOR=255}和 {FCOLOR=250}FireSword{FCOLOR=255}一旦到手上就摘不下来。\ \
 <Back/@main>
 }
 

@@ -1586,7 +1586,7 @@ MOV D9 120
 GOTO @开始给声望
 break
 #elseact
-sysmsg "错误??天!"
+sysmsg "错误??(Days)!"
 BREAK
 
 [@开始给声望]

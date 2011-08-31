@@ -79,30 +79,30 @@ begin
 			break
 	
 		#IF
-			Checkitem 地牢逃脱卷 1
+			Checkitem DungeonEscape 1
 		#SAY
 			带来地牢逃脱卷了吧？ 说好要没收的。\\
 			<Exit/@exit>
 		#ACT
-			take 地牢逃脱卷 100
+			take DungeonEscape 100
 			break
 	
 		#IF
-			Checkitem 随机传送卷 1
+			Checkitem RandomTeleport 1
 		#SAY
 			带来随机传送卷了吧？ 说好要没收的。\\
 			<Exit/@exit>
 		#ACT
-			take 随机传送卷 100
+			take RandomTeleport 100
 			break
 	
 		#IF
-			Checkitem 回城卷 1
+			Checkitem TownTeleport 1
 		#SAY
 			带来回城卷了吧？ 说好要没收的。\\
 			<Exit/@exit>
 		#ACT
-			take 回城卷 100
+			take TownTeleport 100
 			break
 	
 		#IF

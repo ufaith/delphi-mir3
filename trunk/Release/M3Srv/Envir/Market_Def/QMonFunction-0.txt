@@ -8,7 +8,7 @@
 #ACT
  jumpto
 
-;;--------ºìÒÂ·¨Ê¦---------------------------------
+;;--------ScarletMaster---------------------------------
 [@HYFS]
 #IF
  random 5
@@ -29,7 +29,7 @@
  spell 0 THUNDER 95-128 1028010 TARGET1 6 
  spellend 1 2200
 
-;;---------------´¥½ÇÉñÄ§-------------------------------------------
+;;---------------Antenna-------------------------------------------
 [@CJSM]
 #ACT
  spell 0 THUNDER 99-107 1000004 TARGET1 3 
@@ -67,7 +67,7 @@ spell 1 THUNDER 0-0 1000004 TARGET6 3
 spell 1 THUNDER 49-66 501145003 TARGET6 3
 spellend 1 1500
 
-;-----------µØÌìÃðÍõ----------------------
+;-----------ExtinguisheKing----------------------
 [@DTMW]
 #IF
  near 1
@@ -85,7 +85,7 @@ SPELL 1 THUNDER 0-0 42160010 SELF
 HIT 0 210-250 4 500
 SPELLEND 2 1200
 
-;;-----³¬¼¶ºÚÒ°Öí--------------------------
+;;-----BlackBoar--------------------------
 [@CJHYZ]
 #IF
  near 1
@@ -103,7 +103,7 @@ SPELL 1 THUNDER 0-0 12180010 SELF
 SPELL 1 THUNDER 100-2000 14189010 TARGET1 3 T900
 SPELLEND 1 1000
 
-;;-------Â¥À¼½ð¼×Îä½«---------------------
+;;-------LoulanGeneral---------------------
 [@LLJJWJ]
 #IF
  near 1
@@ -121,7 +121,7 @@ SPELL 1 THUNDER 0-0 2180010 SELF
 SPELL 1 THUNDER 253-275 0 TARGET1 3
 SPELLEND 1 900
 
-;;--------Â¥À¼ÊØÎÀ-----------------------
+;;--------LoulanGuard-----------------------
 [@LLSW]
 #IF
  !near 1
@@ -132,7 +132,7 @@ SPELL 1 THUNDER 187-253 0 TARGET4 7
 SPELLEND 2 900
 
 
-;---------Â¥À¼Ú¤»Ê-----------------------
+;---------LoulanEmperor-----------------------
 [@LLMH]
 #IF
  !near 3
@@ -156,7 +156,7 @@ break
  SPELL 1 THUNDER 220-275 0 TARGET3 6
  SPELLEND 1 900 
 
-;--------Â¥À¼ÓÒ»¤·¨-------------------
+;--------LoulanRightEnforcement-------------------
 [@LLYHF]
 #IF
  NEAR 1
@@ -172,7 +172,7 @@ break
  SPELL 1 THUNDER 140-200 501145003 TARGET7 3 T500
  SPELLEND 2 900
  
-;------------Â¥À¼×ó»¤·¨-------------------
+;------------LoulanLeftEnforcement-------------------
 [@LLZHF]
 #IF
  NEAR 1

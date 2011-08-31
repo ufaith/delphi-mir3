@@ -24,7 +24,7 @@ goto @mugong_lightwave_next
 
 [@mugong_lightwave_next]
 #IF
-checkmagic 诱惑之光 
+checkmagic Stunning 
 #SAY
 你还没有掌握称为诱惑之光的魔法吗？\ \
 <Exit/@exit>
@@ -85,7 +85,7 @@ Monclear 02_001
 Param1 02_001
 Param2 9
 Param3 12
-Mongen 半兽人61 15 5
+Mongen Oma61 15 5
 TimeRecall 2
 map 02_001
 
@@ -134,9 +134,9 @@ break
 #IF
 check [750] 0
 #ACT
-give 诱惑之光（秘籍） 1
-give 金币 13000
-give 魔家项链
+give Stunning 1
+give Gold 13000
+give MagicNecklace
 reset [502] 1
 SET [750] 1
 #SAY

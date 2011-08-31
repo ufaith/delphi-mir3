@@ -5,14 +5,14 @@
 CheckPos 1,402,121,100
 check [122] 1
 #act
-GIVE 积分兑换券碎片 1
+GIVE CreditsCoupon 1
 break
 
 #if
 CheckPos 02,252,192,100
 check [122] 1
 #act
-GIVE 积分兑换券碎片 1
+GIVE CreditsCoupon 1
 break
 }
 ;;EI3G-网游先锋传奇3商业版本-2009版

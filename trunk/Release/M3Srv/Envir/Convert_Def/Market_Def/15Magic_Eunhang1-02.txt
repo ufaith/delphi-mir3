@@ -37,12 +37,12 @@ I do not want people like you here.。\ \
 我可以指导你以下这些武功。\
 修炼的时候有什么问题尽管来找我。\
 （1 - 10 等级 修炼魔法）\
-<火球术/@fireball_test_start>\
+<FireBall/@fireball_test_start>\
 （11 - 20 等级 修炼魔法）\
-<抗拒火环/@firewind_test_start> , <诱惑之光/@lightwave_test_start> , <瞬息移动/@fly_test_start>\
-<大火球/@upfireball_test_start> , <雷电术/@lightstick_test_start> , <地狱火/@fireline_test_start>\
+<FlameRepulsor/@firewind_test_start> , <Stunning/@lightwave_test_start> , <Teleport/@fly_test_start>\
+<AdamantineFB/@upfireball_test_start> , <LightningBolt/@lightstick_test_start> , <FireTrail/@fireline_test_start>\
 （21 - 25 等级 修炼魔法）\
-<疾光电影/@lightline_test_start>\ \
+<LightningBeam/@lightline_test_start>\ \
 <不寻求武功指导/@exit>
 }
 

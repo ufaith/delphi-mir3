@@ -34,21 +34,21 @@ goto @¼ÌĞø
 [@¼ÌĞø]
 
 #if
-checkitem ½ğÁúÁî 1
-checkitem Ä¾ÁúÁî 1
-checkitem Ë®ÁúÁî 1
-checkitem »ğÁúÁî 1
-checkitem ÍÁÁúÁî 1
-checkitem µØÁúÁî 1
-checkitem ÌìÁúÁî 1
+checkitem Jinlong 1
+checkitem WoodenDragon 1
+checkitem WaterDragon 1
+checkitem DragonSo 1
+checkitem SoilLong 1
+checkitem Earthworm 1
+checkitem Denon 1
 #act
-take ½ğÁúÁî 1
-take Ä¾ÁúÁî 1
-take Ë®ÁúÁî 1
-take »ğÁúÁî 1
-take ÍÁÁúÁî 1
-take µØÁúÁî 1
-take ÌìÁúÁî 1
+take Jinlong 1
+take WoodenDragon 1
+take WaterDragon 1
+take DragonSo 1
+take SoilLong 1
+take Earthworm 1
+take Denon 1
 MOVR D7 200000000
 MOV D6 200000000
 inc D6 %D7

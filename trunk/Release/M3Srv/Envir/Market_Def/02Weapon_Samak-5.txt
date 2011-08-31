@@ -53,9 +53,9 @@ goto @main_0_0
 
 [@remove_sword]
 #IF
-checkitemw ¹¥É±Ìú½£ 1
+checkitemw IronSword 1
 #ACT
-takew ¹¥É±Ìú½£ 1
+takew IronSword 1
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\02Weapon_Samak-5.txt] @NPC_Remove_sword
 
@@ -65,10 +65,10 @@ goto @remove_sword_1
 
 [@remove_sword_1]
 #IF
-checkitemw ìÍ»ð½£ 1
+checkitemw FireSword 1
 #ACT
-takew ¹¥É±Ìú½£ 1
-takew ìÍ»ð½£ 1
+takew IronSword 1
+takew FireSword 1
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\02Weapon_Samak-5.txt] @NPC_Remove_sword_1
 
@@ -79,19 +79,19 @@ takew ìÍ»ð½£ 1
 
 [Goods]
 ;ItemName      Volume     Hour
-ÎÚÄ¾½£          20         23
-Ìú½£            10         24
-ÇàÍ­¸«          10         25
-°Ë»Ä            10        24
-Áè·ç            10        12
-Õ¶Âíµ¶          10        21
-ÐÞÂÞ            10        22
-×çÖäº£»ê        10        24
-º£»ê            10        23
-×çÖä°ëÔÂ        10        25
-°ëÔÂ            10        27
-º××ì³ú          10        29
-·çÖ®º××ì³ú      10        25
+EbonySword          20         23
+SteelSword            10         24
+BronzeAxe          10         25
+Glorious            10        24
+LingFeng            10        12
+ZhanmaSaber          10        21
+Ashura            10        22
+CursedSoul        10        24
+SeaSoul            10        23
+CurseSword        10        25
+HalfMonth            10        27
+Pickaxe          10        29
+WindPickaxe      10        25
 
 ;;------------------------------------------------------------------------------
 ;;------------------------------------------------------------------------------

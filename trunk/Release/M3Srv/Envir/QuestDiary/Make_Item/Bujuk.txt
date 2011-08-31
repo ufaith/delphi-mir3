@@ -9,11 +9,11 @@
 
 [@Make_Charm_BCharm]
 #IF
-checkitem ÷¼÷Ã¹Ç 3
-checkitem ¼¦Ñª 3
+checkitem SkeltonBone 3
+checkitem ChickenBlood 3
 #ACT
-take ÷¼÷Ã¹Ç 3
-take ¼¦Ñª 3
+take SkeltonBone 3
+take ChickenBlood 3
 mov d0 0
 goto @Make_Charm_BCharm_1
 #ELSESAY
@@ -41,7 +41,7 @@ mov d0 0
 [@Make_Charm_BCharm_3]
 #IF
 #ACT
-give »¤Éí·û£¨Ð¡£© 1
+give Amulets(S) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_4
@@ -51,11 +51,11 @@ mov d0 0
 
 [@Make_Charm_HCharm]
 #IF
-checkitem ½©Ê¬¹ÇÍ· 2
-checkitem ¼¦Ñª 5
+checkitem ZombieBone 2
+checkitem ChickenBlood 5
 #ACT
-take ½©Ê¬¹ÇÍ· 2
-take ¼¦Ñª 5
+take ZombieBone 2
+take ChickenBlood 5
 mov d0 0
 goto @Make_Charm_HCharm_1
 #ELSESAY
@@ -83,7 +83,7 @@ mov d0 0
 [@Make_Charm_HCharm_3]
 #IF
 #ACT
-give ÉñÊ¥»¤Éí·û£¨Ð¡£© 1
+give HolyAmulets(S) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_7
@@ -93,13 +93,13 @@ mov d0 0
 
 [@Make_Charm_FCharm]
 #IF
-checkitem ÷¼÷Ã¹Ç 4
-checkitem Ð«×ÓµÄÎ²°Í 1
-checkitem ¼¦Ñª 4
+checkitem SkeltonBone 4
+checkitem ScorpionTail 1
+checkitem ChickenBlood 4
 #ACT
-take ÷¼÷Ã¹Ç 4
-take Ð«×ÓµÄÎ²°Í 1
-take ¼¦Ñª 4
+take SkeltonBone 4
+take ScorpionTail 1
+take ChickenBlood 4
 mov d0 0
 goto @Make_Charm_FCharm_1
 #ELSESAY
@@ -127,7 +127,7 @@ mov d0 0
 [@Make_Charm_FCharm_3]
 #IF
 #ACT
-give »¤Éí·û£¨»ð£© 1
+give Amulets(Fire) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_10
@@ -137,13 +137,13 @@ mov d0 0
 
 [@Make_Charm_ICharm]
 #IF
-checkitem ¶¾Éßµ¨Ö­ 8
-checkitem ¼¦Ñª 4
-checkitem ¶¾Ö©ÖëÑÀ³Ý 2
+checkitem SnakeBile 8
+checkitem ChickenBlood 4
+checkitem SpiderTeeth 2
 #ACT
-take ¶¾Éßµ¨Ö­ 8
-take ¼¦Ñª 4
-take ¶¾Ö©ÖëÑÀ³Ý 2
+take SnakeBile 8
+take ChickenBlood 4
+take SpiderTeeth 2
 mov d0 0 goto @Make_Charm_ICharm_1
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_11
@@ -170,7 +170,7 @@ mov d0 0
 [@Make_Charm_ICharm_3]
 #IF
 #ACT
-give »¤Éí·û£¨±ù£© 1
+give Amulets(Ice) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_13
@@ -180,13 +180,13 @@ mov d0 0
 
 [@Make_Charm_LCharm]
 #IF
-checkitem ½©Ê¬¹ÇÍ· 2
-checkitem Ê³ÈËÊ÷Ò¶ 2
-checkitem ¼¦Ñª 4
+checkitem ZombieBone 2
+checkitem CannibalLeaf 2
+checkitem ChickenBlood 4
 #ACT
-take ½©Ê¬¹ÇÍ· 2
-take Ê³ÈËÊ÷Ò¶ 2
-take ¼¦Ñª 4
+take ZombieBone 2
+take CannibalLeaf 2
+take ChickenBlood 4
 mov d0 0
 goto @Make_Charm_LCharm_1
 #ELSESAY
@@ -214,7 +214,7 @@ mov d0 0
 [@Make_Charm_LCharm_3]
 #IF
 #ACT
-give »¤Éí·û£¨À×£© 1
+give Amulets(Thunder) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_16
@@ -224,13 +224,13 @@ mov d0 0
 
 [@Make_Charm_WCharm]
 #IF
-checkitem ÷¼÷Ã¹Ç 3
-checkitem Ê³ÈËÊ÷µÄ¹ûÊµ 1
-checkitem ¼¦Ñª 4
+checkitem SkeltonBone 3
+checkitem FreshFruit 1
+checkitem ChickenBlood 4
 #ACT
-take ÷¼÷Ã¹Ç 3
-take Ê³ÈËÊ÷µÄ¹ûÊµ 1
-take ¼¦Ñª 4
+take SkeltonBone 3
+take FreshFruit 1
+take ChickenBlood 4
 mov d0 0
 goto @Make_Charm_WCharm_1
 #ELSESAY
@@ -258,7 +258,7 @@ mov d0 0
 [@Make_Charm_WCharm_3]
 #IF
 #ACT
-give »¤Éí·û£¨·ç£© 1
+give Amulets(Wind) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_19
@@ -269,14 +269,14 @@ mov d0 0
 [@Make_Charm_RCharm]
 #IF
 checkitem Ò¹Ã÷Öé 10
-checkitem ÉñÁéµñÏñ 5
-checkitem ÅËÒ¹Ö®Àá 3
-checkitem ¼¦Ñª 2
+checkitem GodsStatue 5
+checkitem NightTears 3
+checkitem ChickenBlood 2
 #ACT
 take Ò¹Ã÷Öé 10
-take ÉñÁéµñÏñ 5
-take ÅËÒ¹Ö®Àá 3
-take ¼¦Ñª 2
+take GodsStatue 5
+take NightTears 3
+take ChickenBlood 2
 mov d0 0
 goto @Make_Charm_RCharm_1
 #ELSESAY
@@ -304,7 +304,7 @@ mov d0 0
 [@Make_Charm_RCharm_3]
 #IF
 #ACT
-give Áé»ê»¤Éí·û£¨Ð¡£© 1
+give SoulAmulets(S) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_22
@@ -315,14 +315,14 @@ mov d0 0
 [@Make_Charm_RCharmM]
 #IF
 checkitem Ò¹Ã÷Öé 30
-checkitem ÉñÁéµñÏñ 15
-checkitem ÅËÒ¹Ö®Àá 9
-checkitem ¼¦Ñª 6
+checkitem GodsStatue 15
+checkitem NightTears 9
+checkitem ChickenBlood 6
 #ACT
 take Ò¹Ã÷Öé 30
-take ÉñÁéµñÏñ 15
-take ÅËÒ¹Ö®Àá 9
-take ¼¦Ñª 6
+take GodsStatue 15
+take NightTears 9
+take ChickenBlood 6
 mov d0 0
 goto @Make_Charm_RCharmM_1
 #ELSESAY
@@ -350,7 +350,7 @@ mov d0 0
 [@Make_Charm_RCharmM_3]
 #IF
 #ACT
-give Áé»ê»¤Éí·û£¨ÖÐ£© 1
+give SoulAmulets(M) 1
 mov d0 0
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Make_Item\Bujuk.txt] @Bujuk_25

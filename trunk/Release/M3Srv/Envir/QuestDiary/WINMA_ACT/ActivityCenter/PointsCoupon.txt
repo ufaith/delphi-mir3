@@ -7,10 +7,10 @@
 <离开/@exit>\
 [@兑换全全]
 #IF
-checkitem 积分兑换券碎片 20
+checkitem CreditsCoupon 20
 #ACT
-take 积分兑换券碎片 20
-give 内测积分兑换券 1
+take CreditsCoupon 20
+give MeasuredCoupon 1
 sysmsg "恭喜您用20个碎片兑换了一个内测积分兑换券"
 goto @积分券兑换X
 #ELSEsay

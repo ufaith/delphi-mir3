@@ -1,5 +1,5 @@
 ;;Legend Of Mir 3 C3Engine
 [@asword_1]
 {
-(现在把沃玛角送给'龙血先生'就可以修炼'刺杀剑术'...)
+(现在把沃玛角送给'龙血先生'就可以修炼'AdvancedSlay'...)
 }

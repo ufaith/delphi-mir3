@@ -1,6 +1,6 @@
 ;;Legend Of Mir 3 C3Engine
 [ItemLimit]
-Name=»Ø³Ç¾í
+Name=TownTeleport
 
 [ItemCost]
-Name=½ð±Ò
+Name=Gold

@@ -1,0 +1,90 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+;1/60   GamePoints
+1/2    Gold 7200
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/30    LargeBracelet
+1/30    TaoistBracelet
+1/30    EbonyBracelet
+1/30    MagicBracelet
+
+1/30    BlackNecklace
+1/30    EbonyNecklace
+1/30    CrystalNecklace
+
+1/30    BronzeHelmet
+
+1/30    LightArmor(M)
+1/30    LightArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/50    BronzeAxe
+1/50    SeaSoul
+1/50    HalfMonth
+
+1/50    PearlRing
+1/50    SnakeEyeRing
+1/50    BlackCrystalRing
+
+1/50    SmallBracelet
+
+1/50    LanternNecklace
+1/50    AmberNecklace
+1/50    DevilsNecklace
+1/50    FriendlyNecklace
+
+1/50    Boots
+
+1/50    MagicHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/200    ExorcizeSword
+1/200    YanYue
+1/200    ZhanmaSaber
+1/200    Ashura
+
+1/200    CharmRing
+1/200    EthicsRing
+1/200    CoralRing
+1/200    GoldRing
+
+1/200    SturdyGlove
+
+1/200    TaoistHelmet
+
+;-------------------------------------------------------------------------------
+;; 보스급 전용 아이템들
+;-------------------------------------------------------------------------------
+1/10000   MemoryNecklace
+1/15000   MemoryHelmet
+1/7000   WindRing
+
+1/13000    WindNecklace
+1/100000   MemoryRing
+1/100000   MemoryBracelet
+1/5000 Chest
+
+

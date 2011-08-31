@@ -29,8 +29,8 @@ checkgold  90000000
 checklevel 60
 equal  S1 4
 #ACT
-horsecall 黑马
-take  金币 90000000
+horsecall DarkHorse
+take  Gold 90000000
 MOV S1 0
 #SAY
 购买成功.\

@@ -31,7 +31,7 @@ goto @mugong_holycircle_next1
 
 [@mugong_holycircle_next1]
 #IF
-checkmagic 困魔咒
+checkmagic TrapOctagon
 #SAY
 你不是已经掌握困魔咒嘛？如果到了可以修炼更高水平武功的时候，请重新再来。\ \
 <Exit/@exit>

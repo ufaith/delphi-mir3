@@ -24,7 +24,7 @@ checklevel 90
 CHECKWENCAI 20
 #ACT
 SETWENCAI - 20
-GIVE 内测积分兑换券 1
+GIVE MeasuredCoupon 1
 goto @文采换内X
 
 lineMsg [Grobal] 玩家'<$USERNAME>'用文采值兑换了一个内测积分兑换券

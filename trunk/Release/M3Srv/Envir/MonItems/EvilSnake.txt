@@ -1,0 +1,20 @@
+1/2    Gold 2000
+1/20   GoldBar
+
+1/50  GreenNecklace
+1/50  SoulsNecklace
+1/50  DemonBells
+1/50  DarkIronHelmet
+1/50  PowerRing
+1/50  PurpleSpiral
+1/50  TitanRing
+1/50  KnightBracelet
+1/50  DragonBracelet
+1/100 ThreeBracelet
+
+1/100 DestinyBlade 
+1/200 RulingStick
+1/200 DragonsSword
+1/200 GuYuToken
+1/500 ÷È±¶œ‰
+

@@ -1,10 +1,10 @@
 ;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
 [@main]
 #IF
-checkitem 连环明珠 1
+checkitem PearlChain 1
 #ACT
 TimeRecall 120
-take 连环明珠 1
+take PearlChain 1
 enter_ok
 #ELSESAY
 （看来这里受魔咒的控制，无法进入。。。）\\

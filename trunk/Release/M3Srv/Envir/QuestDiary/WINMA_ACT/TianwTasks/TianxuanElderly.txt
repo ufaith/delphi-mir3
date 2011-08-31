@@ -91,7 +91,7 @@ movr S3 5
 #IF
 equal S3 0
 #ACT
-GIVE 金币 1000000
+GIVE Gold 1000000
 SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了100万金币"
 
 BREAK
@@ -99,28 +99,28 @@ BREAK
 #IF
 equal S3 1
 #ACT
-GIVE 金币 3000000
+GIVE Gold 3000000
 SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了300万金币"
 BREAK
 
 #IF
 equal S3 2
 #ACT
-GIVE 金币 1000000
+GIVE Gold 1000000
 SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了100万金币"
 BREAK
 
 #IF
 equal S3 3
 #ACT
-GIVE 金币 2000000
+GIVE Gold 2000000
 SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了200万金币"
 BREAK
 
 #IF
 equal S3 4
 #ACT
-GIVE 金币 5000000
+GIVE Gold 5000000
 SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了500万金币"
 BREAK
 
@@ -150,92 +150,92 @@ BREAK
 #IF
 equal S3 1
 #ACT
-GIVE 昏暗风印 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[昏暗风印]"
+GIVE WindIndia 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[WindIndia]"
 BREAK
 
 #IF
 equal S3 2
 #ACT
-GIVE 破坏项链 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[破坏项链]"
+GIVE DamageNecklace 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[DamageNecklace]"
 BREAK
 
 #IF
 equal S3 3
 #ACT
-GIVE 怨恨项链 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[怨恨项链]"
+GIVE ResentmentNecklace 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[ResentmentNecklace]"
 BREAK
 
 #IF
 equal S3 4
 #ACT
-GIVE 魔灵戒指 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[魔灵戒指]"
+GIVE DaimonRing 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[DaimonRing]"
 BREAK
 
 #IF
 equal S3 5
 #ACT
-GIVE 铁系项链（幸运） 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[铁系项链（幸运）]"
+GIVE IronNecklace（Luck） 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[IronNecklace（Luck）]"
 BREAK
 
 #IF
 equal S3 6
 #ACT
-GIVE 青摇戒指 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[青摇戒指]"
+GIVE GreenRing 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[GreenRing]"
 BREAK
 
 #IF
 equal S3 7
 #ACT
-GIVE 莲丸戒指 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[莲丸戒指]"
+GIVE LotusRing 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[LotusRing]"
 BREAK
 
 #IF
 equal S3 8
 #ACT
-GIVE 铁系项链 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[铁系项链]"
+GIVE IronNecklace 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[IronNecklace]"
 BREAK
 
 #IF
 equal S3 9
 #ACT
-GIVE 铁炼腕 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[铁炼腕]"
+GIVE IronWrist 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[IronWrist]"
 BREAK
 
 #IF
 equal S3 10
 #ACT
-GIVE 追风项链 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[追风项链]"
+GIVE HerdNecklace 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[HerdNecklace]"
 BREAK
 
 #IF
 equal S3 11
 #ACT
-GIVE 魔令项链 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[魔令项链]"
+GIVE MagicNecklace 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[MagicNecklace]"
 BREAK
 
 #IF
 equal S3 12
 #ACT
-GIVE 魔令手镯 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[魔令手镯]"
+GIVE EvilSpiritBracelet 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[EvilSpiritBracelet]"
 BREAK
 
 #IF
 equal S3 13
 #ACT
-GIVE 龙马戒指 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[龙马戒指]"
+GIVE RyomaRing 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[RyomaRing]"
 BREAK
 
 ;;========================================
@@ -256,100 +256,100 @@ movr S3 11
 #IF
 equal S3 0
 #ACT
-GIVE 裁决之杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[裁决之杖]"
+GIVE RulingStick 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[RulingStick]"
 
 BREAK
 
 #IF
 equal S3 1
 #ACT
-GIVE 无极棍 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[无极棍]"
+GIVE PromiseStaff 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[PromiseStaff]"
 BREAK
 
 #IF
 equal S3 2
 #ACT
-GIVE 无极棍 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[无极棍]"
+GIVE PromiseStaff 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[PromiseStaff]"
 BREAK
 
 #IF
 equal S3 3
 #ACT
-GIVE 飞魂魔刃 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[飞魂魔刃]"
+GIVE MagicBlade 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[MagicBlade]"
 BREAK
 
 #IF
 equal S3 4
 #ACT
-GIVE 骨玉权杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+GIVE GuYuToken 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[GuYuToken]"
 BREAK
 
 #IF
 equal S3 5
 #ACT
-GIVE 赤血宝剑 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[赤血宝剑]"
+GIVE FerricyanideSword 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[FerricyanideSword]"
 BREAK
 
 #IF
 equal S3 6
 #ACT
-GIVE 骨玉权杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+GIVE GuYuToken 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[GuYuToken]"
 BREAK
 
 #IF
 equal S3 7
 #ACT
-GIVE 裁决之杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[裁决之杖]"
+GIVE RulingStick 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[RulingStick]"
 BREAK
 
 #IF
 equal S3 8
 #ACT
-GIVE 骨玉权杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+GIVE GuYuToken 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[GuYuToken]"
 BREAK
 
 #IF
 equal S3 9
 #ACT
-GIVE 赤血宝剑 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[赤血宝剑]"
+GIVE FerricyanideSword 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[FerricyanideSword]"
 BREAK
 
 #IF
 equal S3 10
 #ACT
-GIVE 骨玉权杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[骨玉权杖]"
+GIVE GuYuToken 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[GuYuToken]"
 BREAK
 
 #IF
 equal S3 11
 #ACT
-GIVE 旋风流星刀 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[旋风流星刀]"
+GIVE MeteorKnife 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[MeteorKnife]"
 BREAK
 
 #IF
 equal S3 12
 #ACT
-GIVE 嗜魂法杖 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[嗜魂法杖]"
+GIVE SoulsStaff 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[SoulsStaff]"
 BREAK
 
 #IF
 equal S3 13
 #ACT
-GIVE 封魔剑 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[封魔剑]"
+GIVE Shadowbane 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[Shadowbane]"
 BREAK
 
 ;;==================================
@@ -370,65 +370,65 @@ movr S3 11
 #IF
 equal S3 0
 #ACT
-GIVE 天掌靴子 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[天掌靴子]"
+GIVE PalmBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[PalmBoots]"
 
 BREAK
 
 #IF
 equal S3 1
 #ACT
-GIVE 黑皮靴子 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[黑皮靴子]"
+GIVE BlackBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[BlackBoots]"
 BREAK
 
 #IF
 equal S3 2
 #ACT
-GIVE 月光鞋 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[月光鞋]"
+GIVE MoonBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[MoonBoots]"
 BREAK
 
 #IF
 equal S3 3
 #ACT
-GIVE 绝地靴 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[绝地靴]"
+GIVE JediBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[JediBoots]"
 BREAK
 
 #IF
 equal S3 4
 #ACT
-GIVE 仙云靴 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[仙云靴]"
+GIVE XianBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[XianBoots]"
 BREAK
 
 #IF
 equal S3 5
 #ACT
-GIVE 无影靴 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[无影靴]"
+GIVE ShadowBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[ShadowBoots]"
 BREAK
 
 #IF
 equal S3 6
 #ACT
-GIVE 绝地靴 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[绝地靴]"
+GIVE JediBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[JediBoots]"
 BREAK
 
 #IF
 equal S3 7
 #ACT
-GIVE 仙云靴 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[仙云靴]"
+GIVE XianBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[XianBoots]"
 BREAK
 
 #IF
 equal S3 8
 #ACT
-GIVE 月光鞋 1
-SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[月光鞋]"
+GIVE MoonBoots 1
+SysMsg  "魔法阵释放的能量实现了您一个愿望，您获得了[MoonBoots]"
 BREAK
 
 ;;==========================

@@ -11,7 +11,7 @@
 #IF
 Checkitem 雪霜兑换券 1
 #ACT
-GIVE 万年雪霜 1000
+GIVE FirnFrost 1000
 take 雪霜兑换券 1
 #SAY
 恭喜您,成功兑换1000个万年雪霜

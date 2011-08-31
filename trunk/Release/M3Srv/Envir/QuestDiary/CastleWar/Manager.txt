@@ -59,19 +59,19 @@ ChangeUSERNAME @ChangeUSERNAMEResult
 
 [@gold_rain]
 #ACT
-DropItemMap "3, 209, 164, 40" 金币 1000  1000 
+DropItemMap "3, 209, 164, 40" Gold 1000  1000 
 
 [@potion_rain]
 #ACT
-DropItemMap "3, 209, 164, 40" 强效太阳水 1  100
+DropItemMap "3, 209, 164, 40" SunPotion(M) 1  100
 
 [@gold_clear]
 #ACT
-ClearItemMap "3, 209, 164, 45" 金币
+ClearItemMap "3, 209, 164, 45" Gold
 
 [@potion_clear]
 #ACT
-ClearItemMap "3, 209, 164, 45" 强效太阳水
+ClearItemMap "3, 209, 164, 45" SunPotion(M)
 
 [@allitem_clear]
 #ACT
@@ -145,7 +145,7 @@ IsCastleGuild Sabuk
 break
 
 #IF
-!checkitem 祖玛头像 1
+!checkitem ZumaRelic 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_17
 
@@ -318,7 +318,7 @@ break
 #IF
 !CheckCastleDoor 1
 #ACT
-take 金币 500000
+take Gold 500000
 MakeCastleDoor   1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_43
@@ -351,7 +351,7 @@ break
 #IF
 !CheckCastleDoor  2
 #ACT
-take 金币 500000
+take Gold 500000
 MakeCastleDoor    2
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_48
@@ -384,7 +384,7 @@ break
 #IF
 !CheckCastleDoor  3
 #ACT
-take 金币 500000
+take Gold 500000
 MakeCastleDoor    3
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_53
@@ -400,7 +400,7 @@ MakeCastleDoor    3
 CheckCastleDoor  1
 !CheckCastleDoorOpen 1
 #ACT
-SENDCMD  "3, 235, 192, 4" 沙巴克城门1 OPEN
+SENDCMD  "3, 235, 192, 4" SabakGate1 OPEN
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_55
 
@@ -413,7 +413,7 @@ SENDCMD  "3, 235, 192, 4" 沙巴克城门1 OPEN
 CheckCastleDoor  1
 CheckCastleDoorOpen  1
 #ACT
-SENDCMD  "3, 235, 192, 4" 沙巴克城门1 CLOSE
+SENDCMD  "3, 235, 192, 4" SabakGate1 CLOSE
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_57
 
@@ -428,7 +428,7 @@ SENDCMD  "3, 235, 192, 4" 沙巴克城门1 CLOSE
 CheckCastleDoor  2
 !CheckCastleDoorOpen  2
 #ACT
-SENDCMD    "3, 169, 191, 1" 沙巴克城门3 OPEN
+SENDCMD    "3, 169, 191, 1" SabakGate3 OPEN
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_59
 
@@ -441,7 +441,7 @@ SENDCMD    "3, 169, 191, 1" 沙巴克城门3 OPEN
 CheckCastleDoor  2
 CheckCastleDoorOpen  2
 #ACT
-SENDCMD    "3, 169, 191, 1" 沙巴克城门3 CLOSE
+SENDCMD    "3, 169, 191, 1" SabakGate3 CLOSE
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_61
 
@@ -456,7 +456,7 @@ SENDCMD    "3, 169, 191, 1" 沙巴克城门3 CLOSE
 CheckCastleDoor  3
 !CheckCastleDoorOpen  3
 #ACT
-SENDCMD    "3, 233, 127, 1" 沙巴克城门4 OPEN
+SENDCMD    "3, 233, 127, 1" SabakGate4 OPEN
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_63
 
@@ -469,7 +469,7 @@ SENDCMD    "3, 233, 127, 1" 沙巴克城门4 OPEN
 CheckCastleDoor  3
 CheckCastleDoorOpen  3
 #ACT
-SENDCMD    "3, 233, 127, 1" 沙巴克城门4 CLOSE
+SENDCMD    "3, 233, 127, 1" SabakGate4 CLOSE
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Manager.txt] @Manager_65
 

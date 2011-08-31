@@ -18,7 +18,7 @@ CHECKLEVEL 50
 GENDER MAN 0
 EQUAL N1 0
 #ACT
-GIVE 玫瑰 3
+GIVE Rose 3
 SaveValue "QuestDiary\行会提交\三八节日.txt" [领奖否] %B0 1
 #SAY
 领奖完毕，祝您节日快乐。\

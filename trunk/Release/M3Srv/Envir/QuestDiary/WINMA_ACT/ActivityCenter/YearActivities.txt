@@ -15,7 +15,7 @@
 在寒冷冬季您是否想要一个伙伴陪您打怪练级？\
 tgmir3真情奉献—这个冬天不再孤单\
 新年初始,凡是等级在55级以上的玩家均可在这里无限领取可爱的宠物宝宝\
-每次一只,系统将会随机送您可爱 {FCOLOR=250}雪狼宝宝{FCOLOR=255} 或者帅帅的新怪物 {FCOLOR=250}暴猿兽人{FCOLOR=255},让您在孤单之余尽显王者风范\
+每次一只,系统将会随机送您可爱 {FCOLOR=250}雪狼宝宝{FCOLOR=255} 或者帅帅的新怪物 {FCOLOR=250}ViolentApe{FCOLOR=255},让您在孤单之余尽显王者风范\
 <立刻领取新年宠物宝宝/@changepet_ING>\
 <返 回/@NEWYEARGAME_ING>\
 
@@ -39,7 +39,7 @@ MOVR S2 2
 #IF
 equal S2 0
 #ACT
-MonRecall 暴猿兽人 24 0
+MonRecall ViolentApe 24 0
 SYSMSG "恭喜,领取帅帅的暴猿兽人一只"
 MOV S2 0
 CLOSE
@@ -47,7 +47,7 @@ BREAK
 #IF
 equal S2 1
 #ACT
-MonRecall 冰原雪狼 24 0
+MonRecall SnowWolf 24 0
 SYSMSG "恭喜,领取可爱的雪狼宝宝一只"
 MOV S2 0
 CLOSE
@@ -55,9 +55,9 @@ BREAK
 
 [@newyearcard_change]
 #SAY
-新年活动期间,在道馆、银杏、边境的城市周围找到 {FCOLOR=250}『贺岁树』{FCOLOR=255},并搜集齐《新》、《年》、《祝》、《贺》、《卡》碎片,即可在这兑换一张完整的《新年祝贺卡》,双击《新年祝贺卡》卡片，即可写下20字以內的祝福信息，並可随机获得新年装备或其他游戏道具.\ 
+新年活动期间,在道馆、银杏、边境的城市周围找到 {FCOLOR=250}『NewYearTree』{FCOLOR=255},并搜集齐《新》、《年》、《祝》、《贺》、《卡》碎片,即可在这兑换一张完整的《NewYearsCard》,双击《NewYearsCard》卡片，即可写下20字以內的祝福信息，並可随机获得新年装备或其他游戏道具.\ 
 ※全服所有玩家皆可看见祝福的信息\
-※如身上已持有「贺岁新鞋」或是「贺岁新帽」 将只能在卡片上写信息.\
+※如身上已持有「NewYearBoots」或是「NewYearHelmet」 将只能在卡片上写信息.\
 <兑换新年祝贺卡/@changenewyearcard_ING>\
 <返 回/@NEWYEARGAME_ING>\
 
@@ -74,9 +74,9 @@ TAKE 年 1
 TAKE 祝 1
 TAKE 贺 1
 TAKE 卡 1
-GIVE 新年祝贺卡 1
+GIVE NewYearsCard 1
 #SAY
-恭喜您兑换 {FCOLOR=250}新年祝贺卡{FCOLOR=255} 一张.双击卡片便能写下祝福短语并可随机获得新年奖品.\
+恭喜您兑换 {FCOLOR=250}NewYearsCard{FCOLOR=255} 一张.双击卡片便能写下祝福短语并可随机获得新年奖品.\
 <结 束/@exit>\
 #ELSESAY
 您的道具不足,必须集齐《新》、《年》、《祝》、《贺》、《卡》碎片才能兑换.\
@@ -84,19 +84,19 @@ GIVE 新年祝贺卡 1
 
 [@newyearredbag_change]
 #SAY
-通过杀死道馆、银杏、边境的城市周围的 {FCOLOR=250}贺岁雪人{FCOLOR=255},便能随机获得 {FCOLOR=250}新年大红包{FCOLOR=255},拿着大红包来我这兑换便能获得丰厚的奖品哦^_^\
+通过杀死道馆、银杏、边境的城市周围的 {FCOLOR=250}NewYearSnowman{FCOLOR=255},便能随机获得 {FCOLOR=250}NewYearPackage{FCOLOR=255},拿着大红包来我这兑换便能获得丰厚的奖品哦^_^\
 <新年大红包兑换奖品/@changenewyearredbag_ING>\
 <返 回/@NEWYEARGAME_ING>\
 
 [@changenewyearredbag_ING]
 #IF
-checkitem 新年大红包 1
+checkitem NewYearPackage 1
 #ACT
-TAKE 新年大红包 1
+TAKE NewYearPackage 1
 GOTO @changenewyearredbag_STR
 BREAK
 #ELSESAY
-您身上没有 {FCOLOR=250}新年大红包{FCOLOR=255} 我不能为您兑换\
+您身上没有 {FCOLOR=250}NewYearPackage{FCOLOR=255} 我不能为您兑换\
 <结 束/@exit>\
 #ELSEACT
 BREAK
@@ -116,7 +116,7 @@ BREAK
 #IF
 equal S2 1
 #ACT
-GIVE 金币 200000
+GIVE Gold 200000
 SYSMSG "恭喜获得20W金币"
 MOV S2 0
 CLOSE
@@ -124,7 +124,7 @@ BREAK
 #IF
 equal S2 2
 #ACT
-GIVE 金币 500000
+GIVE Gold 500000
 SYSMSG "恭喜获得50W金币"
 MOV S2 0
 CLOSE
@@ -140,7 +140,7 @@ BREAK
 #IF
 equal S2 4
 #ACT
-GIVE 祝福油 1
+GIVE BlessingOil 1
 SYSMSG "恭喜获得祝福油1瓶"
 MOV S2 0
 CLOSE

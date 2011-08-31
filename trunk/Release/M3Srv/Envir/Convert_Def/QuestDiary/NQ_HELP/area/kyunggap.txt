@@ -26,7 +26,7 @@
 
 [@kyunggap_4]
 {
-也就是说{FCOLOR=250}要寻找纯度13以上{FCOLOR=255}的{FCOLOR=250}铁矿{FCOLOR=255}。 铁矿可在{FCOLOR=250}比奇矿区{FCOLOR=255}或{FCOLOR=250}毒蛇山谷矿山{FCOLOR=255}采集。\
+也就是说{FCOLOR=250}要寻找纯度13以上{FCOLOR=255}的{FCOLOR=250}IronOre{FCOLOR=255}。 铁矿可在{FCOLOR=250}比奇矿区{FCOLOR=255}或{FCOLOR=250}毒蛇山谷矿山{FCOLOR=255}采集。\
 <询问比奇矿区的位置。/@mine_bc_tip>\
 <询问毒蛇山谷矿山的位置。/@mine_bg_tip>\
 <询问采矿方法。/@get_iron_tip>\
@@ -47,7 +47,7 @@
 
 [@kyunggap_7]
 {
-采矿首先需要{FCOLOR=250}鹤嘴锄{FCOLOR=255}。 先去{FCOLOR=250}武器店{FCOLOR=255}把鹤嘴锄买到手之后，再把鼠标放在矿山的壁上点击就可以采矿啦！\
+采矿首先需要{FCOLOR=250}Pickaxe{FCOLOR=255}。 先去{FCOLOR=250}武器店{FCOLOR=255}把鹤嘴锄买到手之后，再把鼠标放在矿山的壁上点击就可以采矿啦！\
 努力采矿就能得到铁矿。 搜集其中{FCOLOR=250}纯度13以上的铁矿{FCOLOR=255}{FCOLOR=250}怡美 (480 : 407){FCOLOR=255}即可。\
 <前一步/@KYUNGGAP_1>
 }

@@ -691,7 +691,7 @@ check [307] 1
 
 [@306_CHECK1_2]
 #IF
-checkitem 灵魂神水（中） 5
+checkitem SoulWater(M) 5
 #ACT
 goto @306_CHECK1_3
 
@@ -703,7 +703,7 @@ goto @306_CHECK1_3
 #IF
 check [310] 0
 check [307] 1
-checkitem 灵魂神水（中） 5
+checkitem SoulWater(M) 5
 #ACT
 movr s0 100
 inc s0 1
@@ -722,7 +722,7 @@ small s0 41
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Race_40]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Amount_40]
-take 灵魂神水（中） 5
+take SoulWater(M) 5
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -743,7 +743,7 @@ small s0 71
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Race_30_Type1]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Amount_30_type1]
-take 灵魂神水（中） 5
+take SoulWater(M) 5
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -770,7 +770,7 @@ gender man
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Amount_30_Man_type2]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Race_30_Man_Type3]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Amount_30_Man_type3]
-take 灵魂神水（中） 5
+take SoulWater(M) 5
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -781,7 +781,7 @@ mov s0 0
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Amount_30_WoMan_type2]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Race_30_WoMan_Type3]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [306] [Reward_Amount_30_WoMan_type3]
-take 灵魂神水（中） 5
+take SoulWater(M) 5
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -987,7 +987,7 @@ check [307] 1
 
 [@308_CHECK1_2]
 #IF
-checkitem 疾风神水（中） 2
+checkitem VigorousWater(M) 2
 #ACT
 goto @308_CHECK1_3
 #ELSESAY
@@ -998,7 +998,7 @@ goto @308_CHECK1_3
 #IF
 check [310] 0
 check [307] 1
-checkitem 疾风神水（中） 2
+checkitem VigorousWater(M) 2
 #ACT
 movr s0 100
 inc s0 1
@@ -1017,7 +1017,7 @@ small s0 21
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Race_20]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Amount_20]
-take 疾风神水（中） 2
+take VigorousWater(M) 2
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -1038,7 +1038,7 @@ gender man
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Amount_80_Man_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Race_80_Man_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Amount_80_Man_type2]
-take 疾风神水（中） 2
+take VigorousWater(M) 2
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -1052,7 +1052,7 @@ mov s0 0
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Amount_80_WoMan_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Race_80_WoMan_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [308] [Reward_Amount_80_WoMan_type2]
-take 疾风神水（中） 2
+take VigorousWater(M) 2
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -2115,9 +2115,9 @@ check [307] 1
 
 [@317_CHECK1_2]
 #IF
-checkitem 攻击神水（中） 1
-checkitem 自然神水（中） 1
-checkitem 灵魂神水（中） 1
+checkitem AttackWater(M) 1
+checkitem NaturalWater(M) 1
+checkitem SoulWater(M) 1
 #ACT
 goto @317_CHECK1_3
 #ELSESAY
@@ -2128,9 +2128,9 @@ goto @317_CHECK1_3
 #IF
 check [310] 0
 check [307] 1
-checkitem 攻击神水（中） 1
-checkitem 自然神水（中） 1
-checkitem 灵魂神水（中） 1
+checkitem AttackWater(M) 1
+checkitem NaturalWater(M) 1
+checkitem SoulWater(M) 1
 #ACT
 movr s0 100
 inc s0 1
@@ -2149,9 +2149,9 @@ small s0 2
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Race_1]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Amount_1]
-take 攻击神水（中） 1
-take 自然神水（中） 1
-take 灵魂神水（中） 1
+take AttackWater(M) 1
+take NaturalWater(M) 1
+take SoulWater(M) 1
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -2171,9 +2171,9 @@ small s0 11
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Race_9]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Amount_9]
-take 攻击神水（中） 1
-take 自然神水（中） 1
-take 灵魂神水（中） 1
+take AttackWater(M) 1
+take NaturalWater(M) 1
+take SoulWater(M) 1
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -2196,9 +2196,9 @@ gender man
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Amount_90_Man_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Race_90_Man_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Amount_90_Man_type2]
-take 攻击神水（中） 1
-take 自然神水（中） 1
-take 灵魂神水（中） 1
+take AttackWater(M) 1
+take NaturalWater(M) 1
+take SoulWater(M) 1
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -2211,9 +2211,9 @@ set [310] 1
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Amount_90_WoMan_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Race_90_WoMan_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [317] [Reward_Amount_90_WoMan_type2]
-take 攻击神水（中） 1
-take 自然神水（中） 1
-take 灵魂神水（中） 1
+take AttackWater(M) 1
+take NaturalWater(M) 1
+take SoulWater(M) 1
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -2927,7 +2927,7 @@ small s0 31
 take 号角 30
 take 七点白蛇牙齿 5 
 take 千年毒蛇牙齿 15
-give 祖玛头像 1
+give ZumaRelic 1
 reset [307] 2
 set [310] 1
 mov s0 0
@@ -2997,8 +2997,8 @@ check [307] 1
 
 [@324_CHECK1_2]
 #IF
-checkitem 铁矿 10
-checkduraeva 铁矿 12
+checkitem IronOre 10
+checkduraeva IronOre 12
 #ACT
 goto @324_CHECK1_2_1
 #ELSESAY
@@ -3007,8 +3007,8 @@ goto @324_CHECK1_2_1
 
 [@324_CHECK1_2_1]
 #IF
-checkitem 黑铁 10
-checkduraeva 黑铁 12
+checkitem BlackIronOre 10
+checkduraeva BlackIronOre 12
 #ACT
 goto @324_CHECK1_3
 #ELSESAY
@@ -3019,8 +3019,8 @@ goto @324_CHECK1_3
 #IF
 check [310] 0
 check [307] 1
-checkitem 黑铁 10
-checkduraeva 黑铁 12
+checkitem BlackIronOre 10
+checkduraeva BlackIronOre 12
 #ACT
 movr s0 100
 inc s0 1
@@ -3039,8 +3039,8 @@ small s0 6
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [324] [Reward_Race_5]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [324] [Reward_Amount_5]
-take 铁矿 10
-take 黑铁 10
+take IronOre 10
+take BlackIronOre 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -3065,8 +3065,8 @@ small s0 21
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [324] [Reward_Race_15]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [324] [Reward_Amount_15]
-take 铁矿 10
-take 黑铁 10
+take IronOre 10
+take BlackIronOre 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -3077,8 +3077,8 @@ mov s0 0
 #ELSEACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [324] [Reward_Race_80]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [324] [Reward_Amount_80]
-take 铁矿 10
-take 黑铁 10
+take IronOre 10
+take BlackIronOre 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -3136,8 +3136,8 @@ check [307] 1
 
 [@325_CHECK1_2]
 #IF
-checkitem 金矿 5
-checkduraeva 金矿 12
+checkitem GoldOre 5
+checkduraeva GoldOre 12
 #ACT
 goto @325_CHECK1_2_1
 #ELSESAY
@@ -3146,8 +3146,8 @@ goto @325_CHECK1_2_1
 
 [@325_CHECK1_2_1]
 #IF
-checkitem 银矿 10
-checkduraeva 银矿 12
+checkitem SilverOre 10
+checkduraeva SilverOre 12
 #ACT
 goto @325_CHECK1_3
 #ELSESAY
@@ -3176,8 +3176,8 @@ small s0 11
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Race_10]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Amount_10]
-take 金矿 5
-take 银矿 10
+take GoldOre 5
+take SilverOre 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -3204,8 +3204,8 @@ small s0 61
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Amount_50_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Race_50_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Amount_50_type2]
-take 金矿 5
-take 银矿 10
+take GoldOre 5
+take SilverOre 10
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -3229,8 +3229,8 @@ gender man
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Race_40_Man]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Amount_40_Man]
 
-take 金矿 5
-take 银矿 10
+take GoldOre 5
+take SilverOre 10
 give %A0 %P0
 reset [307] 2 
 set [310] 1
@@ -3238,8 +3238,8 @@ mov s0 0
 #ELSEACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Race_40_WoMan]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [325] [Reward_Amount_40WoMan]
-take 金矿 5
-take 银矿 10
+take GoldOre 5
+take SilverOre 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -3447,8 +3447,8 @@ check [307] 1
 
 [@327_CHECK1_2]
 #IF
-checkitem 牛肉 20
-checkduraeva 牛肉 12
+checkitem Beef 20
+checkduraeva Beef 12
 #ACT
 goto @327_CHECK1_2_1
 #ELSESAY
@@ -3457,8 +3457,8 @@ goto @327_CHECK1_2_1
 
 [@327_CHECK1_2_1]
 #IF
-checkitem 鸡肉 10
-checkduraeva 鸡肉 5
+checkitem Chicken 10
+checkduraeva Chicken 5
 #ACT
 goto @327_CHECK1_3
 #ELSESAY
@@ -3489,8 +3489,8 @@ small s0 31
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Amount_30_1_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Race_30_1_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Amount_30_1_type2]
-take 牛肉 20
-take 鸡肉 10
+take Beef 20
+take Chicken 10
 give %A0 %P0
 give %A1 %P1
 reset [307] 2
@@ -3515,8 +3515,8 @@ small s0 31
 #ACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Race_30_2]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Amount_30_2]
-take 牛肉 20
-take 鸡肉 10
+take Beef 20
+take Chicken 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -3527,8 +3527,8 @@ mov s0 0
 #ELSEACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Race_40]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [327] [Reward_Amount_40]
-take 牛肉 20
-take 鸡肉 10
+take Beef 20
+take Chicken 10
 give %A0 %P0
 reset [307] 2
 set [310] 1
@@ -4581,8 +4581,8 @@ check [307] 1
 
 [@337_CHECK1_2]
 #IF
-checkitem 铁矿 10
-checkduraeva 铁矿 12
+checkitem IronOre 10
+checkduraeva IronOre 12
 #ACT
 goto @337_CHECK1_2_1
 #ELSESAY
@@ -4622,7 +4622,7 @@ small s0 41
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [337] [Reward_Amount_40_type1]
 	loadValue A1 "GM_Def\QT_Today\300Reward.txt" [337] [Reward_Race_40_type2]
 	loadValue P1 "GM_Def\QT_Today\300Reward.txt" [337] [Reward_Amount_40_type2]
-take 铁矿 10
+take IronOre 10
 take 皮 50
 give %A0 %P0
 give %A1 %P1
@@ -4635,7 +4635,7 @@ mov s0 0
 #ELSEACT
 	loadValue A0 "GM_Def\QT_Today\300Reward.txt" [337] [Reward_Race_60]
 	loadValue P0 "GM_Def\QT_Today\300Reward.txt" [337] [Reward_Amount_60]
-take 铁矿 10
+take IronOre 10
 take 皮 50
 give %A0 %P0
 reset [307] 2

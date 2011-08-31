@@ -9,9 +9,9 @@ breaktimerecall
 
 [@Ma1_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma1_cube
@@ -73,28 +73,28 @@ movr d0 3
 equal d0 0
 #ACT
 goto @Ma2_pre_cube
-give »ğ°Ñ 1
+give Torch 1
 break
 
 #IF
 equal d0 1
 #ACT
 goto @Ma2_pre_cube
-give µØÀÎÌÓÍÑ¾í 1
+give DungeonEscape 1
 break
 
 #IF
 equal d0 2
 #ACT
 goto @Ma2_pre_cube
-give Ì«ÑôË® 1
+give SunPotion(S) 1
 break
 
 [@Ma2_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma2_cube
@@ -158,7 +158,7 @@ goto @Ma3_race
 [@Ma3_game]
 #ACT
 SET [799] 1
-mongenP "B103_001,19,19,15" Ñò 30
+mongenP "B103_001,19,19,15" Sheep 30
 TimeRecall 1
 mapmove B103_001 13 13
 
@@ -172,10 +172,10 @@ goto @Ma3_pre_cube
 
 [@Ma3_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma3_cube
@@ -237,51 +237,51 @@ breaktimerecall
 equal d0 0
 #ACT
 goto @Ma4_pre_cube
-take ³ïÂë 6
+take Chip 6
 break
 
 #IF
 equal d0 1
 #ACT
 goto @Ma4_pre_cube
-give ³ïÂë 6
+give Chip 6
 break
 
 #IF
 equal d0 2
 #ACT
 goto @Ma4_pre_cube
-take ³ïÂë 9
+take Chip 9
 break
 
 #IF
 equal d0 3
 #ACT
 goto @Ma4_pre_cube
-take ½ğ±Ò 4000
+take Gold 4000
 break
 
 #IF
 equal d0 4
 #ACT
 goto @Ma4_pre_cube
-give ½ğ´´Ò©£¨ÌØ£© 2
-give Ä§·¨Ò©£¨ÌØ£© 2
+give HPPotion(XL) 2
+give MPPotion(XL) 2
 break
 
 #IF
 equal d0 5
 #ACT
 goto @Ma4_pre_cube
-give ½ğ´´Ò©£¨´ó£© 2
-give Ä§·¨Ò©£¨´ó£© 2
+give HPPotion(L) 2
+give MPPotion(L) 2
 break
 
 [@Ma4_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma4_cube
@@ -345,25 +345,25 @@ goto @Ma5_race
 [@Ma5_game]
 #ACT
 set [799] 1
-mongenP "B105_001,19,19,15" Ê³ÈË»¨ 30
+mongenP "B105_001,19,19,15" Piranha 30
 TimeRecall 1
 map B105_001
 
 [@Ma5_race]
 #IF
-checkitem Ê³ÈËÊ÷Ò¶ 3
+checkitem CannibalLeaf 3
 #ACT
-take Ê³ÈËÊ÷Ò¶ 1000
+take CannibalLeaf 1000
 goto @Ma5_pre_cube
 #ELSEACT
 mapmove 01 428 314
 
 [@Ma5_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma5_cube
@@ -429,8 +429,8 @@ goto @Ma6_pre_cube
 daytime day
 #ACT
 set [799] 1
-MongenP "B106_001,20,20,20" ÷¼÷Ã 10
-MongenP "B106_001,20,20,20" ÷¼÷ÃÕ½Ê¿ 10
+MongenP "B106_001,20,20,20" Skull 10
+MongenP "B106_001,20,20,20" SkeletonWarrior 10
 TimeRecall 3
 map B106_001
 break
@@ -439,25 +439,25 @@ break
 daytime night
 #ACT
 set [799] 1
-MongenP "B106_001,20,20,20" ÷¼÷ÃÕ½½« 10
-MongenP "B106_001,20,20,20" ÖÀ¸«÷¼÷Ã 10
+MongenP "B106_001,20,20,20" SkeletonsFighter 10
+MongenP "B106_001,20,20,20" SkeletonAxer 10
 TimeRecall 3
 map B106_001
 break
 
 #ELSEACT
 set [799] 1
-MongenP "B106_001,20,20,20" ÷¼÷Ã¾«Áé 10
+MongenP "B106_001,20,20,20" SkeletonWizard 10
 TimeRecall 3
 map B106_001
 break
 
 [@Ma6_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma6_cube
@@ -518,9 +518,9 @@ breaktimerecall
 
 [@Ma7_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma7_cube
@@ -578,9 +578,9 @@ breaktimerecall
 
 [@Ma8_next]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma8_cube
@@ -624,7 +624,7 @@ break
 check [799] 0
 #ACT
 MonClear B105_001
-ClearItemMap "B109, 30, 30, 30"  ÌØÊâÒ©Ë®
+ClearItemMap "B109, 30, 30, 30"  SpecialMedicine
 breaktimerecall
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play01_10.txt] @play01_10_17
@@ -635,19 +635,19 @@ goto @Ma9_pre_cube
 [@Ma9_game]
 #ACT
 SET [799] 1
-take ÌØÊâÒ©Ë® 5000
-mongenP "B109_001,50,50,50" ÖÀ¸«÷¼÷Ã62 100
+take SpecialMedicine 5000
+mongenP "B109_001,50,50,50" SkeletonAxer62 100
 TimeRecall 3
 map B109_001
 
 [@Ma9_pre_cube]
 #IF
-checkitem ÌØÊâÒ©Ë® 1
-checkitem ³ïÂë 1
+checkitem SpecialMedicine 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ÌØÊâÒ©Ë® 5000
-take ³ïÂë 1
+take SpecialMedicine 5000
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma9_cube
@@ -698,10 +698,10 @@ break
 [@Ma10]
 {
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 breaktimerecall
-take ³ïÂë 1
+take Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play01_10.txt] @play01_10_19
 

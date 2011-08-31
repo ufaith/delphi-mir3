@@ -30,25 +30,25 @@ Please select the items you wish to sell.\ \
 [@NPC_HelpBooks]
 {
 你想听哪类书的介绍？\
-道士可以学习<治愈术/@help_31>,<精神力战法/@help_32>和<施毒术/@help_33>。\ \
+道士可以学习<Healing/@help_31>,<SpiritSword/@help_32>和<Poisoning/@help_33>。\ \
 <Back/@main>
 }
 
 [@NPC_Help_31]
 {
-等级为7时可以修炼{FCOLOR=250}治愈术{FCOLOR=255}的第一阶段， 等级为11时修炼第2阶段，16级时可以完成第3阶段的修炼。\ \
+等级为7时可以修炼{FCOLOR=250}Healing{FCOLOR=255}的第一阶段， 等级为11时修炼第2阶段，16级时可以完成第3阶段的修炼。\ \
 <前一步/@helpbooks>
 }
 
 [@NPC_Help_32]
 {
-等级为8时可以修炼{FCOLOR=250}精神力战法{FCOLOR=255}的第一阶段，等级为10时修炼第2阶段，12级时可以完成第3阶段的修炼。\ \
+等级为8时可以修炼{FCOLOR=250}SpiritSword{FCOLOR=255}的第一阶段，等级为10时修炼第2阶段，12级时可以完成第3阶段的修炼。\ \
 <前一步/@helpbooks>
 }
 
 [@NPC_Help_33]
 {
-等级为12时可以修炼{FCOLOR=250}施毒术{FCOLOR=255}的第一阶段， 等级为14时修炼第2阶段，16级时可以完成第3阶段的修炼。\ \
+等级为12时可以修炼{FCOLOR=250}Poisoning{FCOLOR=255}的第一阶段， 等级为14时修炼第2阶段，16级时可以完成第3阶段的修炼。\ \
 <前一步/@helpbooks>
 }
 

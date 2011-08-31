@@ -105,8 +105,8 @@ break
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09HorseMarket_Bichon-0.txt] @NPC_BuyHorseGraw_Complete
 #ELSEACT
-take 金币 500000
-horsecall 褐色马
+take Gold 500000
+horsecall BrownHorse
 
 
 [@SellHorse]
@@ -117,7 +117,7 @@ checkhorse 1
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09HorseMarket_Bichon-0.txt] @NPC_SellHorse
 #ACT
-give 金币 250000
+give Gold 250000
 KillHorse
 break
 
@@ -128,7 +128,7 @@ checkhorse 2
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09HorseMarket_Bichon-0.txt] @NPC_SellHorse
 #ACT
-give 金币 10000000
+give Gold 10000000
 KillHorse
 break
 
@@ -139,7 +139,7 @@ checkhorse 3
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09HorseMarket_Bichon-0.txt] @NPC_SellHorse
 #ACT
-give 金币 90000000
+give Gold 90000000
 KillHorse
 break
 
@@ -179,8 +179,8 @@ break
 	#INCLUDE [..\Convert_Def\Market_Def\09HorseMarket_Bichon-0.txt] @NPC_BuyHorseGraw_ok_baima
 
 #ELSEACT
-take 金币 20000000
-horsecall 白马
+take Gold 20000000
+horsecall WhiteHorse
 
 [@horsecall_hong_1]
 #CALL [\WINMA_ACT\BuyHorse.txt] @购买黑马_1

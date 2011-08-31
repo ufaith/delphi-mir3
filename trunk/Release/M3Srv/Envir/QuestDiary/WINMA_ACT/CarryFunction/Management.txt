@@ -87,11 +87,11 @@ ___{FCOLOR=255}[ <给玩家冲直积分/@冲直积分> ]      [ <查看给玩家积分/@查看积分> 
 <银杏加点/@StartGMMove(02,247,236,银杏加点)>  <结婚传送/@StartGMMove(0,393,295,礼堂)>   <流 放 岛/@StartGMMove(81,130,264,流放岛)>   <新手练级/@StartGMMove(d011,129,204,新手地图)>  <挑战魔界/@StartGMMove(D0002_001,8,12,飞天武术馆)>\
 ═══════[{FCOLOR=249} 地图传送→GM专用 {FCOLOR=255}]═══════\
 <石阁猪洞/@StartGMMove(D712,365,226,石阁猪洞)>  <绿洲沙漠/@StartGMMove(6,272,731,沙漠)>   <沃玛神殿/@StartGMMove(D023,200,196,沃玛神殿)>   <赤月峡谷/@StartGMMove(d10151,89,49,赤月峡谷)>  <万年峡谷/@StartGMMove(d6015,10,26,万年峡谷)>\
-<潘夜石窟/@StartGMMove(d1215,371,47,潘夜石窟)>  <潘夜神殿/@StartGMMove(D1101,135,180,潘夜神殿)>   <祖玛神殿/@StartGMMove(d505,96,101,祖玛神殿)>   <黑 度 宫/@StartGMMove(d1510,15,45,黑度宫)>  <真 天 宫/@StartGMMove(d15023,160,152,真天宫)>\
+<潘夜石窟/@StartGMMove(d1215,371,47,潘夜石窟)>  <潘夜神殿/@StartGMMove(D1101,135,180,潘夜神殿)>   <祖玛神殿/@StartGMMove(d505,96,101,祖玛神殿)>   <Black 度 Palace/@StartGMMove(d1510,15,45,黑度宫)>  <真 (Days) Palace/@StartGMMove(d15023,160,152,真天宫)>\
 <神舰入口/@StartGMMove(D900,20,22,神舰入口)>  <诺玛遗址/@StartGMMove(d1602,194,201,诺玛遗址)>   <西 沙 漠/@StartGMMove(d2001,283,280,西沙漠)>   <冰宫雪原/@StartGMMove(82,207,126,冰宫雪原)>  <绝情神殿/@StartGMMove(8_002,79,75,绝情神殿)>\
 ═══════[{FCOLOR=249} 教主传送→GM专用 {FCOLOR=255}]═══════\
-<沃玛教主/@StartGMMove(d023,49,363,沃玛教主房间)>  <骷髅教主/@StartGMMove(D1215,200,200,骷髅教主房间)>   <触 龙 神/@StartGMMove(d6015,71,170,触龙神房间)>   <赤月恶魔/@StartGMMove(d10151,150,20,赤月恶魔房间)>  <牛 魔 王/@StartGMMove(D1115,204,195,牛魔王房间)>\
-<祖玛教主/@StartGMMove(d5073,58,12,祖玛教主房间)>             <震天魔神/@StartGMMove(D15054,287,290,震天魔神房间)>             <霸王教主/@StartGMMove(D903,51,54,霸王教主房间)>
+<WoomaLeader/@StartGMMove(d023,49,363,沃玛教主房间)>  <SkeltonLeader/@StartGMMove(D1215,200,200,骷髅教主房间)>   <触 龙 神/@StartGMMove(d6015,71,170,触龙神房间)>   <RedDevil/@StartGMMove(d10151,150,20,赤月恶魔房间)>  <Cow 魔 王/@StartGMMove(D1115,204,195,牛魔王房间)>\
+<ZumaLeader/@StartGMMove(d5073,58,12,祖玛教主房间)>             <DevilThunder/@StartGMMove(D15054,287,290,震天魔神房间)>             <OverlordFounder/@StartGMMove(D903,51,54,霸王教主房间)>
 
 [@StartGMMove()]
 #ACT
@@ -154,29 +154,29 @@ SYSMSG "亲爱的[ <$USERNAME> ]开区刷怪.现在停止了"
 
 [@diao_zuanshi]
 #ACT
-DropItemMap "1, 405, 124, 30" 内测积分兑换券  1  50 
+DropItemMap "1, 405, 124, 30" MeasuredCoupon  1  50 
 lineMsg [Grobal] "打雷了,下雨了,道观天上掉内测积分兑换券了!"
 
 [@diao_suipian]
 #ACT
-DropItemMap "1, 405, 124, 30" 积分兑换券碎片  1  50 
+DropItemMap "1, 405, 124, 30" CreditsCoupon  1  50 
 lineMsg [Grobal] "打雷了,下雨了,道观天上掉积分兑换券碎片了!"
 
 [@diao_jinbi]
 #ACT
-DropItemMap "1, 405, 124, 30" 金币  5000  200 
+DropItemMap "1, 405, 124, 30" Gold  5000  200 
 lineMsg [Grobal] "打雷了,下雨了,道观天上掉金币了!"
 
 [@diao_hezi]
 #ACT
-DropItemMap "1, 405, 124, 30" 宝箱 1  25
+DropItemMap "1, 405, 124, 30" Chest 1  25
 lineMsg [Grobal] "打雷了,下雨了,道观天上掉宝箱了!"
 
 [@diao_tangguo]
 #ACT
-DropItemMap "1, 405, 124, 30" 魔法糖果 1 20
-DropItemMap "1, 405, 124, 30" 灵魂糖果 1 20
-DropItemMap "1, 405, 124, 30" 攻击糖果 1 20
+DropItemMap "1, 405, 124, 30" MagicCandy 1 20
+DropItemMap "1, 405, 124, 30" SoulCandy 1 20
+DropItemMap "1, 405, 124, 30" AttackCandy 1 20
 lineMsg [Grobal] "打雷了,下雨了,道观天上掉糖果了!"
 
 [@@GMSETJF]

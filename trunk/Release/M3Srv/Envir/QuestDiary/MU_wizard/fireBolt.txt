@@ -10,7 +10,7 @@ check [745] 1
 break
 ;
 #IF
-checkmagic 火球术
+checkmagic FireBall
 #SAY
 我看你已经掌握了火球术魔法。\ \
 <Exit/@exit>
@@ -28,7 +28,7 @@ goto @mugong_fireball_next1
 
 [@mugong_fireball_next1]
 #IF
-checkitem 火球术 1
+checkitem FireBall 1
 #ACT
 goto @mugong_fireball_next2
 #ELSESAY
@@ -52,10 +52,10 @@ goto @mugong_fireball_next2
 [@mugong_fireball_next4]
 #IF
 check [745] 0
-checkitem 火球术 1
+checkitem FireBall 1
 #ACT
-take 火球术 1
-give 火球术（秘籍） 1
+take FireBall 1
+give FireBall 1
 set [745] 1
 #SAY
 现在你已经有了火球术秘籍，以前不理解的地方现在都可以理解了。\ \

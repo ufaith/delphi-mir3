@@ -18,9 +18,9 @@ goto @Ma21_pre_cube
 
 [@Ma21_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma21_cube
@@ -78,9 +78,9 @@ breaktimerecall
 
 [@Ma22_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma22_cube
@@ -127,12 +127,12 @@ breaktimerecall
 
 [@Ma23_game]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play21_30.txt] @play21_30_7
 
 #ACT
-take ³ïÂë 1
+take Chip 1
 mov n1 0
 #ELSEACT
 mapmove 01 428 314
@@ -166,9 +166,9 @@ goto @Ma23_dicestart
 
 [@Ma23_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma23_cube
@@ -228,26 +228,26 @@ breaktimerecall
 
 [@Ma24_exchange]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 equal d0 0
 #ACT
-take ³ïÂë 1
+take Chip 1
 ExchangeMap B102
 break
 
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 equal d0 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 ExchangeMap B115
 break
 
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 equal d0 2
 #ACT
-take ³ïÂë 1
+take Chip 1
 ExchangeMap B126
 break
 
@@ -266,10 +266,10 @@ breaktimerecall
 
 [@Ma25_buyP]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
-give ½ğ´´Ò©£¨ÌØ£© 1
+take Chip 1
+give HPPotion(XL) 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play21_30.txt] @play21_30_12
 
@@ -279,10 +279,10 @@ give ½ğ´´Ò©£¨ÌØ£© 1
 
 [@Ma25_buyB]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
-give Ä§·¨Ò©£¨ÌØ£© 1
+take Chip 1
+give MPPotion(XL) 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play21_30.txt] @play21_30_14
 
@@ -292,9 +292,9 @@ give Ä§·¨Ò©£¨ÌØ£© 1
 
 [@Ma25_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma25_cube
@@ -353,9 +353,9 @@ breaktimerecall
 
 [@Ma26_move]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 mapmove B116 10 16
 #ELSEACT
 mapmove 01 428 314
@@ -376,14 +376,14 @@ movr d0 8
 equal d0 0
 #ACT
 goto @Ma27_race
-take ³ïÂë 6
+take Chip 6
 break
 
 #IF
 equal d0 1
 #ACT
 goto @Ma27_race
-give ³ïÂë 6
+give Chip 6
 break
 
 #IF
@@ -407,31 +407,31 @@ break
 #IF
 equal d0 5
 #ACT
-take ½ğ±Ò 4000
+take Gold 4000
 goto @Ma27_race
 break
 
 #IF
 equal d0 6
 #ACT
-take ½ğ´´Ò©£¨´ó£© 5
-take Ä§·¨Ò©£¨´ó£© 5
+take HPPotion(L) 5
+take MPPotion(L) 5
 goto @Ma27_race
 break
 
 #IF
 equal d0 7
 #ACT
-give ½ğ´´Ò©£¨´ó£© 5
-give Ä§·¨Ò©£¨´ó£© 5
+give HPPotion(L) 5
+give MPPotion(L) 5
 goto @Ma27_race
 break
 
 [@Ma27_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma27_cube
@@ -492,16 +492,16 @@ mapmove 01 428 314
 
 [@Ma28_game]
 #IF
-checkitem ³ïÂë 12
+checkitem Chip 12
 #ACT
-take ³ïÂë 12
+take Chip 12
 goto @Ma28_race
 
 [@Ma28_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @cube
@@ -562,12 +562,12 @@ mapmove 01 428 314
 
 [@Ma29_game]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play21_30.txt] @play21_30_23
 
 #ACT
-take ³ïÂë 1
+take Chip 1
 mov n1 0
 #ELSEACT
 mapmove 01 428 314
@@ -598,9 +598,9 @@ goto @Ma29_dicestart
 
 [@Ma29_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma29_cube
@@ -661,28 +661,28 @@ breaktimerecall
 #IF
 equal d0 0
 #ACT
-give ³ïÂë 3
+give Chip 3
 mapmove B129 10 16
 break
 
 #IF
 equal d0 1
 #ACT
-take ³ïÂë 6
+take Chip 6
 mapmove B128 10 16
 break
 
 #IF
 equal d0 2
 #ACT
-take ³ïÂë 6
+take Chip 6
 mapmove B131 10 16
 break
 
 #IF
 equal d0 3
 #ACT
-give ³ïÂë 6
+give Chip 6
 mapmove B132 10 16
 break
 }

@@ -120,7 +120,7 @@ break
 #IF
 checkgold 100000
 #ACT
-take ½ð±Ò 100000
+take Gold 100000
 movr   D1  16
 movr   D2  16
 movr   D3  16

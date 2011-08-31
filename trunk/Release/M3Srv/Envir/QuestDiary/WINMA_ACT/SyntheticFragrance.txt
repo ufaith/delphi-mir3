@@ -8,7 +8,7 @@ Mov        A4     0          ;;转换后
 Mov        A5     0          ;;转换前
 Mov        A6     0          ;;转换后
 MoV        D2     0          ;;金币100万
-Mov        D3     0          ;;金币    
+Mov        D3     0          ;;Gold    
 MoV        D4     0          
 MoV        D6     0          
 MOV        S1     0  
@@ -30,61 +30,61 @@ MOV        S1     0
 #SAY
 在这里你可以转换飞龙剑碎片的属性.\
 转换一个碎片要10万金币.\
-<碎片（火）转成（冰）/@转换X(飞龙剑碎片（火）,飞龙剑碎片（冰）)>\
-<碎片（雷）转成（冰）/@转换X(飞龙剑碎片（雷）,飞龙剑碎片（冰）)>\
-<碎片（风）转成（冰）/@转换X(飞龙剑碎片（风）,飞龙剑碎片（冰）)>\
-<碎片（神圣）转成（冰）/@转换X(飞龙剑碎片（神圣）,飞龙剑碎片（冰）)>\
-<碎片（暗黑）转成（冰）/@转换X(飞龙剑碎片（暗黑）,飞龙剑碎片（冰）)>\
-<碎片（幻影）转成（冰）/@转换X(飞龙剑碎片（幻影）,飞龙剑碎片（冰）)>\
+<碎片（火）转成（冰）/@转换X(DragonSwordDebris(Fire),DragonSwordDebris(Ice))>\
+<碎片（雷）转成（冰）/@转换X(DragonSwordDebris(Thunder),DragonSwordDebris(Ice))>\
+<碎片（风）转成（冰）/@转换X(DragonSwordDebris(Wind),DragonSwordDebris(Ice))>\
+<碎片（神圣）转成（冰）/@转换X(DragonSwordDebris(Holy),DragonSwordDebris(Ice))>\
+<碎片（暗黑）转成（冰）/@转换X(DragonSwordDebris(Dark),DragonSwordDebris(Ice))>\
+<碎片（幻影）转成（冰）/@转换X(DragonSwordDebris(Phantom),DragonSwordDebris(Ice))>\
 \
-<碎片（冰）转成（火）/@转换X(飞龙剑碎片（冰）,飞龙剑碎片（火）)>\
-<碎片（雷）转成（火）/@转换X(飞龙剑碎片（雷）,飞龙剑碎片（火）)>\
-<碎片（风）转成（火）/@转换X(飞龙剑碎片（风）,飞龙剑碎片（火）)>\
-<碎片（神圣）转成（火）/@转换X(飞龙剑碎片（神圣）,飞龙剑碎片（火）)>\
-<碎片（暗黑）转成（火）/@转换X(飞龙剑碎片（暗黑）,飞龙剑碎片（火）)>\
-<碎片（幻影）转成（火）/@转换X(飞龙剑碎片（幻影）,飞龙剑碎片（火）)>\
+<碎片（冰）转成（火）/@转换X(DragonSwordDebris(Ice),DragonSwordDebris(Fire))>\
+<碎片（雷）转成（火）/@转换X(DragonSwordDebris(Thunder),DragonSwordDebris(Fire))>\
+<碎片（风）转成（火）/@转换X(DragonSwordDebris(Wind),DragonSwordDebris(Fire))>\
+<碎片（神圣）转成（火）/@转换X(DragonSwordDebris(Holy),DragonSwordDebris(Fire))>\
+<碎片（暗黑）转成（火）/@转换X(DragonSwordDebris(Dark),DragonSwordDebris(Fire))>\
+<碎片（幻影）转成（火）/@转换X(DragonSwordDebris(Phantom),DragonSwordDebris(Fire))>\
 \
-<碎片（冰）转成（雷）/@转换X(飞龙剑碎片（冰）,飞龙剑碎片（雷）)>\
-<碎片（火）转成（雷）/@转换X(飞龙剑碎片（火）,飞龙剑碎片（雷）)>\
-<碎片（风）转成（雷）/@转换X(飞龙剑碎片（风）,飞龙剑碎片（雷）)>\
-<碎片（神圣）转成（雷）/@转换X(飞龙剑碎片（神圣）,飞龙剑碎片（雷）)>\
-<碎片（暗黑）转成（雷）/@转换X(飞龙剑碎片（暗黑）,飞龙剑碎片（雷）)>\
-<碎片（幻影）转成（雷）/@转换X(飞龙剑碎片（幻影）,飞龙剑碎片（雷）)>\
+<碎片（冰）转成（雷）/@转换X(DragonSwordDebris(Ice),DragonSwordDebris(Thunder))>\
+<碎片（火）转成（雷）/@转换X(DragonSwordDebris(Fire),DragonSwordDebris(Thunder))>\
+<碎片（风）转成（雷）/@转换X(DragonSwordDebris(Wind),DragonSwordDebris(Thunder))>\
+<碎片（神圣）转成（雷）/@转换X(DragonSwordDebris(Holy),DragonSwordDebris(Thunder))>\
+<碎片（暗黑）转成（雷）/@转换X(DragonSwordDebris(Dark),DragonSwordDebris(Thunder))>\
+<碎片（幻影）转成（雷）/@转换X(DragonSwordDebris(Phantom),DragonSwordDebris(Thunder))>\
 \
-<碎片（冰）转成（风）/@转换X(飞龙剑碎片（冰）,飞龙剑碎片（风）)>\
-<碎片（火）转成（风）/@转换X(飞龙剑碎片（火）,飞龙剑碎片（风）)>\
-<碎片（雷）转成（风）/@转换X(飞龙剑碎片（雷）,飞龙剑碎片（风）)>\
-<碎片（神圣）转成（风）/@转换X(飞龙剑碎片（神圣）,飞龙剑碎片（风）)>\
-<碎片（暗黑）转成（风）/@转换X(飞龙剑碎片（暗黑）,飞龙剑碎片（风）)>\
-<碎片（幻影）转成（风）/@转换X(飞龙剑碎片（幻影）,飞龙剑碎片（风）)>\
+<碎片（冰）转成（风）/@转换X(DragonSwordDebris(Ice),DragonSwordDebris(Wind))>\
+<碎片（火）转成（风）/@转换X(DragonSwordDebris(Fire),DragonSwordDebris(Wind))>\
+<碎片（雷）转成（风）/@转换X(DragonSwordDebris(Thunder),DragonSwordDebris(Wind))>\
+<碎片（神圣）转成（风）/@转换X(DragonSwordDebris(Holy),DragonSwordDebris(Wind))>\
+<碎片（暗黑）转成（风）/@转换X(DragonSwordDebris(Dark),DragonSwordDebris(Wind))>\
+<碎片（幻影）转成（风）/@转换X(DragonSwordDebris(Phantom),DragonSwordDebris(Wind))>\
 \
-<碎片（冰）转成（神圣）/@转换X(飞龙剑碎片（冰）,飞龙剑碎片（神圣）)>\
-<碎片（火）转成（神圣）/@转换X(飞龙剑碎片（火）,飞龙剑碎片（神圣）)>\
-<碎片（雷）转成（神圣）/@转换X(飞龙剑碎片（雷）,飞龙剑碎片（神圣）)>\
-<碎片（风）转成（神圣）/@转换X(飞龙剑碎片（风）,飞龙剑碎片（神圣）)>\
-<碎片（暗黑）转成（神圣）/@转换X(飞龙剑碎片（暗黑）,飞龙剑碎片（神圣）)>\
-<碎片（幻影）转成（神圣）/@转换X(飞龙剑碎片（幻影）,飞龙剑碎片（神圣）)>\
+<碎片（冰）转成（神圣）/@转换X(DragonSwordDebris(Ice),DragonSwordDebris(Holy))>\
+<碎片（火）转成（神圣）/@转换X(DragonSwordDebris(Fire),DragonSwordDebris(Holy))>\
+<碎片（雷）转成（神圣）/@转换X(DragonSwordDebris(Thunder),DragonSwordDebris(Holy))>\
+<碎片（风）转成（神圣）/@转换X(DragonSwordDebris(Wind),DragonSwordDebris(Holy))>\
+<碎片（暗黑）转成（神圣）/@转换X(DragonSwordDebris(Dark),DragonSwordDebris(Holy))>\
+<碎片（幻影）转成（神圣）/@转换X(DragonSwordDebris(Phantom),DragonSwordDebris(Holy))>\
 \
-<碎片（冰）转成（暗黑）/@转换X(飞龙剑碎片（冰）,飞龙剑碎片（暗黑）)>\
-<碎片（火）转成（暗黑）/@转换X(飞龙剑碎片（火）,飞龙剑碎片（暗黑）)>\
-<碎片（雷）转成（暗黑）/@转换X(飞龙剑碎片（雷）,飞龙剑碎片（暗黑）)>\
-<碎片（风）转成（暗黑）/@转换X(飞龙剑碎片（风）,飞龙剑碎片（暗黑）)>\
-<碎片（神圣）转成（暗黑）/@转换X(飞龙剑碎片（神圣）,飞龙剑碎片（暗黑）)>\
-<碎片（幻影）转成（暗黑）/@转换X(飞龙剑碎片（幻影）,飞龙剑碎片（暗黑）)>\
+<碎片（冰）转成（暗黑）/@转换X(DragonSwordDebris(Ice),DragonSwordDebris(Dark))>\
+<碎片（火）转成（暗黑）/@转换X(DragonSwordDebris(Fire),DragonSwordDebris(Dark))>\
+<碎片（雷）转成（暗黑）/@转换X(DragonSwordDebris(Thunder),DragonSwordDebris(Dark))>\
+<碎片（风）转成（暗黑）/@转换X(DragonSwordDebris(Wind),DragonSwordDebris(Dark))>\
+<碎片（神圣）转成（暗黑）/@转换X(DragonSwordDebris(Holy),DragonSwordDebris(Dark))>\
+<碎片（幻影）转成（暗黑）/@转换X(DragonSwordDebris(Phantom),DragonSwordDebris(Dark))>\
 \
-<碎片（冰）转成（幻影）/@转换X(飞龙剑碎片（冰）,飞龙剑碎片（幻影）)>\
-<碎片（火）转成（幻影）/@转换X(飞龙剑碎片（火）,飞龙剑碎片（幻影）)>\
-<碎片（雷）转成（幻影）/@转换X(飞龙剑碎片（雷）,飞龙剑碎片（幻影）)>\
-<碎片（风）转成（幻影）/@转换X(飞龙剑碎片（风）,飞龙剑碎片（幻影）)>\
-<碎片（神圣）转成（幻影）/@转换X(飞龙剑碎片（神圣）,飞龙剑碎片（幻影）)>\
-<碎片（暗黑）转成（幻影）/@转换X(飞龙剑碎片（暗黑）,飞龙剑碎片（幻影）)>\
+<碎片（冰）转成（幻影）/@转换X(DragonSwordDebris(Ice),DragonSwordDebris(Phantom))>\
+<碎片（火）转成（幻影）/@转换X(DragonSwordDebris(Fire),DragonSwordDebris(Phantom))>\
+<碎片（雷）转成（幻影）/@转换X(DragonSwordDebris(Thunder),DragonSwordDebris(Phantom))>\
+<碎片（风）转成（幻影）/@转换X(DragonSwordDebris(Wind),DragonSwordDebris(Phantom))>\
+<碎片（神圣）转成（幻影）/@转换X(DragonSwordDebris(Holy),DragonSwordDebris(Phantom))>\
+<碎片（暗黑）转成（幻影）/@转换X(DragonSwordDebris(Dark),DragonSwordDebris(Phantom))>\
 
 [@转换X()]
 #IF
 #ACT
 Mov        A3     %ARG(1)           ;;转换前
 Mov        A4     %ARG(2)           ;;转换后
-Mov        D3     100000            ;;金币     
+Mov        D3     100000            ;;Gold     
 #SAY 
 转换一个碎片需要10万金币哦！\
 您要把多少{FCOLOR=250} <$OUTPUT(A3)> {FCOLOR=255}转换成{FCOLOR=250} <$OUTPUT(A4)> {FCOLOR=255}\ 
@@ -140,16 +140,16 @@ MOV D2 %P9
 checkitem  %A3  %D4
 checkgold   %D2   ;;检查身上总金币
 #ACT
-take  金币  %D2
+take  Gold  %D2
 take   %A3  %D4
 give   %A4  %D4
 #SAY
 转换成功！\
-您花了 {FCOLOR=250}<$OUTPUT(D2)> {FCOLOR=255}金币，用 {FCOLOR=250}<$OUTPUT(D4)>{FCOLOR=255} 个 {FCOLOR=250}<$OUTPUT(A3)>{FCOLOR=255} 转换成了{FCOLOR=250}<$OUTPUT(D4)>{FCOLOR=255} 个 {FCOLOR=250}<$OUTPUT(A4)>{FCOLOR=255}.\\
+您花了 {FCOLOR=250}<$OUTPUT(D2)> {FCOLOR=255}Gold，用 {FCOLOR=250}<$OUTPUT(D4)>{FCOLOR=255} 个 {FCOLOR=250}<$OUTPUT(A3)>{FCOLOR=255} 转换成了{FCOLOR=250}<$OUTPUT(D4)>{FCOLOR=255} 个 {FCOLOR=250}<$OUTPUT(A4)>{FCOLOR=255}.\\
 <返 回/@转换碎片属性>\
 
 #ELSESAY
-您没有 {FCOLOR=250}<$OUTPUT(D2)>{FCOLOR=255} 金币，我无法为您提供转换服务.\
+您没有 {FCOLOR=250}<$OUTPUT(D2)>{FCOLOR=255} Gold，我无法为您提供转换服务.\
 \
 <返 回/@转换碎片属性>\
 
@@ -160,13 +160,13 @@ give   %A4  %D4
 _{FCOLOR=250}打造飞龙剑需要收集同样属性的碎片100个+封魔石1000个{FCOLOR=255}。\
 你要打造哪种属性的飞龙剑？\
 _{FCOLOR=250}合成是有一定的几率的。万一失败了我可不负责的哦！{FCOLOR=255}\
-<飞龙剑碎片（冰）合成飞龙剑（冰）/@合成X(飞龙剑碎片（冰）,飞龙剑（冰）)>\
-<飞龙剑碎片（火）转成飞龙剑（火）/@合成X(飞龙剑碎片（火）,飞龙剑（火）)>\
-<飞龙剑碎片（雷）转成飞龙剑（雷）/@合成X(飞龙剑碎片（雷）,飞龙剑（雷）)>\
-<飞龙剑碎片（风）转成飞龙剑（风）/@合成X(飞龙剑碎片（风）,飞龙剑（风）)>\
-<飞龙剑碎片（神圣）转成飞龙剑（神圣）/@合成X(飞龙剑碎片（神圣）,飞龙剑（神圣）)>\
-<飞龙剑碎片（暗黑）转成飞龙剑（暗黑）/@合成X(飞龙剑碎片（暗黑）,飞龙剑（暗黑）)>\
-<飞龙剑碎片（幻影）转成飞龙剑（幻影）/@合成X(飞龙剑碎片（幻影）,飞龙剑（幻影）)>\
+<飞龙剑碎片（冰）合成飞龙剑（冰）/@合成X(DragonSwordDebris(Ice),DragonSword(Ice))>\
+<飞龙剑碎片（火）转成飞龙剑（火）/@合成X(DragonSwordDebris(Fire),DragonSword(Fire))>\
+<飞龙剑碎片（雷）转成飞龙剑（雷）/@合成X(DragonSwordDebris(Thunder),DragonSword(Thunder))>\
+<飞龙剑碎片（风）转成飞龙剑（风）/@合成X(DragonSwordDebris(Wind),DragonSword(Wind))>\
+<飞龙剑碎片（神圣）转成飞龙剑（神圣）/@合成X(DragonSwordDebris(Holy),DragonSword(Sacred))>\
+<飞龙剑碎片（暗黑）转成飞龙剑（暗黑）/@合成X(DragonSwordDebris(Dark),DragonSword(Dark))>\
+<飞龙剑碎片（幻影）转成飞龙剑（幻影）/@合成X(DragonSwordDebris(Phantom),DragonSword(Mirage))>\
 
 <离 开/@exit> \
 
@@ -176,21 +176,21 @@ Mov        A5     %ARG(1)           ;;转换前
 Mov        A6     %ARG(2)           ;;转换后
 MoV        D6     1000000           ;;金币100万
 #SAY
-____你确定要把100个 {FCOLOR=250}<$OUTPUT(A5)>{FCOLOR=255} 加1000个{FCOLOR=250}封魔石{FCOLOR=255}\
+____你确定要把100个 {FCOLOR=250}<$OUTPUT(A5)>{FCOLOR=255} 加1000个{FCOLOR=250}ShadowStone{FCOLOR=255}\
 合成为一把 {FCOLOR=250}<$OUTPUT(A6)>{FCOLOR=255} ？\
 ____{FCOLOR=249}说明：万一失败了我可不负责的哦！！{FCOLOR=255}\ \
 <我要合成/@合成XXX>\
 
 [@合成XXX]
 #IF
-checkitem  封魔石 1000
+checkitem  ShadowStone 1000
 checkitem  %A5  100
 #ACT
 GOTO @跳转XSxx
 
 #ELSESAY
 你身上没有100个 {FCOLOR=250}<$OUTPUT(A5)>{FCOLOR=255}.\
-或者没有1000个{FCOLOR=250} 封魔石 {FCOLOR=255}.\
+或者没有1000个{FCOLOR=250} ShadowStone {FCOLOR=255}.\
 <返 回/@飞龙合成开始>\
 
 
@@ -241,13 +241,13 @@ GOTO @cuowuqxxx
 [@zhengquex]
 #IF
 ;;equal   S1  1
-checkitem  封魔石 1000
+checkitem  ShadowStone 1000
 checkitem   %A5  100
 checkgold   %D6   ;;检查身上总金币
 #ACT
-take  金币  %D6
+take  Gold  %D6
 take   %A5  100
-take   封魔石  1000
+take   ShadowStone  1000
 give   %A6  1
 
 #SAY
@@ -255,7 +255,7 @@ give   %A6  1
 <离 开/@exit> \
 
 #ELSESAY
-您没有 {FCOLOR=250}<$OUTPUT(D6)>{FCOLOR=255} 金币，我无法为您提供合成服务.\
+您没有 {FCOLOR=250}<$OUTPUT(D6)>{FCOLOR=255} Gold，我无法为您提供合成服务.\
 \
 <返 回/@飞龙合成开始>\
 
@@ -264,11 +264,11 @@ give   %A6  1
 [@cuowuqxxx]
 #IF
 ;;equal   S1  0
-checkitem  封魔石 1000
+checkitem  ShadowStone 1000
 checkitem   %A5  100
 checkgold   %D6   ;;检查身上总金币
 #ACT
-take  金币  %D6
+take  Gold  %D6
 take   %A5  100
 
 #SAY
@@ -276,7 +276,7 @@ take   %A5  100
 <离 开/@exit> \
 
 #ELSESAY
-您没有 {FCOLOR=250}<$OUTPUT(D6)>{FCOLOR=255} 金币，我无法为您提供合成服务...\
+您没有 {FCOLOR=250}<$OUTPUT(D6)>{FCOLOR=255} Gold，我无法为您提供合成服务...\
 \
 <返 回/@飞龙合成开始>\
 

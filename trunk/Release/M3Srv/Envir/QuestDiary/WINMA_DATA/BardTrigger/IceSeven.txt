@@ -3,7 +3,7 @@
 #IF
 #SAY
 终于消灭了冰城王后。是否进入第7层？\
-里面有强大的 {FCOLOR=250}冰城帝王{FCOLOR=255} 等着您呢..\
+里面有强大的 {FCOLOR=250}ImperialBard{FCOLOR=255} 等着您呢..\
 <是的，进入7层/@jinru7>\
 <打不过,不去了/@exit>\
 

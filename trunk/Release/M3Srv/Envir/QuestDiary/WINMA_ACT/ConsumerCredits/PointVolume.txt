@@ -9,10 +9,10 @@
 
 [@数额]
 #IF
-Checkitem 游戏点卷 1
+Checkitem GamePoints 1
 #ACT
-give 金币 10000000
-take 游戏点卷 1
+give Gold 10000000
+take GamePoints 1
 #SAY
 恭喜您,成功兑换1000W金币.\ \
 <继续兑换/@数额>\

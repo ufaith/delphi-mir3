@@ -22,38 +22,38 @@
 ;-------------------------------------------------------------------------------
 ;[X-Mas]
 ;-------------------------------------------------------------------------------
-17SnowA                             0         420    362  雪人        0    64                    
-17SnowA                             01        468    281  雪人        0    64                    
-17SnowA                             02        264    209  雪人        0    64                    
-17SnowA                             1         402    126  雪人        0    64                    
-17SnowA                             2         338    228  雪人        0    64                    
-17SnowA                             8         276    246  雪人        0    64                    
+17SnowA                             0         420    362  Snowman        0    64                    
+17SnowA                             01        468    281  Snowman        0    64                    
+17SnowA                             02        264    209  Snowman        0    64                    
+17SnowA                             1         402    126  Snowman        0    64                    
+17SnowA                             2         338    228  Snowman        0    64                    
+17SnowA                             8         276    246  Snowman        0    64                    
 ;;
-17SnowB                             0         452    389  雪人        0    65
-17SnowB                             0         446    445  雪人        0    65
-17SnowB                             0         486    389  雪人        0    65
-17SnowB                             0         476    361  雪人        0    65
-17SnowB                             01        429    325  雪人        0    65
-17SnowB                             01        454    302  雪人        0    65
-17SnowB                             01        431    261  雪人        0    65
-17SnowB                             01        453    244  雪人        0    65
-17SnowB                             01        417    284  雪人        0    65
-17SnowB                             02        254    198  雪人        0    65
-17SnowB                             02        250    167  雪人        0    65
-17SnowB                             02        273    200  雪人        0    65
-17SnowB                             02        229    227  雪人        0    65
-17SnowB                             02        270    221  雪人        0    65
-17SnowB                             1         408    115  雪人        0    65
-17SnowB                             1         354    184  雪人        0    65
-17SnowB                             1         371    206  雪人        0    65
-17SnowB                             1         392    134  雪人        0    65
-17SnowB                             1         410    146  雪人        0    65
-17SnowB                             2         331    239  雪人        0    65
-17SnowB                             2         317    267  雪人        0    65
-17SnowB                             2         336    186  雪人        0    65
-17SnowB                             8         258    236  雪人        0    65
-17SnowB                             8         270    303  雪人        0    65
-17SnowB                             8         294    241  雪人        0    65
+17SnowB                             0         452    389  Snowman        0    65
+17SnowB                             0         446    445  Snowman        0    65
+17SnowB                             0         486    389  Snowman        0    65
+17SnowB                             0         476    361  Snowman        0    65
+17SnowB                             01        429    325  Snowman        0    65
+17SnowB                             01        454    302  Snowman        0    65
+17SnowB                             01        431    261  Snowman        0    65
+17SnowB                             01        453    244  Snowman        0    65
+17SnowB                             01        417    284  Snowman        0    65
+17SnowB                             02        254    198  Snowman        0    65
+17SnowB                             02        250    167  Snowman        0    65
+17SnowB                             02        273    200  Snowman        0    65
+17SnowB                             02        229    227  Snowman        0    65
+17SnowB                             02        270    221  Snowman        0    65
+17SnowB                             1         408    115  Snowman        0    65
+17SnowB                             1         354    184  Snowman        0    65
+17SnowB                             1         371    206  Snowman        0    65
+17SnowB                             1         392    134  Snowman        0    65
+17SnowB                             1         410    146  Snowman        0    65
+17SnowB                             2         331    239  Snowman        0    65
+17SnowB                             2         317    267  Snowman        0    65
+17SnowB                             2         336    186  Snowman        0    65
+17SnowB                             8         258    236  Snowman        0    65
+17SnowB                             8         270    303  Snowman        0    65
+17SnowB                             8         294    241  Snowman        0    65
 ;-------------------------------------------------------------------------------
 
 ;-------------------------------------------------------------------------------
@@ -251,7 +251,7 @@
 ;-------------------------------------------------------------------------------
 02Weapon_Sabuk                      3        195   183    老胡           0    0 
 03Armor_Sabuk                       3        229   150    双喜           0    7 
-04Potion_Sabuk                      3        204   196    晶晶           0    5 
+04Potion_Sabuk                      3        204   196    Jingjing           0    5 
 06Inn_Sabuk                         3        214   128    惠莲           0    6 
 07Grocery_Sabuk                     3        229   168    园老板         0    3 
 08Accessory_Sabuk                   3        211   183    多多           0    5 
@@ -436,13 +436,13 @@
 ;[ZombieCave]
 ;-------------------------------------------------------------------------------
 09NotBlocker_ZombieCave             D421      34   368    矿山老人       0    1 
-14Quest_ZombieCave                  E402_001  13    10    署箭           0   48 
-14Quest_ZombieCave                  D404_002  22    11    署箭           0   48 
+14Quest_ZombieCave                  E402_001  13    10    BureauArrow           0   48 
+14Quest_ZombieCave                  D404_002  22    11    BureauArrow           0   48 
 
 ;-------------------------------------------------------------------------------
 ;[WoomaPalace]
 ;-------------------------------------------------------------------------------
-14Quest_WoomaPalace                 D023_001  17    21    牛老道         0   20 
+14Quest_WoomaPalace                 D023_001  17    21    Cattle         0   20 
 14Quest_WoomaPalace                 D022     207    47    石堆           0   55 
 14Quest_WoomaPalace                 D022_001  64    21    书架           0   54 
 
@@ -476,7 +476,7 @@
 02Weapon_SinGiSun                   D9033     10    15    火山           0   48 
 02Weapon_SinGiSun                   D9012     10    12    花珠           0   48 
 04Potion_SinGiSun                   D90221    22    20    花仙           0   49 
-04Potion_SinGiSun                   D90211    22    20    火龙           0   48 
+04Potion_SinGiSun                   D90211    22    20    FireDragon           0   48 
 04Potion_SinGiSun                   D9011      9    13    火石           0   48 
 04Potion_SinGiSun                   D90222    17    23    火风           0   48
 04Potion_SinGiSun                   D9031     10    15    火天           0   48 
