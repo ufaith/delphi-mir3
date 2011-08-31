@@ -19,22 +19,22 @@
 
 [@lightLine_4]
 {
-使用闪电石力量的武功除了你已经掌握的雷电术之外，还有 {FCOLOR=250}疾光电影{FCOLOR=255} 。是一种 {FCOLOR=250}以进攻者为准，闪电石之力以一条直线的形式发射出去的武功{FCOLOR=255} 。尤其是对 {FCOLOR=250}狮子类{FCOLOR=255} 很有效果，好好掌握和利用。\ \
+使用闪电石力量的武功除了你已经掌握的雷电术之外，还有 {FCOLOR=250}LightningBeam{FCOLOR=255} 。是一种 {FCOLOR=250}以进攻者为准，闪电石之力以一条直线的形式发射出去的武功{FCOLOR=255} 。尤其是对 {FCOLOR=250}狮子类{FCOLOR=255} 很有效果，好好掌握和利用。\ \
 <Exit/@exit>
 }
 
 [@lightLine_5]
 {
 想学习称为疾光电影的武功？\ 
-要修炼疾光电影的武功需要高水平的 {FCOLOR=250}闪电石{FCOLOR=255} 。\  
+要修炼疾光电影的武功需要高水平的 {FCOLOR=250}LightningStone{FCOLOR=255} 。\  
 但是我看你好像还没有这么大的力量。\ \ 
-<那么如何才可以拥有你称为“闪电石”的能力？/@mugong_lightline_next4>
+<那么如何才可以拥有你称为“LightningStone”的能力？/@mugong_lightline_next4>
 }
 
 [@lightLine_6]
 {
-把沃玛神殿的 {FCOLOR=250}闪电石{FCOLOR=255} 带来就可以了。但是听说，闪电石不能那么简单地拿到。。叫什么。。抓到蛆，就可以得到 {FCOLOR=250}树脂{FCOLOR=255} ，然后到 {FCOLOR=250}银杏树村福氏{FCOLOR=255} ，请他将树脂涂到你的衣服上。这样才可以战胜电雷草的闪电石，从而得到闪电石。\ 
-是说获得树脂的地方吗？曾经听说 {FCOLOR=250}天然洞穴1层 洞蛆{FCOLOR=255} 中有树脂。还有传说讲 {FCOLOR=250}沃玛神殿入口 山洞蝙蝠{FCOLOR=255} 拥有闪电石。\ \
+把沃玛神殿的 {FCOLOR=250}LightningStone{FCOLOR=255} 带来就可以了。但是听说，闪电石不能那么简单地拿到。。叫什么。。抓到蛆，就可以得到 {FCOLOR=250}Resin{FCOLOR=255} ，然后到 {FCOLOR=250}银杏树村福氏{FCOLOR=255} ，请他将树脂涂到你的衣服上。这样才可以战胜电雷草的闪电石，从而得到闪电石。\ 
+是说获得树脂的地方吗？曾经听说 {FCOLOR=250}天然洞穴1层 Maggot{FCOLOR=255} 中有树脂。还有传说讲 {FCOLOR=250}沃玛神殿入口 CaveBat{FCOLOR=255} 拥有闪电石。\ \
 <学习武功，为什么这么困难？/@mugong_lightline_next5>
 }
 
@@ -59,7 +59,7 @@
 
 [@lightLine_10]
 {
-现在我就给你穿的衣服上涂 {FCOLOR=250}树脂{FCOLOR=255} ，但能否成功我也不知道。。。如果成功了，您衣服的耐久好象可以修理了。\ 
+现在我就给你穿的衣服上涂 {FCOLOR=250}Resin{FCOLOR=255} ，但能否成功我也不知道。。。如果成功了，您衣服的耐久好象可以修理了。\ 
 还有如果衣服上涂了树脂，你衣服的 {FCOLOR=250}基本功能就消失并成为了一般的耐久{FCOLOR=255} 。请注意这点。。。但是由于具有了树脂的功能，也就拥有了 {FCOLOR=250}特殊的功能{FCOLOR=255} 。\ \ 
 我现在就试着涂一下，请等一下！\ \ 
 <下一步/@mugong_lightline_suzi0>
@@ -68,7 +68,7 @@
 [@lightLine_11]
 {
 现在穿的衣服，只有 {FCOLOR=250}魔法长袍{FCOLOR=255} 才可以涂上树脂。。我看 <$USERNAME> 先生没有穿魔法长袍或者没有树脂了。。。\
-树脂可以在{FCOLOR=250}天然洞穴1层 洞蛆{FCOLOR=255}找到。\ \ 
+树脂可以在{FCOLOR=250}天然洞穴1层 Maggot{FCOLOR=255}找到。\ \ 
 <Exit/@exit>
 }
 
@@ -105,13 +105,13 @@
 
 [@lightLine_17]
 {
-现在感到体内有内力了，已经修炼成 {FCOLOR=250}闪电石{FCOLOR=255} 的样子。\ \
+现在感到体内有内力了，已经修炼成 {FCOLOR=250}LightningStone{FCOLOR=255} 的样子。\ \
 <下一步/@mugong_lightline_test_next1> 
 }
 
 [@lightLine_18]
 {
-很困难才求得的 {FCOLOR=250}闪电石{FCOLOR=255} ，我把它放在其它地方了。下一次带来。\ \
+很困难才求得的 {FCOLOR=250}LightningStone{FCOLOR=255} ，我把它放在其它地方了。下一次带来。\ \
 <Exit/@exit>
 }
 
@@ -123,7 +123,7 @@
 
 [@lightLine_20]
 {
-如果想修炼疾光电影，首先到天然洞穴中找到 {FCOLOR=250}树脂{FCOLOR=255后，再到银杏树村请棉布商给你的 {FCOLOR=250}魔法长袍{FCOLOR=255} 涂上树脂。
-如果得到了树脂火焰魔衣，就可以在天然洞穴里找到 {FCOLOR=250}闪电石{FCOLOR=255} ，然后把闪电石拿给我就可以了。\ \
+如果想修炼疾光电影，首先到天然洞穴中找到 {FCOLOR=250}Resin{FCOLOR=255后，再到银杏树村请棉布商给你的 {FCOLOR=250}魔法长袍{FCOLOR=255} 涂上树脂。
+如果得到了树脂火焰魔衣，就可以在天然洞穴里找到 {FCOLOR=250}LightningStone{FCOLOR=255} ，然后把闪电石拿给我就可以了。\ \
 <Exit/@exit>
 }

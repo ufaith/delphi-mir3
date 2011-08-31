@@ -55,7 +55,7 @@ checklevel 30
 check [004] 0
 #act
 set [004] 1
-give 金币 3000000
+give Gold 3000000
 #say
 继续努力，冲向40级，到时候奖励你500万金币...\
 \
@@ -85,7 +85,7 @@ checklevel 40
 check [008] 0
 #act
 set [008] 1
-give 金币 5000000
+give Gold 5000000
 #say
 继续努力，冲向更高级别!更多的奖品等着你呢！\
 \
@@ -115,7 +115,7 @@ checklevel 50
 check [005] 0
 #act
 set [005] 1
-give 金币 10000000
+give Gold 10000000
 #say
 继续努力，冲向更高级别!更多的奖品等着你呢！\
 \

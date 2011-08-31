@@ -11,7 +11,7 @@ BREAK
 #IF
 check [680] 1
 check [671] 0
-checkitem 赤血宝剑 1
+checkitem FerricyanideSword 1
 #ACT
 GOTO @八环任务领奖x
 break
@@ -43,10 +43,10 @@ SET [680] 1
 [@八环任务领奖x]
 #IF
 check [671] 0
-checkitem 赤血宝剑 1
+checkitem FerricyanideSword 1
 #ACT
 set [671] 1
-take 赤血宝剑 1
+take FerricyanideSword 1
 GMEXECUTE adjustExp %USERNAME + 30000000
 SYSMSG "恭喜您完成了第八环任务，可以开始第九环任务了!"
 SYSMSG "您得到了3000万经验的奖励!"

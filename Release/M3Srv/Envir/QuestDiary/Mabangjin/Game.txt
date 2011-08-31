@@ -7,9 +7,9 @@
 
 [@Game_dicestart]
 #IF
-checkitem ³ïÂë 2
+checkitem Chip 2
 #ACT
-take ³ïÂë 2
+take Chip 2
 movr d0 6
 movr d1 6
 movr d2 6
@@ -35,7 +35,7 @@ equal d3 6
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_3
 
 #ACT
-give ³ïÂë 40
+give Chip 40
 break
 
 #IF
@@ -47,7 +47,7 @@ equal d3 5
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_4
 
 #ACT
-give ³ïÂë 35
+give Chip 35
 break
 
 #IF
@@ -59,7 +59,7 @@ equal d3 4
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_5
 
 #ACT
-give ³ïÂë 35
+give Chip 35
 break
 
 #IF
@@ -346,7 +346,7 @@ goto @normal
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_6
 
 #ACT
-give ³ïÂë 30
+give Chip 30
 
 [@4dice2]
 #IF
@@ -354,7 +354,7 @@ give ³ïÂë 30
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_7
 
 #ACT
-give ³ïÂë 28
+give Chip 28
 
 [@4dice3]
 #IF
@@ -362,7 +362,7 @@ give ³ïÂë 28
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_8
 
 #ACT
-give ³ïÂë 26
+give Chip 26
 
 [@4dice4]
 #IF
@@ -370,7 +370,7 @@ give ³ïÂë 26
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_9
 
 #ACT
-give ³ïÂë 24
+give Chip 24
 
 [@4dice5]
 #IF
@@ -378,7 +378,7 @@ give ³ïÂë 24
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_10
 
 #ACT
-give ³ïÂë 22
+give Chip 22
 
 [@4dice6]
 #IF
@@ -386,7 +386,7 @@ give ³ïÂë 22
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_11
 
 #ACT
-give ³ïÂë 20
+give Chip 20
 
 [@3dice]
 #IF
@@ -394,7 +394,7 @@ give ³ïÂë 20
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_12
 
 #ACT
-give ³ïÂë 10
+give Chip 10
 
 [@2dice1]
 #IF
@@ -447,7 +447,7 @@ goto @2dice
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_13
 
 #ACT
-give ³ïÂë 8
+give Chip 8
 
 [@2dice]
 #IF
@@ -455,7 +455,7 @@ give ³ïÂë 8
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Game.txt] @Game_14
 
 #ACT
-give ³ïÂë 1
+give Chip 1
 
 [@normal]
 #IF

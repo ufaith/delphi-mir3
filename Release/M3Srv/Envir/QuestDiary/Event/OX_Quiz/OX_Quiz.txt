@@ -92,8 +92,8 @@ Equal               N1{TIME}            0         ;; 20초가 경과 되었을시
 	LoadValue A0 "Convert_Def\QuestDiary\Event\OX_Quiz\OX_Quiz_Ev.txt" [Event] [Correct]
 EventMsg  "oxmap,oxmapO,oxmapX"  "%A0"
 goto @ReCorrect                                   ;; 정답 입력 루틴으로 이동
-SendCmd  "oxmapO, 51, 47, 5"  이벤트도우미  Hide  ;; NPC사라짐
-SendCmd  "oxmapX, 73, 70, 5"  이벤트도우미  Hide  ;; NPC사라짐
+SendCmd  "oxmapO, 51, 47, 5"  이벤트도우미  Invisibility  ;; NPC사라짐
+SendCmd  "oxmapX, 73, 70, 5"  이벤트도우미  Invisibility  ;; NPC사라짐
 #ELSEACT
 	LoadValue A0 "Convert_Def\QuestDiary\Event\OX_Quiz\OX_Quiz_Ev.txt" [Event] [Time]
 EventMsg "oxmap,oxmapO,oxmapX"   "%A0"

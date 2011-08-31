@@ -66,7 +66,7 @@
 
 [@amyen_11]
 {
-现在材料还没有找齐嘛。我需要的材料是 {FCOLOR=250}蛆卵 1,蝎子的尾巴 1,食人树叶 1,食人树的果实 1, 毒蜘蛛牙齿  1个{FCOLOR=255} 。请听好，找到再来。\ 
+现在材料还没有找齐嘛。我需要的材料是 {FCOLOR=250}MaggotEggs 1,ScorpionTail 1,CannibalLeaf 1,FreshFruit 1, SpiderTeeth  1个{FCOLOR=255} 。请听好，找到再来。\ 
 如果在规定的时间里没有找到这些材料，无法修炼施毒术。。请确认材料并告诉我。。没有剩下多少时间了。。\ \
 <Exit/@exit>
 }
@@ -86,7 +86,7 @@
 
 [@amyen_14]
 {
-如果想学习势毒术，处理了训练场的怪兽后，要从他们的尸体上采取 {FCOLOR=250}蛆卵,蝎子的尾巴,食人树叶,食人树的果实, 毒蜘蛛牙齿 {FCOLOR=255} 。
+如果想学习势毒术，处理了训练场的怪兽后，要从他们的尸体上采取 {FCOLOR=250}MaggotEggs,ScorpionTail,CannibalLeaf,FreshFruit, SpiderTeeth {FCOLOR=255} 。
 我将站在考场里面，把采取的毒粉交给我。然后再把你重新送到这里。\ \
 <Exit/@exit>
 }

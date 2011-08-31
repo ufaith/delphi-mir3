@@ -5,10 +5,10 @@
 #SAY
 在这里，您可以把您得到的贡品兑换成游戏点卷.\
 收集齐一二三特级等四个贡品后。可以联系客服QQ:<$QQ>兑换游戏点卷40张.\
-<[1个三级贡品兑换2个游戏点卷]/@dueihuan(三级贡品,1,游戏点卷,2)>\
-<[1个二级贡品兑换4个游戏点卷]/@dueihuan(二级贡品,1,游戏点卷,4)>\
-<[1个一级贡品兑换8个游戏点卷]/@dueihuan(一级贡品,1,游戏点卷,8)>\
-<[1个特级贡品兑换18个游戏点卷]/@dueihuan(特级贡品,1,游戏点卷,18)>\
+<[1个三级贡品兑换2个游戏点卷]/@dueihuan(Third-Level-Items,1,GamePoints,2)>\
+<[1个二级贡品兑换4个游戏点卷]/@dueihuan(Second-Level-Items,1,GamePoints,4)>\
+<[1个一级贡品兑换8个游戏点卷]/@dueihuan(First-Level-Items,1,GamePoints,8)>\
+<[1个特级贡品兑换18个游戏点卷]/@dueihuan(Top-Grade-Items,1,GamePoints,18)>\
 <[离 开]./@exit>
 
 [@dueihuan()]

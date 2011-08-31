@@ -1,0 +1,9 @@
+;; 기본 아이템
+
+1/5    HPPotion(M)
+1/5    MPPotion(M)
+
+;; 추가 특수 아이템
+
+1/20  CrimeCard
+1/40  Resurrection

@@ -1,0 +1,85 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/10000   Spar
+1/1    Gold 12000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/5    LargeBracelet
+1/5    TaoistBracelet
+1/5    EbonyBracelet
+1/5    MagicBracelet
+
+1/5    BlackNecklace
+1/5    EbonyNecklace
+1/5    CrystalNecklace
+
+1/5    BronzeHelmet
+
+1/5    LightArmor(M)
+1/5    LightArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/10    BronzeAxe
+1/10    SeaSoul
+1/10    HalfMonth
+
+1/10    PearlRing
+1/10    SnakeEyeRing
+1/10    BlackCrystalRing
+
+1/10    SmallBracelet
+
+1/10    LanternNecklace
+1/10    AmberNecklace
+1/10    DevilsNecklace
+1/10    FriendlyNecklace
+
+1/10    Boots
+
+1/10    MagicHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/40    ExorcizeSword
+1/40    YanYue
+1/40    ZhanmaSaber
+1/40    Ashura
+
+1/40    CharmRing
+1/40    EthicsRing
+1/40    CoralRing
+1/40    GoldRing
+
+1/40    SturdyGlove
+
+1/40    TaoistHelmet
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/10    BlessingOil
+1/10    WeaponOil
+1/500000   RulingStick
+1/500000   GuYuToken
+1/500000   轟샙벅

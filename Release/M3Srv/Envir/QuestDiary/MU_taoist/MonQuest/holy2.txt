@@ -1,7 +1,7 @@
 ;;Legend Of Mir 3 C3Engine
 [@MapQuest_holycircle_complete]
 #IF
-checkmagic 困魔咒
+checkmagic TrapOctagon
 #SAY
 (首先试着离开这个地方...)
 #ACT
@@ -36,8 +36,8 @@ check [726] 0
 #ACT
 reset [517] 5
 SET [726] 1
-give 困魔咒（秘籍） 1
-give 黑除魔戒指  1
-give 金币 28000
+give TrapOctagon 1
+give SlayerRing  1
+give Gold 28000
 #SAY
 (终于找到了困魔咒秘籍...)\

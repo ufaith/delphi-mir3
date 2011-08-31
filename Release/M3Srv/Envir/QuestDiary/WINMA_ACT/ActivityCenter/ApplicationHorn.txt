@@ -305,7 +305,7 @@ LoadValue D1 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0
 EQUAL A9 %A7
 !SMALL D1 15
 #ACT
-GIVE 沃玛号角 1
+GIVE WoomaHorn 1
 GIVE GOLD 5000000
 SYSMSG "恭喜您,希望你在游戏中能快乐和强大!"
 LoadValue A6 "QuestDiary\WINMA_DATA\GuildApplication\ApplicationContent.txt" %D0 [行会名字]

@@ -22,193 +22,193 @@ linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
 linemsg [grobal] "║   [ 八大教主 ]齐聚[ 比奇城 ]勇士们赶快行动!!   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_31
-MongenP "0,404,346,10" 沃玛教主 1
-MongenP "0,404,346,10" 骷髅教主 1
-MongenP "0,404,346,10" 潘夜牛魔王 1
-MongenP "0,404,346,10" 震天魔神 1
-MongenP "0,404,346,10" 霸王教主 1
-MongenP "0,404,346,10" 超级黑野猪 1
-MongenP "0,440,386,0" 赤月恶魔 1
-MongenP "0,436,382,0" 祖玛教主 1
+MongenP "0,404,346,10" WoomaLeader 1
+MongenP "0,404,346,10" SkeltonLeader 1
+MongenP "0,404,346,10" NightDemon 1
+MongenP "0,404,346,10" DevilThunder 1
+MongenP "0,404,346,10" OverlordFounder 1
+MongenP "0,404,346,10" BlackBoar 1
+MongenP "0,440,386,0" RedDevil 1
+MongenP "0,436,382,0" ZumaLeader 1
 
-MongenP "0,408,422,10" 沃玛教主 1
-MongenP "0,408,422,10" 骷髅教主 1
-MongenP "0,408,422,10" 潘夜牛魔王 1
-MongenP "0,408,422,10" 震天魔神 1
-MongenP "0,408,422,10" 霸王教主 1
-MongenP "0,408,422,10" 超级黑野猪 1
+MongenP "0,408,422,10" WoomaLeader 1
+MongenP "0,408,422,10" SkeltonLeader 1
+MongenP "0,408,422,10" NightDemon 1
+MongenP "0,408,422,10" DevilThunder 1
+MongenP "0,408,422,10" OverlordFounder 1
+MongenP "0,408,422,10" BlackBoar 1
 
-MongenP "0,486,431,10" 沃玛教主 1
-MongenP "0,486,431,10" 骷髅教主 1
-MongenP "0,486,431,10" 潘夜牛魔王 1
-MongenP "0,486,431,10" 震天魔神 1
-MongenP "0,486,431,10" 霸王教主 1
-MongenP "0,486,431,10" 超级黑野猪 1
+MongenP "0,486,431,10" WoomaLeader 1
+MongenP "0,486,431,10" SkeltonLeader 1
+MongenP "0,486,431,10" NightDemon 1
+MongenP "0,486,431,10" DevilThunder 1
+MongenP "0,486,431,10" OverlordFounder 1
+MongenP "0,486,431,10" BlackBoar 1
 
-ApplyMonMission "0,404,346,100" 沃玛教主  "0,440,387"
-ApplyMonMission "0,404,346,100" 骷髅教主  "0,440,387"
-ApplyMonMission "0,404,346,100" 潘夜牛魔王  "0,440,387"
-ApplyMonMission "0,404,346,100" 震天魔神  "0,440,387"
-ApplyMonMission "0,404,346,100" 霸王教主  "0,440,387"
-ApplyMonMission "0,404,346,100" 超级黑野猪  "0,440,387"
+ApplyMonMission "0,404,346,100" WoomaLeader  "0,440,387"
+ApplyMonMission "0,404,346,100" SkeltonLeader  "0,440,387"
+ApplyMonMission "0,404,346,100" NightDemon  "0,440,387"
+ApplyMonMission "0,404,346,100" DevilThunder  "0,440,387"
+ApplyMonMission "0,404,346,100" OverlordFounder  "0,440,387"
+ApplyMonMission "0,404,346,100" BlackBoar  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 沃玛教主   "0,440,387"
-ApplyMonMission "0,408,422,100" 骷髅教主  "0,440,387"
-ApplyMonMission "0,408,422,100" 潘夜牛魔王  "0,440,387"
-ApplyMonMission "0,408,422,100" 震天魔神  "0,440,387"
-ApplyMonMission "0,408,422,100" 霸王教主  "0,440,387"
-ApplyMonMission "0,408,422,100" 超级黑野猪  "0,440,387"
+ApplyMonMission "0,408,422,100" WoomaLeader   "0,440,387"
+ApplyMonMission "0,408,422,100" SkeltonLeader  "0,440,387"
+ApplyMonMission "0,408,422,100" NightDemon  "0,440,387"
+ApplyMonMission "0,408,422,100" DevilThunder  "0,440,387"
+ApplyMonMission "0,408,422,100" OverlordFounder  "0,440,387"
+ApplyMonMission "0,408,422,100" BlackBoar  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 沃玛教主  "0,440,387"
-ApplyMonMission "0,486,431,100" 骷髅教主  "0,440,387"
-ApplyMonMission "0,486,431,100" 潘夜牛魔王  "0,440,387"
-ApplyMonMission "0,486,431,100" 震天魔神  "0,440,387"
-ApplyMonMission "0,486,431,100" 霸王教主  "0,440,387"
-ApplyMonMission "0,486,431,100" 超级黑野猪  "0,440,387"
+ApplyMonMission "0,486,431,100" WoomaLeader  "0,440,387"
+ApplyMonMission "0,486,431,100" SkeltonLeader  "0,440,387"
+ApplyMonMission "0,486,431,100" NightDemon  "0,440,387"
+ApplyMonMission "0,486,431,100" DevilThunder  "0,440,387"
+ApplyMonMission "0,486,431,100" OverlordFounder  "0,440,387"
+ApplyMonMission "0,486,431,100" BlackBoar  "0,440,387"
 
 [@guaigong_31]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 诺玛教主 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ NormaLeader ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_32
-MongenP "0,404,346,10" 诺玛骑兵 10
-MongenP "0,404,346,10" 诺玛装甲兵 10
-MongenP "0,404,346,10" 诺玛司令 10
-MongenP "0,404,346,10" 诺玛斧兵 10
-MongenP "0,404,346,10" 诺玛突击队长 1
-MongenP "0,404,346,10" 诺玛教主 1
+MongenP "0,404,346,10" NormaCavalry 10
+MongenP "0,404,346,10" NormaChief 10
+MongenP "0,404,346,10" NormaCommander 10
+MongenP "0,404,346,10" NormaAxeSoldier 10
+MongenP "0,404,346,10" NormaChief 1
+MongenP "0,404,346,10" NormaLeader 1
 
-MongenP "0,408,422,10" 诺玛骑兵 10
-MongenP "0,408,422,10" 诺玛装甲兵 10
-MongenP "0,408,422,10" 诺玛司令 10
-MongenP "0,408,422,10" 诺玛斧兵 10
-MongenP "0,408,422,10" 诺玛突击队长 1
-MongenP "0,408,422,10" 诺玛教主 1
+MongenP "0,408,422,10" NormaCavalry 10
+MongenP "0,408,422,10" NormaChief 10
+MongenP "0,408,422,10" NormaCommander 10
+MongenP "0,408,422,10" NormaAxeSoldier 10
+MongenP "0,408,422,10" NormaChief 1
+MongenP "0,408,422,10" NormaLeader 1
 
-MongenP "0,486,431,10" 诺玛骑兵 10
-MongenP "0,486,431,10" 诺玛装甲兵 10
-MongenP "0,486,431,10" 诺玛司令 10
-MongenP "0,486,431,10" 诺玛斧兵 10
-MongenP "0,486,431,10" 诺玛突击队长 1
-MongenP "0,486,431,10" 诺玛教主 1
+MongenP "0,486,431,10" NormaCavalry 10
+MongenP "0,486,431,10" NormaChief 10
+MongenP "0,486,431,10" NormaCommander 10
+MongenP "0,486,431,10" NormaAxeSoldier 10
+MongenP "0,486,431,10" NormaChief 1
+MongenP "0,486,431,10" NormaLeader 1
 
-ApplyMonMission "0,404,346,100" 诺玛骑兵  "0,440,387"
-ApplyMonMission "0,404,346,100" 诺玛装甲兵  "0,440,387"
-ApplyMonMission "0,404,346,100" 诺玛司令  "0,440,387"
-ApplyMonMission "0,404,346,100" 诺玛斧兵  "0,440,387"
-ApplyMonMission "0,404,346,100" 诺玛突击队长  "0,440,387"
-ApplyMonMission "0,404,346,100" 诺玛教主  "0,440,387"
+ApplyMonMission "0,404,346,100" NormaCavalry  "0,440,387"
+ApplyMonMission "0,404,346,100" NormaChief  "0,440,387"
+ApplyMonMission "0,404,346,100" NormaCommander  "0,440,387"
+ApplyMonMission "0,404,346,100" NormaAxeSoldier  "0,440,387"
+ApplyMonMission "0,404,346,100" NormaChief  "0,440,387"
+ApplyMonMission "0,404,346,100" NormaLeader  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 诺玛骑兵   "0,440,387"
-ApplyMonMission "0,408,422,100" 诺玛装甲兵  "0,440,387"
-ApplyMonMission "0,408,422,100" 诺玛司令  "0,440,387"
-ApplyMonMission "0,408,422,100" 诺玛斧兵  "0,440,387"
-ApplyMonMission "0,408,422,100" 诺玛突击队长  "0,440,387"
-ApplyMonMission "0,408,422,100" 诺玛教主  "0,440,387"
+ApplyMonMission "0,408,422,100" NormaCavalry   "0,440,387"
+ApplyMonMission "0,408,422,100" NormaChief  "0,440,387"
+ApplyMonMission "0,408,422,100" NormaCommander  "0,440,387"
+ApplyMonMission "0,408,422,100" NormaAxeSoldier  "0,440,387"
+ApplyMonMission "0,408,422,100" NormaChief  "0,440,387"
+ApplyMonMission "0,408,422,100" NormaLeader  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 诺玛骑兵  "0,440,387"
-ApplyMonMission "0,486,431,100" 诺玛装甲兵  "0,440,387"
-ApplyMonMission "0,486,431,100" 诺玛司令  "0,440,387"
-ApplyMonMission "0,486,431,100" 诺玛斧兵  "0,440,387"
-ApplyMonMission "0,486,431,100" 诺玛突击队长  "0,440,387"
-ApplyMonMission "0,486,431,100" 诺玛教主  "0,440,387"
+ApplyMonMission "0,486,431,100" NormaCavalry  "0,440,387"
+ApplyMonMission "0,486,431,100" NormaChief  "0,440,387"
+ApplyMonMission "0,486,431,100" NormaCommander  "0,440,387"
+ApplyMonMission "0,486,431,100" NormaAxeSoldier  "0,440,387"
+ApplyMonMission "0,486,431,100" NormaChief  "0,440,387"
+ApplyMonMission "0,486,431,100" NormaLeader  "0,440,387"
 
 [@guaigong_32]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 地天灭王 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ ExtinguisheKing ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_33
-MongenP "0,404,346,10" 魔石咆哮者 10
-MongenP "0,404,346,10" 变异刺骨蜥 10
-MongenP "0,404,346,10" 变异毒蜥 10
-MongenP "0,404,346,10" 变异丑蜥 10
-MongenP "0,404,346,10" 魔石守护神 1
-MongenP "0,404,346,10" 地天灭王 1
+MongenP "0,404,346,10" StoneRoarer 10
+MongenP "0,404,346,10" BitingLizard 10
+MongenP "0,404,346,10" VariationGila 10
+MongenP "0,404,346,10" VariationLizard 10
+MongenP "0,404,346,10" StonePatron 1
+MongenP "0,404,346,10" ExtinguisheKing 1
 
-MongenP "0,408,422,10" 魔石咆哮者 10
-MongenP "0,408,422,10" 变异刺骨蜥 10
-MongenP "0,408,422,10" 变异毒蜥 10
-MongenP "0,408,422,10" 变异丑蜥 10
-MongenP "0,408,422,10" 魔石守护神 1
-MongenP "0,408,422,10" 地天灭王 1
+MongenP "0,408,422,10" StoneRoarer 10
+MongenP "0,408,422,10" BitingLizard 10
+MongenP "0,408,422,10" VariationGila 10
+MongenP "0,408,422,10" VariationLizard 10
+MongenP "0,408,422,10" StonePatron 1
+MongenP "0,408,422,10" ExtinguisheKing 1
 
-MongenP "0,486,431,10" 魔石咆哮者 10
-MongenP "0,486,431,10" 变异刺骨蜥 10
-MongenP "0,486,431,10" 变异毒蜥 10
-MongenP "0,486,431,10" 变异丑蜥 10
-MongenP "0,486,431,10" 魔石守护神 1
-MongenP "0,486,431,10" 地天灭王 1
+MongenP "0,486,431,10" StoneRoarer 10
+MongenP "0,486,431,10" BitingLizard 10
+MongenP "0,486,431,10" VariationGila 10
+MongenP "0,486,431,10" VariationLizard 10
+MongenP "0,486,431,10" StonePatron 1
+MongenP "0,486,431,10" ExtinguisheKing 1
 
-ApplyMonMission "0,404,346,100" 魔石咆哮者  "0,440,387"
-ApplyMonMission "0,404,346,100" 变异刺骨蜥  "0,440,387"
-ApplyMonMission "0,404,346,100" 变异毒蜥  "0,440,387"
-ApplyMonMission "0,404,346,100" 变异丑蜥  "0,440,387"
-ApplyMonMission "0,404,346,100" 魔石守护神  "0,440,387"
-ApplyMonMission "0,404,346,100" 地天灭王  "0,440,387"
+ApplyMonMission "0,404,346,100" StoneRoarer  "0,440,387"
+ApplyMonMission "0,404,346,100" BitingLizard  "0,440,387"
+ApplyMonMission "0,404,346,100" VariationGila  "0,440,387"
+ApplyMonMission "0,404,346,100" VariationLizard  "0,440,387"
+ApplyMonMission "0,404,346,100" StonePatron  "0,440,387"
+ApplyMonMission "0,404,346,100" ExtinguisheKing  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 魔石咆哮者   "0,440,387"
-ApplyMonMission "0,408,422,100" 变异刺骨蜥  "0,440,387"
-ApplyMonMission "0,408,422,100" 变异毒蜥  "0,440,387"
-ApplyMonMission "0,408,422,100" 变异丑蜥  "0,440,387"
-ApplyMonMission "0,408,422,100" 魔石守护神  "0,440,387"
-ApplyMonMission "0,408,422,100" 地天灭王  "0,440,387"
+ApplyMonMission "0,408,422,100" StoneRoarer   "0,440,387"
+ApplyMonMission "0,408,422,100" BitingLizard  "0,440,387"
+ApplyMonMission "0,408,422,100" VariationGila  "0,440,387"
+ApplyMonMission "0,408,422,100" VariationLizard  "0,440,387"
+ApplyMonMission "0,408,422,100" StonePatron  "0,440,387"
+ApplyMonMission "0,408,422,100" ExtinguisheKing  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 魔石咆哮者  "0,440,387"
-ApplyMonMission "0,486,431,100" 变异刺骨蜥  "0,440,387"
-ApplyMonMission "0,486,431,100" 变异毒蜥  "0,440,387"
-ApplyMonMission "0,486,431,100" 变异丑蜥  "0,440,387"
-ApplyMonMission "0,486,431,100" 魔石守护神  "0,440,387"
-ApplyMonMission "0,486,431,100" 地天灭王  "0,440,387"
+ApplyMonMission "0,486,431,100" StoneRoarer  "0,440,387"
+ApplyMonMission "0,486,431,100" BitingLizard  "0,440,387"
+ApplyMonMission "0,486,431,100" VariationGila  "0,440,387"
+ApplyMonMission "0,486,431,100" VariationLizard  "0,440,387"
+ApplyMonMission "0,486,431,100" StonePatron  "0,440,387"
+ApplyMonMission "0,486,431,100" ExtinguisheKing  "0,440,387"
 
 [@guaigong_33]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 冰城帝王 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ ImperialBard ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_34
 MongenP "0,404,346,10" 冰魂武士 10
-MongenP "0,404,346,10" 冰宫骑士 10
-MongenP "0,404,346,10" 冰宫巫师 10
+MongenP "0,404,346,10" PalaceKnight 10
+MongenP "0,404,346,10" PalaceWizard 10
 MongenP "0,404,346,10" 冰宫箭手 10
-MongenP "0,404,346,10" 寒冰守护神 1
-MongenP "0,404,346,10" 冰城帝王 1
+MongenP "0,404,346,10" IcePatron 1
+MongenP "0,404,346,10" ImperialBard 1
 
 MongenP "0,408,422,10" 冰魂武士 10
-MongenP "0,408,422,10" 冰宫骑士 10
-MongenP "0,408,422,10" 冰宫巫师 10
+MongenP "0,408,422,10" PalaceKnight 10
+MongenP "0,408,422,10" PalaceWizard 10
 MongenP "0,408,422,10" 冰宫箭手 10
-MongenP "0,408,422,10" 寒冰守护神 1
-MongenP "0,408,422,10" 冰城帝王 1
+MongenP "0,408,422,10" IcePatron 1
+MongenP "0,408,422,10" ImperialBard 1
 
 MongenP "0,486,431,10" 冰魂武士 10
-MongenP "0,486,431,10" 冰宫骑士 10
-MongenP "0,486,431,10" 冰宫巫师 10
+MongenP "0,486,431,10" PalaceKnight 10
+MongenP "0,486,431,10" PalaceWizard 10
 MongenP "0,486,431,10" 冰宫箭手 10
-MongenP "0,486,431,10" 寒冰守护神 1
-MongenP "0,486,431,10" 冰城帝王 1
+MongenP "0,486,431,10" IcePatron 1
+MongenP "0,486,431,10" ImperialBard 1
 
 ApplyMonMission "0,404,346,100" 冰魂武士  "0,440,387"
-ApplyMonMission "0,404,346,100" 冰宫骑士  "0,440,387"
-ApplyMonMission "0,404,346,100" 冰宫巫师  "0,440,387"
+ApplyMonMission "0,404,346,100" PalaceKnight  "0,440,387"
+ApplyMonMission "0,404,346,100" PalaceWizard  "0,440,387"
 ApplyMonMission "0,404,346,100" 冰宫箭手  "0,440,387"
-ApplyMonMission "0,404,346,100" 寒冰守护神  "0,440,387"
-ApplyMonMission "0,404,346,100" 冰城帝王  "0,440,387"
+ApplyMonMission "0,404,346,100" IcePatron  "0,440,387"
+ApplyMonMission "0,404,346,100" ImperialBard  "0,440,387"
 
 ApplyMonMission "0,408,422,100" 冰魂武士   "0,440,387"
-ApplyMonMission "0,408,422,100" 冰宫骑士  "0,440,387"
-ApplyMonMission "0,408,422,100" 冰宫巫师  "0,440,387"
+ApplyMonMission "0,408,422,100" PalaceKnight  "0,440,387"
+ApplyMonMission "0,408,422,100" PalaceWizard  "0,440,387"
 ApplyMonMission "0,408,422,100" 冰宫箭手  "0,440,387"
-ApplyMonMission "0,408,422,100" 寒冰守护神  "0,440,387"
-ApplyMonMission "0,408,422,100" 冰城帝王  "0,440,387"
+ApplyMonMission "0,408,422,100" IcePatron  "0,440,387"
+ApplyMonMission "0,408,422,100" ImperialBard  "0,440,387"
 
 ApplyMonMission "0,486,431,100" 冰魂武士  "0,440,387"
-ApplyMonMission "0,486,431,100" 冰宫骑士  "0,440,387"
-ApplyMonMission "0,486,431,100" 冰宫巫师  "0,440,387"
+ApplyMonMission "0,486,431,100" PalaceKnight  "0,440,387"
+ApplyMonMission "0,486,431,100" PalaceWizard  "0,440,387"
 ApplyMonMission "0,486,431,100" 冰宫箭手  "0,440,387"
-ApplyMonMission "0,486,431,100" 寒冰守护神  "0,440,387"
-ApplyMonMission "0,486,431,100" 冰城帝王  "0,440,387"
+ApplyMonMission "0,486,431,100" IcePatron  "0,440,387"
+ApplyMonMission "0,486,431,100" ImperialBard  "0,440,387"
 
 [@guaigong_34]
 #ACT
@@ -255,104 +255,104 @@ ApplyMonMission "0,486,431,100" 绝情护卫  "0,440,387"
 [@guaigong_2]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 沃玛教主 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ WoomaLeader ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_3
-MongenP "0,404,346,10" 粪虫 10
-MongenP "0,404,346,10" 沃玛战士 10
-MongenP "0,404,346,10" 沃玛勇士 10
-MongenP "0,404,346,10" 沃玛战将 10
-MongenP "0,404,346,10" 火焰沃玛 10
-MongenP "0,404,346,10" 沃玛卫士 1
-MongenP "0,404,346,10" 沃玛教主 1
+MongenP "0,404,346,10" ManureWorm 10
+MongenP "0,404,346,10" WoomaSoldiers 10
+MongenP "0,404,346,10" WoomaWarrior 10
+MongenP "0,404,346,10" WoomaWarLord 10
+MongenP "0,404,346,10" FlamingWooma 10
+MongenP "0,404,346,10" WoomaSGuard 1
+MongenP "0,404,346,10" WoomaLeader 1
 
-MongenP "0,408,422,10" 粪虫 10
-MongenP "0,408,422,10" 沃玛战士 10
-MongenP "0,408,422,10" 沃玛勇士 10
-MongenP "0,408,422,10" 沃玛战将 10
-MongenP "0,408,422,10" 火焰沃玛 10
-MongenP "0,408,422,10" 沃玛卫士 1
-MongenP "0,408,422,10" 沃玛教主 1
+MongenP "0,408,422,10" ManureWorm 10
+MongenP "0,408,422,10" WoomaSoldiers 10
+MongenP "0,408,422,10" WoomaWarrior 10
+MongenP "0,408,422,10" WoomaWarLord 10
+MongenP "0,408,422,10" FlamingWooma 10
+MongenP "0,408,422,10" WoomaSGuard 1
+MongenP "0,408,422,10" WoomaLeader 1
 
-MongenP "0,486,431,10" 粪虫 10
-MongenP "0,486,431,10" 沃玛战士 10
-MongenP "0,486,431,10" 沃玛勇士 10
-MongenP "0,486,431,10" 沃玛战将 10
-MongenP "0,486,431,10" 火焰沃玛 10
-MongenP "0,486,431,10" 沃玛卫士 1
-MongenP "0,486,431,10" 沃玛教主 1
+MongenP "0,486,431,10" ManureWorm 10
+MongenP "0,486,431,10" WoomaSoldiers 10
+MongenP "0,486,431,10" WoomaWarrior 10
+MongenP "0,486,431,10" WoomaWarLord 10
+MongenP "0,486,431,10" FlamingWooma 10
+MongenP "0,486,431,10" WoomaSGuard 1
+MongenP "0,486,431,10" WoomaLeader 1
 
-ApplyMonMission "0,404,346,100" 粪虫  "0,440,387"
-ApplyMonMission "0,404,346,100" 沃玛战士  "0,440,387"
-ApplyMonMission "0,404,346,100" 沃玛勇士  "0,440,387"
-ApplyMonMission "0,404,346,100" 沃玛战将  "0,440,387"
-ApplyMonMission "0,404,346,100" 火焰沃玛  "0,440,387"
-ApplyMonMission "0,404,346,100" 沃玛卫士  "0,440,387"
-ApplyMonMission "0,404,346,100" 沃玛教主  "0,440,387"
+ApplyMonMission "0,404,346,100" ManureWorm  "0,440,387"
+ApplyMonMission "0,404,346,100" WoomaSoldiers  "0,440,387"
+ApplyMonMission "0,404,346,100" WoomaWarrior  "0,440,387"
+ApplyMonMission "0,404,346,100" WoomaWarLord  "0,440,387"
+ApplyMonMission "0,404,346,100" FlamingWooma  "0,440,387"
+ApplyMonMission "0,404,346,100" WoomaSGuard  "0,440,387"
+ApplyMonMission "0,404,346,100" WoomaLeader  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 粪虫   "0,440,387"
-ApplyMonMission "0,408,422,100" 沃玛战士  "0,440,387"
-ApplyMonMission "0,408,422,100" 沃玛勇士  "0,440,387"
-ApplyMonMission "0,408,422,100" 沃玛战将  "0,440,387"
-ApplyMonMission "0,408,422,100" 火焰沃玛  "0,440,387"
-ApplyMonMission "0,408,422,100" 沃玛卫士  "0,440,387"
-ApplyMonMission "0,408,422,100" 沃玛教主  "0,440,387"
+ApplyMonMission "0,408,422,100" ManureWorm   "0,440,387"
+ApplyMonMission "0,408,422,100" WoomaSoldiers  "0,440,387"
+ApplyMonMission "0,408,422,100" WoomaWarrior  "0,440,387"
+ApplyMonMission "0,408,422,100" WoomaWarLord  "0,440,387"
+ApplyMonMission "0,408,422,100" FlamingWooma  "0,440,387"
+ApplyMonMission "0,408,422,100" WoomaSGuard  "0,440,387"
+ApplyMonMission "0,408,422,100" WoomaLeader  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 粪虫  "0,440,387"
-ApplyMonMission "0,486,431,100" 沃玛战士  "0,440,387"
-ApplyMonMission "0,486,431,100" 沃玛勇士  "0,440,387"
-ApplyMonMission "0,486,431,100" 沃玛战将  "0,440,387"
-ApplyMonMission "0,486,431,100" 火焰沃玛  "0,440,387"
-ApplyMonMission "0,486,431,100" 沃玛卫士  "0,440,387"
-ApplyMonMission "0,486,431,100" 沃玛教主  "0,440,387"
+ApplyMonMission "0,486,431,100" ManureWorm  "0,440,387"
+ApplyMonMission "0,486,431,100" WoomaSoldiers  "0,440,387"
+ApplyMonMission "0,486,431,100" WoomaWarrior  "0,440,387"
+ApplyMonMission "0,486,431,100" WoomaWarLord  "0,440,387"
+ApplyMonMission "0,486,431,100" FlamingWooma  "0,440,387"
+ApplyMonMission "0,486,431,100" WoomaSGuard  "0,440,387"
+ApplyMonMission "0,486,431,100" WoomaLeader  "0,440,387"
 
 [@guaigong_3]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 骷髅教主 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ SkeltonLeader ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_4
-MongenP "0,404,346,10" 骷髅弓箭手 10
-MongenP "0,404,346,10" 骷髅武士 10
-MongenP "0,404,346,10" 骷髅士兵 10
-MongenP "0,404,346,10" 骷髅武将 10
-MongenP "0,404,346,10" 骨鬼将 1
-MongenP "0,404,346,10" 骷髅教主 1
+MongenP "0,404,346,10" SkeletonArcher 10
+MongenP "0,404,346,10" SkeletonWarrior 10
+MongenP "0,404,346,10" SkeletonSoldier 10
+MongenP "0,404,346,10" SkeletonGeneral 10
+MongenP "0,404,346,10" BoneGhost 1
+MongenP "0,404,346,10" SkeltonLeader 1
 
-MongenP "0,408,422,10" 骷髅弓箭手 10
-MongenP "0,408,422,10" 骷髅武士 10
-MongenP "0,408,422,10" 骷髅士兵 10
-MongenP "0,408,422,10" 骷髅武将 10
-MongenP "0,408,422,10" 骨鬼将 1
-MongenP "0,408,422,10" 骷髅教主 1
+MongenP "0,408,422,10" SkeletonArcher 10
+MongenP "0,408,422,10" SkeletonWarrior 10
+MongenP "0,408,422,10" SkeletonSoldier 10
+MongenP "0,408,422,10" SkeletonGeneral 10
+MongenP "0,408,422,10" BoneGhost 1
+MongenP "0,408,422,10" SkeltonLeader 1
 
-MongenP "0,486,431,10" 骷髅弓箭手 10
-MongenP "0,486,431,10" 骷髅武士 10
-MongenP "0,486,431,10" 骷髅士兵 10
-MongenP "0,486,431,10" 骷髅武将 10
-MongenP "0,486,431,10" 骨鬼将 1
-MongenP "0,486,431,10" 骷髅教主 1
+MongenP "0,486,431,10" SkeletonArcher 10
+MongenP "0,486,431,10" SkeletonWarrior 10
+MongenP "0,486,431,10" SkeletonSoldier 10
+MongenP "0,486,431,10" SkeletonGeneral 10
+MongenP "0,486,431,10" BoneGhost 1
+MongenP "0,486,431,10" SkeltonLeader 1
 
-ApplyMonMission "0,404,346,100" 骷髅弓箭手  "0,440,387"
-ApplyMonMission "0,404,346,100" 骷髅武士  "0,440,387"
-ApplyMonMission "0,404,346,100" 骷髅士兵  "0,440,387"
-ApplyMonMission "0,404,346,100" 骷髅武将  "0,440,387"
-ApplyMonMission "0,404,346,100" 骨鬼将  "0,440,387"
-ApplyMonMission "0,404,346,100" 骷髅教主  "0,440,387"
+ApplyMonMission "0,404,346,100" SkeletonArcher  "0,440,387"
+ApplyMonMission "0,404,346,100" SkeletonWarrior  "0,440,387"
+ApplyMonMission "0,404,346,100" SkeletonSoldier  "0,440,387"
+ApplyMonMission "0,404,346,100" SkeletonGeneral  "0,440,387"
+ApplyMonMission "0,404,346,100" BoneGhost  "0,440,387"
+ApplyMonMission "0,404,346,100" SkeltonLeader  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 骷髅弓箭手   "0,440,387"
-ApplyMonMission "0,408,422,100" 骷髅武士  "0,440,387"
-ApplyMonMission "0,408,422,100" 骷髅士兵  "0,440,387"
-ApplyMonMission "0,408,422,100" 骷髅武将  "0,440,387"
-ApplyMonMission "0,408,422,100" 骨鬼将  "0,440,387"
-ApplyMonMission "0,408,422,100" 骷髅教主  "0,440,387"
+ApplyMonMission "0,408,422,100" SkeletonArcher   "0,440,387"
+ApplyMonMission "0,408,422,100" SkeletonWarrior  "0,440,387"
+ApplyMonMission "0,408,422,100" SkeletonSoldier  "0,440,387"
+ApplyMonMission "0,408,422,100" SkeletonGeneral  "0,440,387"
+ApplyMonMission "0,408,422,100" BoneGhost  "0,440,387"
+ApplyMonMission "0,408,422,100" SkeltonLeader  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 骷髅弓箭手  "0,440,387"
-ApplyMonMission "0,486,431,100" 骷髅武士  "0,440,387"
-ApplyMonMission "0,486,431,100" 骷髅士兵  "0,440,387"
-ApplyMonMission "0,486,431,100" 骷髅武将  "0,440,387"
-ApplyMonMission "0,486,431,100" 骨鬼将  "0,440,387"
-ApplyMonMission "0,486,431,100" 骷髅教主  "0,440,387"
+ApplyMonMission "0,486,431,100" SkeletonArcher  "0,440,387"
+ApplyMonMission "0,486,431,100" SkeletonWarrior  "0,440,387"
+ApplyMonMission "0,486,431,100" SkeletonSoldier  "0,440,387"
+ApplyMonMission "0,486,431,100" SkeletonGeneral  "0,440,387"
+ApplyMonMission "0,486,431,100" BoneGhost  "0,440,387"
+ApplyMonMission "0,486,431,100" SkeltonLeader  "0,440,387"
 
 [@guaigong_4]
 #ACT
@@ -360,193 +360,193 @@ linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
 linemsg [grobal] "║   [ 触 龙 神 ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_5
-MongenP "0,404,346,10" 蜈蚣 10
-MongenP "0,404,346,10" 跳跳蜂 10
-MongenP "0,404,346,10" 黑色恶蛆 10
-MongenP "0,404,346,10" 钳虫 10
-MongenP "0,404,346,10" 邪恶钳虫 1
-MongenP "0,404,346,10" 触龙神 1
+MongenP "0,404,346,10" EvilCentipede 10
+MongenP "0,404,346,10" JumpingBee 10
+MongenP "0,404,346,10" BlackMaggot 10
+MongenP "0,404,346,10" Worm 10
+MongenP "0,404,346,10" EvilInsect 1
+MongenP "0,404,346,10" ShenDragon 1
 
-MongenP "0,408,422,10" 蜈蚣 10
-MongenP "0,408,422,10" 跳跳蜂 10
-MongenP "0,408,422,10" 黑色恶蛆 10
-MongenP "0,408,422,10" 钳虫 10
-MongenP "0,408,422,10" 邪恶钳虫 1
-MongenP "0,408,422,10" 触龙神 1
+MongenP "0,408,422,10" EvilCentipede 10
+MongenP "0,408,422,10" JumpingBee 10
+MongenP "0,408,422,10" BlackMaggot 10
+MongenP "0,408,422,10" Worm 10
+MongenP "0,408,422,10" EvilInsect 1
+MongenP "0,408,422,10" ShenDragon 1
 
-MongenP "0,486,431,10" 蜈蚣 10
-MongenP "0,486,431,10" 跳跳蜂 10
-MongenP "0,486,431,10" 黑色恶蛆 10
-MongenP "0,486,431,10" 钳虫 10
-MongenP "0,486,431,10" 邪恶钳虫 1
-MongenP "0,486,431,10" 触龙神 1
+MongenP "0,486,431,10" EvilCentipede 10
+MongenP "0,486,431,10" JumpingBee 10
+MongenP "0,486,431,10" BlackMaggot 10
+MongenP "0,486,431,10" Worm 10
+MongenP "0,486,431,10" EvilInsect 1
+MongenP "0,486,431,10" ShenDragon 1
 
-ApplyMonMission "0,404,346,100" 蜈蚣  "0,440,387"
-ApplyMonMission "0,404,346,100" 跳跳蜂  "0,440,387"
-ApplyMonMission "0,404,346,100" 黑色恶蛆  "0,440,387"
-ApplyMonMission "0,404,346,100" 钳虫  "0,440,387"
-ApplyMonMission "0,404,346,100" 邪恶钳虫  "0,440,387"
-ApplyMonMission "0,404,346,100" 触龙神  "0,440,387"
+ApplyMonMission "0,404,346,100" EvilCentipede  "0,440,387"
+ApplyMonMission "0,404,346,100" JumpingBee  "0,440,387"
+ApplyMonMission "0,404,346,100" BlackMaggot  "0,440,387"
+ApplyMonMission "0,404,346,100" Worm  "0,440,387"
+ApplyMonMission "0,404,346,100" EvilInsect  "0,440,387"
+ApplyMonMission "0,404,346,100" ShenDragon  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 蜈蚣   "0,440,387"
-ApplyMonMission "0,408,422,100" 跳跳蜂  "0,440,387"
-ApplyMonMission "0,408,422,100" 黑色恶蛆  "0,440,387"
-ApplyMonMission "0,408,422,100" 钳虫  "0,440,387"
-ApplyMonMission "0,408,422,100" 邪恶钳虫  "0,440,387"
-ApplyMonMission "0,408,422,100" 触龙神  "0,440,387"
+ApplyMonMission "0,408,422,100" EvilCentipede   "0,440,387"
+ApplyMonMission "0,408,422,100" JumpingBee  "0,440,387"
+ApplyMonMission "0,408,422,100" BlackMaggot  "0,440,387"
+ApplyMonMission "0,408,422,100" Worm  "0,440,387"
+ApplyMonMission "0,408,422,100" EvilInsect  "0,440,387"
+ApplyMonMission "0,408,422,100" ShenDragon  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 蜈蚣  "0,440,387"
-ApplyMonMission "0,486,431,100" 跳跳蜂  "0,440,387"
-ApplyMonMission "0,486,431,100" 黑色恶蛆  "0,440,387"
-ApplyMonMission "0,486,431,100" 钳虫  "0,440,387"
-ApplyMonMission "0,486,431,100" 邪恶钳虫  "0,440,387"
-ApplyMonMission "0,486,431,100" 触龙神  "0,440,387"
+ApplyMonMission "0,486,431,100" EvilCentipede  "0,440,387"
+ApplyMonMission "0,486,431,100" JumpingBee  "0,440,387"
+ApplyMonMission "0,486,431,100" BlackMaggot  "0,440,387"
+ApplyMonMission "0,486,431,100" Worm  "0,440,387"
+ApplyMonMission "0,486,431,100" EvilInsect  "0,440,387"
+ApplyMonMission "0,486,431,100" ShenDragon  "0,440,387"
 
 [@guaigong_5]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [潘夜牛魔王]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [NightDemon]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_6
-MongenP "0,404,346,10" 潘夜冰魔 10
-MongenP "0,404,346,10" 潘夜火魔 10
-MongenP "0,404,346,10" 潘夜左护卫 10
-MongenP "0,404,346,10" 潘夜右护卫 10
-MongenP "0,404,346,10" 潘夜鬼将 1
-MongenP "0,404,346,10" 潘夜牛魔王 1
+MongenP "0,404,346,10" YebingSpirit 10
+MongenP "0,404,346,10" NightHuomo 10
+MongenP "0,404,346,10" NightLeftGuard 10
+MongenP "0,404,346,10" NightGuard 10
+MongenP "0,404,346,10" NightGhost 1
+MongenP "0,404,346,10" NightDemon 1
 
-MongenP "0,408,422,10" 潘夜冰魔 10
-MongenP "0,408,422,10" 潘夜火魔 10
-MongenP "0,408,422,10" 潘夜左护卫 10
-MongenP "0,408,422,10" 潘夜右护卫 10
-MongenP "0,408,422,10" 潘夜鬼将 1
-MongenP "0,408,422,10" 潘夜牛魔王 1
+MongenP "0,408,422,10" YebingSpirit 10
+MongenP "0,408,422,10" NightHuomo 10
+MongenP "0,408,422,10" NightLeftGuard 10
+MongenP "0,408,422,10" NightGuard 10
+MongenP "0,408,422,10" NightGhost 1
+MongenP "0,408,422,10" NightDemon 1
 
-MongenP "0,486,431,10" 潘夜冰魔 10
-MongenP "0,486,431,10" 潘夜火魔 10
-MongenP "0,486,431,10" 潘夜左护卫 10
-MongenP "0,486,431,10" 潘夜右护卫 10
-MongenP "0,486,431,10" 潘夜鬼将 1
-MongenP "0,486,431,10" 潘夜牛魔王 1
+MongenP "0,486,431,10" YebingSpirit 10
+MongenP "0,486,431,10" NightHuomo 10
+MongenP "0,486,431,10" NightLeftGuard 10
+MongenP "0,486,431,10" NightGuard 10
+MongenP "0,486,431,10" NightGhost 1
+MongenP "0,486,431,10" NightDemon 1
 
-ApplyMonMission "0,404,346,100" 潘夜冰魔  "0,440,387"
-ApplyMonMission "0,404,346,100" 潘夜火魔  "0,440,387"
-ApplyMonMission "0,404,346,100" 潘夜左护卫  "0,440,387"
-ApplyMonMission "0,404,346,100" 潘夜右护卫  "0,440,387"
-ApplyMonMission "0,404,346,100" 潘夜鬼将  "0,440,387"
-ApplyMonMission "0,404,346,100" 潘夜牛魔王  "0,440,387"
+ApplyMonMission "0,404,346,100" YebingSpirit  "0,440,387"
+ApplyMonMission "0,404,346,100" NightHuomo  "0,440,387"
+ApplyMonMission "0,404,346,100" NightLeftGuard  "0,440,387"
+ApplyMonMission "0,404,346,100" NightGuard  "0,440,387"
+ApplyMonMission "0,404,346,100" NightGhost  "0,440,387"
+ApplyMonMission "0,404,346,100" NightDemon  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 潘夜冰魔   "0,440,387"
-ApplyMonMission "0,408,422,100" 潘夜火魔  "0,440,387"
-ApplyMonMission "0,408,422,100" 潘夜左护卫  "0,440,387"
-ApplyMonMission "0,408,422,100" 潘夜右护卫  "0,440,387"
-ApplyMonMission "0,408,422,100" 潘夜鬼将  "0,440,387"
-ApplyMonMission "0,408,422,100" 潘夜牛魔王  "0,440,387"
+ApplyMonMission "0,408,422,100" YebingSpirit   "0,440,387"
+ApplyMonMission "0,408,422,100" NightHuomo  "0,440,387"
+ApplyMonMission "0,408,422,100" NightLeftGuard  "0,440,387"
+ApplyMonMission "0,408,422,100" NightGuard  "0,440,387"
+ApplyMonMission "0,408,422,100" NightGhost  "0,440,387"
+ApplyMonMission "0,408,422,100" NightDemon  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 潘夜冰魔  "0,440,387"
-ApplyMonMission "0,486,431,100" 潘夜火魔  "0,440,387"
-ApplyMonMission "0,486,431,100" 潘夜左护卫  "0,440,387"
-ApplyMonMission "0,486,431,100" 潘夜右护卫  "0,440,387"
-ApplyMonMission "0,486,431,100" 潘夜鬼将  "0,440,387"
-ApplyMonMission "0,486,431,100" 潘夜牛魔王  "0,440,387"
+ApplyMonMission "0,486,431,100" YebingSpirit  "0,440,387"
+ApplyMonMission "0,486,431,100" NightHuomo  "0,440,387"
+ApplyMonMission "0,486,431,100" NightLeftGuard  "0,440,387"
+ApplyMonMission "0,486,431,100" NightGuard  "0,440,387"
+ApplyMonMission "0,486,431,100" NightGhost  "0,440,387"
+ApplyMonMission "0,486,431,100" NightDemon  "0,440,387"
 
 [@guaigong_6]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 震天魔神 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ DevilThunder ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_7
-MongenP "0,404,346,10" 石像狮子 10
-MongenP "0,404,346,10" 火焰狮子 10
-MongenP "0,404,346,10" 地牢女神1 10
-MongenP "0,404,346,10" 武力神将 10
-MongenP "0,404,346,10" 震天首将 1
-MongenP "0,404,346,10" 震天魔神 1
+MongenP "0,404,346,10" StoneLion 10
+MongenP "0,404,346,10" FireLion 10
+MongenP "0,404,346,10" Dungeon1 10
+MongenP "0,404,346,10" MilitaryForce 10
+MongenP "0,404,346,10" ShakeDay 1
+MongenP "0,404,346,10" DevilThunder 1
 
-MongenP "0,408,422,10" 石像狮子 10
-MongenP "0,408,422,10" 火焰狮子 10
-MongenP "0,408,422,10" 地牢女神1 10
-MongenP "0,408,422,10" 武力神将 10
-MongenP "0,408,422,10" 震天首将 1
-MongenP "0,408,422,10" 震天魔神 1
+MongenP "0,408,422,10" StoneLion 10
+MongenP "0,408,422,10" FireLion 10
+MongenP "0,408,422,10" Dungeon1 10
+MongenP "0,408,422,10" MilitaryForce 10
+MongenP "0,408,422,10" ShakeDay 1
+MongenP "0,408,422,10" DevilThunder 1
 
-MongenP "0,486,431,10" 石像狮子 10
-MongenP "0,486,431,10" 火焰狮子 10
-MongenP "0,486,431,10" 地牢女神1 10
-MongenP "0,486,431,10" 武力神将 10
-MongenP "0,486,431,10" 震天首将 1
-MongenP "0,486,431,10" 震天魔神 1
+MongenP "0,486,431,10" StoneLion 10
+MongenP "0,486,431,10" FireLion 10
+MongenP "0,486,431,10" Dungeon1 10
+MongenP "0,486,431,10" MilitaryForce 10
+MongenP "0,486,431,10" ShakeDay 1
+MongenP "0,486,431,10" DevilThunder 1
 
-ApplyMonMission "0,404,346,100" 石像狮子  "0,440,387"
-ApplyMonMission "0,404,346,100" 火焰狮子  "0,440,387"
-ApplyMonMission "0,404,346,100" 地牢女神1  "0,440,387"
-ApplyMonMission "0,404,346,100" 武力神将  "0,440,387"
-ApplyMonMission "0,404,346,100" 震天首将  "0,440,387"
-ApplyMonMission "0,404,346,100" 震天魔神  "0,440,387"
+ApplyMonMission "0,404,346,100" StoneLion  "0,440,387"
+ApplyMonMission "0,404,346,100" FireLion  "0,440,387"
+ApplyMonMission "0,404,346,100" Dungeon1  "0,440,387"
+ApplyMonMission "0,404,346,100" MilitaryForce  "0,440,387"
+ApplyMonMission "0,404,346,100" ShakeDay  "0,440,387"
+ApplyMonMission "0,404,346,100" DevilThunder  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 石像狮子   "0,440,387"
-ApplyMonMission "0,408,422,100" 火焰狮子  "0,440,387"
-ApplyMonMission "0,408,422,100" 地牢女神1  "0,440,387"
-ApplyMonMission "0,408,422,100" 武力神将  "0,440,387"
-ApplyMonMission "0,408,422,100" 震天首将  "0,440,387"
-ApplyMonMission "0,408,422,100" 震天魔神  "0,440,387"
+ApplyMonMission "0,408,422,100" StoneLion   "0,440,387"
+ApplyMonMission "0,408,422,100" FireLion  "0,440,387"
+ApplyMonMission "0,408,422,100" Dungeon1  "0,440,387"
+ApplyMonMission "0,408,422,100" MilitaryForce  "0,440,387"
+ApplyMonMission "0,408,422,100" ShakeDay  "0,440,387"
+ApplyMonMission "0,408,422,100" DevilThunder  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 石像狮子  "0,440,387"
-ApplyMonMission "0,486,431,100" 火焰狮子  "0,440,387"
-ApplyMonMission "0,486,431,100" 地牢女神1  "0,440,387"
-ApplyMonMission "0,486,431,100" 武力神将  "0,440,387"
-ApplyMonMission "0,486,431,100" 震天首将  "0,440,387"
-ApplyMonMission "0,486,431,100" 震天魔神  "0,440,387"
+ApplyMonMission "0,486,431,100" StoneLion  "0,440,387"
+ApplyMonMission "0,486,431,100" FireLion  "0,440,387"
+ApplyMonMission "0,486,431,100" Dungeon1  "0,440,387"
+ApplyMonMission "0,486,431,100" MilitaryForce  "0,440,387"
+ApplyMonMission "0,486,431,100" ShakeDay  "0,440,387"
+ApplyMonMission "0,486,431,100" DevilThunder  "0,440,387"
 
 [@guaigong_7]
 #ACT
 linemsg [grobal] "╔═════════< 系统信息 >═════════╗"
-linemsg [grobal] "║   [ 霸王教主 ]带着手下向[ 比奇城 ]发起了进攻   ║"
+linemsg [grobal] "║   [ OverlordFounder ]带着手下向[ 比奇城 ]发起了进攻   ║"
 linemsg [grobal] "╚════════════════════════╝"
 Delaygoto [Grobal] 120 @guaigong_jieshu
-MongenP "0,404,346,10" 爆毒神魔 10
-MongenP "0,404,346,10" 触角神魔 10
-MongenP "0,404,346,10" 神舰守卫 10
-MongenP "0,404,346,10" 红衣法师 10
-MongenP "0,404,346,10" 霸王守卫 1
-MongenP "0,404,346,10" 霸王教主 1
-MongenP "0,440,386,0" 赤月恶魔 1
-MongenP "0,436,382,0" 祖玛教主 1
+MongenP "0,404,346,10" AntennaeGhost 10
+MongenP "0,404,346,10" Antenna 10
+MongenP "0,404,346,10" ShipGuard 10
+MongenP "0,404,346,10" ScarletMaster 10
+MongenP "0,404,346,10" OverlordGuard 1
+MongenP "0,404,346,10" OverlordFounder 1
+MongenP "0,440,386,0" RedDevil 1
+MongenP "0,436,382,0" ZumaLeader 1
 
-MongenP "0,408,422,10" 爆毒神魔 10
-MongenP "0,408,422,10" 触角神魔 10
-MongenP "0,408,422,10" 神舰守卫 10
-MongenP "0,408,422,10" 红衣法师 10
-MongenP "0,408,422,10" 霸王守卫 1
-MongenP "0,408,422,10" 霸王教主 1
+MongenP "0,408,422,10" AntennaeGhost 10
+MongenP "0,408,422,10" Antenna 10
+MongenP "0,408,422,10" ShipGuard 10
+MongenP "0,408,422,10" ScarletMaster 10
+MongenP "0,408,422,10" OverlordGuard 1
+MongenP "0,408,422,10" OverlordFounder 1
 
-MongenP "0,486,431,10" 爆毒神魔 10
-MongenP "0,486,431,10" 触角神魔 10
-MongenP "0,486,431,10" 神舰守卫 10
-MongenP "0,486,431,10" 红衣法师 10
-MongenP "0,486,431,10" 霸王守卫 1
-MongenP "0,486,431,10" 霸王教主 1
+MongenP "0,486,431,10" AntennaeGhost 10
+MongenP "0,486,431,10" Antenna 10
+MongenP "0,486,431,10" ShipGuard 10
+MongenP "0,486,431,10" ScarletMaster 10
+MongenP "0,486,431,10" OverlordGuard 1
+MongenP "0,486,431,10" OverlordFounder 1
 
-ApplyMonMission "0,404,346,100" 爆毒神魔  "0,440,387"
-ApplyMonMission "0,404,346,100" 触角神魔  "0,440,387"
-ApplyMonMission "0,404,346,100" 神舰守卫  "0,440,387"
-ApplyMonMission "0,404,346,100" 红衣法师  "0,440,387"
-ApplyMonMission "0,404,346,100" 霸王守卫  "0,440,387"
-ApplyMonMission "0,404,346,100" 霸王教主  "0,440,387"
+ApplyMonMission "0,404,346,100" AntennaeGhost  "0,440,387"
+ApplyMonMission "0,404,346,100" Antenna  "0,440,387"
+ApplyMonMission "0,404,346,100" ShipGuard  "0,440,387"
+ApplyMonMission "0,404,346,100" ScarletMaster  "0,440,387"
+ApplyMonMission "0,404,346,100" OverlordGuard  "0,440,387"
+ApplyMonMission "0,404,346,100" OverlordFounder  "0,440,387"
 
-ApplyMonMission "0,408,422,100" 爆毒神魔   "0,440,387"
-ApplyMonMission "0,408,422,100" 触角神魔  "0,440,387"
-ApplyMonMission "0,408,422,100" 神舰守卫  "0,440,387"
-ApplyMonMission "0,408,422,100" 红衣法师  "0,440,387"
-ApplyMonMission "0,408,422,100" 霸王守卫  "0,440,387"
-ApplyMonMission "0,408,422,100" 霸王教主  "0,440,387"
+ApplyMonMission "0,408,422,100" AntennaeGhost   "0,440,387"
+ApplyMonMission "0,408,422,100" Antenna  "0,440,387"
+ApplyMonMission "0,408,422,100" ShipGuard  "0,440,387"
+ApplyMonMission "0,408,422,100" ScarletMaster  "0,440,387"
+ApplyMonMission "0,408,422,100" OverlordGuard  "0,440,387"
+ApplyMonMission "0,408,422,100" OverlordFounder  "0,440,387"
 
-ApplyMonMission "0,486,431,100" 爆毒神魔  "0,440,387"
-ApplyMonMission "0,486,431,100" 触角神魔  "0,440,387"
-ApplyMonMission "0,486,431,100" 神舰守卫  "0,440,387"
-ApplyMonMission "0,486,431,100" 红衣法师  "0,440,387"
-ApplyMonMission "0,486,431,100" 霸王守卫  "0,440,387"
-ApplyMonMission "0,486,431,100" 霸王教主  "0,440,387"
+ApplyMonMission "0,486,431,100" AntennaeGhost  "0,440,387"
+ApplyMonMission "0,486,431,100" Antenna  "0,440,387"
+ApplyMonMission "0,486,431,100" ShipGuard  "0,440,387"
+ApplyMonMission "0,486,431,100" ScarletMaster  "0,440,387"
+ApplyMonMission "0,486,431,100" OverlordGuard  "0,440,387"
+ApplyMonMission "0,486,431,100" OverlordFounder  "0,440,387"
 
 [@guaigong_jieshu]
 #ACT

@@ -16,7 +16,7 @@ enter_fail
 break
 ;
 #IF
-checkmagic 困魔咒
+checkmagic TrapOctagon
 #SAY
 (现在也没有进去的必要了...)
 #ACT
@@ -47,11 +47,11 @@ goto @MapQuest_holycircle_moveTo5_1
 
 [@MapQuest_holycircle_moveTo5_1]
 #IF
-checkitem 最后困魔石  1
+checkitem FifthStormStone  1
 ;#SAY
 ;（现在进入的是最后一个困魔咒间吗？）\
 #ACT
-take 最后困魔石  1
+take FifthStormStone  1
 set [521] 1
 enter_ok
 #ELSESAY

@@ -15,7 +15,7 @@ goto   @jinruxx
 
 [@jinruxx]
 #IF
-;;checkitemw  白金勋章  1
+;;checkitemw  PlatinumMedal  1
 check [011] 1
 #SAY
 ____{FCOLOR=250}魔界{FCOLOR=255}这是一个极其危险的地方, 入口已经被我用精神力封住\
@@ -38,7 +38,7 @@ ____{FCOLOR=250}据说{FCOLOR=255}这里的终极BOSS携带着开启天外飞石魔法阵的 {FCOLOR
 [@tiaozhanxxxx]
 #IF
 checklevel  45
-;;checkitemw  白金勋章  1
+;;checkitemw  PlatinumMedal  1
 #ACT
 SET [011] 1
 #SAY

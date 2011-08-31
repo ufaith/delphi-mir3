@@ -31,7 +31,7 @@ GOTO @运算好友1
 #IF
 EQUAL D1 1
 #ACT
-ADDSTR A5 "<[传送:"
+ADDSTR A5 "<[UserMove:"
 ADDSTR A5 %A0
 ADDSTR A5 "]/@好友列表("
 ADDSTR A5 %D0 
@@ -49,7 +49,7 @@ BREAK
 #IF
 EQUAL D1 2
 #ACT
-ADDSTR A5 "<[传送:"
+ADDSTR A5 "<[UserMove:"
 ADDSTR A5 %A0
 ADDSTR A5 "]/@好友列表("
 ADDSTR A5 %D0 
@@ -65,7 +65,7 @@ DEC D0 1
 GOTO @好友循环列表
 BREAK
 #ELSEACT
-ADDSTR A5 "<[传送:"
+ADDSTR A5 "<[UserMove:"
 ADDSTR A5 %A0
 ADDSTR A5 "]/@好友列表("
 ADDSTR A5 %D0 

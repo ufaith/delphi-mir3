@@ -35,11 +35,11 @@ tgmir3欢迎您，在我这里您可以免费把您的天地人令牌兑换成经验\
 
 [@天王令牌X]
 #IF
-CHECKITEM 天王令 1
+CHECKITEM KingOrders 1
 CHECK [675] 0
 CHECK [676] 0
 #ACT
-TAKE 天王令 1
+TAKE KingOrders 1
 MOVR D7 200000000
 MOV D6 100000000
 inc D6 %D7
@@ -54,12 +54,12 @@ break
 
 [@地王令牌X]
 #IF
-CHECKITEM 地王令 1
+CHECKITEM WangLing 1
 CHECK [675] 0
 CHECK [676] 1
 CHECK [677] 0
 #ACT
-TAKE 地王令 1
+TAKE WangLing 1
 MOVR D7 300000000
 MOV D6 200000000
 inc D6 %D7
@@ -73,13 +73,13 @@ break
 
 [@人王令牌X]
 #IF
-CHECKITEM 人王令 1
+CHECKITEM WangOrder 1
 CHECK [675] 0
 CHECK [676] 1
 CHECK [677] 1
 CHECK [678] 0
 #ACT
-TAKE 人王令 1
+TAKE WangOrder 1
 MOVR D7 400000000
 MOV D6 400000000
 inc D6 %D7

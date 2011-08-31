@@ -51,7 +51,7 @@ break
 checkgold 8000000
 checklevel 50
 #act
-take ½ð±Ò 8000000
+take Gold 8000000
 TIMERECALL %N1
 mapmove migong 137 137
 break

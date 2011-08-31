@@ -7,7 +7,7 @@
 
 [@RefineGangOk_Check] 
 #IF
-!checkitem ¸ÖÓñ¿óÊ¯ 11
+!checkitem CorundumOre 11
 #ACT
 goto @RefineGangOk_Check_1
 #ELSESAY
@@ -23,12 +23,12 @@ goto @RefineGangOk_Check_2
 
 [@RefineGangOk_Check_2]
 #IF
-checkitem ¸ÖÓñ¿óÊ¯ 10
-checkduraeva ¸ÖÓñ¿óÊ¯ 10
+checkitem CorundumOre 10
+checkduraeva CorundumOre 10
 #ACT
-take ¸ÖÓñ¿óÊ¯ 10
-take ½ğ±Ò 100000
-give ¸ÖÓñÊ¯ 1
+take CorundumOre 10
+take Gold 100000
+give JadeSteel 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Refine\GangOk.txt] @RefineGangOk_Complete
 #ELSESAY

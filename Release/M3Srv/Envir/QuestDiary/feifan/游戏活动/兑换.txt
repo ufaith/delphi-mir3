@@ -11,9 +11,9 @@
 如何处置相信大家都很为难！\
 
 经过tgmir3工作人员的研究，开放昔日武器回收活动。\
-<飞魂魔刃/@feihun1>\
-<旋风流星刀/@xuanfeng1>\
-<封魔剑/@fengmo1>\
+<MagicBlade/@feihun1>\
+<MeteorKnife/@xuanfeng1>\
+<Shadowbane/@fengmo1>\
 <离开/@exit>
 
 [@feihun1]
@@ -36,10 +36,10 @@
 #if
 #act
 #if
-checkitem 飞魂魔刃 1
+checkitem MagicBlade 1
 #act
-give 游戏点卷 1
-take 飞魂魔刃 1
+give GamePoints 1
+take MagicBlade 1
 #say
 您兑换了一个游戏点卷。
 <离开/@exit>
@@ -53,10 +53,10 @@ break
 #if
 #act
 #if
-checkitem 旋风流星刀 1
+checkitem MeteorKnife 1
 #act
-give 游戏点卷 1
-take 旋风流星刀 1
+give GamePoints 1
+take MeteorKnife 1
 #say
 您兑换了一个游戏点卷。
 
@@ -71,10 +71,10 @@ break
 #if
 #act
 #if
-checkitem 封魔剑 1
+checkitem Shadowbane 1
 #act
-give 游戏点卷 1
-take 封魔剑 1
+give GamePoints 1
+take Shadowbane 1
 #say
 您兑换了一个游戏点卷。
 

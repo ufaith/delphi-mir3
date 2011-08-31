@@ -50,8 +50,8 @@ SaveValue "Flag_Def\Event\SnowBattle\Flag.txt" [Hum_Check] [Mir] 0
 SaveValue "Flag_Def\Event\SnowBattle\Flag.txt" [Hum_Check] [Legend] 0
 ;---------------------------捞亥飘甘狼 浚乔揪,各努府绢
 ;固福评 焊惑npc
-SendCmd  "snow, 39, 29, 3"  传奇队发奖NPC Hide
-SendCmd  "snow, 22, 29, 3"  传说队发奖NPC Hide
+SendCmd  "snow, 39, 29, 3"  传奇队发奖NPC Invisibility
+SendCmd  "snow, 22, 29, 3"  传说队发奖NPC Invisibility
 ResetMapAttr "snow"
 Monclear snow
 Mapting snow 0 435 377
@@ -66,8 +66,8 @@ loadValue P1 "Flag_Def\Event\SnowBattle\Flag.txt" [event_main] [start]
 Equal P1 0
 #ACT 
 ;;-------------------------捞亥飘甘狼 浚乔揪见扁扁,甘加己悸泼
-SendCmd  "snow, 39, 29, 3"  传奇队发奖NPC Hide
-SendCmd  "snow, 22, 29, 3"  传说队发奖NPC Hide
+SendCmd  "snow, 39, 29, 3"  传奇队发奖NPC Invisibility
+SendCmd  "snow, 22, 29, 3"  传说队发奖NPC Invisibility
 ResetMapAttr "snow"
 Monclear snow
 Mapting snow 0 435 377

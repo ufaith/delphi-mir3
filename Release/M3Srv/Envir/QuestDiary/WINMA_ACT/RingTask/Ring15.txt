@@ -23,7 +23,7 @@ BREAK
 CHECK [741] 0
 CHECK [748] 1
 #SAY
-听说神舰的“霸王教主”最近在天外天捣乱，请少侠帮忙消灭它。\
+听说神舰的“OverlordFounder”最近在天外天捣乱，请少侠帮忙消灭它。\
 #ACT
 break
 
@@ -36,10 +36,10 @@ CHECK [748] 0  ;;15环已接
 CHECK [744] 0  ;;杀怪完成
 #ACT
 set [748] 1
-give 怪物通缉令（霸王教主） 1
+give MonsterWanted(Leader) 1
 break
 #SAY
-听说神舰的“霸王教主”最近在天外天捣乱，请少侠帮忙消灭它。\\
+听说神舰的“OverlordFounder”最近在天外天捣乱，请少侠帮忙消灭它。\\
 
 
 

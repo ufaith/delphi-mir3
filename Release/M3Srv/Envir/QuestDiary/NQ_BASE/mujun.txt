@@ -73,7 +73,7 @@ check [250] 1
 check [253] 0
 check [250] 1
 #ACT
-give 耐久铁手镯 1
+give DurableBracelet 1
 reset [249] 2
 set [252] 1
 #SAY
@@ -117,8 +117,8 @@ check [251] 1
 checkgold 1000
 #ACT
 set [592] 0
-take 金币 1000
-give 银手镯 1
+take Gold 1000
+give SilverBracelet 1
 reset [249] 2
 set [253] 1
 #SAY
@@ -172,7 +172,7 @@ set [250] 1
 check [251] 0
 check [249] 1
 #ACT
-give 气霖证书 1
+give LinCertificate 1
 set [251] 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\mujun.txt] @mujun_18

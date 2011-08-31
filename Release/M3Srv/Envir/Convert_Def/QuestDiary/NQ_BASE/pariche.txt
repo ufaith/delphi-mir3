@@ -50,25 +50,25 @@
 
 [@pariche_9]
 {
-找到苍蝇拍的材料的话我就会帮你做苍蝇拍！苍蝇拍所需的材料是 {FCOLOR=250}牛毛{FCOLOR=255}和 {FCOLOR=250}竹棍{FCOLOR=255}。 {FCOLOR=250}牛毛{FCOLOR=255}可以从 {FCOLOR=250}牛{FCOLOR=255}身上弄到， {FCOLOR=250}竹棍{FCOLOR=255}或许能从 {FCOLOR=250}钉耙猫{FCOLOR=255}那儿弄到！\ \
+找到苍蝇拍的材料的话我就会帮你做苍蝇拍！苍蝇拍所需的材料是 {FCOLOR=250}OxHair{FCOLOR=255}和 {FCOLOR=250}Bamboo{FCOLOR=255}。 {FCOLOR=250}OxHair{FCOLOR=255}可以从 {FCOLOR=250}Cow{FCOLOR=255}身上弄到， {FCOLOR=250}Bamboo{FCOLOR=255}或许能从 {FCOLOR=250}RakingCat{FCOLOR=255}那儿弄到！\ \
 <Exit/@exit>
 }
 
 [@pariche_10]
 {
-还没找到材料吗？材料是从{FCOLOR=250}牛{FCOLOR=255}身上得到的 {FCOLOR=250}牛毛{FCOLOR=255}及和从{FCOLOR=250}钉耙猫{FCOLOR=255}那儿弄到的{FCOLOR=250}竹棍{FCOLOR=255}。\ \
+还没找到材料吗？材料是从{FCOLOR=250}Cow{FCOLOR=255}身上得到的 {FCOLOR=250}OxHair{FCOLOR=255}及和从{FCOLOR=250}RakingCat{FCOLOR=255}那儿弄到的{FCOLOR=250}Bamboo{FCOLOR=255}。\ \
 <Exit/@exit>
 }
 
 [@pariche_11]
 {
-年轻人真是磨蹭啊！材料是从{FCOLOR=250}牛{FCOLOR=255}身上弄到的 {FCOLOR=250}牛毛{FCOLOR=255}和从 {FCOLOR=250}钉耙猫{FCOLOR=255}那儿弄到的{FCOLOR=250}竹棍{FCOLOR=255}。\ \
+年轻人真是磨蹭啊！材料是从{FCOLOR=250}Cow{FCOLOR=255}身上弄到的 {FCOLOR=250}OxHair{FCOLOR=255}和从 {FCOLOR=250}RakingCat{FCOLOR=255}那儿弄到的{FCOLOR=250}Bamboo{FCOLOR=255}。\ \
 <Exit/@exit>
 }
 
 [@pariche_12]
 {
-好像已经找到了{FCOLOR=250}牛毛{FCOLOR=255}，那么再去从{FCOLOR=250}}钉耙猫{FCOLOR=255}那儿弄到{FCOLOR=250}竹棍{FCOLOR=255}再来吧！\ \
+好像已经找到了{FCOLOR=250}OxHair{FCOLOR=255}，那么再去从{FCOLOR=250}}RakingCat{FCOLOR=255}那儿弄到{FCOLOR=250}Bamboo{FCOLOR=255}再来吧！\ \
 <Exit/@exit>
 }
 

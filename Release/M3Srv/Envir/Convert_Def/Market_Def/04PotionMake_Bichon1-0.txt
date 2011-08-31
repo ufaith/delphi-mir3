@@ -42,7 +42,7 @@ Welcome, how may i help you?\ \
 {
 我现在不再制作药了，制作要的话去找隔壁的老黄吧。\
 你找我有什么事情吗?\ \
-<传给/@NQuest01_3>毒蛇牙齿\
+<传给/@NQuest01_3>SnakesTeeth\
  <Today's Tasks/@TQuest>\
  <Exit/@exit>
 }

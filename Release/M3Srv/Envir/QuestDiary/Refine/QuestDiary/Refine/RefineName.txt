@@ -51,7 +51,7 @@ WriteWeaponName @CheckWeaponName
 
 [@CheckWeaponName]
 #ACT
-take 金币 1000000
+take Gold 1000000
 #SAY
 你把武器的名字刻为 <$INPUTSTR> 。\ \
 <Exit/@exit>

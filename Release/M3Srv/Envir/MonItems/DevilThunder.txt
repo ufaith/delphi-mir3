@@ -1,0 +1,98 @@
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+1/10000   Spar
+1/30    SecretKey
+1/1    Gold 51000
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 1
+;-------------------------------------------------------------------------------
+1/10   BlackGlove
+
+1/10   SkiesNecklace
+1/10   SilverMirrorNecklace
+
+1/10   ColorfulNecklace
+1/10   SoulNecklace
+1/10   WarriorNecklace
+
+1/10   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 2
+;-------------------------------------------------------------------------------
+1/20   FortunatelyRing
+
+1/20   DevilRobe(M)
+1/20   DevilRobe(F)
+1/20   WarArmor(M)
+1/20   WarArmor(F)
+1/20   SpecterArmor(M)
+1/20   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 3
+;-------------------------------------------------------------------------------
+1/10  CelestialArmor(M)
+1/10  CelestialArmor(F)
+1/10  DragonArmor(M)
+1/10  DragonArmor(F)
+1/10  VestmentArmor(M)
+1/10  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ∫∏Ω∫±ﬁ ¿¸øÎ æ∆¿Ã≈€µÈ
+;-------------------------------------------------------------------------------
+1/20   BlessingOil
+1/20   WeaponOil
+
+1/100  DarkIronHelmet
+1/100  KingRing
+1/100  RaytheonRing
+1/100  AnkhRing
+1/100  RaytheonRing£®ª£©
+1/100  RaytheonRing£®∑Á£©
+1/100  RaytheonRing£®¿◊£©
+1/100  RaytheonRing£®±˘£©
+1/100  AnkhRing£®…Ò •£©
+1/100  AnkhRing£®ª√”∞£©
+1/100  AnkhRing£®∞µ∫⁄£©
+
+1/100    SnakeCurse
+1/100    Jingzhong
+1/100   NormaWand
+1/100   RulingStick
+1/100   PromiseStaff
+1/100   GuYuToken
+
+1/4000  Thunderbolt
+1/4000  DragonsSword
+1/4000  SoulsStaff
+
+1/200   BraveMedal
+1/400   VenerableMedal
+1/800   KingMedal
+1/1600  HolyMedal
+;1/2000  GamePoints
+;1/5000   PrayerNecklace

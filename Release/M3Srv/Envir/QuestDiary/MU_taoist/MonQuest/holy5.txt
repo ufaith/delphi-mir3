@@ -16,7 +16,7 @@ enter_fail
 break
 ;
 #IF
-checkmagic 困魔咒
+checkmagic TrapOctagon
 #SAY
 (现在也没有进去的必要了...)
 #ACT
@@ -48,11 +48,11 @@ goto @MapQuest_holycircle_moveTo3_1
 
 [@MapQuest_holycircle_moveTo3_1]
 #IF
-checkitem 第三困魔石  1
+checkitem ThirdStormStone  1
 ;#SAY
 ;(现在是进入第三困魔咒空间吗...)
 #ACT
-take 第三困魔石  1
+take ThirdStormStone  1
 set [519] 1
 enter_ok
 #ELSESAY

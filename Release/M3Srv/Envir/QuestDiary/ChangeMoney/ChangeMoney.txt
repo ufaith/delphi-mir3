@@ -28,7 +28,7 @@ begin
 	[@Change5Set]
 	begin
 		#IF
-			checkitem 金条 5
+			checkitem GoldBar 5
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_5
 
@@ -40,12 +40,12 @@ begin
 	[@Change5Set_1]
 	begin
 		#IF
-			checkitem 金条 5
+			checkitem GoldBar 5
 			checkgold 12000
 		#ACT
-			take 金条 5
-			take 金币 12000
-			give 金条包 1
+			take GoldBar 5
+			take Gold 12000
+			give GoldBar(B) 1
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_7
 
@@ -57,7 +57,7 @@ begin
 	[@Reverse5Set]
 	begin
 		#IF
-			checkitem 金条包 1
+			checkitem GoldBar(B) 1
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_9
 
@@ -70,12 +70,12 @@ begin
 	begin
 		#IF
 			checkbaggage
-			checkitem 金条包 1
+			checkitem GoldBar(B) 1
 			checkgold 12000
 		#ACT
-			take 金条包 1
-			take 金币 12000
-			give 金条 5
+			take GoldBar(B) 1
+			take Gold 12000
+			give GoldBar 5
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_11
 
@@ -87,7 +87,7 @@ begin
 	[@Change10Set]
 	begin
 		#IF
-			checkitem 金条包 2
+			checkitem GoldBar(B) 2
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_13
 
@@ -99,12 +99,12 @@ begin
 	[@Change10Set_1]
 	begin
 		#IF
-			checkitem 金条包 2
+			checkitem GoldBar(B) 2
 			checkgold 10000
 		#ACT
-			take 金条包 2
-			take 金币 10000
-			give 金盒 1
+			take GoldBar(B) 2
+			take Gold 10000
+			give GoldBox 1
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_15
 
@@ -116,7 +116,7 @@ begin
 	[@Reverse10Set]
 	begin
 		#IF
-			checkitem 金盒 1
+			checkitem GoldBox 1
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_17
 
@@ -129,12 +129,12 @@ begin
 	begin
 		#IF
 			checkbaggage
-			checkitem 金盒 1
+			checkitem GoldBox 1
 			checkgold 10000
 		#ACT
-			take 金盒 1
-			take 金币 10000
-			give 金条包 2
+			take GoldBox 1
+			take Gold 10000
+			give GoldBar(B) 2
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_19
 
@@ -161,8 +161,8 @@ begin
 			checkbaggage
 			checkgold 1002000
 		#ACT
-			take 金币 1002000
-			give 金条 1
+			take Gold 1002000
+			give GoldBar 1
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_23
 
@@ -174,7 +174,7 @@ begin
 	[@Reverse1]
    begin
 		#IF
-			checkitem 金条 1
+			checkitem GoldBar 1
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_25
 
@@ -186,11 +186,11 @@ begin
 	[@Reverse1_1]
 	begin
 		#IF
-			checkitem 金条 1
+			checkitem GoldBar 1
 			!CheckGold 99000000
 		#ACT
-			take 金条 1
-			give 金币 998000
+			take GoldBar 1
+			give Gold 998000
 		#SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\ChangeMoney\ChangeMoney.txt] @ChangeMoney_27
 

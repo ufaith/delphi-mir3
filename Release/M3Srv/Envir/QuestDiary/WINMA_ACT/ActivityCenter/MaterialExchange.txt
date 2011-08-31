@@ -45,7 +45,7 @@ checkitem  蛛蛛线 100
 
 #ACT
 take 蛛蛛线 100
-give 祝福油  1
+give BlessingOil  1
 GOTO  @GONGGAO
 
 #ELSESAY
@@ -55,15 +55,15 @@ GOTO  @GONGGAO
 ;========================================================
 [@huan2zhufu2]
 #if
-checkitem  指甲 100
+checkitem  Fingernail 100
 
 #SAY
 祝贺您，您得到了1瓶祝福油.\
 <离 开/@exit>
 
 #ACT
-take 指甲 100
-give 金币 500000
+take Fingernail 100
+give Gold 500000
 GOTO  @GONGGAO
 
 #ELSESAY
@@ -74,14 +74,14 @@ GOTO  @GONGGAO
 ;========================================================
 [@huan2zhufu3]
 #if
-checkitem  僵尸骨头 200
+checkitem  ZombieBone 200
 #SAY
 祝贺您，您得到了1个连环明珠.\
 <离 开/@exit>
 
 #ACT
-take 僵尸骨头 200
-give 连环明珠  1
+take ZombieBone 200
+give PearlChain  1
 GOTO  @GONGGAO
 
 #ELSESAY
@@ -91,14 +91,14 @@ GOTO  @GONGGAO
 ;========================================================
 [@huan2zhufu4]
 #if
-checkitem  潘夜之泪 100
+checkitem  NightTears 100
 #SAY
 祝贺您，您得到了1块钢玉石.\
 <离 开/@exit>
 
 #ACT
-take 潘夜之泪 100
-give 钢玉石  1
+take NightTears 100
+give JadeSteel  1
 GOTO  @GONGGAO
 
 #ELSESAY

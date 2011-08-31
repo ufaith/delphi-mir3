@@ -4,7 +4,7 @@
 #act
 #say
 <[全民冲级赛领奖]/@chongjiling>\
-<传送/@zou1>\
+<UserMove/@zou1>\
 <离开/@exit>
 
 [@chongjiling]

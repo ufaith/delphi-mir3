@@ -1,0 +1,101 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템
+;-------------------------------------------------------------------------------
+1/10000   Spar
+1/1    Gold 45000
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/10   BlackGlove
+
+1/10   SkiesNecklace
+1/10   SilverMirrorNecklace
+
+1/10   ColorfulNecklace
+1/10   SoulNecklace
+1/10   WarriorNecklace
+
+1/10   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/20   FortunatelyRing
+
+1/20   DevilRobe(M)
+1/20   DevilRobe(F)
+1/20   WarArmor(M)
+1/20   WarArmor(F)
+1/20   SpecterArmor(M)
+1/20   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/60  CelestialArmor(M)
+1/60  CelestialArmor(F)
+1/60  DragonArmor(M)
+1/60  DragonArmor(F)
+1/60  VestmentArmor(M)
+1/60  VestmentArmor(F)
+1/800  HeavenArmor(M)
+1/800  HeavenArmor(F)
+
+1/1600  MasterArmor(M)
+1/1600  MasterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 보스급 전용 아이템들
+;-------------------------------------------------------------------------------
+1/10   BlessingOil
+1/10   WeaponOil
+
+1/100   MeteorKnife
+1/100   Shadowbane
+1/100   MagicBlade
+
+1/3000  BloodSplash（Blood）
+1/3000  BloodSplash（Flower）
+1/3000  BloodSplash（Fall）
+1/3000  BloodSplash（Photo）
+1/3000  BlackSkyCloud（Black）
+1/3000  BlackSkyCloud（(Days)）
+1/3000  BlackSkyCloud（Dark）
+1/3000  BlackSkyCloud（Cloud）
+1/3000  ImperialPalace（Nine）
+1/3000  ImperialPalace（Palace）
+1/3000  ImperialPalace（Cloud）
+1/3000  ImperialPalace（Fog）
+1/3000  ThousandSeas（Thousand）
+1/3000  ThousandSeas（M）
+1/3000  ThousandSeas（Blue）
+1/3000  ThousandSeas（Sea）
+
+1/8000  MadWarRing
+1/8000  MadWarNecklace
+1/8000  MadWarBracelet
+1/8000  BenevolentRing
+1/8000  BenevolentBracelet
+1/8000  BenevolentNecklace
+1/8000  LordFlameRing
+1/8000  LordFlameBracelet
+1/8000  LordFlameNecklace
+
+1/3200  Thunderbolt
+1/3200  DragonsSword
+1/3200  SoulsStaff

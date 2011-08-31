@@ -68,10 +68,10 @@ equal   S2  0
 很不错，大礼包里面有5瓶祝福油，5个灵魂神水（特），5个攻击神水（特），5个自然神水（特）.\
 <离 开/@exit>\
 #ACt
-GIVE 祝福油 5
-GIVE 灵魂神水（特） 5
-GIVE 攻击神水（特） 5
-GIVE 自然神水（特） 5
+GIVE BlessingOil 5
+GIVE SoulWater(XL) 5
+GIVE AttackWater(XL) 5
+GIVE NaturalWater(XL) 5
 goto  @恢复初始
 break
 
@@ -82,9 +82,9 @@ equal   S2  1
 很不错，大礼包里面有10朵玫瑰,1个白金勋章,1个金刚勋章.\
 <离 开/@exit>\
 #ACT
-GIVE 玫瑰 10
-GIVE 白金勋章 1
-GIVE 金刚勋章 1
+GIVE Rose 10
+GIVE PlatinumMedal 1
+GIVE JingangMedal 1
 goto  @恢复初始
 break
 
@@ -96,9 +96,9 @@ equal   S2  2
 很不错，大礼包里面有10瓶祝福油,10把神秘钥匙,5根金条.\
 <离 开/@exit>\
 #ACT
-GIVE 祝福油 10
-GIVE 神秘钥匙 10
-GIVE 金条 5
+GIVE BlessingOil 10
+GIVE SecretKey 10
+GIVE GoldBar 5
 goto  @恢复初始
 break
 
@@ -112,9 +112,9 @@ equal   S2  3
 很不错，大礼包里面有5个游戏点卷,1个金盒,5瓶体力强效神水（特）.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 5
-GIVE 金盒 1
-GIVE 体力强效神水（特） 5
+give GamePoints 5
+GIVE GoldBox 1
+GIVE PhysicalGodWater(XL) 5
 goto  @恢复初始
 break
 
@@ -125,10 +125,10 @@ equal   S2  4
 很不错，大礼包里面有20张游戏点卷,5瓶攻击神水（特）,5瓶自然神水（特）,5瓶灵魂神水（特）.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 20
-GIVE 灵魂神水（特） 5
-GIVE 攻击神水（特） 5
-GIVE 自然神水（特） 5
+give GamePoints 20
+GIVE SoulWater(XL) 5
+GIVE AttackWater(XL) 5
+GIVE NaturalWater(XL) 5
 goto  @恢复初始
 break
 
@@ -139,10 +139,10 @@ equal   S2  5
 很不错，大礼包里面有5张游戏点卷,1个金盒,5瓶体力强效神水（特）,5个连环明珠.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 5
-GIVE 金盒 1
-GIVE 体力强效神水（特） 5
-GIVE 连环明珠 5
+give GamePoints 5
+GIVE GoldBox 1
+GIVE PhysicalGodWater(XL) 5
+GIVE PearlChain 5
 goto  @恢复初始
 break
 
@@ -154,9 +154,9 @@ equal   S2  6
 很不错，大礼包里面有5张游戏点卷,10朵玫瑰,10瓶自然神水（特）.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 5
-GIVE 玫瑰 10
-GIVE 自然神水（特） 10
+give GamePoints 5
+GIVE Rose 10
+GIVE NaturalWater(XL) 10
 goto  @恢复初始
 break
 
@@ -168,9 +168,9 @@ equal   S2  7
 很不错，大礼包里面有10张游戏点卷,10瓶祝福油,10瓶灵魂神水（特）.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 10
-GIVE 祝福油 10
-GIVE 灵魂神水（特） 10
+give GamePoints 10
+GIVE BlessingOil 10
+GIVE SoulWater(XL) 10
 goto  @恢复初始
 break
 
@@ -181,9 +181,9 @@ equal   S2  8
 很不错，大礼包里面有10张游戏点卷,10把神秘钥匙,10瓶体力强效神水（特）.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 10
-GIVE 神秘钥匙 10
-GIVE 体力强效神水（特） 10
+give GamePoints 10
+GIVE SecretKey 10
+GIVE PhysicalGodWater(XL) 10
 goto  @恢复初始
 break
 
@@ -194,10 +194,10 @@ equal   S2  9
 很不错，大礼包里面有15张游戏点卷,15瓶祝福油,2朵玫瑰,1个金盒.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 15
-GIVE 祝福油 15
-GIVE 玫瑰 2
-GIVE 金盒 1
+give GamePoints 15
+GIVE BlessingOil 15
+GIVE Rose 2
+GIVE GoldBox 1
 goto  @恢复初始
 break
 
@@ -208,10 +208,10 @@ equal   S2  10
 很不错，大礼包里面有15张游戏点卷,3瓶攻击神水（特）,3瓶自然神水（特）,3瓶灵魂神水（特）.\
 <离 开/@exit>\
 #ACT
-give 游戏点卷 15
-GIVE 灵魂神水（特） 3
-GIVE 攻击神水（特） 3
-GIVE 自然神水（特） 3
+give GamePoints 15
+GIVE SoulWater(XL) 3
+GIVE AttackWater(XL) 3
+GIVE NaturalWater(XL) 3
 goto  @恢复初始
 break
 
@@ -222,9 +222,9 @@ equal   S2  11
 很不错，大礼包里面有20瓶祝福油,10朵玫瑰,10把神秘钥匙.\
 <离 开/@exit>\
 #ACT
-give 祝福油 20
-GIVE 玫瑰 10
-GIVE 神秘钥匙 10
+give BlessingOil 20
+GIVE Rose 10
+GIVE SecretKey 10
 goto  @恢复初始
 break
 

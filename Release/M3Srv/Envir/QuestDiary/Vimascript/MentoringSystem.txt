@@ -211,7 +211,7 @@ actcmd SETSTFLAG 0 ""
 #if
 checkgold 100000
 #act
-take 金币 100000
+take Gold 100000
 give 师徒令
 #say
 您购买了一个师徒令牌，双击即可飞到您的师傅或者徒弟旁边.\

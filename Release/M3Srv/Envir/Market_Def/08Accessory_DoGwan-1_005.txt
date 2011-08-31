@@ -53,48 +53,48 @@ goto @main_0_0
 
 [Goods]
 ;ItemName      Volume     Hour
-水晶魔戒 20 1
-牛角戒指 20 1
-蓝色水晶戒指 20 1
+CrystalRing 20 1
+HornRing 20 1
+BlueCrystalRing 20 1
 六绝星环 20 1
-黑檀项链 20 1
-黄色水晶项链 20 1
-黑色水晶项链 20 1
-黑檀手镯 20 1
-道士手镯 20 1
-古铜戒指 20 1
+EbonyNecklace 20 1
+CrystalNecklace 20 1
+BlackNecklace 20 1
+EbonyBracelet 20 1
+TaoistBracelet 20 1
+BronzeRing 20 1
 
-骷髅戒指 20 1
-巨龙戒指 20 1
-红叶血环 20 1
-珊瑚戒指 20 1
-力量戒指 20 1
-火玉戒指 20 1
-天鸣戒指 20 1
-紫碧螺 20 1
-泰坦戒指 20 1
-魅力戒指 20 1
-道德戒指 20 1
+SkeltonRing 20 1
+DragonRing 20 1
+BloodRing 20 1
+CoralRing 20 1
+PowerRing 20 1
+FireJadeRing 20 1
+TianmingRing 20 1
+PurpleSpiral 20 1
+TitanRing 20 1
+CharmRing 20 1
+EthicsRing 20 1
 
-死神手套 20 1
-坚固手套 20 1
-幽灵手套 20 1
-黑皮手套 20 1
-思贝儿手镯 20 1
-三眼手镯 20 1
+DeathGlove 20 1
+SturdyGlove 20 1
+GhostGlove 20 1
+BlackGlove 20 1
+SibeiBracelet 20 1
+ThreeBracelet 20 1
 
-灯笼项链 20 1
-白色虎齿项链 20 1
-蓝翡翠项链 20 1
-幽灵项链 20 1
-勇士项链 20 1
-放大镜 20 1
-竹笛 20 1
-莲花宝镜 20 1
-五彩项链 20 1
-遗魂项链 20 1
-愤怒之钟 20 1
-真善项链 20 1
+LanternNecklace 20 1
+TigerToothNecklace 20 1
+BlueJadeNecklace 20 1
+GhostNecklace 20 1
+WarriorNecklace 20 1
+Magnifier 20 1
+BambooFluteNecklace 20 1
+LotusMirror 20 1
+ColorfulNecklace 20 1
+SoulNecklace 20 1
+AngerBell 20 1
+FriendlyNecklace 20 1
 
 
 

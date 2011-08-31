@@ -17,14 +17,14 @@ I do not want people like you here.\ \
 {
 （道士魔法）\ \
 （1 - 10 等级 修炼魔法）\
-<治愈术/@Go_Mu_Taoist_holy_heal> , <精神力战法/@Go_Mu_Taoist_dark_ilgang>\ \
+<Healing/@Go_Mu_Taoist_holy_heal> , <SpiritSword/@Go_Mu_Taoist_dark_ilgang>\ \
 （11 - 20 等级 修炼魔法）\
-<施毒术/@Go_Mu_Taoist_dark_amyen> , <灵魂火符/@Go_Mu_Taoist_dark_poksal> , <月魂断玉/@Go_Mu_Taoist_holy_moon>\
-<召唤骷髅/@Go_Mu_Taoist_soul_skel> , <隐身术/@Go_Mu_Taoist_dark_hiden>\ \
+<Poisoning/@Go_Mu_Taoist_dark_amyen> , <TaoExplosion/@Go_Mu_Taoist_dark_poksal> , <EvilSlayer/@Go_Mu_Taoist_holy_moon>\
+<SummonTaoLord/@Go_Mu_Taoist_soul_skel> , <Invisibility/@Go_Mu_Taoist_dark_hiden>\ \
 （21 - 30 等级 修炼魔法）\
-<幽灵盾/@Go_Mu_Taoist_dark_hangma> , <集体隐身术/@Go_Mu_Taoist_dark_masshiden> , <月魂灵波/@Go_Mu_Taoist_holy_Upmoon> , <神圣战甲术/@Go_Mu_Taoist_dark_deaji> , <困魔咒/@Go_Mu_Taoist_dark_holy> , <空拳刀法/@Go_Mu_Taoist_dark_musang> , <强魔震法/@Go_Mu_Taoist_dark_kangma> , <召唤神兽/@Go_Mu_Taoist_soul_sinsu>\ \
+<MagicProtect/@Go_Mu_Taoist_dark_hangma> , <MassInvis/@Go_Mu_Taoist_dark_masshiden> , <GtEvilSlayer/@Go_Mu_Taoist_holy_Upmoon> , <Resilience/@Go_Mu_Taoist_dark_deaji> , <TrapOctagon/@Go_Mu_Taoist_dark_holy> , <CombatKick/@Go_Mu_Taoist_dark_musang> , <ElementalSup/@Go_Mu_Taoist_dark_kangma> , <SummonShinso/@Go_Mu_Taoist_soul_sinsu>\ \
 （31 - 40 等级 修炼魔法）\
-<群体治愈术/@Go_Mu_Taoist_holy_massheal> , <超强召唤骷髅/@Go_Mu_Taoist_jinsoul_skel> , <猛虎强势/@Go_Mu_Taoist_mengho> , <回生术/@Go_Mu_Taoist_soseng>\ \
+<MassHealing/@Go_Mu_Taoist_holy_massheal> , <SummonJin/@Go_Mu_Taoist_jinsoul_skel> , <BloodLust/@Go_Mu_Taoist_mengho> , <Resurrection/@Go_Mu_Taoist_soseng>\ \
 <Exit/@exit>
 }
 

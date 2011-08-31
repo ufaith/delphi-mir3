@@ -1,0 +1,120 @@
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 0
+;-------------------------------------------------------------------------------
+1/1   NightHorn
+1/4    Gold  600
+1/80   HPPotion(M)
+1/240   MPPotion(M)
+1/160   HPPotion(L)
+1/160   HPPotion(L)
+1/240   HPPotion(XL)
+1/500  MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; ¡¶∑· æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+1/10  “π√˜÷È
+
+;-------------------------------------------------------------------------------
+;; ¿Ã∫•∆Æ æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+;;1/10  »Øæ‡(10000)
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 1
+;-------------------------------------------------------------------------------
+1/500   DragonRing
+1/500   FireJadeRing
+1/500   TianmingRing
+
+1/500   GoldBracelet
+1/500   DeathGlove
+1/500   GhostGlove
+
+1/500   GloryNecklace
+1/500   AngerBell
+1/500   LotusMirror
+1/500   GhostNecklace
+
+1/500   ColorfulShoes
+
+1/500   BambooHat
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 2
+;-------------------------------------------------------------------------------
+1/2000   BlackGlove
+
+1/1000   SkiesNecklace
+1/1000   SilverMirrorNecklace
+1/1000   ColorfulNecklace
+1/1000   SoulNecklace
+1/1000   WarriorNecklace
+
+1/2000 AttackWater(L)
+1/2000 NaturalWater(L)
+1/2000 SoulWater(L)
+1/2000 VigorousWater(L)
+1/2000 PhysicalGodWater(L)
+1/2000 MagicalGodWater(L)
+
+1/2000   VineHelmet
+1/4000   AngerBell£®ª£©
+1/4000   AngerBell(Wind)
+1/4000   AngerBell(Thunder)
+1/4000   AngerBell(Ice)
+1/4000   LotusMirror£®…Ò •£©
+1/4000   LotusMirror(Dark)
+1/4000   LotusMirror(Mirage)
+1/4000   BlackGlove
+;------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 3
+;-------------------------------------------------------------------------------
+1/4000  DevilRobe(M)
+1/4000  DevilRobe(F)
+1/4000  WarArmor(M)
+1/4000  WarArmor(F)
+1/4000  SpecterArmor(M)
+1/4000  SpecterArmor(F)
+1/4000  FortunatelyRing
+1/4000  LuckyHelmet
+
+;-------------------------------------------------------------------------------
+;; ¡ˆø™ ∆Ø»≠ æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+1/8000   NightWand
+1/20000  NightBloodDrink 
+
+1/8000   NightSilverSnake
+1/40000  PolarNightStick  
+
+1/8000   NightDestinyBlade
+1/20000  NightInferno
+
+1/30000  GodNecklace(Wind)
+1/30000  GodNecklace(Thunder)
+1/30000  GodNecklace(Fire) 
+1/30000  GodNecklace(Ice)
+1/30000  CatEye£®…Ò •£©
+1/30000  CatEye£®∞µ∫⁄£©
+1/30000  CatEye£®ª√”∞£©
+
+1/30000  KnightBracelet
+1/30000  DragonBracelet
+1/30000  LoveBracelet
+
+1/30000  DamageNecklace
+1/30000  WindIndia
+1/30000  ResentmentNecklace
+
+1/80000  DarkSeal(Fire)
+1/80000  DarkSeal(Wind)
+1/80000  DarkSeal(Thunder) 
+1/80000  DarkSeal(Ice)
+1/80000  ResentmentNecklace£®…Ò •£©
+1/80000  ResentmentNecklace£®∞µ∫⁄£©
+1/80000  ResentmentNecklace£®ª√”∞£©
+
+1/40000  BraveMedal
+1/120000 VenerableMedal
+1/240000 KingMedal

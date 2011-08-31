@@ -1,7 +1,3 @@
-
-;贺年大使                 1            381  140   『Ambassador』       0    8
-;贺年大使                 02           257  202   『Ambassador』       0    8
-
 ;-------------------------------------------------------------------------------
 ;[Bichun Castle]@reloadnpc
 ;-------------------------------------------------------------------------------
@@ -51,8 +47,9 @@
 ;15Magic_Bichon1                     0        450   388    (Magic1)         0   15 
 15Magic_Bichon2                     0        462   435    (Magic2)       0   18 
 15Magic_Bichon3                     0        449   433    (Magic3)       0   16 
-06Inn_SkeletonCave                  0        462   398    (Inn)_SkeletonCave     0    3 
-07Grocery_SkeletonCave              0        453   391    (Grocery)_SkeletonCave       0    9 
+
+06Inn_SkeletonCave                  0        462   398    (Inn)     0    3 
+07Grocery_SkeletonCave              0        453   391    (Grocery)       0    9 
 ;-------------------------------------------------------------------------------
 ;[Special Bichon NPC]
 ;-------------------------------------------------------------------------------
@@ -176,7 +173,7 @@
 ;-------------------------------------------------------------------------------
 ;[PantomWood]
 ;-------------------------------------------------------------------------------
-;;13Blocker_PantomWood                12        43   145    飞龙           0   45 
+;;13Blocker_PantomWood                12        43   145    Dragon           0   45 
 
 ;-------------------------------------------------------------------------------
 ;[SnakeVally]
@@ -202,7 +199,6 @@
 ;-------------------------------------------------------------------------------
 02Weapon_Sabuk                      3        195   183    (WeaponShop)           0    0 
 03Armor_Sabuk                       3        229   150    (Armor)           0    7 
-04Potion_Sabuk                      3        204   196    (Potion)           0    5 
 06Inn_Sabuk                         3        214   128    (Inn)           0    6 
 07Grocery_Sabuk                     3        229   168    (Grocery)         0    3 
 08Accessory_Sabuk                   3        211   183    (Accessory)           0    5 
@@ -240,7 +236,6 @@
 18SubFlag_Sabuk                     3        204   146    (SubFlag3)     0 10000
 18SubFlag_Sabuk                     3        195   155    (SubFlag4)     0 10000
 ;Gate (Disappear on Battle)[left]
-18SubFlag_Sabuk                     3        165   190    (SubFlag5)     0 10000
 18SubFlag_Sabuk                     3        170   195    (SubFlag6)     0 10000
 ;Gate (Disappear on Battle)[front]
 18SubFlag_Sabuk                     3        233   196    (SubFlag7)     0 10000
@@ -460,7 +455,6 @@ BardHotel                 82     212   71    (BardHotel)           0   39
 BardSeller               82     201   98    (BardSeller)         0   18
 BardJewelry               82     206   140   (BardJewelry)         0   5
 BardRental               82     171   125   (BardRental)         0   15
-Bard Bookstore                 82     177   100   (BardBookstore)           0   2 
 BardBlackSmith               82     282   159   (BardBlackSmith)         0   0 
 BardClothing               82     262   179   (BardClothing)         0   7
 BardPharmacy                 82     211    97   (BardPharmacy)           0   1

@@ -15,26 +15,26 @@ MOV D3 0
 {FCOLOR=250}包裹装载金币上限为2亿,请兑换时计算清楚,否则后果自负{FCOLOR=250}\
 1积分=50万金币         <输入需要兑换的积分值/@@exgold>\
 ;<汤圆（自然）         [1点积分]/@exchang(汤圆（自然）,1)>\
-;<汤圆（灵魂）         [1点积分]/@exchang(汤圆（灵魂）,1)>\
+;<汤圆（Soul）         [1点积分]/@exchang(汤圆（Soul）,1)>\
 ;<汤圆（攻击）         [1点积分]/@exchang(汤圆（攻击）,1)>\
 ;<汤圆（疾风）         [1点积分]/@exchang(汤圆（疾风）,1)>\
 ;<汤圆（体力）         [1点积分]/@exchang(汤圆（体力）,1)>\
 ;<汤圆（魔力）         [1点积分]/@exchang(汤圆（魔力）,1)>\
-<积分换神秘钥匙         [4点积分]/@exchang(神秘钥匙,4)>\
-<积分换师徒传送卷       [1点积分]/@exchang(师徒传送卷,1)>\
+<积分换神秘钥匙         [4点积分]/@exchang(SecretKey,4)>\
+<积分换师徒传送卷       [1点积分]/@exchang(MentorTeleport,1)>\
 <积分换头子证件         [16点积分]/@exchang(头子证件,16)>\
-<积分换钢玉石           [2点积分]/@exchang(钢玉石,2)>\
-<积分换回生玫瑰         [4点积分]/@exchang(玫瑰,4)>\
-;<积分换祝福油           [3点积分]/@exchang(祝福油,3)>\
-<积分换连环明珠         [16点积分]/@exchang(连环明珠,16)>\
-<积分换嫁祸卡           [80点积分]/@exchang(嫁祸卡,80)>\
-<积分换魔晶石           [64点积分]/@exchang(魔晶石,64)>\
-<积分换勇者勋章         [1点积分]/@exchang(勇者勋章,1)>\
-<积分换尊者勋章         [3点积分]/@exchang(尊者勋章,3)>\
-<积分换王者勋章         [5点积分]/@exchang(王者勋章,5)>\
-<积分换圣者勋章         [10点积分]/@exchang(圣者勋章,10)>\
-<积分换白金勋章         [14点积分]/@exchang(白金勋章,14)>\
-<积分换金刚勋章         [19点积分]/@exchang(金刚勋章,19)>\\
+<积分换钢玉石           [2点积分]/@exchang(JadeSteel,2)>\
+<积分换回生玫瑰         [4点积分]/@exchang(Rose,4)>\
+;<积分换祝福油           [3点积分]/@exchang(BlessingOil,3)>\
+<积分换连环明珠         [16点积分]/@exchang(PearlChain,16)>\
+<积分换嫁祸卡           [80点积分]/@exchang(FramedCard,80)>\
+<积分换魔晶石           [64点积分]/@exchang(Spar,64)>\
+<积分换勇者勋章         [1点积分]/@exchang(BraveMedal,1)>\
+<积分换尊者勋章         [3点积分]/@exchang(VenerableMedal,3)>\
+<积分换王者勋章         [5点积分]/@exchang(KingMedal,5)>\
+<积分换圣者勋章         [10点积分]/@exchang(HolyMedal,10)>\
+<积分换白金勋章         [14点积分]/@exchang(PlatinumMedal,14)>\
+<积分换金刚勋章         [19点积分]/@exchang(JingangMedal,19)>\\
 <听取勋章的说明/@xunzhangshuoming>\
 <返 回/@Manager_4>\
 
@@ -58,7 +58,7 @@ MOV P1 %D0
 MOV P2 500000
 MUL P1 P2
 MOV D3 %P9
-GIVE 金币 %D3
+GIVE Gold %D3
 DECJFPOINT %D0
 SYSMSG "交易成功,扣除了<$output(D0)>点积分!"
 goto @shajig

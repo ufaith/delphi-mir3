@@ -1,0 +1,63 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1    Gold 5000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/8   DragonRing
+1/8   FireJadeRing
+1/8   TianmingRing
+
+1/8   GoldBracelet
+1/8   DeathGlove
+1/8   GhostGlove
+
+1/8   GloryNecklace
+1/8   AngerBell
+1/8   LotusMirror
+1/8   GhostNecklace
+
+1/8   ColorfulShoes
+
+1/8   BambooHat
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/15   BlackGlove
+
+1/15   SkiesNecklace
+1/15   SilverMirrorNecklace
+1/15   ColorfulNecklace
+1/15   SoulNecklace
+1/15   WarriorNecklace
+
+1/15   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/60  FortunatelyRing
+
+1/60  DevilRobe(M)
+1/60  DevilRobe(F)
+1/60  WarArmor(M)
+1/60  WarArmor(F)
+1/60  SpecterArmor(M)
+1/60  SpecterArmor(F)

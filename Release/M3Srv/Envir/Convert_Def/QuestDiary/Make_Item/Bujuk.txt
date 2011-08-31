@@ -2,10 +2,10 @@
 [@Bujuk_1]
 {
 那，你想制作什么药呢？ 有时侯制作药时也难免会失败，你留意啊。\ \
- <护身符（小）/@Make_Charm_BCharm>       ,    <神圣护身符（小）/@Make_Charm_HCharm> \
- <护身符（火）/@Make_Charm_Fcharm>       ,    <护身符（冰）/@Make_Charm_Icharm> \
- <护身符（雷）/@Make_Charm_Lcharm>       ,    <护身符（风）/@Make_Charm_Wcharm> \
- <灵魂护身符（小）/@Make_Charm_Rcharm>   ,     <灵魂护身符（中）/@Make_Charm_RcharmM> \
+ <Amulets(S)/@Make_Charm_BCharm>       ,    <HolyAmulets(S)/@Make_Charm_HCharm> \
+ <Amulets(Fire)/@Make_Charm_Fcharm>       ,    <Amulets(Ice)/@Make_Charm_Icharm> \
+ <Amulets(Thunder)/@Make_Charm_Lcharm>       ,    <Amulets(Wind)/@Make_Charm_Wcharm> \
+ <SoulAmulets(S)/@Make_Charm_Rcharm>   ,     <SoulAmulets(M)/@Make_Charm_RcharmM> \
 <前一步/@make_item_main> \
 <Exit/@exit>
 }
@@ -127,7 +127,7 @@
 
 [@Bujuk_17]
 {
-要制作护身符（风）的话，需要{FCOLOR=250}骷髅骨 3个，食人树的果实 1个， 鸡血 4瓶{FCOLOR=255}啊。\
+要制作护身符（风）的话，需要{FCOLOR=250}SkeltonBone 3个，FreshFruit 1个， ChickenBlood 4瓶{FCOLOR=255}啊。\
 护身符（风）是在骷髅骨和鸡血上添加了食人树的果实，所以跟一般的护身符不一样的。它是贮入了风的属性制作而成的。\ \
  <Exit/@exit>
 }
@@ -142,7 +142,7 @@
 
 [@Bujuk_19]
 {
-做的很好啊。。。消磨了{FCOLOR=250}骷髅骨 3个， 食人树的果实 1个，鸡血 4瓶{FCOLOR=255}啊。那么， 你想继续做吗？\ \
+做的很好啊。。。消磨了{FCOLOR=250}SkeltonBone 3个， FreshFruit 1个，ChickenBlood 4瓶{FCOLOR=255}啊。那么， 你想继续做吗？\ \
 <继续 制作/@Make_Charm_WCharm> \
 <前一步/@make_Charm_main> \
 <Exit/@exit>
@@ -150,7 +150,7 @@
 
 [@Bujuk_20]
 {
-要制作灵魂护身符（小）的话， 需要{FCOLOR=250}夜明珠 10个，神灵雕像 5个， 潘夜之泪 3个， 鸡血 2瓶{FCOLOR=255}啊。\
+要制作灵魂护身符（小）的话， 需要{FCOLOR=250}夜明珠 10个，GodsStatue 5个， NightTears 3个， ChickenBlood 2瓶{FCOLOR=255}啊。\
 灵魂护身符（小）是在鸡血和由潘夜之泪和夜明珠制作而成的传说药水和由神灵雕像磨成而制作的纸上写字而做成的。用这种方法制作而成的护身符上嵌着灵魂，所以在召魂时能发挥强大的力量。\ \
 <Exit/@exit>
 }
@@ -165,7 +165,7 @@
 
 [@Bujuk_22]
 {
-做的很好啊。。。消磨了{FCOLOR=250}夜明珠 10个，神灵雕像 5个，潘夜之泪 3个， 鸡血 2瓶{FCOLOR=255}啊。那么，你想继续做吗 ?\ \
+做的很好啊。。。消磨了{FCOLOR=250}夜明珠 10个，GodsStatue 5个，NightTears 3个， ChickenBlood 2瓶{FCOLOR=255}啊。那么，你想继续做吗 ?\ \
 <继续 制作/@Make_Charm_RCharm> \
 <前一步/@make_Charm_main> \
 <Exit/@exit>
@@ -173,7 +173,7 @@
 
 [@Bujuk_23]
 {
-要制作灵魂护身符（中）的话， 需要{FCOLOR=250}夜明珠 30个，神灵雕像 15个， 潘夜之泪 9个， 鸡血 6瓶{FCOLOR=255}啊。\
+要制作灵魂护身符（中）的话， 需要{FCOLOR=250}夜明珠 30个，GodsStatue 15个， NightTears 9个， ChickenBlood 6瓶{FCOLOR=255}啊。\
 灵魂护身符（中）是在鸡血和由潘夜之泪和夜明珠制作而成的传说药水和由神灵雕像磨成而制作的纸上写字而做成的。用这种方法制作而成的护身符上嵌着灵魂，所以在召魂时能发挥强大的力量。\ \
 <Exit/@exit>
 }
@@ -188,7 +188,7 @@
 
 [@Bujuk_25]
 {
-做的很好啊。。。消磨了{FCOLOR=250}夜明珠 30个，神灵雕像 15个，潘夜之泪 9个， 鸡血 6瓶{FCOLOR=255}啊。那么，你想继续做吗?\ \
+做的很好啊。。。消磨了{FCOLOR=250}夜明珠 30个，GodsStatue 15个，NightTears 9个， ChickenBlood 6瓶{FCOLOR=255}啊。那么，你想继续做吗?\ \
 <继续 制作/@Make_Charm_RCharmM> \
 <前一步/@make_Charm_main> \
 <Exit/@exit>

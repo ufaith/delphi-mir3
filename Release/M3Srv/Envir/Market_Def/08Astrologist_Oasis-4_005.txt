@@ -42,7 +42,7 @@ goto @SinQuest_diary
 #IF
 check [315] 1
 check [316] 0
-checkitem ∫Ω∫£»’÷æ 1
+checkitem Log 1
 #ACT
 goto @SinQuest_diary_1
 break
@@ -57,7 +57,7 @@ goto @SinQuest_ending
 #IF
 check [319] 1
 check [320] 0
-checkitem “≈∫° 1
+checkitem Remains 1
 #ACT
 goto @SinQuest_Ending_1
 break

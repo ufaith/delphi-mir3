@@ -114,8 +114,8 @@ begin
 
   #IF
   #ACT
-    Take      ¸ÖÓñÊ¯    1
-    Take      ½ð±Ò        10000
+    Take      JadeSteel    1
+    Take      Gold        10000
     RefineAccessories   %A0   %D2   %D3
 
   #IF

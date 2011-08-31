@@ -49,20 +49,20 @@ goto @main_0_0
 
 [Goods]
 ;ItemName      Volume     Hour
-道士头盔 50 1
-骷髅头盔 50 1
-幽灵战衣（男） 50 1
-幽灵战衣（女） 50 1
-恶魔长袍（男） 50 1
-恶魔长袍（女） 50 1
-战神盔甲（男） 50 1
-战神盔甲（女） 50 1
-天极道衣（男） 50 1
-天极道衣（女） 50 1
-袁灵法衣（男） 50 1
-袁灵法衣（女） 50 1
-龙鳞战甲（男） 50 1
-龙鳞战甲（女） 50 1
+TaoistHelmet 50 1
+SkullHelmet 50 1
+SpecterArmor(M) 50 1
+SpecterArmor(F) 50 1
+DevilRobe(M) 50 1
+DevilRobe(F) 50 1
+WarArmor(M) 50 1
+WarArmor(F) 50 1
+CelestialArmor(M) 50 1
+CelestialArmor(F) 50 1
+VestmentArmor(M) 50 1
+VestmentArmor(F) 50 1
+DragonArmor(M) 50 1
+DragonArmor(F) 50 1
 
 
 ;;------------------------------------------------------------------------------

@@ -33,8 +33,8 @@ mapmove 01 428 314
 checkbaggage
 checkgold 1100
 #ACT
-take ½ğ±Ò 1100
-give ³ïÂë 1
+take Gold 1100
+give Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Mabangjin.txt] @Mabangjin_4
 
@@ -52,8 +52,8 @@ give ³ïÂë 1
 checkbaggage
 checkgold 11000
 #ACT
-take ½ğ±Ò 11000
-give ³ïÂë 10
+take Gold 11000
+give Chip 10
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Mabangjin.txt] @Mabangjin_7
 
@@ -71,8 +71,8 @@ give ³ïÂë 10
 checkbaggage
 checkgold 55000
 #ACT
-take ½ğ±Ò 55000
-give ³ïÂë 50
+take Gold 55000
+give Chip 50
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Mabangjin.txt] @Mabangjin_10
 
@@ -87,10 +87,10 @@ give ³ïÂë 50
 
 [@changeMoney_1]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
-give ½ğ±Ò 900
+take Chip 1
+give Gold 900
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\Mabangjin.txt] @Mabangjin_13
 

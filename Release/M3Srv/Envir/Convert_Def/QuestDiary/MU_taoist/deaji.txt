@@ -40,19 +40,19 @@
 [@deaji_7]
 {
 吸收大自然真气时，不走火入魔的方法之一是找到可以协调大自然和你之间真气的 {FCOLOR=250}协调物{FCOLOR=255} 。此协调物要有最 {FCOLOR=250}洁净的大自然真气{FCOLOR=255} .. \
-这个协调物隐藏在 {FCOLOR=250}起爆石{FCOLOR=255} 里面.. 起爆石可在带着  {FCOLOR=250}比奇废矿{FCOLOR=255}  所得到的某种特殊物品就可进入的秘密地点获得。\ \
+这个协调物隐藏在 {FCOLOR=250}InitiationStone{FCOLOR=255} 里面.. 起爆石可在带着  {FCOLOR=250}比奇废矿{FCOLOR=255}  所得到的某种特殊物品就可进入的秘密地点获得。\ \
 <下一个/@mugong_Upac_next6>
 }
 
 [@deaji_8]
 {
-请在  {FCOLOR=250}比奇废矿{FCOLOR=255}  仔细找一下吧。那你就可以在秘密地点找到 {FCOLOR=250}起爆石{FCOLOR=255} 。\ \
+请在  {FCOLOR=250}比奇废矿{FCOLOR=255}  仔细找一下吧。那你就可以在秘密地点找到 {FCOLOR=250}InitiationStone{FCOLOR=255} 。\ \
 <Exit/@exit>
 }
 
 [@deaji_9]
 {
-好好.. 这个 {FCOLOR=250}起爆石{FCOLOR=255} 就是调节大自然和你之间真气的石头。当你拿到这颗石头的同时，你已经拥有了调节大自然和你之间真气的能力.. \
+好好.. 这个 {FCOLOR=250}InitiationStone{FCOLOR=255} 就是调节大自然和你之间真气的石头。当你拿到这颗石头的同时，你已经拥有了调节大自然和你之间真气的能力.. \
 你现在有充分的能力修炼神圣战甲术了...\ \
 <那么请给我神圣战甲术(秘籍)吧/@mugong_Upac_test_next>
 }
@@ -65,7 +65,7 @@
 
 [@deaji_11]
 {
-你丢了 {FCOLOR=250}起爆石{FCOLOR=255} ?? 那我可没办法让你修炼神圣战甲术..\ \
+你丢了 {FCOLOR=250}InitiationStone{FCOLOR=255} ?? 那我可没办法让你修炼神圣战甲术..\ \
 <Exit/@exit>
 }
 
@@ -83,9 +83,9 @@
 
 [@deaji_14]
 {
-要想修炼神圣战甲术, 首先要从比奇废矿的怪物身上夺回 {FCOLOR=250}神圣战甲术{FCOLOR=255} 。
+要想修炼神圣战甲术, 首先要从比奇废矿的怪物身上夺回 {FCOLOR=250}Resilience{FCOLOR=255} 。
 必须把你打败的僵尸掉下的神圣战甲术书放入包里，这样你就会被移动到废矿的秘密房间。
-那个房间是 {FCOLOR=250}尸王{FCOLOR=255} 居住的地方, 在这些怪物当中就可以得到 {FCOLOR=250}起爆石{FCOLOR=255} 。
+那个房间是 {FCOLOR=250}CorpseKing{FCOLOR=255} 居住的地方, 在这些怪物当中就可以得到 {FCOLOR=250}InitiationStone{FCOLOR=255} 。
 把起爆石给我带来即可。\ \ 
 <Exit/@exit>
 }

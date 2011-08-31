@@ -26,7 +26,7 @@ goto @mugong_upfireball_next1
 
 [@mugong_upfireball_next1]
 #IF
-checkmagic 大火球
+checkmagic AdamantineFB
 #SAY
 想修炼大火球魔法吗？\ 
 你还没有掌握大火球魔法吗？\ \
@@ -54,11 +54,11 @@ goto @mugong_upfireball_next2
 [@mugong_upfireball_next4_1]
 #IF
 #SAY
-如果再讲一次，那地方的所有火焰系列怪物只能用 {FCOLOR=250}焱火剑{FCOLOR=255} 杀死。这里有焱火剑， {FCOLOR=250}请带上再来。{FCOLOR=255}  \
+如果再讲一次，那地方的所有火焰系列怪物只能用 {FCOLOR=250}FireSword{FCOLOR=255} 杀死。这里有焱火剑， {FCOLOR=250}请带上再来。{FCOLOR=255}  \
 同时在训练场可以停留的时间是有限制的，因此不要吝惜创伤药，请速战速决！\ 
 <Exit/@exit>
 #ACT
-give 焱火剑 1
+give FireSword 1
 SET [516] 1
 
 [@mugong_upfireball_next4_2]
@@ -70,7 +70,7 @@ SET [516] 1
 
 [@mugong_upfireball_next5]
 #IF
-checkitemw 焱火剑 1
+checkitemw FireSword 1
 #SAY
 如果使用特殊加工成、锋利的剑进行实战，精神都将集中在剑头部。希望我们可以再见面。咯咯 \ 
 哦，规定的时间是5分钟。。希望你在规定的时间内可以成功。。。\ \ 
@@ -93,11 +93,11 @@ checkitemw 焱火剑 1
 #IF
 checkgold 5000
 #SAY
-在这里，焱火剑。。。注意不要丢失了哦。。\ \ 
+在这里，FireSword。。。注意不要丢失了哦。。\ \ 
 <Exit/@exit>
 #ACT
-give 焱火剑
-take 金币 5000
+give FireSword
+take Gold 5000
 #ELSESAY
 你没钱，还要焱火剑？如果你再讲一次，我就不再卖焱火剑了。\ \ 
 <Exit/@exit>
@@ -113,7 +113,7 @@ Monclear 02_004
 Param1 02_004
 Param2 25
 Param3 22
-MonGen 火焰沃玛61  3  5
+MonGen FlamingWooma61  3  5
 TimeRecall 5
 goto @mugong_upfireball_next8
 
@@ -176,10 +176,10 @@ check [752] 0
 #IF
 check [752] 0
 #ACT
-give 大火球（秘籍） 1
-give 金币 13000
-give 焰火项链  1
-takew 焱火剑 1
+give AdamantineFB 1
+give Gold 13000
+give FireworksNecklace  1
+takew FireSword 1
 reset [516] 1
 set [752] 1
 #SAY
@@ -194,7 +194,7 @@ set [752] 1
 
 [@mugong_upfireball_retry2]
 #IF
-checkitemw 焱火剑 1
+checkitemw FireSword 1
 #SAY
 使用特殊加工成锋利的剑进行实战，精神就会集中在剑头部。希望我们可以再见面。咯咯 \
 哦，规定时间是3分钟。。希望你在规定的时间内一定可以成功。。。\ \ 
@@ -217,11 +217,11 @@ checkitemw 焱火剑 1
 #IF
 checkgold 5000
 #SAY
-在这里，焱火剑。。。注意不要丢失了。。\ \ 
+在这里，FireSword。。。注意不要丢失了。。\ \ 
 <Exit/@exit>
 #ACT
-give 焱火剑
-take 金币 5000
+give FireSword
+take Gold 5000
 #ELSESAY
 你没钱，还要焱火剑？如果你再讲一次，我就不再卖焱火剑了。\ \
 <Exit/@exit>
@@ -237,7 +237,7 @@ Monclear 02_004
 Param1 02_004
 Param2 9
 Param3 12
-MonGen 火焰沃玛61 3 5
+MonGen FlamingWooma61 3 5
 TimeRecall 5
 map 02_004
 
@@ -252,7 +252,7 @@ map 02_004
 {
 #IF
 #SAY
-为了学习大火球魔法，带上我给你的 {FCOLOR=250}焱火剑{FCOLOR=255} ，然后在规定的时间内将训练场内的怪物都打倒。
+为了学习大火球魔法，带上我给你的 {FCOLOR=250}FireSword{FCOLOR=255} ，然后在规定的时间内将训练场内的怪物都打倒。
 焱火剑的特性是佩戴上一次后，自己就不会脱落。但是在昏迷或者失去耐久性的 时 候，才可以摘下来。
 为了通过测试一定要佩戴焱火剑，如果丢失了，请花钱买！\ \ 
 <Exit/@exit>

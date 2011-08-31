@@ -4,7 +4,7 @@
 {FCOLOR=250} 管理员菜单 {FCOLOR=255} \ \
 __<开始生存游戏挑战。/@StartIsland>\
 __<结束生存游戏挑战。/@FinishIsland>\
-__<改变地图属性(临时)/@Ch_Map> \ \
+__<改变地图属性(Temporary)/@Ch_Map> \ \
 }
 
 [@User_Main]

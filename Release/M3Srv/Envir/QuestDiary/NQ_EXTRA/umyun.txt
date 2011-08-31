@@ -65,9 +65,9 @@ goto @UMKING_MUMYUNG2_0
 
 [@UMKING_MUMYUNG2_0]
 #IF
-checkitem 无名日志 1
+checkitem UnknownLog 1
 #ACT
-take 无名日志 1
+take UnknownLog 1
 set [279] 1
 goto @UMKING_MUMYUNG2_1
 #ELSESAY
@@ -224,7 +224,7 @@ set [283] 1
 [@UMKING_MUMYUNG7]
 {
 #IF
-checkitem 地狱神钟 1
+checkitem GodBellHell 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\umyun.txt] @umyun_26
 
@@ -240,7 +240,7 @@ checkitem 地狱神钟 1
 goto @UMKING_MUMYUNG8_0
 [@UMKING_MUMYUNG8_0]
 #IF
-checkitem 沃玛金牌 1
+checkitem WoomaGold 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\umyun.txt] @umyun_28
 
@@ -283,7 +283,7 @@ goto @UMKING_MUMYUNG10_0
 
 [@UMKING_MUMYUNG10_0]
 #IF
-checkitem 灵魂明珠 1
+checkitem PearlSoul 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\umyun.txt] @umyun_33
 
@@ -377,12 +377,12 @@ check [297] 1
 
 [@UMKING_MUMYUNG13_1]
 #IF
-checkitem 灵魂明珠 1
-checkitem 沃玛神铁锤 1
+checkitem PearlSoul 1
+checkitem WoomaHammer 1
 #ACT
-take 沃玛金牌 1
-take 灵魂明珠 1
-take 沃玛神铁锤 1
+take WoomaGold 1
+take PearlSoul 1
+take WoomaHammer 1
 set [298] 1
 goto @UMKING_MUMYUNG13_2
 #ELSESAY
@@ -437,7 +437,7 @@ set [299] 1
 #IF
 checkjob warrior
 #ACT
-give 修罗 1
+give Ashura 1
 goto @UMKING_MUMYUNG13_8
 #ELSEACT
 goto @UMKING_MUMYUNG13_7_1
@@ -446,10 +446,10 @@ goto @UMKING_MUMYUNG13_7_1
 #IF
 checkjob wizard
 #ACT
-give 偃月 1
+give YanYue 1
 goto @UMKING_MUMYUNG13_8
 #ELSEACT
-give 降魔 1
+give ExorcizeSword 1
 goto @UMKING_MUMYUNG13_8
 
 [@UMKING_MUMYUNG13_8]
@@ -491,7 +491,7 @@ goto @UMKING_MUMYUNG15_0
 #IF
 checkjob warrior
 #ACT
-give 沃玛修罗 1
+give WomaAshura 1
 goto @UMKING_MUMYUNG15_3
 #ELSEACT
 goto @UMKING_MUMYUNG15_2
@@ -500,10 +500,10 @@ goto @UMKING_MUMYUNG15_2
 #IF
 checkjob wizard
 #ACT
-give 沃玛偃月 1
+give WomaYanyue 1
 goto @UMKING_MUMYUNG15_3
 #ELSEACT
-give 沃玛降魔 1
+give FertileSword 1
 goto @UMKING_MUMYUNG15_3
 
 [@UMKING_MUMYUNG15_3]
@@ -533,7 +533,7 @@ goto @UMKING_UDO1_1
 
 [@UMKING_UDO1_1]
 #IF
-checkitem 灵魂明珠 1
+checkitem PearlSoul 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\umyun.txt] @umyun_54
 
@@ -559,7 +559,7 @@ check [289] 1
 
 [@UMKING_UDO1_4]
 #IF
-checkitem 灵魂明珠 1
+checkitem PearlSoul 1
 #ACT
 takecheckitem
 goto @UMKING_UDO1_5
@@ -576,7 +576,7 @@ monclear D023_001
 param1 D023_001
 param2 19
 param3 17
-mongen 沃玛战将61 5 3
+mongen WoomaWarLord61 5 3
 goto @UMKING_UDO1_5_4
 
 [@UMKING_UDO1_5_4]
@@ -589,7 +589,7 @@ set [293] 1
 param1 D023_001
 param2 14
 param3 20
-mongen 火焰沃玛61 5 3
+mongen FlamingWooma61 5 3
 goto @UMKING_UDO1_5_5
 
 [@UMKING_UDO1_5_5]
@@ -614,7 +614,7 @@ monclear D023_001
 param1 D023_001
 param2 19
 param3 17
-mongen 沃玛战将61 5 3
+mongen WoomaWarLord61 5 3
 goto @UMKING_UDO1_7_4
 
 [@UMKING_UDO1_7_4]
@@ -626,7 +626,7 @@ set [293] 1
 param1 D023_001
 param2 14
 param3 20
-mongen 火焰沃玛61 5 3
+mongen FlamingWooma61 5 3
 goto @UMKING_UDO1_7_5
 
 [@UMKING_UDO1_7_5]
@@ -680,7 +680,7 @@ set [296] 1
 param1 D023_002
 param2 14
 param3 20
-mongen 牛老道 1 3
+mongen Cattle 1 3
 map D023_002
 
 [@UMKING_UDO3_4]
@@ -705,7 +705,7 @@ set [296] 1
 param1 D023_002
 param2 14
 param3 20
-mongen 牛老道 1 3
+mongen Cattle 1 3
 map D023_002
 }
 
@@ -753,7 +753,7 @@ check [274] 1
 
 [@UMKING_WANG1_1]
 #IF
-checkitem 沃玛金牌 1
+checkitem WoomaGold 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\umyun.txt] @umyun_69
 
@@ -793,28 +793,28 @@ goto @UMKING_WANG1_4_1
 
 [@UMKING_WANG1_4_1]
 #IF
-checkitem 沃玛金牌 1
+checkitem WoomaGold 1
 #ACT
-take 沃玛金牌 1
-give 金币 50000
+take WoomaGold 1
+give Gold 50000
 set [275] 1
 goto @UMKING_WANG1_5_1
 
 [@UMKING_WANG1_4_2]
 #IF
-checkitem 沃玛金牌 1
+checkitem WoomaGold 1
 #ACT
-take 沃玛金牌 1
-give 金币 100000
+take WoomaGold 1
+give Gold 100000
 set [275] 1
 goto @UMKING_WANG1_5_2
 
 [@UMKING_WANG1_4_3]
 #IF
-checkitem 沃玛金牌 1
+checkitem WoomaGold 1
 #ACT
-take 沃玛金牌 1
-give 金币 200000
+take WoomaGold 1
+give Gold 200000
 set [275] 1
 goto @UMKING_WANG1_5_3
 
@@ -1021,10 +1021,10 @@ check [284] 1
 
 [@UMKING_MUYUK3_1]
 #IF
-checkitem 地狱神钟 1
+checkitem GodBellHell 1
 #ACT
 takecheckitem
-give 沃玛金牌 1
+give WoomaGold 1
 goto @UMKING_MUYUK3_2
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\umyun.txt] @umyun_93

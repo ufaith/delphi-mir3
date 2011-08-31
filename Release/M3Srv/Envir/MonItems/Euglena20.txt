@@ -1,0 +1,18 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/2  Gold 10000
+1/2  SunPotion(S)
+1/2  SunPotion(S)
+1/2  SunPotion(S)
+1/2  SunPotion(S)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  HPPotion(M)
+1/2  MPPotion(M)
+1/2  MPPotion(M)

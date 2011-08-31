@@ -7,7 +7,7 @@
 <ÍÐ¸¶¹¥³Ç±øÆ÷/@leave_shooter>\
 <ÕÒ»Ø¹¥³Ç±øÆ÷/@getback_shooter>\ \
 <³öÊÛ¹¥³Ç±øÆ÷/@kill_shooter>\
-<¹ºÂò¼ý£¬Ê¯Í·/@buy>\ \
+<¹ºÂò¼ý£¬Stone/@buy>\ \
 }
 
 [@ShooterMarket_2]

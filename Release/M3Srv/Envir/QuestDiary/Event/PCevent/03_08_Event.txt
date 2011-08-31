@@ -10,11 +10,11 @@
 #IF
 checknamelist "\event\point200.txt"
 #ACT
-give 祝福油 1
-give 攻击神水（大） 1
-give 自然神水（大） 1
-give 疾风神水（大） 1
-give 灵魂神水（大） 1
+give BlessingOil 1
+give AttackWater(L) 1
+give NaturalWater(L) 1
+give VigorousWater(L) 1
+give SoulWater(L) 1
 delnamelist "\event\point200.txt"
 #SAY
 恭喜您，您获得了一份礼品！祝您游戏愉快！如果您还有礼品可领，请再次和我说话。\
@@ -47,11 +47,11 @@ delnamelist "\event\point200.txt"
 #IF
 checknamelist "\event\point720.txt"
 #ACT
-give 祝福油 3
-give 攻击神水（特） 2
-give 自然神水（特） 2
-give 疾风神水（特） 2
-give 灵魂神水（特） 2
+give BlessingOil 3
+give AttackWater(XL) 2
+give NaturalWater(XL) 2
+give VigorousWater(XL) 2
+give SoulWater(XL) 2
 delnamelist "\event\point720.txt"
 #SAY
 恭喜您，您获得了一份礼品！祝您游戏愉快！如果您还有礼品可领，请再次和我说话。

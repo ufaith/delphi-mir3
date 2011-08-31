@@ -41,7 +41,7 @@ Item has been repaired.\ \
 {
 ;掉落的物品    数量       hour
 ;; 战士
-青铜斧         1        18
+BronzeAxe         1        18
 
 }
 

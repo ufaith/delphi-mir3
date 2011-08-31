@@ -39,7 +39,7 @@ I do not want people like you here.\ \
 {
 我可以指导你以下的武功。\
 （31 - 40 等级 修炼魔法）\
-<爆裂火焰/@fireware_test_start>\ \
+<Explosion/@fireware_test_start>\ \
 <不寻求武功指导/@exit>
 }
 

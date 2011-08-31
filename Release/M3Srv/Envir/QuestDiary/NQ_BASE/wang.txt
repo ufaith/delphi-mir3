@@ -62,7 +62,7 @@ set [132] 1
 check [164] 1
 check [132] 0
 #ACT
-give 金币 3000
+give Gold 3000
 set [133] 0
 set [132] 1
 #SAY
@@ -139,7 +139,7 @@ check [167] 1
 #IF
 check [168] 0
 #ACT
-give 金币 5000
+give Gold 5000
 reset [132] 19
 set [168] 1
 #SAY
@@ -194,7 +194,7 @@ check [155] 1
 check [157] 1
 check [159] 1
 #ACT
-give 金币 25000
+give Gold 25000
 reset [152] 7
 set [169] 1
 #SAY
@@ -333,7 +333,7 @@ check [152] 1
 #IF
 checkgold 15000
 #ACT
-take 金币 15000
+take Gold 15000
 goto @INVITE_JABSANG_6_1
 #ELSEACT
 set [154] 1
@@ -358,7 +358,7 @@ check [155] 0
 check [152] 1
 checkgold 12000
 #ACT
-take 金币 12000
+take Gold 12000
 goto @INVITE_JABSANG_7_1
 #ELSEACT
 set [154] 1
@@ -409,7 +409,7 @@ check [155] 0
 check [152] 1
 checkgold 10000
 #ACT
-take 金币 10000
+take Gold 10000
 goto @INVITE_JABSANG_11_1
 #ELSEACT
 set [154] 1
@@ -452,9 +452,9 @@ set [153] 1
 #IF
 check [155] 0
 check [152] 1
-checkitem 烧酒 1
+checkitem Liquor 1
 #ACT
-take 烧酒 1
+take Liquor 1
 goto @INVITE_JABSANG_15
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_41
@@ -519,7 +519,7 @@ check [155] 0
 check [152] 1
 checkgold 30000
 #ACT
-take 金币 20000
+take Gold 20000
 goto @INVITE_JABSANG_25_1
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_48
@@ -609,7 +609,7 @@ goto @SHOW_BULSA_1_0
 
 [@SHOW_BULSA_1_0]
 #IF
-checkitem 角笛 1
+checkitem AngleFlute 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_57
 
@@ -617,7 +617,7 @@ checkitem 角笛 1
 break
 ;
 #IF
-checkitem 不死牌 1
+checkitem DieCard 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_58
 
@@ -625,7 +625,7 @@ checkitem 不死牌 1
 break
 ;
 #IF
-checkitem 灵魂护卫 1
+checkitem SoulGuard 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_59
 
@@ -633,7 +633,7 @@ checkitem 灵魂护卫 1
 break
 ;
 #IF
-checkitem 毁灭护身符 1
+checkitem DestructionAmulet 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_60
 
@@ -641,7 +641,7 @@ checkitem 毁灭护身符 1
 break
 ;
 #IF
-checkitem 沃玛金牌 1
+checkitem WoomaGold 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_61
 
@@ -649,7 +649,7 @@ checkitem 沃玛金牌 1
 break
 ;
 #IF
-checkitem 地狱神钟 1
+checkitem GodBellHell 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_62
 
@@ -657,7 +657,7 @@ checkitem 地狱神钟 1
 break
 ;
 #IF
-checkitem 灵魂明珠 1
+checkitem PearlSoul 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_63
 
@@ -741,9 +741,9 @@ set [158] 1
 #IF
 check [159] 0
 check [158] 1
-checkitem 回城卷 6
+checkitem TownTeleport 6
 #ACT
-take 回城卷 6
+take TownTeleport 6
 goto @GIVE_CHOGONG_1
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\wang.txt] @wang_73

@@ -113,8 +113,8 @@ check [131] 0
 #IF
 check [131] 0
 #ACT
-give π≈ºÆ 1
-give ª˘±æΩ£ ı 1
+give Ancient 1
+give Swordmanship 1
 reset [102] 28
 set [131] 1
 #SAY
@@ -167,8 +167,8 @@ check [131] 0
 check [105] 1
 check [131] 0
 #ACT
-give π≈ºÆ 1
-give ª˘±æΩ£ ı 1
+give Ancient 1
+give Swordmanship 1
 reset [102] 28
 set [131] 1
 #SAY
@@ -202,7 +202,7 @@ check [103] 0
 check [102] 1
 check [103] 0
 #ACT
-give »‚Ã¿ 1
+give Broth 1
 set [103] 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\warriorbase.txt] @warriorbase_23
@@ -268,10 +268,10 @@ check [106] 0
 
 [@Junsa_MQ_COMPLETE_4]
 #IF
-checkdura ≈£»‚ 10
+checkdura Beef 10
 #ACT
-take ≈£»‚ 1
-give Ω±“ 1000
+take Beef 1
+give Gold 1000
 set [105] 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\warriorbase.txt] @warriorbase_29
@@ -289,7 +289,7 @@ goto @Junsa_TAKE_GOGIGUK_0
 
 [@Junsa_TAKE_GOGIGUK_0]
 #IF
-checkitem »‚Ã¿ 1
+checkitem Broth 1
 #ACT
 goto @Junsa_TAKE_GOGIGUK_1
 #ELSESAY
@@ -301,8 +301,8 @@ goto @Junsa_TAKE_GOGIGUK_1
 check [103] 1
 check [163] 0
 #ACT
-take »‚Ã¿ 1
-give ÿ∞ ◊ 1
+take Broth 1
+give Dagger 1
 set [103] 0
 set [163] 1
 #SAY
@@ -329,11 +329,11 @@ check [164] 0
 
 [@Junsa_CQ_COMPLETE_0]
 #IF
-checkitem π≈ºÆ 1
+checkitem Ancient 1
 #ACT
 takecheckitem
-give Ω±“ 1000
-give «‡Õ≠Õ∑ø¯ 1
+give Gold 1000
+give BronzeHelmet 1
 goto @Junsa_CQ_COMPLETE_1
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\warriorbase.txt] @warriorbase_35

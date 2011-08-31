@@ -1,0 +1,78 @@
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+;1/40   GamePoints
+1/3    Gold 15000
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    FirnFrost 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    HPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+1/20    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 1
+;-------------------------------------------------------------------------------
+1/100   BlackGlove
+
+1/100   SkiesNecklace
+1/100   SilverMirrorNecklace
+
+1/100   ColorfulNecklace
+1/100   SoulNecklace
+1/100   WarriorNecklace
+
+1/100   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 2
+;-------------------------------------------------------------------------------
+1/200   FortunatelyRing
+
+1/200   DevilRobe(M)
+1/200   DevilRobe(F)
+1/200   WarArmor(M)
+1/200   WarArmor(F)
+1/200   SpecterArmor(M)
+1/200   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 3
+;-------------------------------------------------------------------------------
+1/1000  CelestialArmor(M)
+1/1000  CelestialArmor(F)
+1/1000  DragonArmor(M)
+1/1000  DragonArmor(F)
+1/1000  VestmentArmor(M)
+1/1000  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ∫∏Ω∫±ﬁ ¿¸øÎ æ∆¿Ã≈€µÈ
+;-------------------------------------------------------------------------------
+1/5000  DarkIronHelmet
+1/5000  KingRing
+1/5000  RaytheonRing
+1/5000  AnkhRing
+1/5000  RaytheonRing£®ª£©
+1/5000  RaytheonRing£®∑Á£©
+1/5000  RaytheonRing£®¿◊£©
+1/5000  RaytheonRing£®±˘£©
+1/5000  AnkhRing£®…Ò •£©
+1/5000  AnkhRing£®ª√”∞£©
+1/5000  AnkhRing£®∞µ∫⁄£©
+
+1/3000   SnakeCurse
+1/3000   Jingzhong
+1/3000   NormaWand
+1/3000   RulingStick
+1/3000   PromiseStaff
+1/3000   GuYuToken
+
+1/5000   Chest

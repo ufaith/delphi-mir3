@@ -25,61 +25,61 @@ _------------------------------------------------\
 [@护具类+]
 #SAY
 =物品名称===========价格=\
-<行者帽             [12]/@goumaiyd(行者帽,12)>\
-<霸龙头盔           [13]/@goumaiyd(霸龙头盔,13)>\
-<麒麟头盔           [14]/@goumaiyd(麒麟头盔,14)>\
-<血色头盔           [19800]/@goumaiyd(血色头盔,19800)>\
-<将军头盔           [19800]/@goumaiyd(将军头盔,19800)>\
-;<布衣（男）        [550]/@goumaiyd(布衣（男）,550)>\
-;<布衣（女）        [550]/@goumaiyd(布衣（女）,550)>\
-;<轻型盔甲（男）    [5500]/@goumaiyd(轻型盔甲（男）,5500)>\
-;<轻型盔甲（女）    [5500]/@goumaiyd(轻型盔甲（女）,5500)>\
-;<重盔甲（男）      [11000]/@goumaiyd(重盔甲（男）,11000)>\
-;<重盔甲（女）      [11000]/@goumaiyd(重盔甲（女）,11000)>\
-;<灵魂战衣（男）    [11000]/@goumaiyd(灵魂战衣（男）,11000)>\
-;<灵魂战衣（女）    [11000]/@goumaiyd(灵魂战衣（女）,11000)>\
-;<魔法长袍（男）    [11000]/@goumaiyd(魔法长袍（男）,11000)>\
-;<魔法长袍（女）    [11000]/@goumaiyd(魔法长袍（女）,11000)>\
-<恶魔长袍（男）    [11000]/@goumaiyd(恶魔长袍（男）,11000)>\
-<恶魔长袍（女）    [11000]/@goumaiyd(恶魔长袍（女）,11000)>\
-<幽灵战衣（男）    [33000]/@goumaiyd(幽灵战衣（男）,33000)>\
-<幽灵战衣（女）    [33000]/@goumaiyd(幽灵战衣（女）,33000)>\
-<战神盔甲（男）    [33000]/@goumaiyd(战神盔甲（男）,33000)>\
-<战神盔甲（女）    [33000]/@goumaiyd(战神盔甲（女）,33000)>\
-<袁灵法衣（男）    [55000]/@goumaiyd(袁灵法衣（男）,55000)>\
-<袁灵法衣（女）    [55000]/@goumaiyd(袁灵法衣（女）,55000)>\
-<龙鳞战甲（男）    [55000]/@goumaiyd(龙鳞战甲（男）,55000)>\
-<龙鳞战甲（女）    [55000]/@goumaiyd(龙鳞战甲（女）,55000)>\
+<WalkerHelmet             [12]/@goumaiyd(WalkerHelmet,12)>\
+<DragonHelmet           [13]/@goumaiyd(DragonHelmet,13)>\
+<KirinHelmet           [14]/@goumaiyd(KirinHelmet,14)>\
+<ColorHelmet           [19800]/@goumaiyd(ColorHelmet,19800)>\
+<GeneralHelmet           [19800]/@goumaiyd(GeneralHelmet,19800)>\
+;<Commoner(M)        [550]/@goumaiyd(Commoner(M),550)>\
+;<Commoner(F)        [550]/@goumaiyd(Commoner(F),550)>\
+;<LightArmor(M)    [5500]/@goumaiyd(LightArmor(M),5500)>\
+;<LightArmor(F)    [5500]/@goumaiyd(LightArmor(F),5500)>\
+;<HeavyArmor(M)      [11000]/@goumaiyd(HeavyArmor(M),11000)>\
+;<HeavyArmor(F)      [11000]/@goumaiyd(HeavyArmor(F),11000)>\
+;<SoulRobe(M)    [11000]/@goumaiyd(SoulRobe(M),11000)>\
+;<SoulRobe(F)    [11000]/@goumaiyd(SoulRobe(F),11000)>\
+;<MagicRobe(M)    [11000]/@goumaiyd(MagicRobe(M),11000)>\
+;<MagicRobe(F)    [11000]/@goumaiyd(MagicRobe(F),11000)>\
+<DevilRobe(M)    [11000]/@goumaiyd(DevilRobe(M),11000)>\
+<DevilRobe(F)    [11000]/@goumaiyd(DevilRobe(F),11000)>\
+<SpecterArmor(M)    [33000]/@goumaiyd(SpecterArmor(M),33000)>\
+<SpecterArmor(F)    [33000]/@goumaiyd(SpecterArmor(F),33000)>\
+<WarArmor(M)    [33000]/@goumaiyd(WarArmor(M),33000)>\
+<WarArmor(F)    [33000]/@goumaiyd(WarArmor(F),33000)>\
+<VestmentArmor(M)    [55000]/@goumaiyd(VestmentArmor(M),55000)>\
+<VestmentArmor(F)    [55000]/@goumaiyd(VestmentArmor(F),55000)>\
+<DragonArmor(M)    [55000]/@goumaiyd(DragonArmor(M),55000)>\
+<DragonArmor(F)    [55000]/@goumaiyd(DragonArmor(F),55000)>\
 <雪域战甲（女）     [55000]/@goumaiyd(雪域战甲（女）,55000)>\
 <雪域战甲（男）     [55000]/@goumaiyd(雪域战甲（男）,55000)>\
-<天极道衣（男）    [55000]/@goumaiyd(天极道衣（男）,55000)>\
-<天极道衣（女）    [55000]/@goumaiyd(天极道衣（女）,55000)>\
-<麒麟宝铠（男）     [55000]/@goumaiyd(麒麟宝铠（男）,55000)>\
-<麒麟宝铠（女）     [55000]/@goumaiyd(麒麟宝铠（女）,55000)>\
-<仙风神袍（男）     [55000]/@goumaiyd(仙风神袍（男）,55000)>\
-<仙风神袍（女）     [55000]/@goumaiyd(仙风神袍（女）,55000)>\
+<CelestialArmor(M)    [55000]/@goumaiyd(CelestialArmor(M),55000)>\
+<CelestialArmor(F)    [55000]/@goumaiyd(CelestialArmor(F),55000)>\
+<UnicornArmor(M)     [55000]/@goumaiyd(UnicornArmor(M),55000)>\
+<UnicornArmor(F)     [55000]/@goumaiyd(UnicornArmor(F),55000)>\
+<ImmortalArmor(M)     [55000]/@goumaiyd(ImmortalArmor(M),55000)>\
+<ImmortalArmor(F)     [55000]/@goumaiyd(ImmortalArmor(F),55000)>\
 <梦幻宝铠（女）     [55000]/@goumaiyd(梦幻宝铠（女）,55000)>\
 <梦幻宝铠（男）     [55000]/@goumaiyd(梦幻宝铠（男）,55000)>\
-<天赐战甲（男）     [55000]/@goumaiyd(天赐战甲（男）,55000)>\
-<天赐战甲（女）     [55000]/@goumaiyd(天赐战甲（女）,55000)>\
-<绝世极品战甲（女）     [55000]/@goumaiyd(绝世极品战甲（女）,55000)>\
-<绝世极品战甲（男）     [55000]/@goumaiyd(绝世极品战甲（男）,55000)>\
+<HeavenArmor(M)     [55000]/@goumaiyd(HeavenArmor(M),55000)>\
+<HeavenArmor(F)     [55000]/@goumaiyd(HeavenArmor(F),55000)>\
+<MasterArmor(F)     [55000]/@goumaiyd(MasterArmor(F),55000)>\
+<MasterArmor(M)     [55000]/@goumaiyd(MasterArmor(M),55000)>\
 
-;<草鞋              [1650]/@goumaiyd(草鞋,1650)>\
-;<皮靴              [8250]/@goumaiyd(皮靴,8250)>\
-;<五彩鞋            [13200]/@goumaiyd(五彩鞋,13200)>\
-;<赤飞靴子          [16500]/@goumaiyd(赤飞靴子,16500)>\
-<天掌靴子           [33000]/@goumaiyd(天掌靴子,33000)>\
-<黑皮靴子           [49500]/@goumaiyd(黑皮靴子,49500)>\
-<黄金靴             [49500]/@goumaiyd(黄金靴,49500)>\
-<倚天靴             [49500]/@goumaiyd(倚天靴,49500)>\
-<青龙靴             [49500]/@goumaiyd(青龙靴,49500)>\
-<赤血靴             [49500]/@goumaiyd(赤血靴,49500)>\
-<白玉靴             [49500]/@goumaiyd(白玉靴,49500)>\
-<精制黄金靴          [49500]/@goumaiyd(精制黄金靴,49500)>\
-<精制倚天靴          [49500]/@goumaiyd(精制倚天靴,49500)>\
-<精制青龙靴          [49500]/@goumaiyd(精制青龙靴,49500)>\
-<百战之靴          [49500]/@goumaiyd(百战之靴,49500)>\
+;<Sandals              [1650]/@goumaiyd(Sandals,1650)>\
+;<Boots              [8250]/@goumaiyd(Boots,8250)>\
+;<ColorfulShoes            [13200]/@goumaiyd(ColorfulShoes,13200)>\
+;<RedBoots          [16500]/@goumaiyd(RedBoots,16500)>\
+<PalmBoots           [33000]/@goumaiyd(PalmBoots,33000)>\
+<BlackBoots           [49500]/@goumaiyd(BlackBoots,49500)>\
+<GoldBoots             [49500]/@goumaiyd(GoldBoots,49500)>\
+<HeavenBoots             [49500]/@goumaiyd(HeavenBoots,49500)>\
+<DragonBoots             [49500]/@goumaiyd(DragonBoots,49500)>\
+<FerricyanideBoots             [49500]/@goumaiyd(FerricyanideBoots,49500)>\
+<WhiteBoots             [49500]/@goumaiyd(WhiteBoots,49500)>\
+<RefinedGoldBoots          [49500]/@goumaiyd(RefinedGoldBoots,49500)>\
+<RefinedPointBoots          [49500]/@goumaiyd(RefinedPointBoots,49500)>\
+<RefinedDragonBoots          [49500]/@goumaiyd(RefinedDragonBoots,49500)>\
+<BattleBoots          [49500]/@goumaiyd(BattleBoots,49500)>\
 <返回上一页/@pingheng^&npc>\
 
 
@@ -113,7 +113,7 @@ CHECKBAGSIZE 1
 checkitem %A3   1
 #ACT
 take   %A3  %D4
-give  游戏点卷  %D2
+give  GamePoints  %D2
 loadvalue D1 "QuestDiary\WINMA_DATA\Recycling.txt" [%USERNAME] [%A3]
 inc D1 1
 savevalue "QuestDiary\WINMA_DATA\Recycling.txt" [%USERNAME] [%A3] [%D1]

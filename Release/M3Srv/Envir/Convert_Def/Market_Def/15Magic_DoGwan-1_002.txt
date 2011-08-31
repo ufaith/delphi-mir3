@@ -43,7 +43,7 @@ I do not want people like you here.\ \
 {
 贫道是清明子。\
 你找我有什么事情吗?\ \
-<公开/@masshiding_test_start>{FCOLOR=250}成致日志{FCOLOR=255}\
+<公开/@masshiding_test_start>{FCOLOR=250}LogInto{FCOLOR=255}\
 <寻求武功指导/@chung_mugong_main>\
 <Today's Tasks/@TQuest>\
 <Exit/@exit>
@@ -53,10 +53,10 @@ I do not want people like you here.\ \
 {
 我可以指导你以下的武功。\
 （1 - 10 等级 修炼魔法）\
-<治愈术/@heal_test_start> , <精神力战法/@ilgang_test_start>\
+<Healing/@heal_test_start> , <SpiritSword/@ilgang_test_start>\
 （11 - 25 等级 修炼魔法）\
-<施毒术/@poison_test_start> , <召唤骷髅/@recallskel_test_start> , <隐身术/@hiding_test_start>\
-<幽灵盾/@hangma_test_start> , <集体隐身术/@masshiding_test_start> , <神圣战甲术/@Upac_test_start>\ \
+<Poisoning/@poison_test_start> , <SummonTaoLord/@recallskel_test_start> , <Invisibility/@hiding_test_start>\
+<MagicProtect/@hangma_test_start> , <MassInvis/@masshiding_test_start> , <Resilience/@Upac_test_start>\ \
 <不寻求武功指导/@exit>
 }
 

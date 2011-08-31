@@ -1,0 +1,111 @@
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 0
+;-------------------------------------------------------------------------------
+1/1   ThunderGodBell
+1/4    Gold  650
+1/40   HPPotion(L)
+1/160   MPPotion(L)
+1/80   HPPotion(L)
+1/240   MPPotion(L)
+1/120   HPPotion(XL)
+1/480  MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; ¡¶∑· æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+1/20  MagicSkies
+
+;-------------------------------------------------------------------------------
+;; ¿Ã∫•∆Æ æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+;;1/10  »Øæ‡(10000)
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 1
+;-------------------------------------------------------------------------------
+1/300   BlackGlove
+1/300   SkiesNecklace
+1/300   SilverMirrorNecklace
+1/300   ColorfulNecklace
+1/300   SoulNecklace
+1/300   WarriorNecklace
+1/300   BambooHat
+1/300   VineHelmet
+1/300   GoldBracelet
+1/300   DeathGlove
+1/300   GhostGlove
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 2
+;-------------------------------------------------------------------------------
+1/800   DevilRobe(M)
+1/800   DevilRobe(F)
+1/800   WarArmor(M)
+1/800   WarArmor(F)
+1/800   SpecterArmor(M)
+1/800   SpecterArmor(F)
+
+1/4000   AttackWater(XL)
+1/4000   NaturalWater(XL)
+1/4000   SoulWater(XL)
+1/4000   VigorousWater(XL)
+1/4000   PhysicalGodWater(XL)
+1/4000   MagicalGodWater(XL)
+
+1/3000   FortunatelyRing
+1/3000   ◊œ±Ã¬ﬁ
+1/3000   TitanRing
+1/3000   PowerRing
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 3
+;-------------------------------------------------------------------------------
+1/5000  CelestialArmor(M)
+1/5000  CelestialArmor(F)
+1/5000  DragonArmor(M)
+1/5000  DragonArmor(F)
+1/5000  VestmentArmor(M)
+1/5000  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ¡ˆø™ ∆Ø»≠ æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+1/20000  GodNecklace(Wind) 
+1/20000  GodNecklace(Thunder)
+1/20000  GodNecklace(Fire)
+1/20000  GodNecklace(Ice)
+1/20000  CatEye£®…Ò •£©
+1/20000  CatEye£®∞µ∫⁄£©
+1/20000  CatEye£®ª√”∞£©
+
+1/50000  KingRing
+1/50000  RaytheonRing
+1/50000  AnkhRing
+1/50000  HellGlove
+
+1/2000  RedBoots
+1/6000  PalmBoots
+
+1/10000  WalkerHelmet
+1/10000  DragonHelmet
+1/40000  HeavenHelmet
+1/80000  DarkIronHelmet
+
+1/50000  SnakeCurse
+1/50000  Jingzhong
+1/100000  NormaWand
+
+1/30000  KnightBracelet
+1/30000  DragonBracelet
+1/30000  LoveBracelet
+
+1/50000 RaytheonRing£®ª£©
+1/50000 RaytheonRing£®∑Á£©
+1/50000 RaytheonRing£®¿◊£©
+1/50000 RaytheonRing£®±˘£©
+1/50000 AnkhRing£®…Ò •£©
+1/50000 AnkhRing£®ª√”∞£©
+1/50000 AnkhRing£®∞µ∫⁄£©
+
+1/16000  BraveMedal
+1/80000 VenerableMedal
+1/160000 KingMedal

@@ -26,7 +26,7 @@ random 5
 Param1 02_005
 Param2 15
 Param3 14
-MonGen 火焰沃玛61 3 1
+MonGen FlamingWooma61 3 1
 break
 #SAY
 哦。。。（这家伙，在瞎说。好像出现了什么失误。。）\
@@ -34,7 +34,7 @@ break
 Param1 02_005
 Param2 15
 Param3 14
-MonGen 火焰沃玛61 1 1
+MonGen FlamingWooma61 1 1
 break
 #SAY
 哦。。。（这家伙，在瞎说。根本没有什么嘛）\

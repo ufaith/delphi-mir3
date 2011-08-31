@@ -3,7 +3,7 @@
 #if
 #act
 #say
-<´«ËÍ/@zou3>\
+<UserMove/@zou3>\
 <Àë¿ª/@exit>
 
 

@@ -276,10 +276,10 @@ SET [619] 1 ;任务开始
 
 [@2_1环任务领奖]
 #IF
-checkitem 铁矿 10
-checkduraeva 铁矿 10
+checkitem IronOre 10
+checkduraeva IronOre 10
 #ACT
-TAKE 铁矿 10
+TAKE IronOre 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10块纯度10的铁矿吗？你的效率也太低了点吧。。。\
@@ -288,9 +288,9 @@ GOTO @领奖励吧_2
 
 [@2_2环任务领奖]
 #IF
-checkitem 蜘蛛线 10
+checkitem SpiderLine 10
 #ACT
-TAKE 蜘蛛线 10
+TAKE SpiderLine 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10条蜘蛛线吗？？你的效率也太低了点吧。。。\
@@ -299,9 +299,9 @@ GOTO @领奖励吧_2
 
 [@2_3环任务领奖]
 #IF
-checkitem 指甲 10
+checkitem Fingernail 10
 #ACT
-TAKE 指甲 10
+TAKE Fingernail 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10个指甲吗？？你的效率也太低了点吧。。。\
@@ -310,9 +310,9 @@ GOTO @领奖励吧_2
 
 [@2_4环任务领奖]
 #IF
-checkitem 褐色栗子 10
+checkitem BrownChestnut 10
 #ACT
-TAKE 褐色栗子 10
+TAKE BrownChestnut 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10个褐色栗子吗？？你的效率也太低了点吧。。。\
@@ -321,9 +321,9 @@ GOTO @领奖励吧_2
 
 [@2_5环任务领奖]
 #IF
-checkitem 万年雪霜 10
+checkitem FirnFrost 10
 #ACT
-TAKE 万年雪霜 10
+TAKE FirnFrost 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10个万年雪霜吗？？你的效率也太低了点吧。。。\
@@ -332,9 +332,9 @@ GOTO @领奖励吧_2
 
 [@2_6环任务领奖]
 #IF
-checkitem 号角 10
+checkitem Horn 10
 #ACT
-TAKE 号角 10
+TAKE Horn 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10个号角吗？？你的效率也太低了点吧。。。\
@@ -343,9 +343,9 @@ GOTO @领奖励吧_2
 
 [@2_7环任务领奖]
 #IF
-checkitem 僵尸骨头 10
+checkitem ZombieBone 10
 #ACT
-TAKE 僵尸骨头 10
+TAKE ZombieBone 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10个僵尸骨头吗？？你的效率也太低了点吧。。。\
@@ -354,9 +354,9 @@ GOTO @领奖励吧_2
 
 [@2_8环任务领奖]
 #IF
-checkitem 蚂蚁卵 10
+checkitem AntEggs 10
 #ACT
-TAKE 蚂蚁卵 10
+TAKE AntEggs 10
 GOTO @领奖励吧_2
 #ELSESAY
 还没有找到10个蚂蚁卵吗？？你的效率也太低了点吧。。。\

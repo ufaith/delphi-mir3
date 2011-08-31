@@ -577,7 +577,7 @@ check [307] 1
 
 [@205_CHECK1_2]
 #IF
-checkitem 战神油 10
+checkitem WarOil 10
 checkitem 石人心核 100
 #ACT
 Movr S0 100
@@ -592,14 +592,14 @@ goto @205_CHECK1_3
 Small S0 5
 check [310] 0
 check [307] 1
-checkitem 战神油 10
+checkitem WarOil 10
 checkitem 石人心核 100
 #ACT
 	LoadValue A0 "GM_Def\QT_TODAY\200Reward.txt" [205] [Reward_Race_5_Type1_1]
 	LoadValue P0 "GM_Def\QT_TODAY\200Reward.txt" [205] [Reward_Amount_5_Type1_1]
 	Give %A0 %P0
 	Mov A0 0
-take 战神油 10
+take WarOil 10
 take 石人心核 100
 reset [307] 2
 set [310] 1
@@ -614,7 +614,7 @@ goto @205_Reward
 Large S0 90
 check [307] 1
 check [310] 0
-checkitem 战神油 10
+checkitem WarOil 10
 checkitem 石人心核 100
 #ACT
 	LoadValue A0 "GM_Def\QT_TODAY\200Reward.txt" [205] [Reward_Race_10_Type1_1]
@@ -625,7 +625,7 @@ checkitem 石人心核 100
 	LoadValue P1 "GM_Def\QT_TODAY\200Reward.txt" [205] [Reward_Amount_10_Type1_2]
 	Give %A1 %P1
 	Mov A1 0
-take 战神油 10
+take WarOil 10
 take 石人心核 100
 reset [307] 2
 set [310] 1
@@ -641,7 +641,7 @@ set [310] 1
 	LoadValue P1 "GM_Def\QT_TODAY\200Reward.txt" [205] [Reward_Amount_85_Type1_2]
 	Give %A1 %P1
 	Mov A1 0
-take 战神油 10
+take WarOil 10
 take 石人心核 100
 reset [307] 2
 set [310] 1
@@ -3475,8 +3475,8 @@ check [307] 1
 
 [@227_CHECK1_2]
 #IF
-checkitem 铁矿 5
-checkduraeva 铁矿 15
+checkitem IronOre 5
+checkduraeva IronOre 15
 #ACT
 goto @227_CHECK1_2_1
 #ELSESAY
@@ -3484,8 +3484,8 @@ goto @227_CHECK1_2_1
 
 [@227_CHECK1_2_1]
 #IF
-checkitem 黑铁 5
-checkduraeva 黑铁 15
+checkitem BlackIronOre 5
+checkduraeva BlackIronOre 15
 #ACT
 goto @227_CHECK1_2_2
 #ELSESAY
@@ -3503,8 +3503,8 @@ goto @227_CHECK1_3
 #IF
 check [310] 0
 check [307] 1
-checkitem 铁矿 5
-checkitem 黑铁 5
+checkitem IronOre 5
+checkitem BlackIronOre 5
 #ACT
 movr s0 100
 inc s0 1
@@ -3520,16 +3520,16 @@ break
 #IF
 check [310] 0
 check [307] 1
-checkitem 铁矿 5
-checkitem 黑铁 5
+checkitem IronOre 5
+checkitem BlackIronOre 5
 small s0 10
 #ACT
 	LoadValue A0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Race_10_Type1_1]
 	LoadValue P0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Amount_10_Type1_1]
 	Give %A0 %P0
 	Mov A0 0
-take 铁矿 5
-take 黑铁 5
+take IronOre 5
+take BlackIronOre 5
 reset [307] 2
 set [310] 1
 mov s0 0
@@ -3544,15 +3544,15 @@ goto @227_Reward_Second
 Large S0 79
 check [310] 0
 check [307] 1
-checkitem 铁矿 5
-checkitem 黑铁 5
+checkitem IronOre 5
+checkitem BlackIronOre 5
 #ACT
 	LoadValue A0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Race_20_Type1_1]
 	LoadValue P0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Amount_20_Type1_1]
 	Give %A0 %P0
 	Mov A0 0
-take 铁矿 5
-take 黑铁 5
+take IronOre 5
+take BlackIronOre 5
 give 金币 140000
 ;
 reset [307] 2
@@ -3567,8 +3567,8 @@ mov s0 0
 	LoadValue P0 "GM_Def\QT_TODAY\200Reward.txt" [227] [Reward_Amount_70_Type1_1]
 	Give %A0 %P0
 	Mov A0 0
-take 铁矿 5
-take 黑铁 5
+take IronOre 5
+take BlackIronOre 5
 give 金币 140000
 ;
 reset [307] 2

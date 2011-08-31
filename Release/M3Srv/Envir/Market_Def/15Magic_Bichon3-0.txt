@@ -32,7 +32,7 @@ goto @main_0_0
 ;;------------------------------------------------------------------------------
 
 [@Go_Mu_Taoist_holy_heal]
-#CALL [\MU_Total_sell\Taoist\heal.txt] @Mu_Taoist_holy_heal
+#CALL [\MU_Total_sell\Taoist\Healing.txt] @Mu_Taoist_holy_heal
 
 [@Go_Mu_Taoist_dark_ilgang]
 #CALL [\MU_Total_sell\Taoist\ilgang.txt] @Mu_Taoist_dark_ilgang

@@ -159,9 +159,9 @@ set [173] 1
 #IF
 check [189] 0
 check [188] 1
-checkitem 半块不死牌 1
+checkitem DeadBrand 1
 #ACT
-take 半块不死牌 1
+take DeadBrand 1
 goto @GO_UNBAL1_KWAN_1
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\oma.txt] @oma_18
@@ -205,7 +205,7 @@ check [190] 1
 check [196] 0
 check [190] 1
 #ACT
-give 回城卷 6
+give TownTeleport 6
 reset [171] 19
 set [196] 1
 #SAY
@@ -247,7 +247,7 @@ set [192] 1
 check [199] 0
 check [197] 0
 check [195] 1
-checkitem 不死牌 1
+checkitem DieCard 1
 #ACT
 goto @OMAYONG_COMPLETE_1
 #ELSESAY
@@ -267,10 +267,10 @@ goto @OMAYONG_COMPLETE_3
 check [199] 0
 check [197] 0
 check [195] 1
-checkitem 不死牌 1
+checkitem DieCard 1
 #ACT
-take 不死牌 1
-give 金币 30000
+take DieCard 1
+give Gold 30000
 mov S1 0
 mov S2 0
 reset [191] 4
@@ -287,10 +287,10 @@ set [199] 1
 #IF
 check [197] 0
 check [195] 1
-checkitem 不死牌 1
+checkitem DieCard 1
 #ACT
-take 不死牌 1
-give 金币 30000
+take DieCard 1
+give Gold 30000
 set [197] 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\oma.txt] @oma_29
@@ -422,9 +422,9 @@ goto @GIVE_HAMMER_0
 #IF
 check [183] 0
 check [181] 1
-checkitem 王铁匠的铁锤 1
+checkitem BlacksmithsHammer 1
 #ACT
-take 王铁匠的铁锤 1
+take BlacksmithsHammer 1
 goto @GIVE_HAMMER_1
 set [182] 1
 #ELSESAY
@@ -444,7 +444,7 @@ check [181] 1
 check [183] 0
 check [181] 1
 #ACT
-give 青铜斧 1
+give BronzeAxe 1
 set [182] 0
 set [183] 1
 #SAY
@@ -535,8 +535,8 @@ check [199] 0
 check [198] 0
 check [196] 1
 #ACT
-give 浪雨刀 1
-give 强效太阳水 5
+give LongKnife 1
+give SunPotion(M) 5
 goto @JAYOUN_COMPLETE_2
 
 [@JAYOUN_COMPLETE_2]
@@ -737,7 +737,7 @@ check [196] 1
 check [191] 0
 check [196] 1
 #ACT
-give 半块不死牌 1
+give DeadBrand 1
 set [191] 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_BASE\oma.txt] @oma_71

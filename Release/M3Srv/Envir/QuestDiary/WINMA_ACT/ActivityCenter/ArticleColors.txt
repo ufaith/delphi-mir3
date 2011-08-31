@@ -11,8 +11,8 @@ MOV D3 %WENCAI
 ____欢迎您来到tgmir3，您目前的的文采值为{FCOLOR=250} <$OUTPUT(D3)> {FCOLOR=255}点\
 ____七夕又到了，在这里祝大家节日快乐！\
 ____这是tgmir3专门为玩家准备的七夕文彩抽奖活动，在活动中，\
-您可以用{FCOLOR=250}10{FCOLOR=255}点文彩值参加一次抽奖，奖品为“神秘钥匙，白金勋\
-章，金刚勋章，灵魂护身符（超大），魔晶石，连环明珠，游戏\
+您可以用{FCOLOR=250}10{FCOLOR=255}点文彩值参加一次抽奖，奖品为“SecretKey，白金勋\
+章，JingangMedal，SoulAmulets(L)，Spar，PearlChain，游戏\
 点卷，祝福油等\
 ____{FCOLOR=250}50{FCOLOR=255} 级以上的玩家可以参与抽奖\ \
 <参加抽奖/@检测测>\
@@ -53,7 +53,7 @@ equal   S2  0
 很不错，里面有100万金币.\
 <离 开/@exit>\
 #ACT
-give  金币 1000000
+give  Gold 1000000
 SETWENCAI - 10
 goto  @恢复初始
 break
@@ -171,7 +171,7 @@ equal   S2  8
 
 <离 开/@exit>\
 #ACT
-give 金币 1000000
+give Gold 1000000
 SETWENCAI - 10
 goto  @恢复初始
 break
@@ -229,13 +229,13 @@ break
 }
 
 [得到物品]
-物品1=连环明珠
-物品2=金条
-物品3=游戏点卷
-物品4=神秘钥匙
-物品5=白金勋章
-物品6=金刚勋章
-物品7=灵魂护身符（超大）
-物品8=魔晶石
-物品9=连环明珠
+物品1=PearlChain
+物品2=GoldBar
+物品3=GamePoints
+物品4=SecretKey
+物品5=PlatinumMedal
+物品6=JingangMedal
+物品7=SoulAmulets(L)
+物品8=Spar
+物品9=PearlChain
 ;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

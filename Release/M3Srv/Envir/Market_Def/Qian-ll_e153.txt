@@ -18,7 +18,7 @@ GOTO @清光了3
 #if
 checkgold 2000000
 #act
-take 金币 2000000
+take Gold 2000000
 mapmove  ll_e154
 #elsesay
 您没有这么多钱，我不能帮您传送!\

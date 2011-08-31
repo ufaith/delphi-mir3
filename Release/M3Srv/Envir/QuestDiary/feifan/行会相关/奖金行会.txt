@@ -18,7 +18,7 @@ CHECKLEVEL 45
 HasGuild
 EQUAL N1 0
 #ACT
-GIVE 金币 500000
+GIVE Gold 500000
 SaveValue "QuestDiary\行会提交\行会成员资金.txt" [领奖否] %B0 1
 #SAY
 领资金完毕。\

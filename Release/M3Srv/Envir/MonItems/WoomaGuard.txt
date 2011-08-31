@@ -1,0 +1,69 @@
+;; 기본 아이템 level 0
+
+1/1    Gold 12000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;; 기본 아이템 level 1
+
+1/10    LargeBracelet
+1/10    TaoistBracelet
+1/10    EbonyBracelet
+1/10    MagicBracelet
+
+1/10    BlackNecklace
+1/10    EbonyNecklace
+1/10    CrystalNecklace
+
+1/10    BronzeHelmet
+
+1/10    LightArmor(M)
+1/10    LightArmor(F)
+
+;; 기본 아이템 level 2
+
+1/20    BronzeAxe
+1/20    SeaSoul
+1/20    HalfMonth
+
+1/20    PearlRing
+1/20    SnakeEyeRing
+1/20    BlackCrystalRing
+
+1/20    SmallBracelet
+
+1/20    LanternNecklace
+1/20    AmberNecklace
+1/20    DevilsNecklace
+1/20    FriendlyNecklace
+
+1/20    Boots
+
+1/20    MagicHelmet
+
+;; 기본 아이템 level 3
+
+1/80    ExorcizeSword
+1/80    YanYue
+1/80    ZhanmaSaber
+1/80    Ashura
+
+1/80    CharmRing
+1/80    EthicsRing
+1/80    CoralRing
+1/80    GoldRing
+
+1/80    SturdyGlove
+
+1/80    TaoistHelmet
+
+;; 지역 특화 아이템
+
+1/10    BlessingOil

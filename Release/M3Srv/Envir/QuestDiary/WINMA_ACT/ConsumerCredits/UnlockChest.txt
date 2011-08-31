@@ -31,7 +31,7 @@ ____怪物首领身上藏有宝箱，宝箱里常常有很值钱的装备，或者\
 [@dakai]
 #IF
 check  [006] 0
-checkitem  宝箱 1
+checkitem  Chest 1
 #ACT
 goto @baoxiang
 #ELSESAY
@@ -51,10 +51,10 @@ goto @baoxiang-2
 [@baoxiang-2]
 #IF
 CheckJfPoint 1
-checkitem  宝箱 1
+checkitem  Chest 1
 check [006] 0
 #ACT
-take 宝箱 1
+take Chest 1
 DECJFPOINT 1
 set [006] 1
 #SAY
@@ -86,7 +86,7 @@ equal   S2  0
 很不错，里面有100万金币.\
 <离 开/@exit>\
 #ACT
-give  金币 1000000
+give  Gold 1000000
 goto  @恢复初始
 break
 
@@ -227,13 +227,13 @@ break
 }
 
 [得到物品]
-物品1=祝福油
-物品2=金条
-物品3=游戏点卷
-物品4=昏暗风印（幸运）
-物品5=破坏项链（幸运）
-物品6=怨恨项链（幸运）
-物品7=诅咒之药水
-物品8=魔晶石
-物品9=连环明珠
+物品1=BlessingOil
+物品2=GoldBar
+物品3=GamePoints
+物品4=WindIndia（Luck）
+物品5=DamageNecklace（Luck）
+物品6=ResentmentNecklace（Luck）
+物品7=CurseSyrup
+物品8=Spar
+物品9=PearlChain
 ;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

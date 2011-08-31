@@ -12,9 +12,9 @@ BREAK
 
 
 #IF
-checkitem 虹魔项链 1
-checkitem 虹魔戒指 1
-checkitem 虹魔手镯 1
+checkitem RainbowNecklace 1
+checkitem RainbowRing 1
+checkitem RainbowBracelet 1
 #ACT
 GOTO @11_1环任务领奖
 BREAK
@@ -49,15 +49,15 @@ SET [709] 1
 
 [@11_1环任务领奖]
 #IF
-checkitem 虹魔项链 1
-checkitem 虹魔戒指 1
-checkitem 虹魔手镯 1
+checkitem RainbowNecklace 1
+checkitem RainbowRing 1
+checkitem RainbowBracelet 1
 CHECK [707] 0
 CHECK [709] 1
 #ACT 
-take 虹魔项链 1
-take 虹魔戒指 1
-take 虹魔手镯 1
+take RainbowNecklace 1
+take RainbowRing 1
+take RainbowBracelet 1
 GMEXECUTE adjustExp %USERNAME + 60000000
 SET [707] 1
 SYSMSG "恭喜您完成了第十一环任务，可以开始第十二环任务了!"

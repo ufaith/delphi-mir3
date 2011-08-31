@@ -1,0 +1,71 @@
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 0
+;-------------------------------------------------------------------------------
+1/4   Gold  10000
+1/30    SecretKey
+1/4   Gold  10000
+1/4   Gold  10000
+1/4   Gold  10000
+1/8   BlessingOil
+1/8   WeaponOil
+1/40  FirnFrost
+1/40  FirnFrost
+1/5   HPPotion(L)
+1/20  MPPotion(L)
+1/10  HPPotion(XL)
+1/40  MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+1/10  Relics
+
+1/50   BlackGlove
+
+1/50   SkiesNecklace
+1/50   SilverMirrorNecklace
+
+1/50   ColorfulNecklace
+1/50   SoulNecklace
+1/50   WarriorNecklace
+
+1/50   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 2
+;-------------------------------------------------------------------------------
+1/1000   FortunatelyRing
+;-------------------------------------------------------------------------------
+;; ±‚∫ª æ∆¿Ã≈€ level 3
+;-------------------------------------------------------------------------------
+1/100  CelestialArmor(M)
+1/100  CelestialArmor(F)
+1/100  DragonArmor(M)
+1/100  DragonArmor(F)
+1/100  VestmentArmor(M)
+1/100  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; ¡ˆø™ ∆Ø»≠ æ∆¿Ã≈€
+;-------------------------------------------------------------------------------
+1/100  FerricyanideSword
+
+1/200  RulingStick
+1/200  PromiseStaff
+1/200  GuYuToken
+
+1/800  MeteorKnife
+1/800  Shadowbane
+1/800  MagicBlade
+
+1/2000  JustThing
+1/2000  Determination
+1/1000  SmartThing
+1/20000  BraveThing
+1/1000  ControlThing
+
+1/1      µÆ…˙÷È◊”
+1/200    BraveMedal
+1/600    VenerableMedal
+1/1200   KingMedal
+1/2400   HolyMedal
+1/2000   FramedCard
+1/10000  GamePoints

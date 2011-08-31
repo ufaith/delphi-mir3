@@ -1,0 +1,151 @@
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版
+[@main]
+#ACT
+;;SET [920] 0
+MOV A0 %USERNAME
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+ReadValueSql "TBL_CHARACTER" %A9 "FLD_BDC" @N_9
+
+[@N_9()]
+#ACT
+MOV 夺宝层数 %ARG(1)
+LOADVALUE D8 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control 总层数
+#IF
+!EQUAL 夺宝层数 %D8
+#ACT
+MOV D8 %夺宝层数
+INC 夺宝层数 1
+FormatStr "FLD_CHARNAME='%s'" %USERNAME
+mov A5 %A9
+FormatStr "FLD_BDC='%s'" %夺宝层数
+UPDATEVALUESQL "TBL_CHARACTER" %A5 %A9
+MOV A7 "第"
+ADDSTR A7 %夺宝层数
+ADDSTR A7 "层积分"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control %A7
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control 选择时间
+goto @进入计时
+#ELSEACT
+goto @得奖
+
+[@进入计时]
+#act
+mov A0 %USERNAME 
+MOV A7 "第"
+ADDSTR A7 %夺宝层数
+ADDSTR A7 "层积分"
+MOV A6 "第"
+ADDSTR A6 %夺宝层数
+ADDSTR A6 "层地图"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control %A7
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control %A6
+#IF
+CHECKJFPOINT %D0
+#ACT
+;;SET [920] 1
+Delaygoto [local] 5 @计时开始
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control 进入时间
+#SAY
+恭喜<$OUTPUT(A0)>,你现在是闯过<$OUTPUT(D8)>关!\
+进入<$OUTPUT(夺宝层数)>层.需要<$OUTPUT(D0)>点积分!\ 
+你有{FCOLOR=250}<$OUTPUT(D7)>{FCOLOR=255}秒在此逗留,完了就到下一层了!\
+{FCOLOR=249}快点去收拾家当哦!{FCOLOR=255}\
+#ELSEACT
+SYSMSG "对不起,你得积分不足!"
+goto @计时开始
+
+[@计时开始]
+#ACT
+loadvalue  D7 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control 进入时间
+mov 计时器 %D7
+close
+GOTO @测测时间
+
+[@测测时间]
+#IF
+SMALL 计时器 1
+#ACT
+GOTO @进入
+#ELSEACT
+GOTO @倒数时间
+
+[@倒数时间]
+#ACT
+SYSMSG "还剩下<$OUTPUT(计时器)>秒!"
+DEC 计时器 1
+Delaygoto [local] 2 @测测时间
+
+[@出去]
+#ACT
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control 回去地图代码  
+loadvalue D2 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control X坐标  
+loadvalue D3 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control Y坐标 
+MAPMOVE %A1 %D2 %D3
+SYSMSG "回去顺风哦!"
+Breaktimerecall
+break
+
+[@进入]
+#act
+mov A0 %USERNAME 
+MOV A7 "第"
+ADDSTR A7 %夺宝层数
+ADDSTR A7 "层积分"
+MOV A6 "第"
+ADDSTR A6 %夺宝层数
+ADDSTR A6 "层地图"
+loadvalue D0 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control %A7
+loadvalue A1 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control %A6
+#IF
+CHECKJFPOINT %D0
+#act
+DECJFPOINT %D0
+mapmove  %A1
+SysMsg  "你花费了<$OUTPUT(D0)>点积分进入夺宝禁区<$OUTPUT(夺宝层数)>层,祝您好运.您还剩余<$NEWJFPOINT>点积分！
+#ELSEACT
+SYSMSG  "对不起,你的积分不足!"
+GOTO @出去
+
+[@计时开始1]
+#ACT
+loadvalue D7 "QuestDiary\WINMA_DATA\Control\ForbiddenSeizes5.txt" Control 进入时间
+mov 计时器 %D7
+close
+GOTO @测测时间1
+
+[@测测时间1]
+#IF
+SMALL 计时器 1
+#ACT
+GOTO @出去
+#ELSEACT
+SYSMSG "恭喜你过关,你还剩下<$OUTPUT(计时器)>秒在这里停留!"
+DEC 计时器 1
+Delaygoto [local] 2 @测测时间1
+
+[@得奖]
+#IF
+CHECK [920] 0
+#SAY
+{FCOLOR=250}<$USERNAME>{FCOLOR=255} 恭喜你挑战成功\\
+系统将奖励你 {FCOLOR=250}2块{FCOLOR=255} 封魔石和 {FCOLOR=250}10W金币{FCOLOR=255}\\
+以及{FCOLOR=250}1个{FCOLOR=255} KingOrders \\
+感谢您的参与,同时您的 {FCOLOR=250}声望{FCOLOR=255} 提升2点\\
+{FCOLOR=250}您现在有资格去挑战暗影禁地了...{FCOLOR=255}\
+#ACT
+ADDSHENGWANG 2
+give ShadowStone 2
+give SecretKey 1
+give Gold 100000
+give KingOrders 1
+SET [920] 1
+set [018] 1
+lineMsg [Grobal] 一位伟大的勇士'<$USERNAME>'成功通过8大教主的重重考验
+sysmsg "恭喜您 <$USERNAME>,获得了2块封魔石+10W金币+一个神秘钥匙！声望提升2点,天王令一块"
+Delaygoto [local] 3 @计时开始1
+break
+#ELSEACT
+SYSMSG "发现[双杀数据]系统终止"
+GOTO @出去
+BREAK
+;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

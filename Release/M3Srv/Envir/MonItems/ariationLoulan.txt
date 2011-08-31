@@ -1,0 +1,59 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템
+;-------------------------------------------------------------------------------
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    FirnFrost 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    HPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+1/2    MPPotion(XL) 2
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/10   BlackGlove
+1/10   SkiesNecklace
+1/10   SilverMirrorNecklace
+1/10   ColorfulNecklace
+1/10   SoulNecklace
+1/10   WarriorNecklace
+1/10   VineHelmet
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/20   FortunatelyRing
+1/20   DevilRobe(M)
+1/20   DevilRobe(F)
+1/20   WarArmor(M)
+1/20   WarArmor(F)
+1/20   SpecterArmor(M)
+1/20   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/10  CelestialArmor(M)
+1/10  CelestialArmor(F)
+1/10  DragonArmor(M)
+1/10  DragonArmor(F)
+1/10  VestmentArmor(M)
+1/10  VestmentArmor(F)
+1/1500 YuIronBracelet
+1/1500 YuIronRing
+1/4000 YuIronNecklace
+1/2100 YuXiaBracelet
+1/3500 YuXiaRing
+1/4100 YuXiaNecklace
+1/230 MansBracelet
+1/3600 MountRing
+1/4900 MansNecklace
+;;Legend Of Mir 3 C3Engine

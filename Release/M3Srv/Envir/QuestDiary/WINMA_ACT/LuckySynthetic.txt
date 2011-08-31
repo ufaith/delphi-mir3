@@ -13,8 +13,8 @@ ____我这里可以用普通的稀世首饰合成{FCOLOR=250}带特殊属性的首饰{FCOLOR=255}.\
 ____你要合成哪种首饰？\
 ____有一点要说明，合成是有一定的几率，万一失败了就什么也\
 没了哦！！\ \
-<一级项链合成/@1jishoushi>   ←幸运(已开放)\
-<二级项链合成/@2jishoushi>   ←光彩(已开放)\
+<一级项链合成/@1jishoushi>   ←Luck(已开放)\
+<二级项链合成/@2jishoushi>   ←Glory(已开放)\
 ;;<三级项链合成/@3jishoushi>   ←荣耀(已开放)\\
 <离 开/@exit> \
 
@@ -23,22 +23,22 @@ ____有一点要说明，合成是有一定的几率，万一失败了就什么也\
 [@1jishoushi]
 #SAY
 武士类:\
-合成<[破坏项链（幸运）]/@chaojizhuangbx(破坏项链,4,破坏项链（幸运）)>    ←内有详细说明\
-合成<[铁系项链（幸运）]/@chaojizhuangbx(铁系项链,4,铁系项链（幸运）)>    ←内有详细说明\
-合成<[破荒项链（幸运）]/@chaojizhuangbx(破荒项链,4,破荒项链（幸运）)>    ←内有详细说明\
-合成<[流星项链（幸运）]/@chaojizhuangbx(流星项链,3,流星项链（幸运）)>    ←内有详细说明\
-合成<[气血项链（幸运）]/@chaojizhuangbx(气血项链,3,气血项链（幸运）)>    ←内有详细说明\
-合成<[毁灭魔链（幸运）]/@chaojizhuangbx(毁灭魔链,2,毁灭魔链（幸运）)>    ←内有详细说明\
+合成<[DamageNecklace（Luck）]/@chaojizhuangbx(DamageNecklace,4,DamageNecklace（Luck）)>    ←内有详细说明\
+合成<[IronNecklace（Luck）]/@chaojizhuangbx(IronNecklace,4,IronNecklace（Luck）)>    ←内有详细说明\
+合成<[WildNecklace（Luck）]/@chaojizhuangbx(WildNecklace,4,WildNecklace（Luck）)>    ←内有详细说明\
+合成<[MeteorsNecklace（Luck）]/@chaojizhuangbx(MeteorsNecklace,3,MeteorsNecklace（Luck）)>    ←内有详细说明\
+合成<[BloodNecklace（Luck）]/@chaojizhuangbx(BloodNecklace,3,BloodNecklace（Luck）)>    ←内有详细说明\
+合成<[MagicChain（Luck）]/@chaojizhuangbx(MagicChain,2,MagicChain（Luck）)>    ←内有详细说明\
 
 道士类：\
-合成<[怨恨项链（幸运）]/@chaojizhuangbx(怨恨项链,4,怨恨项链（幸运）)>    ←内有详细说明\
-合成<[定心项链（幸运）]/@chaojizhuangbx(定心项链,3,定心项链（幸运）)>    ←内有详细说明\
-合成<[乾坤一气（幸运）]/@chaojizhuangbx(乾坤一气,2,乾坤一气（幸运）)>    ←内有详细说明\
+合成<[ResentmentNecklace（Luck）]/@chaojizhuangbx(ResentmentNecklace,4,ResentmentNecklace（Luck）)>    ←内有详细说明\
+合成<[CenteringNecklace（Luck）]/@chaojizhuangbx(CenteringNecklace,3,CenteringNecklace（Luck）)>    ←内有详细说明\
+合成<[UniverseStretch（Luck）]/@chaojizhuangbx(UniverseStretch,2,UniverseStretch（Luck）)>    ←内有详细说明\
 
 法师类：\
-合成<[昏暗风印（幸运）]/@chaojizhuangbx(昏暗风印,4,昏暗风印（幸运）)>    ←内有详细说明\
-合成<[魔云项链（幸运）]/@chaojizhuangbx(魔云项链,3,魔云项链（幸运）)>    ←内有详细说明\
-合成<[五行神镜（幸运）]/@chaojizhuangbx(五行神镜,2,五行神镜（幸运）)>    ←内有详细说明\
+合成<[WindIndia（Luck）]/@chaojizhuangbx(WindIndia,4,WindIndia（Luck）)>    ←内有详细说明\
+合成<[MagicCloudNecklace（Luck）]/@chaojizhuangbx(MagicCloudNecklace,3,MagicCloudNecklace（Luck）)>    ←内有详细说明\
+合成<[FiveGodMirrors（Luck）]/@chaojizhuangbx(FiveGodMirrors,2,FiveGodMirrors（Luck）)>    ←内有详细说明\
 \
 <离 开/@exit> \
 
@@ -48,14 +48,14 @@ ____有一点要说明，合成是有一定的几率，万一失败了就什么也\
 Mov        A5     %ARG(1)           ;;原首饰
 Mov        N3     %ARG(2)           ;;成功几率
 Mov        A6     %ARG(3)           ;;合成首饰
-LoadValue B0 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成幸运] 金币
-LoadValue B1 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成幸运] 封魔石
+LoadValue B0 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成幸运] Gold
+LoadValue B1 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成幸运] ShadowStone
 
 
 #SAY
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}所需要的材料是：\
 _{FCOLOR=250} <$OUTPUT(A5)> {FCOLOR=255}一个\
-_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}金币\
+_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}Gold\
 _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 你确定要合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}吗？\
 <我要合成首饰/@查成功率>\
@@ -70,21 +70,21 @@ _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 [@2jishoushi]
 #SAY
 武士类:\
-合成<[破坏项链（光彩）]/@chaojizhuangbx2(破坏项链（幸运）,4,破坏项链（光彩）)>    ←内有详细说明\
-合成<[铁系项链（光彩）]/@chaojizhuangbx2(铁系项链（幸运）,4,铁系项链（光彩）)>    ←内有详细说明\
-合成<[破荒项链（光彩）]/@chaojizhuangbx2(破荒项链（幸运）,3,破荒项链（光彩）)>    ←内有详细说明\
-合成<[流星项链（光彩）]/@chaojizhuangbx2(流星项链（幸运）,3,流星项链（光彩）)>    ←内有详细说明\
-合成<[气血项链（光彩）]/@chaojizhuangbx2(气血项链（幸运）,3,气血项链（光彩）)>    ←内有详细说明\
-合成<[毁灭魔链（光彩）]/@chaojizhuangbx2(毁灭魔链（幸运）,2,毁灭魔链（光彩）)>    ←内有详细说明\
+合成<[DamageNecklace（Glory）]/@chaojizhuangbx2(DamageNecklace（Luck）,4,DamageNecklace（Glory）)>    ←内有详细说明\
+合成<[IronNecklace（Glory）]/@chaojizhuangbx2(IronNecklace（Luck）,4,IronNecklace（Glory）)>    ←内有详细说明\
+合成<[WildNecklace（Glory）]/@chaojizhuangbx2(WildNecklace（Luck）,3,WildNecklace（Glory）)>    ←内有详细说明\
+合成<[MeteorsNecklace（Glory）]/@chaojizhuangbx2(MeteorsNecklace（Luck）,3,MeteorsNecklace（Glory）)>    ←内有详细说明\
+合成<[BloodNecklace（Glory）]/@chaojizhuangbx2(BloodNecklace（Luck）,3,BloodNecklace（Glory）)>    ←内有详细说明\
+合成<[MagicChain（Glory）]/@chaojizhuangbx2(MagicChain（Luck）,2,MagicChain（Glory）)>    ←内有详细说明\
 
 道士类：\
-合成<[怨恨项链（光彩）]/@chaojizhuangbx2(怨恨项链（幸运）,4,怨恨项链（光彩）)>    ←内有详细说明\
-合成<[定心项链（光彩）]/@chaojizhuangbx2(定心项链（幸运）,3,定心项链（光彩）)>    ←内有详细说明\
-合成<[乾坤一气（光彩）]/@chaojizhuangbx2(乾坤一气（幸运）,2,乾坤一气（光彩）)>    ←内有详细说明\
+合成<[ResentmentNecklace（Glory）]/@chaojizhuangbx2(ResentmentNecklace（Luck）,4,ResentmentNecklace（Glory）)>    ←内有详细说明\
+合成<[CenteringNecklace（Glory）]/@chaojizhuangbx2(CenteringNecklace（Luck）,3,CenteringNecklace（Glory）)>    ←内有详细说明\
+合成<[UniverseStretch（Glory）]/@chaojizhuangbx2(UniverseStretch（Luck）,2,UniverseStretch（Glory）)>    ←内有详细说明\
 法师类：\
-合成<[昏暗风印（光彩）]/@chaojizhuangbx2(昏暗风印（幸运）,4,昏暗风印（光彩）)>    ←内有详细说明\
-合成<[魔云项链（光彩）]/@chaojizhuangbx2(魔云项链（幸运）,3,魔云项链（光彩）)>    ←内有详细说明\
-合成<[五行神镜（光彩）]/@chaojizhuangbx2(五行神镜（幸运）,2,五行神镜（光彩）)>    ←内有详细说明\
+合成<[WindIndia（Glory）]/@chaojizhuangbx2(WindIndia（Luck）,4,WindIndia（Glory）)>    ←内有详细说明\
+合成<[MagicCloudNecklace（Glory）]/@chaojizhuangbx2(MagicCloudNecklace（Luck）,3,MagicCloudNecklace（Glory）)>    ←内有详细说明\
+合成<[FiveGodMirrors（Glory）]/@chaojizhuangbx2(FiveGodMirrors（Luck）,2,FiveGodMirrors（Glory）)>    ←内有详细说明\
 \
 <离 开/@exit> \
 
@@ -94,14 +94,14 @@ _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 Mov        A5     %ARG(1)           ;;原首饰
 Mov        N3     %ARG(2)           ;;成功几率
 Mov        A6     %ARG(3)           ;;合成首饰
-LoadValue B0 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成光彩] 金币
-LoadValue B1 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成光彩] 封魔石
+LoadValue B0 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成光彩] Gold
+LoadValue B1 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成光彩] ShadowStone
 
 
 #SAY
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}所需要的材料是：\
 _{FCOLOR=250} <$OUTPUT(A5)> {FCOLOR=255}一个\
-_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}金币\
+_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}Gold\
 _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 你确定要合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}吗？\
 
@@ -115,21 +115,21 @@ _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 [@3jishoushi]
 #SAY
 武士类:\
-合成<[破坏项链（荣耀）]/@chaojizhuangbx2(破坏项链（光彩）,4,破坏项链（荣耀）)>    ←内有详细说明\
-合成<[铁系项链（荣耀）]/@chaojizhuangbx2(铁系项链（光彩）,4,铁系项链（荣耀）)>    ←内有详细说明\
-合成<[破荒项链（荣耀）]/@chaojizhuangbx2(破荒项链（光彩）,3,破荒项链（荣耀）)>    ←内有详细说明\
-合成<[流星项链（荣耀）]/@chaojizhuangbx2(流星项链（光彩）,3,流星项链（荣耀）)>    ←内有详细说明\
-合成<[气血项链（荣耀）]/@chaojizhuangbx2(气血项链（光彩）,3,气血项链（荣耀）)>    ←内有详细说明\
-合成<[毁灭魔链（荣耀）]/@chaojizhuangbx2(毁灭魔链（光彩）,2,毁灭魔链（荣耀）)>    ←内有详细说明\
+合成<[DamageNecklace（荣耀）]/@chaojizhuangbx2(DamageNecklace（Glory）,4,DamageNecklace（荣耀）)>    ←内有详细说明\
+合成<[IronNecklace（荣耀）]/@chaojizhuangbx2(IronNecklace（Glory）,4,IronNecklace（荣耀）)>    ←内有详细说明\
+合成<[WildNecklace（荣耀）]/@chaojizhuangbx2(WildNecklace（Glory）,3,WildNecklace（荣耀）)>    ←内有详细说明\
+合成<[MeteorsNecklace（荣耀）]/@chaojizhuangbx2(MeteorsNecklace（Glory）,3,MeteorsNecklace（荣耀）)>    ←内有详细说明\
+合成<[BloodNecklace（荣耀）]/@chaojizhuangbx2(BloodNecklace（Glory）,3,BloodNecklace（荣耀）)>    ←内有详细说明\
+合成<[MagicChain（荣耀）]/@chaojizhuangbx2(MagicChain（Glory）,2,MagicChain（荣耀）)>    ←内有详细说明\
 
 道士类：\
-合成<[怨恨项链（荣耀）]/@chaojizhuangbx2(怨恨项链（光彩）,4,怨恨项链（荣耀）)>    ←内有详细说明\
-合成<[定心项链（荣耀）]/@chaojizhuangbx2(定心项链（光彩）,3,定心项链（荣耀）)>    ←内有详细说明\
-合成<[乾坤一气（荣耀）]/@chaojizhuangbx2(乾坤一气（光彩）,2,乾坤一气（荣耀）)>    ←内有详细说明\
+合成<[ResentmentNecklace（荣耀）]/@chaojizhuangbx2(ResentmentNecklace（Glory）,4,ResentmentNecklace（荣耀）)>    ←内有详细说明\
+合成<[CenteringNecklace（荣耀）]/@chaojizhuangbx2(CenteringNecklace（Glory）,3,CenteringNecklace（荣耀）)>    ←内有详细说明\
+合成<[UniverseStretch（荣耀）]/@chaojizhuangbx2(UniverseStretch（Glory）,2,UniverseStretch（荣耀）)>    ←内有详细说明\
 法师类：\
-合成<[昏暗风印（荣耀）]/@chaojizhuangbx2(昏暗风印（光彩）,4,昏暗风印（荣耀）)>    ←内有详细说明\
-合成<[魔云项链（荣耀）]/@chaojizhuangbx2(魔云项链（光彩）,3,魔云项链（荣耀）)>    ←内有详细说明\
-合成<[五行神镜（荣耀）]/@chaojizhuangbx2(五行神镜（光彩）,2,五行神镜（荣耀）)>    ←内有详细说明\
+合成<[WindIndia（荣耀）]/@chaojizhuangbx2(WindIndia（Glory）,4,WindIndia（荣耀）)>    ←内有详细说明\
+合成<[MagicCloudNecklace（荣耀）]/@chaojizhuangbx2(MagicCloudNecklace（Glory）,3,MagicCloudNecklace（荣耀）)>    ←内有详细说明\
+合成<[FiveGodMirrors（荣耀）]/@chaojizhuangbx2(FiveGodMirrors（Glory）,2,FiveGodMirrors（荣耀）)>    ←内有详细说明\
 \
 <离 开/@exit> \
 
@@ -139,14 +139,14 @@ _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 Mov        A5     %ARG(1)           ;;原首饰
 Mov        N3     %ARG(2)           ;;成功几率
 Mov        A6     %ARG(3)           ;;合成首饰
-LoadValue B0 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成荣耀] 金币
-LoadValue B1 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成荣耀] 封魔石
+LoadValue B0 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成荣耀] Gold
+LoadValue B1 "QuestDiary\WINMA_ACT\LuckySynthetic.txt" [合成荣耀] ShadowStone
 
 
 #SAY
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}所需要的材料是：\
 _{FCOLOR=250} <$OUTPUT(A5)> {FCOLOR=255}一个\
-_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}金币\
+_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}Gold\
 _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 你确定要合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}吗？\
 
@@ -157,7 +157,7 @@ _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 [@查成功率]
 #IF
 checkitem   %A5  1
-checkitem   封魔石  %B1
+checkitem   ShadowStone  %B1
 checkgold   %B0
 #ACT
 movr S2 %N3    ;;成功几率
@@ -167,7 +167,7 @@ goto @合成X
 你的物品不全啊。请仔细检查。\
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}所需要的材料是：\
 _{FCOLOR=250} <$OUTPUT(A5)> {FCOLOR=255}一个\
-_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}金币\
+_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}Gold\
 _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石\
 看看你少了哪个物品？\
 <离 开/@exit> \
@@ -249,14 +249,14 @@ break
 [@huenhechengxxx]
 #IF
 checkitem   %A5  1
-checkitem   封魔石  %B1
+checkitem   ShadowStone  %B1
 checkgold   %B0
 #ACT
-take   封魔石  %B1
+take   ShadowStone  %B1
 take   %A5  1
-take   金币  %B0
+take   Gold  %B0
 give   %A6   1
-give   祝福油  1
+give   BlessingOil  1
 #SAY
 我已经帮您合成了{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}.祝您游戏愉快！\
 <离 开/@exit> \
@@ -265,20 +265,20 @@ give   祝福油  1
 你的物品不全啊。请仔细检查。\
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}所需要的材料是：\
 _{FCOLOR=250} <$OUTPUT(A5)> {FCOLOR=255}一个\
-_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}金币\
+_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}Gold\
 _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石.\
 <离 开/@exit> \
 
 [@huenhechengxxx1]
 #IF
 checkitem   %A5  1
-checkitem   封魔石  %B1
+checkitem   ShadowStone  %B1
 checkgold   %B0
 #ACT
-take   封魔石  %B1
+take   ShadowStone  %B1
 take   %A5  1
-take   金币  %B0
-give   祝福油  1
+take   Gold  %B0
+give   BlessingOil  1
 #SAY
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}.失败了！\
 <离 开/@exit> \
@@ -286,7 +286,7 @@ give   祝福油  1
 你的物品不全啊。请仔细检查。\
 合成{FCOLOR=250} <$OUTPUT(A6)> {FCOLOR=255}所需要的材料是：\
 _{FCOLOR=250} <$OUTPUT(A5)> {FCOLOR=255}一个\
-_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}金币\
+_{FCOLOR=250} <$OUTPUT(B0)> {FCOLOR=255}Gold\
 _{FCOLOR=250} <$OUTPUT(B1)> {FCOLOR=255}个封魔石.\
 <离 开/@exit> \
 
@@ -303,22 +303,22 @@ ____合成幸运级的概率和合成光彩级的概率相同。\ \
 ;;详细参数设置看文件底部
 
 [合成幸运]
-金币=1000000
-封魔石=100
+Gold=1000000
+ShadowStone=100
 
 [合成光彩]
-金币=2000000
-封魔石=200
+Gold=2000000
+ShadowStone=200
 
 [合成荣耀]
-金币=4000000
-封魔石=350
+Gold=4000000
+ShadowStone=350
 
 [合成天赋]
-金币=8000000
-封魔石=600
+Gold=8000000
+ShadowStone=600
 
 [合成至尊]
-金币=16000000
-封魔石=1000
+Gold=16000000
+ShadowStone=1000
 ;;EI3G-网游先锋传奇3商业版本-纯1.45EI版

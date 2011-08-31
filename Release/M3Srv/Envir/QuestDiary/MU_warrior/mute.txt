@@ -130,7 +130,7 @@ check [508] 1
 [@mugong_mutebo_next]
 #IF
 #SAY
-嗯，你好像在实战中也有些体会。虽然战士总是想在最前方战斗，但是没有这种 {FCOLOR=250}护身术{FCOLOR=255} 。魔法师可以利用瞬息移动魔法消失掉，道士也可以利用隐身术隐藏起自己的行踪，我们只有将敌人打倒后才可以脱身。如果被层层包围，真是死路一条。我也是经历了无数的生死考验，真是为了解决战士的困难才创造了 {FCOLOR=250}野蛮冲撞{FCOLOR=255} 。\ \
+嗯，你好像在实战中也有些体会。虽然战士总是想在最前方战斗，但是没有这种 {FCOLOR=250}护身术{FCOLOR=255} 。魔法师可以利用瞬息移动魔法消失掉，道士也可以利用隐身术隐藏起自己的行踪，我们只有将敌人打倒后才可以脱身。如果被层层包围，真是死路一条。我也是经历了无数的生死考验，真是为了解决战士的困难才创造了 {FCOLOR=250}ShoulderDash{FCOLOR=255} 。\ \
 <野蛮冲撞是具有哪种功能的武功？/@mugong_mutebo_next1>
 
 [@mugong_mutebo_next1]
@@ -151,10 +151,10 @@ check [508] 1
 #IF
 checkbaggage
 #SAY
-带着这个 {FCOLOR=250}书信{FCOLOR=255} ，穿越沙漠。找到隐居在 {FCOLOR=250}绿洲村{FCOLOR=255} 叫 {FCOLOR=250}‘王铁匠’{FCOLOR=255} 的武士，并将书信交给他，他就会告诉你某种秘诀。接受他的指教后再来！\ \
+带着这个 {FCOLOR=250}Letters{FCOLOR=255} ，穿越沙漠。找到隐居在 {FCOLOR=250}绿洲村{FCOLOR=255} 叫 {FCOLOR=250}‘王铁匠’{FCOLOR=255} 的武士，并将书信交给他，他就会告诉你某种秘诀。接受他的指教后再来！\ \
 <Exit/@exit>
 #ACT
-give 书信 1
+give Letters 1
 SET [509] 1
 #ELSESAY
 你的背囊装满了。。请整理些位置再来！\ \
@@ -165,14 +165,14 @@ SET [509] 1
 {
 #IF
 checkbaggage
-checkitem 书信 1
+checkitem Letters 1
 #SAY
 沙漠是很远的路。快点！\ \
 #ELSESAY
 书信丢了？让人寒心！重新再给你一本，这次注意拿好。\ \
 <Exit/@exit>
 #ELSEACT
-give 书信 1
+give Letters 1
 }
 
 [@mugong_mutebo_test]
@@ -180,7 +180,7 @@ give 书信 1
 #IF
 check [510] 1
 #SAY
-需要的东西是诺玛法老出产的 {FCOLOR=250}诺玛石 5个{FCOLOR=255} ，千万记住！\ 
+需要的东西是诺玛法老出产的 {FCOLOR=250}NormaStone 5个{FCOLOR=255} ，千万记住！\ 
 我将在此等候你回来。\ \
 <Exit/@exit>
 
@@ -194,12 +194,12 @@ check [509] 1
 
 [@mugong_mutebo_test_next]
 #IF
-checkitem 书信 1
+checkitem Letters 1
 #SAY
 嗯，是黄河大侠派来的。让你来辛苦了。那么快点回去吧！\ \
 <这是什么话？/@mugong_mutebo_test_next1>
 #ACT
-take 书信 1
+take Letters 1
 SET [510] 1
 #ELSESAY
 没有书信？嗯，那就有些困难。虽然辛苦，请重新拿书信来！\ \
@@ -226,13 +226,13 @@ SET [510] 1
 [@mugong_mutebo_test_next4]
 #IF
 #SAY
-最近年轻时候受的伤又发作了，即疼痛又很痒，都无法睡觉。听说生活在沙漠中的诺玛族拥有一种有着神奇力量称为 {FCOLOR=250}诺玛石{FCOLOR=255} 的石头，将这个石头捣碎，然后用水冲服可以治疗痼疾。你能帮我找到这个东西吗？\ \
+最近年轻时候受的伤又发作了，即疼痛又很痒，都无法睡觉。听说生活在沙漠中的诺玛族拥有一种有着神奇力量称为 {FCOLOR=250}NormaStone{FCOLOR=255} 的石头，将这个石头捣碎，然后用水冲服可以治疗痼疾。你能帮我找到这个东西吗？\ \
 <不用担心！/@mugong_mutebo_test_next5>
 
 [@mugong_mutebo_test_next5]
 #IF
 #SAY
-非常谢谢！‘诺玛石’被装饰于诺玛族长老 {FCOLOR=250}诺玛法老的手杖{FCOLOR=255} 上。\ \
+非常谢谢！‘NormaStone’被装饰于诺玛族长老 {FCOLOR=250}诺玛法老的手杖{FCOLOR=255} 上。\ \
 <下一步/@mugong_mutebo_test_next6>
 
 [@mugong_mutebo_test_next6]
@@ -244,7 +244,7 @@ SET [510] 1
 [@mugong_mutebo_test_next7]
 #IF
 #SAY
-真的吗？哦，绝对不是故意如此的。‘诺玛石’被装饰于诺玛法老的手杖上，而且请找到该 {FCOLOR=250}诺玛石 5个{FCOLOR=255} 。\ \
+真的吗？哦，绝对不是故意如此的。‘NormaStone’被装饰于诺玛法老的手杖上，而且请找到该 {FCOLOR=250}NormaStone 5个{FCOLOR=255} 。\ \
 <Exit/@exit>
 #ACT
 SET [510] 1
@@ -259,9 +259,9 @@ check [512] 1
 break
 
 #IF
-checkitem 诺玛石 5
+checkitem NormaStone 5
 #SAY
-哦，找到‘诺玛石’了。谢谢！今天晚上开始可以好好地睡觉了。\ \
+哦，找到‘NormaStone’了。谢谢！今天晚上开始可以好好地睡觉了。\ \
 <下一步/@mugong_mutebo_test_complete_next>
 #ELSESAY
 我将在此等候你回来。\ \
@@ -271,14 +271,14 @@ SET [511] 0
 
 [@mugong_mutebo_test_complete_next]
 #IF
-checkitem 诺玛石 5
+checkitem NormaStone 5
 #SAY
 非常谢谢！你是一名不忽视别人困难，热心肠的人。希望你以后依然可以不断地帮助有困难的人。\
 这个是对你善意的小小答谢。请将书信转交给 {FCOLOR=250}皇甫{FCOLOR=255} 。\ \
 <好的，我将转交。/@mugong_mutebo_test_complete_next1>
 #ACT
 SET [512] 1
-give 书信 1
+give Letters 1
 
 [@mugong_mutebo_test_complete_next1]
 #IF
@@ -290,21 +290,21 @@ goto @mugong_mutebo_test_complete_next2_2
 
 [@mugong_mutebo_test_complete_next2_1]
 #IF
-checkitem 诺玛石 5
+checkitem NormaStone 5
 checkbaggage 
 #ACT
-take 诺玛石 5
-give 诺玛重盔甲（男） 1
+take NormaStone 5
+give NormaArmor(M) 1
 goto @mugong_mutebo_test_complete_next3
 close
 
 [@mugong_mutebo_test_complete_next2_2]
 #IF
-checkitem 诺玛石 5
+checkitem NormaStone 5
 checkbaggage 
 #ACT
-take 诺玛石 5
-give 诺玛重盔甲（女） 1
+take NormaStone 5
+give NormaArmor(F) 1
 goto @mugong_mutebo_test_complete_next3
 close
 
@@ -319,14 +319,14 @@ close
 {
 #IF
 checkbaggage
-checkitem 书信 1
+checkitem Letters 1
 #SAY
 沙漠是很远的路。快点！\ \
 #ELSESAY
 书信丢了？让人寒心！重新再给你一本，这次注意拿好。\ \
 <Exit/@exit>
 #ELSEACT
-give 书信 1
+give Letters 1
 }
 
 [@mugong_mutebo_test_complete_receive]
@@ -339,12 +339,12 @@ break
 #IF
 check [512] 1
 check [704] 0
-checkitem 书信 1
+checkitem Letters 1
 #SAY
 已经转交了书信？辛苦了。\ \
 <下一步/@mugong_mutebo_test_complete_receive_next>
 #ACT
-take 书信 1
+take Letters 1
 #ELSESAY
 沙漠是很远的路。快点！\ \
 <Exit/@exit>
@@ -380,8 +380,8 @@ check [704] 0
 #ACT
 reset [508] 4
 SET [704] 1
-give 野蛮冲撞（秘籍） 1
-give 金币 30000
+give ShoulderDash 1
+give Gold 30000
 #SAY
 在哪儿、写了些什么？嗯，说你是不顾各种危险并找到药的优秀年轻人。对的，帮助有困难的人是我们有能力的人应该做的事情。非常好！你的行为提高了战士的声誉。\ 
 像你一样的人，我也相信，可以将技术传授给你。\ 
@@ -394,8 +394,8 @@ give 金币 30000
 {
 #IF
 #SAY
-为了学习野蛮冲撞，首先要把我给你的 {FCOLOR=250}书信{FCOLOR=255} 转交给 {FCOLOR=250}绿树村的王铁匠{FCOLOR=255} ，然后接受王铁匠的一个委托。
-听说要从诺玛法老处找到 {FCOLOR=250}诺玛石{FCOLOR=255} 5个左右。如果诺玛石都找到了，请重新将一个 {FCOLOR=250}书信{FCOLOR=255} 转交给我。
+为了学习野蛮冲撞，首先要把我给你的 {FCOLOR=250}Letters{FCOLOR=255} 转交给 {FCOLOR=250}绿树村的王铁匠{FCOLOR=255} ，然后接受王铁匠的一个委托。
+听说要从诺玛法老处找到 {FCOLOR=250}NormaStone{FCOLOR=255} 5个左右。如果诺玛石都找到了，请重新将一个 {FCOLOR=250}Letters{FCOLOR=255} 转交给我。
 将那个书信 拿给我即可。\ \
 <Exit/@exit>
 }

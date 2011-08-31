@@ -32,52 +32,52 @@ Welcome, how may i help you?\ \
 你好好看看。都是些稀罕玩意儿。 \
 种类多着呢。这些东西商店里都不卖，而且一旦卖出去了，我就不会再进第二次货。你好好想想再买吧。\
 这些都是为了得到了又失去的人准备的。。你就算现在买了也没什么用。\ \
-<骷髅骨（10000金币）/@BUYCAILIAO(骷髅骨,10000)>\
-<蛆卵（10000金币）/@BUYCAILIAO(蛆卵,10000)>\
-<自然神水（小）（40000金币）/@BUYCAILIAO(自然神水（小）,40000)>\
-<攻击神水（小）（40000金币）/@BUYCAILIAO(攻击神水（小）,40000)>\
-<灵魂神水（小）（40000金币）/@BUYCAILIAO(灵魂神水（小）,40000)>\
-<疾风神水（小）（40000金币）/@BUYCAILIAO(疾风神水（小）,40000)>\
-<自然神水（小）（40000金币）/@BUYCAILIAO(自然神水（小）,40000)>\
-<魔法强效神水（小）（50000金币）/@BUYCAILIAO(魔法强效神水（小）,50000)>\
-<体力强效神水（小）（50000金币）/@BUYCAILIAO(体力强效神水（小）,50000)>\
-<沙漠鱼魔牙齿  （50000金币）/@BUYCAILIAO(沙漠鱼魔牙齿,50000)>\
-<亮蜡烛（1500金币）/@BUYCAILIAO(亮蜡烛,1500)>\
-<蜡烛（1000金币）/@BUYCAILIAO(蜡烛,1000)>\
-<蝎子的尾巴（10000金币）/@BUYCAILIAO(蝎子的尾巴,10000)>\
-<跳蚤皮（10000金币）/@BUYCAILIAO(跳蚤皮,10000)>\
-<修复油（10000金币）/@BUYCAILIAO(修复油,10000)>\\
-<牛毛（500金币）/@item29> \
-<竹棍（500金币）/@item30> \
+<SkeltonBone（10000金币）/@BUYCAILIAO(SkeltonBone,10000)>\
+<MaggotEggs（10000金币）/@BUYCAILIAO(MaggotEggs,10000)>\
+<NaturalWater(S)（40000金币）/@BUYCAILIAO(NaturalWater(S),40000)>\
+<AttackWater(S)（40000金币）/@BUYCAILIAO(AttackWater(S),40000)>\
+<SoulWater(S)（40000金币）/@BUYCAILIAO(SoulWater(S),40000)>\
+<VigorousWater(S)（40000金币）/@BUYCAILIAO(VigorousWater(S),40000)>\
+<NaturalWater(S)（40000金币）/@BUYCAILIAO(NaturalWater(S),40000)>\
+<MagicWater(S)（50000金币）/@BUYCAILIAO(MagicWater(S),50000)>\
+<StrengthWater(S)（50000金币）/@BUYCAILIAO(StrengthWater(S),50000)>\
+<DesertFishTeeth  （50000金币）/@BUYCAILIAO(DesertFishTeeth,50000)>\
+<LightCandles（1500金币）/@BUYCAILIAO(LightCandles,1500)>\
+<Candle（1000金币）/@BUYCAILIAO(Candle,1000)>\
+<ScorpionTail（10000金币）/@BUYCAILIAO(ScorpionTail,10000)>\
+<FleaSkin（10000金币）/@BUYCAILIAO(FleaSkin,10000)>\
+<RepairOil（10000金币）/@BUYCAILIAO(RepairOil,10000)>\\
+<OxHair（500金币）/@item29> \
+<Bamboo（500金币）/@item30> \
 <鸡皮（1000金币）/@item1> \
-<道力护身符（1000金币）/@item2> \
-<肉汤（1000金币）/@item3> \
-<古籍（1000金币）/@item17> \
-<毒蛇牙齿（2000金币）/@item5> \
+<PowerAmulet（1000金币）/@item2> \
+<Broth（1000金币）/@item3> \
+<Ancient（1000金币）/@item17> \
+<SnakesTeeth（2000金币）/@item5> \
 <金氏的铁锤（4000金币）/@item6> \
-<角笛（4000金币）/@item14> \
-<半块不死牌（4000金币）/@item15> \
-<不死牌（4000金币）/@item16> \
-<灵魂护卫（4000金币）/@item23> \
-<千年毒蛇胆汁（4000金币）/@item10> \
-<雷电僵尸骨（4000金币）/@item11> \
-<僧侣僵尸骨（4000金币）/@item12> \
-<毁灭护身符（4000金币）/@item13> \
-<沃玛金牌（8000金币）/@item24> \
-<无名日志（8000金币）/@item25> \
-<地狱神钟（8000金币）/@item26> \
-<灵魂明珠（8000金币）/@item27> \
-<沃玛神铁锤（8000金币）/@item28> \ \
-<沃玛角（2000金币）/@item9> \
-<诺玛石（4000金币）/@item21> \ \
-<成致日志（4000金币）/@item22> \
-<灵珠（4000金币）/@item7> \
-<起爆石（4000金币）/@item18> \ \
-<灵珠（2000金币）/@item7> \
-<七点白蛇胆（8000金币）/@item8> \ \
-<魔灵牌（100000金币）/@akfudvo> \ \
-<遗骸（100000金币）/@dbrhf> \ \
-<航海日志（100000金币）/@gkdgodlfwl> \ \
+<AngleFlute（4000金币）/@item14> \
+<DeadBrand（4000金币）/@item15> \
+<DieCard（4000金币）/@item16> \
+<SoulGuard（4000金币）/@item23> \
+<SnakeBiles（4000金币）/@item10> \
+<LightningZombieBone（4000金币）/@item11> \
+<MonkZombieBone（4000金币）/@item12> \
+<DestructionAmulet（4000金币）/@item13> \
+<WoomaGold（8000金币）/@item24> \
+<UnknownLog（8000金币）/@item25> \
+<GodBellHell（8000金币）/@item26> \
+<PearlSoul（8000金币）/@item27> \
+<WoomaHammer（8000金币）/@item28> \ \
+<WoomaAngle（2000金币）/@item9> \
+<NormaStone（4000金币）/@item21> \ \
+<LogInto（4000金币）/@item22> \
+<LingZhu（4000金币）/@item7> \
+<InitiationStone（4000金币）/@item18> \ \
+<LingZhu（2000金币）/@item7> \
+<SevenWhiteSnake（8000金币）/@item8> \ \
+<DaimonCard（100000金币）/@akfudvo> \ \
+<Remains（100000金币）/@dbrhf> \ \
+<Log（100000金币）/@gkdgodlfwl> \ \
 <Exit/@exit>
 }
 
@@ -86,34 +86,34 @@ Welcome, how may i help you?\ \
 你好好看看。都是些稀罕玩意儿。 \
 种类多着呢。这些东西商店里都不卖，而且一旦卖出去了，我就不会再进第二次货。你好好想想再买吧。\
 这些都是为了得到了又失去的人准备的。。你就算现在买了也没什么用。\ \
-<牛毛（500金币）/@item29> \
-<竹棍（500金币）/@item30> \
+<OxHair（500金币）/@item29> \
+<Bamboo（500金币）/@item30> \
 <鸡皮（1000金币）/@item1> \
-<道力护身符（1000金币）/@item2> \
-<肉汤（1000金币）/@item3> \
-<古籍（1000金币）/@item17> \
-<毒蛇牙齿（2000金币）/@item5> \
+<PowerAmulet（1000金币）/@item2> \
+<Broth（1000金币）/@item3> \
+<Ancient（1000金币）/@item17> \
+<SnakesTeeth（2000金币）/@item5> \
 <金氏的铁锤（4000金币）/@item6> \
-<角笛（4000金币）/@item14> \
-<半块不死牌（4000金币）/@item15> \
-<不死牌（4000金币）/@item16> \
-<灵魂护卫（4000金币）/@item23> \
-<千年毒蛇胆汁（4000金币）/@item10> \
-<雷电僵尸骨（4000金币）/@item11> \
-<僧侣僵尸骨（4000金币）/@item12> \
-<毁灭护身符（4000金币）/@item13> \
-<沃玛金牌（8000金币）/@item24> \
-<无名日志（8000金币）/@item25> \
-<地狱神钟（8000金币）/@item26> \
-<灵魂明珠（8000金币）/@item27> \
-<沃玛神铁锤（8000金币）/@item28> \ \
-<沃玛角（2000金币）/@item9> \
-<诺玛石（4000金币）/@item21> \ \
-<成致日志（4000金币）/@item22> \
-<灵珠（4000金币）/@item7> \
-<起爆石（4000金币）/@item18> \ \
-<灵珠（2000金币）/@item7> \
-<七点白蛇胆（8000金币）/@item8> \ \
+<AngleFlute（4000金币）/@item14> \
+<DeadBrand（4000金币）/@item15> \
+<DieCard（4000金币）/@item16> \
+<SoulGuard（4000金币）/@item23> \
+<SnakeBiles（4000金币）/@item10> \
+<LightningZombieBone（4000金币）/@item11> \
+<MonkZombieBone（4000金币）/@item12> \
+<DestructionAmulet（4000金币）/@item13> \
+<WoomaGold（8000金币）/@item24> \
+<UnknownLog（8000金币）/@item25> \
+<GodBellHell（8000金币）/@item26> \
+<PearlSoul（8000金币）/@item27> \
+<WoomaHammer（8000金币）/@item28> \ \
+<WoomaAngle（2000金币）/@item9> \
+<NormaStone（4000金币）/@item21> \ \
+<LogInto（4000金币）/@item22> \
+<LingZhu（4000金币）/@item7> \
+<InitiationStone（4000金币）/@item18> \ \
+<LingZhu（2000金币）/@item7> \
+<SevenWhiteSnake（8000金币）/@item8> \ \
 <Exit/@exit>
 }
 

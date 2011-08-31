@@ -91,7 +91,7 @@ EQUAL D0 11
 CHECKITEM 诞生珠子 1
 #ACT
 TAKE 诞生珠子 1
-GIVE 英雄手套 1
+GIVE HeroGlove 1
 SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 10
 #SAY
 你杀死了地天灭王？无论如何我还是要谢谢你，拿好....
@@ -152,7 +152,7 @@ SYSMSG "获得<$OUTPUT(A0)>"
 #ACT
 GOTO @完成任务3奖励
 SAVEVALUE "QuestDiary\WINMA_DATA\DesertTask\TaskVariables.txt" DesertTask %USERNAME 8
-GIVE 连环明珠 1
+GIVE PearlChain 1
 close
 
 [@完成任务3奖励]
@@ -197,7 +197,7 @@ SYSMSG "获得<$OUTPUT(A0)>"
 #SAY
 ____他想让我重生？上次事情激怒了地天灭王，我的躯体已经受\
 到了诅咒....\
-____唯一的办法就是消灭 魔石守护神 这样我才有机会获得重生，\
+____唯一的办法就是消灭 StonePatron 这样我才有机会获得重生，\
 它就在你面前的房间里...\ \
 
 <好，我这就去/@杀死魔石>
@@ -243,7 +243,7 @@ monclear Z012
 Param1 Z012
 Param2 10
 Param3 8
-MonGen 变异毒蜥 2 2
+MonGen VariationGila 2 2
 MAPMOVE Z012
 SYSMSG "请把他们都杀掉"
 BREAK

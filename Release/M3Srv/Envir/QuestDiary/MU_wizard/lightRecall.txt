@@ -30,9 +30,9 @@ goto @mugong_lightstick_next1
 
 [@mugong_lightstick_next1]
 #IF
-checkmagic 雷电术
+checkmagic LightningBolt
 #SAY
-你好像已经修炼了 {FCOLOR=250}雷电术{FCOLOR=255} 。。。如果这样就没有向我接受训练的必要了。\ \
+你好像已经修炼了 {FCOLOR=250}LightningBolt{FCOLOR=255} 。。。如果这样就没有向我接受训练的必要了。\ \
 <Exit/@exit>
 #ELSEACT
 goto @mugong_lightstick_next2
@@ -92,9 +92,9 @@ goto @mugong_lightstick_next4_3
 Param1 02_006
 Param2 25
 Param3 22
-MonGen 僧侣僵尸61  1 1
-MonGen 僵尸461  3 1
-MonGen 掷斧骷髅61  2 1
+MonGen ClergyZombie61  1 1
+MonGen Zombie461  3 1
+MonGen SkeletonAxer61  2 1
 goto @mugong_lightstick_next4_4
 
 [@mugong_lightstick_next4_4]
@@ -134,9 +134,9 @@ break
 #IF
 check [753] 0
 #ACT
-give 雷电术（秘籍） 1
-give 闪电眼  1
-give 金币 17000
+give LightningBolt 1
+give LightningEye  1
+give Gold 17000
 reset [518] 1
 SET [753] 1
 #SAY

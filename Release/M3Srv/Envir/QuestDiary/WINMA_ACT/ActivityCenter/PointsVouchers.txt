@@ -24,7 +24,7 @@ LOADVALUE A1 "QuestDiary\WINMA_DATA\MeasureActivity\内测积分存入.txt" 密码 %USER
 EQUAL A1 ""
 #SAY
 ____目前您已存有 {FCOLOR=250}<$OUTPUT(D1)>{FCOLOR=255} 张内测积分兑换券\
-____内测活动花样多,凡是在内测期间打到{FCOLOR=250}"内测积分兑换券"{FCOLOR=255},便\
+____内测活动花样多,凡是在内测期间打到{FCOLOR=250}"MeasuredCoupon"{FCOLOR=255},便\
 能存入我这,开区公测时就可以直接取出兑换成积分使用.\
 ____存入积分前请先设置存折密码,{FCOLOR=250}此密码对你提取存折积分致关\
 重要,请牢记{FCOLOR=255}\
@@ -66,9 +66,9 @@ SMALL D2 1
 SYSMSG "你输入的数值有误!"
 break
 #IF
-checkitem 内测积分兑换券 %D2
+checkitem MeasuredCoupon %D2
 #ACT
-take 内测积分兑换券 %D2
+take MeasuredCoupon %D2
 INC D1 %D2
 SAVEVALUE "QuestDiary\WINMA_DATA\MeasureActivity\内测积分存入.txt" 存折 %USERNAME %D1
 SYSMSG "存入成功,您存入了<$OUTPUT(D2)>个内测积分兑换券,已经存入了<$OUTPUT(D1)>"

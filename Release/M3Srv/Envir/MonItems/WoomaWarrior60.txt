@@ -1,0 +1,67 @@
+;; 기본 아이템 level 0
+
+1/3   Gold  240
+1/10  Horn
+1/30  HPPotion(S)
+1/30  MPPotion(S)
+1/60  HPPotion(M)
+1/60  MPPotion(M)
+
+;; 이벤트 아이템
+
+;;1/10  환약(1000)
+
+;; 기본 아이템 level 1
+
+1/1000    LargeBracelet
+1/1000    TaoistBracelet
+1/1000    EbonyBracelet
+1/1000    MagicBracelet
+
+1/1000    BlackNecklace
+1/1000    EbonyNecklace
+1/1000    CrystalNecklace
+
+1/1000    BronzeHelmet
+
+1/1000    LightArmor(M)
+1/1000    LightArmor(F)
+
+;; 기본 아이템 level 2
+
+1/2000    BronzeAxe
+1/2000    SeaSoul
+1/2000    HalfMonth
+
+1/2000    PearlRing
+1/2000    SnakeEyeRing
+1/2000    BlackCrystalRing
+
+1/2000    SmallBracelet
+
+1/2000    LanternNecklace
+1/2000    AmberNecklace
+1/2000    DevilsNecklace
+1/2000    FriendlyNecklace
+
+1/2000    Boots
+
+1/2000    MagicHelmet
+
+;; 기본 아이템 level 3
+
+1/8000    ExorcizeSword
+1/8000    YanYue
+1/8000    ZhanmaSaber
+1/8000    Ashura
+
+1/8000    CharmRing
+1/8000    EthicsRing
+1/8000    CoralRing
+1/8000    GoldRing
+
+1/8000    SturdyGlove
+
+1/8000    TaoistHelmet
+
+;; 추가 특수 아이템

@@ -107,8 +107,8 @@ checkgold 100000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_akfudvo_1
 #ACT
-give 魔灵牌 1
-take 金币 100000
+give DaimonCard 1
+take Gold 100000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_akfudvo_Else
 
@@ -124,8 +124,8 @@ checkgold 100000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_dbrhf_1
 #ACT
-give 遗骸 1
-take 金币 100000
+give Remains 1
+take Gold 100000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_dbrhf_Else
 
@@ -141,8 +141,8 @@ checkgold 100000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_gkdgodlfwl_1
 #ACT
-give 航海日志 1
-take 金币 100000
+give Log 1
+take Gold 100000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_gkdgodlfwl_Else
 
@@ -158,8 +158,8 @@ checkgold 500
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item29_1
 #ACT
-give 牛毛 1
-take 金币 500
+give OxHair 1
+take Gold 500
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item29_Else
 
@@ -175,8 +175,8 @@ checkgold 500
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item30_1
 #ACT
-give 竹棍 1
-take 金币 500
+give Bamboo 1
+take Gold 500
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item30_Else
 
@@ -192,8 +192,8 @@ checkgold 1000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item1_1
 #ACT
-give 鸡血 1
-take 金币 1000
+give ChickenBlood 1
+take Gold 1000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item1_Else
 
@@ -209,8 +209,8 @@ checkgold 1000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item2_1
 #ACT
-give 道力护身符 1
-take 金币 1000
+give PowerAmulet 1
+take Gold 1000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item2_Else
 
@@ -226,8 +226,8 @@ checkgold 1000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item3_1
 #ACT
-give 肉汤 1
-take 金币 1000
+give Broth 1
+take Gold 1000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item3_Else
 
@@ -243,8 +243,8 @@ checkgold 1000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item17_1
 #ACT
-give 古籍 1
-take 金币 1000
+give Ancient 1
+take Gold 1000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item17_Else
 
@@ -260,8 +260,8 @@ checkgold 2000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item5_1
 #ACT
-give 毒蛇牙齿 1
-take 金币 2000
+give SnakesTeeth 1
+take Gold 2000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item5_Else
 
@@ -278,7 +278,7 @@ checkgold 4000
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item6_1
 #ACT
 give 金氏的铁锤 1
-take 金币 4000
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item6_Else
 
@@ -294,8 +294,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item14_1
 #ACT
-give 角笛 1
-take 金币 4000
+give AngleFlute 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item14_Else
 
@@ -311,8 +311,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item15_1
 #ACT
-give 半块不死牌 1
-take 金币 4000
+give DeadBrand 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item15_Else
 
@@ -328,8 +328,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item16_1
 #ACT
-give 不死牌 1
-take 金币 4000
+give DieCard 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item16_Else
 
@@ -345,8 +345,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item23_1
 #ACT
-give 灵魂护卫 1
-take 金币 4000
+give SoulGuard 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item23_Else
 
@@ -362,8 +362,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item10_1
 #ACT
-give 千年毒蛇胆汁 1
-take 金币 4000
+give SnakeBiles 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item10_Else
 
@@ -379,8 +379,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item11_1
 #ACT
-give 雷电僵尸骨 1
-take 金币 4000
+give LightningZombieBone 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item11_Else
 
@@ -396,8 +396,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item12_1
 #ACT
-give 僧侣僵尸骨 1
-take 金币 4000
+give MonkZombieBone 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item12_Else
 
@@ -413,8 +413,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item13_1
 #ACT
-give 毁灭护身符 1
-take 金币 4000
+give DestructionAmulet 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item13_Else
 
@@ -430,8 +430,8 @@ checkgold 8000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item24_1
 #ACT
-give 沃玛金牌 1
-take 金币 8000
+give WoomaGold 1
+take Gold 8000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item24_Else
 
@@ -447,8 +447,8 @@ checkgold 8000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item25_1
 #ACT
-give 无名日志 1
-take 金币 8000
+give UnknownLog 1
+take Gold 8000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item25_Else
 
@@ -464,8 +464,8 @@ checkgold 8000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item26_1
 #ACT
-give 地狱神钟 1
-take 金币 8000
+give GodBellHell 1
+take Gold 8000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item26_Else
 
@@ -481,8 +481,8 @@ checkgold 8000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item27_1
 #ACT
-give 灵魂明珠 1
-take 金币 8000
+give PearlSoul 1
+take Gold 8000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item27_Else
 
@@ -498,8 +498,8 @@ checkgold 8000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item28_1
 #ACT
-give 沃玛神铁锤 1
-take 金币 8000
+give WoomaHammer 1
+take Gold 8000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item28_Else
 
@@ -517,8 +517,8 @@ checkgold 2000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item9_1
 #ACT
-give 沃玛角 1
-take 金币 2000
+give WoomaAngle 1
+take Gold 2000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item9_Else
 
@@ -534,8 +534,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item21_1
 #ACT
-give 诺玛石 4
-take 金币 4000
+give NormaStone 4
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item21_Else
 
@@ -553,8 +553,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item22_1
 #ACT
-give 成致日志 1
-take 金币 4000
+give LogInto 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item22_Else
 
@@ -570,8 +570,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item7_1
 #ACT
-give 灵珠 1
-take 金币 4000
+give LingZhu 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item7_Else
 
@@ -587,8 +587,8 @@ checkgold 4000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item18_1
 #ACT
-give 起爆石 1
-take 金币 4000
+give InitiationStone 1
+take Gold 4000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item18_Else
 
@@ -607,8 +607,8 @@ checkgold 8000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item8_1
 #ACT
-give 七点白蛇胆 1
-take 金币 8000
+give SevenWhiteSnake 1
+take Gold 8000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item8_Else
 
@@ -624,8 +624,8 @@ checkgold 100000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item19_1
 #ACT
-give 树脂 1
-take 金币 100000
+give Resin 1
+take Gold 100000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item19_Else
 
@@ -641,8 +641,8 @@ checkgold 500000
 #SAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item20_1
 #ACT
-give 闪电石 1
-take 金币 500000
+give LightningStone 1
+take Gold 500000
 #ELSESAY
 	#INCLUDE [..\Convert_Def\Market_Def\09NightMarket_Bichon-0.txt] @NPC_item20_Else
 
@@ -749,7 +749,7 @@ ELARGE D2 0
 checkgold %D3
 #ACT
 GIVE %A1 %D2
-take 金币 %D3
+take Gold %D3
 SYSMSG "恭喜您兑换成功"
 GOTO @sellitem_1
 BREAK

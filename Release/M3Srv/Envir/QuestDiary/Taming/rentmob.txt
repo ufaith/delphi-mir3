@@ -33,27 +33,27 @@ begin
    	checklevel 41
 	#SAY
       这里是你可以租用的怪物。。\ \
-		<血金刚[16000金币]/@Taming(血金刚,1,16000)> , <赤血恶魔[16000金币]/@Taming(赤血恶魔,1,16000)> , <灰血恶魔[16000金币]/@Taming(灰血恶魔,1,16000)> , <潘夜战士[16000金币]/@Taming(潘夜战士,1,16000)> \ \
+		<BloodJingang[16000金币]/@Taming(BloodJingang,1,16000)> , <Ferricyanide[16000金币]/@Taming(Ferricyanide,1,16000)> , <GrayBloodDemon[16000金币]/@Taming(GrayBloodDemon,1,16000)> , <NightWarrior[16000金币]/@Taming(NightWarrior,1,16000)> \ \
 	#IF
 		checklevel 31
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<骷髅士兵[8000金币]/@Taming(骷髅士兵,1,8000)> , <骷髅弓箭手[8000金币]/@Taming(骷髅弓箭手,1,8000)> , <骷髅武士[8000金币]/@Taming(骷髅武士,1,8000)> , <骷髅武将[8000金币]/@Taming(骷髅武将,1,8000)> \ \
+		<SkeletonSoldier[8000金币]/@Taming(SkeletonSoldier,1,8000)> , <SkeletonArcher[8000金币]/@Taming(SkeletonArcher,1,8000)> , <SkeletonWarrior[8000金币]/@Taming(SkeletonWarrior,1,8000)> , <SkeletonGeneral[8000金币]/@Taming(SkeletonGeneral,1,8000)> \ \
 	#IF
 		checklevel 21
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<红野猪[4000金币]/@Taming(红野猪,1,4000)> , <黑野猪[4000金币]/@Taming(黑野猪,1,4000)> , <蝎蛇[4000金币]/@Taming(蝎蛇,1,4000)> \ \
+		<RedBoar[4000金币]/@Taming(RedBoar,1,4000)> , <WildBoar[4000金币]/@Taming(WildBoar,1,4000)> , <Scorpion[4000金币]/@Taming(Scorpion,1,4000)> \ \
 	#IF
 		checklevel 11
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<沃玛勇士[2000金币]/@Taming(沃玛勇士,1,2000)> , <沃玛战将[2000金币]/@Taming(沃玛战将,1,2000)> \ \
+		<WoomaWarrior[2000金币]/@Taming(WoomaWarrior,1,2000)> , <WoomaWarLord[2000金币]/@Taming(WoomaWarLord,1,2000)> \ \
 	#IF
 		checklevel 1
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<掷斧骷髅[1000金币]/@Taming(掷斧骷髅,1,1000)> , <骷髅战将[1000金币]/@Taming(骷髅战将,1,1000)> \ \
+		<SkeletonAxer[1000金币]/@Taming(SkeletonAxer,1,1000)> , <SkeletonsFighter[1000金币]/@Taming(SkeletonsFighter,1,1000)> \ \
 end
 ;-------------------------------------------------------------------------------
 ;; 2矫埃
@@ -64,27 +64,27 @@ begin
 		checklevel 41
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<血金刚[34000金币]/@Taming(血金刚,2,34000)> , <赤血恶魔[34000金币]/@Taming(赤血恶魔,2,34000)> , <灰血恶魔[34000金币]/@Taming(灰血恶魔,2,34000)> , <潘夜战士[34000金币]/@Taming(潘夜战士,2,34000)> \ \
+		<BloodJingang[34000金币]/@Taming(BloodJingang,2,34000)> , <Ferricyanide[34000金币]/@Taming(Ferricyanide,2,34000)> , <GrayBloodDemon[34000金币]/@Taming(GrayBloodDemon,2,34000)> , <NightWarrior[34000金币]/@Taming(NightWarrior,2,34000)> \ \
 	#IF
 		checklevel 31
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<骷髅士兵[16000金币]/@Taming(骷髅士兵,2,16000)> , <骷髅弓箭手[16000金币]/@Taming(骷髅弓箭手,2,16000)> , <骷髅武士[16000金币]/@Taming(骷髅武士,2,16000)> , <骷髅武将[16000金币]/@Taming(骷髅武将,2,16000)> \ \
+		<SkeletonSoldier[16000金币]/@Taming(SkeletonSoldier,2,16000)> , <SkeletonArcher[16000金币]/@Taming(SkeletonArcher,2,16000)> , <SkeletonWarrior[16000金币]/@Taming(SkeletonWarrior,2,16000)> , <SkeletonGeneral[16000金币]/@Taming(SkeletonGeneral,2,16000)> \ \
 	#IF
 		checklevel 21
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<红野猪[8000金币]/@Taming(红野猪,2,8000)> , <黑野猪[8000金币]/@Taming(黑野猪,2,8000)> , <蝎蛇[8000金币]/@Taming(蝎蛇,2,8000)> \ \
+		<RedBoar[8000金币]/@Taming(RedBoar,2,8000)> , <WildBoar[8000金币]/@Taming(WildBoar,2,8000)> , <Scorpion[8000金币]/@Taming(Scorpion,2,8000)> \ \
 	#IF
 		checklevel 11
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<沃玛勇士[4000金币]/@Taming(沃玛勇士,2,4000)> , <沃玛战将[4000金币]/@Taming(沃玛战将,2,4000)> \ \
+		<WoomaWarrior[4000金币]/@Taming(WoomaWarrior,2,4000)> , <WoomaWarLord[4000金币]/@Taming(WoomaWarLord,2,4000)> \ \
 	#IF
 		checklevel 1
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<掷斧骷髅[2000金币]/@Taming(掷斧骷髅,2,2000)> , <骷髅战将[2000金币]/@Taming(骷髅战将,2,2000)> \ \
+		<SkeletonAxer[2000金币]/@Taming(SkeletonAxer,2,2000)> , <SkeletonsFighter[2000金币]/@Taming(SkeletonsFighter,2,2000)> \ \
 end
 ;-------------------------------------------------------------------------------
 ;; 3矫埃 楼府
@@ -95,27 +95,27 @@ begin
 		checklevel 41
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<血金刚[80000金币]/@Taming(血金刚,3,80000)> , <赤血恶魔[80000金币]/@Taming(赤血恶魔,3,80000)> , <灰血恶魔[80000金币]/@Taming(灰血恶魔,3,80000)> , <潘夜战士[80000金币]/@Taming(潘夜战士,3,80000)> \ \
+		<BloodJingang[80000金币]/@Taming(BloodJingang,3,80000)> , <Ferricyanide[80000金币]/@Taming(Ferricyanide,3,80000)> , <GrayBloodDemon[80000金币]/@Taming(GrayBloodDemon,3,80000)> , <NightWarrior[80000金币]/@Taming(NightWarrior,3,80000)> \ \
 	#IF
 		checklevel 31
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<骷髅士兵[40000金币]/@Taming(骷髅士兵,3,40000)> , <骷髅弓箭手[40000金币]/@Taming(骷髅弓箭手,3,40000)> , <骷髅武士[40000金币]/@Taming(骷髅武士,3,40000)> , <骷髅武将[40000金币]/@Taming(骷髅武将,3,40000)> \ \
+		<SkeletonSoldier[40000金币]/@Taming(SkeletonSoldier,3,40000)> , <SkeletonArcher[40000金币]/@Taming(SkeletonArcher,3,40000)> , <SkeletonWarrior[40000金币]/@Taming(SkeletonWarrior,3,40000)> , <SkeletonGeneral[40000金币]/@Taming(SkeletonGeneral,3,40000)> \ \
 	#IF
 		checklevel 21
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<红野猪[20000金币]/@Taming(红野猪,3,20000)> , <黑野猪[20000金币]/@Taming(黑野猪,3,20000)> , <蝎蛇[20000金币]/@Taming(蝎蛇,3,20000)> \ \
+		<RedBoar[20000金币]/@Taming(RedBoar,3,20000)> , <WildBoar[20000金币]/@Taming(WildBoar,3,20000)> , <Scorpion[20000金币]/@Taming(Scorpion,3,20000)> \ \
 	#IF
 		checklevel 11
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<沃玛勇士[10000金币]/@Taming(沃玛勇士,3,10000)> , <沃玛战将[10000金币]/@Taming(沃玛战将,3,10000)> \ \
+		<WoomaWarrior[10000金币]/@Taming(WoomaWarrior,3,10000)> , <WoomaWarLord[10000金币]/@Taming(WoomaWarLord,3,10000)> \ \
 	#IF
 		checklevel 1
 	#SAY
 		这里是你可以租用的怪物。。\ \
-		<掷斧骷髅[5000金币]/@Taming(掷斧骷髅,3,5000)> , <骷髅战将[5000金币]/@Taming(骷髅战将,3,5000)> \ \
+		<SkeletonAxer[5000金币]/@Taming(SkeletonAxer,3,5000)> , <SkeletonsFighter[5000金币]/@Taming(SkeletonsFighter,3,5000)> \ \
 end
 
 ;-------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ begin
     checkgold  %N4
     checkmonRecall
   #ACT
-    take       金币     %N4
+    take       Gold     %N4
     MonRecall  %A1      %N3        0
   #SAY
 		已成功完成租用。。 \ \
@@ -168,8 +168,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 掷斧骷髅   %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall SkeletonAxer   %N1{RENTHOUR}   0
 		break
 
   #IF
@@ -180,8 +180,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
   #ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 骷髅战将     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall SkeletonsFighter     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -192,8 +192,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 沃玛勇士     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall WoomaWarrior     %N1{RENTHOUR}   0
 		break
 
   #IF
@@ -204,8 +204,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 沃玛战将     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall WoomaWarLord     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -216,8 +216,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 红野猪         %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall RedBoar         %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -228,8 +228,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 黑野猪         %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall WildBoar         %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -240,8 +240,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 蝎蛇       %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall Scorpion       %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -252,8 +252,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 骷髅士兵     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall SkeletonSoldier     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -264,8 +264,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 骷髅弓箭手     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall SkeletonArcher     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -276,8 +276,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 骷髅武士     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall SkeletonWarrior     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -288,8 +288,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 骷髅武将     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall SkeletonGeneral     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -300,8 +300,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 血金刚         %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall BloodJingang         %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -312,8 +312,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 赤血恶魔       %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall Ferricyanide       %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -324,8 +324,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 灰血恶魔       %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall GrayBloodDemon       %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -336,8 +336,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 潘夜战士     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall NightWarrior     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -348,8 +348,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 柴三郎         %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall Chaisan         %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -360,8 +360,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 玲花         %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall LingFlower         %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -372,8 +372,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 护卫武士     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall WarriorGuard     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -384,8 +384,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 潘夜右护卫     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall NightGuard     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -396,8 +396,8 @@ begin
 		已成功完成租用。。 \ \
 		<关  闭/@exit>
 	#ACT
-		take      金币           %N2{RENTFARE}
-		monrecall 潘夜左护卫     %N1{RENTHOUR}   0
+		take      Gold           %N2{RENTFARE}
+		monrecall NightLeftGuard     %N1{RENTHOUR}   0
 		break
 
 	#IF
@@ -408,7 +408,7 @@ begin
 		您已经租用了怪物，或者金币不够，麻烦确认一下。。 \ \
 		<关  闭/@exit>\
 	#ACT
-		take      金币           %N2{RENTFARE}
+		take      Gold           %N2{RENTFARE}
 		break
 ;;	#ELSESAY
 ;;      您没有带钱来。。这叫我怎么租给你呢。。 \ \

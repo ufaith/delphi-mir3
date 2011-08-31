@@ -9,7 +9,7 @@ check [316] 0
 check [317] 0
 check [318] 0
 check [319] 0
-checkitem ƒß¡È≈∆ 1
+checkitem DaimonCard 1
 #ACT
 goto @SinQuest_Spritstest
 break
@@ -21,7 +21,7 @@ goto @Sin_Boss_Input_0_2
 #IF
 check [314] 1
 check [315] 0
-checkitem ƒß¡È≈∆ 1
+checkitem DaimonCard 1
 #ACT
 goto @SinQuest_Spritstest_retry
 break
@@ -34,7 +34,7 @@ goto @SinQuest_3
 check [314] 0
 check [315] 1
 check [316] 0
-checkitem ƒß¡È≈∆ 1
+checkitem DaimonCard 1
 #ACT
 goto @SinQuest_Spritstest_Check
 break
@@ -58,7 +58,7 @@ goto @SinQuest_5
 check [317] 1
 check [318] 1
 check [319] 0
-checkitem “≈∫° 1
+checkitem Remains 1
 #ACT
 goto @SinQuest_end
 break
@@ -76,7 +76,7 @@ break
 
 #IF
 check [798] 0
-checkitem  ∞‘ÕıΩÃ÷˜µÒœÒ  1
+checkitem  KingStatue  1
 #ACT
 goto @Gain_Singiitem
 break
@@ -92,7 +92,7 @@ break
 
 [@Sin_Boss_Input_3]
 #IF
-Checkitem ¡¨ª∑√˜÷È 1
+Checkitem PearlChain 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_SIn_Boss_Input_3
 
@@ -124,7 +124,7 @@ goto @Sin_Boss_Input_2_0
 
 [@gain_SinGiItem]
 #IF
-checkitem ∞‘ÕıΩÃ÷˜µÒœÒ 1
+checkitem KingStatue 1
 
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_Gain_SinGiItem_Noitem
@@ -133,12 +133,12 @@ break
 
 #IF
 check [798] 1
-checkitem ∞‘ÕıΩÃ÷˜µÒœÒ 1
+checkitem KingStatue 1
 check [320] 1
 check [319] 1
 #ACT
 goto @gain_SinGiItem_AddReward
-take ∞‘ÕıΩÃ÷˜µÒœÒ 46
+take KingStatue 46
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [pachun] [Give]
 give %A0 1
 
@@ -146,7 +146,7 @@ give %A0 1
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_Gain_SinGiItem
 
 #ELSEACT
-take ∞‘ÕıΩÃ÷˜µÒœÒ 46
+take KingStatue 46
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [pachun] [Give]
 give %A0 1
 #ELSESAY
@@ -195,7 +195,7 @@ check [316] 0
 check [317] 0
 check [318] 0
 check [319] 0
-checkitem ƒß¡È≈∆ 1
+checkitem DaimonCard 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_SinQuest_Spritstest
 
@@ -216,7 +216,7 @@ monclear D90323
 Param1 D90323
 Param2 16
 Param3 11
-MonGen «·º◊ ÿŒ¿ 2 3
+MonGen LightGuard 2 3
 mapmove D90323 16 11
 ;;------------------------------------------------------------------------------
 ;; Hwanmaryung Test Fail
@@ -240,7 +240,7 @@ monclear D90323
 Param1 D90323
 Param2 16
 Param3 11
-MonGen «·º◊ ÿŒ¿ 2 3
+MonGen LightGuard 2 3
 mapmove D90323 16 11
 
 
@@ -256,13 +256,13 @@ mapmove D90323 16 11
 #IF
 check [314] 0
 check [315] 1
-checkitem ƒß¡È≈∆ 1
+checkitem DaimonCard 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_SinQuest_Spritstest_Check2
 
 #ACT
-take ƒß¡È≈∆ 1
-give ∫Ω∫£»’÷æ 1
+take DaimonCard 1
+give Log 1
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_SinQuest_Spritstest_Check2_Noitem
 ;;;π¯ø™ « ø‰ ∫Œ∫–---------------------------------------------
@@ -300,7 +300,7 @@ check [317] 1
 check [318] 1
 check [319] 0
 check [320] 0
-checkitem “≈∫° 1
+checkitem Remains 1
 #ACT
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [giveAccessory] [warriorAccessory]
 set [319] 1
@@ -318,7 +318,7 @@ check [317] 1
 check [318] 1
 check [319] 0
 check [320] 0
-checkitem “≈∫° 1
+checkitem Remains 1
 #ACT
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [giveAccessory] [wizardAccessory]
 give %A0 1
@@ -336,7 +336,7 @@ check [317] 1
 check [318] 1
 check [319] 0
 check [320] 0
-checkitem “≈∫° 1
+checkitem Remains 1
 #ACT
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [giveAccessory] [taoistAccessory]
 set [319] 1
@@ -472,7 +472,7 @@ check [312] 1
 check [312] 1
 check [313] 0
 #ACT
-give ƒß¡È≈∆ 1
+give DaimonCard 1
 set [313] 1
 goto @SinQuest_1_6
 #SAY
@@ -552,7 +552,7 @@ checkjob warrior
 #ACT
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [giveweapon] [warriorweapon]
 give %A0 1
-take ∫Ω∫£»’÷æ 1
+take Log 1
 set [316] 1
 #ELSEACT
 goto @SD_SemiReward_2
@@ -566,12 +566,12 @@ checkjob wizard
 #ACT
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [giveweapon] [wizardweapon]
 give %A0 1
-take ∫Ω∫£»’÷æ 1
+take Log 1
 set [316] 1
 #ELSEACT
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [giveweapon] [taoistweapon]
 give %A0 1
-take ∫Ω∫£»’÷æ 1
+take Log 1
 set [316] 1
 }
 
@@ -584,12 +584,12 @@ set [316] 1
 check [318] 1
 check [319] 1
 check [320] 0
-checkitem “≈∫° 1
+checkitem Remains 1
 #ACT
 set [320] 1
 LoadValue A0 "GM_Def\SinGiSun\Reward.txt" [sinQuest] [Give]
 give %A0 1
-take “≈∫° 1
+take Remains 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\SinGiSun\SinGiSun.txt] @NPC_SinQuest_Ending_2
 }

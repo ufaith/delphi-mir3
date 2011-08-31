@@ -213,7 +213,7 @@ check [307] 1
 
 [@503_CHECK1_2]
 #IF
-checkitem 回城卷 10
+checkitem TownTeleport 10
 #ACT
 goto @503_CHECK1_3
 #ELSESAY
@@ -226,7 +226,7 @@ goto @503_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 回城卷 10
+take TownTeleport 10
 give 金币 10000
 set [309] 0
 set [308] 0
@@ -293,8 +293,8 @@ check [307] 1
 
 [@504_CHECK1_2]
 #IF
-checkitem 铁矿 2
-checkduraeva 铁矿 10
+checkitem IronOre 2
+checkduraeva IronOre 10
 #ACT
 goto @504_CHECK1_3
 #ELSESAY
@@ -307,7 +307,7 @@ goto @504_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 铁矿 2
+take IronOre 2
 give 金币 6000
 set [309] 0
 set [308] 0
@@ -455,7 +455,7 @@ check [307] 1
 
 [@506_CHECK1_2]
 #IF
-checkitem 蜡烛 10
+checkitem Candle 10
 #ACT
 goto @506_CHECK1_3
 #ELSESAY
@@ -468,7 +468,7 @@ goto @506_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 蜡烛 10
+take Candle 10
 give 金币 3000
 set [309] 0
 set [308] 0
@@ -535,8 +535,8 @@ check [307] 1
 
 [@507_CHECK1_2]
 #IF
-checkitem 牛肉 5
-checkduraeva 牛肉 10
+checkitem Beef 5
+checkduraeva Beef 10
 #ACT
 goto @507_CHECK1_3
 #ELSESAY
@@ -549,7 +549,7 @@ goto @507_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 牛肉 5
+take Beef 5
 give 金币 10000
 set [309] 0
 set [308] 0
@@ -630,7 +630,7 @@ check [310] 0
 check [307] 1
 #ACT
 take 蚂蚁卵 10
-give 雷电术 1
+give LightningBolt 1
 give 金币 8000
 set [309] 0
 set [308] 0
@@ -697,7 +697,7 @@ check [307] 1
 
 [@509_CHECK1_2]
 #IF
-checkitem 烧酒 10
+checkitem Liquor 10
 #ACT
 goto @509_CHECK1_2_1
 #ELSESAY
@@ -707,8 +707,8 @@ goto @509_CHECK1_2_1
 
 [@509_CHECK1_2_1]
 #IF
-checkitem 牛肉 10
-checkduraeva 牛肉 10
+checkitem Beef 10
+checkduraeva Beef 10
 #ACT
 goto @509_CHECK1_3
 #ELSESAY
@@ -721,8 +721,8 @@ goto @509_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 烧酒 10
-take 牛肉 10
+take Liquor 10
+take Beef 10
 give 海魂 1
 give 金币 3000
 set [309] 0
@@ -950,7 +950,7 @@ check [307] 1
 
 [@512_CHECK1_2]
 #IF
-checkitem 狼肉 5
+checkitem WolfMeat 5
 #ACT
 goto @512_CHECK1_3
 #ELSESAY
@@ -963,7 +963,7 @@ goto @512_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 狼肉 5
+take WolfMeat 5
 give 半月 1
 give 金币 1000
 set [309] 0
@@ -989,7 +989,7 @@ goto @513_START_1
 check [307] 0
 #SAY
 {NPCIMG/140}
-哦哦，快点来。帮忙而来，来得正好。那么就讲一下将要拜托施主的事情。贫道现在急需{FCOLOR=250}烧酒 5个{FCOLOR=255}。当然不是为了喝。不管怎样请在{FCOLOR=250}24点之前{FCOLOR=255}找到那些东西。\ \
+哦哦，快点来。帮忙而来，来得正好。那么就讲一下将要拜托施主的事情。贫道现在急需{FCOLOR=250}Liquor 5个{FCOLOR=255}。当然不是为了喝。不管怎样请在{FCOLOR=250}24点之前{FCOLOR=255}找到那些东西。\ \
  <就这么办吧。/@513_START_2>\
  <请给些考虑的时间。/@513_START_1_1>
 
@@ -1007,7 +1007,7 @@ check [307] 0
 set [307] 1
 #SAY
 {NPCIMG/140}
-那么如果找到{FCOLOR=250}烧酒 5个{FCOLOR=255}，请回到贫道这儿。当然是{FCOLOR=250}24点为止{FCOLOR=255}一定要找到哟。\ \
+那么如果找到{FCOLOR=250}Liquor 5个{FCOLOR=255}，请回到贫道这儿。当然是{FCOLOR=250}24点为止{FCOLOR=255}一定要找到哟。\ \
 <Exit/@exit>
 }
 
@@ -1031,7 +1031,7 @@ check [307] 1
 
 [@513_CHECK1_2]
 #IF
-checkitem 烧酒 5
+checkitem Liquor 5
 #ACT
 goto @513_CHECK1_3
 #ELSESAY
@@ -1044,7 +1044,7 @@ goto @513_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 烧酒 5
+take Liquor 5
 give 金币 3000
 set [309] 0
 set [308] 0
@@ -1191,12 +1191,12 @@ check [307] 1
 
 [@515_CHECK1_2]
 #IF
-checkitem 鸡肉 15
+checkitem Chicken 15
 #ACT
 goto @515_CHECK1_3
 #ELSESAY
 {NPCIMG/110}
-怎么回事？好像没有拿来贫道所拜托的东西。。。可以快些找到{FCOLOR=250}鸡肉 15块{FCOLOR=255}吗？哦，和肉质没有任何关系，别花心思。\ \
+怎么回事？好像没有拿来贫道所拜托的东西。。。可以快些找到{FCOLOR=250}Chicken 15块{FCOLOR=255}吗？哦，和肉质没有任何关系，别花心思。\ \
  <Exit/@exit>
 
 [@515_CHECK1_3]
@@ -1204,7 +1204,7 @@ goto @515_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 鸡肉 15
+take Chicken 15
 give 钢手镯 1
 give 金币 7000
 set [309] 0
@@ -1272,8 +1272,8 @@ check [307] 1
 
 [@516_CHECK1_2]
 #IF
-checkitem 猪肉 4
-checkduraeva 猪肉 8
+checkitem Pork 4
+checkduraeva Pork 8
 #ACT
 goto @516_CHECK1_3
 #ELSESAY
@@ -1286,7 +1286,7 @@ goto @516_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 猪肉 4
+take Pork 4
 give 道士头盔 1
 give 金币 1000
 set [309] 0
@@ -1610,7 +1610,7 @@ check [310] 0
 check [307] 1
 #ACT
 take 蛆卵 1
-give 牛肉 2
+give Beef 2
 set [309] 0
 set [308] 0
 set [307] 0
@@ -1676,8 +1676,8 @@ check [307] 1
 
 [@521_CHECK1_2]
 #IF
-checkitem 羊肉 10
-checkduraeva 羊肉 10
+checkitem Lamb 10
+checkduraeva Lamb 10
 #ACT
 goto @521_CHECK1_3
 #ELSESAY
@@ -1690,7 +1690,7 @@ goto @521_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 羊肉 10
+take Lamb 10
 give 金币 15000
 set [309] 0
 set [308] 0
@@ -1771,7 +1771,7 @@ check [310] 0
 check [307] 1
 #ACT
 take 千年毒蛇胆汁 1
-give 魔法药（特） 10
+give MPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -2031,7 +2031,7 @@ check [310] 0
 check [307] 1
 check [308] 1
 #ACT
-give 金创药（特） 10
+give HPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -2264,7 +2264,7 @@ check [310] 0
 check [307] 1
 check [308] 1
 #ACT
-give 地狱火 1
+give FireTrail 1
 give 金币 7000
 set [309] 0
 set [308] 0
@@ -2526,13 +2526,13 @@ check [307] 1
 
 [@530_CHECK1_2]
 #IF
-checkitem 随机传送卷 8
-checkitem 回城卷 1
+checkitem RandomTeleport 8
+checkitem TownTeleport 1
 #ACT
 goto @530_CHECK1_3
 #ELSESAY
 {NPCIMG/120}
-还没有找到{FCOLOR=250}随机传送卷 8个和回城卷1个{FCOLOR=255}哟。没有时间了，请快点找。\ \
+还没有找到{FCOLOR=250}RandomTeleport 8个和回城卷1个{FCOLOR=255}哟。没有时间了，请快点找。\ \
  <Exit/@exit>
 
 [@530_CHECK1_3]
@@ -2540,10 +2540,10 @@ goto @530_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 随机传送卷 8
-take 回城卷 1
-give 金创药（特） 6
-give 魔法药（特） 6
+take RandomTeleport 8
+take TownTeleport 1
+give HPPotion(XL) 6
+give MPPotion(XL) 6
 set [309] 0
 set [308] 0
 set [307] 0
@@ -2608,8 +2608,8 @@ check [307] 1
 
 [@531_CHECK1_2]
 #IF
-checkitem 黑铁 1
-checkdura 黑铁 12
+checkitem BlackIronOre 1
+checkdura BlackIronOre 12
 #ACT
 goto @531_CHECK1_3
 #ELSESAY
@@ -2622,7 +2622,7 @@ goto @531_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 黑铁 1
+take BlackIronOre 1
 give 铁剑 1
 set [309] 0
 set [308] 0
@@ -2769,7 +2769,7 @@ check [307] 1
 
 [@533_CHECK1_2]
 #IF
-checkitem 烧酒 5
+checkitem Liquor 5
 #ACT
 goto @533_CHECK1_3
 #ELSESAY
@@ -2782,7 +2782,7 @@ goto @533_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 烧酒 5
+take Liquor 5
 give 鹤嘴锄 1
 give 金币 5000
 set [309] 0
@@ -2944,7 +2944,7 @@ check [310] 0
 check [307] 1
 #ACT
 take 虎蛇牙齿 1
-give 魔法药（特） 10
+give MPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3024,7 +3024,7 @@ check [310] 0
 check [307] 1
 #ACT
 take 红蛇血 1
-give 金创药（特） 10
+give HPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3090,8 +3090,8 @@ check [307] 1
 
 [@537_CHECK1_2]
 #IF
-checkitem 铁矿 1
-checkdura 铁矿 15
+checkitem IronOre 1
+checkdura IronOre 15
 #ACT
 goto @537_CHECK1_3
 #ELSESAY
@@ -3104,7 +3104,7 @@ goto @537_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 铁矿 1
+take IronOre 1
 give 短剑 1
 give 金币 10000
 set [309] 0
@@ -3172,7 +3172,7 @@ check [307] 1
 
 [@538_CHECK1_2]
 #IF
-checkitem 羊肉 5
+checkitem Lamb 5
 #ACT
 goto @538_CHECK1_3
 #ELSESAY
@@ -3185,7 +3185,7 @@ goto @538_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 羊肉 5
+take Lamb 5
 give 金币 13000
 set [309] 0
 set [308] 0
@@ -3252,8 +3252,8 @@ check [307] 1
 
 [@539_CHECK1_2]
 #IF
-checkitem 牛肉 3
-checkduraeva 牛肉 10
+checkitem Beef 3
+checkduraeva Beef 10
 #ACT
 goto @539_CHECK1_3
 #ELSESAY
@@ -3266,8 +3266,8 @@ goto @539_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 牛肉 3
-give 魔法药（特） 10
+take Beef 3
+give MPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3333,8 +3333,8 @@ check [307] 1
 
 [@540_CHECK1_2]
 #IF
-checkitem 猪肉 3
-checkduraeva 猪肉 10
+checkitem Pork 3
+checkduraeva Pork 10
 #ACT
 goto @540_CHECK1_3
 #ELSESAY
@@ -3347,8 +3347,8 @@ goto @540_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 猪肉 3
-give 金创药（特） 10
+take Pork 3
+give HPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3554,8 +3554,8 @@ break
 checkgold 1500
 #ACT
 take 金币 1500
-give 金创药（特） 6
-give 魔法药（特） 8
+give HPPotion(XL) 6
+give MPPotion(XL) 8
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3607,8 +3607,8 @@ check [310] 0
 check [307] 1
 #ACT
 take 金币 1500
-give 金创药（特） 6
-give 魔法药（特） 8
+give HPPotion(XL) 6
+give MPPotion(XL) 8
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3653,8 +3653,8 @@ break
 checkgold 1000
 #ACT
 take 金币 1000
-give 金创药（特） 4
-give 魔法药（特） 6
+give HPPotion(XL) 4
+give MPPotion(XL) 6
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3706,8 +3706,8 @@ check [310] 0
 check [307] 1
 #ACT
 take 金币 1000
-give 金创药（特） 4
-give 魔法药（特） 6
+give HPPotion(XL) 4
+give MPPotion(XL) 6
 set [309] 0
 set [308] 0
 set [307] 0
@@ -3787,7 +3787,7 @@ check [310] 0
 check [307] 1
 #ACT
 take 古诗秘书 1
-give 刺杀剑术 1
+give AdvancedSlay 1
 give 金币 8000
 set [309] 0
 set [308] 0
@@ -4049,8 +4049,8 @@ check [307] 1
 
 [@548_CHECK1_2]
 #IF
-checkitem 羊肉 5
-checkduraeva 羊肉 10
+checkitem Lamb 5
+checkduraeva Lamb 10
 #ACT
 goto @548_CHECK1_3
 #ELSESAY
@@ -4063,7 +4063,7 @@ goto @548_CHECK1_3
 check [310] 0
 check [307] 1
 #ACT
-take 羊肉 5
+take Lamb 5
 give 金币 9000
 set [309] 0
 set [308] 0
@@ -4182,7 +4182,7 @@ check [307] 0
 #IF
 check [307] 0
 #ACT
-give 汤药 1
+give Decoction 1
 set [307] 1
 #SAY
 {NPCIMG/100}
@@ -4224,7 +4224,7 @@ check [310] 0
 check [307] 1
 check [308] 1
 #ACT
-give 魔法药（特） 10
+give MPPotion(XL) 10
 set [309] 0
 set [308] 0
 set [307] 0
@@ -4248,7 +4248,7 @@ check [307] 1
 
 [@550_CHECK2_1]
 #IF
-checkitem 汤药 1
+checkitem Decoction 1
 #ACT
 goto @550_CHECK2_2
 #ELSESAY
@@ -4262,7 +4262,7 @@ check [310] 0
 check [308] 0
 check [307] 1
 #ACT
-take 汤药 1
+take Decoction 1
 set [308] 1
 #SAY
 {NPCIMG/0}

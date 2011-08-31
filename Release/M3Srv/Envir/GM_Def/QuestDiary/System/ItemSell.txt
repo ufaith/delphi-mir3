@@ -3,4 +3,4 @@
 Name=
 
 [ItemCost]
-Name=½ð±Ò
+Name=Gold

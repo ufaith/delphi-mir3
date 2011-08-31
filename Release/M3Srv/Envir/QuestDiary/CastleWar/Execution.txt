@@ -88,7 +88,7 @@ break
 break
 
 #IF
-checkitem 沃玛号角 1
+checkitem WoomaHorn 1
 checkgold 1000000
 #ACT
 EnableCmd @@buildguild
@@ -113,11 +113,11 @@ break
 #SAY
 行会名字超长,请限制在18个英文字符或者9个汉字以内..
 #IF
-checkitem 沃玛号角 1
+checkitem WoomaHorn 1
 checkgold 1000000
 #ACT
-take 金币 1000000
-take 沃玛号角 1
+take Gold 1000000
+take WoomaHorn 1
 BuildGuild @MakeGuildOK
 #ELSESAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Execution.txt] @Execution_14
@@ -133,8 +133,8 @@ BuildGuild @MakeGuildOK
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Execution.txt] @Execution_16
 
 #ACT
-give 沃玛号角 1
-give 金币 1000000
+give WoomaHorn 1
+give Gold 1000000
 
 [@buildguildexp]
 #SAY
@@ -152,7 +152,7 @@ give 金币 1000000
 #IF
 checkgold 3000000
 #ACT
-take 金币 3000000
+take Gold 3000000
 EnableCmd @@guildwar
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Execution.txt] @Execution_19
@@ -174,7 +174,7 @@ GuildWar @GuildMakeWarOK
 	#INCLUDE [..\Convert_Def\QuestDiary\CastleWar\Execution.txt] @Execution_22
 
 #ACT
-give 金币 3000000
+give Gold 3000000
 
 [@guildwarexp]
 #SAY

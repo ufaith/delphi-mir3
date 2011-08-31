@@ -14,7 +14,7 @@
 用金币<交换/@ChangeGold1>1个筹码 \
 用金币<交换/@ChangeGold10>10个筹码 \
 用金币<交换/@ChangeGold50>50个筹码 \
-用筹码<交换/@changeMoney>金币 \
+用筹码<交换/@changeMoney>Gold \
 <我不做了。/@exit>
 }
 

@@ -4,7 +4,7 @@
 #IF
 #SAY
 六面神石 \ \
-<移动至潘夜岛村所需金钱 : 50000 金币/@teleport_8_1_next1> \
+<移动至潘夜岛村所需金钱 : 50000 Gold/@teleport_8_1_next1> \
 
 
 [@teleport_8_1_next1]
@@ -12,7 +12,7 @@
 checkgold 50000
 #ACT
 movr d0 4
-take 金币 50000
+take Gold 50000
 mapmove 8 288 242
 #ELSESAY
 (钱不够啊！…)\ \

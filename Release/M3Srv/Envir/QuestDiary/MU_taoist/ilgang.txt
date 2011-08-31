@@ -29,9 +29,9 @@ goto @mugong_ilgang_next1
 
 [@mugong_ilgang_next1]
 #IF
-checkmagic 精神力战法
+checkmagic SpiritSword
 #SAY
-看你的眼光很锐利，好象正在修炼 {FCOLOR=250}精神力战法{FCOLOR=255} 。\ \
+看你的眼光很锐利，好象正在修炼 {FCOLOR=250}SpiritSword{FCOLOR=255} 。\ \
 <Exit/@exit>
 #ELSEACT
 goto @mugong_ilgang_next2
@@ -80,8 +80,8 @@ goto @mugong_ilgang_next4_3
 Param1 1_012
 Param2 9
 Param3 12
-MonGen 半兽战士61   1  1
-MonGen 半兽人61    3  1
+MonGen BeastFighter61   1  1
+MonGen Oma61    3  1
 TimeRecall 5
 goto @mugong_ilgang_next4_4
 
@@ -117,9 +117,9 @@ break
 #IF
 check [716] 0
 #ACT
-give 精神力战法（秘籍） 1
-give 灵魂铁手镯  1
-give 金币 9000
+give SpiritSword 1
+give SoulBracelet  1
+give Gold 9000
 reset [500] 1
 SET [716] 1
 #SAY

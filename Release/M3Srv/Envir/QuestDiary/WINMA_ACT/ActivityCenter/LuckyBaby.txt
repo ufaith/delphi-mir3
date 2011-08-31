@@ -24,19 +24,19 @@ goto @¼ÌĞø»»¸£ÍŞ
 
 #if
 check [606] 0
-checkitem ±´±´ 1
-checkitem ¾§¾§ 1
-checkitem »¶»¶ 1
-checkitem Ó­Ó­ 1
-checkitem ÄİÄİ 1
+checkitem Babe 1
+checkitem Jingjing 1
+checkitem Huanhuan 1
+checkitem Yingying 1
+checkitem Nini 1
 #act
-take ±´±´ 1
-take ¾§¾§ 1
-take »¶»¶ 1
-take Ó­Ó­ 1
-take ÄİÄİ 1
-give °ÂÔËÔË¶¯×°£¨ÄĞ£© 1
-give °ÂÔËÔË¶¯×°£¨Å®£© 1
+take Babe 1
+take Jingjing 1
+take Huanhuan 1
+take Yingying 1
+take Nini 1
+give Sportswear(M) 1
+give Sportswear(F) 1
 GMEXECUTE adjustExp %USERNAME + 300000000
 set [606] 1
 #act

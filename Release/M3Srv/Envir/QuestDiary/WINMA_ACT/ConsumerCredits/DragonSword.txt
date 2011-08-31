@@ -9,7 +9,7 @@ ____µ£ÐÄ±ù³ÇÂ·Í¾Ò£Ô¶£¿µ£ÐÄ±ù³Ç±»ÈË°ü³¡ÎÞ·¨Á¶ÖÆ·ÉÁú½££¿±¾\
 ____ÔÚÕâÀï£¬·ÉÁú½£µÄ³É¹¦Óë·ñÍêÈ«È¡¾öÓÚÄúµÄÄÜÁ¦£¬{FCOLOR=250}×¢ÈëÒ»¶¨\
 Á¿µÄ·âÄ§Ê¯ÄÜÌá¸ßÄúµÄÁ¶ÖÆ¼¸ÂÊ{FCOLOR=255}£¬µ±È»Èç¹ûÄúÏëÍ¶»úÈ¡ÇÉÅöÅöÔË\Æø£¬
 Ò»µ©Ê§°Ü£¬¸¶³öµÄ´ú¼Û¿É±È±ù³ÇÁ¶ÖÆ¶àµÄ¶à£¬ÎÒ½«Ã»ÊÕÄúµÄ\
-ËùÓÐ²ÄÁÏ£¬ºÙºÙ!Á¶ÖÆµÄÔ­Ê¼¼¸ÂÊÎª {FCOLOR=249}0/1500{FCOLOR=255} Äú¿ÉÒÔ×¢Èë {FCOLOR=250}·âÄ§Ê¯{FCOLOR=255} \
+ËùÓÐ²ÄÁÏ£¬ºÙºÙ!Á¶ÖÆµÄÔ­Ê¼¼¸ÂÊÎª {FCOLOR=249}0/1500{FCOLOR=255} Äú¿ÉÒÔ×¢Èë {FCOLOR=250}ShadowStone{FCOLOR=255} \
 À´Ìá¸ß¼¸ÂÊ{FCOLOR=250}1¿é·âÄ§Ê¯=1µã¼¸ÂÊ{FCOLOR=255} Èç¹ûÄúÓÐ1500¿é£¬ÄÇÎÒ¿ÉÒÔ¸æËß\
 Äú£¬Äú¾ÍÊÇÕâ°ÑÉñ±øµÄÖ÷ÈËÁË¡£³¬¼¶Á¶ÖÆÃ¿´ÎÊÕÈ¡ {FCOLOR=250}<$OUTPUT(D5)>{FCOLOR=255} µã»ý·Ö£¬\
 Í¬ÑùÐèÒª100¸öÏàÍ¬ÊôÐÔµÄ·ÉÁú½£ËéÆ¬,ÒòÎª·ÉÁú½£µÄÊôÐÔÊÇÓÉËé\
@@ -77,7 +77,7 @@ LARGE D0 0
 checkgold %D6
 checkitem %A0 %D0
 #ACT
-take ½ð±Ò  %D6
+take Gold  %D6
 take %A0 %D0
 GIVE %A3 %D0
 GOTO @´òÔì·ÉÁú½£X1
@@ -126,9 +126,9 @@ SYSMSG "¶Ô²»Æð,ÄãÊäÈëµÄÊýÖµÓÐÎó"
 BREAK
 #IF
 ELARGE D2 1
-CHECKITEM ·âÄ§Ê¯ %D2
+CHECKITEM ShadowStone %D2
 #ACT
-TAKE ·âÄ§Ê¯ %D2
+TAKE ShadowStone %D2
 LOADVALUE D7 "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME ·ÉÁú½£´´Ôì 
 INC D7 %D2
 SAVEVALUE "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME ·ÉÁú½£´´Ôì %D7
@@ -142,7 +142,7 @@ LOADVALUE D2 "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME ·ÉÁú½£´´Ô
 #IF
 LARGE D2 0
 #ACT
-give ·âÄ§Ê¯ %D2
+give ShadowStone %D2
 SAVEVALUE "QuestDiary\WINMA_DATA\Records\DragonSword.txt" %USERNAME ·ÉÁú½£´´Ôì 0
 BREAK
 CLOSE

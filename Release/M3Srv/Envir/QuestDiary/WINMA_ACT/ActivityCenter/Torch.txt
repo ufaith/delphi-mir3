@@ -3,7 +3,7 @@
 {
 #IF
 #SAY
-欢迎您来到tgmir3,热切盼望的北京奥运终于到来了。这是tgmir3为大家在奥运期间准备的“火炬”传递活动。\
+欢迎您来到tgmir3,热切盼望的北京奥运终于到来了。这是tgmir3为大家在奥运期间准备的“LightTorch”传递活动。\
 在活动期间只要您在这里提交火炬后，便可以重新反回八大暗影，每位玩家每天只能提交一次。\
 <提交火炬/@提火炬>\
 <离开/@exit>
@@ -23,10 +23,10 @@ goto @继续ti
 
 #if
 check [997] 0
-checkitem 火炬 1
+checkitem LightTorch 1
 #ACT
 
-take 火炬 1
+take LightTorch 1
 set [997] 1
 FormatStr "FLD_CHARNAME='%s'" %USERNAME
 mov A5 %A9

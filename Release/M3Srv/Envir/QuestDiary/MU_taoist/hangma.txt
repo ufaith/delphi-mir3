@@ -12,7 +12,7 @@ break
 #IF
 check [509] 1
 #SAY
-在做什么。。不到飞天废矿找 {FCOLOR=250}‘灵珠’ {FCOLOR=255} ，认为现在是可以磨磨噌噌的时候嘛？现在很多人正在死去。千万快些 ！！\ \
+在做什么。。不到飞天废矿找 {FCOLOR=250}‘LingZhu’ {FCOLOR=255} ，认为现在是可以磨磨噌噌的时候嘛？现在很多人正在死去。千万快些 ！！\ \
 <Exit/@exit>
 #ACT
 break
@@ -55,7 +55,7 @@ checkjob taoist
 
 [@mugong_hangma_highlevel_next]
 #IF
-checkmagic 幽灵盾 
+checkmagic MagicProtect 
 #SAY
 你已经正在修炼该武功了哟。好象去找寻其它新的武功更好些。\ \
 <Exit/@exit>
@@ -72,7 +72,7 @@ goto @mugong_hangma_highlevel_next2
 #IF
 #SAY
 嗯，是这样的。当然按照道友所讲的。最近有魔力的怪兽频繁地出没于各个地方，对此魔力没有任何抵抗力的很多人正在遭受磨难。\
-因此按照道友所讲是为了帮助这些人才想学习 {FCOLOR=250}幽灵盾{FCOLOR=255} 的。\
+因此按照道友所讲是为了帮助这些人才想学习 {FCOLOR=250}MagicProtect{FCOLOR=255} 的。\
 嗯，为了他人而献身是我们道士所追求的基本精神，道友正在保持 {FCOLOR=250}真正道士的精神{FCOLOR=255} 。我为你的善良品格而感动。\ \ 
 <教我武功吗？/@mugong_hangma_highlevel_next3>
 
@@ -105,7 +105,7 @@ goto @mugong_hangma_highlevel_next2
 [@mugong_hangma_highlevel_next5]
 #IF
 #SAY
-不是其它的事情，听说过生活在飞天费矿的魔法僵尸吗？如果抓到 {FCOLOR=250}魔法 僵尸{FCOLOR=255} 偶而会有叫做 {FCOLOR=250}'灵珠'{FCOLOR=255} 的奇特珠子出来，请将这个东西拿给我。请不要问这个东西用在哪儿和为什么需要。\
+不是其它的事情，听说过生活在飞天费矿的魔法僵尸吗？如果抓到 {FCOLOR=250}魔法 僵尸{FCOLOR=255} 偶而会有叫做 {FCOLOR=250}'LingZhu'{FCOLOR=255} 的奇特珠子出来，请将这个东西拿给我。请不要问这个东西用在哪儿和为什么需要。\
 只要将这个珠子拿来，将传授武功给你。好了，请快去快回！\ \
 <Exit/@exit>
 #ACT
@@ -141,9 +141,9 @@ break
 #IF
 check [509] 1
 check [510] 1
-checkitem 灵珠 1
+checkitem LingZhu 1
 #SAY
-幸运的是已经找到 {FCOLOR=250}灵珠{FCOLOR=255} 了哟。好的，现在该是我遵守约定的时候了。请等一下。。\ \
+幸运的是已经找到 {FCOLOR=250}LingZhu{FCOLOR=255} 了哟。好的，现在该是我遵守约定的时候了。请等一下。。\ \
 <下一步/@mugong_hangma_getring_next>
 #ELSESAY
 你丢失了灵珠哟。。这该怎么办。。。。\ \
@@ -152,18 +152,18 @@ checkitem 灵珠 1
 [@mugong_hangma_getring_next]
 #IF
 check [510] 1
-checkitem 灵珠 1
+checkitem LingZhu 1
 #SAY
 好的，请喝 {FCOLOR=250}药水{FCOLOR=255} 。这个药是用你拿来的灵珠和其它灵验的药材一起加工制成的珍贵药。这个药可以大力提高内力，吃了这个药，在修炼武功的时候不会发生走火入魔的事情。\ \
 <不，如何承受得了这种辛苦?/@mugong_hangma_getring_next1>
 #ACT
-take 灵珠 1
-give 无名药 1
+take LingZhu 1
+give UnknownDrug 1
 SET [511] 1
 
 [@mugong_hangma_getring_next1]
 #IF
-checkitem 无名药 1
+checkitem UnknownDrug 1
 #SAY
 你不是已经吃这个药嘛，快点把这个药吃了。
 #ELSESAY
@@ -175,9 +175,9 @@ checkitem 无名药 1
 #IF
 check [722] 0
 #ACT
-give 金币 22000
-give 幽灵盾（秘籍）
-give 松笛 1
+give Gold 22000
+give MagicProtect
+give SongFlute 1
 reset [509] 2
 set [722] 1
 #SAY
@@ -189,6 +189,6 @@ set [722] 1
 {
 #IF
 #SAY
-若想学幽灵盾，从魔法僵尸那儿找回 {FCOLOR=250}灵珠{FCOLOR=255} 即可。
+若想学幽灵盾，从魔法僵尸那儿找回 {FCOLOR=250}LingZhu{FCOLOR=255} 即可。
 <Exit/@exit>
 }

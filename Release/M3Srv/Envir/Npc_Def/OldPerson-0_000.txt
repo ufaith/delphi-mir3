@@ -1,0 +1,15 @@
+[@MAIN]
+#SAY
+你想要问我一些什么东西?\ \
+<Sabuk Times/@aboutwar>\
+
+[@aboutwar]
+察看关于最近的攻城战役纪录\
+最近一次的攻城战役将在<$CASTLEWARDATE>20点开始，\
+你也可以看看攻城战役的时间表，这样你就非常清楚了。\ \
+ <看一些攻城战役的时间表/@listwar>\
+ <返回/@main>\
+
+[@listwar]
+<$LISTOFWAR>\
+ <返回/@main>\

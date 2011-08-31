@@ -15,7 +15,7 @@ goto @Mu_Wizard_wind_pungjin_next_1
 <关闭/@Mu_Wizard_wind_pungjin_next_5>
 [@Mu_Wizard_wind_pungjin_next_2]
 #IF
-checkitem 风震天 1
+checkitem BlowEarth 1
 #ACT
 goto @Mu_Wizard_wind_pungjin_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Wizard_wind_pungjin_next_3
 [@Mu_Wizard_wind_pungjin_next_3]
 #IF
 checkgold 2300
-checkitem 风震天 1
+checkitem BlowEarth 1
 #ACT
-take 风震天 1
-take 金币 2300
+take BlowEarth 1
+take Gold 2300
 goto @Mu_Wizard_wind_pungjin_next_4
 #ELSESAY
 修炼武功需要支付费用，这部分费用将用于法术会运营基金。\ \
@@ -42,7 +42,7 @@ random 20
 魔法书秘籍已经写好了，上面有修炼风震天时需要留意的地方和重要内容，可以作参考。道士的魔法大都是帮助他人的善意魔法，好好修炼武功，一定保护好无辜百姓。\
 <Exit/@exit>
 #ELSEACT
-give 风震天（秘籍） 1
+give BlowEarth 1
 [@Mu_Wizard_wind_pungjin_next_5]
 #IF
 #SAY

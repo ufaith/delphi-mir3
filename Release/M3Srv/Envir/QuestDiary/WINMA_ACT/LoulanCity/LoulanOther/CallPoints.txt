@@ -13,7 +13,7 @@ SYSMSG  "对不起,你的金币不足!"
 #if
 checkgold 2000000
 #act
-take 金币 2000000
+take Gold 2000000
 mapmove ll_e151
 #ELSEACT
 break

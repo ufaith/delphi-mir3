@@ -80,7 +80,7 @@ goto @chung_main_0_0
 #ACT
 goto @heal_begin
 [@heal_begin]
-#CALL [\MU_taoist\heal.txt] @mugong_heal
+#CALL [\MU_taoist\Healing.txt] @mugong_heal
 
 ;-----------------------------
 

@@ -9,9 +9,9 @@ breaktimerecall
 
 [@Ma31_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma31_cube
@@ -80,10 +80,10 @@ map B132_001
 
 [@Ma32_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma32_cube
@@ -144,7 +144,7 @@ mapmove 01 428 314
 
 [@Ma33_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 movr d0 6
 inc d0 1
@@ -187,12 +187,12 @@ breaktimerecall
 
 [@Ma34_game]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #SAY
 	#INCLUDE [..\Convert_Def\QuestDiary\Mabangjin\play31_40.txt] @play31_40_8
 
 #ACT
-take ³ïÂë 1
+take Chip 1
 mov n1 0
 #ELSEACT
 mapmove 01 428 314
@@ -228,9 +228,9 @@ goto @Ma34_dicestart
 
 [@Ma34_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma11_cube
@@ -291,21 +291,21 @@ movr d0 3
 #IF
 equal d0 0
 #ACT
-give ³ïÂë 1
+give Chip 1
 mapmove B134 10 16
 break
 
 #IF
 equal d0 1
 #ACT
-give ³ïÂë 2
+give Chip 2
 mapmove B133 10 16
 break
 
 #IF
 equal d0 2
 #ACT
-give ³ïÂë 3
+give Chip 3
 mapmove B132 10 16
 break
 }
@@ -329,9 +329,9 @@ goto @Ma36_pre_cube
 
 [@Ma36_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma36_cube
@@ -394,36 +394,36 @@ movr d0 4
 #IF
 equal d0 0
 #ACT
-take ³ïÂë 6
+take Chip 6
 goto @Ma37_race
 break
 
 #IF
 equal d0 1
 #ACT
-give ³ïÂë 6
+give Chip 6
 goto @Ma37_race
 break
 
 #IF
 equal d0 2
 #ACT
-take ³ïÂë 9
+take Chip 9
 goto @Ma37_race
 break
 
 #IF
 equal d0 3
 #ACT
-give ½ğ±Ò 4000
+give Gold 4000
 goto @Ma37_race
 break
 
 [@Ma37_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma37_cube
@@ -481,9 +481,9 @@ breaktimerecall
 
 [@Ma38_pre_cube]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma38_cube
@@ -552,10 +552,10 @@ mapmove B139_001 18 25
 
 [@Ma39_race]
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
 set [799] 0
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma39_cube
@@ -627,9 +627,9 @@ mapmove 01 428 314
 mov  n2  %ARG(1)
 
 #IF
-checkitem ³ïÂë 1
+checkitem Chip 1
 #ACT
-take ³ïÂë 1
+take Chip 1
 movr d0 6
 inc d0 1
 playdice 1 @Ma40_next
@@ -641,7 +641,7 @@ playdice 1 @Ma40_next
 #IF
 equal d0 %n2
 #ACT
-give ×£¸£ÓÍ 1
+give BlessingOil 1
 mapmove 01 428 314
 break
 

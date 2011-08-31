@@ -30,6 +30,6 @@ goto @umgwisa1
 	#INCLUDE [..\Convert_Def\QuestDiary\NQ_EXTRA\MonQuest\Nm_WoomaGisa.txt] @Nm_WoomaGisa_1
 
 #ACT
-give ¡ÈªÍ√˜÷È 1
+give PearlSoul 1
 set [288] 1
 ;----------------------------------------------------------

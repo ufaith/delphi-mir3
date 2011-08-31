@@ -94,70 +94,70 @@ Monclear 1_023
 Param1 1_020
 Param2 15
 Param3 77
-MonGen ÌøÌø·ä61  10 10
+MonGen JumpingBee61  10 10
 ;
 Param1 1_020
 Param2 70
 Param3 20
-MonGen ºÚÉ«¶ñÇù61  10  10
+MonGen BlackMaggot61  10  10
 ;
 Param1 1_020
 Param2 90
 Param3 70
-MonGen ÌøÌø·ä61  10  10
-MonGen ÎÖ¶¾òÚò¼61 1 1
-MonGen Ğ°¶ñòÚò¼61 1 1
+MonGen JumpingBee61  10  10
+MonGen Centipede61 1 1
+MonGen EvilCentipede61 1 1
 ;
 Param1 1_020
 Param2 100
 Param3 42
-MonGen ºÚÉ«¶ñÇù61  10  10
+MonGen BlackMaggot61  10  10
 ;
 Param1 1_020
 Param2 146
 Param3 18
-MonGen ÌøÌø·ä61  10 10
+MonGen JumpingBee61  10 10
 ;
 Param1 1_021
 Param2 25
 Param3 30
-MonGen ÌøÌø·ä61  15  10
-MonGen ºûµû³æ61  5 10
+MonGen JumpingBee61  15  10
+MonGen Butterfly61  5 10
 ;
 Param1 1_022
 Param2 45
 Param3 20
-MonGen ºÚÉ«¶ñÇù61  10  10
-MonGen òÚò¼61  5  10
+MonGen BlackMaggot61  10  10
+MonGen EvilCentipede61  5  10
 ;
 Param1 1_022
 Param2 65
 Param3 70
-MonGen òÚò¼61  10 10
+MonGen EvilCentipede61  10 10
 ;
 Param1 1_022
 Param2 75
 Param3 42
-MonGen ºÚÉ«¶ñÇù61  10  10
-MonGen ÎÖ¶¾òÚò¼61  1 1
-MonGen Ğ°¶ñòÚò¼61  1 1
+MonGen BlackMaggot61  10  10
+MonGen Centipede61  1 1
+MonGen EvilCentipede61  1 1
 ;
 Param1 1_022
 Param2 122
 Param3 17
-MonGen òÚò¼61  10  10
+MonGen EvilCentipede61  10  10
 ;
 Param1 1_022
 Param2 154
 Param3 30
-MonGen ºÚÉ«¶ñÇù61  10  10
-MonGen òÚò¼61  5  10
+MonGen BlackMaggot61  10  10
+MonGen EvilCentipede61  5  10
 ;
 Param1 1_023
 Param2 22
 Param3 22
-MonGen ÎÖ¶¾òÚò¼62  1 1
-MonGen òÚò¼61  10 1
+MonGen Centipede62  1 1
+MonGen EvilCentipede61  10 1
 ;
 set [525] 1
 enter_ok

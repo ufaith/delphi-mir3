@@ -31,10 +31,10 @@ begin
 [@Monkey_CheckMap_1]
 	begin
 		#IF
-			checkitem 生存游戏场地地图1 1
-			checkitem 生存游戏场地地图2 1
-			checkitem 生存游戏场地地图3 1
-			checkitem 生存游戏场地地图4 1
+			checkitem GameMap1 1
+			checkitem GameMap2 1
+			checkitem GameMap3 1
+			checkitem GameMap4 1
 		#SAY
 			#INCLUDE [..\Convert_Def\QuestDiary\Event\Island\Treasure.txt] @Event_Island_Treasure_Say_3
 		#ELSESAY
@@ -62,10 +62,10 @@ begin
 			mov  N5{AI}       0                                    ; 焊拱级 阁胶磐 AI 技泼
          mov  N4{FINISH}   0                                    ; 款康磊啊 吝埃俊 吝窜阑 沁阑 版快
 			mov  N9{DropGold} 0                                    ; 焊拱级 吝埃 捣 技泼
-			take 生存游戏场地地图1 1
-			take 生存游戏场地地图2 1
-			take 生存游戏场地地图3 1
-			take 生存游戏场地地图4 1
+			take GameMap1 1
+			take GameMap2 1
+			take GameMap3 1
+			take GameMap4 1
 			goto @UserSettingStartIsland
 		#ELSESAY
 			#INCLUDE [..\Convert_Def\QuestDiary\Event\Island\Treasure.txt] @Event_Island_Treasure_Say_5
@@ -74,17 +74,17 @@ begin
 [@UserSettingStartIsland]
 #IF
 #ACT
-	MonClear "Island02" "猿猴战士"                           ; 葛电 阁胶磐 昏力
-	MonClear "Island02" "猿猴战将"
-	MonClear "Island02" "魔神怪1"
-	MonClear "Island02" "聚宝箱4"
-	SendCmd  "Island02, 95, 135, 5"  生存游戏场美眉  Hide      ; 呕免 家赤 绝沮
+	MonClear "Island02" "MonkeyFighter"                           ; 葛电 阁胶磐 昏力
+	MonClear "Island02" "MonkeyWarrior"
+	MonClear "Island02" "SpiritGhost1"
+	MonClear "Island02" "PolyChest4"
+	SendCmd  "Island02, 95, 135, 5"  生存游戏场美眉  Invisibility      ; 呕免 家赤 绝沮
 	ResetMapAttr "Island02"                                ; 捞亥飘甘 加己(SetEventMap)鳖瘤 檬扁拳凳
-	ClearItemMap "Island02, 100, 100, 9999" 金币             ; 焊拱级 甘救俊甫 柄昌窍霸
+	ClearItemMap "Island02, 100, 100, 9999" Gold             ; 焊拱级 甘救俊甫 柄昌窍霸
 	ChangeMapAttr  "Island02" "NOCHAT"                     ; 焊拱级俊辑绰 盲泼捞 救登霸 父惦
 	SetEventDamage Island02  5                             ; 5硅 单固瘤
 	SetEventMap  "Island02"                                ; new cmd 捞亥飘甘栏肺 父惦 (ResetEventMap)
-	SendCmd  "Island02, 95, 135, 5"  生存游戏场美眉  Hide
+	SendCmd  "Island02, 95, 135, 5"  生存游戏场美眉  Invisibility
 	LoadValue A0 [Convert_Def\QuestDiary\Event\Island\Treasure.txt] [Event_Island_Treasure_EventMsg] [Msg1]
 	LineMsg  "Grobal"  %A0
 	Mapting Island02 01 425 314                            ; 焊拱级 甘俊 乐绰逞 泼扁扁
@@ -115,7 +115,7 @@ begin
 		#IF
 			CheckGold        %N7    ;;  涝厘丰 眉农 备巩
 		#ACT
-			Take   金币        %N7
+			Take   Gold        %N7
 			Inc    N8{GOLD}  %N7
 			LoadValue A0 [Convert_Def\QuestDiary\Event\Island\Treasure.txt] [Event_Island_Treasure_EventMsg] [Msg2]
 			LineMsg  "01,Island02" %A0

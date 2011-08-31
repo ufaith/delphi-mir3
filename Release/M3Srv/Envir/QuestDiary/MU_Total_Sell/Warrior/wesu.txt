@@ -15,7 +15,7 @@ goto @Mu_Warrior_Noatom_wesu_next_1
 <结束/@Mu_Warrior_Noatom_wesu_next_5>
 [@Mu_Warrior_Noatom_wesu_next_2]
 #IF
-checkitem 基本剑术 1
+checkitem Swordmanship 1
 #ACT
 goto @Mu_Warrior_Noatom_wesu_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Warrior_Noatom_wesu_next_3
 [@Mu_Warrior_Noatom_wesu_next_3]
 #IF
 checkgold 700
-checkitem 基本剑术 1
+checkitem Swordmanship 1
 #ACT
-take 基本剑术 1
-take 金币 700
+take Swordmanship 1
+take Gold 700
 goto @Mu_Warrior_Noatom_wesu_next_4
 #ELSESAY
 哦，非常抱歉！书太旧了，这是无论如何也无法看清楚。请找到保存状态好写的书！\ \
@@ -42,7 +42,7 @@ random 20
 这有武功秘诀，请拿着吧！江湖是很冷酷的地方。你千万要专心于一个领域。如果不如此，不要说天下绝世武功，就是成为一名真正的人都很困难。江湖呀。。\ \
 <Exit/@exit>
 #ELSEACT
-give 基本剑术（秘籍） 1
+give Swordmanship 1
 [@Mu_Warrior_Noatom_wesu_next_5]
 #IF
 #SAY

@@ -18,22 +18,22 @@ I do not want people like you here.\ \
 {
 （战士魔法）\ \
 （1 - 10 等级 修炼魔法）\
-<基本剑术/@Go_Mu_Warrior_Noatom_wesu>\ \
+<Swordmanship/@Go_Mu_Warrior_Noatom_wesu>\ \
 （11 - 20 等级 修炼魔法）\
-<攻杀剑术/@Go_Mu_Warrior_Noatom_wedo> , <刺杀剑术/@Go_Mu_Warrior_Noatom_asword>\ \
+<Slaying/@Go_Mu_Warrior_Noatom_wedo> , <AdvancedSlay/@Go_Mu_Warrior_Noatom_asword>\ \
 （法师魔法）\ \
 （1 - 10 等级 修炼魔法）\
-<火球术/@Go_Mu_Wizard_fire_bolt> , <霹雳掌/@Go_Mu_Wizard_light_bolt> , <冰月神掌/@Go_Mu_Wizard_ice_bolt> , <风掌/@Go_Mu_Wizard_wind_jangpung>\ \
+<FireBall/@Go_Mu_Wizard_fire_bolt> , <LightningBall/@Go_Mu_Wizard_light_bolt> , <IceBall/@Go_Mu_Wizard_ice_bolt> , <PowerBurst/@Go_Mu_Wizard_wind_jangpung>\ \
 （11 - 20 等级 修炼魔法）\
-<抗拒火环/@Go_Mu_Wizard_fire_strom> , <诱惑之光/@Go_Mu_Wizard_light_shock> , <瞬息移动/@Go_Mu_Wizard_ETC_teleport>\
-<大火球/@Go_Mu_Wizard_fire_Upbolt> , <雷电术/@Go_Mu_Wizard_light_recall> , <冰月震天/@Go_Mu_Wizard_ice_Upbolt>\
-<击风/@Go_Mu_Wizard_wind_kyoukpung> , <地狱火/@Go_Mu_Wizard_fire_line>\ \
+<FlameRepulsor/@Go_Mu_Wizard_fire_strom> , <Stunning/@Go_Mu_Wizard_light_shock> , <Teleport/@Go_Mu_Wizard_ETC_teleport>\
+<AdamantineFB/@Go_Mu_Wizard_fire_Upbolt> , <LightningBolt/@Go_Mu_Wizard_light_recall> , <IceBlades/@Go_Mu_Wizard_ice_Upbolt>\
+<GtPowerBurst/@Go_Mu_Wizard_wind_kyoukpung> , <FireTrail/@Go_Mu_Wizard_fire_line>\ \
 （道士魔法）\ \
 （1 - 10 等级 修炼魔法）\
-<治愈术/@Go_Mu_Taoist_holy_heal> , <精神力战法/@Go_Mu_Taoist_dark_ilgang>\ \
+<Healing/@Go_Mu_Taoist_holy_heal> , <SpiritSword/@Go_Mu_Taoist_dark_ilgang>\ \
 （11 - 20 等级 修炼魔法）\
-<施毒术/@Go_Mu_Taoist_dark_amyen> , <灵魂火符/@Go_Mu_Taoist_dark_poksal> , <月魂断玉/@Go_Mu_Taoist_holy_moon>\
-<召唤骷髅/@Go_Mu_Taoist_soul_skel> , <隐身术/@Go_Mu_Taoist_dark_hiden>\ \
+<Poisoning/@Go_Mu_Taoist_dark_amyen> , <TaoExplosion/@Go_Mu_Taoist_dark_poksal> , <EvilSlayer/@Go_Mu_Taoist_holy_moon>\
+<SummonTaoLord/@Go_Mu_Taoist_soul_skel> , <Invisibility/@Go_Mu_Taoist_dark_hiden>\ \
 <Exit/@exit>
 }
 

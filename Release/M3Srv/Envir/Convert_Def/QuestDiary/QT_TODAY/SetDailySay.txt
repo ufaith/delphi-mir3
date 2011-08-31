@@ -652,7 +652,7 @@
 [@Help_Sabuk_siyaksang_Say]
 {
 只说一遍，希望认真听好。。\ 
-这次事情去找一下在{FCOLOR=250}SabukWall{FCOLOR=255}的中药商{FCOLOR=250}晶晶{FCOLOR=255}吧。\ 
+这次事情去找一下在{FCOLOR=250}SabukWall{FCOLOR=255}的中药商{FCOLOR=250}Jingjing{FCOLOR=255}吧。\ 
 晶晶也许在沙巴克城{FCOLOR=250}203 : 253{FCOLOR=255}附近。\ \
  <Exit/@exit>
 

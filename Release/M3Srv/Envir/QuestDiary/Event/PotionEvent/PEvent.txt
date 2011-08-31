@@ -10,8 +10,8 @@ _<再想一想./@exit_Akdfud>
 #IF
 checkGold 3000000
 #ACT
-take 金币 3000000
-give 亡灵之药水 1
+take Gold 3000000
+give DeadSyrup 1
 #SAY
 _还是你有眼光啊.如果需要药水随时欢迎你再来.我会为你准备最好的….\ \
 _<关  闭/@exit>
@@ -42,8 +42,8 @@ _<再想一想./@exit_Wjwn>
 #IF
 checkgold 5000000
 #ACT
-take 金币 5000000
-give 诅咒之药水 1
+take Gold 5000000
+give CurseSyrup 1
 #SAY
 _呵呵,真是有福气的年轻人.随时欢迎你再来.能有像你这样有福气的老顾客,对我来说也不是好事吗?\ \
 _<关  闭/@exit>
@@ -75,8 +75,8 @@ _<再想一想./@exit_Ghltod>
 #IF
 checkGold 1500000
 #ACT
-take 金币 1500000
-give 回生神水 1
+take Gold 1500000
+give Resurrection 1
 #SAY
 _好.没有比合理价格来购买好东西更愉快的事情.我这里还有很多好东西.如果需要随时欢迎你再来.\ \
 _<关  闭/@exit>

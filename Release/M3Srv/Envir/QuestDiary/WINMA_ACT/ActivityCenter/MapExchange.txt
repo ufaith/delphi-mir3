@@ -217,14 +217,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 祖玛药水 800
+checkitem ZumaSyrup 800
 #act
-take 祖玛药水 800
+take ZumaSyrup 800
 MOVR D8 100000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 金龙令
+give Jinlong
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期一 1
 
 #say
@@ -246,14 +246,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 潘夜牛角 800
+checkitem NightHorn 800
 #act
-take 潘夜牛角 800
+take NightHorn 800
 MOVR D8 200000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 木龙令
+give WoodenDragon
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期二 1
 
 #say
@@ -276,14 +276,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 震天神钟 800
+checkitem ThunderGodBell 800
 #act
-take 震天神钟 800
+take ThunderGodBell 800
 MOVR D8 200000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 火龙令
+give DragonSo
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期三 1
 
 #say
@@ -306,14 +306,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 神舰碎片 800
+checkitem GodShipFragment 800
 #act
-take 神舰碎片 800
+take GodShipFragment 800
 MOVR D8 300000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 水龙令
+give WaterDragon
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期四 1
 
 #say
@@ -336,14 +336,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 诺玛神物 500
+checkitem Supernatural 500
 #act
-take 诺玛神物 500
+take Supernatural 500
 MOVR D8 300000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 土龙令
+give SoilLong
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期五 1
 
 #say
@@ -365,14 +365,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 天罡魔印 500
+checkitem IndiaPlough 500
 #act
-take 天罡魔印 500
+take IndiaPlough 500
 MOVR D8 300000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 地龙令
+give Earthworm
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期六 1
 
 #say
@@ -394,14 +394,14 @@ SYSMSG "你组队了,无法完成操作"
 BREAK
 
 #if
-checkitem 冰城碎片 500
+checkitem BardDebris 500
 #act
-take 冰城碎片 500
+take BardDebris 500
 MOVR D8 400000000
 mov D7  100000000
 inc D7 %D8
 GMEXECUTE adjustExp %USERNAME + %D7
-give 天龙令
+give Denon
 SAVEVALUE "QuestDiary\WINMA_DATA\TempRcords\ExperienceChange.txt" %USERNAME 星期日 1
 
 #say

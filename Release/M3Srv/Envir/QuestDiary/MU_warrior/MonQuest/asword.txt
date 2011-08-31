@@ -36,8 +36,8 @@ inc S3 1
 [@asword1_6]
 #IF
 #SAY
-(现在把沃玛角送给'龙血先生'就可以修炼'刺杀剑术'...)
+(现在把沃玛角送给'龙血先生'就可以修炼'AdvancedSlay'...)
 #ACT
-give 沃玛角 1
+give WoomaAngle 1
 SET [504] 1
 mov S3 0

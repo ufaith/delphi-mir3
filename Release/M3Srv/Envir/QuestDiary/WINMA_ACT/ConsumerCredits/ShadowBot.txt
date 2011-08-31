@@ -87,7 +87,7 @@ large  D3   %D8
 #ACT
 DECJFPOINT %D7
 GMEXECUTE adjustExp %USERNAME + %D6
-GIVE ·âÄ§Ê¯ %D5
+GIVE ShadowStone %D5
 INC D8 1
 FormatStr "FLD_CHARNAME='%s'" %USERNAME
 mov A5 %A9

@@ -24,10 +24,10 @@ break
 
 [@mugong_recallskel_next1]
 #IF
-checkmagic 召唤骷髅
+checkmagic SummonTaoLord
 #SAY
 感受到保护你的正气了吧!\ 
-你已经修炼了 {FCOLOR=250}召唤骷髅{FCOLOR=255} ，也没有必要在接受我的指教了。
+你已经修炼了 {FCOLOR=250}SummonTaoLord{FCOLOR=255} ，也没有必要在接受我的指教了。
 <Exit/@exit>
 #ELSEACT
 goto @mugong_recallskel_next2
@@ -231,7 +231,7 @@ mapmove 1_014  23  24
 [@mugong_recallskel_test_mainskel_complete1]
 #IF
 #ACT
-give 幻影玉珠  1
+give PhantomAmanda  1
 #SAY
 金属相碰飞溅的火花，呼呼的喘气声，还有战场上面的血腥味儿。。。但是即使在极限的状况下，我也无法放弃的名义。。。\ 
 这是给从和我的战斗中取得胜利的你的 {FCOLOR=250}礼物{FCOLOR=255} 。谢谢使我想起忘却的东西。 {FCOLOR=250}现在跟随着你重新回到战场{FCOLOR=255} 。 \
@@ -312,7 +312,7 @@ random 2
 Param1 1_013
 Param2 23
 Param3 25
-MonGen 骷髅战将61  2 1
+MonGen SkeletonsFighter61  2 1
 #SAY
 愚笨的人，你讲的话使人后悔。\ \
 <什么意义? 这种.../@exit>
@@ -353,7 +353,7 @@ random 2
 Param1 1_013
 Param2 25
 Param3 23
-MonGen 骷髅战将61  2 1
+MonGen SkeletonsFighter61  2 1
 #SAY
 果真如此吗？哈哈哈。。。\ \
 <这种...阴险的家伙。/@exit>
@@ -393,7 +393,7 @@ break
 Param1 1_013
 Param2 10
 Param3 24
-MonGen 骷髅战将61  2  1
+MonGen SkeletonsFighter61  2  1
 #SAY
 唐突的家伙，一点也不考虑别人的处境...  \ \
 <出现了这种...失误?/@exit>
@@ -430,8 +430,8 @@ break
 #IF
 check [720] 0
 #ACT
-give 召唤骷髅（秘籍） 1
-give 金币 19000
+give SummonTaoLord 1
+give Gold 19000
 reset [504] 2
 SET [720] 1
 #SAY

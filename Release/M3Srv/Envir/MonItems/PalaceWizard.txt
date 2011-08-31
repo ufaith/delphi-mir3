@@ -1,0 +1,104 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1   BardDebris
+1/4   Gold  1200
+1/80  FirnFrost
+1/80  FirnFrost
+1/10   HPPotion(L)
+1/40  MPPotion(L)
+1/20  HPPotion(XL)
+1/80  MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 제료 아이템
+;-------------------------------------------------------------------------------
+1/10  Relics
+
+;-------------------------------------------------------------------------------
+;; 이벤트 아이템
+;-------------------------------------------------------------------------------
+;;1/10  환약(20000)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/300   BlackGlove
+
+1/300   SkiesNecklace
+1/300   SilverMirrorNecklace
+
+1/300   ColorfulNecklace
+1/300   SoulNecklace
+1/300   WarriorNecklace
+
+1/300   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/500   FortunatelyRing
+
+1/800   DevilRobe(M)
+1/800   DevilRobe(F)
+1/800   WarArmor(M)
+1/800   WarArmor(F)
+1/800   SpecterArmor(M)
+1/800   SpecterArmor(F)
+
+1/2000   MagicCandy
+1/2000   SoulCandy
+1/2000   BlastCandy
+1/2000   AttackCandy
+1/2000   PhysicalCandy
+
+1/30000   DragonSwordDebris(Fire)
+1/30000   DragonSwordDebris(Wind)
+1/30000   DragonSwordDebris(Thunder)
+1/30000   DragonSwordDebris(Ice)
+1/30000   DragonSwordDebris(Dark)
+1/30000   DragonSwordDebris(Holy)
+1/30000   DragonSwordDebris(Phantom)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/3000  CelestialArmor(M)
+1/3000  CelestialArmor(F)
+1/3000  DragonArmor(M)
+1/3000  DragonArmor(F)
+1/3000  VestmentArmor(M)
+1/3000  VestmentArmor(F)
+
+
+1/3000  WalkerHelmet
+1/3000  DragonHelmet
+1/8000  HeavenHelmet
+1/15000  DarkIronHelmet
+
+1/32000  UnicornArmor(M)
+1/32000  UnicornArmor(F)
+1/32000  ImmortalArmor(M)
+1/32000  ImmortalArmor(F)
+1/32000  ElementArmor(M)
+1/32000  ElementArmor(F)
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/700000 MadWarRing
+1/900000 MadWarNecklace
+1/700000 MadWarBracelet
+1/900000 BenevolentRing
+1/900000 BenevolentBracelet
+1/900000 BenevolentNecklace
+1/700000 LordFlameRing
+1/700000 LordFlameBracelet
+1/900000 LordFlameNecklace
+
+1/7000  RulingStick
+1/7000  PromiseStaff
+1/7000  GuYuToken
+
+1/20000  MeteorKnife
+1/20000  Shadowbane
+1/20000  MagicBlade

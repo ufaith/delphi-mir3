@@ -14,12 +14,12 @@ mov   A1   %USERNAME
 checkjob warrior
 check [003] 0
 #ACT
-give 金币 20000
+give Gold 20000
 SET [003] 1
-give 金创药（大） 10
-give 魔法药（大） 10
-give 基本剑术（秘籍） 1
-;;MONRECALL 咸蛋  4  4
+give HPPotion(L) 10
+give MPPotion(L) 10
+give Swordmanship 1
+;;MONRECALL SaltedEgg  4  4
 #SAY
 您好：<$OUTPUT(A1)> ！这是你在游戏里打死的第一只怪物.\
 系统赠送您 {FCOLOR=250}两万金币{FCOLOR=255} 作为奖励!\
@@ -32,12 +32,12 @@ give 基本剑术（秘籍） 1
 checkjob wizard
 check [003] 0
 #ACT
-give 金创药（大）  10
-give 魔法药（大）  10
-give 火球术（秘籍） 1
-give 金币 20000
+give HPPotion(L)  10
+give MPPotion(L)  10
+give FireBall 1
+give Gold 20000
 SET [003] 1
-;;MONRECALL 咸蛋  4  4
+;;MONRECALL SaltedEgg  4  4
 #SAY
 您好：<$OUTPUT(A1)> ！这是你在游戏里打死的第一只怪物.\
 系统赠送您 {FCOLOR=250}一只宠物{FCOLOR=255} 和 {FCOLOR=250}两万金币{FCOLOR=255} 作为奖励!\
@@ -49,12 +49,12 @@ SET [003] 1
 checkjob taoist
 check [003] 0
 #ACT
-give 金创药（大）  10
-give 魔法药（大）  10
-give 治愈术（秘籍） 1
-give 金币 20000
+give HPPotion(L)  10
+give MPPotion(L)  10
+give Healing 1
+give Gold 20000
 SET [003] 1
-;;MONRECALL 咸蛋  4  4
+;;MONRECALL SaltedEgg  4  4
 #SAY
 您好：<$OUTPUT(A1)> ！这是你在游戏里打死的第一只怪物.\
 系统赠送您 {FCOLOR=250}一只宠物{FCOLOR=255} 和 {FCOLOR=250}两万金币{FCOLOR=255} 作为奖励!\

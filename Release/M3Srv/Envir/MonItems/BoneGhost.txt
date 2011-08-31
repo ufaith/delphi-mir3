@@ -1,0 +1,90 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1000   Spar
+1/1    Gold 14000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/5  BronzeAxe
+1/5  SeaSoul
+1/5  HalfMonth
+
+1/5  PearlRing
+1/5  SnakeEyeRing
+1/5  BlackCrystalRing
+
+1/5  SmallBracelet
+
+1/5  LanternNecklace
+1/5  AmberNecklace
+1/5  DevilsNecklace
+1/5  참선의구슬
+
+1/5  Boots
+
+1/5  MagicHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/10  ExorcizeSword
+1/10  YanYue
+1/10  ZhanmaSaber
+1/10  Ashura
+
+1/10  CharmRing
+1/10  EthicsRing
+1/10  CoralRing
+1/10  GoldRing
+
+1/10  SturdyGlove
+
+1/10  TaoistHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/40 ThreeBracelet
+1/40 SibeiBracelet
+
+1/40 BlueJadeNecklace
+1/40 Magnifier
+1/40 BambooFluteNecklace
+
+1/40 WomaHelmet
+
+1/40 HeavyArmor(M)
+1/40 HeavyArmor(F)
+1/40 MagicRobe(M)
+1/40 MagicRobe(F)
+1/40 SoulRobe(M)
+1/40 SoulRobe(F)
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/200   EagleSword
+1/200   DestinyBlade
+1/200   SilverSnake
+1/200   Wand
+
+1/200   BlackBoots
+1/200   MoonBoots
+1/200   JediBoots

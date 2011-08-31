@@ -1,5 +1,5 @@
 ;;Legend Of Mir 3 C3Engine
 [RoseSystem]
 SetPoint = 11400
-GiveItemName = Ãµ¹å
+GiveItemName = Rose
 GiveItemmNum = 1

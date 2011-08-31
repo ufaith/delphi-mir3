@@ -15,7 +15,7 @@ goto @Mu_Taoist_dark_hiden_next_1
 <结束/@Mu_Taoist_dark_hiden_next_5>
 [@Mu_Taoist_dark_hiden_next_2]
 #IF
-checkitem 隐身术 1
+checkitem Invisibility 1
 #ACT
 goto @Mu_Taoist_dark_hiden_next_3
 #ELSESAY
@@ -24,10 +24,10 @@ goto @Mu_Taoist_dark_hiden_next_3
 [@Mu_Taoist_dark_hiden_next_3]
 #IF
 checkgold 2000
-checkitem 隐身术 1
+checkitem Invisibility 1
 #ACT
-take 隐身术 1
-take 金币 2000
+take Invisibility 1
+take Gold 2000
 goto @Mu_Taoist_dark_hiden_next_4
 #ELSESAY
 如果想让我传授武功，请首先支付费用嘛？这些钱将用作梦村道观的运营费。\ \
@@ -42,7 +42,7 @@ random 20
 已经全部解释了。修炼时的注意事项和重要的秘诀已经都写好了，如果参照这本修炼武功，应该可以掌握武功。道士的武功不是用来杀人的，而是为了扬善惩恶。希望您牢记这点，专心修炼武功！\ 
 <Exit/@exit>
 #ELSEACT
-give 隐身术（秘籍） 1
+give Invisibility 1
 [@Mu_Taoist_dark_hiden_next_5]
 #IF
 #SAY

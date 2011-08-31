@@ -1,0 +1,3 @@
+;; 기본 아이템
+1/1   CannibalLeaf
+1/1   FreshFruit

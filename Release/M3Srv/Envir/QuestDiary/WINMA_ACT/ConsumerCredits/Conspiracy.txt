@@ -14,7 +14,7 @@
 [@@shuru_PK]
 #IF
 CHECKJFPOINT 100
-checkitem 嫁祸卡 1
+checkitem FramedCard 1
 #ACT
 mov  S1  8
 mov  A0  %INPUTSTR
@@ -37,10 +37,10 @@ mov       D3   %ARG(2)   ;;PK值
 #IF
 !CheckOnline %A0
 CHECKJFPOINT 100
-checkitem 嫁祸卡 1
+checkitem FramedCard 1
 equal  S1 8
 #ACT
-take 嫁祸卡 1
+take FramedCard 1
 DECJFPOINT 100
 lineMsg [Grobal] "天灵灵，地灵灵，大陆上某位英雄被[<$USERNAME>]暗算了..."
 FormatStr "FLD_CHARNAME='%s'" %A0
@@ -69,7 +69,7 @@ goto  @作弊
 [@noka1]
 #SAY
 您当前积分为 {FCOLOR=250}<$NEWJFPOINT>{FCOLOR=255} 点.\
-有 {FCOLOR=250}100点{FCOLOR=255} 积分，加一张 {FCOLOR=250}嫁祸卡{FCOLOR=255} 我就能帮你实现嫁祸别人的愿望.\
+有 {FCOLOR=250}100点{FCOLOR=255} 积分，加一张 {FCOLOR=250}FramedCard{FCOLOR=255} 我就能帮你实现嫁祸别人的愿望.\
 点数不够最好走远点....\
 {FCOLOR=249}请勿输入包含空格的短语{FCOLOR=255}\
 <离 开/@exit>\

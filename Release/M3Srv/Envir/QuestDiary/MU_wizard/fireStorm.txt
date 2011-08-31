@@ -18,7 +18,7 @@ break
 ;
 #IF
 #SAY
-想知道叫“抗拒火环“的武功吗？\ 
+想知道叫“FlameRepulsor“的武功吗？\ 
 抗拒火环是一种被敌人包围时，在自己周围产生 {FCOLOR=250}强烈的火墙{FCOLOR=255} ，从而逃脱包围的魔法。也是体力弱魔术师必须掌握的魔法。\ 
 但是仅凭语言是无法理解的，只用直接被敌人包围，并体验生命受到威胁才可以学会的。但是这种方法太粗糙。。。要试一下吗？\ \ 
 <拜托指教了/@mugong_firewind_next1_1> \ 
@@ -41,7 +41,7 @@ goto @mugong_firewind_next2
 
 [@mugong_firewind_next2]
 #IF
-checkmagic 抗拒火环
+checkmagic FlameRepulsor
 #SAY
 你不是已经掌握了抗拒火环，请回去吧！我很忙。\ \
 #ELSEACT
@@ -67,7 +67,7 @@ set [500] 1
 
 [@mugong_firewind_next4_1]
 #IF
-checkmagic 抗拒火环
+checkmagic FlameRepulsor
 #SAY
 那么辛苦学会的抗拒火环，不知道能否很好地使用。\ \ 
 <Exit/@exit>
@@ -111,8 +111,8 @@ goto @mugong_firewind_next6_1
 Param1 02_002
 Param2 40
 Param3 64
-MonGen 半兽人61 10 20
-MonGen 毒蜘蛛61 10 20
+MonGen Oma61 10 20
+MonGen PoisonousSpider61 10 20
 goto @mugong_firewind_next6_2
 
 [@mugong_firewind_next6_2]
@@ -121,7 +121,7 @@ goto @mugong_firewind_next6_2
 Param1 02_002
 Param2 52
 Param3 52
-MonGen 半兽战士61  5 10
+MonGen BeastFighter61  5 10
 goto @mugong_firewind_next6_3
 
 [@mugong_firewind_next6_3]
@@ -130,8 +130,8 @@ goto @mugong_firewind_next6_3
 Param1 02_002
 Param2 65
 Param3 40
-MonGen 半兽勇士61  10 10
-MonGen 掷斧骷髅61  5 10
+MonGen BeastWarrior61  10 10
+MonGen SkeletonAxer61  5 10
 goto @mugong_firewind_next7_1
 
 [@mugong_firewind_next7_1]
@@ -140,8 +140,8 @@ goto @mugong_firewind_next7_1
 Param1 02_003
 Param2 40
 Param3 64
-MonGen 半兽人61  5 20
-MonGen 毒蜘蛛61 15 20
+MonGen Oma61  5 20
+MonGen PoisonousSpider61 15 20
 goto @mugong_firewind_next7_2
 
 [@mugong_firewind_next7_2]
@@ -150,7 +150,7 @@ goto @mugong_firewind_next7_2
 Param1 02_003
 Param2 52
 Param3 52
-MonGen 半兽战士61  5 20
+MonGen BeastFighter61  5 20
 goto @mugong_firewind_next7_3
 
 [@mugong_firewind_next7_3]
@@ -159,8 +159,8 @@ goto @mugong_firewind_next7_3
 Param1 02_003
 Param2 65
 Param3 40
-MonGen 半兽勇士61  5 20
-MonGen 掷斧骷髅61  10 20
+MonGen BeastWarrior61  5 20
+MonGen SkeletonAxer61  10 20
 goto @mugong_firewind_next8
 
 [@mugong_firewind_next8]
@@ -239,9 +239,9 @@ break
 #IF
 check [749] 0
 #ACT
-give 抗拒火环（秘籍） 1
-give 金币 12000
-give 风之黑檀项链 1
+give FlameRepulsor 1
+give Gold 12000
+give WindEmbonyNecklace 1
 reset [500] 1
 SET [749] 1
 #SAY

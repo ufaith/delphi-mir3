@@ -39,68 +39,68 @@
 #if
   random 6
 #act
-  give 祝福油 3
-  SENDMSG 7 恭喜：你获得了：祝福油:3
+  give BlessingOil 3
+  SENDMSG 7 恭喜：你获得了：BlessingOil:3
   break
 #if
   random 12
 #act
-  give 祝福油 4
-  SENDMSG 7 恭喜：你获得了：祝福油:4
+  give BlessingOil 4
+  SENDMSG 7 恭喜：你获得了：BlessingOil:4
   break
 #if
   random 18
 #act
-  give 祝福油 5
-  SENDMSG 7 恭喜：你获得了：祝福油:5
+  give BlessingOil 5
+  SENDMSG 7 恭喜：你获得了：BlessingOil:5
   break
 #if
   random 20
 #act
-  give 三眼手镯 1
-  SENDMSG 7 恭喜：你获得了：三眼手镯:1
+  give ThreeBracelet 1
+  SENDMSG 7 恭喜：你获得了：ThreeBracelet:1
   break
 #if
   random 22
 #act
-  give 龙之手镯 1
-  SENDMSG 7 恭喜：你获得了：龙之手镯:1
+  give DragonBracelet 1
+  SENDMSG 7 恭喜：你获得了：DragonBracelet:1
   break
 #if
   random 24
 #act
-  give 灵魂项链 1
-  SENDMSG 7 恭喜：你获得了：灵魂项链:1
+  give SoulsNecklace 1
+  SENDMSG 7 恭喜：你获得了：SoulsNecklace:1
   break
 #if
   random 26
 #act
-  give 泰坦戒指 1
-  SENDMSG 7 恭喜：你获得了：泰坦戒指:1
+  give TitanRing 1
+  SENDMSG 7 恭喜：你获得了：TitanRing:1
   break
 #if
   random 28
 #act
-  give 紫碧螺 1
-  SENDMSG 7 恭喜：你获得了：紫碧螺:1
+  give PurpleSpiral 1
+  SENDMSG 7 恭喜：你获得了：PurpleSpiral:1
   break
 #if
   random 30
 #act
-  give 恶魔铃铛 1
-  SENDMSG 7 恭喜：你获得了：恶魔铃铛:1
+  give DemonBells 1
+  SENDMSG 7 恭喜：你获得了：DemonBells:1
   break
 #if
   random 32
 #act
-  give 绿色项链 1
-  SENDMSG 7 恭喜：你获得了：绿色项链:1
+  give GreenNecklace 1
+  SENDMSG 7 恭喜：你获得了：GreenNecklace:1
   break
 #if
   random 34
 #act
-  give 灵魂项链 1
-  SENDMSG 7 恭喜：你获得了：绿色项链:1
+  give SoulsNecklace 1
+  SENDMSG 7 恭喜：你获得了：GreenNecklace:1
   break
 #if
   random 60

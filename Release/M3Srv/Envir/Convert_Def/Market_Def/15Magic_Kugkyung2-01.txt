@@ -30,7 +30,7 @@ I do not want people like you here.\ \
 {
 我可以指导你以下这些武功。\
 （26 - 30 等级 修炼魔法）\
-<野蛮冲撞/@mutebo_test_start>\ \
+<ShoulderDash/@mutebo_test_start>\ \
 <不寻求武功指导/@exit>
 }
 

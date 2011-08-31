@@ -1,0 +1,108 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1   Supernatural
+1/4   Gold  600
+1/40  FirnFrost
+1/40  FirnFrost
+1/5   HPPotion(L)
+1/20  MPPotion(L)
+1/10  HPPotion(XL)
+1/40  MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 제료 아이템
+;-------------------------------------------------------------------------------
+1/10  Relics
+
+;-------------------------------------------------------------------------------
+;; 이벤트 아이템
+;-------------------------------------------------------------------------------
+;;1/10  환약(20000)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/500   BlackGlove
+
+1/500   SkiesNecklace
+1/500   SilverMirrorNecklace
+
+1/500   ColorfulNecklace
+1/500   SoulNecklace
+1/500   WarriorNecklace
+
+1/500   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/1000   FortunatelyRing
+
+1/1000   DevilRobe(M)
+1/1000   DevilRobe(F)
+1/1000   WarArmor(M)
+1/1000   WarArmor(F)
+1/1000   SpecterArmor(M)
+1/1000   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/4000  CelestialArmor(M)
+1/4000  CelestialArmor(F)
+1/4000  DragonArmor(M)
+1/4000  DragonArmor(F)
+1/4000  VestmentArmor(M)
+1/4000  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 지역 특화 아이템
+;-------------------------------------------------------------------------------
+1/400  Assault
+1/400  DestructSurge
+1/400  Lonesome
+1/400  Beckon
+1/800  Transfer
+1/800  FireRain
+1/800  Yihuajieyu
+1/1200  Defiance
+1/1200  AngryThunder
+1/4000  Masculine
+1/8000  Might
+1/25000  CoagulationSoul
+1/8000  Shade
+
+1/8000  WildNecklace
+1/8000  MagicCloudNecklace
+1/8000  CenteringNecklace
+1/8000  DisciplingRing
+1/8000  RyomaRing
+1/8000  AlbatronRing
+
+1/1000  FerricyanideSword
+
+1/2000  RulingStick
+1/2000  PromiseStaff
+1/2000  GuYuToken
+
+1/8000  MeteorKnife
+1/8000  Shadowbane
+1/8000  MagicBlade
+
+1/20000  TransitRustilyRing
+1/20000  RustyHorseRing
+1/20000  RustyBlueRing
+1/20000  RustyWildNecklace
+1/20000  RustyCloudNecklace
+1/20000  RustyCalmNecklace
+1/20000  RustyGoldenBracelet
+1/20000  RustyThinkBracelet
+1/20000  RustyReveresBracelet
+
+1/200    BraveMedal
+1/600    VenerableMedal
+1/1200   KingMedal
+1/2400   HolyMedal
+1/2000   FramedCard
+;1/10000  GamePoints

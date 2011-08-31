@@ -22,7 +22,7 @@
 
 [@pariche_4]
 {
-去找到做苍蝇拍的材料竹子和牛毛就行！那么，到城门外转转抓几只钉耙猫和牛吧！ 抓到{FCOLOR=250}钉耙猫{FCOLOR=255}就能得到{FCOLOR=250}竹子{FCOLOR=255}，抓到{FCOLOR=250}牛{FCOLOR=255}就能弄到{FCOLOR=250}牛毛{FCOLOR=255}，把这些拿给{FCOLOR=250}杂货商(450:413){FCOLOR=255}就行！\
+去找到做苍蝇拍的材料竹子和牛毛就行！那么，到城门外转转抓几只钉耙猫和牛吧！ 抓到{FCOLOR=250}RakingCat{FCOLOR=255}就能得到{FCOLOR=250}竹子{FCOLOR=255}，抓到{FCOLOR=250}Cow{FCOLOR=255}就能弄到{FCOLOR=250}OxHair{FCOLOR=255}，把这些拿给{FCOLOR=250}杂货商(450:413){FCOLOR=255}就行！\
 <前一步/@C_NQuest>
 
 }

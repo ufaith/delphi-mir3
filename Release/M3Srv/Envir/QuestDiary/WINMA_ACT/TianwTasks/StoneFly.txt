@@ -36,24 +36,24 @@ LoadValue A0 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置]
 
 [@tr_tybs]
 #IF
-CHECKITEM 天玉宝石（冰） 1
-CHECKITEM 天玉宝石（火） 1
-CHECKITEM 天玉宝石（风） 1
-CHECKITEM 天玉宝石（雷） 1
-CHECKITEM 天玉宝石（神圣） 1
-CHECKITEM 天玉宝石（暗黑） 1
-CHECKITEM 天玉宝石（幻影） 1
+CHECKITEM JadeGem(Ice) 1
+CHECKITEM JadeGem(Fire) 1
+CHECKITEM JadeGem(Wind) 1
+CHECKITEM JadeGem(Thunder) 1
+CHECKITEM JadeGem(Holy) 1
+CHECKITEM JadeGem(Dark) 1
+CHECKITEM JadeGem(Phantom) 1
 #ACT
 LoadValue N4 "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵能量
 INC N4 1
 SaveValue "QuestDiary\WINMA_DATA\TianParameters\FlyParameters.txt" [参数设置] 魔法阵能量 %N4
-TAKE 天玉宝石（冰） 1
-TAKE 天玉宝石（火） 1
-TAKE 天玉宝石（风） 1
-TAKE 天玉宝石（雷） 1
-TAKE 天玉宝石（神圣） 1
-TAKE 天玉宝石（暗黑） 1
-TAKE 天玉宝石（幻影） 1
+TAKE JadeGem(Ice) 1
+TAKE JadeGem(Fire) 1
+TAKE JadeGem(Wind) 1
+TAKE JadeGem(Thunder) 1
+TAKE JadeGem(Holy) 1
+TAKE JadeGem(Dark) 1
+TAKE JadeGem(Phantom) 1
 lineMsg [Grobal] "'<$USERNAME>'投入了7块天玉宝石使天外天魔法阵的能量提高了1层"
 lineMsg [Grobal] "目前魔法阵的能量已提高到[<$OUTPUT(N4)>层]"
 GOTO @领奖品_twt

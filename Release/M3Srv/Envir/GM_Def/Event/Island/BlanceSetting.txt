@@ -1,10 +1,10 @@
 ;;Legend Of Mir 3 C3Engine
 [Island_MonsterZen]
-Mon1_Type   = 猿猴战士
-Mon2_Type   = 猿猴战将
-Mon3_Type   = 魔神怪1
+Mon1_Type   = MonkeyFighter
+Mon2_Type   = MonkeyWarrior
+Mon3_Type   = SpiritGhost1
 
 [Island_Reword]
-Reword1     = 诅咒之药水
-Reword2     = 武器强化油
-Reword3     = 祝福油
+Reword1     = CurseSyrup
+Reword2     = WeaponOil
+Reword3     = BlessingOil

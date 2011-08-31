@@ -27,7 +27,7 @@ goto @MapQuest_massheal_cave_complete_1
 #IF
 check [526] 0
 #ACT
-give 群体治愈术（秘籍）   1
+give MassHealing   1
 set [526] 1
 goto @MapQuest_massheal_cave_complete_3
 #SAY

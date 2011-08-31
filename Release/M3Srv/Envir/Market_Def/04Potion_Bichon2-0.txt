@@ -54,18 +54,18 @@ goto @main_0_0
 
 [Goods]
 ;ItemName      Volume     Hour
-金创药（小） 100 1
-魔法药（小） 100 1
-金创药（中） 100 1
-魔法药（中） 100 1
-金创药（大） 100 1
-魔法药（大） 100 1
-金创药（特） 100 1
-魔法药（特） 100 1
-灰色药粉（中） 100 1
-黄色药粉（中） 100 1
-黄色药粉（大） 100 1
-灰色药粉（大） 100 1
+HPPotion(S) 100 1
+MPPotion(S) 100 1
+HPPotion(M) 100 1
+MPPotion(M) 100 1
+HPPotion(L) 100 1
+MPPotion(L) 100 1
+HPPotion(XL) 100 1
+MPPotion(XL) 100 1
+GrayPowder(M) 100 1
+YellowPowder(M) 100 1
+YellowPowder(L) 100 1
+GrayPowder(L) 100 1
 
 [@环Quest]
 #IF

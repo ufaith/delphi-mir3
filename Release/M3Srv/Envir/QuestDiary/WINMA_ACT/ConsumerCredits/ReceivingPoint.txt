@@ -55,7 +55,7 @@ Equal   D4   %D6
 Equal   S3   4
 #ACT
 MOV  D7   %D4
-give  сно╥╣Ц╬М  %D4
+give  GamePoints  %D4
 FormatStr "where FLD_CHARNAME='%s'" %USERNAME
 mov   A8       %A9
 FormatStr "FLD_VIP='%s'" 0

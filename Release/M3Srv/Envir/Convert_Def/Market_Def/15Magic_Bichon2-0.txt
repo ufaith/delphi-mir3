@@ -16,16 +16,16 @@ I do not want people like you here.\
 {
 （法师魔法）\ \
 （1 - 10 等级 修炼魔法）\
-<火球术/@Go_Mu_Wizard_fire_bolt> , <霹雳掌/@Go_Mu_Wizard_light_bolt> , <冰月神掌/@Go_Mu_Wizard_ice_bolt> , <风掌/@Go_Mu_Wizard_wind_jangpung>\ \
+<FireBall/@Go_Mu_Wizard_fire_bolt> , <LightningBall/@Go_Mu_Wizard_light_bolt> , <IceBall/@Go_Mu_Wizard_ice_bolt> , <PowerBurst/@Go_Mu_Wizard_wind_jangpung>\ \
 （11 - 20 等级 修炼魔法）\
-<抗拒火环/@Go_Mu_Wizard_fire_strom> , <诱惑之光/@Go_Mu_Wizard_light_shock> , <瞬息移动/@Go_Mu_Wizard_ETC_teleport>\
-<大火球/@Go_Mu_Wizard_fire_Upbolt> , <雷电术/@Go_Mu_Wizard_light_recall> , <冰月震天/@Go_Mu_Wizard_ice_Upbolt>\
-<击风/@Go_Mu_Wizard_wind_kyoukpung> , <地狱火/@Go_Mu_Wizard_fire_line>\ \
+<FlameRepulsor/@Go_Mu_Wizard_fire_strom> , <Stunning/@Go_Mu_Wizard_light_shock> , <Teleport/@Go_Mu_Wizard_ETC_teleport>\
+<AdamantineFB/@Go_Mu_Wizard_fire_Upbolt> , <LightningBolt/@Go_Mu_Wizard_light_recall> , <IceBlades/@Go_Mu_Wizard_ice_Upbolt>\
+<GtPowerBurst/@Go_Mu_Wizard_wind_kyoukpung> , <FireTrail/@Go_Mu_Wizard_fire_line>\ \
 （21 - 30 等级 修炼魔法）\
-<疾光电影/@Go_Mu_Wizard_light_line> , <冰沙掌/@Go_Mu_Wizard_bingsa> ,<风震天/@Go_Mu_Wizard_wind_pungjin> , <火墙/@Go_Mu_Wizard_fire_jiyem> , <圣言术/@Go_Mu_Wizard_ETC_saja> , <异形换位/@Go_Mu_Wizard_ehyung>\
-<魔法盾/@Go_Mu_Wizard_fire_shild>\ \
+<LightningBeam/@Go_Mu_Wizard_light_line> , <FrozenEarth/@Go_Mu_Wizard_bingsa> ,<BlowEarth/@Go_Mu_Wizard_wind_pungjin> , <FireCloud/@Go_Mu_Wizard_fire_jiyem> , <SummonShinso/@Go_Mu_Wizard_ETC_saja> , <GeoManip/@Go_Mu_Wizard_ehyung>\
+<MagicShield/@Go_Mu_Wizard_fire_shild>\ \
 （31 - 40 等级 修炼魔法）\
-<爆裂火焰/@Go_Mu_Wizard_fire_pokyel> , <地狱雷光/@Go_Mu_Wizard_light_storm> , <冰咆哮/@Go_Mu_Wizard_ice_strom> , <龙卷风/@Go_Mu_Wizard_yongsun>\ \
+<Explosion/@Go_Mu_Wizard_fire_pokyel> , <LightningFlo/@Go_Mu_Wizard_light_storm> , <IceStorm/@Go_Mu_Wizard_ice_strom> , <DragonTorn/@Go_Mu_Wizard_yongsun>\ \
  <Exit/@exit>
 }
 

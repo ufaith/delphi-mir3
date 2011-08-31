@@ -36,12 +36,12 @@ random 2
 Param1 02_006
 Param2 25
 Param3 22
-MonGen ½©Ê¬461  3  1
-MonGen ÖÀ¸«÷¼÷Ã61  1  1
+MonGen Zombie461  3  1
+MonGen SkeletonAxer61  1  1
 break
 #ELSEACT
 Param1 02_006
 Param2 25
 Param3 22
-MonGen ÖÀ¸«÷¼÷Ã61  2  1
+MonGen SkeletonAxer61  2  1
 break

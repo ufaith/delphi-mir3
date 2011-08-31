@@ -4,7 +4,7 @@
 +3
 ;torch
 +30
-;poison, charm
+;Poisoning, charm
 +25
 
 

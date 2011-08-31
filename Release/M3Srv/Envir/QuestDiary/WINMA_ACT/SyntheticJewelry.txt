@@ -5,8 +5,8 @@
 #ACT 
 LoadValue A0 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [其他配料] [物品A]
 LoadValue A1 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [其他配料] [物品B]
-LoadValue D0 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [数量] [封魔石]
-LoadValue D1 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [数量] [金币]
+LoadValue D0 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [数量] [ShadowStone]
+LoadValue D1 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [数量] [Gold]
 LoadValue D2 "QuestDiary\WINMA_ACT\SyntheticJewelry.txt" [数量] [碎片]
 MOV B0  0
 MOV B1  0
@@ -14,17 +14,17 @@ MOV B2  0
 MOV B3  0
 MOV B4  0
 #SAY
-我这里可以合成{FCOLOR=250}血花落照，黑天暗云，九宫云雾，万里碧海{FCOLOR=255}4种首饰.\
+我这里可以合成{FCOLOR=250}BloodSplash，BlackSkyCloud，ImperialPalace，ThousandSeas{FCOLOR=255}4种首饰.\
 你要合成哪种首饰？但是有一定的成功几率哦.\
 
-合成<[血花落照]/@hechengx1>    ←内有详细说明\
-合成<[黑天暗云]/@hechengx2>    ←内有详细说明\
-合成<[九宫云雾]/@hechengx3>    ←内有详细说明\
-合成<[万里碧海]/@hechengx4>    ←内有详细说明\\
+合成<[BloodSplash]/@hechengx1>    ←内有详细说明\
+合成<[BlackSkyCloud]/@hechengx2>    ←内有详细说明\
+合成<[ImperialPalace]/@hechengx3>    ←内有详细说明\
+合成<[ThousandSeas]/@hechengx4>    ←内有详细说明\\
 <离 开/@exit> \
 
 
-;;血花落照
+;;BloodSplash
 [@hechengx1]
 #IF
 #ACT 
@@ -47,7 +47,7 @@ _{FCOLOR=250} <$OUTPUT(A0)> {FCOLOR=255} {FCOLOR=250} <$OUTPUT(D0)> {FCOLOR=255}
 <离 开/@exit> \
 
 
-;;黑天暗云
+;;BlackSkyCloud
 [@hechengx2]
 #IF
 #ACT 
@@ -72,7 +72,7 @@ _{FCOLOR=250} <$OUTPUT(A0)> {FCOLOR=255} {FCOLOR=250} <$OUTPUT(D0)> {FCOLOR=255}
 
 
 
-;;九宫云雾
+;;ImperialPalace
 [@hechengx3]
 #IF
 #ACT 
@@ -95,7 +95,7 @@ _{FCOLOR=250} <$OUTPUT(A0)> {FCOLOR=255} {FCOLOR=250} <$OUTPUT(D0)> {FCOLOR=255}
 <离 开/@exit> \
 
 
-;;万里碧海
+;;ThousandSeas
 [@hechengx4]
 #IF
 #ACT 
@@ -183,7 +183,7 @@ take   %B1  %D2
 take   %B2  %D2
 take   %B3  %D2
 give   %B4   1
-give   祝福油  1
+give   BlessingOil  1
 #SAY
 我已经帮您合成了{FCOLOR=250} <$OUTPUT(B4)> {FCOLOR=255}.祝您游戏愉快！\
 送你个祝福油.\
@@ -209,7 +209,7 @@ take   %B0  %D2
 take   %B1  %D2
 take   %B2  %D2
 take   %B3  %D2
-give   祝福油  1
+give   BlessingOil  1
 #SAY
 哎呀。。不好，合成失败了。。。。。\
 送你个祝福油.\
@@ -223,41 +223,41 @@ give   祝福油  1
 ;;详细参数设置看文件底部
 
 [合成血花落照]
-物品11=血花落照（血）
-物品12=血花落照（花）
-物品13=血花落照（落）
-物品14=血花落照（照）
-合成物11=血花落照
+物品11=BloodSplash（Blood）
+物品12=BloodSplash（Flower）
+物品13=BloodSplash（Fall）
+物品14=BloodSplash（Photo）
+合成物11=BloodSplash
 
 
 [合成黑天暗云]
-物品21=黑天暗云（黑）
-物品22=黑天暗云（天）
-物品23=黑天暗云（暗）
-物品24=黑天暗云（云）
-合成物21=黑天暗云
+物品21=BlackSkyCloud（Black）
+物品22=BlackSkyCloud（(Days)）
+物品23=BlackSkyCloud（Dark）
+物品24=BlackSkyCloud（Cloud）
+合成物21=BlackSkyCloud
 
 
 [合成九宫云雾]
-物品31=九宫云雾（九）
-物品32=九宫云雾（宫）
-物品33=九宫云雾（云）
-物品34=九宫云雾（雾）
-合成物31=九宫云雾
+物品31=ImperialPalace（Nine）
+物品32=ImperialPalace（Palace）
+物品33=ImperialPalace（Cloud）
+物品34=ImperialPalace（Fog）
+合成物31=ImperialPalace
 
 [合成万里碧海]
-物品41=万里碧海（万）
-物品42=万里碧海（里）
-物品43=万里碧海（碧）
-物品44=万里碧海（海）
-合成物41=万里碧海
+物品41=ThousandSeas（Thousand）
+物品42=ThousandSeas（M）
+物品43=ThousandSeas（Blue）
+物品44=ThousandSeas（Sea）
+合成物41=ThousandSeas
 
 [其他配料]
-物品A=封魔石
-物品B=金币
+物品A=ShadowStone
+物品B=Gold
 
 [数量]
-封魔石=100
-金币=1000000
+ShadowStone=100
+Gold=1000000
 碎片=1
 ;;详细参数设置看文件底部

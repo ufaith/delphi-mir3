@@ -9,8 +9,8 @@
 {		
 		
 		SabukWall 攻击行会 : <$CS_SABUK_ATTACKGUILDS>\ \
-		SabukWall 剩余资金 : <$CS_SABUK_CASTLEGOLD> 金币 \
-		沙巴克城今天收的资金 : <$CS_SABUK_TODAYTAX> 金币 \
+		SabukWall 剩余资金 : <$CS_SABUK_CASTLEGOLD> Gold \
+		沙巴克城今天收的资金 : <$CS_SABUK_TODAYTAX> Gold \
 		<领取沙巴克城的税金。/@@DrawTax> \ 
 		<看功城战的日程。/@view_warschedule>\                
 		沙巴克城门的状态 \ 

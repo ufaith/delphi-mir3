@@ -1,0 +1,36 @@
+1/1    Gold 20000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 추가 특수 아이템
+;-------------------------------------------------------------------------------
+1/20 AttackWater(XL)
+1/20 NaturalWater(XL)
+1/20 SoulWater(XL)
+1/20 VigorousWater(XL)
+1/20 PhysicalGodWater(XL)
+1/20 MagicalGodWater(XL)
+
+;-------------------------------------------------------------------------------
+;;
+;-------------------------------------------------------------------------------
+1/8000 ZumaRuling
+1/8000 ZumaStick
+1/8000 ZumaToken

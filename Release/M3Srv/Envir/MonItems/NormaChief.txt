@@ -1,0 +1,102 @@
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 0
+;-------------------------------------------------------------------------------
+1/1    Gold 24000
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    FirnFrost
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    HPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+1/2    MPPotion(XL)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 1
+;-------------------------------------------------------------------------------
+1/10   BlackGlove
+
+1/10   SkiesNecklace
+1/10   SilverMirrorNecklace
+
+1/10   ColorfulNecklace
+1/10   SoulNecklace
+1/10   WarriorNecklace
+
+1/10   VineHelmet
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 2
+;-------------------------------------------------------------------------------
+1/20   FortunatelyRing
+
+1/20   DevilRobe(M)
+1/20   DevilRobe(F)
+1/20   WarArmor(M)
+1/20   WarArmor(F)
+1/20   SpecterArmor(M)
+1/20   SpecterArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 기본 아이템 level 3
+;-------------------------------------------------------------------------------
+1/20  CelestialArmor(M)
+1/20  CelestialArmor(F)
+1/20  DragonArmor(M)
+1/20  DragonArmor(F)
+1/20  VestmentArmor(M)
+1/20  VestmentArmor(F)
+
+;-------------------------------------------------------------------------------
+;; 추가 특수 아이템
+;-------------------------------------------------------------------------------
+1/100  Assault
+1/100  DestructSurge
+1/120  Lonesome
+1/120  Beckon
+1/180  Transfer
+1/180  FireRain
+1/380  Defiance
+1/380  AngryThunder
+1/3000  Masculine
+1/3000  Might
+1/3000  CoagulationSoul
+1/3000  Shade
+
+1/600  WildNecklace
+1/600  MagicCloudNecklace
+1/600  CenteringNecklace
+1/600  DisciplingRing
+1/600  RyomaRing
+1/600  AlbatronRing
+
+1/500   FerricyanideSword
+
+1/200   RulingStick
+1/200   PromiseStaff
+1/200   GuYuToken
+
+1/850   MeteorKnife
+1/850   Shadowbane
+1/850   MagicBlade
+
+1/1000  TransitRustilyRing
+1/1000  RustyHorseRing
+1/1000  RustyBlueRing
+1/1000  RustyWildNecklace
+1/1000  RustyCloudNecklace
+1/1000  RustyCalmNecklace
+1/1000  RustyGoldenBracelet
+1/1000  RustyThinkBracelet
+1/1000  RustyReveresBracelet
+
+1/200   BraveMedal
+1/800   VenerableMedal
+1/2400  KingMedal

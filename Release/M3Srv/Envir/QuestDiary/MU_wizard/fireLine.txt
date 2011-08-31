@@ -24,7 +24,7 @@ goto @mugong_fireline_next1
 
 [@mugong_fireline_next1]
 #IF
-checkmagic 地狱火
+checkmagic FireTrail
 #SAY
 我看你好像已经掌握了地狱火。 \ \ 
 <Exit/@exit>
@@ -85,8 +85,8 @@ goto @mugong_fireline_next4_3
 Param1 02_005
 Param2 15
 Param3 14
-MonGen 火焰沃玛61   3  1
-MonGen 火焰沃玛62   1  1
+MonGen FlamingWooma61   3  1
+MonGen FlamingWooma62   1  1
 goto @mugong_fireline_next4_4
 
 [@mugong_fireline_next4_4]
@@ -146,9 +146,9 @@ goto @mugong_fireline_complete_next2
 #IF
 check [756] 0
 #ACT
-give 地狱火（秘籍） 1
-give 焰火手镯  1
-give 金币 16000
+give FireTrail 1
+give FireworksBracelet  1
+give Gold 16000
 SET [756] 1
 #SAY
 哦，虽然现在还有些不熟练，但好像已经大体上领悟了新火镜的运气法。这个程度练习地狱火没有任何问题。以后你看书，一个人练习也没有任何问题。\
@@ -160,7 +160,7 @@ SET [756] 1
 {
 #IF
 #SAY
-如果想学习地狱火，从考场 {FCOLOR=250}火焰沃玛{FCOLOR=255} 那儿找到 {FCOLOR=250}新火镜{FCOLOR=255} 即可。\
+如果想学习地狱火，从考场 {FCOLOR=250}FlamingWooma{FCOLOR=255} 那儿找到 {FCOLOR=250}新火镜{FCOLOR=255} 即可。\
 需要注意的是不拿新火镜的怪物们被打倒之后还要复活，不断地对你进行阻扰。\
 拿到新火镜的一瞬间安全地退回这个地方就可以了。\ \ 
 <Exit/@exit>
